@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t_push_proxy">
+    <title>Push messaging through a proxy</title>
+    <shortdesc>Depending on your network settings, your firewalls could prevent Sametime proxy from
+        connecting to push networks like Apple Push Notification service (APNs) and Firebase Cloud
+        Messaging (FCM) through the Internet. Sametime supports the sending of APNS and FCM messages
+        through a proxy server. If you need to send APNS or FCM message through a proxy server in
+        your environment, you need to configure the settings for the messages you want routed
+        through the proxy.</shortdesc>
+</concept>

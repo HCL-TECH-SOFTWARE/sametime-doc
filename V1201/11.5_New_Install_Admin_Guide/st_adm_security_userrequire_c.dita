@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="st_adm_security_userrequire_c" xml:lang="en-us">
+<title class="- topic/title ">User requirements for basic password
+authentication</title>
+<shortdesc>To access the <tm tmtype="reg" trademark="IBM">HCL</tm>
+  <tm tmtype="reg">Sametime</tm> Community Server by using a web browser, users must enter a user
+  name and internet password to access any protected database on the server. </shortdesc>
+<conbody>
+<p class="- topic/p ">A protected database is a database that has
+its Access Control List (ACL) set to require <xref class="- topic/xref "
+href="st_adm_security_basicpwdauth_c.dita">basic password authentication</xref>.
+If the ACL settings of a database allow <xref class="- topic/xref "
+href="st_adm_security_anonacl_c.dita">anonymous access</xref>, the
+user is not authenticated (prompted for a user name and internet password)
+when accessing the database.</p>
+<p class="- topic/note ">It is important for a user to enter a name when accessing a <tm
+    tmtype="reg">Sametime</tm> database so that the user's name can be displayed in any presence
+   list within the database. If the ACL settings of a database allow anonymous access, a user is not
+   prompted for a name unless the setting <uicontrol>Users of Sametime applications can specify a
+    display name so that they do not appear online as anonymous</uicontrol> is selected in the <menucascade>
+    <uicontrol>Configuration</uicontrol>
+    <uicontrol>Community Services</uicontrol>
+    <uicontrol>Anonymous Access</uicontrol>
+   </menucascade> settings of the <tm tmtype="reg">Sametime</tm> System Console. When this option is
+   selected, it forces a name entry prompt to appear when an anonymous user attends a scheduled
+   meeting. From this name entry prompt, the user can enter a name for display purposes in a
+   presence list. The server accepts any name entered by the user at the name entry prompt; the user
+   is not authenticated.</p>
+<p class="- topic/p ">A <tm tmtype="reg">Sametime</tm> Connect Client user must also be
+   authenticated each time the user starts the <tm tmtype="reg">Sametime</tm> Connect Client and
+   connects to the Community Services on the <tm tmtype="reg">Sametime</tm> server. <tm tmtype="reg"
+    >Sametime</tm> Connect users must enter the user name and internet password that is stored the
+   Person document in the <tm tmtype="reg">Domino</tm> Directory when logging on to <tm tmtype="reg"
+    >Sametime</tm> Connect. </p>
+<section
+id="QUIREMENTS_FOR_AUTHENTICATION_9252_MIDTOPIC_28692934429341162"> <title class="- topic/title "> Person document, User names, and internet passwords in the <tm
+     tmtype="reg">Domino</tm> Directory</title><p class="- topic/p ">Each member of the <tm tmtype="reg">Sametime</tm> community must have a Person
+    document in the <tm tmtype="reg">Domino</tm> Directory to authenticate with the <tm tmtype="reg"
+     >Sametime</tm> server. The names and password that a user can enter when accessing a <tm
+     tmtype="reg">Sametime</tm> server are maintained in the Basics tab of a Person document in the
+     <tm tmtype="reg">Domino</tm> Directory.</p><p class="- topic/p ">To access a Person document, <xref href="st_adm_webad_startadmtool_t.dita"
+                    >open the Sametime Administration Tool</xref> and select <menucascade>
+                    <uicontrol>Domino Directory</uicontrol>
+                    <uicontrol>Domino</uicontrol>
+                    <uicontrol>Manage People</uicontrol>
+                </menucascade>. Double-click a person's name to open that user's Person
+                document.</p><p class="- topic/p ">The table shows a sample entry in the Basics section of a user's Person
+    document. The text that follows the table explains how these entries are used in the web browser
+    and <tm tmtype="reg">Sametime</tm> Connect Client password authentication processes.</p> </section>
+<section
+id="UIREMENTS_FOR_AUTHENTICATION_9252_MIDTOPIC_398555260829353678"> <title
+class="- topic/title "> Sample settings in the Basics section of a
+Person document</title><table><title>Sample settings in the Basics
+section of a Person document</title><desc>Example text for how the
+Basics section of a Person document might be populated</desc>
+<tgroup cols="3"><colspec colname="col1"/><colspec colname="col2"/>
+<colspec colname="col3"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Field</entry>
+<entry colname="col2">Sample Entry</entry>
+<entry colname="col3">Comment</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">First name</entry>
+<entry colname="col2">Gary</entry>
+<entry colname="col3">This field is optional.</entry>
+</row>
+<row>
+<entry colname="col1">Middle initial</entry>
+<entry colname="col2"></entry>
+<entry colname="col3">This field is optional.</entry>
+</row>
+<row>
+<entry colname="col1">Last name</entry>
+<entry colname="col2">Ollerman</entry>
+<entry colname="col3">This field is required.</entry>
+</row>
+<row>
+<entry colname="col1">User name</entry>
+<entry colname="col2">Gary Ollerman/Community;GOllerman<p>or</p><p>Gary
+Ollerman/Community</p><p>GOllerman</p><note>The Community (or domain)
+name is appended to the first entry in the user name field by default.</note></entry>
+<entry colname="col3">This field is required.<p> If you include more
+than one name, separate the names with a semicolon (;), or listing
+each name on a new line.</p></entry>
+</row>
+<row>
+<entry colname="col1">Alternate name</entry>
+<entry colname="col2"></entry>
+<entry colname="col3">This field is optional.</entry>
+</row>
+<row>
+<entry colname="col1">Short name/UserID</entry>
+<entry colname="col2"></entry>
+<entry colname="col3">This field is optional.</entry>
+</row>
+<row>
+<entry colname="col1">Generational qualifier</entry>
+<entry colname="col2"></entry>
+<entry colname="col3">This field is optional.</entry>
+</row>
+<row>
+<entry colname="col1">Internet password</entry>
+<entry colname="col2">(FCF5F3960B0A289D3)</entry>
+<entry colname="col3">This field is required.</entry>
+</row>
+</tbody>
+</tgroup>
+</table><p class="- topic/p ">The following fields on the Person document
+are used by the authentication process: </p><ul class="- topic/ul ">
+<li class="- topic/li ">
+     <uicontrol>First name</uicontrol> - This field is used only when a user logs in from a web
+      browser.<p class="- topic/p "> Web browser - If an entry exists in the <uicontrol>Given
+       name</uicontrol> field in the Basics tab of the Person document, the user can enter this name
+      at the <uicontrol>User Name</uicontrol> prompt that appears when accessing a protected
+      database on the <tm tmtype="reg">Sametime</tm> server with a web browser. (A protected
+      database is a database that has its ACL set to require <xref class="- topic/xref "
+       href="st_adm_security_basicpwdauth_c.dita">basic password authentication</xref>.) </p><p
+      class="- topic/p "><tm tmtype="reg">Sametime</tm> Connect - The first name (given name) is not
+      a valid entry at the <uicontrol>User Name</uicontrol> prompt that appears when logging on to
+      the <tm tmtype="reg">Sametime</tm> Connect Client.</p>
+    </li>
+<li class="- topic/li ">
+     <uicontrol>Surname</uicontrol> - An entry must exist in the <uicontrol>Surname</uicontrol>
+     field of the Basics tab of a Person document.<p class="- topic/p ">The surname can be entered
+      in the <uicontrol>User Name</uicontrol> prompt that appears when accessing a protected
+      database on the <tm tmtype="reg">Sametime</tm> server with a web browser. The surname can also
+      be used when logging on from the <tm tmtype="reg">Sametime</tm> Connect Client. </p><note
+      class="- topic/note " type="note">If both the <uicontrol>Given name</uicontrol> and
+       <uicontrol>Surname</uicontrol> fields contain entries, the user can enter the first and last
+      names at the <uicontrol>User Name</uicontrol> prompt that appears when accessing the <tm
+       tmtype="reg">Sametime</tm> server.</note>
+    </li>
+<li class="- topic/li ">
+     <uicontrol>User name</uicontrol> - An entry must exist in the <uicontrol>User name</uicontrol>
+     field in the Basics tab of a Person document.<p class="- topic/p ">Generally, it is good
+      practice to use a user's first and last name in the <uicontrol>User name</uicontrol> field.
+      The <uicontrol>User name</uicontrol> field can contain multiple entries. In our example, the
+       <uicontrol>User name</uicontrol> field contains both <userinput>Gary
+       Ollerman/Community</userinput> and <userinput>GOllerman</userinput>. (Each entry must be
+      separated by a semicolon (;) or be listed on a separate line in the <uicontrol>User
+       name</uicontrol> field of the Person document.) </p><p class="- topic/p ">A user can enter
+      any name that appears in the <uicontrol>User name</uicontrol> field of the Person document
+      when logging on to the <tm tmtype="reg">Sametime</tm> server from the <tm tmtype="reg"
+       >Sametime</tm> Connect Client or a web browser. For example, the user could enter
+       <userinput>Gary Ollerman/Community</userinput> or <userinput>GOllerman</userinput> at a <tm
+       tmtype="reg">Sametime</tm> Connect or web browser <uicontrol>User Name</uicontrol> prompt.
+      The name entered by the user is resolved to the topmost name (Gary Ollerman/Community in the
+      example) in the <uicontrol>User name</uicontrol> field. The topmost name in the
+       <uicontrol>User name</uicontrol> field is the name that is displayed in the presence lists of
+      all <tm tmtype="reg">Sametime</tm> clients.</p><note class="- topic/note " type="note">If you
+      want a user's email address to display in presence lists, enter the user's email address as
+      the topmost name in the <uicontrol>User name</uicontrol> field of the Person document. If the
+      email address is included in the <uicontrol>User name</uicontrol> field, the user can also
+      enter the email address at the <uicontrol>User name</uicontrol> prompt when logging in from a
+       <tm tmtype="reg">Sametime</tm> Connect Client or web browser.</note><p class="- topic/p "><tm
+       tmtype="reg">Sametime</tm> uses the topmost name in the <uicontrol>User name</uicontrol>
+      field to validate a user in a database ACL. If you require <xref class="- topic/xref "
+       href="st_adm_security_basicpwdauth_c.dita">basic password authentication</xref> for a
+      database and you enter the names of individual users in the ACL of a database, enter the
+      topmost name that appears in the <uicontrol>User name</uicontrol> field of the Person document
+      in the database ACL. Although the user can enter <userinput>GOllerman</userinput> when logging
+      on, <tm tmtype="reg">Sametime</tm> uses "Gary Ollerman/Community" to validate the user in the
+      database ACL. Therefore, "Gary Ollerman/Community" must be the name that appears for this user
+      in database ACLs. </p>
+    </li>
+<li class="- topic/li ">
+     <uicontrol>Internet password</uicontrol> - Users must enter the internet password to
+     authenticate with the <tm tmtype="reg">Sametime</tm> server using a web browser or the <tm
+      tmtype="reg">Sametime</tm> Connect Client. In the example, the internet password is
+      <userinput>sametime</userinput>. The password displays as a series of random characters
+     because internet passwords are encrypted on the Person document.<p>Password character
+      restrictions</p><p>In addition to non-English characters, the following characters must not be
+      included in passwords used by <tm tmtype="reg">Sametime</tm>:</p><p><codeph>: \ } " "
+       &amp;</codeph></p></li>
+</ul> </section>
+<section
+id="QUIREMENTS_FOR_AUTHENTICATION_9252_MIDTOPIC_28692934429341163"> <title
+class="- topic/title ">LDAP</title><p class="- topic/p ">If you have configured the <tm tmtype="reg">Sametime</tm> server to operate
+    with an LDAP directory on a third-party server, the authentication process uses the user names
+    and passwords stored in the LDAP directory. It is not necessary to create Person documents
+    containing separate user names and passwords in the <tm tmtype="reg">Domino</tm> Directory on
+    the <tm tmtype="reg">Sametime</tm> server.</p><?Pub
+Caret 288?><p>Password character restrictions</p><p>In addition to non-English characters, the following characters must not be included in passwords
+    used by <tm tmtype="reg">Sametime</tm>:</p><p><codeph>:
+\ } " " &amp;</codeph></p></section>
+</conbody>
+<?tm 1381774246 55?>
+</concept>
+<?Pub *0000013580?>

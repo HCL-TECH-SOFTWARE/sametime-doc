@@ -1,0 +1,94 @@
+/*********************************************************************/
+/* This style sheet should override ibmdita.css */
+/* Created by Laura Feldberg */
+/* Creation date: Feb 14 2012 */
+/* Last Modified date: August 24 2012 for accessibility */
+/*********************************************************************/
+
+/*********************************************************************/
+/* common styles applied to all topics*/
+/*********************************************************************/
+html, body { padding: 0; margin: 0; }
+
+body {
+	font: normal .75em Arial, Helvetica, sans-serif; 				
+    height:100%;
+    margin:5px 20px 5px 15px;
+}
+
+.codeblock, .codeph, .filepath {font-size: 1.2em;}
+
+pre {
+   font-family: monospace;
+   font-size: 12px;
+   background-color: #dadada;
+   padding: 5px;
+}
+
+
+/* title and header styles */
+h1.topictitle1 {
+	font-size:2.0em; 
+	font-weight:bold;
+	margin: 0 0 5px 0;
+	padding: 0 0 5px 0;
+	border-bottom: 1px; 
+	}
+
+div.tasklabel h2.sectiontitle {
+    font-size:1em; 
+    font-weight:bold; 
+}
+
+/* list styles */
+dd {margin-bottom: 5px;}
+
+ul {
+	margin-top: 0.5em; 
+	margin-bottom: 0.5em;
+	margin-right: 5px;
+	list-style-type: square;
+}
+
+ul.simple { list-style-type: square; }
+
+.ullinks {list-style-type: square;}
+
+li {
+	margin: 0 0 5px 5px;
+	padding: 0px;
+}
+
+/* link styles */
+.parentlink {margin-top: 5px;}
+
+a{
+	color: #00507D;
+}
+
+a:hover{text-decoration: underline;}
+
+/* table styles */
+.thead {background-color: #ccc;}
+
+div.tablenoborder {	margin: 10px;}
+
+/*********************************************************************/
+/*for welcome pages only */
+/* to use these styles, use outputclass=welcomePage in dita element*/
+/*********************************************************************/
+h2.welcomePage {
+    font-size: 1.25em;
+    font-weight: normal;
+    line-height: 1.2em;
+}
+
+/* selectors for IE6 and below */
+* html h1.pagetitle{padding-bottom:30px}
+
+* html table th, 
+* html table td {font-size:.75em}
+
+kbd{font-size:1.2em}
+/* CSS Document */
+

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="inserting_emoticons" xml:lang="en-us">
+<title>Inserting emoticons</title>
+<shortdesc>You can insert an emoticon into a chat message. An emoticon is a graphical icon used to
+convey emotional tone.</shortdesc>
+<conbody>
+<p>If your chat partner has a version of instant messaging that does not support rich text or
+         emoticons, your chat partner sees the ASCII representation of the emoticon, such as :-)
+         instead of <fig id="fig_skc_ggx_rhb">
+            <image href="Images/happy_emoticon.eps" placement="break" align="left">
+               <alt>happy</alt>
+            </image>
+         </fig>. Perform the following steps to add an emoticon to a chat message. </p>
+<p>At the point in the message where you want to insert the emoticon, perform one of the following
+steps: </p>
+<ul>
+<li>Type the ASCII representation of the emoticon. </li>
+<li>Choose the <uicontrol>Insert Emoticon</uicontrol> action, highlight the emoticon you want to
+insert, and choose the <uicontrol>Select</uicontrol> action. </li>
+</ul>
+<p>Although you initially see the ASCII representation of the emoticon, when you send the message,
+   your chat history displays the equivalent Emoji emoticon. Your chat partner sees the Emoji
+   emoticon if he is running Connections Chat on an Apple device. Otherwise, he sees a Connections
+   emoticon. Your chat partner's instant messaging version must support emoticons for them to be
+   visible.</p>
+<p>The table below describes the emoticons you can use and their ASCII representations. </p>
+<note>The icons displayed are the original Connections icons, not the Emoji icons you see in your
+   device.</note>
+<table frame="all" rowsep="1" colsep="1" id="table_scy_xtb_rhb">
+<title>Table of emoticons</title>
+<tgroup cols="2">
+<colspec colname="c1" colnum="1" colwidth="1*"/>
+<colspec colname="c2" colnum="2" colwidth="1*"/>
+<thead>
+<row>
+<entry>Emoticon</entry>
+<entry>ASCII representation</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>
+<fig id="fig_hq5_5gx_rhb">
+<image href="Images/happy_emoticon.eps" placement="break" align="left">
+<alt>happy</alt>
+</image>
+</fig>
+</entry>
+<entry>:-)</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_rvn_ygx_rhb">
+<image href="Images/winking_emoticon.eps" placement="break" align="left">
+<alt>winking</alt>
+</image>
+</fig>
+</entry>
+<entry>;)</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_kn2_ghx_rhb">
+<image href="Images/broadsmily_emoticon.eps" placement="break" align="left">
+<alt>broadsmily</alt>
+</image>
+</fig>
+</entry>
+<entry>:-D</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_avk_vsy_rhb">
+<image href="Images/angry_emoticon.eps" placement="break" align="left">
+<alt>angry</alt>
+</image>
+</fig>
+</entry>
+<entry>:-@</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_yhy_zsy_rhb">
+<image href="Images/half_emoticon.eps" placement="break" align="left">
+<alt>half</alt>
+</image>
+</fig>
+</entry>
+<entry>:-/</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_m5m_dty_rhb">
+<image href="Images/eyebrow_emoticon.eps" placement="break" align="left">
+<alt>eyebrow</alt>
+</image>
+</fig>
+</entry>
+<entry>/:)</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_i5v_nhx_rhb">
+<image href="Images/sad_emoticon.eps" placement="break" align="left">
+<alt>sad</alt>
+</image>
+</fig>
+</entry>
+<entry>:-(</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_obj_qhx_rhb">
+<image href="Images/blushing_emoticon.eps" placement="break" align="left">
+<alt>blushing</alt>
+</image>
+</fig>
+</entry>
+<entry>:-$</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_mnz_jty_rhb">
+<image href="Images/goofy_emoticon.eps" placement="break" align="left">
+<alt>goofy</alt>
+</image>
+</fig>
+</entry>
+<entry>:-S</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_f5s_shx_rhb">
+<image href="Images/surprised_emoticon.eps" placement="break" align="left">
+<alt>surprised</alt>
+</image>
+</fig>
+</entry>
+<entry>:-O</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_ccp_pty_rhb">
+<image href="Images/tongueout_emoticon.eps" placement="break" align="left">
+<alt>tongueout</alt>
+</image>
+</fig>
+</entry>
+<entry>:-P</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_gxm_vhx_rhb">
+<image href="Images/idea_emoticon.eps" placement="break" align="left">
+<alt>idea</alt>
+</image>
+</fig>
+</entry>
+<entry>(i)</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_cst_vty_rhb">
+<image href="Images/yes_emoticon.eps" placement="break" align="left">
+<alt>yes</alt>
+</image>
+</fig>
+</entry>
+<entry>(y)</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_odr_xty_rhb">
+<image href="Images/no_emoticon.eps" placement="break" align="left">
+<alt>no</alt>
+</image>
+</fig>
+</entry>
+<entry>(n)</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_hwn_33x_rhb">
+<image href="Images/thinking_emoticon.eps" placement="break" align="left">
+<alt>thinking</alt>
+</image>
+</fig>
+</entry>
+<entry>0:-)</entry>
+</row>
+<row>
+<entry>
+<fig id="fig_unr_k3x_rhb">
+<image href="Images/crying_emoticon.eps" placement="break" align="left">
+<alt>crying</alt>
+</image>
+</fig>
+</entry>
+<entry>:'(</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</conbody>
+</concept>
+<?Pub *0000001020?>

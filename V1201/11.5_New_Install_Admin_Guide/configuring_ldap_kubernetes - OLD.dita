@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="configuring_ldap_kubernetes" xml:lang="en-us">
+    <title>Configuring LDAP on Kubernetes</title>
+    <shortdesc>The LDAP trust store and password can be imported into Kubernetes as a secret and
+        then define the secret in the Sametime configuration.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_apc_ckj_5tb">
+            <ul id="ul_gl3_dkj_5tb">
+                <li>Create a trust store in p12 format that contains a copy of the LDAP server’s
+                    certificate. </li>
+                <li>To perform this step you need to know the password of your trust store. </li>
+            </ul>
+        </prereq>
+        <context>
+            <p>The following steps describe how to create a secret that contains your certificate.
+                The changes in this task affect the following pods:<ul id="ul_uhp_bbd_d5b">
+                    <li>community</li>
+                </ul></p>
+        </context>
+        <steps id="steps_cdz_yjj_5tb">
+            <step>
+                <cmd>Rename your trust store file name to <codeph>ldaptruststore.p12</codeph>.</cmd>
+            </step>
+            <step>
+                <cmd>Copy the <filepath>ldaptruststore.p12</filepath> file to the machine where you
+                    are running <cmdname>kubectl</cmdname>.</cmd>
+            </step>
+            <step>
+                <cmd>Create the Kubernetes secret by running the following command. Substitute your
+                    password for <varname>password</varname>.</cmd>
+                <info>If you have a namespace dedicated to Sametime, add the<parmname>-n</parmname>
+                    argument with your namespace to ensure it is created in the correct namespace.
+                    <codeblock id="codeblock_fth_rkk_35b">kubectl create secret generic ldap-config-secret --from-literal=KeyStorePassword=<varname>password</varname> --from-file=./ldaptruststore.p12 </codeblock></info>
+            </step>
+            <step>
+                <cmd>Change to the <filepath>helm</filepath> directory where Sametime was unzipped.
+                    Open the <filepath>values.yaml</filepath> file and remove the character from the
+                        <varname>ldapConfigSecret</varname> parameter. Set the value to
+                        <codeph>ldap-config-secret</codeph>. </cmd>
+                <stepresult> When this step is complete, the value should look like
+                    this:<codeblock id="codeblock_flr_tkk_35b"> ldapConfigSecret: ldap-config-secret </codeblock></stepresult>
+            </step>
+            <step>
+                <cmd>Save and close the<filepath> values.yaml</filepath> file.</cmd>
+            </step>
+            <step>
+                <cmd>Apply your changes to the environment.</cmd>
+                <info>Verify that you are in the <filepath>helm</filepath> directory and run the
+                    following command to apply changes. Specify the Sametime deployment name for
+                    your environment.
+                        <codeblock id="codeblock_zzg_wkk_35b">helm upgrade <varname>sametime_deployment_name</varname> .</codeblock><note
+                        id="note_a1h_wkk_35b">Be sure to include the dot at the end. It is part of
+                        the command.</note></info>
+                <info>The default for Sametime Premium version 12 is <parmname>sametime</parmname>.
+                    f you upgraded from an earlier Sametime release, the default name is
+                        <parmname>sametime-meetings</parmname>. If you don't know the  Sametime
+                    deployment name, run the  <cmdname>helm list</cmdname> command to find the
+                    name.</info>
+            </step>
+            <step conref="pod_apply_changes.dita#pod_apply_changes/scale_pod">
+                <cmd/>
+            </step>
+        </steps>
+    </taskbody>
+</task>

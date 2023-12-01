@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="troubleshooting_server_kubernetes" xml:lang="en-us">
+    <title>Troubleshooting the Sametime server on Kubernetes</title>
+    <shortdesc/>
+</task>

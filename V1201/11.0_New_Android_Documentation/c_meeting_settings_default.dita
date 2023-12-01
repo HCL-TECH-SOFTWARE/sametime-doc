@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="meeting_settings_default" xml:lang="en-us">
+  <title>Meeting Setting Defaults </title>
+  <shortdesc>These are accessible by going to Settings in the Navigation Drawer and selecting AV. This allows the user to select the default microphone and video settings when starting or joining a meeting from this Android device.  </shortdesc>
+<conbody>
+  <p>
+    <image href="Images/default_settings.png" align="left" placement="break" id="default_settings"/>
+    </p>
+ </conbody>
+</concept>
+<?Pub *0000001020?>

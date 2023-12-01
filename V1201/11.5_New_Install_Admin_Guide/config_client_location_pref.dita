@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="config_client_location_pref" xml:lang="en-us">
+<title>Location preferences</title>
+<shortdesc>The following table lists the location preferences for the <tm tmtype="reg"
+   trademark="HCL">HCL</tm>
+  <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client and <tm tmtype="reg"
+   trademark="Sametime">Sametime</tm> Embedded Client for <tm tmtype="reg" trademark="Notes"
+   >Notes</tm>.</shortdesc>
+<conbody>
+<p><table><title>Location Preferences - com.ibm.collaboration.realtime.location  release 7.5.x and
+     later</title>
+<tgroup cols="4"><colspec colname="col1" colwidth="93*"/><colspec
+colname="col2" colwidth="100*"/><colspec colname="col3" colwidth="102*"/>
+<colspec colname="col4" colwidth="99*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+<entry colname="col4">Release</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">manualModeSelected </entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether or not to detect location
+changes automatically.</entry>
+<entry colname="col4">8.5 and later</entry>
+</row>
+<row>
+<entry colname="col1">manualModeVisible</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether the check box "Do not automatically
+detect location changes" is visible.</entry>
+<entry colname="col4">8.5 and later</entry>
+</row>
+<row>
+<entry colname="col1">optIn</entry>
+<entry colname="col2">Boolean	</entry>
+<entry colname="col3">Specifies whether or not to share user's location
+information with other users.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">advancedView</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether or not to show the advanced
+view for Location.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showProfWindow</entry>
+<entry colname="col2">Boolean. Default is false.</entry>
+<entry colname="col3">Toggle for do not show the alert for editing
+location settings at location change again.	</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+</tbody>
+</tgroup>
+</table></p>
+</conbody>
+
+</concept>
+

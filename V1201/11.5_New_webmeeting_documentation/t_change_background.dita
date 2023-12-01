@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_change_background">
+    <title>Changing my background</title>
+    <shortdesc>To hide your physical environment, you can add a filter to blur your surroundings or
+        use an image to obscure your background. The <uicontrol>Change background</uicontrol>
+        feature is accessible from the preview window and the in-meeting menu, which means you can
+        modify your background before or during a meeting. Contact your administrator if this
+        feature is unavailable. </shortdesc>
+    <taskbody>
+        <prereq id="prereq_fxk_frg_vtb">In order to use the blur or virtual background feature, the
+            following conditions must be met:<ul id="ol_iqy_zwz_vtb">
+                <li>Browser permissions must be granted.</li>
+                <li>For the menu to be enabled, you need to start your camera once. The menu becomes
+                    available after that, even when the camera is turned back off.</li>
+                <li>This feature must be enabled. For assistance, contact your server
+                    administrator.</li>
+            </ul></prereq>
+    </taskbody>
+</task>

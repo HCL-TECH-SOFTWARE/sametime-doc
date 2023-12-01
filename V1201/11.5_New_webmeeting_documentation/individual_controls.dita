@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="individual_controls" xml:lang="en-us">
+  <title>Individual Controls</title>
+  <shortdesc>This section provides information on how the user can individually control the
+    participant's user control in a meeting.</shortdesc>
+  <conbody>
+    <p><b>Description</b></p>
+    <p>Moderators have the option to individually <ul id="ul_m4j_ky5_bpb">
+        <li>Lower hand – once acknowledged the moderator can lower a hand in the room.</li>
+        <li>Make Presenter – used to give another participant presenter rights in a moderated
+          meeting. This promotion ends when the current meeting has ended.</li>
+        <li>Make Moderator – used to promote a participant to moderator indefinitely. This option
+          will only display for an authenticated participant. This promotion is maintained for this
+          meeting room until revoked.</li>
+        <li>Mute – simply changes the participant to a mute status. Cannot be reversed by the
+          moderator.</li>
+        <li>Disable the camera – turns off the participant’s camera. Cannot be reversed by the
+          moderator.</li>
+        <li>Kick out the participant - Participant can re-enter unless the room is locked. </li>
+      </ul></p>
+    <p>
+      <image href="Images/part_img.png" placement="break" align="left"
+        id="image_lb2_3n5_bpb"/>
+    </p>
+    <note>Some features may be disabled by the system administrator. These options are specific to
+      the Sametime 11.5 and may change in future releases.</note>
+  </conbody>
+</concept>
+<?Pub *0000001020?>
+

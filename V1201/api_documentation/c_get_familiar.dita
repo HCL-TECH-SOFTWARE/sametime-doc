@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_get_familiar">
+    <title>Getting familiar with Sametime API Documentation</title>
+    <shortdesc>Depending on your Sametime subscription, the following REST APIs and SDK may be
+        available in your environment. For more information, contact <xref
+            href="https://hclpnpsupport.hcltech.com/csm" format="html" scope="external">HCL Customer
+            Support</xref>.</shortdesc>
+    <conbody>
+        <p>
+            <image href="Images/inside_API.png" id="image_jqk_pxb_nvb"/></p>
+        <ol id="ol_gbk_wxb_nvb">
+            <li>REST APIs—With the exception of the Client Platform SDK, the left-hand navigator
+                contains a list of different API areas—most of which are tied to a specific
+                service.</li>
+            <li>Client Platform SDK—The Client Platform SDK provides a collection of components and
+                widgets that consumers can add to their web applications. It also provides a
+                Javascript API for web developers and sample pages showing much of this
+                functionality. For more information, refer to <xref href="c_SDK.dita"/>.</li>
+            <li>Endpoints—For each service area, there are Swagger pages that can be used to
+                interact with the server. The endpoints each represent individual REST API calls or
+                requests that the API server supports.</li>
+            <li>Authorize button—Sametime uses cookies or bearer tokens for authorization. For more
+                information, refer to <xref href="t_get_auth_keys.dita"/>.</li>
+            <li>Schemas—Schemas show how data is structured and provide developers with information
+                about the request.</li>
+            <li>OpenAPI definitions—A link that opens the OpenAPI definition in either JSON (Chat
+                API) or YAML (all other services).</li>
+            <li>Service—This section describes the service that the API endpoint is tied to. </li>
+            <li>Servers—This section specifies the API server and base URL.</li>
+        </ol>
+    </conbody>
+</concept>

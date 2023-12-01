@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_meetings_verify" xml:lang="en-us">
+  <title>Verifying the service</title>
+  <shortdesc>This section provides information to verify if you are able to join a meeting, see and
+    hear the other participants.  </shortdesc>
+ <taskbody>
+    <context>
+      <p>Verify that at least three parties can join a meeting, see, and hear each other. Two-person
+        meetings are optimized to avoid a media path through the server and so don't provide a valid
+        test.</p>
+      <p><b>To verify the service from one machine:</b></p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Log in to the meeting from one machine as three seperate users, each in their own
+          browser tab.</cmd>
+      </step>
+      <step>
+        <cmd>Unmute any user.</cmd>
+      </step>
+      <step>
+        <cmd>If you can hear the user, the service is functioning.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>
+<?Pub *0000003147?>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="c_main_window" xml:lang="en-us">
+  <title>Using the home page</title>
+  <conbody>
+    <p>After logging into Sametime, the home page displays. The home page contains two areas. The
+      left area contains your information, access to chat features, and list of active chats.  The
+      right area contains the chat conversation.</p>
+    <p>At the top of the frame, is your name and status information.  The menu icon (<image
+        href="Images/menu.png" id="image_f3s_vn4_hvb"/>  ) to access chat features is to the right
+      of your name. From the menu, you can:<ul id="ul_ngj_xn4_hvb">
+        <li>Create contact list</li>
+        <li>Access Sametime Meetings features if you have a Sametime Meetings license.</li>
+        <li>Specify Chat settings</li>
+        <li>Logout of Sametime Chat</li>
+      </ul></p>
+    <p>Below your information is a search field where you can type a name to locate a person that
+      you want to chat with.</p>
+    <p>Pinned chats are listed at the top of the chat list followed by chats with the most recent
+      activity. For each chat in the list the following details are displayed: <ul
+        id="ul_vtb_1xj_bvb">
+        <li>The name of the chat partner or group name</li>
+        <li>Meeting names for meetings that meeting chats and recordings were shared with you</li>
+        <li>The time of the last message on the conversation</li>
+        <li>The last message received or sent on the conversation</li>
+        <li>The number of unread messages for the conversation if applicable</li>
+      </ul></p>
+    <p>Above the chat list is the filter bar. <image href="Images/chat_filter_bar.png"
+        placement="break" id="image_km3_gyx_dvb" alt="Filter bar for active chats"/>You can filter
+      chats by the following:<ul id="ul_qgt_lyx_dvb">
+        <li>All chats</li>
+        <li>Chats with individual people</li>
+        <li>Group chats</li>
+        <li>Meeting chats for meetings that you participated</li>
+      </ul></p>
+  </conbody>
+  <?tm 1351004034 0?>
+</concept>
+<?Pub *0000002118?>

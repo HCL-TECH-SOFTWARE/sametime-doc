@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="config_client_meet_int_pref" xml:lang="en-us">
+<title><tm tmtype="tm" trademark="Microsoft">Microsoft</tm> Outlook
+preferences</title>
+<shortdesc>The following tables list the preferences that you can configure for <tm tmtype="reg"
+   trademark="Sametime">Sametime</tm> Connect Client  and <tm tmtype="reg" trademark="Sametime"
+   >Sametime</tm> Embedded clients who use <tm tmtype="tm" trademark="Microsoft">Microsoft</tm>
+  Outlook.</shortdesc>
+<conbody>
+<p>Table 1 lists the available preferences for instant messaging with <tm tmtype="tm"
+    trademark="Microsoft">Microsoft</tm> Outlook; Table 2 lists the available preferences for online
+   meetings using <tm tmtype="reg" trademark="Sametime">Sametime</tm> Meeting Integrator for <tm
+    tmtype="tm" trademark="Microsoft">Microsoft</tm> Outlook. </p>
+<table><title><tm tmtype="reg" trademark="Sametime">Sametime</tm>
+                <tm tmtype="tm" trademark="Microsoft">Microsoft</tm> Outlook Preferences -
+                com.ibm.collaboration.realtime.exchange  </title>
+<tgroup cols="4"><colspec colname="col1" colwidth="120*"/><colspec
+colname="col2" colwidth="73*"/><colspec colname="col3" colwidth="118*"/>
+<colspec colname="col4" colwidth="81*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+<entry colname="col4">Release</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">ExchangeProfile</entry>
+<entry colname="col2">A mail profile name</entry>
+<entry colname="col3">The name of the mail profile to be used for
+storing chat history and auto-status synchronization.</entry>
+<entry colname="col4">9.0 and later</entry>
+</row>
+<row>
+<entry colname="col1">ExchangeTranscriptFolder	</entry>
+<entry colname="col2">A mail box folder name	</entry>
+<entry colname="col3">The name of the <tm tmtype="tm"
+trademark="Microsoft">Microsoft</tm> Exchange mail box folder used
+for storing chat history and auto-status synchronization.	</entry>
+<entry colname="col4">8.0 and later</entry>
+</row>
+<row>
+<entry colname="col1">ExchangeMessageStore</entry>
+<entry colname="col2">A message store such as 'Mailbox - John Doe'</entry>
+<entry colname="col3">The name of the message store used for storing
+chat history and auto-status synchronization.</entry>
+<entry colname="col4">8.0 and later</entry>
+</row>
+<row>
+<entry colname="col1">ExchangeStorageId</entry>
+<entry colname="col2">The ID of a storage method	</entry>
+<entry colname="col3">The storage method used for storing chat history. For example,
+                            <lines><codeph>com.ibm.collaboration.
+realtime.exchange.
+storage.outlook.
+OutlookStorage</codeph>.</lines></entry>
+<entry colname="col4">8.0 and later</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table><title><tm tmtype="reg" trademark="Sametime">Sametime</tm> Meeting Integrator for <tm tmtype="tm"
+                    trademark="Microsoft">Microsoft</tm> Outlook Preferences -
+                com.ibm.collaboration.realtime </title>
+<tgroup cols="4"><colspec colname="col1" colwidth="121*"/><colspec
+colname="col2" colwidth="72*"/><colspec colname="col3" colwidth="119*"/>
+<colspec colname="col4" colwidth="80*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+<entry colname="col4">Release</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">AlwaysCreateMeetings</entry>
+<entry colname="col2">True or false	</entry>
+<entry colname="col3">Whether meeting information should always be
+included when an appointment is scheduled in Outlook.	</entry>
+<entry colname="col4">8.5 and later</entry>
+</row>
+<row>
+<entry colname="col1">Mtg85SettingsEditable</entry>
+<entry colname="col2">True or false</entry>
+<entry colname="col3">Whether meetings settings are editable by the
+user </entry>
+<entry colname="col4">8.5 and later</entry>
+</row>
+<row>
+<entry colname="col1">Meeting85Server</entry>
+<entry colname="col2">A server host name</entry>
+<entry colname="col3">The host name of the <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+       Meeting server. For example, sametime.mycompany.com</entry><?Pub Caret 23?>
+<entry colname="col4">8.5 and later</entry>
+</row>
+<row>
+<entry colname="col1">Meeting85ServerUsesSSO</entry>
+<entry colname="col2">True or false</entry>
+<entry colname="col3">Whether Single-Sign-On should be used to authenticate with the <tm
+        tmtype="reg" trademark="Sametime">Sametime</tm> Meeting server.</entry>
+<entry colname="col4">8.5 and later</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<example><p>Example entries in plugin_customization.ini:
+                <codeblock>com.ibm.collaboration.realtime.exchange/ExchangeTranscriptFolder=STTranscript </codeblock><codeblock>com.ibm.collaboration.realtime/MeetingServerUrl=http://sametime.mycompany.com
+com.ibm.collaboration.realtime/MeetingServerUsesSSO=true
+com.ibm.collaboration.realtime/AlwaysCreateMeetings=false</codeblock></p></example>
+</conbody>
+
+</concept>
+

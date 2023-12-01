@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<reference id="keyboardshortcutsandotheraccessibilityfeatures"
+xml:lang="en-us">
+<title>What are the keyboard shortcuts and other accessibility features?</title>
+<shortdesc>This product uses standard <tm tmclass="special"
+tmowner="Microsoft Corporation" tmtype="reg" trademark="Microsoft">Microsoft</tm> <tm
+tmclass="special" tmowner="Microsoft Corporation" tmtype="reg"
+trademark="Windows">Windows</tm> navigation keys. The following tables
+provide additional information about navigating and completing actions
+in certain parts of the user interface.</shortdesc>
+<refbody>
+    <section><indexterm>accessibility</indexterm><indexterm>keyboard shortcuts</indexterm>
+      <p><b>Text chats</b></p><p>The following table describes the keyboard shortcuts or actions for
+        common buttons in the user interface that perform actions.</p><table class="- topic/table "
+        frame="all">
+        <title> Common user interface button shortcuts</title>
+        <tgroup class="- topic/tgroup " cols="2">
+          <colspec colname="col1" colwidth="1*"/>
+          <colspec colname="col2" colwidth="1.15*"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"> Action </entry>
+              <entry class="- topic/entry " colname="col2">Keyboard shortcut </entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p><uicontrol>OK</uicontrol>
+                </p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Enter</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p><uicontrol>Cancel</uicontrol>
+                </p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Esc</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p><uicontrol>Delete</uicontrol>
+                </p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Del </p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p><uicontrol>Browse</uicontrol> button in chat history preferences and alert
+                  notifications preferences</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Alt+B</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p><uicontrol>Apply</uicontrol> in Preferences</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Alt+A</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p><uicontrol>Restore defaults</uicontrol> in Preferences</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Alt+D</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p><uicontrol>Done</uicontrol>
+                </p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Alt+D</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p><uicontrol>Close</uicontrol>
+                </p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Alt+C</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p><uicontrol>Next</uicontrol>
+                </p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Alt+N</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p><uicontrol>Back</uicontrol>
+                </p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Alt+B</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p><uicontrol>Move down</uicontrol>
+                </p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Alt+D</p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table><p>The following table identifies how to navigate in the contact list when it has
+        focus.</p><table class="- topic/table " frame="all">
+        <title> Contact list navigation</title>
+        <tgroup class="- topic/tgroup " cols="2">
+          <colspec colname="col1" colwidth="1*"/>
+          <colspec colname="col2" colwidth="1*"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"> Action </entry>
+              <entry class="- topic/entry " colname="col2">Keyboard shortcut </entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To open <uicontrol>Actions and Preferences</uicontrol></p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Alt+S</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To move to individual names on the contact list </p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press the Up Arrow or Down Arrow </p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To start a chat with a selected contact on the contact list </p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Enter</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To display the right-click menu of options for a selected contact on the contact
+                  list </p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Shift+F10</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To give focus to the <uicontrol>Find a person or number</uicontrol> field at the
+                  beginning of the contact list window</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Ctrl+F.</p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table><?Pub Caret 0?><p>The following table describes how to navigate in the text chat
+        window.</p><table class="- topic/table " frame="all">
+        <title> Chat window navigation</title>
+        <tgroup class="- topic/tgroup " cols="2">
+          <colspec colname="col1" colwidth="1*"/>
+          <colspec colname="col2" colwidth="1*"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"> Action </entry>
+              <entry class="- topic/entry " colname="col2">Keyboard shortcut </entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To give focus to the chat message transcript area so that you can scroll through
+                  the chat transcript</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Ctrl+T</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To give focus to the chat message entry area so that you can type a chat
+                  message</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Ctrl+M</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To change the direction you are typing in the chat message entry area, depending
+                  on the language that you are using</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Ctrl+G</p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table><p>The following table describes how to navigate in, and adjust the width of, dialog
+        box columns. </p><table class="- topic/table " frame="all">
+        <title> Dialog box column navigation and width adjustment shortcuts</title>
+        <tgroup class="- topic/tgroup " cols="2">
+          <colspec colname="col1" colwidth="1*"/>
+          <colspec colname="col2" colwidth="1*"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"> Action </entry>
+              <entry class="- topic/entry " colname="col2">Keyboard shortcut </entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To select the first column in a dialog box</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Alt</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To move between columns in a dialog box</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Alt+Right Arrow or Alt+Left Arrow</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To adjust the column width in a dialog box</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Left Arrow and Right Arrow </p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table><p>The following table describes how to create a snapshot of what is displaying on
+        your screen to send to your chat partner after you click the screen capture icon.</p><table
+        class="- topic/table " frame="all">
+        <title>Screen capture shortcuts</title>
+        <tgroup class="- topic/tgroup " cols="2">
+          <colspec colname="col1" colwidth="1*"/>
+          <colspec colname="col2" colwidth="1*"/>
+          <thead class="- topic/thead ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1"> Action </entry>
+              <entry class="- topic/entry " colname="col2">Keyboard shortcut </entry>
+            </row>
+          </thead>
+          <tbody class="- topic/tbody ">
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To move to the part of your screen you want to capture</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Right Arrow, Left Arrow, Up Arrow or Down Arrow </p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To select the part of the screen you want to capture</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Press Shift+Right Arrow, Shift+Left Arrow, Shift+Up Arrow, or Shift+Down
+                  Arrow</p>
+              </entry>
+            </row>
+            <row class="- topic/row ">
+              <entry class="- topic/entry " colname="col1">
+                <p>To open the Screen Capture Tool dialog box with your screen capture selection</p>
+              </entry>
+              <entry class="- topic/entry " colname="col2">
+                <p>Release the Shift+Arrow keys</p>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table></section>
+  </refbody>
+</reference>
+<?Pub *0000018621?>

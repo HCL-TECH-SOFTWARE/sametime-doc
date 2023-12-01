@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="m_st8_uim_getconn" xml:lang="en-us">
+<title>Make more connections</title>
+<?Pub Caret -1?>
+<shortdesc>You can add one or more server communities to your client so that you can communicate
+with members of those server communities.</shortdesc>
+<conbody>
+<p>Read these topics to learn more about server communities and how to add them to your client.</p>
+</conbody>
+</concept>
+<?Pub *0000000631?>

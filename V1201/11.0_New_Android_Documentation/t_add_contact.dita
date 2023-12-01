@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_add_contact" xml:lang="en-us">
+ <title>Adding contacts</title>
+ <?Pub Caret 3?>
+ <shortdesc>A contact is someone you added to one or more of your groups.</shortdesc>
+ <taskbody>
+  <context>
+   <p>After you add a contact, you can start a chat with the contact or display information about
+    the contact without searching through the directory.</p>
+  </context>
+  <steps>
+   <step>
+    <cmd>From the contact list, tap the menu icon and select <uicontrol>Add
+     Contact</uicontrol>.</cmd>
+    <info>If the group to add is in your list, tap it and select <uicontrol>Add Contact</uicontrol>.
+     This action is not allowed within a public group.</info>
+   </step>
+   <step>
+    <cmd>Enter some of the contact information in the search bar. Enter the name of the contact,
+     given name first. You can also enter the first few letters of the given name.</cmd>
+   </step>
+   <step>
+    <cmd>Highlight the name of the person to add.</cmd>
+   </step>
+   <step>
+    <cmd>Select the group to add the contact.</cmd>
+   </step>
+   <step>
+    <cmd>Tap <uicontrol>Add</uicontrol>.</cmd>
+   </step>
+  </steps>
+ </taskbody>
+</task>
+<?Pub *0000003147?>

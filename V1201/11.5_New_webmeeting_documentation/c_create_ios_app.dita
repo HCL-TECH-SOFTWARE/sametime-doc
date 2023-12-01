@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="create_ios_app" xml:lang="en-us">
+ <title>Sametime iOS App Configuration Reference</title>
+ <shortdesc>Use the tables below as a reference for the custom app configuration XML.</shortdesc>
+
+<conbody>
+ <p>This table can be used if your EMM provider does not yet support the AppConfig schema as defined by the <xref href="https://www.appconfig.org/" format="html" scope="external"
+    >AppConfig Community</xref>.</p>
+ <p>If your EMM does support an AppConfig.xml file, then use the HCL_Sametime_AppConfig.xml file
+   that has been provided through the <xref
+    href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0078619"
+    format="html" scope="external">MDM Configuration XML file for HCL Sametime for iOS</xref>
+   support article.</p>
+ <p><note>All keys and values in the table below are case sensitive. If you are manually copying these settings to your EMM, ensure that the case used matches this document.  At a minimum you must provide a value for the communityHostServer.  All other values have defaults that should suffice for most installations assuming your Sametime Proxy server is internet facing and listening on port 443.</note></p>
+ <table frame="all" rowsep="1" colsep="1" id="table_idp_qmb_rhb">
+  <title><b>Community Settings</b></title>
+  <tgroup cols="4">
+   <colspec colname="c1" colnum="1" colwidth="1*"/>
+   <colspec colname="c2" colnum="2" colwidth="1*"/>
+   <colspec colname="c3" colnum="3" colwidth="1*"/>
+   <colspec colname="c4" colnum="4" colwidth="1*"/>
+   <thead>
+    <row>
+     <entry>Key Name</entry>
+     <entry>AppConfig Label</entry>
+     <entry>Default Value</entry>
+     <entry>Description</entry>
+    </row>
+   </thead>
+   <tbody>
+    <row>
+     <entry>communityName</entry>
+     <entry>Community Display Name</entry>
+     <entry><p><b>Type:</b>String</p>
+      <p><b>Default:</b>AppConfig</p></entry>
+     <entry>Provide a nickname for the community. We provide a default of AppConfig but you can change it to something more meaningful to your users. If this value is left blank, the community host server name is used.</entry>
+    </row>
+    <row>
+     <entry>communityHostServer</entry>
+     <entry>Host Server</entry>
+     <entry><p><b>Type:</b>String</p>
+      <p><b>Default:</b>None</p></entry>
+     <entry><p>Provide the fully qualified Sametime Proxy server host name or IP address.</p>
+      <p><b>Example:</b>stproxy.mycompany.com.</p>
+      <p><note>If you are connecting through an authenticating proxy use that address here. If this his value is left blank, the app will not be configured.</note></p></entry>
+    </row>
+    <row>
+     <entry>communityHostPort</entry>
+     <entry>Port</entry>
+     <entry><p><b>Type:</b>Integer</p>
+      <p><b>Default:</b>443</p></entry>
+     <entry>Provide the port where your Sametime Proxy server or Authenticating Proxy is listening.</entry>
+    </row>
+   </tbody>
+  </tgroup>
+ </table>
+ <table frame="all" rowsep="1" colsep="1" id="table_two">
+  <title><b>Advanced Community Settings</b></title>
+  <tgroup cols="4">
+   <colspec colname="c1" colnum="1" colwidth="1*"/>
+   <colspec colname="c2" colnum="2" colwidth="1*"/>
+   <colspec colname="c3" colnum="3" colwidth="1*"/>
+   <colspec colname="c4" colnum="4" colwidth="1*"/>
+   <thead>
+    <row>
+     <entry>Key Name</entry>
+     <entry>AppConfig Label</entry>
+     <entry>Default Value</entry>
+     <entry>Description</entry>
+    </row>
+   </thead>
+   <tbody>
+    <row>
+     <entry>secureConnection</entry>
+     <entry>Secure Connection</entry>
+     <entry><p><b>Type:</b>Boolean</p>
+      <p><b>Default:</b>true</p></entry>
+     <entry>Recommendation is to leave true so the connections is over SSL. When false, SSL is not used and the security of your data could be compromised.</entry>
+    </row>
+    <row>
+     <entry>allowSelfSignedCertificate</entry>
+     <entry>Allow Self Signed Certificate</entry>
+     <entry><p><b>Type:</b>Boolean</p>
+      <p><b>Default:</b>false</p></entry>
+     <entry>Recommendation is to leave false. When true, the identity of the community cannot be verified. This parameter only applies when Secure Connection is true.</entry>
+    </row>
+    <row>
+     <entry>connectionType</entry>
+     <entry>Connection Type</entry>
+     <entry><p><b>Type:</b>Selection</p>
+      <p><b>Default:</b>Direct Connection</p>
+      <p><b>Values:</b>Direct Connection
+      </p>
+      <p>Authenticating Proxy</p></entry>
+     <entry>Specify if this community configuration will connect directly to the Sametime Proxy or will it use an Authenticating Proxy such as HCL SafeLinx? If you choose Direct Connection, then the Host Server and Port configured above should be the address of the Sametime Proxy and it should be internet accessible. If you choose Authenticating Proxy, then the Host Server and Port should be the address of the authentication proxy.</entry>
+    </row>
+    <row>
+     <entry>authProxyUserId</entry>
+     <entry>Authenticating Proxy User ID</entry>
+     <entry><p><b>Type:</b>String</p>
+     <p><b>Default:</b>none</p></entry>
+     <entry>This parameter only applies if the Connection Type is Authenticating Proxy. Macros are accepted if they are available. Consult your EMM documentation for the availability of substitution macros or variable names.</entry>
+    </row>
+    <row>
+     <entry>authProxyPassword</entry>
+     <entry>Authenticating Proxy Password</entry>
+     <entry><p><b>Type:</b>String</p>
+      <p><b>Default:</b>none</p></entry>
+     <entry>This parameter only applies if the Connection Type is Authenticating Proxy. Macros are accepted if they are available. Consult your EMM documentation for the availability of substitution macros or variable names.</entry>
+    </row>
+   </tbody>
+  </tgroup>
+ </table>
+ <table frame="all" rowsep="1" colsep="1" id="table_three">
+  <title><b>Community Credentials</b></title>
+  <tgroup cols="4">
+   <colspec colname="c1" colnum="1" colwidth="1*"/>
+   <colspec colname="c2" colnum="2" colwidth="1*"/>
+   <colspec colname="c3" colnum="3" colwidth="1*"/>
+   <colspec colname="c4" colnum="4" colwidth="1*"/>
+   <thead>
+    <row>
+     <entry>Key Name</entry>
+     <entry>AppConfig Label</entry>
+     <entry>Default Value</entry>
+     <entry>Description</entry>
+    </row>
+   </thead>
+   <tbody>
+    <row>
+     <entry>shareProxyCredentials</entry>
+     <entry>Share Auth Proxy Credentials</entry>
+     <entry><p><b>Type:</b>Boolean</p>
+      <p><b>Default:</b>false</p></entry>
+     <entry>This parameter only applies if the Connection Type in Advanced Properties is set to Authenticating Proxy. Set this option to true if the same credentials would be used for the Authenticating Proxy and the Sametime Community.</entry>
+    </row>
+    <row>
+     <entry>communityUserId</entry>
+     <entry>Connection Type</entry>
+     <entry><p><b>Type:</b>String</p>
+      <p><b>Default:</b>None</p></entry>
+     <entry>Specify a password to be used with Sametime.  This parameter is ignored if Share Auth Proxy Credentials is true. In this case the authenticating proxy ID and password will be used to login to Sametime. Macros are accepted if they are available. Consult your EMM documentation for the availability of substitution macros or variable names.</entry>
+    </row>
+    <row>
+     <entry>rememberPassword</entry>
+     <entry>Remember Password</entry>
+     <entry><p><b>Type:</b>Boolean</p>
+      <p><b>Default:</b>true</p></entry>
+     <entry>Leave true to allow the password to be saved once entered. Set to false to force the user to enter a password with each login to HCL Sametime.</entry>
+    </row>
+   </tbody>
+  </tgroup>
+ </table>
+ <table frame="all" rowsep="1" colsep="1" id="table_four">
+  <title><b>Application Restrictions</b></title>
+  <tgroup cols="4">
+   <colspec colname="c1" colnum="1" colwidth="1*"/>
+   <colspec colname="c2" colnum="2" colwidth="1*"/>
+   <colspec colname="c3" colnum="3" colwidth="1*"/>
+   <colspec colname="c4" colnum="4" colwidth="1*"/>
+   <thead>
+    <row>
+     <entry>Key Name</entry>
+     <entry>AppConfig Label</entry>
+     <entry>Default Value</entry>
+     <entry>Description</entry>
+    </row>
+   </thead>
+   <tbody>
+    <row>
+     <entry>lockCommunitySettings</entry>
+     <entry>Lock Community Configuration</entry>
+     <entry><p><b>Type:</b>Boolean</p>
+      <p><b>Default:</b>false</p></entry>
+     <entry>When true, the user will not be able to edit this community configuration except for the password.</entry>
+    </row>
+    <row>
+     <entry>allowMultipleCommunities</entry>
+     <entry>Allow Multiple Communities</entry>
+     <entry><p><b>Type:</b>Boolean</p>
+      <p><b>Default:</b>true</p></entry>
+     <entry>When true, the user will be allowed to configure additional communities. When false, all community configurations except this one will be removed.</entry>
+    </row>
+    <row>
+     <entry>restrictClipboard</entry>
+     <entry>Restrict Clipboard</entry>
+     <entry><p><b>Type:</b>Boolean</p>
+      <p><b>Default:</b>false</p></entry>
+     <entry>Set to true to enforce that copy and paste operations are restricted to only this application. Chat information copied to the clipboard from inside Sametime app can only be pasted within Sametime.</entry>
+    </row>
+   </tbody>
+  </tgroup>
+ </table></conbody></concept>
+<?Pub *0000001020?>

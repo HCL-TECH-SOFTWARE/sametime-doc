@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_login_logout" xml:lang="en-us">
+  <title>Logging in and out</title>
+  <shortdesc>Use the HCL <tm tmtype="reg" trademark="Sametime">Sametime</tm> app to log into a <tm
+      tmtype="reg" trademark="Sametime">Sametime</tm> community.</shortdesc>
+  <taskbody>
+    <prereq id="prereq_mwy_52q_dtb">
+      <p>You must start the HCL <tm tmtype="reg" trademark="Sametime">Sametime</tm> app before
+        logging in. To find Sametime on your device, look for the <tm tmtype="reg"
+          trademark="Sametime">Sametime</tm> icon. <image href="Images/icon_app.PNG"
+          placement="break" align="left" id="image_fcf_hfq_dtb" alt="Sametime icon"/></p>
+      <p>Additionally, you must configure a community before you can log into its chat
+        community.</p>
+    </prereq>
+    <steps>
+      <step>
+        <cmd>On the Log in screen, enter your credentials in the <uicontrol>User ID</uicontrol> and
+            <uicontrol>Password</uicontrol> fields.</cmd>
+        <info> If your log in process requires a password,  the<uicontrol> Password</uicontrol>
+          field is available. If the login requires your corporate credentials, the app directs you
+          to your corporate webpage to complete the log in process.</info>
+      </step>
+      <step>
+        <cmd>Select your availability status in the <uicontrol>Status</uicontrol> field. The default
+          is <uicontrol>I am available</uicontrol>.</cmd>
+        <info>You can set your status as one of the following statements:<ul id="ul_kkl_vgq_dtb">
+            <li>I am available</li>
+            <li>I am away</li>
+            <li>In a meeting</li>
+            <li>Do not disturb</li>
+          </ul><p>After you log in, the status displays below your name.</p></info>
+      </step>
+      <step>
+        <cmd>Tap <uicontrol>Log In</uicontrol>.</cmd>
+        <info>After your credentials are verified, the Sametime <wintitle>Chat</wintitle> screen
+          opens.</info>
+      </step>
+      <step>
+        <cmd>To exit chat, click the <uicontrol>menu</uicontrol> icon and select
+            <uicontrol>Logout</uicontrol>.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <?tm 1351004034 0?>
+</task>
+<?Pub *0000002118?>

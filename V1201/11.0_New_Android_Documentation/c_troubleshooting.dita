@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="troubleshooting" xml:lang="en-us">
+ <title>Troubleshooting</title>
+ <shortdesc>The troubleshooting setting when enabled allows for logs to be maintained. This option
+  is disabled by default. By enabling it, logs are saved from the application to track potential
+  issues.</shortdesc>
+ <conbody><p>If you are experiencing a problem with the Sametime app, enable this setting and recreate the
+   problem. See <xref href="about_screen.dita"/> for instructions on how to report a problem and
+   send logs to HCL.</p></conbody>
+</concept>
+<?Pub *0000001020?>

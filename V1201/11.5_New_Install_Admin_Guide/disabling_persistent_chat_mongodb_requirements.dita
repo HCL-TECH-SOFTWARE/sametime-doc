@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="disabling_persistent_chat_mongodb_requirements" xml:lang="en-us">
+<title>Disabling persistent chat and MongoDB requirements</title>
+    <shortdesc>HCL Sametime 11.6 deploys with persistent chat enabled which requires MongoDB. It is
+        possible to remove the MongoDB requirement if persistent chat and chat logging is
+        disabled.</shortdesc>
+    <taskbody>
+        <context>
+            <p><note>
+                    <ul id="ul_vjg_dst_pnb">
+                        <li>The new HCL Web chat client requires persistent chat to be enabled. The
+                            HCL Mobile clients require MongoDB for the Push notification
+                            service.</li>
+                        <li>Sametime 11.6 Meeting Server requires MongoDB. This topic applies only
+                            to the Sametime Community Server.</li>
+                    </ul>
+                </note></p>
+            <p>Once the HCL Sametime Community 11.6 server is installed, perform these steps to
+                disable persistent chat and remove the requirement for MongoDB.</p></context>
+        <steps>
+            <step>
+                <cmd>Using HCL Notes Client or HCL Administrator Client, open stconfig.nsf on the Sametime Community server and edit the CommunityService document.</cmd>
+            </step>
+            <step>
+                <cmd>Set chatlogging enabled flag to <b>off</b> (instead of relax). Save and close the CommunityService document.</cmd>
+            </step>
+            <step>
+                <cmd>Disable persistent chat enabled policy by editing the
+                        <codeph>policies.user.xml</codeph> file in the Sametime Community server's
+                    program directory.</cmd>
+            </step>
+            <step>
+                <cmd>Set all instances of im.persistentChatEnabled to current-value="0". </cmd>
+                <info><b>Example:</b>
+                    <p><![CDATA[<p:policy-attribute id="im.persistentChatEnabled" type="boolean" current-value="0" default-value="0" master-attribute-link="null" possible-value-labels="null" possible-values="null" label="im.persistentChatEnabled.label" description="im.persistentChatEnabled.desc" visible="true"/>]]></p></info>
+            </step>
+            <step>
+                <cmd>Save and close the <codeph>policies.users.xml</codeph> file.</cmd>
+            </step>
+            <step>
+                <cmd>Restart the Sametime Community server to apply these changes.</cmd>
+                <info><note>Review all these changes after an upgrade to ensure persistent chat and MongoDB remain disabled.</note></info></step>
+        </steps>
+    </taskbody>
+</task>

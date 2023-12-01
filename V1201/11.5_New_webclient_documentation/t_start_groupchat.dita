@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="t_start_groupchat" xml:lang="en-us">
+<title>Starting a group chat</title>
+<shortdesc>You can start a chat with a group that is part of your contacts.</shortdesc>
+<taskbody>
+<steps>
+<step>
+<cmd>Click the menu icon ( <image alt="menu icon" href="Images/menu.png" placement="inline"
+id="menu"/>) in the navigator and select <uicontrol>Contacts</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Locate the group that you want to change name.</cmd>
+</step>
+<step>
+<cmd>Click the menu icon next to the persons name and click <uicontrol>Start New Group
+Chat</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>In the <uicontrol>Search for invitees</uicontrol> field, enter the first few letters of the
+name.</cmd>
+<info>Click the name that you want to invite from the list of matching contacts. Repeat to add
+others to the <uicontrol>Invitees</uicontrol> list.</info>
+</step>
+<step>
+<cmd>Click <uicontrol>Create</uicontrol> and an invite is sent to the list of invitees. The
+recipients are added to the chat when they accept the invitation.</cmd>
+</step>
+</steps>
+</taskbody>
+<?tm 1372177530 0?>
+</task>
+<?Pub *0000001892?>

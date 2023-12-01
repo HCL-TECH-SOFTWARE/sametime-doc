@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="c_client_user_guide" path="c_client_user_guide.html"/>
+   <appContext helpID="getting_started" path="c_getting_started.html"/>
+   <appContext helpID="system_requirements" path="system_requirements.html"/>
+   <appContext helpID="t_keyboard_shortcuts" path="t_keyboard_shortcuts.html"/>
+   <appContext helpID="whats_new" path="c_whats_new.html"/>
+   <appContext helpID="loggingin" path="t_loggingin.html"/>
+   <appContext helpID="join_meetings.dita" path="join_meetings.html"/>
+   <appContext helpID="c_instant_meetings" path="c_instant_meetings.html"/>
+   <appContext helpID="meetings_moderated" path="c_meetings_moderated.html"/>
+   <appContext helpID="t_dialout_invite" path="t_dialout_invite.html"/>
+   <appContext helpID="c_meetings_telephony" path="c_meetings_telephony.html"/>
+   <appContext helpID="usingthemainscreen" path="t_usingthemainscreen.html"/>
+   <appContext helpID="create_meetings.dita" path="create_meetings.html"/>
+   <appContext helpID="t_personal_room" path="t_personal_room.html"/>
+   <appContext helpID="generate_meetings.dita" path="generate_meetings.html"/>
+   <appContext helpID="t_create_moderated" path="t_create_moderated.html"/>
+   <appContext helpID="manage_meetings.dita" path="manage_meetings.html"/>
+   <appContext helpID="meetings_moderated_management"
+               path="meetings_moderated_management.html"/>
+   <appContext helpID="t_generate_report" path="t_generate_report.html"/>
+   <appContext helpID="user_friendly" path="user_friendly.html"/>
+   <appContext helpID="chat_others" path="chat_others.html"/>
+   <appContext helpID="raise_hands" path="raise_hand.html"/>
+   <appContext helpID="mute_unmute" path="mute_unmute.html"/>
+   <appContext helpID="enable_disable" path="enable_disable.html"/>
+   <appContext helpID="start_stop_camera" path="start_stop_camera.html"/>
+   <appContext helpID="additional_mac" path="additional_mac.html"/>
+   <appContext helpID="leave_meeting" path="leave_meeting.html"/>
+   <appContext helpID="share_screen" path="share_screen.html"/>
+   <appContext helpID="manage_video" path="manage_video.html"/>
+   <appContext helpID="t_change_background" path="t_change_background.html"/>
+   <appContext helpID="t_virtual_background_before"
+               path="t_virtual_background_before.html"/>
+   <appContext helpID="t_change_background_during"
+               path="t_change_background_during.html"/>
+   <appContext helpID="t_virtual_background_1" path="t_virtual_background_1.html"/>
+   <appContext helpID="youtube_share_video" path="youtube_share_video.html"/>
+   <appContext helpID="screen_size" path="screen_size.html"/>
+   <appContext helpID="copy_meeting" path="copy_meeting.html"/>
+   <appContext helpID="camera_microphone" path="camera_microphone.html"/>
+   <appContext helpID="participant_list" path="participant_list.html"/>
+   <appContext helpID="t_waiting_room" path="t_waiting_room.html"/>
+   <appContext helpID="youtube_start_livestream" path="youtube_start_livestream.html"/>
+   <appContext helpID="record_meeting" path="record_meeting.html"/>
+   <appContext helpID="lock_meeting" path="lock_meeting.html"/>
+   <appContext helpID="end_meeting" path="end_meeting.html"/>
+</map>

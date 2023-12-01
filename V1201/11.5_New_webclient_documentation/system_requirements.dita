@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="system_requirements" xml:lang="en-us">
+<title>System requirements</title>
+    <shortdesc>The system requirements knowledge articles contains the latest system requirements
+                information.</shortdesc>
+<conbody>
+        <p>See the <xref
+                                href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0100619"
+                                scope="external" format="html">HCL Sametime Premium and HCL Sametime
+                                12.0.1 System Requirements</xref> article for details.</p>
+</conbody>
+</concept>

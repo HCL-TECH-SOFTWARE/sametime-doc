@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_gethelp" xml:lang="en-us">
+  <title>Getting help and reporting problems</title>
+  <?Pub Caret 3?>
+  <shortdesc>You can access the online <cite>Android Users Guide</cite> and contact support from the
+      <wintitle>Help and Support</wintitle> screen.</shortdesc>
+  <taskbody>
+    <context id="context_hy5_hdr_dtb">From the <wintitle>Help and Support</wintitle> screen, you can
+      navigate to online help documentation, view logs, and send logs.</context>
+    <steps id="steps_lyf_pdr_dtb">
+      <step>
+        <cmd>Tap the <uicontrol>menu</uicontrol> icon and then tap <uicontrol>Help and
+            Support</uicontrol>.</cmd>
+        <choices id="choices_fwp_xdr_dtb">
+          <choice>Tap <uicontrol>HCL Sametime Help</uicontrol> to open the guide in a browser
+            window. You can also access other Sametime documents at the same site.</choice>
+          <choice>Tap <uicontrol>Report a Problem</uicontrol> to send logs to HCL Support, and
+            select your default email application. The email is populated with the support contact
+            email, logs, and a subject line. The support email address is heyhcl@pnp-hcl.com. You
+            can add additional information at the beginning of the email. Tap
+              <uicontrol>Send</uicontrol> to send the email.</choice>
+          <choice>Tap <uicontrol>View Log</uicontrol> to open the <wintitle>Log Viewer</wintitle>.
+            From the <wintitle>Log Viewer</wintitle> screen, you can refresh the log, clear the log
+            content, and send the log to another person. When sending the log it is sent as a zip
+            file as <filepath>hcl.sametme.android.log.zip</filepath>.<p>You must have enable trace
+              logging active for logs to be captured. To enable, tap <menucascade>
+                <uicontrol>Settings</uicontrol>
+                <uicontrol>Troubleshooting</uicontrol>
+              </menucascade>.</p></choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>Tap the return icon to return to the <wintitle>Help and Support</wintitle>
+          screen.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

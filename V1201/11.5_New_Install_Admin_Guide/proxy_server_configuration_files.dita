@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="meeting_server_configuration_files" xml:lang="en-us">
+<title>Proxy server configuration files</title>
+<shortdesc>There are a number of configuration files on the Sametime Proxy server that a backup copy
+should be retained after the server configuration is complete.</shortdesc>
+<conbody>
+<table frame="all" rowsep="1" colsep="1" id="table_cgn_xzz_gsb">
+<tgroup cols="3">
+<colspec colname="c1" colnum="1" colwidth="1.61*"/>
+<colspec colname="c2" colnum="2" colwidth="1.61*"/>
+<colspec colname="c3" colnum="3" colwidth="2.23*"/>
+<thead>
+<row>
+<entry>File name</entry>
+<entry>Location</entry>
+<entry>Contents</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Windows: <filepath>setenv.bat</filepath><p>Linux:
+<filepath>setenvbat.sh</filepath></p></entry>
+<entry><filepath>sametimeproxy\</filepath></entry>
+<entry>Contain configuration parameters that were set at the time of the Sametime Proxy
+installation</entry>
+</row>
+<row>
+<entry>stproxyconfig.xml</entry>
+<entry><filepath>sametimeproxy\conf\</filepath></entry>
+<entry>Contains configuration details for multiple options including the following:<ul>
+<li>Community server configuration</li>
+<li>Business card configuration</li>
+<li>Mobile client configuration</li>
+<li>SAML configuration</li>
+<li>XML syntax rules apply</li>
+</ul></entry>
+</row>
+<row>
+<entry>dbconfig.properties</entry>
+<entry><filepath>sametimeproxy\conf\</filepath></entry>
+<entry>Contains the MongoDB configuration details such as username and password </entry>
+</row>
+<row>
+<entry>server.xml</entry>
+<entry><filepath>sametimeproxy\conf\</filepath></entry>
+<entry>Contains properties to secure the Sametime Proxy server.  Note that syntax rules must be
+followed.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</conbody>
+</concept>

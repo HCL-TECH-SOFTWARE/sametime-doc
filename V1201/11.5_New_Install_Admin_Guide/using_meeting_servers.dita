@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="using_meeting_servers" xml:lang="en-us">
+    <title>Applying Let's Encrypt certificates</title>
+    <taskbody>
+        <context>
+            <p>The Sametime Meeting server is preconfigured with a self-signed certificate. This
+                section describes how to replace the self-signed certificate with a third-party
+                certificate.</p>
+            <note id="note_i2p_nh4_5sb">Let's Encrypt certificates expire every 90 days. To
+                automatically renew the certificates, users can use <xref
+                    href="https://certbot.eff.org/" format="html" scope="external">Certbot</xref>.
+                Otherwise, users can renew certificates when they expire.</note>
+        </context>
+    </taskbody>
+<task id="using_meeting_server_kubernetes">
+<title>Kubernetes</title>
+<taskbody>
+<context>
+<p>Obtain one or more certificates and private key. Afterward, run the following commands to
+configure the Ingress to use them. </p>
+</context>
+<steps>
+<step>
+<cmd>For KEY_FILE specify the private key file and for CERT_FILE specify the certificates file. </cmd>
+<info>
+<codeblock>
+kubectl -n ingress-nginx delete secret ingress-tls-cert
+export CERT_NAME=ingress-tls-cert
+export KEY_FILE=privkey.pem
+export CERT_FILE=fullchain.pem
+kubectl -n ingress-nginx create secret tls ${CERT_NAME} --key ${KEY_FILE} --cert ${CERT_FILE}
+kubectl patch deployment nginx-ingress-controller -n ingress-nginx --patch "$(cat kubernetes/ingress/nginx-tls-patch.yaml)"</codeblock>
+</info>
+</step>
+<step>
+<cmd>Restart the ingress controller: </cmd>
+<info>
+<codeblock>
+kubectl scale deployment nginx-ingress-controller -n ingress-nginx --replicas=0
+kubectl scale deployment nginx-ingress-controller -n ingress-nginx --replicas=1</codeblock>
+</info>
+</step>
+<step importance="optional">
+<cmd>Setup Certbot to automatically renew certificates.</cmd>
+<info>Refer to the Let's Encrypt documentation for details on using Certbot with Kubernetes.</info>
+</step>
+</steps>
+</taskbody>
+</task>
+<task id="using_meeting_servers_docker">
+<title>Docker</title>
+<taskbody>
+            <context>
+                <p>Generate a Let's Encrypt certificate. Afterward, apply the encryption certificate
+                    on the Sametime Meeting server.</p>
+            </context>
+<steps>
+<step>
+                    <cmd>Set ENABLE_LETSENCRYPT to 1 in the <filepath>docker-compose.yml</filepath>
+                        file.</cmd>
+                </step>
+                <step>
+                    <cmd>Find</cmd>
+                    <info>
+                        <codeblock id="codeblock_u2q_wtv_tsb">fullchain.pem
+privkey.pem</codeblock>
+                    </info>
+                </step>
+                <step>
+                    <cmd>Copy the specified files in the following folder:</cmd>
+                    <info>
+                        <codeblock id="codeblock_a5h_d5v_tsb">jitsi-config/web/letsencrypt/live/</codeblock>
+                    </info>
+                    <info>
+                        <note id="note_c5k_hmp_5sb">If a value for the LETSENCRYPT_DOMAIN is
+                            specified, the path is
+                                <codeph>jitsi-config/web/letsencrypt/live/&lt;LETSENCRYPT_DOMAIN
+                                >/.</codeph></note>
+                    </info>
+                </step>
+<step>
+                    <cmd>Restart to apply the changes.</cmd>
+                    <info>
+                        <codeblock>> docker-compose down
+> docker-compose up -d</codeblock>
+                    </info>
+                </step>
+<step importance="optional">
+<cmd>Use Certbot to renew the certificates.</cmd>
+<substeps>
+<substep>
+<cmd>Under the NGINX section add the following code to the volumes section.</cmd>
+<info>
+<codeblock> ${CONFIG}/web/data/letsencrypt:/data/letsencrypt:Z
+</codeblock>
+</info>
+</substep>
+<substep>
+<cmd>Run <codeph>Docker-compose up -d</codeph>.</cmd>
+</substep>
+<substep>
+<cmd>After the initial start, add the following in the
+<filepath>jitsi-config/web/nginx/meet.conf</filepath>  file. Follow the syntax pattern in the
+file.</cmd>
+<info>
+<codeblock>
+location ^~ /.well-known
+{ allow all; root /data/letsencrypt/; } </codeblock>
+</info>
+</substep>
+<substep>
+<cmd>Modify Docker-compose down, Docker-compose up -d to restart.</cmd>
+</substep>
+<substep>
+<cmd>Validate if they are working properly.</cmd>
+</substep>
+<substep>
+<cmd>Use Docker to run the certbot/letsencrypt request to renew certificates.</cmd>
+<info>For example:<codeblock>
+docker run -it --rm \
+-v certs:/etc/letsencrypt \
+-v certs-data:/data/letsencrypt \
+deliverous/certbot \
+certonly \
+--webroot --webroot-path=/data/letsencrypt \
+-d example.com -d www.example.com</codeblock><p>Specify the full absolute path to the
+                                        <filepath>jitsi-config</filepath> folder on the
+                                        <cmdname>certs</cmdname> and <cmdname>certs-data</cmdname>
+                                    commands. For example: <codeph>-v certs:/etc/letsencrypt
+                                        \</codeph> would be <codeblock>
+-v /stmeetings/jitsi-config/web/letsencrypt:/etc/letsencrypt \</codeblock>
+                                    and <codeph>-v certs-data:/data/letsencrypt \</codeph> would be
+                                    <codeblock>
+-v /stmeetings/jitsi-config/web/data/letsencrypt:/data/letsencrypt \
+</codeblock></p></info>
+</substep>
+<substep>
+<cmd>Validate that Certbot is working as expected.</cmd>
+</substep>
+</substeps>
+</step>
+</steps>
+</taskbody>
+</task>
+</task>

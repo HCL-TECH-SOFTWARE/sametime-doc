@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="topology_premium" xml:lang="en-us">
+    <title>Considerations for Sametime Premium</title>
+    <shortdesc> Sametime Premium deployments are supported on Docker or Kubernetes.</shortdesc>
+    <conbody>
+        <p>If you are unfamiliar with these technologies, refer to <xref
+                href="c_planning_platforms.dita" format="dita" scope="local"/>. To learn more about
+            Kubernetes, see <xref href="https://www.hcltech.com/blogs/overview-kubernetes"
+                format="html" scope="external">An Overview of Kubernetes</xref>.</p>
+        <p>Media audio and video streams over UDP port 10,000 for Docker or UDP 30,000 for
+            Kubernetes. Sametime Meetings requires a STUN server if any user is attending from
+            behind a firewall. The default configuration comes with the public Google STUN server
+            configured using UDP Port 19302 configured, however any STUN server can be used. Both
+            clients and the Sametime Meeting services need connectivity to the STUN service. For
+            more information, see <xref href="session_traversal_utilities.dita" format="dita"
+                scope="local"/>. The following examples show several scenarios on how to deploy
+            Sametime to include external users.</p>
+        <section id="section_lb3_tsv_v5b">
+            <title>Small Sametime Premium deployment on Docker</title>
+            <p>If your environment includes a DMZ, you can place Sametime in the DMZ and open the
+                required ports. </p>
+            <p>In this example, clients can connect to Sametime from both inside the internal
+                network as well as from the Internet. Browser clients and Mobile clients connect to
+                Sametime using HTTPS port 443, and UDP port 10,000. These clients also connect
+                directly to STUN on the Internet (or internally if installed as an optional
+                configuration) on port 19302 UDP. Mobile clients must connect to the push
+                notification services on the Internet in order to receive chat notifications in the
+                client. Sametime desktop clients (those which are installed rich clients -Sametime
+                Connect and Sametime embedded) are connecting on port 1533 TCP.</p>
+            <p>The following graphic shows a small HCL Sametime Premium with internet access using
+                Docker. <image href="Images/plan_premium_deployment_internet.png"
+                    id="image_cjf_xsv_v5b"/>
+            </p>
+        </section>
+        <section id="section_ftl_zsv_v5b">
+            <title>Larger Sametime Premium deployments</title>
+            <p>If you have a medium or large size user base you can deploy Sametime with Kubernetes.
+                Kubernetes can be installed as an on-premise configuration or by leveraging a third
+                party Kubernetes service such as Google Kubernetes Engine (GKE) or Amazon’s Elastic
+                Kubernetes Service (EKS), and others. </p>
+            <p>When you deploy Sametime in Kubernetes, the Kubernetes cluster requires three node
+                pools. Each node pool performs a different function. One node pool is dedicated to
+                video, a second one for recorder and a main node pool for all other Sametime pods.
+                The number of nodes in each node pool determines the capacity of the environment. An
+                ingress controller is used to front-end connections from users to the webchat and
+                meeting https services. Media streams are over UDP Port 30,000 and connect directly
+                to the video node pool. Sametime desktop clients connect to a Sametime Mux
+                Kubernetes service (svc) on port 1533 (TCP). </p>
+            <p>The following graphic shows Kubernetes node pools and ingress. <image
+                    href="Images/plan_kub_pools_ingress.png" id="image_zmn_dtv_v5b"/></p>
+            <p>Connectivity for end users is very similar to the Docker deployment. The difference
+                is UDP port 30,000 is used for media streams instead of port 10,000. There may be
+                multiple nodes in the video node pool, and clients must be able to reach each one on
+                port 30,000. </p>
+            <p>The following graphic show an overview of connectivity in a Kubernetes
+                    deployment.<image href="Images/plan_large_premium_deployment_internet.png"
+                    id="image_ann_dtv_v5b"/>
+            </p>
+            <p>For a fully containerized environment, it is possible to also run MongoDB as a
+                Kubernetes cluster, which may require additional licensing from MongoDB. LDAP can
+                also run as a container, Sametime supports LDAP v3 compliant directories. Domino
+                LDAP can also run in Kubernetes. </p>
+            <p>The following graphic shows  fully containerized Sametime Premium Deployment.  <image
+                    href="Images/plan_premium_deployment_containerized.png" id="image_bnn_dtv_v5b"
+                /></p>
+        </section>
+    </conbody>
+</concept>

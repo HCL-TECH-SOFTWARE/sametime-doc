@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_chat_set_id" xml:lang="en-us">
+<title>Setting the same community ID for all servers in the environment</title>
+<shortdesc>To ensure that clients recognize all servers in the environment
+as belonging to a single community, add a ST_COMMUNITY_ID value to
+the <filepath>sametime.ini</filepath> file.</shortdesc>
+<taskbody>
+<context>All users and public groups in the contact list are associated with a specific community.
+   Each community is defined by a community name that is configured by the ST_COMMUNITY_ID flag in
+   the [Config] section of the <filepath>sametime.ini</filepath> file. When the flag is not set, the
+   default value is the server host name (a specific <tm tmtype="reg" trademark="Sametime"
+    >Sametime</tm>  node that user the logs into). For example, if a user logs into the community
+    <filepath>sametime.example.com</filepath> and adds contact A, that contact will be associated
+   with the community <filepath>sametime.hcl.com</filepath>. If the users logs into
+    <filepath>sametime2.example.com</filepath> and adds contact B, that contact will be associated
+   with community <filepath>sametime2.example.com</filepath>.<p>Complete this procedure to add the
+    same ST_COMMUNITY_ID parameter to each <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+    Community Server in the environment. Doing so prevents clients from creating redundant
+    communities for servers in the same environment.</p></context>
+<steps>
+<step>
+    <cmd>Open a text editor on the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community
+     Server.</cmd>
+   </step>
+<step>
+    <cmd>Open the <filepath>sametime.ini</filepath> file located in the <tm tmtype="reg"
+      trademark="Sametime">Sametime</tm>  Community Server installation directory.</cmd>
+    <info>
+     <p>This directory is typically found in one of the following locations:</p>
+     <ul>
+            <li><tm tmtype="tm" trademark="Linux">Linux</tm>: <codeph>/local/notesdata</codeph></li>
+            <li><tm tmtype="tm" trademark="Windows">Windows</tm>: <codeph>C:\Program
+                Files\HCL\Domino</codeph></li>
+          </ul>
+    </info>
+   </step>
+<step><cmd>In the <uicontrol>[Config]</uicontrol> section, add the
+community ID. The value can be any descriptive string, not necessarily
+a domain name. Use this syntax:</cmd><info><codeblock>ST_COMMUNITY_ID=<varname>community_name</varname></codeblock><p>For
+example, the following value names the community <codeph>sametime.example.com</codeph>:</p><codeblock>ST_COMMUNITY_ID=sametime.example.com</codeblock></info>
+</step>
+<step><cmd>Save the <filepath>sametime.ini</filepath> file.</cmd></step>
+<step><cmd>Repeat the procedure for every Community Server in the
+environment.</cmd></step>
+<step><cmd>Restart each Community Server after saving the change to
+the <filepath>sametime.ini</filepath> file.</cmd></step>
+</steps>
+</taskbody>
+
+</task>
+

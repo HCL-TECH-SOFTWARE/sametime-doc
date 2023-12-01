@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="topology_chat" xml:lang="en-us">
+    <title>Planning considerations for chat</title>
+    <shortdesc> </shortdesc>
+    <conbody>
+        <p> See the Ports used by Sametime topic for more details on which ports are required to be
+            open on firewalls.</p>
+        <section id="section_olj_3nt_v5b">
+            <title>Small Internal Chat Only Deployments </title>
+            <p>For small internal deployments, a single Docker system can be deployed to support web
+                chat, mobile and chat users with desktop clients (such as the Sametime Connect and
+                Embedded Sametime client in HCL Notes). </p>
+            <p>An example of a small deployment includes a single Docker deployment of Sametime,
+                MongoDB Server and the LDAP directory. </p>
+            <p>Figure 1 shows an example of a small internal deployment that only includes chat:
+                    <image href="Images/plan_small_internal_deployment.png" id="image_gmg_2vt_v5b"
+                    alt="Small internal chaat only deployment diagram"/></p>
+        </section>
+        <section id="section_jmq_ynt_v5b">In the above example, “desktop clients” are the Sametime
+            Connect client and Sametime embedded client (inside HCL Notes) for desktops. Browser
+            clients may include other HCL applications such as HCL Verse, HCL iNotes, and HCL
+            Connections, which have chat and presence integration with Sametime. </section>
+        <section id="section_kmq_ynt_v5b">You can use the mobile client app on your internal WIFI
+            network if devices are able to connect to Sametime on port 443. Mobile apps can be used
+            internally, however be aware that the mobile clients still need access to the Apple
+            (APNS) and Google (FCM) servers for push notifications (notifying the user of new
+            messages). As an additional option, Sametime supports proxying the notifications if you
+            have a third party proxy to do so. </section>
+        <section id="section_dzj_jqt_v5b">
+            <title>Small Chat only environments with internet access</title>
+            <p>Figure 2 shows a small chat only environment that includes internet access to
+                Sametime. <image href="Images/plan_small_deployment_internet.png"
+                    id="image_bz5_jvt_v5b" alt="Small chat only deployment with internet diagram"
+                /></p>
+            <p>In this example you can open port 443 on the firewall to to support mobile clients on
+                the internet. You can open TCP port 1533 to support desktop clients. Instead of
+                placing Sametime in the Internal zone you can also place Sametime in a DMZ or on the
+                external zone. </p>
+        </section>
+    </conbody>
+</concept>

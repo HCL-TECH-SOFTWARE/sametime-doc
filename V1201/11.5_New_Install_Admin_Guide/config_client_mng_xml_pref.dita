@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_client_mng_xml_pref" xml:lang="en-us">
+<title>Configuring Sametime client preferences with the Expeditor managed settings framework</title>
+  <shortdesc>You can configure and manage the user's Sametime client preferences for capable clients
+    using the Expeditor managed settings framework. The Sametime clients that are Expeditor based
+    include the Sametime client for Windows or Mac, and the HCL Notes embedded Sametime client for
+    Windows or Mac. This excludes the PWA, web and mobile clients.</shortdesc><?Pub Caret 64?>
+<taskbody>
+<context>
+      <p>The Expeditor managed settings framework pulls preference settings from a
+        managed-settings.xml and/or managed-community-configs.xml file hosted on a web server or as
+        a part of the Samtime client installation package.</p>
+      <p>There are two methods to deploy the settings to the user.</p>
+      <ul id="ul_gbz_scb_x4b">
+        <li><b>Method 1:</b>
+          <p>The settings files are hosted on a web server and the URL to the files is defined in
+            either location:</p><ul id="ul_xql_5cb_x4b">
+            <li>
+              <p>In the plugin_customization.ini file as part of the Sametime installation package.
+                This option requires customization of the client installation package.</p>
+            </li>
+            <li>In the user's Sametime policy.</li>
+          </ul></li>
+        <li><b>Method 2:</b>
+          <p>The managed-settings.xml file can be packaged with the Sametime installation package.
+            This option requires customization of the client installation package.</p></li>
+      </ul>
+      <p>The following topics explain how to configure and update settings using the Expeditor
+        managed settings framework.</p>
+    </context>
+</taskbody>
+
+</task>
+

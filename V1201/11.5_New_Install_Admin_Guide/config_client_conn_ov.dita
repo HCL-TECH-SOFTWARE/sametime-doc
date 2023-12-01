@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="config_client_conn_ov" xml:lang="en-us">
+<title class="- topic/title ">Connecting the Sametime Connect client to the Sametime server</title><?Pub Caret 18?>
+<shortdesc>The Sametime Connect client uses Server Communities preferences to connect to the
+        Sametime server for presence and chat features.</shortdesc>
+<conbody>
+<p>The client finds a Sametime server using the server community's host server and server community
+            ports specified in <menucascade>
+                <uicontrol>Preferences </uicontrol>
+                <uicontrol>Server Communities</uicontrol>
+            </menucascade>. The client connects most efficiently when the host server matches the
+            home Sametime server defined in the user's Person document, if the <uicontrol>Home
+                Sametime server</uicontrol> field is being used. The corresponding
+                <uicontrol>Connectivity</uicontrol> settings for the <tm tmtype="reg"
+                trademark="Sametime">Sametime</tm> Community Server must contain the correct IP
+            addresses or DNS names and ports for clients to connect successfully.</p>
+<p>The client uses the connection method selected in the Global connection
+settings for all Server Communities unless the server community&apos;s
+Connection tab specifies an alternate method. This section explains
+how to configure the different types of connections.</p>
+</conbody>
+
+</concept>
+

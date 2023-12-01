@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_chat_end" xml:lang="en-us">
+  <title>Leaving a chat</title>
+  <?Pub Caret 3?>
+  <shortdesc>When you leave a chat conversation, the active chat list no longer displays the
+    chat.</shortdesc>
+  <taskbody>
+    <context>When you leave a conversation with an individual person, the app retains the
+      conversation history. The app displays the conversation if you resume the conversation. When
+      you leave a group conversation, you cannot join the conversation again unless you are
+      invited.</context>
+    <steps>
+      <step>
+        <cmd>Locate the conversation that you want to leave in the active list.</cmd>
+      </step>
+      <step>
+        <cmd>Tap the conversation to open it.</cmd>
+      </step>
+      <step>
+        <cmd>Tap menu icon at the top of the screen.</cmd>
+      </step>
+      <step>
+        <cmd>Tap <uicontrol>Leave</uicontrol> to remove the conversation from the active chat
+          list.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

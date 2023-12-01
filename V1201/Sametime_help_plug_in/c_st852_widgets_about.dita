@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="c_using_main_screen" xml:lang="en-us">
+<title>Using the main screen</title>
+<shortdesc>The main screen gives you access to all of HCL Connections Chat
+functionality.</shortdesc>
+<conbody>
+<p>The following options are available from the left action bar on tablets. </p>
+<table frame="all" rowsep="1" colsep="1" id="table_xlk_tsv_qhb">
+<title>Main screen options</title>
+<tgroup cols="2">
+<colspec colname="c1" colnum="1" colwidth="1*"/>
+<colspec colname="c2" colnum="2" colwidth="1*"/>
+<thead>
+<row>
+<entry>Option</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Search</entry>
+<entry>Search your contact list, or your corporate directory for chat partners.</entry>
+</row>
+<row>
+<entry>Chats</entry>
+<entry>Displays the text chat screen, which maintains a list of all active chats you are currently
+engaged in and your chat history. </entry>
+</row>
+<row>
+<entry>Contacts</entry>
+<entry>Opens the Contacts screen, which list your contacts and groups.</entry>
+</row>
+<row>
+<entry>Favorites</entry>
+<entry>Opens your favorite contacts list. </entry>
+</row>
+<row>
+<entry>Status</entry>
+<entry>Shows your current status on Connections Chat. You can change your status by pressing this
+button.</entry>
+</row>
+<row>
+<entry>Settings</entry>
+<entry>Displays the configuration menu for Connections Chat on your device. <note>On tablets, the
+Settings option is located in the top right menu bar.</note></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</conbody>
+<?tm 1364930070 2?>
+</concept>
+<?Pub *0000002132?>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="settings_new" xml:lang="en-us">
+<title>More Actions</title>
+<taskbody>
+<context>
+      <p>The More Actions <image href="Images/ham.png" placement="inline" align="left"
+          id="image_y44_vpn_bpb"/> feature allows users to access the features within a meeting,
+        roll over the bottom of the meeting window and click the three dots for settings.</p>
+      <p><b>Description</b></p>
+                        <p>Depending on if the participant joins as an authenticated user vs guest,
+                                the following options will display in the <uicontrol>More
+                                        Actions</uicontrol> section. </p>
+                        <p>
+                                <image href="Images/more.png" placement="break" align="left"
+                                        id="image_orp_nnm_bpb"/>
+                        </p>
+                        <ul id="ul_cd3_lrn_bpb">
+                                <li>Manage video quality <ul id="ul_rsn_lrn_bpb">
+                                                <li>Allows the participant to change the range of
+                                                  video quality from Low bandwidth to High
+                                                  Definition depending on the quality of the
+                                                  connection.</li>
+                                                <li>Changing to low bandwidth will automatically
+                                                  disable all video streaming and focus on voice
+                                                  connections only. </li>
+                                                <li>Users can make changes to these settings at any
+                                                  time and this will only affect behavior on their
+                                                  meeting login. </li>
+                                        </ul><p>
+                                          <image href="Images/video_quality.png" placement="break"
+                                                  align="left" id="image_pvw_zvn_bpb"/>
+                                        </p></li>
+        <li>Blur the background<ul id="ul_yrx_pxn_bpb">
+            <li>Use this option when only when the camera is active. </li>
+            <li>This will give focus to the user in the meeting and blur the user surroundings.</li>
+            <li>This feature may affect video quality depending on background complexity. </li>
+          </ul></li>
+        <li>View full screen<ul id="ul_ipn_vxn_bpb">
+            <li>Users can expand the window of the meeting to the entire monitor screen.</li>
+            <li>Use the ESC button to return to normal screen size. </li>
+          </ul></li>
+        <li>Share a YouTube video<ul id="ul_n1j_zxn_bpb">
+            <li>This feature is only available for authenticated users. </li>
+            <li>When moderator settings permit, the user can click this option to share a video link
+              and play directly in the meeting for other participants to watch. More information is
+              available in the <xref href="youtube_integration.dita">YouTube Integration</xref>
+              section.</li>
+          </ul></li>
+        <li>Copy meeting link<ul id="ul_mjp_1yn_bpb">
+            <li>Click this option to capture the URL for the current meeting. </li>
+          </ul></li>
+        <li>Settings<ul id="ul_dbm_myn_bpb">
+            <li>Users can make changes to the permissions of the camera and microphone associated
+              with their Sametime Meetings.</li>
+            <li>The display will vary depending on the browser. </li>
+          </ul><p>
+            <image href="Images/browser.png" placement="break" align="left" id="browser"/>
+          </p></li>
+                        </ul>
+</context>
+</taskbody>
+</task>
+<?Pub *0000002118?>

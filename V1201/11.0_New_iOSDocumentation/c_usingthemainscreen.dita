@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="c_usingthemainscreen" xml:lang="en-us">
+  <title>Using the main menu</title>
+  <shortdesc>The <wintitle>Chats</wintitle> screen is the default view when you log in. It displays
+    all conversations that you currently have open.</shortdesc>
+  <conbody>
+    <p>Chats with the most recent activity are displayed at the top of the list. Chat with new
+      incoming messages are displayed at the top of the list with a badge indicating they are unread
+      messages in the chat. For each chat in the list the following details are displayed: <ul
+        id="ul_vtb_1xj_bvb">
+        <li>The photo or initials of the chat partner</li>
+        <li>The name of the chat partner or the topic for a group chat and status information</li>
+        <li>The time of the last message on the conversation</li>
+        <li>The last message received or sent on the conversation</li>
+        <li>The number of unread messages for the conversation if applicable</li>
+        <li>The icons indicating chat settings associated with the chat<ul id="ul_igh_1fb_hvb">
+            <li>Unread badge with the number of unread messages.</li>
+            <li>Muted badge indicating that the swipe menu was used to stop sounds from playing when
+              new messages arrive for the conversation.</li>
+            <li>Pinned badge indicating that the swipe menu was used to pin the conversation. Pinned
+              conversations are always at the top of the active chat list.</li>
+          </ul></li>
+      </ul></p>
+    <p>Tap the menu icon in the upper left to display the menu item. From the menu, you can:<ul
+        id="ul_jhn_bxj_bvb">
+        <li>Change your online status</li>
+        <li>Work with your active chats</li>
+        <li>Manage and join meetings</li>
+        <li>Manage recordings</li>
+        <li>Manage your contacts</li>
+        <li>Manage app settings</li>
+        <li>Access documentation</li>
+        <li>Obtain information about the product</li>
+        <li>Report a problem and access logs</li>
+        <li>Log out</li>
+      </ul></p>
+    <p>Just below the menu icon, is the filter bar. <image href="Images/chat_filter_bar.png"
+        placement="break" id="image_km3_gyx_dvb" alt="Filter bar for active chats"/>You can filter
+      active chats by the following:<ul id="ul_qgt_lyx_dvb">
+        <li>All chats</li>
+        <li>Chats with individual people</li>
+        <li>Group chats</li>
+        <li>Meeting chats for meetings that you participated</li>
+      </ul> All filters list the chats from last to first.</p>
+  </conbody>
+  <?tm 1351004034 0?>
+</concept>
+<?Pub *0000002118?>

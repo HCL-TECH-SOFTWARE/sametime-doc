@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="api_intro" xml:lang="en-us">
+ <title>HCL Sametime API Guide</title>
+ <shortdesc>Welcome to HCL Sametime API. Sametime accepts custom applications, defined by a set of
+  endpoints, that allow you to configure Sametime to meet your business needs. This handbook covers
+  the basic guidelines on how to navigate through the Sametime API Documentation and Client Platform
+  (technical preview).</shortdesc>
+</concept>

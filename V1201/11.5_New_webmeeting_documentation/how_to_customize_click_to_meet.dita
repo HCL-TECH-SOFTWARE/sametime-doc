@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="how_to_customize_click_to_meet" xml:lang="en-us">
+<title>How to customize click to meet?</title>
+<shortdesc>When you click the <b>Launch Meeting and Send Invitation</b> button after configuring the
+        meeting URL, an invitation message displays with a hyperlink.</shortdesc>
+<taskbody>
+        <context>
+            <p>You can click the link to open the meeting in a browser and append to the
+                conversation, so it is convenient for the other party to quickly join the
+                meeting.</p>
+        </context>
+<steps>
+<step>
+                <cmd>Click the <uicontrol><image href="Images/launchmeeting.png"/> Launch Meeting
+                        and Send Invitation</uicontrol> button to open the meeting invitation.</cmd>
+                <info>
+                    <note>The icon shown in the chat window is an image representing the chosen
+                        external meeting provider.</note>
+                </info>
+            </step>
+<step>
+                <cmd>The meeting opens in a browser.</cmd>
+            </step>
+<step>
+                <cmd>Other users can see the meeting link in the chat conversation and can click it
+                    to join the meeting.</cmd>
+            </step>
+</steps>
+</taskbody>
+</task>

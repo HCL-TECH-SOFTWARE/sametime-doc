@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="troubleshooting_contact_support" xml:lang="en-us">
+    <title>Working with HCL support</title>
+    <shortdesc>HCL support is available to provide technical assistance with obtaining a solution to
+        problems with Sametime.</shortdesc>
+    <conbody>
+        <p>To request technical assistance, open a support case with HCL to work with a support
+            engineer in resolving the problem.  See <xref
+                href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0010164"
+                scope="external" format="html">How to open HCL Support case</xref> knowledge article
+            for details.</p>
+        <p>The support engineer needs to see the logs from the community pod. See the topic  <xref
+                href="troubleshooting_kubernetes_logs.dita" scope="local" format="dita"
+                />.<draft-comment author="debra.taylor">is there another term we can use instead of
+                "community pod", pod is kubernetes. I think this should be a general topic. Can we
+                use "Sametime server" log? The same for the linked topic, is there a Docker
+                equivalent? </draft-comment></p>
+        <p>When working with the support engineer the following information is helpful in
+            understanding the problem. Having the following information before talking with the
+            support engineer saves time and reduces multiple calls.<ul id="ul_fvg_frd_lvb">
+                <li>Time and date the problem was reproduced</li>
+                <li>Problem scope, such as are all users or only certain users impacted, does the
+                    problem occur when performing specific task, and more</li>
+                <li>Names of the user accounts involved. </li>
+                <li>Steps to reproduce the problem</li>
+                <li>Errors received by users</li>
+            </ul></p>
+        <p>You might be asked to share files with HCL support, see the  <xref
+                href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0010064"
+                scope="external" format="html">HTTPS and SFTP upload and download
+                instructions</xref> knowledge article for details.</p>
+    </conbody>
+</concept>

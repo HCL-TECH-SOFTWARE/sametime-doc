@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="change_screen" xml:lang="en-us">
+  <title>Raising my hand</title>
+  <shortdesc>The Raise hand <image href="Images/raisehand.png" align="left" placement="inline"
+    id="image_wyh_twy_1pb"/> feature is enabled by default and allows users to raise and lower
+    hands throughout the meeting to request to speak, answer a poll, or as a form of silent
+    acknowledgment.</shortdesc>
+  <conbody>
+    <p><b>Description</b></p>
+    <p>Toggling the hand is visible to all meeting participants.</p>
+    <p>A user can lower their hand or a moderator can also lower a user’s hand. </p>
+  </conbody>
+</concept>
+<?Pub *0000001020?>

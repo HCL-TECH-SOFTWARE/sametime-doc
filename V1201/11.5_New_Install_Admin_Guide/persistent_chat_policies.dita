@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="persistent_chat_policies" xml:lang="en-us">
+    <title>Disabling Persistent Chat policy</title>
+    <shortdesc>This section describes how users can configure policy to allow/disallow users to use the new persistent chat features.</shortdesc>
+<taskbody>
+<context>
+    <p><note>The persistent chat feature is required (must be enabled) for the web client.</note></p>
+    <p>By default, the policy for persistent chat is enabled for both default and anonymous
+                policies. Policies are configured in the policies.users.xml file. For more
+                information on policies, see the topic <xref href="configuring_policies.dita"
+                    >Configuring Policies</xref>. </p></context>
+<steps>
+    <step>
+        <cmd>Remote into the Sametime Community server.</cmd>
+    </step>
+    <step>
+        <cmd>Open the policies.users.xml file located in the Domino program directory and place in edit mode.</cmd>
+    </step>
+    <step>
+        <cmd>Modify the ‘current-value’ of im.persistentChatEnabled and change from "1" to “0” (for false).</cmd>
+    </step>
+    <step>
+        <cmd>Save and Close the file.</cmd>
+        <info><p>As a best practice it is recommended to test the policies.users.xml file using a browser to ensure formatting is correct.</p>
+            <p>Sametime Policies refresh once per hour. If the changes are needed sooner, restart the Community Server for the change to take effect.</p></info></step>
+</steps>
+
+</taskbody>
+</task>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="help_support" xml:lang="en-us">
+ <title>Displaying the About screen</title>
+ <shortdesc>A settings screen will provide a central place for the user to modify settings related to the add-in.</shortdesc>
+ <conbody>
+  <p><image href="Images/settings.png" placement="break" align="left" id="instantroom"/></p>
+ </conbody>
+</concept>
+<?Pub *0000001020?>

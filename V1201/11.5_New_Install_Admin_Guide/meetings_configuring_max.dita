@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="meetings_configuring_max" xml:lang="en-us">
+    <title>Configuring the maximum number of meeting participants</title>
+    <shortdesc>Sametime currently supports a maximum of 100 users in a meeting regardless of the
+        selected meeting mode. To reach a wider audience, you can start a live stream and share the
+        link to all intended
+        participants.<!-- For more information, refer to <xref href="../11.5_New_webmeeting_documentation/youtube_start_livestream.dita"/>.--></shortdesc>
+    <taskbody>
+        <context id="context_jk4_wnt_pnb">By default, you can host a meeting with up to 100
+            participants. You can lower the maximum capacity to any value below 100 as needed. Users
+            who attempt to join a meeting that has reached maximum capacity encounter a message
+            indicating that the meeting room is full.<note>The greater the number of concurrent
+                users accessing the server, the greater the resources consumed, particularly CPU
+                resources. Other factors, such as meeting recordings, can influence the total
+                capacity. Refrain from changing this setting without proper sizing information from
+                HCL. For sizing-related questions, <xref
+                    href="https://voltsandbox.hcltechsw.com/volt-apps/anon/org/app/7fc42e3c-19f4-48df-87fc-09d0ac7c3296/launch/index.html?form=F_Form1"
+                    format="html" scope="external">contact HCL</xref>.</note><p><b>Procedure for
+                    Kubernetes </b>
+                <ol id="ol_az4_t4t_pnb">
+                    <li>Place the helm/values.yaml in edit mode.
+                        <codeblock>vi helm/values.yaml </codeblock></li>
+                    <li>Edit the following line:
+                        <codeblock>MaxOccupants= &lt;new value representing the number of total users in a meeting> </codeblock></li>
+                    <li>Save the file.</li>
+                    <li>Restart the Sametime Meeting Server using the instructions in the topic
+                            <xref href="starting_and_stopping_meeting_servers.dita"/>.</li>
+                </ol></p><p><b>Procedure for Docker: </b></p><ol id="ol_mlf_fpt_pnb">
+                <li>Place the docker-compose.yml file in edit mode. </li>
+                <li>Under the prosody section, modify the value of MAX_OCCUPANTS:
+                    <codeblock>MAX_OCCUPANTS=&lt;new value> </codeblock></li>
+                <li>Save the docker-compose.xml file. </li>
+                <li>Restart the Sametime Meeting Server using the instructions in the topic <xref
+                        href="starting_and_stopping_meeting_servers.dita"/>.</li>
+            </ol></context>
+    </taskbody>
+   
+</task>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="video_chatting" xml:lang="en-us">
+<title>Video chatting</title>
+<shortdesc>You can initiate a video chat with someone on your contacts list from HCL Connections
+Chat on your Apple device.</shortdesc>
+<concept id="initiating_video_chat">
+<title>Initiating a video chat </title>
+<conbody>
+<p>There are several ways to being a video chat:</p>
+<ul>
+<li>Press the <uicontrol>Start a Video Chat</uicontrol> option from the contact's business card.
+(iPhone only)</li>
+<li>Select the <uicontrol>Video Chat</uicontrol> button on the top right hand corner of the business
+card. (iPad only)</li>
+<li>At the top of an in progress chat window, select the <uicontrol>Video Chat</uicontrol> button.
+(iPhone only)</li>
+</ul>
+<p>The person receives a notification that you wish to begin a video chat and either accept or
+    decline it. </p>
+<p>If a video chat is already in progress with one of your contacts and you have navigated away from
+it, you can resume it one of several ways:</p>
+<ul>
+<li>Tap the <uicontrol>Video Call In Progress</uicontrol> bar at the top of the screen (iPhone
+only).</li>
+<li>Navigate back to the business card for your chat partner (iPad only).</li>
+<li>Select <uicontrol>Resume this Video Chat</uicontrol> from the contact's business card (iPhone
+only).</li>
+<li>Select the <uicontrol>Video Chat</uicontrol> tab (iPhone and iPad).</li>
+</ul>
+</conbody>
+</concept>
+<concept id="receiving_video_chat">
+<title>Receiving a video chat request </title>
+<conbody>
+<p>If someone attempts to initiate a video chat with you, a notification is displayed on your
+    screen. The following options are available:</p>
+<table frame="all" rowsep="1" colsep="1" id="table_ics_lrc_rhb">
+<title>Video chat request options</title>
+<tgroup cols="2">
+<colspec colname="c1" colnum="1" colwidth="1*"/>
+<colspec colname="c2" colnum="2" colwidth="1*"/>
+<thead>
+<row>
+<entry>Option</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Answer</entry>
+<entry>Accept the request and begin the video chat.</entry>
+</row>
+<row>
+<entry>Answer with Audio Only</entry>
+<entry>Accept the request as an audio chat instead of a video chat.</entry>
+</row>
+<row>
+<entry>Decline</entry>
+<entry>Decline the chat invitation.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</conbody>
+</concept>
+<concept id="participating_video_chat">
+<title>Participating in a video chat </title>
+<conbody>
+<p>Once a video chat has begun, you and your chat partner see and hear each other through your
+    device. Your contact appears in a video frame, with a small preview version of your own feed in
+    the top, right corner. </p>
+<note>The preview version of your video feed can be relocated by pressing and dragging the window to
+one of the four corners of your contact's video feed.</note>
+<p>Once the video chat has begun, you can display the chat option bar by tapping the video of your
+contact. The following options are available:<table frame="all" rowsep="1" colsep="1"
+id="table_xhy_dsc_rhb">
+<title>Video chat options</title>
+<tgroup cols="2">
+<colspec colname="c1" colnum="1" colwidth="1*"/>
+<colspec colname="c2" colnum="2" colwidth="1*"/>
+<thead>
+<row>
+<entry>Option</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>End Call</entry>
+<entry>End the video chat.</entry>
+</row>
+<row>
+<entry>Stop Video</entry>
+<entry>Temporarily suspend video transmission from your device. Your chat partner receives your
+         audio.</entry>
+</row>
+<row>
+<entry>Mute Audio</entry>
+<entry>Temporarily mute the audio from your device. Your chat partner receives your video
+         transmission.</entry>
+</row>
+<row>
+<entry>Hold Call</entry>
+<entry>Pause the call completely, temporarily suspending both your audio and video
+transmissions.</entry>
+</row>
+<row>
+<entry>Switch Camera</entry>
+<entry>Switch between your device's two camera, usually front or back. This option is only available
+on devices with multiple cameras.</entry>
+</row>
+<row>
+<entry>Full Screen</entry>
+<entry>Enter full screen mode. This expands the video feed from your chat partner across the entire
+screen of your device. <p>To exit full screen mode, make a pinching gesture on the screen, double
+tap the screen, or press the Embedded Video button from the options bar.</p><note>This option only
+appears if you are in embedded video mode.</note></entry>
+</row>
+<row>
+<entry>Minimize Video</entry>
+<entry>On an iPad, this shrinks a full screen video feed to an embedded version in the HCL
+Connections Chat client. On an iPhone, this dismisses the video and puts the client on Hold until
+the video is resumed.<note>On an iPad, this option only appears if you are in full screen
+mode.</note></entry>
+</row>
+</tbody>
+</tgroup>
+</table></p>
+<p>If, during the course of the conversation, you navigate away from the video chat, you can return
+to it in one of four ways:<ul>
+<li>Tap the <uicontrol>Video Call in Progress</uicontrol> banner at the top of the device
+screen.</li>
+<li>Navigate back to your chat partner’s Business Card using the Contacts tab. </li>
+<li>Choose your chat partner's contact from the Favorites tab, if he or she has previously been
+marked as a favorite. </li>
+<li>Tap the <uicontrol>Video Chat</uicontrol> tab from the More menu. If a video chat is in
+      progress, the tab pulses red.</li>
+</ul></p>
+</conbody>
+</concept>
+<concept id="using_video_chat_tab">
+<title>Using the Video Chat tab </title>
+<conbody>
+<p>If no video chat is presently occurring, tapping the <uicontrol>Video Chat</uicontrol> tab from
+the <uicontrol>More</uicontrol> menu displays a video chat list, showing a record of all video chats
+that have occurred on the device, with the most recent video chat at the top. The list indicates
+with icons whether a video chat was initiated by you, received by you, declined by you, or if you
+missed any calls. Tapping on any of the list items displays the Business Card of that chat
+partner.</p>
+<p>If a video chat is presently occurring, tapping the <uicontrol>Video Chat</uicontrol> tab returns
+    you to the chat if you have navigated away from it. </p>
+</conbody>
+</concept>
+<concept id="configuring_video_chat">
+<title>Configuring video chat </title>
+<conbody>
+<p>To configure video chat options, select <uicontrol>Settings</uicontrol> from the
+<uicontrol>More</uicontrol> menu. Then select Voice and Video. You can choose the method for placing
+calls and whether or not to enable both voice and video chats, voice chats only, as well as restrict
+chat calls to WiFi connections only.</p>
+</conbody>
+</concept>
+</concept>
+<?Pub *0000001020?>

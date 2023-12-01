@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_kubernotes_meetings" xml:lang="en-us">
+ <title><b>Sametime 11.5 Meetings Kubernetes Deployment</b></title>
+ <taskbody>
+<prereq>
+ <ul>
+  <li>Kubernetes v1.16.0 or later with an ingress controller (see <xref
+      href="t_kubernotes_quickstart.dita">Kubernetes QuickStart</xref> for a basic single node
+     deployment)</li>
+  <li>Helm v3.1.2</li>
+  <li>Sametime Proxy v11.5</li>
+  <li>Sametime Chat v11.5</li>
+ </ul>
+</prereq>
+<context>
+<p><b>Network considerations</b></p>
+ <p>Sametime Meetings uses UDP on port 30000 by default. You should ensure that the clients you wish to service have UDP inbound access to this port and that outbound UDP traffic from the deployment is unrestricted. Additionally, Sametime Meetings will utilize internet accessible STUN servers to help clients and the server negotiate media paths for the exchange of audio/video/appshare data. 
+  Public Google STUN servers are configured by default.</p>
+ <p>Docker/Kubernetes uses internal private network addresses for the deployed services. Applications may also expose network ports directly on the Node as well. 
+  Sametime Meetings defines a LoadBalancer service for the HTTP/HTTPS traffic and a NodePort service for the media traffic. 
+  In order to expose these services to the outside world, an ingress controller is required for the HTTP/HTTPS traffic and the IP address of the node must be accessible for the media traffic.</p>
+ <p>To deploy Sametime meetings on Kubernetes</p></context>
+<steps>
+ <step>
+  <cmd>Download Sametime_meetings.zip from Flexnet.</cmd>
+ </step>
+ <step>
+  <cmd>Extract the zip file to any directory on either the master kubernetes host itself or on a machine which has management access to the kubernetes cluster.</cmd>
+ </step>
+ <step>
+  <cmd>Change to that directory and load the docker images into your docker registry via the command:</cmd>
+  <info><codeblock>./load.sh</codeblock>
+   <note>The load script will simply extract the docker images to the local host by default. 
+    When prompted, you should specify your own docker registry host FQDN. 
+    This may be a cloud provider registry or some other private registry accessible to all of the nodes. 
+    If you don't have your own registry, then you must run the load script on each node in the kubernetes cluster and just use the script defaults.
+    
+   </note></info>
+ </step>
+ <step>
+  <cmd>Configure secrets for the deployment.</cmd>
+    <info>
+     <codeblock>./generateSecrets.sh</codeblock>
+    <p>Enter the Sametime JWT secret from your existing Sametime deployment. In the
+       <codeph>sametime.ini</codeph> file, on the community server, the value is defined in the
+       <codeph>JWT_SECRET</codeph> configuration item. On the proxy server, it is the value of the
+       <codeph>&lt;jwtSecret></codeph> configuration element in <codeph>stproxyconfig.xml</codeph>.
+      The value is base64 encoded in both of those locations. Copy and paste the base64 encoded
+      value here.<note>To define a new secret, do not enter any value in the field. </note></p>
+     <p>After executing this command, <codeph>helm/templates/meetings-secrets.yaml</codeph> will
+      have secrets unique to this deployment. The <codeph>sametimeJwt</codeph> value can be found in
+      the <codeph>JwtSecret</codeph> data object and should then be configured in both
+       <codeph>sametime.ini</codeph> and <codeph>stproxyconfig.xml</codeph> on the Sametime v11.5
+      Chat and Proxy servers, respectively.</p></info>
+ </step>
+ <step>
+  <cmd>Create the meeting recordings volume.</cmd>
+    <info>
+     <p>Meeting recordings are stored as MP4 files in a temp directory on the meeting recorder nodes
+      during the meeting. After the meeting, the recordings are moved to a persistent volume. You
+      should allocate a volume accessible to the kubernetes cluster which is substantial enough to
+      handle the expected number of meeting recordings assuming a rate of about 100M per 1 hour of
+      meeting. By default, recordings are persisted for 3 days, so keep that in consideration as
+      well when sizing the volume.</p>
+     <p>To create a persistent volume on a self-managed k8s cluster, see <xref
+       href="t_single_node.dita">Single Node Persistent Storage</xref>. </p>
+     <p>For a cloud provider, there are various options for creating persistent storage. The end
+      result is that you should have a persistent volume claim established in the kubernetes cluster
+      with sufficient storage to meet your recording needs. The <codeph>accessMode</codeph> of the
+      claim should be <codeph>ReadWriteOnce</codeph>. You may use command below to define a claim
+      assuming a default <codeph>storageClassName</codeph> which should work in all cloud providers
+      assuming you have storage available to your kubernetes cluster. Make sure to edit the file to
+      configure the amount of storage to be sufficient for your needs:</p>
+     <p>
+      <codeblock>kubectl -f create kubernetes/storage/sametime-meetings-pvc.yaml</codeblock>
+     </p>
+    </info>
+ </step>
+ <step>
+  <cmd>Change to the helm directory and edit the global configuration</cmd>
+    <info>
+     <p>The file is called <codeph>values.yaml</codeph>and should be configured with specifics for
+      your deployment. The following are some important fields, their description, and default
+      values where applicable:<ul id="ul_e4w_b1z_ylb">
+       <li><b>serverHostname</b><p>This should be defined as the fully-qualified-host-name of the
+         system as you would expect users to access via a web browser. Default is
+          <codeph>meetings.company.com</codeph></p></li>
+       <li><b>jwtCookieDomain</b><p>This should be defined as the domain part of the
+         fully-qualified-host-name. It is used for single-sign-on with the Sametime Proxy
+         deployment. For example, if the proxy is <codeph>webchat.company.com</codeph> and the
+         meeting server is <codeph>meetings.company.com</codeph> then the cookie domain should be
+          <codeph>company.com</codeph> so that cookies can be shared between the two deployments.
+         Default is empty, meaning no SSO is configured.</p></li>
+       <li><b>sametimeProxyHost</b><p>This is the resolvable name or IP address of the Sametime
+         Proxy v11.5 host. Default is empty.</p></li>
+       <li><b>sametimeProxyPort</b><p>This is the port of the Sametime Proxy v11.5 host. Default is
+          <codeph>443</codeph>.</p></li>
+       <li><b>idpUrl</b><p>If SAML is used for authentication, this is the IDP URL defined in that
+         configuration. Default is empty.</p></li>
+       <li><b>jvbPort</b><p>This is the media port used by the deployment. This defines the <xref
+          href="https://kubernetes.io/docs/concepts/services-networking/service/#nodeport"
+          format="html" scope="external">Kubernetes NodePort</xref> which will be used in the
+         deployment. The value must be in the range of 30000-32767 unless you have specialized the
+         node port range configuration. Default is <codeph>30000</codeph>.</p></li>
+       <li><b>privateIp</b><p>This is the network address by which your server will be
+        accessed.</p></li>
+       <li><b>numberOfRecorders</b><p>This is the fixed number of recorders and limits the number of
+         meetings which may be recorded at one time for a given static deployment. This value should
+         match the number of virtual sound devices you have <xref
+          href="https://git.cwp.pnp-hcl.com/hcl-sametime/meeting-server/wiki/Configure-Virtual-Sound-Devices-on-the-host"
+          format="html" scope="external">configured on the host</xref>.</p><p>If you deploy on a
+         cloud provider, this is the default number of recorders which should match your minimum
+         number of nodes in the recorder node group assuming a 1-to-1 configuration of pod-to-node.
+         The number of recorder nodes will grow from this minimum, as needed, up to the maximum size
+         of the recorder node group. Default is <codeph>5</codeph>.</p></li>
+       <li><b>recordingsExpireInDays</b><p>These are the number of days a meeting recording will be
+         available for download/playback. Default is <codeph>3</codeph>.</p></li>
+       <li><b>recordingsClaim</b><p>This is the name of the persistent volume claim that defines the
+         storage volume for meeting recordings. Default is
+        <codeph>sametime-meetings</codeph>.</p></li>
+       <li><b>imageRepo</b><p>This is the docker repository where the Sametime Meeting docker images
+         are located. If you use a cloud provider image registry or your own private registry, you
+         should update this setting to the base name of that image registry. Default is
+          <codeph>sametime-docker-prod.cwp.pnp-hcl.com</codeph> and assumes that you have executed
+         the <codeph>./load.sh</codeph> script with its default configuration on each kubernetes
+         node.</p></li>
+      </ul></p>
+    </info>
+ </step>
+ <step>
+  <cmd>Deploy the helm chart</cmd>
+    <info>
+     <codeblock>helm install sametime-meetings .</codeblock>
+     <note>
+      <p>The command assumes you are in the helm directory. The <codeph>.</codeph> represents
+       current directory. Instead of <codeph>sametime-meetings</codeph> you may choose any
+       descriptive name for the deployment. You might also consider deploying the application in a
+       namespace via the <codeph>-n or --namespace</codeph> option. You would first need to create
+       the namespace via <codeph>kubectl create namespace</codeph></p>
+     </note>
+    </info>
+  
+ </step>
+ <step>
+  <cmd>Verify the service.</cmd>
+  <info>It is important to verify that at least 3 parties can join a meeting together and see/hear each other. Sametime Meetings will optimize a 2-party call and not involve a media path through the server. It is possible to perform this verification on a single machine by using multiple browser tabs open to the same meeting. You will immediately hear microphone feedback if you allow any of the clients to be unmuted and there is a speaker producing sound that the utilized microphone will pick up. 
+   Hearing feedback when 3 parties are in the same meeting on the same machine is a good assurance that there is a media path with the server.</info>
+ </step>
+</steps>
+ </taskbody>
+</task>
+<?Pub *0000003147?>

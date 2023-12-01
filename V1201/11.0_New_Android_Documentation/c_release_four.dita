@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_release_three" xml:lang="en-us">
+ <title>Release 11.0.4</title>
+ <shortdesc>Release 11.0.4 includes the following new features.</shortdesc>
+ <conbody>
+  <p><ul><li>The Android Target SDK has been updated from Android 9 to 10. </li>
+   <li>The minimum SDK supported is now Android 7. </li>
+   <li>New network connectivity banner warning of loss of connection. </li>
+   <li>New Add Communities View.</li>
+    <li>Meetings Pre-Release fix for Picture in Picture.</li>
+    <li>Android Enterprise configuration application updates.</li>
+    <li>Bug fixes.</li></ul></p>
+ </conbody>
+ </concept>
+<?Pub *0000001020?>

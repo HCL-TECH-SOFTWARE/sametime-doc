@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><val>
+    <prop action="exclude" att="otherprops" val="LL"/>
+    <prop action="exclude" att="otherprops" val="conn"/>
+    <prop action="include" att="otherprops" val="notes"/>
+    <prop action="exclude" att="otherprops" val="x_euhelp"/>
+    <prop action="exclude" att="otherprops" val="x_euhelp_ic"/>
+    <prop action="exclude" att="otherprops" val="ic_only"/>
+    <prop action="include" att="otherprops" val="notinbeta"/>
+    <prop action="exclude" att="otherprops" val="betaonly"/>
+    <prop action="include" att="otherprops" val="socialpim"/>
+
+   <!--Exclude info for Sametime only--><prop action="include" att="otherprops" val="st"/></val>

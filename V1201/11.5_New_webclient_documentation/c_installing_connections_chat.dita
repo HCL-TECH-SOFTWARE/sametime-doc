@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="installing_connections_chat" xml:lang="en-us">
+<title>Installing Sametime on your device</title>
+  <shortdesc>To use HCL <tm tmtype="reg" trademark="Sametime">Sametime</tm>, first install the app on your iOS device from the Apple App
+  Store. </shortdesc>
+</concept>
+<?Pub *0000001020?>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="implement_tls_configuration" xml:lang="en-us">
+    <title>Implementing the Global TLS Scope</title>
+<taskbody>
+<prereq><ul>
+    <li>GSKit must already be installed. </li>
+    <li>You must have a key store and trust store as a .p12 or .jks file. </li>
+    <li>Both third party and self-signed certificates are supported. 
+        <p><note>If you have a Sametime Proxy server, it should use third-party certificates if you plan to support mobile clients. </note></p></li>
+</ul></prereq>
+<context>
+    <p><b>Concepts:
+    </b><ul>
+        <li>There is a trust store needed for creating outbound connections.<ul>
+            <li>The trust store is used by the client side of a TLS connection to validate the server's certificate.  </li>
+            <li>With mutual authentication, the trust store is also used by the server to validate the client's certificate. </li>
+        </ul> </li>
+        <li>There is a key store needed for accepting inbound connections.<ul>
+            <li>The key store is used by the server side of a TLS connection to store the server certificate as well as chain certificates, if any chain certificates exist.</li>
+            <li>During client authentication, the key store is used by the client to store its client certificate and chain certificates, if any exist.</li>
+        </ul>  </li>
+        <li>All Sametime encryption is done at TLS 1.2, which can be overridden if a lower version is required. </li>
+    </ul></p>
+    <p>Configure these required parameters into the [Config] section of sametime.ini </p>
+    <p><table frame="all" rowsep="1" colsep="1" id="Required_parameters ">
+        <title><b>Required parameters</b></title>
+        <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="1*"/>
+            <colspec colname="c2" colnum="2" colwidth="1*"/>
+            <colspec colname="c3" colnum="3" colwidth="1*"/>
+            <thead>
+                <row>
+                    <entry>Setting</entry>
+                    <entry>Description</entry>
+                    <entry>Example Value</entry>
+                </row>
+            </thead>
+            <tbody>
+                <row>
+                    <entry>ST_TLS_TRUST_STORE_TYPE</entry>
+                    <entry>The trust store type p12= use for files ending with .p12 or .pfx (p12 is recommended) jks= use for files ending with .jks </entry>
+                    <entry>p12</entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_KEY_STORE_TYPE</entry>
+                    <entry>This is for the key store type.  
+                        
+                        p12= use for files ending with .p12 or .pfx (p12 is recommended) 
+                        
+                        jks= use for files ending with .jks </entry>
+                    <entry>p12</entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_TRUST_STORE_FILE </entry>
+                    <entry>Enter the full path and name of the trust store file.</entry>
+                    <entry>C:\Program Files\HCL\Domino\truststore.p12</entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_TRUST_STORE_PASSWORD </entry>
+                    <entry>Enter the password to the trust store. This will be stored in clear text, if desired a stash file can be used instead. Refer to the optional parameters section.</entry>
+                    <entry>SecureSametimePassw0rd</entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_KEY_STORE_FILE </entry>
+                    <entry> Enter the full path and name of the key store.</entry>
+                    <entry>C:\Program Files\HCL\Domino\keystore.p12</entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_KEY_STORE_PASSWORD </entry>
+                    <entry>Enter the password to the keystore </entry>
+                    <entry>SecureSametimePassw0rd </entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table></p>
+    <p><b>Optional: Additional Sametime.ini parameters </b></p>
+    <p><table frame="all" rowsep="1" colsep="1" id="Optional_Parameters">
+        <title><b>Optional Parameters</b></title>
+        <tgroup cols="2">
+            <colspec colname="c1" colnum="1" colwidth="1*"/>
+            <colspec colname="c2" colnum="2" colwidth="1*"/>
+            
+            <thead>
+                <row>
+                    <entry>Example</entry>
+                    <entry>Description</entry>
+                </row>
+            </thead>
+            <tbody>
+                <row>
+                    <entry>ST_TLS_FIPS_COMPLIANCE</entry>
+                    <entry>Set to 1 to enable FIPS compliance.</entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_SECURITY_LEVEL </entry>
+                    <entry><p>The required security level. The minimum security level controls compliance with the security standards NIST SP800-131a and NSA Suite B. </p>
+                        <p><b>0 = No requirement </b></p>
+                        <p><b>1 = NIST SP800 -131a “Transition mode” </b></p>
+                        <p><b>2 = NIST SP800-131a “Strict mode” </b></p>
+                        <p><b>3 = NSA Suite B 128-bit level </b></p>
+                        <p><b>4 = NSA Suite B 192-bit level</b></p></entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_MAX_SESSION_AGE </entry>
+                    <entry>The amount of time before re-negotiating a session. The time to keep a session, in seconds, before deleting it from cache. The default of -1 implies no cache, which is generally sufficient for most Sametime deployments. A 0 implies no limit on the age of cached sessions.</entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_SESSION_CACHE_SIZE</entry>
+                    <entry>Ignored for outbound connections, only applies to inbound connections. The number of TLS sessions that a server keeps in memory, for session reuse. This option tells the server to keep a cache of the TLS session state after the connection is closed. It is useful after temporary network outage, when the client attempts to reconnect to the server, by reusing the session that was established earlier. If the server finds the session in cache, the handshake is abbreviated, consuming less resources. If the session is not in cache, a new session is established, including the full handshake. The default value of -1 implies no session caching, which is generally sufficient for most Sametime deployments. A value of 0 imposes no limit on the number of cached sessions.</entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_SESSION_CACHE_TIME</entry>
+                    <entry>Ignored for outbound connections, only applies to inbound connections. Time before renegotiating a session - The maximum age of a TLS session, in seconds. If the same session is used longer than this setting, a new session is renegotiated over the same connection. The default value of 0 implies no session renegotiation. </entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_MIN_PROTOCOL_VERSION= </entry>
+                    <entry><p>The oldest version of the SSL/TLS protocol to negotiate during handshake. To set a TLS protocol other than 1.2, use Set the value to your needs: </p>
+                        <p><b>For SSL v3: 0x300 </b></p>
+                        <p><b>For TLS v1.0 = 0x301 </b></p>
+                        <p><b>For TLS v1.1 = 0x302 </b></p>
+                        <p><b>For TLS v1.2 = 0x303 (or leave blank for default to TLS 1.2) </b></p></entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_MAX_PROTOCOL_VERSION </entry>
+                    <entry><p>To set a maximum TLS protocol other than 1.2, use Set the value to your needs: </p>
+                        <p><b>For SSL v3: 0x300 </b></p>
+                        <p><b>For TLS v1.0 = 0x301 </b></p>
+                        <p><b>For TLS v1.1 = 0x302 </b></p>
+                        <p><b>For TLS v1.2 = 0x303 (or leave blank for default to TLS 1.2) </b></p>
+                        </entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_CIPHER_SUITES </entry>
+                    <entry>A comma-separated list of cipher suites. Leave blank to enable the default cipher suites. 
+                        </entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_CLIENT_AUTH </entry>
+                    <entry><p>Request a certificate from the client, does not apply to outbound connections.  </p>
+                        <p><b>0 = None:</b> The server will not request a certificate from the client. This is the default value. </p>
+                        <p><b>1 = Want:</b> The server will request a certificate from the client, but will proceed with the handshake even if the client does not present one.</p>
+                        <p><b>2 = Need:</b> The server will request a certificate from the client, and will fail the connection if the client does not present one. </p></entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_TRUSTED_HOSTS </entry>
+                    <entry>A list of trusted certificate hostnames. A comma-separated list of one or
+                                    more trusted hosts, to compare against the peer certificate.
+                                    This comparison takes place during the TLS handshake, when
+                                    receiving a certificate from the peer -- either when the client
+                                    receives the server certificate, or when the server receives a
+                                    client certificate. The name in the peer certificate is
+                                    typically specified in either the subject CN (common name) or
+                                    the <codeph>subjectAltName</codeph> field. Validation passes if there is at least
+                                    one match between the name in the peer certificate and a name in
+                                    the trusted hosts list. A trusted host name may contain the
+                                    wildcard character *, indicating comparison of domain components
+                                    rather than the entire string as a whole. This follows the
+                                    matching rules of <xref
+                                        href="https://www.ietf.org/rfc/rfc2818.txt" format="html"
+                                        scope="external">RFC 2818</xref> section 3.1. Certificate
+                                    subject validation only applies when receiving a certificate
+                                    from the peer. In order to ensure that a server performs this
+                                    comparison, the server must require a client certificate, by
+                                    setting <codeph>ST_TLS_CLIENT_AUTH=2 </codeph>.</entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_MIRROR_TRUSTED_HOSTS </entry>
+                    <entry>Necessary only if you have a key store with multiple key certificates. In which case, each certificate has a different alias in the key store. On the server side, specify the alias of the certificate that identifies the server. If the key store is used on the client side of TLS connections, specify the alias of the certificate that identifies the client.</entry>
+                </row>
+                <row>
+                    <entry>ST_TLS_KEY_LABEL </entry>
+                    <entry><p>Ignored if ST_TLS_KEY_STORE_FILE is missing, or if there is only one key in the keystore. </p>
+                        <p>Necessary only if you have a key store with multiple key certificates. In which case, each certificate has a different alias in the key store. On the server side, specify the alias of the certificate that identifies the server. If the key store is used on the client side of TLS connections, specify the alias of the certificate that identifies the client.</p></entry>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
+                <note id="note_yw3_zht_3tb">When you enable TLS for the Sametime server connections,
+                    TLS version 1.2 is used by default. SSLv3 and TLSv1 have security
+                    vulnerabilities and should not be used.</note></p>
+    <p><b>Parameters to use a stash file </b></p>
+    <p>Storing the certificate store password in a stash file is useful for keeping sametime.ini file clean of passwords. The password stash file is not securely encrypted, and therefore it should be protected from unauthorized access.</p>
+    <p>To create the password stash file for the first time, complete these steps: 
+    </p>
+<ol>
+    <li>Set both the password parameters in the [Config] section of sametime.ini:
+                            <p><codeph>ST_TLS_TRUST_STORE_PASSWORD=&lt;your password></codeph></p>
+                    <p><codeph>ST_TLS_KEY_STORE_PASSWORD=&lt;your password> </codeph></p></li>
+    <li>Set the path to the stash files, relative to the Domino directory:
+                            <p><codeph>ST_TLS_KEY_STORE_PASSWORD_STASH_FILE=&lt;C:\Program
+                            Files\HCL\Domino\key.sth>
+                            </codeph></p><p><codeph>ST_TLS_TRUST_STORE_PASSWORD_STASH_FILE=&lt;C:\Program
+                            Files\HCL\Domino\trust.sth></codeph></p></li>
+    <li>Make sure the password stash file does not exist in the file system. </li>
+    <li>Start the Sametime server. </li>
+    <li>Upon initialization, Sametime creates the password stash file and deletes the cleartext password from the configuration. </li>
+    <li>The next time the server is started, the password is obtained from the password stash file. </li>
+    
+</ol>
+    <p><note>The password stash file is not securely encrypted, it must be protected from unauthorized access. </note></p></context>
+</taskbody>
+</task>

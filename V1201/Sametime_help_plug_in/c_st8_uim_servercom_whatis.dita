@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_st8_uim_servercom_whatis" xml:lang="en-us">
+<title>What is a server community?</title>
+<shortdesc>A server community is a group of people belonging to the
+same directory or user registry, such as your corporate directory,
+or external server communities outside of your organization. Your
+administrator determines which server communities are available to
+you.</shortdesc>
+<conbody>
+<p> You might be able to add one or more of these server communities
+to your client. Then, you can add the people in these server communities
+to your contact list so that you chat with them.</p>
+<p>If your system administrator connects one of your server communities
+to one or more public messaging networks, you can chat with
+members of these networks.</p><?Pub Caret 127?>
+</conbody>
+</concept>
+<?Pub *0000001020?>

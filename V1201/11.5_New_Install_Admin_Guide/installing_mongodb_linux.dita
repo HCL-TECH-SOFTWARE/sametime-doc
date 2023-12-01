@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="installing_mongodb_linux" xml:lang="en-us">
+<title>Installing MongoDB on Linux</title>
+    <shortdesc>MongoDB can be downloaded from the MongoDB website. This topic includes the steps for
+        installing on a CentOS and RHEL environments. For information on installing MongoDB on other
+        operating systems, refer to <xref href="https://docs.mongodb.com/manual/installation/"
+            format="html" scope="external">Install MongoDB</xref> on the MongoDB
+        website.</shortdesc>
+<taskbody>
+<context>
+            <p>If you already have MongDB installed and upgrading to MongoDB 4.4 or to the latest
+                patch release, see the <xref
+                    href="https://www.mongodb.com/docs/v6.0/tutorial/upgrade-revision/"
+                    format="html" scope="external">Upgrade to the Latest Revision of MongoDB</xref>
+                document.<!--<ul id="ul_t2l_tzh_3tb"><li>If you are upgrading your current deployment to to the latest patch release, see the <xref href="https://www.mongodb.com/docs/v4.4/release-notes/4.4/#std-label-4.4-upgrade" format="html" scope="external">Upgrade Procedures</xref> section of the <cite>Release Notes for MongoDB 4.4</cite> document.</li><li>If you are upgrading your current deployment to MongoDB 4.4, see the <xref href="https://www.mongodb.com/docs/v4.4/tutorial/upgrade-revision/" format="html" scope="external">Upgrade to the Latest Revision of MongoDB</xref> document.</li></ul>--></p>
+            <p>The commands used during the install process require running as ROOT or SUDO access.
+                If not running as root user, preface all commands with <cmdname>sudo</cmdname>.</p>
+            <note id="note_hx3_fxk_lvb"> In the following steps, MongoDB version 4.4 is used as an
+                example. If you are using a different version of MongoDB, refer to the MongoDB
+                documentation for how to issue commands for the version that you are using.</note>
+        </context>
+    <steps>
+        <step>
+                <cmd>Create a repository file for YUM to install MongoDB. Use the
+                        <cmdname>VI</cmdname> command to create and edit the
+                        <filepath>mongodb-org-4.4.repo</filepath> file.</cmd>
+                <info>
+                    <codeblock>
+> cd /etc/yum.repos.d 
+> vi mongodb-org-4.4.repo</codeblock>
+                    <note>The <cmdname>vi</cmdname> command is a screen-oriented text editor
+                        originally created for the Unix operating system. </note>
+                </info>
+            </step>
+        <step>
+                <cmd>To edit the file, use Insert (I) and then copy and paste the following
+                    content:</cmd>
+                <info>
+                    <codeblock id="codeblock_gsf_wq4_htb">
+[mongodb-org-4.4] 
+name=MongoDB Repository 
+baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.4/x86_64/ 
+gpgcheck=1 
+enabled=1 
+gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc 
+
+ </codeblock>
+                    <note id="note_hsf_wq4_htb">When copying and pasting, ensure to include all
+                        characters. The dash (-) in the <codeph>baseurl</codeph> can be removed in
+                        certain scenarios. </note>
+                </info>
+            </step>
+            <step>
+                <cmd>Press <uicontrol>Esc</uicontrol> to exit insert mode.</cmd>
+            </step>
+            <step>
+                <cmd>To save and exit, use the <cmdname>wq</cmdname> command. Precede the command
+                    with a colon (:). </cmd>
+                <info>
+                    <image href="Images/escape.png" placement="break" align="left" id="escape"/>
+                    <p>If you receive a <msgph>E212: Can’t open file for writing</msgph> error
+                        message, it means that a root user is not being or sudo acces is being
+                            used.<image href="Images/cantopen_file.png" placement="break"
+                            align="left" id="cantopen_file"/></p>
+                    <p>If the repo URL is not available, manually download and install the rpm
+                        files. You can download load the files from the <xref
+                            href="https://repo.mongodb.org/yum/redhat/7/mongodb-org/4.4/x86_64/RPMS"
+                            format="html" scope="external">Index of RPMS</xref> download page. For
+                        example:<codeblock id="codeblock_ex3_jpm_htb">
+mongodb-database-tools-100.5.1.x86_64.rpm  
+mongodb-org-shell-4.4.9-1.el7.x86_64.rpm  
+mongodb-org-tools-4.4.9-1.el7.x86_64.rpm  
+mongodb-org-server-4.4.9-1.el7.x86_64.rpm  
+mongodb-org-mongos-4.4.9-1.el7.x86_64.rpm  
+mongodb-org-database-tools-extra-4.4.9-1.el7.x86_64.rpm  
+mongodb-org-4.4.9-1.el7.x86_64.rpm</codeblock></p>
+                    <p>After the download completes, install:
+                        <codeblock id="codeblock_fbz_lms_3tb">
+yum localinstall mongodb-database-tools-100.5.1.x86_64.rpm -y  
+yum localinstall -y mongodb-org-database-tools-extra-4.4.9-1.el7.x86_64.rpm  
+yum localinstall -y mongodb-org-4.4.9-1.el7.x86_64.rpm mongodb-org-mongos-4.4.9-1.el7.x86_64.rpm mongodb-org-server-4.4.9-1.el7.x86_64.rpm mongodb-org-shell-4.4.9-1.el7.x86_64.rpm mongodb-org-tools-4.4.9-1.el7.x86_64.rpm -y </codeblock></p>
+                </info>
+            </step>
+            <step>
+                <cmd>Execute YUM to install the MongoDB package.</cmd>
+                <info>
+                    <codeblock id="codeblock_ebb_1qm_htb">>yum install mongodb-org </codeblock>
+                </info>
+                <substeps id="substeps_vyk_1qm_htb">
+                    <substep>
+                        <cmd>Type <uicontrol>y</uicontrol> to confirm the download and installed
+                            size.</cmd>
+                        <info>
+                            <image href="Images/yum_package.png" placement="break" align="left"
+                                id="image_xj5_cqm_htb"/>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Type <uicontrol>y</uicontrol> to accept the GPG key import.</cmd>
+                        <info>
+                            <image href="Images/key_import.png" placement="break" align="left"
+                                id="image_jwy_3qm_htb"/>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>A <msgph>Complete!</msgph> message is displayed when the install
+                            process is finished. </cmd>
+                        <info>
+                            <image href="Images/complete_install.png" placement="break" align="left"
+                                id="image_qsp_kqm_htb"/>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Verify that the MongoDB components, user, default log and data directories are
+                    created by checking if the following directories exist and are owned by
+                    mongod.</cmd>
+                <info>
+                    <ul id="ul_bbj_frm_htb">
+                        <li><filepath>/var/log/mongodb</filepath><image href="Images/mongodb.png"
+                                placement="break" align="left" id="image_uvx_grm_htb"/></li>
+                        <li><filepath>/var/lib/mongo</filepath><image href="Images/screen_mongo.png"
+                                placement="break" align="left" id="image_iv1_jrm_htb"/></li>
+                    </ul>
+                </info>
+            </step>
+        <step>
+                <cmd>To start the MongoDB server, enter the following command:</cmd>
+                <info>
+                    <codeblock id="codeblock_ryl_krm_htb">> service mongod start</codeblock>
+                </info>
+                <info>
+                    <p>To stop the MongoDB server, enter the command:
+                        <codeblock id="codeblock_syl_krm_htb">> service mongod stop</codeblock></p>
+                    <p>To verify the status of the MongoDB service, enter the command:
+                            <codeblock id="codeblock_tyl_krm_htb">> systemctl status mongod</codeblock><image
+                            href="Images/active_running.png" placement="break" align="left"
+                            id="active_running"/></p>
+                </info>
+            </step>
+    </steps>
+<postreq><xref href="t_configure_mongodb.dita"/></postreq>
+</taskbody>
+</task>

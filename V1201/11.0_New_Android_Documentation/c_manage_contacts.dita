@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="c_manage_contacts" xml:lang="en-us">
+ <title>Managing your contacts</title>
+ <shortdesc>Tap the menu icon and then <uicontrol>Contacts</uicontrol> to display the Contacts
+    screen. The <wintitle>Contacts</wintitle> screen displays your groups. When you expand the
+    groups, the app shows the individuals in the groups.</shortdesc>
+ <conbody>
+  <p>When you are online, by default only contacts that are also online are visible but you can
+      change this behavior in settings. The contacts screen is a list of your personal and public
+      groups. </p>
+    <p><term>Personal groups</term> are those that you create for organizing your own contacts.
+        <term>Public groups</term> are those that an administrator created and populated with
+      contacts. You can create a hierarchy of groups and contacts under your personal groups, but
+      public groups are static. They can be added as subgroups to personal groups, but you cannot
+      add contacts or subgroups to a public group.</p>
+  <p>As you navigate throughout your contacts hierarchy, each screen has a menu  icon (<image
+    href="Images/menu.png" id="image_tp5_mwx_bvb" alt="menu icon"/>) at the top. Tapping this icon
+   displays a list of appropriate actions. Actions on the main  <wintitle>Contacts</wintitle> screen
+   are different than actions on a personal or public group screen.</p>
+  <p>There are several options available by long pressing the group name on the
+        <wintitle>Contacts</wintitle> screen.<ul id="ul_qmg_2my_bvb">
+        <li>Rename a group</li>
+        <li>Remove a group</li>
+        <li>Send an announcement</li>
+        <li>Start a group chat</li>
+      </ul></p>
+ </conbody>
+</concept>
+<?Pub *0000002132?>

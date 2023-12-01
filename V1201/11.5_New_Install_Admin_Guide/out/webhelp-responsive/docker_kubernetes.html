@@ -1,0 +1,406 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xml:lang="en-us" lang="en-us" whc:version="22.0">
+    <head><link rel="shortcut icon" href="favicon.png"><!----></link><link rel="icon" href="favicon.png"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta charset="UTF-8"/><meta name="DC.rights.owner" content="(C) Copyright 2022"/><meta name="copyright" content="(C) Copyright 2022"/><meta name="generator" content="DITA-OT"/><meta name="DC.type" content="concept"/><meta name="description" content="Some frequently asked questions about Docker and Kubernetes."/><meta name="DC.format" content="HTML5"/><meta name="DC.identifier" content="docker_kubernetes"/><meta name="DC.language" content="en-us"/>        
+      <title>Docker and Kubernetes FAQ</title><!--  Generated with Oxygen version 23.1, build number 2021121413.  --><meta name="wh-path2root" content=""/><meta name="wh-source-relpath" content="docker_kubernetes.dita"/><meta name="wh-out-relpath" content="docker_kubernetes.html"/>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css"/>
+    
+    <link rel="stylesheet" href="./oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css"/>
+    
+    <!-- Template default styles  -->
+    <link rel="stylesheet" type="text/css" href="./oxygen-webhelp/app/topic-page.css?buildId=2021121413"/>
+    
+    
+    <script type="text/javascript" src="./oxygen-webhelp/lib/jquery/jquery-3.5.1.min.js"><!----></script>
+    
+    <script data-main="./oxygen-webhelp/app/topic-page.js" src="./oxygen-webhelp/lib/requirejs/require.js"></script>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/template/oxygen.css?buildId=2021121413"/>
+    <!-- Global site tag (gtag.js) - Google Analytics start-->
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-169645537-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169645537-2');
+</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics end-->
+
+    <script type="module" src="./oxygen-webhelp/template/resources/js/custom-hcl.js"></script>
+    <script type="module" src="./oxygen-webhelp/template/resources/js/constants.js"></script>
+    <script type="module" src="./oxygen-webhelp/template/resources/js/lang.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" href="${oxygen-webhelp-template-dir}/resources/css/custom-hcl.css" /> -->
+
+    <!-- OneTrust Cookies Consent Notice start -->
+    <script type="text/javascript" src="https://cdn.cookielaw.org/consent/99b8d579-c52a-43c9-ab7b-a35e60de7103/OtAutoBlock.js"></script>
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="99b8d579-c52a-43c9-ab7b-a35e60de7103"></script>
+    <script type="text/javascript">
+        function OptanonWrapper() { }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end -->
+
+    <!-- twitter widget -->
+    <script async="true" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</head>
+
+    <body id="docker_kubernetes" class="wh_topic_page frmBody">
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">
+            Jump to main content
+        </a>
+        
+        <!-- 
+Release Version: v.Q32021  
+--><nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="https://www.hcltechsw.com/wps/portal/hclsw-home" style="vertical-align: unset;">
+        <img width="150" height="50" src="https://help.hcltechsw.com/assets/images/HCL_Software_Logo_White.svg" alt="HCL Logo" target="_blank"/>
+    </a>
+    <a href="https://help.hcltechsw.com/">
+        <span id="brandName" class="title" style="vertical-align: middle; font-size: 16px; color:#ffffff;">Product Documentation</span>
+    </a>
+
+    <div id="learningAcademyLink" style="margin-left: 20px;"> 
+        <a id="learningAcademy" class="nav-link" style="color:#ffffff;padding-right: 20px;" href="https://academy.hcltechsw.com">Learning Academy</a>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" style="color:#ffffff;" href="https://support.hcltechsw.com/csm?id=csm_index">Customer Support</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+        
+        
+        <header class="navbar navbar-default wh_header" whc:version="23.1">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container navbar-nav navbar-expand-md navbar-dark">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    
+                    <div class=" wh_publication_title "><a href="index.html"><span class="title">HCL Sametime®Administration Guide 12.0.1</span></a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                <button type="button" data-target="#wh_top_menu_and_indexterms_link" id="wh_menu_mobile_button" data-toggle="collapse" class="navbar-toggler collapsed wh_toggle_button" aria-expanded="false" aria-label="Toggle menu" aria-controls="wh_top_menu_and_indexterms_link">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+                <nav class=" wh_top_menu " aria-label="Menu Container"><ul role="menubar" aria-label="Menu"><li role="menuitem" aria-haspopup="true" aria-expanded="false" class="has-children"><span id="administrator_doc-d1907e26-mi" data-tocid="administrator_doc-d1907e26" data-state="not-ready" class=" topicref " data-id="administrator_doc"><span class="title"><a href="administrator_doc.html">HCL Sametime® Administration Guide 12.0.1</a></span></span></li></ul></nav>
+                
+                
+            </div>
+        </div>
+    </div>
+</header>
+        
+        
+         
+        
+        <!-- Search form -->
+        <div xmlns:oxyf="http://www.oxygenxml.com/functions" xmlns="" class="custom-search-component"><div xmlns="http://www.w3.org/1999/xhtml" class=" wh_search_input navbar-form wh_topic_page_search search " role="form">
+            
+            
+            
+            <form id="searchForm" method="get" role="search" action="search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" required="required"/><button type="submit" class="wh_search_button" aria-label="Search"><span class="search_input_text">Search</span></button></div></form>
+            
+            
+            
+        </div><!-- 
+Release Version: v.Q32021  
+--><div xmlns="http://www.w3.org/1999/xhtml" class="after-search">
+    <div class="version-container">
+        <select id="versions" class="custom-select custom-select-md lang-selector" data-toggle="tooltip" title="Select a version">
+        </select>
+    </div>
+    <div class="language-container">
+      <!--  <label class="lang-label" for="languages">Language:</label> -->
+        <select id="languages" class="custom-select custom-select-md lang-selector" data-toggle="tooltip" title="Select a language">
+        </select>  
+    </div>
+</div></div>
+        
+        <div class="container-fluid" id="wh_topic_container">
+            <div class="row">
+
+                <nav class="wh_tools d-print-none navbar-expand-md" aria-label="Tools">
+                    
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "></div>
+                    
+                    
+                    
+                    <div class="wh_right_tools">
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <button class="webhelp_expand_collapse_sections" data-next-state="collapsed" aria-label="Collapse sections" title="Collapse sections"></button>
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links" class="navheader"></span></div>
+                        
+                        <!-- External resource link -->
+                        
+                        
+                        <div class=" wh_print_link print d-none d-md-inline-block "><button onClick="window.print()" title="Print this page" aria-label="Print this page"></button></div>
+                        
+                        <!-- Expand/Collapse publishing TOC 
+                             The menu button for mobile devices is copied in the output only when the publication TOC is available
+                        -->
+                        
+                    </div>
+                    
+                </nav>
+            </div>
+            
+            
+            
+            
+            <div class="wh_content_area">
+                <div class="row">
+                    
+                    
+                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12" id="wh_topic_body">
+                        
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="- topic/title title topictitle1" id="ariaid-title1">Docker and Kubernetes FAQ</h1>
+    
+   
+<div class="- topic/body concept/conbody body conbody"><p class="- topic/shortdesc shortdesc">Some frequently asked questions about Docker and Kubernetes.</p>
+        <section class="- topic/section section" id="docker_kubernetes__section_yxs_sqn_dtb" data-ofbid="docker_kubernetes__section_yxs_sqn_dtb"><h2 class="- topic/title title sectiontitle">Can I install Sametime on the Community Server?</h2>
+            
+            <p class="- topic/p p">In a proof-of-concept environment, if you have Docker on the same host, then you can
+                run meetings on it. For production workloads, HCL support recommends separating the
+                Meetings and Community servers onto separate hosts. </p>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_tfm_wqn_dtb" data-ofbid="docker_kubernetes__section_tfm_wqn_dtb"><h2 class="- topic/title title sectiontitle">Docker or Kubernetes? Is one better than the other?</h2>
+            
+            <p class="- topic/p p">Docker and Kubernetes have different goals and outcomes. The decision should depend
+                on your end goal. Docker is about containerization; Kubernetes is about container
+                orchestration. The Docker containers are the building blocks. A small deployment has
+                the bare minimum number of containers to produce a solution that allows users to
+                collaborate, but without scalability, load balancing, etc. If you are deploying for
+                a small group and do not require scalability, Docker is a simple solution.
+                Kubernetes builds on the base containers and allows them to auto scale; load balance
+                across multiple physical or virtual hosts, even bringing up and tearing down new
+                hosts to deal with load variance. </p>
+            <p class="- topic/p p">Meetings are sized based upon what is happening on the server at any given time.
+                There are many variables including the size (CPU and Memory) of the Docker instance.
+                A large Docker instance can support up to 200 concurrent peak users, but that does
+                not take into consideration how many of the meetings are being recorded. Meeting
+                recordings are CPU intensive. A Docker instance is best suited for a small
+                department or focused team than an enterprise size deployment. </p>
+            <p class="- topic/p p">Kubernetes overcomes these limitations by autoscaling. Autoscaling adds and removes
+                nodes as needed based upon current usage and monitoring. Kubernetes is recommended
+                if you are deploying Sametime meetings for your entire organization. For sizing and
+                deployment related questions, <a class="- topic/xref xref" href="https://volt.myhclsandbox.com/volt-apps/anon/org/app/7fc42e3c-19f4-48df-87fc-09d0ac7c3296/launch/index.html?form=F_Form1" target="_blank" rel="external noopener">contact HCL</a>.</p>
+            <div class="- topic/p p">
+                <div class="- topic/note note note note_note" id="docker_kubernetes__note_ovs_2rn_dtb" data-ofbid="docker_kubernetes__note_ovs_2rn_dtb"><span class="note__title">Note:</span> When deploying Kubernetes, keep config at the default of
+                    one recorder per node. For auto-scaling where nodes are not in the cluster until
+                    there's a demand for them, then have a single recorder-per-node style
+                    deployment. When keeping the recorder nodes on all the time, you can have a
+                    fixed number of recorders always running on that fixed number of nodes.</div>
+            </div>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_jbz_3rn_dtb" data-ofbid="docker_kubernetes__section_jbz_3rn_dtb"><h2 class="- topic/title title sectiontitle">Does Sametime support high availability?</h2>
+            
+            <p class="- topic/p p">High availability is supported for the front-end web traffic to the Kubernetes
+                cluster. You can deploy multiple web front ends on different physical/virtual nodes
+                pointing to the same back end in order to both distribute load and survive a node
+                outage. </p>
+            <p class="- topic/p p">High availability is supported for the front-end web traffic to the Kubernetes
+                cluster. You can deploy multiple web front ends on different physical/virtual nodes
+                pointing to the same back end in order to both distribute load and survive a node
+                outage. </p>
+            <p class="- topic/p p">High availability is not supported for active meetings. If a server hosting a meeting
+                goes down, users in meetings on that server will be interrupted. There is a
+                reconnection timer built into the client which will cause all the clients to
+                re-connect and be distributed to another available node. In some circumstances, a
+                server going down will result in the client thinking the meeting has ended. Users
+                can quickly re-join the meeting from their "recent meetings" list and will be
+                meeting again on an available server momentarily. </p>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_ocp_mrn_dtb" data-ofbid="docker_kubernetes__section_ocp_mrn_dtb"><h2 class="- topic/title title sectiontitle">What is the maximum number of participants in a meeting?</h2>
+            
+            <p class="- topic/p p">By default, Sametime allows up to 100 participants per meeting. To change this
+                setting, refer to <a class="- topic/xref xref" href="meetings_configuring_max.html" title="Sametime currently supports a maximum of 100 users in a meeting regardless of the selected meeting mode. To reach a wider audience, you can start a live stream and share the link to all intended participants.">Configuring the maximum number of meeting participants</a>.</p>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_m2g_2sn_dtb" data-ofbid="docker_kubernetes__section_m2g_2sn_dtb"><h2 class="- topic/title title sectiontitle">How many concurrent users does the Sametime meeting server support?</h2>
+            
+            <p class="- topic/p p">This depends on the size of the deployment. For sizing and deployment related
+                questions, <a class="- topic/xref xref" href="https://volt.myhclsandbox.com/volt-apps/anon/org/app/7fc42e3c-19f4-48df-87fc-09d0ac7c3296/launch/index.html?form=F_Form1" target="_blank" rel="external noopener">contact HCL</a>.</p>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_qbz_ysn_dtb" data-ofbid="docker_kubernetes__section_qbz_ysn_dtb"><h2 class="- topic/title title sectiontitle">Since Sametime supports both Docker and Kubernetes, what level of help with these
+                third-party products can I expect to receive from HCL technical support? </h2>
+            
+            <p class="- topic/p p">Docker and Kubernetes are third-party products. HCL support is available to assist in
+                configuration and support-related issues as it pertains to the Sametime product. If
+                you require assistance with a full Kubernetes or Docker deployment, reach out to
+                    <a class="- topic/xref xref" href="https://www.hcltechsw.com/wps/portal/contact-us" target="_blank" rel="external noopener"><u class="+ topic/ph hi-d/u ph u">HCL Services</u></a> or one of our HCL Business Partners
+                to inquire about professional services.</p>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_hrl_btn_dtb" data-ofbid="docker_kubernetes__section_hrl_btn_dtb"><h2 class="- topic/title title sectiontitle">What are the system requirements?</h2>
+            
+            <p class="- topic/p p">Docker on Linux is the supported and recommended platform. Red Hat Enterprise Linux
+                and CentOS have been tested. For more information on system requirements, refer to
+                    <a class="- topic/xref xref" href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0089405" target="_blank" rel="external noopener"><u class="+ topic/ph hi-d/u ph u">HCL Sametime 11.6 and HCL Sametime Meetings
+                        11.6 System Requirements</u></a>.</p>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_bzh_dtn_dtb" data-ofbid="docker_kubernetes__section_bzh_dtn_dtb"><h2 class="- topic/title title sectiontitle">How do I migrate from different versions of Docker or Kubernetes when moving
+                servers?</h2>
+            
+            <p class="- topic/p p">When moving to a new server, redeploy Sametime Meetings as a new configuration. If
+                the server hostname in the URL changes, you can push the new URL to the users using
+                Managed Settings. Existing meeting URLs should work if the hostname remains the
+                same. </p>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_xhl_2tn_dtb" data-ofbid="docker_kubernetes__section_xhl_2tn_dtb"><h2 class="- topic/title title sectiontitle">Are supported packages for Kubernetes and Docker available on the HCL License and
+                Delivery Portal?</h2>
+            
+            <p class="- topic/p p">No, packages for Kubernetes and Docker are downloaded directly from your vendor. </p>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_bmq_gtn_dtb" data-ofbid="docker_kubernetes__section_bmq_gtn_dtb"><h2 class="- topic/title title sectiontitle">How do we backup and restore Docker/Kubernetes?</h2>
+            
+            <p class="- topic/p p">The backup and restore process is handled by Docker and Kubernetes. It is handled
+                outside of Sametime. Consult with your Docker or Kubernetes vendor for details. </p>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_bzn_ktn_dtb" data-ofbid="docker_kubernetes__section_bzn_ktn_dtb"><h2 class="- topic/title title sectiontitle">Is clustering automatic for Kubernetes?</h2>
+            
+            <p class="- topic/p p">Yes, but there is additional configuration required in a Kubernetes environment. </p>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_cx1_mtn_dtb" data-ofbid="docker_kubernetes__section_cx1_mtn_dtb"><h2 class="- topic/title title sectiontitle">Is the Media Server separate from Sametime 11.6 Meetings?</h2>
+            
+            <p class="- topic/p p">The video bridge is part of the meeting server. There are no additional Sametime
+                components for meetings. </p>
+        </section>
+        <section class="- topic/section section" id="docker_kubernetes__section_kt4_ntn_dtb" data-ofbid="docker_kubernetes__section_kt4_ntn_dtb"><h2 class="- topic/title title sectiontitle">Can I deploy Sametime Meetings in a Kubernetes Cloud?</h2>
+            
+            <p class="- topic/p p">Yes. For more information, refer to <a class="- topic/xref xref" href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0085515" target="_blank" rel="external noopener">deploying Sametime Meetings in Amazon's AWS
+                    Elastic Kubernetes Services</a>. </p>
+        </section></div>
+</article></main></div>
+                        
+                        
+                        
+                        
+                        
+                        
+        <meta charset="UTF-8"/>
+    
+        <hr/>
+        <div class="ratingForm">
+            <div class="form-group">
+                <legend id="ratingStarLabel">Rate this topic</legend>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5"/>
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4"/>
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3"/>
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2"/>
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1"/>
+                    <label for="star1" title="text">1 star</label>
+                </div>
+            </div>
+			<br/>
+			<br/>
+            <div class="form-group">
+                <legend id="ratingCommentLabel">Comment on this topic.</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="rateCheck"/>
+                    <label class="form-check-label" for="rateCheck" id="rateCheckLabel">
+                        By clicking this box, you acknowledge that you are NOT a U.S. Federal Government 
+                        employee or agency, nor are you  submitting information with respect to or on behalf 
+                        of one. HCL provides software and services to U.S. Federal Government customers through 
+                        its partners immixGroup, Inc. Contact this team at <a href="https://hcltechsw.com/resources/us-government-contact">https://hcltechsw.com/resources/us-government-contact</a>.  Do not include any personal data in this Comment box.
+                    </label>
+                    <label class="form-check-label" for="rateCheck" id="rateCheckNoteLabel">
+                        Note: To report a problem or question about the product software, do not use this form. 
+                        Instead, go to the <a href="https://support.hcltech.com/csm">HCL Software Support</a> site.
+                    </label>
+                </div>
+                <textarea class="form-control form-control-lg" id="rate-comment" rows="3" disabled="true"></textarea>
+            </div>
+            <input type="button" id="rate-submit" class="btn btn-primary btn-lg" value="Submit" disabled="true"> </input>
+        </div>
+    
+                        
+                    </div>
+                    
+                        
+                        <nav role="navigation" id="wh_topic_toc" aria-label="On this page" class="col-lg-2 d-none d-lg-block navbar d-print-none"> 
+                            <div class=" wh_topic_toc "><div class="wh_topic_label">On this page</div><ul><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_yxs_sqn_dtb" data-tocid="docker_kubernetes__section_yxs_sqn_dtb">Can I install Sametime on the Community Server?</a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_tfm_wqn_dtb" data-tocid="docker_kubernetes__section_tfm_wqn_dtb">Docker or Kubernetes? Is one better than the other?</a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_jbz_3rn_dtb" data-tocid="docker_kubernetes__section_jbz_3rn_dtb">Does Sametime support high availability?</a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_ocp_mrn_dtb" data-tocid="docker_kubernetes__section_ocp_mrn_dtb">What is the maximum number of participants in a meeting?</a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_m2g_2sn_dtb" data-tocid="docker_kubernetes__section_m2g_2sn_dtb">How many concurrent users does the Sametime meeting server support?</a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_qbz_ysn_dtb" data-tocid="docker_kubernetes__section_qbz_ysn_dtb">Since Sametime supports both Docker and Kubernetes, what level of help with these
+                third-party products can I expect to receive from HCL technical support? </a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_hrl_btn_dtb" data-tocid="docker_kubernetes__section_hrl_btn_dtb">What are the system requirements?</a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_bzh_dtn_dtb" data-tocid="docker_kubernetes__section_bzh_dtn_dtb">How do I migrate from different versions of Docker or Kubernetes when moving
+                servers?</a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_xhl_2tn_dtb" data-tocid="docker_kubernetes__section_xhl_2tn_dtb">Are supported packages for Kubernetes and Docker available on the HCL License and
+                Delivery Portal?</a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_bmq_gtn_dtb" data-tocid="docker_kubernetes__section_bmq_gtn_dtb">How do we backup and restore Docker/Kubernetes?</a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_bzn_ktn_dtb" data-tocid="docker_kubernetes__section_bzn_ktn_dtb">Is clustering automatic for Kubernetes?</a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_cx1_mtn_dtb" data-tocid="docker_kubernetes__section_cx1_mtn_dtb">Is the Media Server separate from Sametime 11.6 Meetings?</a></div></li><li class="section-item"><div class="section-title"><a href="#docker_kubernetes__section_kt4_ntn_dtb" data-tocid="docker_kubernetes__section_kt4_ntn_dtb">Can I deploy Sametime Meetings in a Kubernetes Cloud?</a></div></li></ul></div>
+                        </nav>
+                        
+                    
+                </div>
+            </div>
+            
+            
+            
+        </div> 
+        <footer class="navbar navbar-default wh_footer" whc:version="23.1">
+  <div class=" footer-container mx-auto ">
+    <!-- 
+Release Version: v.Q32021  
+--><div class="footer">
+	<div class="footer-left">
+		<ul class="nav share-content">
+			<li class="nav-item">
+                <a id="footerMailLink" class="nav-link footer-mail" style="color:white;" target="_blank" href="#" onclick="gtag('event', 'EmailShare', {'event_category': 'share', 'event_label':'labelemail'});" title="Share by Email">Share: Email</a>
+			</li>
+            <li>
+                <a id="footerTwitterLink" class="nav-link footer-twitter" href="https://twitter.com/intent/tweet" style="color:white;" onclick="gtag('event', 'TwitterShare', {'event_category': 'share', 'event_label':'labeltweet'});" title="Share by Twitter">Twitter</a>
+            </li>
+		</ul>
+	</div>
+    <div class="footer-right">
+        <ul class="nav legal-content">
+            <li class="nav-item">
+                <a id="disclaimerLabel" class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/legal/disclaimer">Disclaimer</a>
+            </li>
+            <li class="nav-item">
+                <a id="privacyLabel" class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/legal/privacy">Privacy</a>
+            </li>
+            <li class="nav-item">
+                <a id="termsLabel" class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/legal/terms-use">Terms of use</a>
+            </li>
+            <li class="nav-item">
+                <a id="cookieLabel" class="nav-link footer-launch ot-sdk-show-settings" style="color:white;" href="#">Cookie Preferences</a>
+            </li>
+        </ul>
+    </div>
+</div>
+  </div>
+</footer>
+        
+        <div id="go2top" class="d-print-none">
+            <span class="oxy-icon oxy-icon-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close oxy-icon oxy-icon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" alt=""/>
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        
+        
+    </body>
+</html>

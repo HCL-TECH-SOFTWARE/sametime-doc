@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_release_eleven" xml:lang="en-us">
+ <title>Release 11.6.0</title>
+    <shortdesc>Release 11.6.0 includes the following new features.</shortdesc>
+    <conbody><p><ul>
+                <li><b>Telephony Support</b> - Now participants can dial into your meeting using the
+                    phone with the new TeamCall Meeting Gateway. See <xref
+                        href="https://blog.hcltechsw.com/sametime/hcl-digital-solutions-announces-first-telephony-partnership-for-hcl-sametime/" format="html" scope="external"
+                        >New Sametime features</xref> for more information.</li>
+                <li><b>Recordings Management</b> - The new Recordings item on the main menu will
+                    list recordings from meetings that you own. You can stream the recording on your
+                    mobile (even sharing to an external device using AirPlay), download them for
+                    later viewing, copy a link for sharing with others, rename them and remove them
+                    from the server. <note id="note_grw_gx3_vpb">Note that by default downloading of
+                        recordings is disabled with user policy. Your administrator will need to set
+                        policy im.mobile.allowReceiveFiles to true.</note></li>
+                <li><b>Conversation Pinning</b> - Now you can keep your favorite Sametime chat
+                    partners at the top of your active chat list simply by swiping right on the
+                    conversation and selecting the Pin action. </li>
+                <li><b>Lecture Style meetings</b> - Lecture-style meetings give you more control
+                    over larger meetings. Attendees automatically join in a listen-only mode. They
+                    can raise their virtual hand in the ongoing meeting if they have a question or
+                    wish to speak and wait for a moderator to grant permission.</li>
+        <li><b>Handling for End-to-end (E2E) Encrypted meetings</b> - E2E Encrypted meetings are in
+                    preview mode with the 11.6 Sametime Meeting server. Currently, there is no
+                    support for mobile clients, prohibiting mobile joins. When the E2E encryption is
+                    on in an ongoing meeting, Mobile clients receive a prompt message to leave the
+                    meeting as they cannot hear audio or see the presentation. </li> 
+        <li><b>Multi-tenant meetings support </b> - Our business partners who host Sametime
+                    infrastructure can now configure multi-tenancy for meetings.</li>
+        <li><b>URL Previews</b> - With this new feature, URLs sent or received in a chat can show a
+                    preview of the page that the URL represents. <note>Note that this behavior is
+                        controlled by user policy and is off by default. Your administrator will
+                        need to set policy im.urlPreviewEnabled to true.</note></li>
+        <li><b>Start/Stop meeting recordings from mobile</b> - Available since 11.5 with the browser
+                    client, moderators can now start and stop meeting recordings from the mobile
+                    client.</li> <li><b>Manage new in-meeting settings from mobile</b> - With the 11.6 clients, when you open
+                    settings in a meeting on the mobile client, you can now manage the new meetings
+                    feature settings like lecture style, telephony and recording sharing. </li></ul></p></conbody>
+</concept>
+<?Pub *0000001020?>

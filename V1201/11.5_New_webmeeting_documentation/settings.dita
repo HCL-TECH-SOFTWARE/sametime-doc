@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="settings" xml:lang="en-us">
+<title>Settings</title>
+<shortdesc>This section provides information on how you manage the video quality, start recording,
+        start live streaming, and other options in a meeting.</shortdesc>
+<taskbody>
+<context>
+      <ol id="ol_d31_prb_4nb">
+        <li>Log into the meeting.</li>
+          <li>Click <image href="Images/three_dots.png" placement="inline" align="left"
+                        id="meetings_new"/> to open more options.</li>
+                <li>You can do the following in the <uicontrol>More options</uicontrol> menu: <ul
+                        id="ul_yj4_k2c_4nb">
+                        <li>Manage video quality</li>
+                        <li>Blur the background</li>
+                        <li>View full screen</li>
+                        <li>Share a YouTube video</li>
+                        <li>Start live stream</li>
+                        <li>Copy meeting link</li>
+                        <li>Start recording</li>
+                        <li>End the meeting</li>
+                        <li>Settings<ul id="ul_dkk_r2c_4nb">
+                                <li>Add meeting password</li>
+                                <li>Moderated meeting</li>
+                                <li>Allow guest users</li>
+                            </ul></li>
+                    </ul></li>
+      </ol>
+</context>
+</taskbody>
+</task>
+<?Pub *0000002118?>

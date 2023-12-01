@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_installing_docker_extrahosts" xml:lang="en-us">
+  <title>Defining extra hosts for Docker deployments</title>
+  <shortdesc>Extra hosts for Docker deployments can be defined when there are network or DNS issues.
+    Defining extra hosts is optional and not a requirement to ensure the connections are
+    successful.</shortdesc>
+  <taskbody>
+    <context>
+      <p>In some cases on CentOS 8, the host names fail to resolve properly. If the DNS is
+        unreliable in resolving host names to IP addresses, these can be defined manually in the
+        configuration. The following steps work for all supported Linux versions.</p>
+      <p>
+        <note id="note_dvs_fb4_4tb">When modifying the <codeph>yml</codeph> file, the indentations
+          use spaces to indent the text. Do not use tabs. The entries within the file must line up
+          exactly.</note>
+      </p>
+      <p>Use the <codeph>networks:</codeph> placement as a reference for
+          <codeph>extra_hosts:</codeph> and the <codeph>sametime.test:</codeph> placement as a
+        reference for where the <codeph>-</codeph> is placed.</p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Open the <filepath>docker-compose.yml</filepath> file in edit mode. </cmd>
+        <substeps id="substeps_f1c_szn_4tb">
+          <substep>
+            <cmd>The following components require a connection to the MongoDB server. Locate and
+              update each section with the MongoDB host name and IP address.</cmd>
+            <info>
+              <ul id="ul_mt3_n4q_15b">
+                <li>community</li>
+                <li>recordings</li>
+                <li>files</li>
+                <li>click2call</li>
+                <li>location</li>
+                <li>catalog</li>
+                <li>app-registry</li>
+                <li>activity</li>
+                <li>backgrounds</li>
+                <li>lobby</li>
+              </ul>
+            </info>
+            <info>After <codeph>networks</codeph> add an <codeph>extra_hosts</codeph> statement,
+              where <varname>mongoDB_host</varname> is the fully qualified hostname of the MongoDB
+              server and <varname>mongoDB_IP_address</varname> is the IP address of the MongoDB
+              server.<codeblock id="codeblock_cn5_mpq_15b">
+extra_hosts: 
+    - <varname>mongoDB_host</varname>: <varname>mongoDB_IP_address</varname></codeblock></info>
+            <info>For example:<image href="Images/example_extra_hosts.png" id="image_o2j_ypq_15b"
+                alt="Sample coding of extra_hosts"/></info>
+          </substep>
+          <substep>
+            <cmd>The community component requires a connection to the LDAP server. Locate and update
+              this section with the LDAP host name and IP address.</cmd>
+            <info>After <codeph>networks</codeph> add an <codeph>extra_hosts</codeph> statement,
+              where <varname>ldap_hostname</varname> is the fully qualified host name of the LDAP
+              server and <varname>ldap_ip_address</varname> is the IP address of the LDAP
+              server.<codeblock id="codeblock_shp_nqq_15b">
+extra_hosts: 
+    - <varname>ldap.host</varname>: <varname>ldap_ip_address</varname></codeblock></info>
+            <info>For example:<image href="Images/example_extra_hosts_community.png"
+                alt="sample extra_hosts coding for community server" id="image_vr4_lbf_25b"/></info>
+          </substep>
+          <substep>
+            <cmd>The jvb component requires a connection to the STUN servers. In the
+                <codeph>jvb</codeph> section, add an <codeph>extra_hosts</codeph> section an include
+              a statement for each STUN server, where <varname>stun_host_name</varname> is the fully
+              qualified host name of the STUN server, and <varname> stun_ip_address</varname> is the
+              IP address of the STUN server.</cmd>
+            <info>
+              <codeblock id="codeblock_wjd_sd2_q5b">
+    - <varname>stun_host_name</varname>:<varname>stun_ip_address</varname>
+    </codeblock>
+            </info>
+            <info>For example: <codeblock id="codeblock_m1c_szn_4tb">
+extra_hosts:
+    - stun_host_name:stun_ip_address
+    - stun1_host_name:stun1_ip_address
+    - stun2_host_name:stun2_ip_address  </codeblock></info>
+            <info>Resolve the host names of the STUN servers and use the corresponding IP address
+              for your region. In the following graphic, the Google STUN servers are used with the
+              regional resolved IP addresses.<image href="Images/example_extra_hosts_stun.png"
+                alt="sample extra_hosts coding for STUN server" id="image_wyq_wrq_15b"/></info>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>Verify that the formatting is correct. Correct any indentations using spaces.</cmd>
+      </step>
+      <step>
+        <cmd>Save the changes.</cmd>
+      </step>
+      <step>
+        <cmd>Run the following commands to apply the changes.</cmd>
+        <info>
+          <codeblock id="codeblock_jn2_znq_15b">
+docker-compose down</codeblock>
+          <codeblock id="codeblock_xsn_14q_15b">
+docker-compose up -d</codeblock>
+        </info>
+      </step>
+    </steps>
+  </taskbody>
+</task>
+<?Pub *0000003147?>

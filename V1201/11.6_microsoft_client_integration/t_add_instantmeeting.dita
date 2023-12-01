@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_add_instantmeeting" xml:lang="en-us">
+  <title>Adding an instant meeting</title>
+  <shortdesc>The instant room option instantly adds room details to the Outlook meeting.</shortdesc>
+  <taskbody>
+    <context id="context_un1_zck_gtb">
+      <p>The instant room is based on a setting, it will either your meeting room or a newly
+        generated room. You can configure this setting from the HCL Sametime add-in.</p>
+    </context>
+    <steps id="steps_x5h_1vj_gtb">
+      <step>
+        <cmd>Click the Sametime add-in logo.</cmd>
+      </step>
+      <step>
+        <cmd>Select <uicontrol>Instant Meeting</uicontrol>.</cmd>
+        <info>The instant meeting is added to the Outlook event. <p>Generated rooms get their name
+            from the Outlook meeting subject, and it contains a random twelve-character alphanumeric
+            password, not be moderated, and not be open to guests. </p></info>
+      </step>
+      <step>
+        <cmd>Click the meeting name to add it to the calendar event.</cmd>
+        <info>The meeting is added with password required.  The meeting link and password are placed
+          in the Outlook event description field.</info>
+      </step>
+      <step>
+        <cmd>To change meeting settings, click the edit icon (<image href="Images/edit_icon.png"
+            id="image_t3f_cwj_gtb" alt="edit icon"/>.</cmd>
+        <info>You can change the settings related to the meeting. When you are finished with
+          changes, click <uicontrol>Save</uicontrol>.<p>If you change the password, be sure to
+            change it in the event description field also. After the meeting changes are saved, the
+            password is not retrieveable.</p></info>
+      </step>
+      <step>
+        <cmd>Click <uicontrol>Save</uicontrol> in the Outlook event to save the meeting information
+          in the event.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>
+<?Pub *0000002118?>

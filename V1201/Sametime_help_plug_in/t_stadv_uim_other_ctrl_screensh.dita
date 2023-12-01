@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="t_stadv_uim_other_ctrl_screensh" xml:lang="en-us">
+<title>How do I let someone else take control of my screen?</title><?Pub
+Caret -2?>
+<shortdesc>After you start an Instant Share session, you can let another
+participant take control of the shared portion of your screen.</shortdesc>
+<prolog><metadata>
+<keywords><keyword>Instant Share</keyword><keyword>application sharing</keyword>
+<keyword>share</keyword><keyword>share an application</keyword><keyword>share
+screen</keyword><keyword>take control</keyword></keywords>
+</metadata></prolog>
+<taskbody>
+<steps>
+<step><cmd>In the floating palette window with screen share controls, click <image
+alt="Allow others to control your screen icon" href="images/ST9_instant_share_give_control.JPG"
+placement="inline" scope="local"/>. The screen share participant who takes control must click
+<draft-comment>Take control icon?? Different, still there?</draft-comment><image
+alt="Take control icon" href="images/ST9_instant_share.JPG" placement="inline" scope="local"/> in
+their palette window to actually take control. </cmd></step>
+<step>
+<cmd>Click <image alt="Reclaim control icon" href="images/ST9_instant_share_regain.JPG"
+placement="inline" scope="local"/> to take back control of your shared screen.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000001504?>

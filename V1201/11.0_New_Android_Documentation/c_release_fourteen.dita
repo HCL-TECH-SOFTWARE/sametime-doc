@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_release_fourteen" xml:lang="en-us">
+ <title>Release 11.6.4</title>
+    <shortdesc>Release 11.6.4 includes the following new features.</shortdesc>
+    <conbody><p><ul>
+                <li><b>Save Meeting Password</b>
+                    <p>The user can now securely save a meeting password for quicker meeting joins.
+                        An administrator can disable this feature with the
+                        im.mobile.disablePasswordSave user policy. </p></li>
+                <li><b>View you community settings while logged in</b><p>Open app settings, then tap
+                        Community Settings under the General heading. These settings are read-only
+                        but, you can view and navigate them just as you can when you log out of the
+                        client.</p></li>
+                <li><b>Notification for when the meeting mode changes</b><p>If you are in a meeting
+                        and the owner changes the meeting from moderated to non-moderated or vice
+                        versa, a notification will be displayed letting you know of the
+                    change.</p></li>
+                <li><b>New download progress indicator </b><p>When a user chooses to download a
+                        meeting recording for later playback, the download happens on a background
+                        task; the user can continue using the app. We now display a download
+                        progress indicator under the title bar of the app screens so the user can
+                        monitor progress or even cancel the download.</p></li>
+                <li><b>Android Enterprise customers can now lock user credentials</b><p>When pushing
+                        a community configuration down to the client using AppConfig, an
+                        administrator can now lock the UserID and Password in addition to the
+                        community configuration. For more information, see <xref
+                            href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0078794"
+                            format="html" scope="external">Configuring HCL Sametime for Android via
+                            an EMM Provider</xref>. <note id="note_qlb_3tr_trb">For the User ID and
+                            Password field to be locked in the client, the admin must use Android
+                            Enterprise to push down a value for the User ID and
+                    Password.</note></p></li></ul></p></conbody>
+</concept>
+<?Pub *0000001020?>

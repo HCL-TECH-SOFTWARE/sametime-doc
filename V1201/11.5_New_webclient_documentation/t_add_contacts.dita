@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_add_contacts" xml:lang="en-us">
+<title>Adding contacts to your contact list</title>
+<?Pub Caret 3?>
+<shortdesc>The contact list is a list of people with whom you frequently chat. A contact is someone
+  you added to one or more of your groups. When you are online, by default only contacts that are
+  also online are visible.</shortdesc>
+<taskbody>
+<context>
+   <p>After you add a contact, you can start a chat with the contact or display information about
+    the contact without searching the directory.</p>
+<p>You can add someone who is in your organization or from another organization. You can invite a
+    user from another organization to your network. After that person accepts your invitation, you
+    can add them to your contact list.</p>
+<p>Contacts can be placed in groups allowing you to chat and send messages to all group members at
+one time.  Individuals can be members of multiple groups.</p>
+            <p>Each contact is assigned a grey icon based on the following order:<ul
+                    id="ul_u4v_rt1_rvb">
+                    <li>Photo from the person's business card ID</li>
+                    <li>Initials of the person</li>
+                    <li>Default icon containing a graphic</li>
+                </ul></p>
+</context>
+<steps>
+<step>
+<cmd>Click the menu icon ( <image alt="menu icon" href="Images/menu.png" placement="inline"
+id="menu"/>) in the navigator and select <uicontrol>Contacts</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Click <image alt="Add new contact" href="Images/newcontact.png" placement="inline"
+id="newcontact"/>.</cmd>
+<info>The <wintitle>New Contact</wintitle> window opens, you must first select a group to which the
+contact is added. If there is no available group, click <uicontrol>Create a New
+Group</uicontrol>.</info>
+</step>
+<step>
+<cmd>Click <uicontrol>Add New Contact</uicontrol>.</cmd>
+</step>
+<step>
+    <cmd>In the <uicontrol>Search for contacts</uicontrol> field, begin typing the name of the
+     person you want to add, as you type suggestions are provided. When the name that you want to
+     add displays, click the name.</cmd>
+    <info>Multiple names can be added to the group at the same time, click <uicontrol>Add Another
+      Contact</uicontrol> to add more contacts to the group.</info>
+   </step>
+<step>
+<cmd>When you are finished adding contacts, click <uicontrol>Add</uicontrol>.</cmd>
+<info>Expand the group name and the new contacts are listed.</info>
+</step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="configuring_ldap_kubernetes" xml:lang="en-us">
+    <title>Configuring LDAP on Kubernetes</title>
+    <shortdesc>
+        <draft-comment author="debra.taylor">
+            <p>need a topic on how to modify LDAP on K8s from the default. Can we just remove all
+                text on the page and we will write a new one? We keep getting confused.</p>
+            <p>Topic info from Casey:
+                https://hclo365-my.sharepoint.com/:w:/g/personal/casey_toole_hcl_com/EdJJ3CE1hCROjzJkmrkgJv0BaaA4FcRec7K1n4vPg2I2pw</p>
+            <p>This page displays on review server only.</p>
+        </draft-comment>
+    </shortdesc>
+</task>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="participant_view" xml:lang="en-us">
+<title>Participant View Controls</title>
+<shortdesc>The participants <image href="Images/participants.png" placement="inline" align="left"
+      id="image_o2n_sjm_bpb"/> feature allows users to view participants and perform group
+    functions.</shortdesc>
+</task>
+<?Pub *0000002118?>

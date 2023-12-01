@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="customize_kubernetes" xml:lang="en-us">
+<title>Adding corporate branding to meeting pages using Kubernetes</title>
+ <taskbody>
+<steps>
+      <step>
+        <cmd>To customize the product name, product logo, and banner edit the
+            <filepath>values.yaml</filepath> file in the <filepath>/helm</filepath> directory.</cmd>
+        <substeps id="substeps_k4t_mcf_htb">
+          <substep>
+            <cmd>Add the appropriate statements to the YAML file to reflect your changes.</cmd>
+            <info>
+              <ul id="ul_mzf_4cf_htb">
+                <li>To change the product name, add the following statement specifying the new
+                  product
+                  name.<codeblock id="codeblock_nzf_4cf_htb"> productName: <varname>new_product_name</varname></codeblock></li>
+                <li>To change the logo, add the following statement specifying the location and name
+                  of the new logo. The image file can be any size. It is re-sized to approximately
+                  260x260 pixels.
+                    <codeblock id="codeblock_ozf_4cf_htb"> productLogo: <varname>/images/branding/&lt;your_logo_file></varname></codeblock><note
+                    id="note_ahk_gym_1vb"><codeph>/images/branding</codeph> is static and you can
+                    not edit this part. It also does not represent where the referenced file resides
+                    outside the Kubernetes pods.</note> Copy the logo to the persistent volume and
+                  start the web pod again.<codeblock id="codeblock_hjs_ycf_htb">
+POD=$(kubectl get po --selector=name=web-0 | tail -1 | awk ' { print $1 } ')
+kubectl cp &lt;your_image_file> $POD:/usr/share/jitsi-meet/images/branding/.
+kubectl delete po $POD</codeblock><note type="attention" id="note_c1v_xm3_fvb"
+                    >Check the access rights after copying the files by running <codeph>chmod
+                      744</codeph> inside of the <filepath>server-branding </filepath>directory on
+                    the Sametime NFS.</note><note id="note_klk_hdf_htb">Alternatively, you can use
+                    an accessible URL that you do not have to copy to the persistent volume.
+                    <codeblock id="codeblock_zns_hdf_htb">productLogo: "http://mycompany.com/assets/&lt;your_logo_file>"</codeblock></note></li>
+                <li>To change the meeting banner, add the following statement specifying the
+                  location and name of the new
+                    banner.<codeblock>meetingBannerImage: <varname>/images/branding/&lt;your_logo_file></varname></codeblock><note
+                    id="note_lds_y14_1vb"><codeph>/images/branding</codeph> is static and you can
+                    not edit this part. It also does not represent where the referenced file resides
+                    outside the Kubernetes pods.</note><p>Copy the image to the persistent volume
+                    and restart the web pod.<codeblock id="codeblock_hqd_xdf_htb">
+POD=$(kubectl get po --selector=name=web-0 | tail -1 | awk ' { print $1 } ')
+kubectl cp &lt;your_image_file> $POD:/usr/share/jitsi-meet/images/branding/.
+kubectl delete po $POD</codeblock></p><note type="attention"
+                    id="note_ltx_243_fvb">Check the access rights after copying the files by running
+                      <codeph>chmod 744</codeph> inside of the <filepath>server-branding
+                    </filepath>directory on the Sametime NFS.</note><note id="note_tvv_zdf_htb"
+                    >Alternatively, you can use an accessible URL that you do not have to copy to
+                    the persistent volume.
+                    <codeblock id="codeblock_c5p_c2f_htb">meetingBannerImage: <varname>http://mycompany.com/assets/&lt;your_logo_file></varname></codeblock></note></li>
+                <li>To change the meeting background, add the following statement specifying the
+                  location and name of the new
+                    background.<codeblock id="codeblock_fhf_32f_htb">meetingBackgroundImage: <varname>/images/branding/&lt;your_logo_file></varname></codeblock><note
+                    id="note_fqr_bb4_1vb"><codeph>/images/branding</codeph> is static and you can
+                    not edit this part. It also does not represent where the referenced file resides
+                    outside the Kubernetes pods.</note><p>Copy the image to the persistent volume
+                    and restart the web pod.<codeblock id="codeblock_ags_m2f_htb">
+POD=$(kubectl get po --selector=name=web-0 | tail -1 | awk ' { print $1 } ')
+kubectl cp &lt;your_image_file> $POD:/usr/share/jitsi-meet/images/branding/.
+kubectl delete po $POD</codeblock></p><note type="attention"
+                    id="note_gwh_f43_fvb">Check the access rights after copying the files by running
+                      <codeph>chmod 744</codeph> inside of the <filepath>server-branding
+                    </filepath>directory on the Sametime NFS.</note><note id="note_xzq_42f_htb"
+                    >Alternatively, you can use an accessible URL that you do not have to copy to
+                    the persistent volume.
+                    <codeblock id="codeblock_gjr_p2f_htb"> meetingBackgroundImage: <varname>http://mycompany.com/assets/&lt;your_logo_file></varname></codeblock></note></li>
+              </ul>
+            </info>
+          </substep>
+          <substep>
+            <cmd>Run a <cmdname>helm upgrade</cmdname> command to apply the changes to your
+              registry.</cmd>
+            <info>
+              <codeblock id="codeblock_qzx_4cf_htb">helm upgrade {release-name} helm/.</codeblock>
+            </info>
+          </substep>
+        </substeps>
+      </step>
+      <step id="customize_brand_favion">
+        <cmd>To update the favicon, do the following.</cmd>
+        <substeps id="substeps_mth_qsf_htb">
+          <substep>
+            <cmd>Copy the files to the persistent volume. This replaces the following files with
+              your version.</cmd>
+            <info><ul id="ul_mzj_vsf_htb">
+                <li>favicon.ico </li>
+                <li>favicon-16x16.ico</li>
+                <li>favicon-24x24.ico</li>
+                <li>favicon-32x32.ico</li>
+                <li>favicon-64x64.ico</li>
+              </ul>You must specify at a minimum the <filepath>favicon.ico</filepath> file. When it
+              is the only file available, it is used for each of the other .ico files. For the best
+              resolution, keep the <filepath>favicon.ico</filepath> file to 64x64. For the other
+              files, use the size indicated as part of the file name.<p>A PNG file type image can be
+                used, just renamed to ICO file type.</p></info>
+          </substep>
+          <substep>
+            <cmd>Restart the pod.</cmd>
+            <info>
+              <codeblock id="codeblock_jtg_spn_cvb">
+POD=$(kubectl get po --selector=name=web-0 | tail -1 | awk ' { print $1 } ')
+kubectl cp favicon.ico $POD:/usr/share/jitsi-meet/images/branding/.
+kubectl delete po $POD</codeblock>
+              <note type="attention" id="note_kyt_f43_fvb">Check the access rights after copying the
+                files by running <codeph>chmod 744</codeph> inside of the <filepath>server-branding
+                </filepath>directory on the Sametime NFS.</note>
+            </info>
+          </substep>
+        </substeps>
+      </step>
+      <step>
+        <cmd>To update the app icons, do the following.</cmd>
+        <substeps id="substeps_axq_xnm_cvb">
+          <substep>
+            <cmd>Copy the files to the persistent volume. This replaces the following files. For the
+              app icons, replace the following files with your version.</cmd>
+            <info><ul id="ul_qdj_znm_cvb">
+                <li>app-512x512.png</li>
+                <li>app-192x192.png</li>
+              </ul>You must specify at a minimum the <filepath>app-app-512x512.png</filepath> file.
+              When it is the only file available, it also used for the
+                <filepath>app-192x192.png</filepath> file.</info>
+          </substep>
+          <substep>
+            <cmd>Restart the pod.</cmd>
+            <info>
+              <codeblock id="codeblock_ix4_14m_cvb">
+POD=$(kubectl get po --selector=name=web-0 | tail -1 | awk ' { print $1 } ')
+kubectl cp app-512x512.png $POD:/usr/share/jitsi-meet/images/branding/.
+kubectl delete po $POD</codeblock>
+              <note type="attention" id="note_wl2_g43_fvb">Check the access rights after copying the
+                files by running <codeph>chmod 744</codeph> inside of the <filepath>server-branding
+                </filepath>directory on the Sametime NFS.</note>
+            </info>
+          </substep>
+        </substeps>
+      </step>
+</steps>
+  </taskbody>
+</task>
+<?Pub *0000003147?>

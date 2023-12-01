@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="admin_st_buscard_ldap" xml:lang="en-us">
+<title>Configuring business cards using an LDAP directory</title>
+<shortdesc>Follow these steps to configure the business card using
+ an LDAP directory. <tm tmtype="reg" trademark="Domino">Domino</tm> LDAP
+is considered an LDAP directory.</shortdesc>
+<taskbody>
+<prereq>Before you start setting up your business cards, be sure the
+following conditions are true for your site.<ul>
+ <li><tm tmtype="reg" trademark="HCL">HCL</tm> <tm tmtype="reg" trademark="Domino">Domino</tm> and <tm tmtype="reg"
+  trademark="HCL">HCL</tm> <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community
+Server have been installed and configured</li>
+ <li><tm tmtype="reg" trademark="Sametime">Sametime</tm> authentication
+is configured to use an LDAP directory</li>
+ <li>The LDAP server is running and accessible by the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community Server</li>
+<li>All LDAP attributes needed by Business Card are accessible for
+query via anonymous connection or by using a specific bind account
+and password</li>
+ <li>The <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community
+Server is running</li>
+ <li>For <tm tmtype="reg" trademark="Domino">Domino</tm> LDAP
+only: To allow anonymous users to access required user details, you
+can edit the <uicontrol>All Servers</uicontrol> document in <filepath>names.nsf</filepath>.
+Under the <uicontrol>LDAP</uicontrol> tab, all LDAP attributes that
+you want to be retrieved by anonymous users should be added to the
+list of <uicontrol>Anonymous Users Can Query</uicontrol>.</li>
+<li>Photos must be less than 45 KB (recommended: 10 KB) and must be
+in the .jpg or .gif file type</li>
+</ul></prereq>
+<context>This task must be completed separately for each server within
+ a <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community
+Server cluster.</context>
+<steps>
+<step><cmd>Log in to the <tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Integrated
+Solutions Console as the <tm tmtype="reg" trademark="WebSphere">WebSphere</tm> administrator.</cmd>
+</step>
+<step><cmd>Click <menucascade><uicontrol>Sametime System Console</uicontrol>
+<uicontrol>Sametime Servers</uicontrol><uicontrol>Sametime Community
+Servers</uicontrol></menucascade>.</cmd></step>
+<step><cmd>In the <uicontrol>Sametime Community Servers</uicontrol> list,
+click the deployment name of the server with the business card information
+that you want to add or change.</cmd></step>
+<step><cmd>Click the <uicontrol>Business Card</uicontrol> tab.</cmd>
+</step>
+<step><cmd>In the Business Card Contents section, select the attribute
+you want displayed in users' business cards, and then click <uicontrol>Add</uicontrol> to
+include the selected attribute. If you do not want to display any
+pre-selected information, select each attribute, and then click <uicontrol>Remove</uicontrol>. </cmd>
+</step>
+<step><cmd>Under <uicontrol>Attribute Definition</uicontrol>, choose <uicontrol>Attribute
+Values </uicontrol> that are appropriate for your deployment. Each
+LDAP directory has its own naming schema, so be sure to confirm that
+each attribute value selected for display is mapped to the correct
+LDAP attribute as defined by your LDAP schema. If you prefer to map
+another attribute value to the attribute name instead of the default
+value, then choose <uicontrol>User Defined</uicontrol>.</cmd><info>The
+following table lists the default attribute value that is mapped to
+each attribute name.<table><title>Attribute names and values</title>
+<tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute Name</entry>
+<entry colname="col2">Attribute Value</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">E-mail address</entry>
+<entry colname="col2">mail</entry>
+</row>
+<row>
+<entry colname="col1">Telephone</entry>
+<entry colname="col2">telephoneNumber</entry>
+</row>
+<row>
+<entry colname="col1">Title</entry>
+<entry colname="col2">title</entry>
+</row>
+<row>
+<entry colname="col1">Photo</entry>
+<entry colname="col2">jpegPhoto<p>(requires the inetOrgPerson objectClass)</p></entry>
+</row>
+<row>
+<entry colname="col1">Address</entry>
+<entry colname="col2">postalAddress</entry>
+</row>
+<row>
+<entry colname="col1">Company</entry>
+<entry colname="col2">ou</entry>
+</row>
+<row>
+<entry colname="col1">Name</entry>
+<entry colname="col2">cn</entry>
+</row>
+</tbody>
+</tgroup>
+</table> <p><tm tmtype="reg" trademark="Domino">Domino</tm> LDAP
+does not contain the <uicontrol>postalAddress</uicontrol> field. The
+value retrieved for this LDAP attribute is the concatenation of <uicontrol>City</uicontrol>, <uicontrol>State/Province</uicontrol>,
+ and <uicontrol>Country</uicontrol>. Also, <tm tmtype="reg" trademark="Domino">Domino</tm> LDAP contains
+a hidden field for the <uicontrol>ou</uicontrol> attribute. This field
+ cannot be set through the <tm tmtype="reg" trademark="Domino">Domino</tm> LDAP, and a third-party
+LDAP management tool can be used to add a value to it.</p></info></step>
+<step><cmd>If you select <uicontrol>User Defined</uicontrol> for an <uicontrol>Attribute
+Value</uicontrol>, then enter an attribute to map to the <uicontrol>Attribute
+Name</uicontrol>.</cmd></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step>
+ <step><cmd>Restart the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community
+Server.</cmd></step>
+</steps>
+<postreq><p>Special considerations</p>In a configuration where: <ul>
+ <li><tm tmtype="reg" trademark="Sametime">Sametime</tm> is configured
+with an LDAP directory</li>
+<li>UserInfo is configured to ignore configuration updates</li>
+ <li>The <tm tmtype="reg" trademark="Sametime">Sametime</tm>ID
+is configured to an attribute different than a DN</li>
+</ul>You must add additional parameters to the <filepath>UserInfoConfig.xml</filepath> file
+to correctly support this type of <ph
+conref="../define.dita#define/prod_st_short"></ph> ID. <ol>
+<li>Open the <filepath>UserInfoConfig.xml</filepath> file.</li>
+<li>Locate the <uicontrol>StorageDetail</uicontrol> tag of the relevant
+LDAP directory and add the following flags: <codeblock>UserIdAttribute= <varname>attribute_name</varname>
+PersonObjectClass= <varname>object_class_name</varname></codeblock></li>
+<li>Save and close the file.</li>
+<li>Restart the server.</li>
+</ol><p>The UserInformation service initially loads the configuration
+from <filepath>UserInfoConfig.xml</filepath> and then receives configuration
+updates from the <ph conref="../define.dita#define/prod_st_short"></ph> System
+Console. However, the <ph conref="../define.dita#define/prod_st_short"></ph> System
+Console cannot be modified on the fly to contain additional attributes.
+So additional user attributes you define for a business card would
+not be included in the configuration updates from the <ph
+conref="../define.dita#define/prod_st_short"></ph> System Console.
+In this case, all business card configuration should be done in <filepath>UserInfoConfig.xml</filepath>,
+and configuration updates from the <ph
+conref="../define.dita#define/prod_st_short"></ph> System Console
+should be disabled using these steps:</p><ol>
+<li>Open the <filepath>UserInfoConfig.xml</filepath> file.</li>
+<li>Locate the <uicontrol>UserInformation</uicontrol> tag of the relevant
+LDAP directory and add the following flag:<codeblock>&lt;ReadStConfigUpdates value="false"/></codeblock></li>
+<li>Save and close the file.</li>
+<li>Restart the server.</li>
+</ol><p>An optional setting in <filepath>UserInfoConfig.xml</filepath> file
+lets you map a detail to more than one attribute. As a result, the
+returned value for a detail is composed of a list of attributes retrieved
+from the storage.</p><p>You can do this by mapping an item to a comma-separated
+list of attributes. </p><codeblock>&lt;Detail Id="Telephone"  FieldName="telephoneNumber,mobile" Type="text/plain" /></codeblock><p> The
+response can contain a list of values separated by any character chosen
+by the administrator. To apply the new separator, edit the <filepath>UserInfoConfig.xml</filepath> file.</p><ol>
+<li>Open <filepath>UserInfoConfig.xml</filepath> in an editor.</li>
+<li>Choose the Detail tag that you want to use to retrieve a list
+of attributes.</li>
+<li>Complete the <userinput>FieldName</userinput> property with the
+list of attributes to retrieve, separated by commas.</li>
+<li>Add an additional property: <userinput>DisplaySeparator</userinput>.
+Set its value to the required character that should appear in the
+response XML between any 2 retrieved attributes values. For example, <userinput>&lt;Detail
+Id="Telephone" FieldName="telephoneNumber,mobile" Type="text/plain"
+DisplaySeparator=" / "/></userinput>.<note>To ensure a correct display
+on iOS, use the <codeph> / </codeph> symbol with a space before and
+after as the <codeph>displaySeparator</codeph>.</note></li>
+<li>Log in to the <tm tmtype="reg" trademark="WebSphere">WebSphere</tm> Integrated
+Solutions Console as the <tm tmtype="reg" trademark="WebSphere">WebSphere</tm> administrator.</li>
+<li>Click <menucascade><uicontrol>Sametime System Console</uicontrol>
+<uicontrol>Sametime Servers</uicontrol><uicontrol>Sametime Community
+Servers</uicontrol></menucascade>. </li><?Pub Caret 79?>
+<li>In the <ph conref="../define.dita#define/prod_st_short"></ph> Community
+Servers list, click the deployment name of the server with the connectivity
+information that you want to change.</li>
+<li>Click the <uicontrol>Business Card</uicontrol> tab.</li>
+<li>Verify that the mapping of this detail (the <uicontrol>Telephone</uicontrol> detail
+in the example) is empty.</li>
+<li>Click <uicontrol>OK</uicontrol>.</li>
+<li>Restart the server. </li>
+</ol></postreq>
+</taskbody>
+<?tm 1363811909 17?>
+</task>
+<?Pub *0000010025?>

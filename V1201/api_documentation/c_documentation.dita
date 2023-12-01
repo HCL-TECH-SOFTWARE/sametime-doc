@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_documentation">
+    <title>Client Platform Documentation (Technical Preview)</title>
+    <conbody>
+        <p>For this technical preview, the following widgets and API are available for use starting
+            Sametime 12.0.1:</p>
+        <ul id="ul_xq1_gtl_nvb">
+            <li>Chat widget</li>
+            <li>LiveName widget</li>
+            <li>JavaScript API</li>
+        </ul>
+        <p>For a list of all the available APIs in the Client Platform, go to: </p>
+        <codeblock id="codeblock_ofc_ypb_mvb">https://&lt;server name>/sametime-api/docs/</codeblock>
+        <section id="section_zwl_1pc_nvb">
+            <title>Chat widget</title>
+            <p>The <wintitle>Chat widget</wintitle> is used to customize your chat UI and make
+                network requests to allow for Sametime functionality in other web applications or
+                pages independent of the Sametime chat or meeting clients. </p>
+            <p>By default, the server connects to the page URL. You can change this setting via
+                config. For more information, contact <xref
+                    href="https://hclpnpsupport.hcltech.com/csm" format="html" scope="external">HCL
+                    Customer Support</xref>.</p>
+        </section>
+        <section id="section_m1h_qpc_nvb">
+            <title>LiveName widget</title>
+            <p>The <wintitle>LiveName widget</wintitle> allows users to display a user's status on
+                the page. You can utilize this widget to apply the following UI changes:<ul
+                    id="ol_kqb_34d_nvb">
+                    <li>Display the user's status</li>
+                    <li>Display the user's photo</li>
+                    <li>Display the user's status message along with the user's photo and
+                        status</li>
+                    <li>Customize the display name</li>
+                    <li>Display the default user photo and default status as offline when there are
+                        no available results or records for a given userId</li>
+                    <li>Add action buttons at the end of the toolbar</li>
+                    <li>Change the status if the user's status message is displayed</li>
+                    <li>Display the default menu options if <parmname>ShowDefaultMenu</parmname> is
+                            enabled<ul id="ol_zk3_lpd_nvb">
+                            <li>Start a conversation with the user (launches the chat client) </li>
+                            <li>Start a meeting (launches the meeting client) </li>
+                            <li>Show contact details (popover display of user details)​</li>
+                        </ul></li>
+                </ul></p>
+        </section>
+        <section id="section_h4l_fyc_nvb">
+            <title>JavaScript API</title>
+            <p>JavaScript APIs are core APIs that communicate directly with the Sametime server
+                without using the UI. These APIs are accessible by importing the core component or
+                    <codeph>.js</codeph> file. <note id="note_khg_nqk_nvb">These APIs will not have
+                    full functional parity with the <i>old</i> browser API in 12.0.1.​</note></p>
+        </section>
+        <section id="section_g5b_kyc_nvb">
+            <title>Sample pages</title>
+            <p>Sample pages are provided for demonstrating the inclusion of the
+                    <wintitle>Chat</wintitle> and <wintitle>LiveName</wintitle> widgets on a page
+                while showing how various props passed to the widgets can affect display or
+                behavior.​ The pages demonstrating the JavaScript APIs provide examples of logging
+                in through the JavaScript APIs and performing specific actions like setting the
+                status and opening a conversation.</p>
+        </section>
+    </conbody>
+</concept>

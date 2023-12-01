@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="installing_connections_chat" xml:lang="en-us">
+<title>Installing HCL Sametime on an Android device</title>
+ <shortdesc>Before you can use HCL Sametime on your Android device, you must install the HCL
+  Sametime app.</shortdesc>
+ <conbody>
+  <p>By using the HCL Sametime app, you can synchronize communications among devices.</p>
+  <section id="section_rx2_hjp_dtb">
+   <title>Prerequisites</title>
+   <p>The app supports Smartphone and tablets running Android OS 8.0 and higher.</p>
+  </section>
+  <section id="section_dkk_ljp_dtb">
+   <title>Installing the app</title>
+   <p>To install the app, locate the HCL Sametime app in Google Play store and select
+     <uicontrol>Install</uicontrol>. After you install the app, select <uicontrol>Open</uicontrol>
+    to start it. The first time that you open the app, you must configure a community.</p>
+  </section>
+ </conbody>
+</concept>
+<?Pub *0000001020?>

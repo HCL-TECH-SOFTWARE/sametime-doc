@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_client_update_interval_xml" xml:lang="en-us">
+<title>Changing the update interval for managed preferences</title>
+<shortdesc>If you want to change the update interval for managed preferences,
+you can update the existing settings XML file.</shortdesc>
+<taskbody>
+<context>By default, managed settings are updated every 720 minutes (12 hours) and whenever the <tm
+                tmtype="reg" trademark="HCL">HCL</tm>
+            <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client is started. To change
+            the update interval, edit the settings XML file to add a new setting group.</context><?Pub Caret 91?>
+<steps>
+<step><cmd>Update the existing XML file with a new setting group that
+contains an UpdateIntervalInMins setting.</cmd><stepxmp><codeblock>&lt;settingGroup name="com.hcl.rcp.managedsettings">  
+    &lt;setting name="UpdateIntervalInMins" value="1" isLocked="false"/>
+&lt;/settingGroup></codeblock></stepxmp></step>
+</steps>
+<result>Updating settings has the following results:<ul>
+<li>All unlocked settings can be modified by the user. Once a setting
+is modified by the user, any subsequent update to the same setting
+will not apply unless the setting is changed to isLocked=true on the
+settings XML file. This behavior is consistent with settings changed
+with the plugin_customization.ini file. User-modified preferences
+take precedence over settings from the plugin_customization.ini file
+and settings XML file.  However, if the user's workspace is cleaned,
+the administrator's values will apply.</li>
+<li>Any settings or setting groups removed from the settings XML file
+(for example, to unmanage those settings) will remain on the client,
+and if the setting was previously locked, it will be automatically
+set to unlocked. </li>
+<li>All unmanaged settings will automatically be managed as standard
+preferences.</li>
+</ul></result>
+</taskbody>
+</task>
+

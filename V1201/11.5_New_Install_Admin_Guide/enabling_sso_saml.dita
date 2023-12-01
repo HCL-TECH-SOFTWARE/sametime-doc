@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="enabling_sso_saml" xml:lang="en-us">
+    <title>Setting up SSO using SAML</title>
+    <shortdesc>You can implement SSO into your environment using Security Assertion Markup Language
+        (SAML). The process is different for Kubernetes and Docker.</shortdesc>
+    <taskbody>
+        <context id="context_pbd_dbl_qtb">
+            <p>One user access URL for the Sametime server is needed for the <term>identity
+                    provider</term> (IdP). An IdP is a service that stores and verifies the identity
+                of users. In previous Sametime releases, the community services for rich clients was
+                separate from the webchat and meeting services. In Sametime 12, all services are
+                under the Sametime server. Because there is only one server, only one host name is
+                required for all three types of user access: rich clients, webchat and meetings.</p>
+            <p>To use SAML, the IdP administrator must create a federated partnership or relying
+                party trust for the Sametime server. Additionally, the user access URL for the
+                Sametime configuration and a certificate to be trusted by the Sametime server must
+                be provided.</p>
+            <p>If you are upgrading from a previous Sametime version, you might want to keep using
+                the same host names. Use the following scenarios for IdP requirement guidance. <dl
+                    id="dl_tgd_dl1_d5b">
+                    <dlentry>
+                        <dt>Scenario 1</dt>
+                        <dd>If one host name is used for accessing rich clients, webchat clients,
+                            and meeting clients, only one SAML partnership or relying party trust is
+                            needed.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Scenario 2</dt>
+                        <dd>If using a different host name for rich clients and webchat clients,
+                            include the following SAML partnerships or relying party trusts:<ul
+                                id="ul_pcc_vl1_d5b">
+                                <li>One for the chat host name that is exposed to the Sametime Mux
+                                    service</li>
+                                <li>One for the webchat host name defined for ingress</li>
+                            </ul></dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Scenario 3</dt>
+                        <dd>If using a different host name for rich client, webchat clients and
+                            meeting clients, include the following SAML partnerships or relying
+                            party trusts:<ul id="ul_sjb_nm1_d5b">
+                                <li>One for the chat host name that is exposed to the Sametime Mux
+                                    service</li>
+                                <li>One for the webchat host name defined for ingress</li>
+                            </ul><note id="note_dhm_kmc_d5b">Meeting authentication is processed
+                                through the webchat proxy and no specific SAML partnership is
+                                required for the meeting host name.</note></dd>
+                    </dlentry>
+                </dl></p>
+            <p>Each IdP varies in implementation and terminology, below are some guidelines for
+                configuring your IdP. Only IdP initiated sign-on is supported. <dl
+                    id="dl_qjt_rmc_d5b">
+                    <dlentry>
+                        <dt>SAML assertion consumer service URL</dt>
+                        <dd>The fully-qualified URL of the Sametime server, add
+                                <filepath>/stwebapi/user/connect</filepath>. For example, <filepath>
+                                https://sametime.example.com/stwebapi/user/connect</filepath> at the
+                            end of the URL.</dd>
+                        <dd>If you are using a separate name for the webchat client, you can use the
+                            webchat host name in the URL. For example:
+                                <filepath>https://webchat.example.con/stwebapi/user/connect</filepath>. </dd>
+                        <dd>If the Community chat server has a separate host name from webchat or
+                            rich clients, use the community host name in the URL, for example:
+                                <filepath> https://chat.example.com</filepath> .</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Relay State</dt>
+                        <dd>Specify the same value as the what is specified for the SAML assertion
+                            consumer service URL.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Log out URL</dt>
+                        <dd>Do not specify a value for this property. The SAML logout specification
+                            is not supported in Sametime.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Name ID</dt>
+                        <dd>Specify the attribute from the IdP that contains the user's email
+                            address.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Certificate for TLS</dt>
+                        <dd>A secure connection to the IdP is required and the IdP administrator
+                            must provide the certificate for Sametime to trust. If you have multiple
+                            relying party trusts, the IdP might have separate certificates for each
+                            host name trusted or a single certificate. Such as in the case of
+                            separated host names. If there are more than one certificate, each
+                            certificate and its full chain must be added to the trust store.</dd>
+                    </dlentry>
+                </dl></p>
+        </context>
+    </taskbody>
+</task>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="tls_change_cetificate_docker">
+    <title>Updating the TLS certificates on Docker</title>
+    <taskbody>
+        <prereq id="prereq_qmd_3zw_p5b">Ensure that you have the certificate and private key to be
+            used.</prereq>
+        <steps id="steps_dn2_2qx_ktb">
+            <step>
+                <cmd>Run the following command to stop the Sametime services.</cmd>
+                <info>
+                    <codeblock id="codeblock_fhw_grb_b5b">docker-compose down</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Copy the two files to the /keys folder where the Sametime is deployed.</cmd>
+            </step>
+            <step>
+                <cmd>Replace the <filepath>cert.key</filepath> and <filepath>cert.crt</filepath>
+                    files with the new certificate files.</cmd>
+                <info>The files are located in the
+                            <filepath><varname>installation_directory</varname>./sametime-config/web/keys/</filepath>
+                    directory. Where <varname>installation_directory</varname> is the Sametime
+                    installation directory.</info>
+                <info>
+                    <note id="note_f2t_bbc_b5b">These changes are lost if you delete or remove the
+                            <filepath>sametime-config</filepath> directory.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>Run the following command to start the Sametime services and apply the
+                    changes.</cmd>
+                <info>
+                    <codeblock id="codeblock_ip5_5b2_q5b">docker compose up -d</codeblock>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

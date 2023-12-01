@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="webchat_doc" xml:lang="en-us">
+<title>HCL Web Chat Users Guide</title>
+<shortdesc>The <cite>Web Chat Users Guide</cite> contains information for accessing and using the
+    HCL Sametime Web Chat client.</shortdesc>
+</concept>
+<?Pub *0000001020?>

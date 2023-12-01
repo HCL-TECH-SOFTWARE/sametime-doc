@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_client_conn_prox" xml:lang="en-us">
+<title>Connecting the client through a proxy connection</title>
+<shortdesc>When a user starts the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client
+  with a <uicontrol>Use proxy </uicontrol> preference, the client connects to the <tm tmtype="reg"
+   trademark="IBM">HCL</tm>
+  <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community server through a SOCKS, HTTP, or
+  HTTPS proxy server.</shortdesc>
+<taskbody>
+<prereq>For this connection to succeed, the port specified as the <uicontrol>Community
+    port</uicontrol> setting in the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect
+   Client client's <uicontrol>Sametime Connectivity</uicontrol> settings must match a port number
+   specified in one of these settings in the <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+   configuration database.<ul class="- topic/ul ">
+    <li class="- topic/li ">In the <uicontrol>Client Connections</uicontrol> section, type the fully
+     qualified <uicontrol>Host Name</uicontrol> and <uicontrol>Port</uicontrol> from which Community
+     Services listen for direct TCP/IP Connections and HTTP-tunneled Connections from the Community
+     Services clients. A direct TCP/IP connection occurs when the <tm tmtype="reg"
+      trademark="Sametime">Sametime</tm> client uses a unique <tm tmtype="reg" trademark="Sametime"
+      >Sametime</tm> protocol over TCP/IP to establish a connection with the Community
+     Services.</li>
+    <li class="- topic/li ">In the <uicontrol>HTTP Tunneled Client Connections</uicontrol> section,
+     type the fully qualified <uicontrol>Host Name</uicontrol> and <uicontrol>Port</uicontrol> from
+     which Community Services clients can make HTTP-tunneled Connections to the Community Services
+     multiplexer. Community Services clients can make HTTP-tunneled Connections on both ports 80 and
+     8082 by default. Port 8082 ensures compatibility with previous <tm tmtype="reg"
+      trademark="Sametime">Sametime</tm> releases. In previous releases, <tm tmtype="reg"
+      trademark="Sametime">Sametime</tm> clients made HTTP-tunneled connections to the Community
+     Services only on port 8082. If a <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect
+     Client from a previous <tm tmtype="reg" trademark="Sametime">Sametime</tm> release attempts an
+     HTTP-tunneled connection to a <tm tmtype="reg" trademark="Sametime">Sametime</tm> server, the
+     client might attempt this connection on port 8082.<note class="- topic/note " type="note">If
+      the administrator manually configures HTTP tunneling on port 80, the <menucascade>
+       <uicontrol>Community Services</uicontrol>
+       <uicontrol>Client connections</uicontrol>
+       <uicontrol>Port number</uicontrol>
+      </menucascade> setting default to port 1533, and the <menucascade>
+       <uicontrol>Community Services</uicontrol>
+       <uicontrol>HTTP tunneled client Connections</uicontrol>
+       <uicontrol>Port number</uicontrol>
+      </menucascade> settings are ports 80 and 8082. In this configuration, the <tm tmtype="reg"
+       trademark="Sametime">Sametime</tm> Connect Client can complete an HTTP-tunneled connection to
+      the Community Services multiplexer using either port 1533, 80, or 8082. </note>
+    </li>
+    <li>In the <uicontrol>HTTPS Tunneled Client Connections</uicontrol> section, type the fully
+     qualified Host Name and Port from which the Community Services clients attempt HTTPS
+     Connections when accessing the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community
+     Server through an HTTPS proxy server. If a Community Services client connects to the <tm
+      tmtype="reg" trademark="Sametime">Sametime</tm> Community server using HTTPS, the HTTPS
+     connection method is used, but the data passed on this connection is not encrypted.</li>
+   </ul></prereq>
+<context><p>The connection methods for the <uicontrol>Use proxy</uicontrol> option
+differ in the types of proxy servers they use for connecting.</p><ul>
+<li>SOCKS4 or SOCKS5 proxy<p>The client uses the <uicontrol>Standard Sametime protocol</uicontrol>
+      over TCP/IP for this connection. The connection from the SOCKS proxy to the Community Services
+      occurs on the "Community port" (default 1533) specified in the <tm tmtype="reg"
+       trademark="Sametime">Sametime</tm> Connect Client <tm tmtype="reg" trademark="Sametime"
+       >Sametime</tm> Connectivity settings. This connection is the same as the <uicontrol>Use my
+       Internet Explorer HTTP settings</uicontrol> preference for a user who has a SOCKS proxy
+      server selected in Internet Explorer.</p></li>
+<li>Reverse proxy<p>This selection allows the <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+      Connect Client to connect to a <tm tmtype="reg" trademark="Sametime">Sametime</tm> server over
+      the Internet through a reverse proxy server. The reverse proxy server protects internal HTTP
+      servers by providing a single point of access to the internal network. </p></li>
+<li>HTTP Proxy<p>The client encases the standard <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+      protocol connection information within an HTTP request. <tm tmtype="reg" trademark="Sametime"
+       >Sametime</tm> Connect Client connects to the HTTP proxy, and the HTTP proxy server connects
+      to the Community Services multiplexer on the <tm tmtype="reg" trademark="Sametime"
+       >Sametime</tm> server on behalf of the <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+      Connect Client. The HTTP connection to the Community Services multiplexer occurs on the
+      "Community port" (default 1533) specified in the <tm tmtype="reg" trademark="Sametime"
+       >Sametime</tm> Connect Client <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+      Connectivity settings. </p><p class="- topic/p ">The Community Services multiplexer on the <tm
+       tmtype="reg" trademark="Sametime">Sametime</tm> server listens for HTTP Connections on all
+      ports specified in the <uicontrol>Port number</uicontrol> field in the <uicontrol>Client
+       Connections</uicontrol> section within the <uicontrol>Community Services</uicontrol> settings
+      of the <tm tmtype="reg" trademark="Sametime">Sametime</tm> configuration database. </p></li>
+</ul><p>Follow these steps to select the <uicontrol>Use proxy</uicontrol> method
+for the client.</p></context>
+<steps>
+<step>
+    <cmd>From the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client, click <menucascade>
+      <uicontrol>File</uicontrol>
+      <uicontrol>Preferences</uicontrol>
+     </menucascade>.</cmd>
+   </step>
+<step><cmd>Do one of the following:</cmd>
+<choices>
+<choice>To select this connection method for all server communities,
+click <uicontrol>Server Communities</uicontrol>. In the "Global connection
+settings" section, click <uicontrol>Use proxy</uicontrol>.</choice>
+<choice>To select this connection method for only one server community,
+click <uicontrol>Server Communities</uicontrol>, select the server
+community name, and open the <uicontrol>Connection</uicontrol> tab.
+Clear <uicontrol>Use global connection settings</uicontrol>, then
+click <uicontrol>Use proxy</uicontrol>.</choice>
+</choices>
+</step>
+<step><cmd>Select the appropriate <uicontrol>Proxy type</uicontrol>.</cmd>
+<choices>
+<choice><uicontrol>Use SOCKS4 proxy</uicontrol></choice>
+<choice><uicontrol>Use SOCKS5 proxy</uicontrol></choice>
+<choice><uicontrol>Use reverse proxy</uicontrol></choice>
+<choice><uicontrol>Use HTTP proxy</uicontrol></choice>
+</choices>
+</step>
+<step><cmd>Specify the additional values for the proxy type you selected.</cmd>
+<choices>
+<choice><uicontrol>Use SOCKS4 proxy</uicontrol><p>Provide the <uicontrol>Host
+name</uicontrol> (DNS name or IP address) of the SOCKS proxy server
+and the port required to connect to the SOCKS proxy server.</p></choice>
+<choice><uicontrol>Use SOCKS5 proxy</uicontrol><ol>
+<li>Provide the <uicontrol>Host name</uicontrol> (DNS name or IP address)
+of the SOCKS proxy server and the port required to connect to the
+SOCKS proxy server.</li>
+<li>Specify the user name and password required for SOCKS5 authentication.</li>
+<li>Select the <uicontrol>Resolve server name locally</uicontrol> option to have the client resolve
+        the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community server name by calling a
+        local DNS server and passing the IP address to the SOCKS proxy server. If your organization,
+        for security reasons, prohibits internal DNS servers from resolving the names of external
+        servers, do not select the <uicontrol>Resolve server name locally</uicontrol> option. The
+        SOCKS proxy resolves the external server name by calling a different DNS server instead, one
+        that is not available on the internal network.</li>
+</ol></choice>
+<choice><uicontrol>Use reverse proxy</uicontrol><ol>
+<li>Specify the <uicontrol>URL</uicontrol> of the reverse proxy server. The clients uses this URL to
+        access the reverse proxy server. The reverse proxy server handles requests from the client
+        and redirects the request to the Sametime
+        server</li>
+<li>Specify the <uicontrol>User name</uicontrol> and <uicontrol>Password</uicontrol> for
+authenticating with the reverse proxy server.</li>
+</ol></choice>
+<choice><uicontrol>Use HTTP proxy</uicontrol><ol>
+<li>Specify the <uicontrol>Host name</uicontrol> (DNS name or IP address)
+of the HTTP proxy server and the port required to connect to the HTTP
+proxy server</li>
+<li>Specify the user name and password required for authentication
+to the HTTP proxy server if they are required.</li>
+</ol></choice>
+</choices>
+</step>
+<step><cmd>Click <uicontrol>OK</uicontrol> to close the Preferences
+window.</cmd></step>
+</steps>
+</taskbody>
+
+</task>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="administering_sametime" xml:lang="en-us">
+<title>Administering Sametime for iOS</title>
+ <shortdesc>This section provide instructions on how to configure and manage HCL Sametime for iOS.</shortdesc>
+</concept>
+<?Pub *0000001020?>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="system_requirements" xml:lang="en-us">
+<title>System requirements</title>
+    <shortdesc>This document provides minimum system requirements for HCL Sametime Meetings Add-in
+        for Microsoft Outlook. Higher maintenance levels, such as fix packs and service packs, may
+        be supported as they become available.</shortdesc>
+<conbody>
+    <p><b>HCL Sametime Meetings Add-in System requirements</b></p>
+        <p>For information on Sametime Meetings Add-in System requirements, see the <xref
+            href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0089405"
+                format="html" scope="external">System requirements</xref> article. </p>
+        <note>
+            <ul id="ul_sd3_lh2_vpb">
+                <li>Sametime Meetings Add-in for Microsoft Outlook supports 34 languages.</li>
+                <li>On Mac, Outlook does not support the following nine languages and, when the user
+                    changes the language in the operating system, the options appear in English. <ul
+                        id="ul_o1k_sh2_vpb">
+                        <li>Bosnian</li>
+                        <li>Catalan</li>
+                        <li>Croatian</li>
+                        <li>Kazakh</li>
+                        <li>Latvian</li>
+                        <li>Macedonian</li>
+                        <li>Romanian</li>
+                        <li>Serbian</li>
+                        <li>Slovenian</li>
+                    </ul></li>
+            </ul>
+        </note>
+</conbody>
+</concept>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t_namechangeutility">
+    <title>Updating Sametime data in MongoDB</title>
+    <shortdesc>When you update existing contact information in the directory, you must run the
+        Sametime database utility in order to synchronize the information with that of the Community
+        Server databases. </shortdesc>
+    <conbody>
+        <note id="note_vmb_2bh_mvb">You do not need to run the Sametime database utility when adding
+            new users or groups to the Domino or LDAP directory. <p>The Sametime database utility
+                uses a comma-separated value list that you compile to change names, delete names, or
+                convert all names from Domino to Domino LDAP formatted names. </p><p>When you create a CSV file, include the descriptor that corresponds to the task you are running.
+                CSV files are case-sensitive and sensitive to spaces. You can create multiple CSV
+                files, but each CSV file can include only <i>one descriptor</i> and can complete
+                only one task.<note id="note_mlr_2db_nvb">The ID task allows case-insensitive
+                    comparisons of user IDs by adding
+                        <parmname>NC_ID_TASK_CASE_INSENSITIVE=1</parmname> to the
+                        <codeph>sametime.ini</codeph> file. For more information, refer to <xref
+                        href="chat_configuring_sametimeini.dita"/>.</note></p></note>
+        <p>
+            <table frame="top" id="table_iks_lk1_nvb">
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Descriptor</entry>
+                            <entry>Purpose</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>ID</entry>
+                            <entry>Changes specified first names, last names, display names, or
+                                group names.</entry>
+                        </row>
+                        <row>
+                            <entry>LDAP</entry>
+                            <entry>Changes all contact list information from Domino Directory format
+                                to LDAP format. For example, a user listed as CN=Maria
+                                Smith/OU=Sales/O=HCL changes to CN=Maria Smith,OU=Sales,O=HCL. <note
+                                    id="note_mgf_fhh_mvb">This task can be performed only once
+                                    because you can only convert the directory format one
+                                    time.</note></entry>
+                        </row>
+                        <row>
+                            <entry>DELETE</entry>
+                            <entry>
+                                <p>Removes specified individual contact names from contact lists and
+                                    privacy lists.</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+        
+    </conbody>
+</concept>

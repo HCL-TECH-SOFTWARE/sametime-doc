@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_buscard" xml:lang="en-us">
+ <title>Configuring business cards using an LDAP directory</title>
+ <shortdesc>Configuring business cards is done in the <codeph>UserInfoConfig.xml</codeph> file in
+    the community pod.</shortdesc>
+<taskbody>
+ <prereq><p>Before you start setting up your business cards, ensure the following:<ul>
+          <li>The LDAP server is running and accessible by the Sametime server.</li>
+          <li>All LDAP attributes needed by the business card are accessible for query through an
+            anonymous connection or by using a specific bind account and password.</li>
+          <li>If using an Domino LDAP, edit the server configuration settings to allow anonymous
+            users to access required user details. In the Domino Administrator or Notes Client,
+            click <menucascade>
+              <uicontrol>Configuration</uicontrol>
+              <uicontrol>All Server Documents</uicontrol>
+              <uicontrol>Configurations</uicontrol>
+            </menucascade> to access the <uicontrol>All Servers</uicontrol> document. Click
+              <uicontrol>Edit Configurations</uicontrol>. Under the LDAP tab, you can view and add
+            LDAP attributes that can be retrieved by anonymous users to the <uicontrol>Anonymous
+              users can query</uicontrol> list.</li>
+        </ul></p></prereq>
+  <context>
+   <p>Configuration settings for business cards are in the <codeph>UserInfoConfig.xml</codeph> file
+        in the community container or pod. For most environments, the
+          <codeph>UserInfoConfig.xml</codeph> file works with default settings. You can override the
+        default configuration settings by modifying the <codeph>UserInfoConfig.xml</codeph> file.
+        The procedure to update the <codeph>UserInfoConfig.xml</codeph> file is different on
+        Kubernetes and Docker.</p>
+      <p>When modifying the XML file be sure to check the formatting using a browser. If there is an
+        error with the formatting of the XML file, a business failure can occur.</p></context>
+    <steps id="steps_kqv_m3s_q5b">
+      <step>
+        <cmd>When using multiple LDAP servers, each LDAP server requires its own settings.  By
+          default, only the first server is configured during setup. To add additional LDAP servers,
+          use the existing settings as a template.</cmd>
+        <info>Locate the <codeph>&lt;StorageType=”LDAP”></codeph> section and copy everything
+          between the <codeph>&lt;StorageType=”LDAP”></codeph> and <codeph>&lt;/Storage></codeph>
+          statements. Paste the statements at the end of the section below the
+            <codeph>&lt;/Storage></codeph> statement. This creates a new LDAP section. See <xref
+            href="configuring_ldap_multiple_kubernetes.dita" scope="local" format="dita"/> for
+          information on configuring LDAP.</info>
+      </step>
+      <step importance="optional">
+        <cmd>Configure an authenticated bind.</cmd>
+        <info>In some environments, not all the attributes are available to an anonymous bind, and
+          an authenticated bind must be used. During the Sametime installation, anonymous binds to
+          LDAP is configured by default. When a custom <filepath>UserInfoConfig.xml</filepath> file
+          is being used, the LDAP bind credentials are being overridden. Bind credentials are
+          located in the  <filepath>.env</filepath> file for Docker and the
+            <parmname>sametime-global-secret</parmname> in Kubernetes.</info>
+        <substeps id="substeps_ohh_1vd_s5b">
+          <substep>
+            <cmd>Use the <cmdname>echo</cmdname> command to find the base64 encoded value for the
+              user name and password.</cmd>
+            <info>Specify the user name and password separated by a colon. For example, if the Bind
+              user name is <codeph>CN=stbind,O=example</codeph> and the password is
+                <codeph>securePassword</codeph>, enter the following command in a Linux shell:
+              <codeblock id="codeblock_zvc_dvd_s5b">echo -n ‘CN=stbind,O=example:securePassword’ | base64 </codeblock></info>
+            <info>The results from the command is the value of a new argument called
+                <parmname>UserEncodedAuth</parmname>.</info>
+          </substep>
+          <substep>
+            <cmd>Replace the user name and password parameters with
+                  <codeph>UserEncodedAuth="<varname>value</varname>"</codeph>.</cmd>
+            <info>For example:
+              <codeblock id="codeblock_ss5_lvd_s5b">&lt;StorageDetails HostName="ldap2.example.com" Port="1389" UserEncodedAuth=” 4oCYQ049c3RiaW5kLE89ZXhhbXBsZTpzZWN1cmVQYXNzd29yZOKAmQ==” SslEnabled="true" SslPort="636" BaseDN="" Scope="2" SearchFilter="(&amp;amp;(objectclass=organizationalPerson)(|(cn=%s)(givenname=%s)(sn=%s)(displayName=%s)(mail=%s)))"/></codeblock></info>
+          </substep>
+        </substeps>
+      </step>
+      <step importance="optional">
+        <cmd>By default, the LDAP operations are not encoded, and all communications are sent over
+          clear text. To enable encryption, first follow the instructions in <xref format="dita"
+            scope="local" href="securing_connections_sametime_community_and_ldap.dita"/>.</cmd>
+        <info>
+          <p>After the keystore has been created, update the SSL properties to include the path to
+            the keystore and its password. For
+            example:<codeblock>&lt;SslProperties KeyStorePath="keys.p12" KeyStorePassword="securePassword"/> </codeblock></p>
+          <p>Verify the port number on the <codeph>SslPort</codeph> property. The default LDAP port
+            number is
+            636.<codeblock id="codeblock_ayd_sss_q5b">SslPort="<varname>port_number</varname>"</codeblock></p>
+          <p>Change the setting for <codeph>SslEnabled</codeph> to
+            true.<codeblock id="codeblock_uzk_rss_q5b">SslEnabled="true"</codeblock>
+          </p>
+        </info>
+      </step>
+      <step>
+        <cmd>Review the default search filter and make changes to fit your LDAP server’s schema. </cmd>
+        <info>The <codeph>BaseDN</codeph> field specifies where to start searching in the directory.
+          For example, if all users are located in <codeph>cn=users,dc=example,dc=com</codeph>, you
+          could set your <codeph>BaseDN=”cn=users,dc=example,dc=com“</codeph> so that the rest of
+          the directory is not searched. A BaseDN is required if using Microsoft Active Directory
+          and is not required for Domino LDAP. <p>Scope specifies how deep the search is done, enter
+            one of the following. <parml id="parml_zht_4ts_q5b">
+              <plentry>
+                <pt>0 = Base</pt>
+                <pd>A lookup operation. Only a single entry described by the base DN is
+                  matched.</pd>
+              </plentry>
+              <plentry>
+                <pt>1 = One level</pt>
+                <pd>Searching is performed one level below the base DN and no further. This is like
+                  opening a folder in a file system and looking only at the direct elements inside
+                  the folder.</pd>
+              </plentry>
+              <plentry>
+                <pt>2 = Subtree</pt>
+                <pd>All child entries of the base DN are searched, whether direct or not, including
+                  the base DN itself. </pd>
+              </plentry>
+            </parml></p></info>
+      </step>
+      <step>
+        <cmd>The host name of the LDAP server is set during setup. Review the HostName setting and
+          confirm that it is the fully qualified host name of the LDAP service, which might be a
+          load balancer in front of a cluster of LDAP servers.</cmd>
+        <info>If the host name is not correct, update it in the
+            <filepath>helm/values.yaml</filepath> file for Kubernetes or the
+            <filepath>.env</filepath> file for Docker. </info>
+      </step>
+      <step>
+        <cmd>Map the business card fields to LDAP attributes</cmd>
+        <info>For each type of data, there is an <codeph>Id</codeph> and <codeph>FieldName</codeph>.
+            <ul id="ul_e5y_4ws_q5b">
+            <li>The <codeph>Id</codeph> is the internal name used to identify each area of the
+              business card. </li>
+            <li>The <codeph>FieldName</codeph> value is set to the LDAP attribute that contains the
+              data to display inside the business card. Modify any values that do not match your
+              LDAP schema.</li>
+          </ul>
+        </info>
+        <info>These settings are in the <codeph>&lt;Details></codeph> section.<p>
+            <table frame="all" rowsep="1" colsep="1" id="table_lx1_2js_q5b">
+              <title>Sametime application settings</title>
+              <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <colspec colname="c3" colnum="3" colwidth="1*"/>
+                <thead>
+                  <row>
+                    <entry>Description</entry>
+                    <entry>Id name (do not change)</entry>
+                    <entry>Example</entry>
+                  </row>
+                </thead>
+                <tbody>
+                  <row>
+                    <entry>The name of the attribute that holds the email address </entry>
+                    <entry>MailAddress</entry>
+                    <entry>mail</entry>
+                  </row>
+                  <row>
+                    <entry>The name of the attribute that has the user’s Common Name. </entry>
+                    <entry>Name</entry>
+                    <entry>cn</entry>
+                  </row>
+                  <row>
+                    <entry>The name of the attribute that contains the user’s title. </entry>
+                    <entry>Title</entry>
+                    <entry>title</entry>
+                  </row>
+                  <row>
+                    <entry>The name of the attribute that contains the user’s physical address. </entry>
+                    <entry>Location</entry>
+                    <entry>postalAddress </entry>
+                  </row>
+                  <row>
+                    <entry>The name of the attribute that contains the user’s phone number.</entry>
+                    <entry>Telephone</entry>
+                    <entry>telephoneNumber</entry>
+                  </row>
+                  <row>
+                    <entry>The name of the attribute that has the Company, organization or
+                      department name. </entry>
+                    <entry>Company</entry>
+                    <entry>ou</entry>
+                  </row>
+                  <row>
+                    <entry>The attribute containing the photo.**</entry>
+                    <entry>Photo</entry>
+                    <entry>jpegPhoto</entry>
+                  </row>
+                </tbody>
+              </tgroup>
+            </table>
+          </p><p>
+            <note id="note_mx1_2js_q5b">** If images are stored in a URL, see the step 8.</note>
+          </p></info>
+      </step>
+      <step>
+        <cmd>If you would like to map additional detail to these fields it is possible with
+          additional configuration modify the appropriate line in the <codeph>&lt;Details></codeph>
+          section.</cmd>
+        <info>
+          <p>For example, if there is both a desk phone number and a mobile phone number that you
+            wish to include in the business card, you can use a separator between the two phone
+            numbers when the information is displayed. Locate the <codeph>&lt;Detail></codeph> line
+            with the telephone attributes. For desk phone number the attribute is
+              <parmname>telephoneNumber</parmname>, and for mobile phone it is
+              <parmname>mobile</parmname>.  In the field name, include both attributes separated by
+            a comma.<codeblock>FieldName=”telephoneNumber,mobile”</codeblock> Add
+                <codeph>DisplaySeparator="<varname>separator</varname>"</codeph> to the statement
+            identifying the separator. In the example, the forward slash is used as the separator.
+            You can choose other characters as a
+            separator.<codeblock id="codeblock_l1g_p1t_q5b">&lt;Detail Type="text/plain" Id="Telephone" FieldName="telephoneNumber,mobile" DisplaySeparator=” / “/></codeblock></p>
+        </info>
+      </step>
+      <step id="photo_url">
+        <cmd>If photos are stored in a URL on a web server, the LDAP server must have an attribute
+          that contains the URL. The attribute can be an existing attribute that has been repurposed
+          or a new attribute can be created.</cmd>
+        <info>
+          <note id="note_vvt_hjt_q5b">If you are using HCL Connections Profiles for the photos, see
+            the topic <xref href="connections_photos.dita">Configuring Business Cards on HCL
+              Connections</xref>. </note>
+          <p>When using Connection Profile URLs, the photo name must be the email extension of
+              <filepath>.jpg</filepath>. For example, if a user’s email address is jane@example.com,
+            the file name must be <filepath>jane@example.com.jpg</filepath>.</p>
+          <p>Locate the <codeph>&lt;Details></codeph> section. Create a new
+              <codeph>&lt;Details></codeph> line for the <parmname>ImagePath</parmname> to be used
+            by desktop clients. In the <parmname>FieldName</parmname> setting, enter the attribute
+            that contains the URL. For example,if the attribute that contains the photo URL is
+              <userinput>description</userinput> the new line
+            is:<codeblock id="codeblock_b54_pb5_q5b">&lt;Detail Type="text/plain" Id="ImagePath" FieldName="description"/></codeblock></p>
+          <p>If you have mobile clients, add an additional <codeph>&lt;DetailType></codeph> for
+            PhotoURL. For
+            example:<codeblock id="codeblock_a31_rb5_q5b">&lt;Detail Type="text/plain" Id="PhotoURL" FieldName="description"/></codeblock></p>
+        </info>
+      </step>
+      <step>
+        <cmd>In the <parmname>Set params</parmname> settings, select the Id names for the fields
+          that you want to display as part of the business card. And remove any Ids that you do not
+          want to include.</cmd>
+        <info>For example, if you do not want to include the company name, remove
+            <parmname>“Company”</parmname> from the list of attributes. <p>If you have added
+              <parmname>ImagePath</parmname>, <parmname>PhotoURL</parmname>, or both, add these to
+            the <codeph>&lt;Set params></codeph> and remove <parmname>Photo</parmname>.</p><p>There
+            are two lines that begin with <codeph>&lt;Set params></codeph>, each one has a unique
+              <parmname>SetID=</parmname>. <ul id="ul_izm_3c5_q5b">
+              <li>The one listed for SetId=”0” is for anonymous users. </li>
+              <li>The one for SetId=”1” is for authenticated users. </li>
+            </ul></p></info>
+      </step>
+      <step>
+        <cmd>In the LDAP configuration, if the <uicontrol>"﻿The attribute of the person entry that
+            defines the internal ID of a Sametime user"</uicontrol> setting is not blank or set to
+          anything other than the DN, the <codeph>UserInfoConfig.xml</codeph> file must be updated. </cmd>
+        <info>
+          <p>Locate the <parmname>StorageDetails</parmname> tag of the relevant LDAP directory and
+            add the following flags:<ul id="ul_ugp_4c5_q5b">
+              <li>UserIdAttribute= attribute_name <p>Where <codeph>attribute_name</codeph> is the
+                  name of the attribute configured as the internal ID.</p></li>
+              <li>PersonObjectClass= object_class_name <p>Where <codeph>object_class_name</codeph>
+                  is the name of the person object class, for example:
+                organizationalPerson.</p></li>
+            </ul></p>
+        </info>
+      </step>
+      <step>
+        <cmd>When all updates are complete, save and close the <codeph>UserInfoConfig.xml</codeph>
+          file. </cmd>
+        <info>Verify that there are not formatting errors by opening the file in a browser.</info>
+      </step>
+    </steps>
+    <postreq id="postreq_ah3_5bv_q5b">If no mistakes are found, update the Docker or Kubernetes
+      deployment for the settings to take effect. See   <xref
+        href="config_buscard_custom_docker.dita" format="dita" scope="local"/> or <xref
+        href="config_buscard_custom_kubernetes.dita" format="dita" scope="local"/>. </postreq></taskbody>
+
+</task>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div>
+    <div class="footer">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/legal/disclaimer">Vastuuvapautuslauseke</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/legal/privacy">Yksityisyys</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/legal/terms-use">Käyttöehdot</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link footer-launch ot-sdk-show-settings" style="color:white;" href="#"> Evästeasetukset</a>
+            </li>
+        </ul>
+    </div>
+</div>

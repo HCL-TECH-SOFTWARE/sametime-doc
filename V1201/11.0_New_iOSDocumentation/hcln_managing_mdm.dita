@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="hcln_managing_mdm">
+    <title>Managing HCL Nomad via an MDM provider </title>
+    <shortdesc>Starting with version 1.0.4, HCL Nomad for iOS supports managed configuration via
+        most common Mobile Device Management (MDM) providers. All MDM providers are slightly
+        different in how they implement managed configurations for applications. </shortdesc>
+    <conbody>
+        <note>This article is intended to provide details on how to enable managed configurations
+            for the HCL Nomad application – it is not intended to be a replacement for a specific
+            MDM provider’s documentation.<p>HCL Nomad has defined a set of managed configuration
+                settings that can be uploaded and configured in your MDM provider’s App Catalog.
+                </p><p>Your MDM provider might support implementing configuration settings through
+                uploading them via an XML file. For this case, an XML file is available through this
+                    <xref
+                    href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0069493"
+                    format="html" scope="external">support article</xref> to use as a starting point
+                for your customizations.</p><p>
+                <note>The following table describes the Nomad configuration settings that are
+                    available. Each MDM provider has its own method for implementing these settings.
+                    Refer to your MDM provider's documentation for details.</note>
+            </p></note>
+        <section id="section_tbt_wph_x3b">
+            <title>Configuration settings</title>
+            <p>
+                <table frame="all" rowsep="1" colsep="1" id="table_ekb_cqh_x3b">
+                    <title>Account settings</title>
+                    <tgroup cols="4">
+                        <colspec colname="c1" colnum="1" colwidth="1*" align="left"/>
+                        <colspec colname="c2" colnum="2" colwidth="1*" align="left"/>
+                        <colspec colname="c3" colnum="3" colwidth="1*" align="left"/>
+                        <colspec colname="c4" colnum="4" colwidth="1*" align="left"/>
+                        <thead>
+                            <row>
+                                <entry>Key Name</entry>
+                                <entry>Label</entry>
+                                <entry>Default Value</entry>
+                                <entry>Description</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>dominoServerName</entry>
+                                <entry>Domino server name</entry>
+                                <entry>Empty String</entry>
+                                <entry>Domino server name. Example:
+                                        <filepath>myserver/myorg</filepath></entry>
+                            </row>
+                            <row>
+                                <entry>dominoServerHostName</entry>
+                                <entry>Domino server host name</entry>
+                                <entry>Empty String</entry>
+                                <entry>Provide the fully qualified Domino server host name or IP
+                                    address. Example:
+                                    <filepath>myserver.mycompany.com</filepath></entry>
+                            </row>
+                            <row>
+                                <entry>userName</entry>
+                                <entry>User name</entry>
+                                <entry>Empty String</entry>
+                                <entry>The first and last name of the user. Multiple user name
+                                    formats supported.</entry>
+                            </row>
+                            <row>
+                                <entry>lockAccountSettings</entry>
+                                <entry>Lock user account settings</entry>
+                                <entry>False</entry>
+                                <entry>Lock the user account settings so the end user can not change
+                                    the values manually on the device.</entry>
+                            </row>
+                            <row>
+                                <entry>enableDNS</entry>
+                                <entry>Enable DNS lookup from the client</entry>
+                                <entry>True </entry>
+                                <entry>If disabled the IP Address must be specified for Domino
+                                    server host name field and any relevant connection
+                                    documents.</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <table frame="all" rowsep="1" colsep="1" id="table_cvd_5qh_x3b">
+                    <title>Marvel Client settings</title>
+                    <tgroup cols="4">
+                        <colspec colname="c1" colnum="1" colwidth="1*" align="left"/>
+                        <colspec colname="c2" colnum="2" colwidth="1*" align="left"/>
+                        <colspec colname="c3" colnum="3" colwidth="1*" align="left"/>
+                        <colspec colname="c4" colnum="4" colwidth="1*" align="left"/>
+                        <thead>
+                            <row>
+                                <entry>Key name</entry>
+                                <entry>Label</entry>
+                                <entry>Default Value</entry>
+                                <entry>Description</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>enableMarvelClient</entry>
+                                <entry>Enable MarvelClient</entry>
+                                <entry>True</entry>
+                                <entry>When enabled, the MarvelClient is allowed to manage the
+                                    application.</entry>
+                            </row>
+                            <row>
+                                <entry>marvelClientConfigDB</entry>
+                                <entry>MarvelClient Configuration DB</entry>
+                                <entry>Empty String</entry>
+                                <entry>Location of MarvelClient Configuration DB, can be fully
+                                    qualified or use <codeph>%notes_homeserver%</codeph> to specify
+                                    the user's home mail server. Ex:
+                                        <filepath>%notes_homeserver%!!panagenda\pmc_config.nsf</filepath></entry>
+                            </row>
+                            <row>
+                                <entry>marvelClientConfigDBNotResolvable</entry>
+                                <entry>MarvelClient Configuration DB Not Resolvable</entry>
+                                <entry>Empty String</entry>
+                                <entry>Default MC DB to use if <codeph>%notes_homeserver%</codeph>
+                                    is specified in <varname>marvelClientConfigDB</varname> field
+                                    and can not be resolved. Ex:
+                                        <filepath>myserver!!panagenda\pmc_config.nsf</filepath></entry>
+                            </row>
+                            <row>
+                                <entry>marvelClientConfigDBUnavailable</entry>
+                                <entry>MarvelClient Configuration DB Unvailable</entry>
+                                <entry>Empty String</entry>
+                                <entry>MarvelClient configuration DB to use if unable to connect to
+                                    the database specified by
+                                        <varname>marvelClientConfigDB</varname> or
+                                        <varname>marvelClientConfigDBNotResolvable</varname>. Ex:
+                                        <filepath>myAlternateServer!!panagenda\pmc_config.nsf</filepath></entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <table frame="all" rowsep="1" colsep="1" id="table_wck_lrh_x3b">
+                    <title>Application Restrictions</title>
+                    <tgroup cols="4">
+                        <colspec colname="c1" colnum="1" colwidth="1*" align="left"/>
+                        <colspec colname="c2" colnum="2" colwidth="1*" align="left"/>
+                        <colspec colname="c3" colnum="3" colwidth="1*" align="left"/>
+                        <colspec colname="c4" colnum="4" colwidth="1*" align="left"/>
+                        <thead>
+                            <row>
+                                <entry>Key Name</entry>
+                                <entry>Label</entry>
+                                <entry>Default Value</entry>
+                                <entry>Description</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>enableAttachmentAdd</entry>
+                                <entry>Enable adding attachments from the mobile device</entry>
+                                <entry>True</entry>
+                                <entry>When enabled, the user is able to add attachments from the
+                                    mobile device. This includes photos, videos, direct capture from
+                                    camera and attachment of files.</entry>
+                            </row>
+                            <row>
+                                <entry>enableAttachmentView</entry>
+                                <entry>Enable view of attachments</entry>
+                                <entry>True</entry>
+                                <entry>When enabled, attachments can be viewed and shared from the
+                                    mobile device.</entry>
+                            </row>
+                            <row>
+                                <entry>enableCutCopyPaste</entry>
+                                <entry>Enable cut, copy and paste operations</entry>
+                                <entry>True</entry>
+                                <entry>When enabled, cut, copy and paste operations is permitted
+                                    from within the application.</entry>
+                            </row>
+                            <row>
+                                <entry>enableGenerateProblemReport</entry>
+                                <entry>Enable the generate problem report feature</entry>
+                                <entry>True</entry>
+                                <entry>When enabled, the end user can generate a problem report file
+                                    on the device that includes logs and configuration information.
+                                    The end user can then share that information with HCL support
+                                    and/or their system administrator. When disabled verbose log
+                                    settings are also disabled.</entry>
+                            </row>
+                            <row>
+                                <entry>enableImport</entry>
+                                <entry>Enable import of content from the mobile device</entry>
+                                <entry>True</entry>
+                                <entry>When enabled, the user is able to import content from the
+                                    mobile device. This includes import of photos, direct capture
+                                    from camera and import content from file.</entry>
+                            </row>
+                            <row>
+                                <entry>enableMail</entry>
+                                <entry>Enable open of mail application</entry>
+                                <entry>True</entry>
+                                <entry>When enabled, the user is able to open their Notes mail
+                                    application from within the application.</entry>
+                            </row>
+                            <row>
+                                <entry>enableReplication</entry>
+                                <entry>Enable local replication</entry>
+                                <entry>True</entry>
+                                <entry>When enabled, Notes applications can be replicated to an
+                                    offline replica stored on the mobile device.</entry>
+                            </row>
+                            <row>
+                                <entry>maxReplicaAttachmentSize</entry>
+                                <entry>Maximum attachment size (MB)</entry>
+                                <entry>10</entry>
+                                <entry>Maximum attachment size in megabytes (MB) allowed to
+                                    replicate to the mobile device. Set to zero to allow all
+                                    attachments. This value can be changed on the device unless
+                                        <varname>maxReplicaAttachmentSizeLock</varname> is set to
+                                        <varname>true</varname>.</entry>
+                            </row>
+                            <row>
+                                <entry>maxReplicaAttachmentSizeLock</entry>
+                                <entry>Lock max attachment setting</entry>
+                                <entry>False</entry>
+                                <entry>Locks the maximum attachment size setting so the end user can
+                                    not change the value manually on the device when creating a
+                                    local replica.</entry>
+                            </row>
+                            <row>
+                                <entry>enableReportDefect</entry>
+                                <entry>Enable the report a defect feature</entry>
+                                <entry>True</entry>
+                                <entry>When enabled, the end user can easily send feadback to HCL
+                                    support via e-mail. The end user can include description, screen
+                                    shots and can attach a problem report file if generated.</entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+                <table frame="all" rowsep="1" colsep="1" id="table_n5c_3sh_x3b">
+                    <title>Miscellaneous settings</title>
+                    <tgroup cols="4">
+                        <colspec colname="c1" colnum="1" colwidth="1*" align="left"/>
+                        <colspec colname="c2" colnum="2" colwidth="1*" align="left"/>
+                        <colspec colname="c3" colnum="3" colwidth="1*" align="left"/>
+                        <colspec colname="c4" colnum="4" colwidth="1*" align="left"/>
+                        <thead>
+                            <row>
+                                <entry>Key Name</entry>
+                                <entry>Label</entry>
+                                <entry>Default Value</entry>
+                                <entry>Description</entry>
+                            </row>
+                        </thead>
+                        <tbody>
+                            <row>
+                                <entry>connectionDocuments</entry>
+                                <entry>Connection document settings for the Nomad
+                                    application</entry>
+                                <entry>Empty String Array</entry>
+                                <entry>Specify the Domino server name and Domino server address or
+                                    host name to generate a normal priority network connection
+                                    document. Separate the server name and hostname with a
+                                    semi-colon. Enter one connection record per row. Example:
+                                        <filepath>myServer/MyOrg;myServer.address.com</filepath></entry>
+                            </row>
+                            <row>
+                                <entry>passthruDocuments</entry>
+                                <entry>Passthru document settings for the Nomad application</entry>
+                                <entry>Empty String Array</entry>
+                                <entry>Specify the passthru server name and destination pattern to
+                                    generate a normal priority passthru connection document. Use *
+                                    as wildcard. Separate the passthru server name and destination
+                                    pattern with a semi-colon. Enter one passthru record per row.
+                                    Example: myPasshtruServer/MyOrg;*/MyOrg</entry>
+                            </row>
+                            <row>
+                                <entry>notesINISettings</entry>
+                                <entry>Notes.ini settings for the Nomad application</entry>
+                                <entry>Empty String Array</entry>
+                                <entry>Any desired notes.ini setting. Enter one<filepath>
+                                        notes.ini</filepath> setting per row. Example:
+                                        <filepath>MY_NOTESINI_SETTING=myvalue</filepath></entry>
+                            </row>
+                        </tbody>
+                    </tgroup>
+                </table>
+            </p>
+        </section>
+    </conbody>
+</concept>

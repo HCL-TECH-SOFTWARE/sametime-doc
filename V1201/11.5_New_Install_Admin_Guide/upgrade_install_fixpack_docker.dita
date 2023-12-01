@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="upgrade_install_fixpack_docker" xml:lang="en-us">
+    <title>Installing a fix pack on Docker</title>
+    <shortdesc/>
+    <taskbody>
+        <prereq conref="upgrade_install_fixpack.dita#upgrade_install_fixpack/fixpack_prereq"
+            id="prereq_bb4_3jl_25b"/>
+        <context id="context_w1x_qrm_x5b">
+            <p>Creating a backup of the installation directory, allows you to return to your
+                previous version if a problem occurs related to installing the fix pack. </p>
+            <note id="note_dhq_srm_x5b">Make a backup of your key files, such as
+                    <filepath>docker-compose.yml</filepath> and any customized files on the system
+                so that you can validate any custom settings from the previous installation. If you
+                have placed files in the <filepath>sametime-config</filepath> folder like custom
+                branding or TLS certificates, those files need to be restored after the fix pack is
+                installed. For the <filepath>docker-compose.yml</filepath> file, after the upgrade
+                reference the backup version and add the modifications to the new
+                    <filepath>docker-compose.yml</filepath> provided during the upgrade. Changes to
+                the <filepath>custom.env</filepath> and <filepath>.env</filepath> files are retained
+                when upgrading to version 12.0.1 and later.</note>
+        </context>
+        <steps id="steps_qhh_jhk_25b">
+            <step>
+                <cmd>In the directory where Sametime is installed, issue the following command to
+                    stop the Sametime server.</cmd>
+                <info>
+                    <codeblock id="codeblock_zxy_ypk_25b"> docker-compose down </codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Make a copy of the Sametime installation directory as a backup before
+                    installing the fix pack.</cmd>
+                <info>Copy the contents of the installation directory into another directory.  For
+                    example, <filepath>/<varname>sametime_install</varname>_backup</filepath> where
+                        <varname>sametime_install</varname> is the Sametime installation
+                    directory.</info>
+            </step>
+            <step>
+                <cmd>Download and decompress the Sametime fix pack archive to the Sametime
+                    installation directory.</cmd>
+                <info>
+                    <codeblock id="codeblock_icc_gqk_25b">unzip <varname>sametime_fixpack_zip</varname> -d /<varname>sametime_install_path</varname> </codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>In the <varname>sametime_install</varname> directory, run the following script
+                    to initiate the installation process. </cmd>
+                <info>
+                    <codeblock id="codeblock_c3j_3qk_25b"> ./install.sh</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Follow the prompts to provide the required information. The install process
+                    detects if the install is an upgrade or full install. </cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

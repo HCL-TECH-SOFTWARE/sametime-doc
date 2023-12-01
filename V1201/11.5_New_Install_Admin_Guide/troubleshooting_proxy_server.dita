@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="troubleshooting_proxy_server" xml:lang="en-us">
+<title>Troubleshooting the Proxy server</title>
+    <shortdesc>Use this information on troubleshooting and logging tools to diagnose and resolve problems affecting the HCL Sametime Proxy server.</shortdesc>
+</task>

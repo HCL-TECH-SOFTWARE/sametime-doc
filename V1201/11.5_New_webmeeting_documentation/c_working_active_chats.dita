@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="working_active_chats" xml:lang="en-us">
+ <title>Working with your Active Chats</title>
+ <shortdesc>The Chats screen is the default view when you log in. It displays all conversations that you currently have open. For each chat in the list the following details are displayed:</shortdesc>
+ <conbody>
+  <ul>
+   <li>The name of the chat partner or the topic for a group chat</li>
+   <li>The photo or default avatar of the chat partner</li>
+   <li>The last message received or sent on the conversation</li>
+   <li>The time of the last message on the conversation</li>
+   <li> A badge indicating the number of unread messages for the conversation if applicable.</li>
+  </ul>
+  <p>Chats with the most recent activity are displayed at the top of the list. New incoming messages
+   display at the top of the list with a badge indicating there are unread messages in the chat. </p>
+  <p>You can start a new chat by tapping the new chat icon and searching for a user you wish to chat with. Swipe left on any conversation to close it or leave in in the case of a group chat. Tap any conversation to open the conversation (on the iPhone) or to display the conversation contents in the right view of the iPad.</p>
+  <p>When you open a chat, the chat history displays in the main view. At the top of the screen is
+   the name and avatar of the chat partner along with their availability status. Tapping the avatar
+   displays the Contact Info screen or the group participant list if you are in a group chat. New
+   incoming messages from the chat partner are displayed at the bottom of the screen. You can send
+   new messages and add emoticons from the provided palate or the device emoticon palate.</p>
+  <note>Using emoticons from the device palate may result in some emoticons not displaying correctly on other clients. Emoticons in the provided palate are guaranteed to display on other Sametime clients.</note>
+  <p>You can add photos to the chat by tapping the paper clip icon in the entry field and choosing a photo from the photo library or take a new picture with the camera.</p></conbody>
+</concept>
+<?Pub *0000001020?>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="how_to_setup_meeting_url" xml:lang="en-us">
+<title>How to setup a meeting URL?</title>
+<shortdesc>When you click the button for the first time, if the meeting URL has not been set, the
+preference pane for the feature displays.</shortdesc>
+<taskbody>
+<context>
+<p>Setup meeting URL by clicking the <uicontrol>Launch Meeting and Send Invitation</uicontrol>
+button.</p>
+<note>You can also configure the meeting URL by setting it in the preference pane from the gear
+icon.</note>
+</context>
+<steps>
+<step>
+                <cmd>Click the <uicontrol><image href="Images/launchmeeting.png"/> Launch Meeting
+                        and Send Invitation</uicontrol> button.</cmd>
+            </step>
+<step>
+                <cmd>A pop-up window displays to configure a meeting provider.</cmd>
+            </step>
+<step>
+                <cmd>Enter the third party meeting URL in the <uicontrol>Meeting URL</uicontrol>
+                    text-box.</cmd>
+                <info>
+                    <note>If the administrator has configured a URL on your behalf, the URL field
+                        may be partially filled.</note>
+                </info>
+            </step>
+<step>
+<cmd>Click Apply.</cmd>
+</step>
+<step>
+<cmd>Click Ok.</cmd>
+</step>
+<step>
+<cmd>When you successfully configure the meeting link, an invitation message displays with the
+hyperlink.</cmd>
+<info>
+<note>Configuring the URL helps you to setup a custom meeting invite, that you can send in the chat
+conversation message as an invitation message.</note>
+</info>
+</step>
+</steps>
+</taskbody>
+</task>

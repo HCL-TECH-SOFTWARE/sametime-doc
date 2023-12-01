@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="enabling_photo_cache" xml:lang="en-us">
+    <title>Enabling support for photos in the Proxy Server and Meeting Server</title>
+    <shortdesc>This procedure creates a photo cache on the Sametime Proxy Server that serves photos to the Proxy Server web and mobile clients and to the Sametime 11.6 Meeting Server clients.</shortdesc>
+
+<taskbody>
+<context>
+            <note>Sametime Proxy 11.6 requires photocache enabled for Meetings and Mobile clients.
+                Photocache is now enabled by default.</note>
+            <p>The Meeting server retrieves photos from the Proxy Server cache and does not have its
+                own cache. The Proxy Server retrieves photos from the location specified in the
+                Community Server business cards configuration and caches the photos to a specified
+                drive on the Proxy Server.</p>
+            <p>In addition to completing this procedure, to support photos for the Proxy Server and
+                Meeting Server, you must configure business cards on the Community Server that get
+                information from the Domino directory Person document or from an LDAP directory.
+                Photos must be stored in the photoURL field (Domino) or as a photo URL in an LDAP
+                attribute (LDAP directory). Photos as attachments are not supported. For more
+                information on configuring business cards, see the topic <xref
+                    href="setting_business_cards.dita">Setting up business cards</xref>.</p>
+            <p><b>Procedure</b></p>
+            <ol id="ol_csj_jtm_fmb">
+                <li>Remote into the Sametime Proxy Server.</li>
+                <li>Create a directory in which to store the cached photos, for example:
+                        <i>d:\hcl\photocache.</i>
+                    <note>Linux servers must have read, write, and delete access to this
+                        directory.</note></li>
+                <li>Use a text or xml editor to open the <codeph>stproxyconfig.xml</codeph> file,
+                    located in <codeph>sametimeproxy\conf\stproxyconfig.xml</codeph>.</li>
+                <li>Add a <uicontrol>&lt;photoCache></uicontrol> section that enables the use of the
+                    photo cache and provides the URL and path to its location.
+                        <p><b>Example</b>:<codeblock>&lt;photoCache>
+       &lt;enabled>true&lt;/enabled>
+       &lt;storageLocation>d:\hcl\photocache&lt;/storageLocation>
+       &lt;cacheExpiry>10&lt;/cacheExpiry>
+       &lt;proxyServerURL>http://webchat.example.com&lt;/proxyServerURL>  
+&lt;/photoCache></codeblock></p><ol>
+                        <li>In the <uicontrol>&lt;storageLocation> </uicontrol> choose the directory
+                            that was created to store the cached photos.</li>
+                        <li>In the <uicontrol>&lt;proxyServerURL></uicontrol>, provide the fully
+                            qualified domain name of the Sametime Proxy Server.</li>
+                    </ol></li>
+                <li>Save and close the file.</li>
+            </ol>
+        </context>
+</taskbody>
+</task>

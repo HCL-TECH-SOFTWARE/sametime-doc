@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_release_three" xml:lang="en-us">
+ <title>Release 11.0.3</title>
+ <shortdesc>Release 11.0.3 includes the following new features.</shortdesc>
+ <conbody>
+  <p><ul><li>Updated Login, Community and Meetings Views.</li>
+   <li>Improved Group chat auto join with the 11.0 FP2 server.</li>
+   <li>11.5 Meetings Pre-Release with the 11.0 FP2 server.</li>
+   <li>Bug fixes.</li></ul></p>
+ </conbody>
+ </concept>
+<?Pub *0000001020?>

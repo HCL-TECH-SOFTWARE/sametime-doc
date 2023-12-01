@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_whats_new" xml:lang="en-us">
+  <title>New features in HCL Sametime 12 for Android</title>
+  <shortdesc>HCL <tm tmtype="reg" trademark="Sametime">Sametime</tm> for Android version 12 has new
+    features and enhancements.</shortdesc>
+  <conbody>
+    <section id="section_lxs_jzx_dvb">
+      <title>12.0.2</title>
+      <p>The following new features are only available when using the 12.0.2 version of the mobile
+        app.</p>
+      <parml id="parml_mxs_jzx_dvb">
+        <plentry>
+          <pt>Content sharing</pt>
+          <pd>Content such as images, URLs, files, and text can be shared with the Sametime app
+            using the mobile device sharing feature.</pd>
+        </plentry>
+        <plentry>
+          <pt>Filter your active chats</pt>
+          <pd>When viewing active chats you can filter on one-to-one chats, group chats, and meeting
+            chats. </pd>
+        </plentry>
+        <plentry>
+          <pt>Managing the waiting room</pt>
+          <pd>Mobile moderators can manage the waiting room. Moderators who attend a meeting on a
+            mobile device can admit other participants who are in the waiting room.</pd>
+        </plentry>
+      </parml>
+    </section>
+    <section id="section_llg_hby_dvb">
+      <title>12.0</title>
+      <p>The following new features are only available when using the 12.0.2 version of the mobile
+        app.</p>
+      <parml id="parml_uym_gby_dvb">
+        <plentry>
+          <pt>Server based Recent Meetings </pt>
+          <pd>With version 12.0 the Recent Meetings list queries the server to get recent meetings
+            update. This update means that your Recent Meetings list is same no matter which client
+            you use to display them. Because you can use mobile clients can to join meetings on
+            multiple servers you might see some discrepancy between the Recents list on a mobile
+            client and the Recents list on the browser or another mobile client. This discrepancy
+            happens because the mobile client also lists joined meetings on other servers whereas
+            the browser only lists joined meetings that are on the server you're connected to.
+            Meetings that you joined on servers prior to version 12.0 are still stored locally and
+            then merged with the version 12.0 meetings in the Recent Meetings list.</pd>
+        </plentry>
+        <plentry>
+          <pt>New meeting filters for viewing the list of recent meetings</pt>
+          <pd>By default, when you view meetings listed in <uicontrol>Recent</uicontrol>, all
+            meetings that you joined while logged into the app are listed. The list includes meeting
+            that used a Sametime 12 server or an earlier version. With the Sametime mobile app
+            version 12.0, you can customize the list by using the following filters:<dl
+              id="dl_vym_gby_dvb">
+              <dlentry>
+                <dt>My Meetings</dt>
+                <dd>Lists the meetings that you own. The list includes meetings that you joined and
+                  those that you didn't join.</dd>
+              </dlentry>
+              <dlentry>
+                <dt>Recordings</dt>
+                <dd>Lists the meetings that you have joined and have an associated recording.</dd>
+              </dlentry>
+              <dlentry>
+                <dt>Calls</dt>
+                <dd>Lists the calls that you participated in.</dd>
+              </dlentry>
+            </dl></pd>
+        </plentry>
+        <plentry>
+          <pt>Meeting reports and recordings</pt>
+          <pd>Meeting owners have access to reports for their meetings. You can access these reports
+            by opening the <uicontrol>Recent</uicontrol> tab and then tapping the More menu icon.
+            You can view two reports: Summary Report and Full Report. If the meeting was recorded,
+            the More menu includes the recordings.</pd>
+        </plentry>
+        <plentry>
+          <pt>Muting conversations</pt>
+          <pd>With version 12.0, you can mute individual conversations. The ability to mute is
+            helpful when you participate in a group that that is very active.</pd>
+        </plentry>
+        <plentry>
+          <pt>Click to call</pt>
+          <pd>With this feature you can connect directly with a contact or group by clicking the
+            call icon in the upper right of the chat window. When you place a call, a new meeting
+            starts. Those you call receive a join message and are placed into the meeting when they
+            join the call.</pd>
+          <pd>Version 12.0 includes notification settings for incoming calls.</pd>
+        </plentry>
+        <plentry>
+          <pt>Meeting modes enhancement</pt>
+          <pd>When you create a meeting, you can select a mode for the type of meeting. Each mode
+            has a set of options with the most common mode setting already selected. You can choose
+            from three modes: <ul id="ul_wym_gby_dvb">
+              <li>Collaboration: Flexible and fully customizable </li>
+              <li>Confidential: Maximum level of security </li>
+              <li>Lecture: Ideal for large moderated meetings</li>
+            </ul></pd>
+        </plentry>
+        <plentry>
+          <pt>File transfer</pt>
+          <pd>In addition to sending pictures from the camera or a photos app, in version 12.0 you
+            can send files in a chat. The files are uploaded and saved as a link in the chat that
+            you or a chat partner can download later. The HCL Sametime mobile app uses the Files app
+            to select the file to send. Files that you download are also saved in the Files app.
+              <note id="note_xym_gby_dvb">The mobile client does not support the previous file
+              transfer method, where you had to be online to receive the file.</note></pd>
+        </plentry>
+        <plentry>
+          <pt>Token Login</pt>
+          <pd>When you log in to the Sametime server with login credentials, secure tokens are sent
+            to the client for use throughout the session. These tokens are also used to authenticate
+            with the Sametime meeting service. The tokens can also be used to authenticate the
+            session instead of using login credentials. The use of secure tokens permit a login
+            session to persistent while the secure tokens remain valid. The session ends when you
+            use the <uicontrol>Logout</uicontrol> menu option or when the token expires. </pd>
+          <pd>The <uicontrol>Remain online</uicontrol> setting takes precedent in determining how
+            long to remain logged in when the HCL Sametime app runs in the background until the
+            setting expires. When the HCL Sametime app is running in the foreground, the secure
+            tokens are used to login if they haven't expired.</pd>
+        </plentry>
+        <plentry>
+          <pt>Meeting waiting room support</pt>
+          <pd>When you join a meeting that was configured with a waiting room, you enter the waiting
+            room until you are either admitted or denied access to the meeting. Messages from the
+            meeting owner are displayed in the waiting room.</pd>
+        </plentry>
+        <plentry>
+          <pt>Custom branding for meetings</pt>
+          <pd>Business customers can use their own branding for meetings. Administrators can
+            configure the Sametime server to use a business logo which is displayed on screens that
+            display during the join process.</pd>
+        </plentry>
+      </parml>
+      <parml id="parml_yym_gby_dvb">
+        <plentry>
+          <pt>New policy default options for the mobile app</pt>
+          <pd>Policies that the login process passes down specify the behavior of the HCL Sametime
+            mobile app. The Sametime administrator uses policies to turn on and off features. For
+            example, administrators can use file transfer policies to turn off file transfer when
+            they assess that the security risks in the customer's environment are too great.</pd>
+          <pd>In Sametime 12.0, the default settings for many mobile policies are updated to enable
+            all mobile features. However, an administrator can modify them to meet the needs of the
+            organization. For details about policies, see the HCL Sametime Administrator Guide. The
+              <xref href="https://help.hcltechsw.com/sametime/12/admin/c_mobileclient_policies.html"
+              scope="external" format="html">Mobile client policies</xref> topic describes the
+            policies that the mobile client uses.</pd>
+        </plentry>
+      </parml>
+    </section>
+  </conbody>
+</concept>
+<?Pub *0000001020?>

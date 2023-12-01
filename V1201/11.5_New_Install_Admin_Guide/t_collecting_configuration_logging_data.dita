@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="collecting_sametime_client_configuration_logging" xml:lang="en-us">
+    <title>Collecting Sametime client configuration and log data</title>
+    <shortdesc>You can collect client logs and configuration data into a zip file.</shortdesc>
+    <taskbody>
+        <steps id="steps_ecm_nc2_lvb">
+            <step>
+                <cmd>Go the <wintitle>Collect Support Data</wintitle> window.</cmd>
+                <choices id="choices_vdf_wc2_lvb">
+                    <choice>In the Notes embedded client, click <menucascade>
+                            <uicontrol>Help</uicontrol>
+                            <uicontrol>Support</uicontrol>
+                            <uicontrol>Collect Support Data</uicontrol>
+                        </menucascade>. </choice>
+                    <choice>In the stand-alone Connect Client, click <menucascade>
+                            <uicontrol>Gear icon</uicontrol>
+                            <uicontrol>Help</uicontrol>
+                            <uicontrol>Support</uicontrol>
+                            <uicontrol>Collect Support Data</uicontrol>
+                        </menucascade>.</choice>
+                </choices>
+            </step>
+            <step importance="optional">
+                <cmd>Select <uicontrol>Enable Customized Tracing</uicontrol>, and then click
+                        <uicontrol>Next</uicontrol>.</cmd>
+            </step>
+            <step importance="optional">
+                <cmd>Select one or more Sametime options, and then click
+                    <uicontrol>Next</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>If you want to reproduce the issue, click <uicontrol>Collect</uicontrol>. When
+                    the collection completes, a link to the collection zip file is provided.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

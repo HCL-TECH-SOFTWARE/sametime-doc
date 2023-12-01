@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="meetings_moderated" xml:lang="en-us">
+<title>Joining a moderated meeting</title>
+ <shortdesc>This type of meeting limits control to the owner or designated moderators. By default,
+    guests can join an existing meeting. Unless <uicontrol>Moderated</uicontrol> is enabled, any
+    authenticated user can start the meeting. Otherwise, the meeting owner or moderator must start
+    the meeting first before other users can join. For more information on how to create and manage
+    your meetings, refer to <xref href="t_create_moderated.dita"/> and <xref
+      href="participant_list.dita"/>. If the meeting has started and waiting room is enabled, then
+    participants must be admitted into the meeting first before being able to select
+      <uicontrol>Join</uicontrol> from the preview window. </shortdesc>
+ <taskbody>
+  <prereq id="prereq_wwy_ns3_wtb">You must secure the meeting link or name in order to join or
+      access the meeting. The meeting link is in the following
+      format.<codeblock id="codeblock_qk2_lrc_stb">https://meetings.customname.com/meeting/thisisjustatest</codeblock></prereq><context>
+  <p>If you need presenter or moderator rights, ask the moderator for assistance. For lecture-style
+        meetings, you must be a panelist in order to speak and participate in the conversation. For
+        more information, refer to <xref href="user_friendly.dita"/>. <xref href="t_loggingin.dita"
+        /> allows you to use all the in-meeting features.</p>
+ </context>
+    <steps>
+      <step>
+        <cmd>In a web browser, go to the meeting link.</cmd>
+        <info>Follow the instructions on how to configure and allow browser access to your audio
+          output, microphone, and camera.<image href="Images/c_audio_video_settings.png"
+            id="image_ngz_cby_ztb"/></info>
+        <info>
+          <note id="note_aq4_hjh_15b">Toggling your camera and microphone on and off affect those
+            devices when joining.</note>
+        </info>
+      </step>
+      <step>
+        <cmd>Do one of the following:</cmd>
+        <info>
+          <ul id="ol_cpy_vss_g5b">
+            <li>Select <uicontrol>Login</uicontrol> and sign into your account. For more
+              information, refer to <xref href="t_loggingin.dita"/>.</li>
+            <li>Select <uicontrol>Join as a guest</uicontrol>.</li>
+          </ul>
+        </info>
+        <info>For security reasons, Sametime requires all users to sign in as a guest or
+          authenticated user before joining. </info>
+        <info>
+          <note id="note_eng_tjx_35b">Some meetings require a password. Contact the moderator for
+            the details.</note>
+        </info>
+      </step>
+      <step>
+        <cmd>Adjust your audio and video settings. Depending on the access level and how the meeting
+          is configured, you are either redirected to the waiting room or admitted to the meeting
+          after joining. For more information, refer to <xref href="t_waiting_room.dita"/>. If you
+          are unable to join a meeting, contact the moderator for assistance.</cmd>
+      </step>
+    </steps></taskbody>
+  <task id="l1s_lwv_f5b">
+    <title>Joining a moderated meeting from the Meetings homepage</title>
+    <taskbody>
+      <context id="context_hps_m3x_35b">
+        <p>You can also join a moderated meeting from the Meetings homepage. Simply follow these
+          steps:</p>
+      </context>
+      <steps id="steps_ips_m3x_35b">
+        <step>
+          <cmd>In a web browser, go to the Meetings homepage.</cmd>
+        </step>
+        <step>
+          <cmd>Do one of the following:</cmd>
+          <info>
+            <ul id="ol_nxk_kvw_d5b">
+              <li>Sign in to your account. For more information, refer to <xref
+                  href="t_loggingin.dita"/>.</li>
+              <li>Select <uicontrol>Join as a guest</uicontrol>. Enter your display name, and then
+                select <uicontrol>Join as a guest.</uicontrol></li>
+            </ul>
+          </info>
+          <info>
+            <note id="note_akp_n1m_q5b">For security reasons, Sametime requires all users to sign in
+              before joining. </note>
+          </info>
+        </step>
+        <step>
+          <cmd>From the Meetings homepage, select <uicontrol>Get Started > Join an existing
+              meeting</uicontrol>.</cmd>
+        </step>
+        <step>
+          <cmd>Enter the meeting name. Some meetings require a password. Contact the moderator for
+            the details.</cmd>
+        </step>
+        <step>
+          <cmd>Select <uicontrol>Join</uicontrol>.</cmd>
+          <info>Follow the instructions on how to configure and allow browser access to your audio
+            output, microphone, and camera.</info>
+        </step>
+      </steps>
+    </taskbody>
+  </task>
+</task>
+<?Pub *0000001020?>

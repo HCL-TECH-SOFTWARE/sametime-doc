@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="starting_connections_chat" xml:lang="en-us">
+<title>Starting Connections Chat</title>
+<shortdesc>After installing Connections Chat, you can start the application.</shortdesc>
+<conbody>
+<p>On an Android device, go to the Application launcher. To find Connections Chat on your device,
+look for the HCL Chat icon: <image href="Images/Chat_icon.PNG" placement="break" align="left">
+<alt>chaticon</alt>
+</image></p>
+<p>After starting Connections, log in.</p>
+</conbody>
+</concept>
+<?Pub *0000002018?>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="c_usersguide" path="c_usersguide.html"/>
+   <appContext helpID="getting_started" path="getting_started.html"/>
+   <appContext helpID="system_requirements" path="system_requirements.html"/>
+   <appContext helpID="install_plugin" path="install_addin.html"/>
+   <appContext helpID="install_addin_url" path="install_addin_url.html"/>
+   <appContext helpID="install_addin_file" path="install_addin_file.html"/>
+   <appContext helpID="t_uninstall_addin" path="t_uninstall_addin.html"/>
+   <appContext helpID="c_using" path="c_using.html"/>
+   <appContext helpID="t_login_logout" path="t_login_logout.html"/>
+   <appContext helpID="c_addingmeetings" path="c_addingmeetings.html"/>
+   <appContext helpID="t_add_existingmeeting" path="t_add_existingmeeting.html"/>
+   <appContext helpID="t_create_meeting" path="t_create_meeting.html"/>
+   <appContext helpID="t_add_instantmeeting" path="t_add_instantmeeting.html"/>
+   <appContext helpID="t_edit_meeting" path="t_edit_meeting.html"/>
+   <appContext helpID="t_settings" path="t_settings.html"/>
+   <appContext helpID="t_gethelp" path="t_gethelp.html"/>
+   <appContext helpID="t_aboutinfo" path="t_aboutinfo.html"/>
+</map>

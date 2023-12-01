@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="installing_docker" xml:lang="en-us">
+ <title>Installing Docker</title>
+ <?Pub Caret 3?>
+ <shortdesc>This section provides information on installing Docker. </shortdesc>
+ <taskbody>
+  <context id="context_iv4_psr_2tb">
+   <p>All commands provided require running as ROOT or SUDO access. If not running as root user,
+    preface all commands with <cmdname>sudo</cmdname>.</p>
+  </context>
+  <steps id="steps_jv4_psr_2tb">
+   <step>
+        <cmd>Before installing Docker Compose, make sure Docker Engine is installed either locally
+          or remote, depending on the environment. On Linux systems, install the Docker Engine for
+          your OS provided in <xref href="https://docs.docker.com/engine/install/centos/"
+            format="html" scope="external"><u>Install Docker Engine</u></xref> documentation. If you
+          are following the Docker documentation to install the Docker Engine, docker-compose must
+          also be installed.</cmd>
+        <info>The following is an example of the install Docker Engine on CentrOS based on Docker
+          documentation to support docker-compose commands used when installing Sametime. The
+          example is for demonstration only. <note id="note_kv4_psr_2tb">CentOS ships with Docker
+            installed, but not the most recent which is required. Install supported Docker version.
+            See the <xref
+              href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0100619"
+              format="html" scope="external">HCL Sametime® System Requirements</xref> for
+            details.</note><ol id="ol_cmv_vfd_4nb">
+            <li>Uninstall old versions using the <cmdname>yum remove</cmdname> command provided in
+              the Docker Engine documentation. <image href="Images/docker_new.png" placement="break"
+                align="left" id="meetings_new"/></li>
+            <li>Install Docker Engine using a repository. First, install the yum-utils package which
+              provides the yum-config-manager utility.
+              <codeblock id="codeblock_lv4_psr_2tb">sudo yum install -y yum-utils </codeblock>Then
+              set up the stable repository.
+                <codeblock id="codeblock_mv4_psr_2tb">sudo yum-config-manager \ 
+    --add-repo \ 
+https://download.docker.com/linux/centos/docker-ce.repo</codeblock><image
+                href="Images/docker_package.png" placement="break" align="left"
+                id="image_oms_g3d_4nb"/></li>
+            <li>Install the latest version of Docker Engine and container. <codeblock id="codeblock_nv4_psr_2tb">yum install docker-ce docker-ce-cli containerd.io </codeblock><p>
+                <image href="Images/docker_engine.png" placement="break" align="left"
+                  id="image_rph_wjd_4nb"/>
+              </p><p>
+                <image href="Images/docker_container.png" placement="break" align="left"
+                  id="image_p21_zjd_4nb"/>
+              </p><p>At this point, Docker is installed but might not be started.</p></li>
+            <li>Start Docker.
+              <codeblock id="codeblock_ov4_psr_2tb">systemctl start docker </codeblock></li>
+            <li>Verify that Docker Engine is installed correctly by running the hello-world image. <codeblock id="codeblock_pv4_psr_2tb">docker run hello-world </codeblock><p>
+                <image href="Images/docker_hello.png" placement="break" align="left"
+                  id="image_qkg_jkd_4nb"/>
+              </p></li>
+          </ol><note id="note_qv4_psr_2tb">If you right click links like <xref
+              href="https://docs.docker.com/compose/install/" format="html" scope="external">Install
+              Docker Compose</xref> and choose <uicontrol>Open link in Tab</uicontrol> you can
+            complete these tasks and then close that tab to start the next step.</note></info>
+      </step>
+   <step>
+        <cmd>Install Docker Compose following steps and commands provided in <xref
+            href="https://docs.docker.com/compose/install/" format="html" scope="external">Install
+            Docker Compose</xref> topic in the Docker documentation. Docker Compose 1.29 or higher
+          is required.</cmd>
+        <info>The following is an example of the install Docker Engine on CentrOS based on Docker
+          documentation. The example is for demostration only. <ol id="ol_rwr_nkd_4nb">
+            <li>Install Compose on Linux systems.
+                <codeblock id="codeblock_rv4_psr_2tb">curl -L "https://github.com/docker/compose/releases/download/1.29.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose 
+</codeblock><image href="Images/docker_compose.png" placement="break" align="left"
+                id="image_kh1_tkd_4nb"/></li>
+            <li>Apply executable permissions to the binary.
+              <codeblock id="codeblock_sv4_psr_2tb">chmod +x /usr/local/bin/docker-compose </codeblock></li>
+            <li>Test the
+                installation.<codeblock id="codeblock_tv4_psr_2tb">docker-compose --version </codeblock><image
+                href="Images/docker_compose_version.png" placement="break" align="left"
+                id="image_lzj_zkd_4nb"/></li>
+          </ol></info>
+      </step>
+   <step>
+        <cmd>After the install is complete, use the following Linux shell command to confirm that
+          Docker is running, which returns the docker information. </cmd>
+        <info><codeblock id="codeblock_uv4_psr_2tb">docker info</codeblock><image
+            href="Images/docker_info.png" placement="break" align="left" id="image_fcv_2ld_4nb"/>If
+          Docker is not running, an error message is displayed indicating that a connection to
+          Docker cannot be completed.<image href="Images/docker_error.png" placement="break"
+            align="left" id="image_dm3_kld_4nb"/><p>To start the Docker service, run the following
+            command.</p><codeblock id="codeblock_vv4_psr_2tb">service docker start</codeblock><image
+            href="Images/docker_service.png" placement="break" align="left" id="image_z34_qld_4nb"
+          /></info>
+      </step>
+  </steps>
+ </taskbody>
+</task>
+<?Pub *0000003147?>

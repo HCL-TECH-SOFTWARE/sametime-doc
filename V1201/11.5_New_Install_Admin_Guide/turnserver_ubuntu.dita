@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="turnserver_ubuntu" xml:lang="en-us">
+    <title>Installing a TURN Server on Ubuntu</title>
+    <shortdesc>You can install and configure a TURN server to use with Sametime Meeting on an Ubuntu
+operating system.</shortdesc>
+    <taskbody>
+<prereq>You need the following:<ul>
+<li>A Ubuntu server with a public IP-Address</li>
+<li>A custom domain name</li>
+</ul></prereq>
+<context>The following procedures uses Coturn open source implementation of a TURN server. The
+procedure includes installing and configuring the Conturn server.</context>
+<steps>
+<step>
+<cmd>Install Coturn on the Ubuntu operating system.</cmd>
+<info>
+<codeblock>sudo apt-get -y update
+sudo apt-get -y install coturn
+</codeblock>
+</info>
+<substeps>
+<substep>
+<cmd>To start the Coturn Daemon at Startup, modify the <filepath>/etc/default/coturn</filepath>
+file.</cmd>
+<info>
+<codeblock>sudo vim /etc/default/coturn
+</codeblock>
+</info>
+</substep>
+<substep>
+<cmd>Remove the comment character (#) from the beginning of the following line.</cmd>
+<info>
+<codeblock>TURNSERVER_ENABLED=1
+</codeblock>
+</info>
+</substep>
+</substeps>
+</step>
+<step>
+<cmd>Confige the Coturn server.</cmd>
+<substeps>
+<substep>
+<cmd>Make a copy of your original configuration before making any changes.</cmd>
+<info>This original configuration copy can be used if a problem occurs.</info>
+</substep>
+<substep>
+<cmd>Create an empty file in the same directory to contain your configuration.</cmd>
+<info>
+<codeblock>sudo vim /etc/turnserver.conf</codeblock>
+</info>
+</substep>
+<substep>
+<cmd>Add the following content to define the Coturn server and replace the values with appropriate
+values for your configuration.</cmd>
+<info>
+<codeblock>
+# Listener IP address of relay server. Multiple listeners can be specified.
+# If no IP(s) specified in the config file or in the command line options,
+# then all IPv4 and IPv6 system IPs will be used for listening.
+listening-ip=0.0.0.0
+
+# External IP-Address of the TURN server
+external-ip=IP_ADDRESS
+
+# TURN listener port for UDP and TCP (Default: 3478).
+listening-port=3478
+
+# 443 for TURN over TLS, which can bypass firewalls
+tls-listening-port=443
+
+# host domain name.
+realm=mycompany.org
+
+# Path to the SSL certificate and private key.
+# Certificate file.
+cert=/usr/local/etc/turn_server_cert.pem
+
+# Private key file.
+pkey=/usr/local/etc/turn_server_pkey.pem
+
+# Lower and upper bounds of the UDP relay endpoints:
+# Further ports that are open for communication
+min-port=10000
+max-port=20000
+
+# This allows TURN credentials to be accounted for a specific user id.
+# If you don't have a suitable id, the timestamp alone can be used.
+# This option is just turning on secret-based authentication.
+# The actual value of the secret is defined by option static-auth-secret,
+use-auth-secret
+
+static-auth-secret=&lt;YOUR_SECRET>
+
+# Option to set the log file name.
+# By default, the turnserver tries to open a log file in
+# /var/log, /var/tmp, /tmp and current directories directories
+log-file=/var/log/turnserver.log
+
+# Enable verbose logging
+verbose
+
+# Do not allow an TLS/DTLS version of protocol
+no-tlsv1
+no-tlsv1_1
+no-tlsv1_2
+
+</codeblock>
+<p>You can make additional customizations to the file. For additional information,  see the   <xref
+href="https://github.com/coturn/coturn/blob/master/examples/etc/turnserver.conf" format="html"
+scope="external">turnserver.conf</xref> file. Within the file, configuration options are described
+as comments.</p>
+</info>
+</substep>
+</substeps>
+</step>
+<step>
+<cmd>Save the file  and restart the Coturn server to apply the changes.</cmd>
+</step>
+</steps></taskbody>
+</task>
+    

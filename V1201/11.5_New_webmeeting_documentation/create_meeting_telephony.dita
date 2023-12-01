@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="create_meeting_telephony" xml:lang="en-us">
+        <title>Create new meeting</title>
+        <taskbody>
+                <prereq id="prereq_svw_mhb_ytb"/>
+                <context>
+                        <p>To configure your meeting to allow telephony access, select the
+                                        <uicontrol>Enable conference dial-in</uicontrol> box. and
+                                select <uicontrol>Save &amp; copy meeting link</uicontrol>.</p>
+                </context>
+        </taskbody>
+</task>
+<?Pub *0000001020?>
+

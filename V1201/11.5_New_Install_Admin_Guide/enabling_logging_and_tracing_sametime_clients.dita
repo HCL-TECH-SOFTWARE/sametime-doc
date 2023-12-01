@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="enabling_logging_and_tracing_sametime_clients" xml:lang="en-us">
+    <title>Enabling and Gathering Sametime Community Server Logs</title>
+    <shortdesc>The Sametime® Community Server includes a utility that automatically collects configuration and log files for problem determination. You can then provide this information to HCL Support to investigate Sametime Community Server issues.</shortdesc>
+<taskbody>
+<context>
+    <p>The recommended trace level for gathering general diagnostic information is VP_TRACE_ALL=1. However, this trace level is very verbose and should be used only on servers that have available disk space and CPU utilization to spare. If you need to enable trace on a production server that is running near capacity, contact HCL Support to get specific diagnostic settings that have a lower impact on system resources. </p>
+            <p>Tracing not included in VP_TRACE_ALL</p>
+            <p>VP_TRACE_ALL enables most of the general diagnostic information on a Sametime
+                Community server. There are services not included in this trace setting which can be
+                set individually.</p>
+            <p>For Sametime Chat history tracing, add to the [stchathistory] section of the
+                sametime.ini:<codeblock>STCHAT_DEBUG_LEVEL=FINEST</codeblock></p>
+            <p>For Sametime Buisness Card tracing, add to the [Debug] section of the
+                sametime.ini:<codeblock>USERINFO_DEBUG_LEVEL=5</codeblock></p>
+            <p>For Sametime Policy tracing, add to the [Debug] section of the
+                sametime.ini:<codeblock>POLICY_DEBUG_LEVEL=5
+STPOLICY or CONVOMPA or USERINFO</codeblock></p>
+            <p>For more information on component level tracing, see <xref
+                    href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0079079"
+                    format="html" scope="external">Common debug parameters for Sametime Community
+                    Server</xref>.</p>
+    <p>Follow these instructions to set the trace level on the community server. Once these steps are completed, reproduce the problem so the information will be gathered in the logs. Always maintain a backup copy of any configuration files before making changes. </p>
+    <p><codeph><b>&lt;Program directory> example: Programs/hcl/domino</b></codeph></p>
+    <p><codeph><b>&lt;Data directory> example: Programs/hcl/domino/data</b></codeph></p></context>
+<steps>
+    <step>
+        <cmd>Stop both the Domino® server. This will stop the Sametime Community Server. </cmd>
+    </step>
+    <step>
+                <cmd>Remove old log files from the Sametime trace directory. This is usually located
+                    in the <codeph>&lt;Program Directory>/trace</codeph> folder. Do not delete the
+                    trace folder. </cmd>
+            </step>
+    <step>
+                <cmd>Edit the <codeph>sametime.ini</codeph> file (as administrator), which is in the
+                        <codeph>&lt;Program directory></codeph>. Locate the
+                    <codeph>[Debug]</codeph>section of this file </cmd>
+            </step>
+    <step>
+                <cmd>Add or modify the following line to the [Debug] section: </cmd>
+                <info>
+                    <p><codeph><b>VP_TRACE_ALL=1</b></codeph></p>
+                </info>
+            </step>
+    <step>
+        <cmd><b>Optional:</b> In addition to setting the trace level, you can set the maximum file size of each trace file, and the maximum number of trace files used until the files are recycled. </cmd>
+        <info><table frame="all" rowsep="1" colsep="1" id="table_idp_qmb_rhb">
+            <title><b>Trace Settings</b></title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+           
+                <thead>
+                    <row>
+                        <entry><b>Trace Settings</b></entry>
+                        <entry><b>Description</b></entry>
+                        
+                    </row>
+                    
+                </thead>
+                <tbody>
+                    <row>
+                        <entry><b>ST_TRACEFILE_SIZE</b></entry>
+                        <entry><b>To set the maximum file size of each trace file. The default value is 20.</b></entry>
+                        
+                    </row>
+                    <row>
+                        <entry><b>ST_TRACEFILE_CNT</b></entry>
+                        <entry><b>To set the number of trace files generated per Sametime service application. The default value is 25.</b></entry>
+                       
+                    </row>
+                    <row>
+                        <entry><b>ST_TRACEFILE_SIZE</b></entry>
+                        <entry><b>ST_TRACEFILE_SIZE multiplied by ST_TRACEFILE_CNT equals the maximum size of the trace files on the operating system hard disk per Sametime service application.</b></entry>
+                      
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+            <p><b>For example, if the sametime.ini file contains the following settings:</b></p>
+                    <p><b>ST_TRACEFILE_SIZE=20ST_TRACEFILE_CNT=25Then 10 X 25 equals 250, so 250 MB
+                            is the maximum disk space each Sametime service application consumes for
+                            the trace files.</b></p>
+</info>
+    </step>
+    <step>
+        <cmd>Save and close the sametime.ini.  </cmd>
+    </step>
+    <step>
+        <cmd>Stop and start the Domino server. Sametime will stop/start automatically with Domino. </cmd>
+    </step>
+    <step>
+        <cmd>Reproduce the problem that you want to troubleshoot, and diagnostic information will be gathered in the logs. </cmd>
+    </step>
+    <step>
+        <cmd>Run the stdiagzip collector utility, as shown in the following sample paths:  </cmd>
+        <info><p><b>Windows™ </b></p>
+            <p><codeph>C:\Program Files\hcl\domino\stdiagzip.bat </codeph></p>
+            <p><b>AIX®/Linux™</b></p>
+            <p>/local/notesdata> sh stdiagzip.sh  </p></info>
+    </step>
+    <step>
+        <cmd>The output file is a compressed file in the <![CDATA[<Program directory>]]>/Trace directory in the following format: <codeph><b>stdiags_hostname_MM_DD@hh_mm.zip</b></codeph> </cmd>
+        <info><p>To inspect this file, use a tool such as WinZip or 7Zip to extract the file content instead of using the Windows Explorer unzip tool.  </p></info>
+    </step>
+    <step>
+        <cmd>Collect the following data: </cmd>
+        <info><p><ul><li>Details of user IDs that were used to reproduce the problem. </li>
+            <li>The exact time and date of the reproduced failure. </li>
+            <li>Client Application type and version that was used to reproduce the problem. </li>
+            <li>If you are troubleshooting a server crash, send all of the core dump (NSD log) files that were created at the time of the crash. </li>
+            <li>Any additional details about the deployment, configuration, abnormal behavior, or any other general details that might help the HCL Support Team investigate the problem. </li>
+            <li>For newly installed servers, include the <![CDATA[<Data directory>]]>_HCL_Sametime_Server_version directory </li></ul></p></info>
+    </step>
+</steps>
+    <postreq><p>After collecting the diagnostic information, any trace which was enabled on the Community Server should be disabled or reverted to the default level. Stop and start the Domino Server again once the sametime.ini has been updated to remove trace details. </p>
+        <p>If you need assist troubleshooting the Sametime Community Server, please open a product
+                case with <xref href="https://support.hcltechsw.com/csm" format="html"
+                    scope="external">HCL Support</xref> and upload the collected data to your case. </p></postreq>
+</taskbody>
+</task>

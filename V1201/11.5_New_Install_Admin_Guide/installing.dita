@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="installing" xml:lang="en-us">
+<title>Installing</title>
+    <shortdesc>This section provides information on installing and configuring the servers for HCL
+Sametime and HCL Sametime Premium.</shortdesc>
+</task>

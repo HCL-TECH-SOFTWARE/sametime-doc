@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_client_pref_domino" xml:lang="en-us">
+<title>Configuring preferences for the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Embedded
+  Client for <tm tmtype="reg" trademark="Notes">Notes</tm></title>
+<shortdesc>To configure preferences for clients running the <tm tmtype="reg" trademark="Sametime"
+   >Sametime</tm> Embedded Client for <tm tmtype="reg" trademark="Notes">Notes</tm>, you can use
+  the <tm tmtype="reg" trademark="Domino">Domino</tm> Desktop policy settings
+  document.</shortdesc>
+<taskbody>
+<context>The <tm tmtype="reg" trademark="Domino">Domino</tm> desktop policy settings document Custom
+   Settings tab contains a Managed Settings option, through which you can define preferences. <p>If
+    you do not use <tm tmtype="reg" trademark="Domino">Domino</tm> Administrative policies in your
+    organization, you can configure the same setting by <xref href="config_client_mng_xml_pref.dita"
+    />.</p><p>If the preference is set in both the <tm tmtype="reg" trademark="Domino">Domino</tm>
+    Desktop policy settings document and the managed settings, the preference in the Desktop policy
+    settings document takes precedence. Best practices indicate that it's preferable to set the
+    preference in the Desktop policy settings document or the managed settings, but not in both
+    places.</p></context>
+</taskbody>
+
+</task>

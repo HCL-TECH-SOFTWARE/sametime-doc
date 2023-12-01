@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="recording" xml:lang="en-us">
+    <title>Managing recording</title>
+    <shortdesc>You can control how long meeting recordings are available and also disable the recording feature. </shortdesc>
+    <taskbody>
+        <context><p><b>Storing and Archiving Recordings</b></p><p>Recordings are available for 3
+                days by default. To change this value, update the EXPIRES_IN_DAYS in the custom.env
+                on Docker and the recordingsExpireInDays in the helm/values.yaml on Kubernetes. For
+                more information to apply the changes, see <xref
+                    href="apply_configchanges_kubernetes.dita" scope="local" format="dita"/>.
+                    </p><p><b>Disable Recordings</b></p><p>If you want to disable the ability to
+                record meetings, use one of the following procedures:</p><p><b>Docker</b></p><p>In
+                the .env file, specify the following
+                    setting:</p><p>ENABLE_RECORDING=0</p><p><b>Kubernetes</b></p><p>In the
+                values.yaml file, specify the following setting:</p>enableRecording =
+            false</context>
+    </taskbody>
+</task>

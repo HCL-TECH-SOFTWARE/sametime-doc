@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="creating_groups" xml:lang="en-us">
+<title>Creating groups</title>
+<?Pub Caret 3?>
+<shortdesc>You can organize your contacts by placing them into groups. You can create a group when
+adding a contact.</shortdesc>
+<taskbody>
+<context>
+<p>To create a group:</p>
+</context>
+<steps>
+<step>
+<cmd>From the contact list, tap the <uicontrol>+</uicontrol> button.</cmd>
+</step>
+<step>
+<cmd>Tap <uicontrol>Add Personal Group</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Enter the name for the group in the Group Name field.</cmd>
+</step>
+<step>
+<cmd>Press <uicontrol>Done</uicontrol>. </cmd>
+</step>
+</steps>
+<result>The new group is created.<p>You can now add more contacts to the group. You can also add
+groups that your administrator has defined by instead tapping <uicontrol>Add Public
+Group</uicontrol> and entering the name that the administrator has specified. </p></result>
+</taskbody>
+</task>
+<?Pub *0000003147?>

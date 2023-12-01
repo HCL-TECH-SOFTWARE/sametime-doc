@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="session_traversal_utilities" xml:lang="en-us">
+    <title>Session Traversal Utilities for NAT (STUN)</title>
+    <shortdesc>Session Traversal Utilities for NAT (STUN) is a standardized set of methods,
+        including a network protocol, for <xref href="https://en.wikipedia.org/wiki/NAT_traversal"
+            format="html" scope="external">NAT traversal</xref> of <xref
+            href="https://en.wikipedia.org/wiki/Network_address_translation" format="html"
+            scope="external">Network address transalation (NAT)</xref> gateways in applications of
+        real-time voice, video, messaging, and other interactive communications.</shortdesc>
+   
+<conbody>
+    <p>STUN is a tool used by other protocols, such as <xref
+                href="https://en.wikipedia.org/wiki/Interactive_Connectivity_Establishment"
+                format="html" scope="external">Interactive Connectivity Establishment (ICE)</xref>,
+            the <xref href="https://en.wikipedia.org/wiki/Session_Initiation_Protocol" format="html"
+                scope="external">Session Initiation Protocol (SIP)</xref> , and <xref
+                href="https://en.wikipedia.org/wiki/WebRTC" format="html" scope="external"
+                >WebRTC</xref>. It provides a tool for hosts to discover the presence of a network
+            address translator, and to discover the mapped, usually public, <xref
+                href="https://en.wikipedia.org/wiki/Internet_Protocol" format="html"
+                scope="external">Internet Protocol (IP)</xref> address and port number that the NAT
+            has allocated for the application's <xref
+                href="https://en.wikipedia.org/wiki/User_Datagram_Protocol" format="html"
+                scope="external">User Datagram Protocol (UDP)</xref> flows to remote hosts. The
+            protocol requires assistance from a third-party network server STUN server located on
+            the opposing public side of the NAT, usually the public <xref
+                href="https://en.wikipedia.org/wiki/Internet" format="html" scope="external"
+                >Internet</xref>.</p>
+        <p>For More Information see <xref href="https://en.wikipedia.org/wiki/STUN" format="html"
+                scope="external">Session Traversal Utilities for NAT (STUN)</xref>.</p>
+        <section id="section_p4l_jrw_v5b">
+            <title>Why is STUN needed?</title>
+            <p>Simply put, we use STUN as a tool to help clients determine their public IP address
+                so that they can connect to each other and the Sametime Meeting Server to send and
+                receive  audio and video data.</p>
+            <p>If your deployment of Meetings is all internal and there are is no NAT or Firewalls
+                between the users and the server, then you might not need to use STUN.</p>
+            <p>If you deployment also consists of users external to your network, like people
+                working from home, then you likely need a STUN server to help negotiate the audio
+                and video sessions.</p>
+        </section>
+        <section id="section_a5x_drw_v5b">
+            <title>Default configuration</title>
+            <p>By default, the Sametime Meeting Server is configured to use the Google Public STUN
+                servers.</p>
+            <p>For Docker, this information is configured in the <filepath>.env</filepath> file like
+                this:
+                <codeblock id="codeblock_ohd_hrw_v5b"># STUN servers used to discover the server's public IP.
+JVB_STUN_SERVERS=stun.l.google.com:19302,stun1.l.google.com:19302,stun2.l.google.com:19302</codeblock></p>
+            <p>For Kubernetes, this information is configured in the
+                    <filepath>hem/values.yaml</filepath> file like
+                this:<codeblock id="codeblock_phd_hrw_v5b">jvbStunServers: stun.l.google.com:19302,stun1.l.google.com:19302,stun2.l.google.com:19302</codeblock></p>
+            <p>In both cases, this configuration is telling the server to use these STUN servers:
+                <codeblock id="codeblock_qhd_hrw_v5b">stun.l.google.com
+stun1.l.google.com
+stun2.l.google.com
+
+Using UDP port 19302.</codeblock></p>
+            <p>It is important to note that if the server or clients is unable to reach the
+                configured STUN servers, n-way meetings does not work properly. When planning your
+                deployment, make sure that the STUN servers are available over the network.</p>
+        </section>
+        <section id="section_ydm_drw_v5b">
+            <title>Optional configurations</title>
+            <p>If you already have a STUN server in your environment or wish to use an alternative
+                public STUN server, simply update the appropriate settings above before you deploy
+                the server. It can be modified post deployment as well. For more information on
+                this, see <xref href="configuring_stun.dita">Configuring alternate STUN
+                    servers</xref>.</p>
+            <p>If your deployment does not require the use of STUN, then you can disable this by
+                simply commenting out the appropriate line in either the <filepath>.env</filepath>
+                or <filepath>values.yaml</filepath> file and installing the server.</p>
+        </section></conbody>
+</concept>

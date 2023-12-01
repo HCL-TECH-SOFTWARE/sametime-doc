@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="t_meetings_recordings" xml:lang="en-us">
+  <title>Creating the persistent volume</title>
+  <shortdesc>This section provides information to create the persistent volume.</shortdesc>
+ <conbody>
+    
+      <p>In previous releases of Sametime, only the recordings pod needed to access the persistent
+      volume. In Sametime 12, workloads moved from virtual or physical machines into Kubernetes
+      pods. There are more than one type of pod that requires access to storage in Sametime 12.
+      Sametime requires an access mode called <term>read write many</term> or <term>RWX</term> which
+      allow for more than one node to access the volume at a time.<dl>
+        <dlentry>
+          <dt>Recordings</dt>
+          <dd>Meeting recordings are stored as MP4 files in a <filepath>temp</filepath> directory on
+            the meeting recorder nodes during the meeting. After the meeting, the recordings are
+            moved to a persistent volume. Allocate a volume accessible to the Kubernetes cluster
+            that is substantial enough to handle the expected number of meeting recordings assuming
+            a rate of about 100M per 1 hour of meeting.</dd>
+          <dd>By default, recordings persist for three days, so keep that in consideration as well
+            when sizing the volume.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Backgrounds </dt>
+          <dd>When users upload personal backgrounds to their meetings for use as a video
+            background, these images are stored in the persistent volume. </dd>
+        </dlentry>
+        <dlentry>
+          <dt>Files</dt>
+          <dd>When users upload files to chats in the chat clients or meeting, the files are stored
+            in the persistent volume.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Branding</dt>
+          <dd>When enabling custom meeting branding, the images used are stored in the persistent
+            volume.</dd>
+        </dlentry>
+        <dlentry>
+          <dt>Reports</dt>
+          <dd>Meeting reports are saved in the persistent volume.</dd>
+        </dlentry>
+      </dl></p>
+      <p>For additional information, see the <xref
+        href="https://kubernetes.io/docs/concepts/storage/persistent-volumes/#access-modes"
+        format="html" scope="external">Persistent Volumes</xref> topic in the Kubernetes
+      documentation.</p>
+    
+  </conbody>
+</concept>
+<?Pub *0000003147?>

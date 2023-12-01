@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="st9_imb_group" xml:lang="en-us">
+<title>How do I add a group to my contact list?</title>
+<titlealts>
+<searchtitle>Chat: How do I add a group to my contact list?</searchtitle><?Pub
+Caret 27?>
+</titlealts>
+<shortdesc>Populate your contact list by adding groups to it.</shortdesc>
+<taskbody>
+<context><p otherprops="st">There are two types of groups: personal
+groups and public groups.</p><p>You create your own personal groups
+and select the contacts that you want to add to them. Any personal
+groups that you create display only on your contact list. </p><p
+otherprops="st">You search for, and then add, public groups to your
+contact list. Public groups are created by your system administrator.
+Each public group has a previously defined list of members. You cannot
+change who is a member of a public group.</p></context>
+<steps>
+<step>
+    <cmd>Click <b>+</b><menucascade>
+      <uicontrol>New Group</uicontrol>
+     </menucascade>.</cmd>
+   </step>
+<step otherprops="st"><cmd>Select the type of group you want to add.</cmd>
+<substeps>
+<substep><cmd>Select <uicontrol>Add a new personal group</uicontrol> to
+name the group that you want to add.</cmd><info>After you add a personal
+group, add contacts to it.</info></substep>
+<substep><cmd>Select <uicontrol>Search for a public group</uicontrol> to
+find a public group to which you have access.</cmd><info>After you
+add a public group, all members of that group display on your contact
+list.</info></substep>
+</substeps>
+</step>
+<step otherprops="LL"><cmd>Enter a name for the group that you want
+to add in the <uicontrol>New Group</uicontrol> field.</cmd></step>
+<step importance="optional"><cmd>If you want this group to be a subgroup
+of an existing group in your contact list, click <uicontrol>Add as
+a subgroup to the selected group</uicontrol> and then select a name
+from the <uicontrol>Add to group</uicontrol> field.</cmd></step>
+<step><cmd>Click <uicontrol>Add</uicontrol>.</cmd><stepresult>You can add any contacts that you want to display for this group.</stepresult>
+</step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000002841?>

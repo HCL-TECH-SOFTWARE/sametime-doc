@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_view_contactinfo" xml:lang="en-us">
+  <title>Viewing a contact's information</title>
+  <?Pub Caret 3?>
+  <shortdesc>You can view details about a person you are chatting with or in your contacts list. The
+      <wintitle>Contact Info</wintitle> screen includes the name, nickname, photo or default avatar,
+    title and awareness status displays. </shortdesc>
+  <taskbody>
+    <context id="context_x3k_hbr_dtb">
+      <p>If the person has provided an email or phone number, this information is also
+        displayed.</p>
+      <p>You can assign a nickname to a contact from the <wintitle>Contact Info</wintitle> screen.
+        Nicknames are shown throughout the app in the place of the user’s formal name.</p>
+    </context>
+    <steps id="steps_tdx_jbr_dtb">
+      <step>
+        <cmd>Tap the person's name from the <wintitle>Chat</wintitle> or
+            <wintitle>Contacts</wintitle> screen.</cmd>
+      </step>
+      <step>
+        <cmd>Tap the menu icon located on the right and select <uicontrol>Contact
+          Info</uicontrol>.</cmd>
+        <choices id="choices_ml3_by5_hvb">
+          <choice>Tap the email address to send an email. You are prompted for an email app to
+            use</choice>
+          <choice>Tap the phone number to dial the number if you are on a device capable of placing
+            calls</choice>
+          <choice>Tap <uicontrol>Add Contact</uicontrol> to add the person to a group and assign a
+            nickname.</choice>
+        </choices>
+      </step>
+    </steps>
+  </taskbody>
+</task>

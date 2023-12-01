@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-us"><title>HCL Sametime iOS Users Guide 12</title>
+        <topicref href="ios_doc.dita">
+                <topicref href="c_whats_new.dita"/>
+                <topicref href="c_getting_started.dita">
+                        <topicref href="c_installing_connections_chat.dita"/>
+                        <topicref href="c_add_community.dita">
+                                <topicref href="add_community_qrcode.dita"/>
+                                <topicref href="add_community_manual.dita"/>
+                        </topicref>
+                        <topicref href="t_login_logout.dita"/>
+                </topicref>
+                <topicref href="c_chat.dita">
+                        <topicref href="c_usingthemainscreen.dita"/>
+                        <topicref href="t_changing_onlinestatus.dita"/>
+                        <topicref href="c_managing_contacts.dita">
+                                <topicref href="t_creating_groups.dita"/>
+                                <topicref href="t_add_contacts.dita"/>
+                                <topicref href="t_send_announcement.dita"/>
+                        </topicref>
+                        <topicref href="c_contact_info_screen.dita"/>
+                        <topicref href="c_working_active_chats.dita"/>
+                        <topicref href="t_chat_start.dita"/>
+                        <topicref href="t_chat_end.dita"/>
+                        <topicref href="t_starting_group_chat.dita"/>
+                        <topicref href="t_file_transfer.dita"/>
+                        <topicref href="t_control_audio.dita"/>
+                </topicref>
+                <topicref href="c_meetings.dita">
+                        <topicref href="t_manage_meetings.dita"/>
+                        <topicref href="t_create_meetings.dita"/>
+                        <topicref href="t_start_meeting.dita"/>
+                        <topicref href="t_start_meeting_chat_c2call.dita"/>
+                        <topicref href="t_start_meeting_chat_c2meet.dita"/>
+                        <topicref href="t_join_meeting.dita"/>
+                        <topicref href="manage_recordings.dita"/>
+                        <topicref href="reports_intro.dita">
+                                <topicref href="report_generate_participant.dita"/>
+                                <topicref href="report_generate_summaryfull.dita"/>
+                        </topicref>
+                </topicref>
+                <topicref href="c_managing_app_settings.dita"/>
+                <topicref href="t_managing_device_settings.dita"/>
+                <topicref href="t_help_support.dita"/>
+                <topicref href="c_display_about_screen.dita"/>
+        </topicref>
+</map>

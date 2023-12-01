@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="imb_nicknames" xml:lang="en-us">
+<title>How do I create contact nicknames?</title>
+<titlealts>
+<searchtitle>Chat: How do I create contact nicknames?</searchtitle><?Pub
+Caret 39?>
+</titlealts>
+<shortdesc>If two people in your contact list have the same first and last names, you might have
+  difficulty telling their names apart. You can easily identify each person by creating unique
+  nicknames.</shortdesc>
+<taskbody>
+<context>Nicknames display on your contact list, in the chat window,
+and in the chat transcript. They display only for you. Other people
+see the default contact name.</context>
+<steps>
+<step>
+    <cmd>Select the name in your contact list that you want to change and then click <menucascade>
+      <uicontrol><image alt="Click for a Menu of Options" href="Images/menu.png" placement="inline"
+       /></uicontrol>
+      <uicontrol>Edit Nickname</uicontrol>
+     </menucascade>.</cmd>
+   </step>
+<step><cmd>Type the new name in the <uicontrol>New Nickname</uicontrol> field and click
+      <uicontrol>OK</uicontrol>.</cmd></step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000001471?>

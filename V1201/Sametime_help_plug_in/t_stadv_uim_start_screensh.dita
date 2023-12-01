@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_stadv_uim_start_screensh" xml:lang="en-us">
+<title>How do I start sharing my screen with another person?</title>
+<shortdesc>It is easy to start an Instant Share session to share all
+or part of your screen, or an application, with your colleagues. To
+use Instant Share, your administrator must install <tm tmtype="reg"
+trademark="Sametime">Sametime</tm> Communicate and <tm tmtype="reg"
+trademark="Sametime">Sametime</tm> Conference.</shortdesc>
+<prolog><metadata>
+<keywords><keyword>Instant Share</keyword><keyword>application sharing</keyword>
+<keyword>share</keyword><keyword>share an application</keyword><keyword>share
+screen</keyword><keyword>snap shot</keyword><keyword>print screen</keyword>
+</keywords>
+</metadata></prolog>
+<taskbody>
+<context>If you have Instant Share, it is available from HCL <tm tmtype="reg">Sametime</tm> Connect
+   or HCL <tm tmtype="reg">Notes</tm>, not from chat rooms and broadcast communities in a
+   browser.</context>
+<steps>
+<step><cmd>Select the contact with whom you want to share your screen.</cmd>
+<info><table frame="all"><title>Options</title>
+<tgroup cols="2">
+<?PubTbl tgroup rth="1.00pt"?>
+<colspec colname="col1" colwidth="1*"/><colspec colname="col2"
+colwidth="1*"/>
+<thead>
+<row>
+<entry colname="col1">If you are using:</entry>
+<entry colname="col2">Do this:</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Sametime</tm> Connect</p></entry>
+<entry colname="col2"><p>Click the name of an online contact, or open
+a chat window with one or more chat partners. </p></entry>
+</row>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Notes</tm>
+          </p></entry>
+<entry colname="col2"><p>Click <uicontrol><image href="images/Embedded_ST_Contacts_icon.JPG" scope="local">
+             <alt>Sametime Contacts icon</alt>
+            </image> Sametime Contacts</uicontrol> to open the Contacts panel in the <tm
+            tmtype="reg">Notes</tm> sidebar. Then, click the name of an online contact, or open a
+           chat window with one or more chat partners. </p></entry>
+</row>
+</tbody>
+</tgroup>
+</table></info></step>
+<step>
+<cmd>Click <image alt="Instant Share icon" href="images/ST_instant_share.JPG" placement="inline"
+scope="local"/> in the chat window or click <uicontrol><image href="images/ST_hamburger.jpg">
+<alt>Click for a menu of Options</alt>
+</image></uicontrol> for a menu of options from the contact list action bar. Then, click
+<uicontrol>Instant Share</uicontrol> and select which part of your screen you want to share (Share
+an application, Share My Entire Screen, and Share a Region).</cmd>
+<stepresult>The people that you selected in step 1 receive an invitation to join the Instant Share
+session.</stepresult>
+</step><?Pub Caret 278?>
+</steps>
+<result>After you start the Instant Share session, a floating palette displays. This palette
+provides screen share controls to stop screen sharing, let others control your screen or for you to
+reclaim control, and to share other parts of your screen. It also shows who is participating in the
+Instant Share session. Click <image href="images/ST9_dropdown.jpg">
+<alt>expand arrow</alt>
+</image> next to <uicontrol>Participants</uicontrol> to see a list of participant names. <p>If you
+selected to share a region of your screen, an orange frame outlines the area of your screen that
+other participants see. Click and drag to resize or move the area of your screen to share.
+</p><p>Participants in an Instant Share session also see a frame around what on the screen is being
+    shared. Sometimes the shared region is bigger than the frame. In this case, click and drag
+    within the shared frame to see the rest of the shared screen.<note>All screen share participants
+     must be from the same server community and use a <tm tmtype="reg">Sametime</tm> Connect client
+     that supports Instant Share. In addition, contacts must not have an availability status of Do
+     Not Disturb to participate in an Instant Share session. </note></p></result>
+</taskbody>
+<?tm 1366909347 0?>
+</task>
+<?Pub *0000004324?>

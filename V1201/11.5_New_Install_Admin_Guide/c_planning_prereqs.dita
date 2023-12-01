@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_planning_prereqs" xml:lang="en-us">
+ <title>Prerequistes</title>
+ <shortdesc>Before you being the install process, ensure that your environment includes all
+  prerequistes and system requirements.</shortdesc>
+</concept>
+<?Pub *0000001020?>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="meetings" xml:lang="en-us">
+<title>Working with Sametime Meetings</title>
+ <shortdesc>If you use Sametime Premium, you can create and manage meetings that you own by
+  selecting <uicontrol>Meetings</uicontrol> from the menu. The <wintitle>Meetings</wintitle> screen
+  also shows a list of recent meetings that you joined and an entry field for entering the name of a
+  meeting you want to join or start.</shortdesc>
+ <conbody>
+  <p>Icons by each entry in the meetings list indicate the settings for the meeting.</p>
+ </conbody>
+</concept>
+<?Pub *0000001020?>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_class_file_docker" xml:lang="en-us">
+    <title>Configuring the class file on Docker</title>
+    <shortdesc><draft-comment author="debra.taylor">Tagged as not ready.</draft-comment>Use a custom
+        Java class file to transform your searches for LDAP for the community pod.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_vcg_fkk_mvb">
+            <p>You must have already created and compiled the class file using Java 1.8.</p>
+        </prereq>
+        <context id="context_mkm_14b_hvb">
+            <p>To configure a custom Java class file to transform your searches for LDAP for the
+                Sametime server on Docker you need to complete the following tasks.</p>
+            <ul id="ul_mcz_gkk_mvb">
+                <li>Override the default LDAP settings to use the class file</li>
+            </ul>
+        </context>
+        <steps id="steps_nq3_3kk_mvb">
+            <step>
+                <cmd>Name the compiled class file
+                        <parmname>StLdapCustomizedAttributes.classfile</parmname>.</cmd>
+            </step>
+            <step>
+                <cmd>Place the <parmname>StLdapCustomizedAttributes.classfile</parmname> into the
+                    Sametime installation directory or a sub directory, example:
+                        <filepath>ldap-custom-filter </filepath>.</cmd>
+            </step>
+            <step>
+                <cmd>Identify the chat-server container ID by running the <cmdname>docker container
+                        ls</cmdname> command and finding the chat-server IMAGE. The NAME is the
+                    container name. For example: sametime-community-1. </cmd>
+            </step>
+            <step>
+                <cmd>Pull a copy of the <filepath>StCommunityConfig.xml</filepath> from the
+                    chat-servercontainer by running the following command, where
+                        <varname>containerid</varname> is the container name for the chat server
+                    identified in step 2. </cmd>
+                <info>If the StCommunityConfig.xml has already been copied and edited previously for
+                    a different setting, skip this step and edit the existingStCommunityConfig.xml.
+                    <codeblock id="codeblock_yvy_jlk_mvb">
+docker cp &lt;container_name>:/local/notesdata/StCommunityConfig.xml . </codeblock></info>
+            </step>
+            <step>
+                <cmd>Update the configuration that pertains to your custom Java class. Open
+                        the<filepath> StCommunityConfig.xml</filepath> file that was copied from the
+                    chat-server contain and edit the <filepath>&lt;LDAP></filepath> section as it
+                    pertains to your configuration. </cmd>
+                <info>The changes depend on what you are modifying, refer to the following table for
+                    guidance. <table frame="all" rowsep="1" colsep="1" id="table_i23_tmb_hvb">
+                        <title/>
+                        <tgroup cols="4">
+                            <colspec colname="c1" colnum="1" colwidth="2*"/>
+                            <colspec colname="c2" colnum="2" colwidth="1*"/>
+                            <colspec colname="c3" colnum="3" colwidth="1*"/>
+                            <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                            <thead>
+                                <row>
+                                    <entry>Type of change</entry>
+                                    <entry>Parameter name</entry>
+                                    <entry>What to specify</entry>
+                                    <entry>Example</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry>Search filter for resolving person names </entry>
+                                    <entry>PersonResolveFilter </entry>
+                                    <entry>classname.methodname() for your custom code</entry>
+                                    <entry><codeph>StLdapCustomized.peopleResolveFilter()
+                                        </codeph></entry>
+                                </row>
+                                <row>
+                                    <entry>Search filter for resolving group names </entry>
+                                    <entry>GroupResolveFilter </entry>
+                                    <entry>Class name and method name for a group filter, using the
+                                        following format: <codeph>Classname.methodname()
+                                        </codeph></entry>
+                                    <entry><codeph>StLdapCustomized.groupsResolveFilter()</codeph>.
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>Attribute of the person entry that defines the person's
+                                        name </entry>
+                                    <entry>DescAttribute </entry>
+                                    <entry>Class name and method name for the formatting, with the
+                                        name of the attribute inside, for example:
+                                            Classname.methodname(<varname>attribute_name</varname>) </entry>
+                                    <entry><codeph>StLdapCustomizedAttributes.displayName(cn)
+                                        </codeph></entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table></info>
+            </step>
+            <step>
+                <cmd>Save and close the StCommunityConfig.xmlfile. </cmd>
+            </step>
+            <step>
+                <cmd>Edit the <filepath>docker-compose.yaml</filepath> file and add  the following
+                    under the <codeph>community section:</codeph></cmd>
+                <info><codeblock id="codeblock_ww1_vkk_mvb">
+volumes: 
+ - ./ StLdapCustomizedAttributes.class:/local/notesdata/java/ StLdapCustomizedAttributes.class</codeblock>
+                    If the class files is placed in a sub-directory, it must be specified in the
+                    above volume path. </info>
+            </step>
+            <step>
+                <cmd>Save and Restart the server to apply the changes.</cmd>
+                <info>
+                    <codeblock id="codeblock_emt_4kk_mvb">
+docker-compose down 
+docker-compose up -d</codeblock>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

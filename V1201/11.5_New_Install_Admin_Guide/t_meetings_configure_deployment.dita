@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_meetings_configure_deployment" xml:lang="en-us">
+  <title>Preparing the deployment</title>
+  <shortdesc>This section provides information to configure secrets for deployment.</shortdesc>
+  <taskbody>
+    <steps id="steps_u5q_bk4_m5b">
+      <step>
+        <cmd>Run the following script to prepare the deployment.</cmd>
+        <info>
+          <codeblock id="codeblock_v5q_bk4_m5b">./prepareDeployment.sh</codeblock>
+          <parml id="parml_w5q_bk4_m5b">
+            <plentry>
+              <pt>LDAP server host</pt>
+              <pd>Enter the fully qualified host name or the IP address of the LDAP server.</pd>
+            </plentry>
+            <plentry>
+              <pt>LDAP server port</pt>
+              <pd>Enter the port used by LDAP.</pd>
+            </plentry>
+            <plentry>
+              <pt>Configure advanced LDAP settings</pt>
+              <pd>
+                <ul id="ul_lwn_g2k_mvb">
+                  <li>Enter <userinput>Y</userinput> to configure advanced LDAP settings. Provide
+                    the following information.<ul id="ul_mwn_g2k_mvb">
+                      <li>LDAP bind user name</li>
+                      <li>LDAP bind password</li>
+                      <li>LDAP base DN for searching users</li>
+                      <li>LDAP base DN for searching groups</li>
+                    </ul></li>
+                  <li>Enter <userinput>N</userinput> to bypass the above prompts. This option
+                    results in an anonymous LDAP connection and sets the default settings for
+                    searching.</li>
+                </ul>
+              </pd>
+            </plentry>
+            <plentry>
+              <pt>Sametime server name</pt>
+              <pd>Enter the fully qualified Sametime server name. This value needs to be the fully
+                qualified host name of the Sametime server. If you are separating host names for
+                meeting and chat, enter the meeting host name.</pd>
+            </plentry>
+            <plentry>
+              <pt>Server domain name</pt>
+              <pd>Enter the server domain name. This should be the DNS suffix of the host name of
+                the server.</pd>
+            </plentry>
+            <plentry>
+              <pt>Video bridge IP address</pt>
+              <pd>Enter the video bridge IP address. When left empty, the system automatically scans
+                and automatically populates the field with the discovered IP address.</pd>
+            </plentry>
+            <plentry>
+              <pt>Base64 encoded secret</pt>
+              <pd>Enter the Base64 encoded <codeph>JWT_SECRET</codeph> from the Sametime deployment.
+                If migrating from another version of Sametime, you can re-use your existing secret.
+                Otherwise, leave blank and press <uicontrol>Enter</uicontrol> to generate a new
+                one.</pd>
+            </plentry>
+            <plentry>
+              <pt>Mongo host</pt>
+              <pd>Enter the fully qualified host name of your MongoDB server. The default value is
+                  <userinput>mongo</userinput>. If you have more than one host, provide any of the
+                hosts. You can provide the rest later on when prompted.</pd>
+            </plentry>
+            <plentry>
+              <pt>Mongo port</pt>
+              <pd>Enter the MongoDB port. The default value is <userinput>27017</userinput>.</pd>
+            </plentry>
+            <plentry>
+              <pt>Mongo admin user name</pt>
+              <pd>Enter the Mongo administrator user name.</pd>
+            </plentry>
+            <plentry>
+              <pt>Mongo admin user password</pt>
+              <pd>Enter the Mongo administrator password</pd>
+            </plentry>
+            <plentry>
+              <pt>MongoDB connection URL</pt>
+              <pd>The default Mongo connection URL is <codeph>[($TEMP_URL)]</codeph>. Would you like
+                to override? [Y/N] </pd>
+              <pd>
+                <ul id="ol_n3d_l1r_n5b">
+                  <li>Enter <userinput>Y</userinput> if you have a MongoDB cluster with more than
+                    one host name. This allows you to enter your own MongoDB URL that includes the 3
+                    host
+                    names.<codeblock id="codeblock_tzj_jqv_m5b">mongodb://&lt;user>:&lt;password>@&lt;server1>:&lt;port>,&lt;server2>:&lt;port>,&lt;server3>:&lt;port></codeblock></li>
+                  <li>Enter <userinput>N</userinput> to use the default value.</li>
+                </ul>
+              </pd>
+            </plentry>
+          </parml>
+          <parml id="parml_ahc_zzq_n5b">
+            <plentry>
+              <pt>TURN server address</pt>
+              <pd>Leave blank if you are not using TURN. Otherwise, enter the fully qualified host
+                name of the TURN server. For more information, refer to <xref
+                  href="turnserver_meetings_docker.dita"/> and <xref
+                  href="turnserver_meetings_kubernetes.dita"/>. </pd>
+            </plentry>
+            <plentry>
+              <pt>Configure LTPA</pt>
+              <pd>Lightweight Third-Party Authentication (LTPA) is useful for achieving single
+                sign-on with HCL Domino (including HCL Verse and iNotes), HCL Connections, HCL
+                Digital Experience, and IBM WebSphere Application Server. The default value is
+                  <userinput>N</userinput></pd>
+              <pd>To configure LTPA, enter <userinput>Y</userinput> and provide the following
+                  information:<ul id="ol_o3s_4br_n5b">
+                  <li>The full path to the LTPA keys file. This should be the full path on the
+                    machine where the <codeph>prepareDeployment.sh</codeph> script is running. For
+                    example: <filepath>/tmp/ltpa.keys</filepath>.</li>
+                  <li>LTPA keys password</li>
+                </ul></pd>
+              <pd>For more information, refer to <xref href="enabling_sso_ltpa.dita"/>.</pd>
+            </plentry>
+            <plentry>
+              <pt>Enable Octo</pt>
+              <pd>Octo allows you to extend the audio-video traffic to another network in an
+                efficient way. If enabled, at least one other secondary cluster must be configured
+                in order for this to work. To enable octo, enter <userinput>Y</userinput>. The
+                following prompts are displayed. For more information, refer to <xref
+                  href="t_configure_jitsi.dita"/>.<ul id="ol_mj3_qf4_m5b">
+                  <li>Is this a primary installation?<ul id="ol_ksm_rf4_m5b">
+                      <li>Select <uicontrol>Yes</uicontrol> to set this instance as the primary
+                        server. For primary servers, you must provide the region name. Enter the
+                        name of the primary region.</li>
+                    </ul><ul id="ul_pf2_th4_m5b">
+                      <li>Select <uicontrol>No</uicontrol> to set this instance as a regional
+                        server. For regional servers, you must provide the region name. Enter the
+                        secondary region name.<ul id="ul_jkg_m2r_n5b">
+                          <li>If no, you must enter the fully qualified host name of your primary
+                            installation. Provide the following information.<ul id="ul_yzv_s2r_n5b">
+                              <li>Prosody host from primary installation</li>
+                              <li>Meeting location secret in base64 from primary installation</li>
+                              <li>JVB authentication password in base64 from primary
+                                  installation<note id="note_jpm_r1l_z5b">On your primary cluster,
+                                  run this script to obtain the values for the meeting location
+                                  secret and JVB authentication password.<p>
+                                    <codeblock id="codeblock_pdy_r1l_z5b">kubectl get secret sametime-global-secrets -o yaml | grep -E 'MeetingLocationSecret|JvbAuthPassword'</codeblock>
+                                  </p></note></li>
+                            </ul></li>
+                        </ul></li>
+                    </ul></li>
+                </ul></pd>
+            </plentry>
+          </parml>
+        </info>
+      </step>
+      <step>
+        <cmd>Change directories to helm.</cmd>
+      </step>
+      <step>
+        <cmd>Open <filepath>values.yaml</filepath> for editing. </cmd>
+      </step>
+      <step>
+        <cmd>Locate the setting <codeph>hclImageRegistry:</codeph> and then set the value to your
+          image repository name. If you are using a secret to access the image repository, then set
+          the <codeph>hclImagePullSecret</codeph> value with the name of the secret for the image
+          repository.</cmd>
+        <info>This is the Docker repository where the Sametime Docker images are located. If you use
+          a cloud provider image registry or your own private registry, you should update this
+          setting to the base name of that image registry. The default is <xref
+            href="http://hclcr.io/st" format="html" scope="external"/> and assumes that you have
+          executed the <codeph>./load.sh</codeph> script with its default configuration on each
+          Kubernetes node.</info>
+      </step>
+      <step>
+        <cmd>Locate the setting <codeph>sametimeClaim</codeph>. This is the name of the persistent
+          storage volume claim that is used by recordings, proxy, files, and backgrounds for
+          storage.</cmd>
+        <info>
+          <p>You can also modify other values at this time to enable, disable, or configure
+            features.</p>
+        </info>
+      </step>
+      <step>
+        <cmd>Save and close <filepath>values.yaml</filepath>.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+  <?Pub Sty _display FontColor="red"?>
+  <?Pub Inc?>
+</task>
+<?Pub *0000003147?>

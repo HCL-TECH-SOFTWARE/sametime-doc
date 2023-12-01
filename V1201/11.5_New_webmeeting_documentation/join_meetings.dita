@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<?Pub Inc?>
+<concept id="join_meetings.dita" xml:lang="en-us">
+  <title>Joining a Sametime meeting</title>
+  <shortdesc>This section discusses the steps on how to join the two types of meetings. </shortdesc>
+  <?Pub Sty _display FontColor="red"?>
+  <conbody>
+    <section id="section_fvz_pzb_d5b">
+      <title>About instant meetings</title>
+      <p>Anyone with the meeting link can join. In an instant meeting, there are no moderators and
+        all users have the following capabilities.</p>
+      <ul id="ul_kwg_gct_stb">
+        <li>Chat with other meeting participants </li>
+        <li>Raise or lower hands </li>
+        <li>Mute or unmute audio</li>
+        <li>Enable or disable camera </li>
+        <li>Share screen </li>
+        <li>Leave the meeting </li>
+        <li>Toggle meeting views and view participants </li>
+        <li>View or change selected user settings </li>
+      </ul>
+      <p>Additionally, authenticated users have the following capabilities. For more information,
+        refer to the <xref href="user_friendly.dita"/> section.</p>
+      <p>
+        <ul id="ul_mwg_gct_stb">
+          <li>Chat through the embedded or standalone Sametime client </li>
+          <li>Record a meeting</li>
+          <li>Start a YouTube live stream</li>
+          <li>End the meeting</li>
+          <li>Control all other users <ul id="ul_nwg_gct_stb">
+              <li>Lower hands</li>
+              <li>Mute all</li>
+              <li>Disable cameras</li>
+              <li>Kick out participants </li>
+            </ul><image href="Images/participant_options.png" align="left" placement="inline"
+              id="image_owg_gct_stb"/></li>
+        </ul>
+      </p>
+    </section>
+    <section>
+      <title>About moderated meetings</title>
+      <p>This type of meeting limits control to the owner or designated moderators. For more
+        information on the basic features, refer to <xref href="user_friendly.dita"/>. To use all
+        the meeting features, try <xref href="t_loggingin.dita"/>. Depending on the access level and
+        how the meeting is configured, you are either redirected to the waiting room or are admitted
+        to the meeting after joining. For more information, refer to <xref
+          href="c_meetings_moderated.dita"/>. If you are unable to join a meeting, contact the
+        moderator for assistance.</p>
+    </section>
+  </conbody>
+</concept>
+<?Pub *0000000530?>

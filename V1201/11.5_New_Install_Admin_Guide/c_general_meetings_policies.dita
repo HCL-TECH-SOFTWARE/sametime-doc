@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_general_meetings_policies">
+    <title><b>General meeting policies</b></title>
+    <shortdesc>These policies determine how third-party meetings and Sametime meetings are handled
+        on Sametime mobile. Edit the following policies to fit your business needs.</shortdesc>
+    <conbody>
+        <section id="section_sd4_t1g_htb">
+            <title><parmname>Policy id = im.thirdPartyMeetingEnabled, Default Setting:
+                ON</parmname></title>
+            <p>By default, you can add third-party meeting URLs to your favorites list. When turned
+                off, users can only add Sametime meetings to the list. </p>
+        </section>
+        <section id="section_uxf_xbg_htb">
+            <title><parmname>Policy id = im.meetingsEnabled Default Setting: ON</parmname></title>
+            <p>By default, all users can create and start meetings. When turned on, the <b>My
+                    Meetings</b> list is displayed on the Meetings dialog. Turn this setting off to
+                allow users to join Sametime meetings but restrict them from creating and starting
+                their own.</p>
+        </section>
+    </conbody>
+</concept>

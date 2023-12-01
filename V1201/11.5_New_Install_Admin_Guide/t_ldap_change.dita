@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_ldap_change">
+    <title>Converting user information from Domino Directory format to LDAP format</title>
+    <taskbody>
+        <prereq id="prereq_xhc_vfg_mvb">Stop the Sametime server prior to running the Sametime
+            database utility. Refer to <xref href="starting_and_stopping_servers.dita"/> for the
+            steps.</prereq>
+        <context>
+            <p>This task changes all contact list information from Domino Directory format to LDAP
+                format. Changing all contact list information from Domino directory format to LDAP
+                format converts forward slashes in the hierarchical name to commas.<note
+                    type="attention" id="note_ny2_smb_nvb">This task can be performed only
+                        <i>once</i> because you can only convert the directory format one
+                    time.</note></p>
+        </context>
+        <steps id="steps_wkr_jlb_nvb">
+            <step>
+                <cmd>Using a text editor, create a CSV file for only one type of change. You cannot
+                    mix name change types in the same CSV. Follow the syntax in the example below.
+                    The file must be saved in UTF-8 format.</cmd>
+                <info>
+                    <codeblock id="codeblock_utc_chh_mvb">LDAP</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Copy the CSV file into an accessible read or writable location.</cmd>
+            </step>
+            <step>
+                <cmd>Edit the .env file used to contain the environment variables. Follow the syntax
+                    below.</cmd>
+                <info>
+                    <codeblock id="codeblock_zkj_bfh_mvb">MONGO_CONNECTION_URL=mongodb://sametimeUser:xxxxxxxx@192.168.1.1:27017/admin?authSource=admin&amp;authMechanism=SCRAM-SHA-256&amp;readPreference=primary&amp;directConnection=true&amp;ssl=false
+USER_ID_CSV=/data/test_id.csv</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Run the command below manually on a stand-alone community server or on a server
+                    in a cluster which replicates the change throughout the cluster. The CSV file is
+                    mounted in the container for the application to access and process.</cmd>
+                <info>
+                    <codeblock id="codeblock_awc_rnk_nvb">docker run -v &lt;path-to-data-directory>:&lt;path-to-data-directory>:rw --env-file default.env hclcr.io/st/sametime-db-utility</codeblock>
+                </info>
+            </step>
+        </steps>
+        <postreq id="postreq_l5j_t2b_nvb">Verify if the changes have been applied. For more
+            information, refer to <xref href="t_verify_namechange.dita"/>.</postreq>
+    </taskbody>
+</task>

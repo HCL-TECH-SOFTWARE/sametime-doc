@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_client_pref_plugin" xml:lang="en-us">
+<title>Configuring <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client preferences in
+  the plugin_customization.ini file</title>
+  <shortdesc>Defining a settings file in the plugin_customization.ini file is an alternate method for distributing preferences to the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client. 
+    Unlike the managed-settings.xml file posted on an update site, this method does not provide any policy-based distribution of preferences.
+  </shortdesc>
+<taskbody>
+  <context><p>Follow these steps to create a settings XML file and define it in the plugin_customization.ini file.</p></context>
+<steps>
+  <step><cmd>Create a settings XML file with a name such as <filepath>managed-settings.xml</filepath>.</cmd>
+</step>
+<step><cmd>Define preferences in the settings XML file.</cmd></step>
+<step><cmd>Copy the settings XML file to the location where it will
+be called from the plugin_customization.ini file.</cmd></step>
+<step>
+    <cmd>Add a key that defines the Expeditor Managed settings framework
+      <filepath>com.ibm.rcp.managedsettings.provider.file/URL</filepath> and the name and location
+     of the settings XML file to be used. For example:</cmd>
+    <info>
+     <p>
+       <codeblock>com.ibm.rcp.managedsettings.provider.file/URL=http://www.example.com/managed-settings.xml
+or
+com.ibm.rcp.managedsettings.provider.file/URL=file://c:/data/mananged-settings.xml</codeblock>
+     </p>
+    </info>
+   </step>
+<step><cmd>Save the file and make it available to clients.</cmd></step>
+</steps>
+<result>Every time the client starts, the plugin_customization.ini
+preferences are read. </result>
+</taskbody>
+
+</task>
+

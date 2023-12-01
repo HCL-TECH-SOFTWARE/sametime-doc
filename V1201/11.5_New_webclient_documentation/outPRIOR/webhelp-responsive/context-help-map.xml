@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="whats_new" path="c_whats_new.html"/>
+   <appContext helpID="c_release_new" path="c_release_new.html"/>
+   <appContext helpID="release" path="c_release.html"/>
+   <appContext helpID="managing_availability_network"
+               path="c_managing_availability_network.html"/>
+   <appContext helpID="system_requirements" path="system_requirements.html"/>
+   <appContext helpID="starting_connections_chat"
+               path="starting_chat_connections.html"/>
+   <appContext helpID="loggingin" path="t_loggingin.html"/>
+   <appContext helpID="usingthemainscreen" path="t_usingthemainscreen.html"/>
+   <appContext helpID="changing_onlinestatus" path="t_changing_onlinestatus.html"/>
+   <appContext helpID="loggingin" path="t_meeting.html"/>
+   <appContext helpID="st9_imb_accessibility" path="imb_accessibility.html"/>
+   <appContext helpID="imb_connect" path="imb_connect.html"/>
+   <appContext helpID="st9_imb_group" path="imb_group.html"/>
+   <appContext helpID="imb_privacy" path="imb_privacy.html"/>
+   <appContext helpID="imb_invite_chat_already" path="imb_invite_chat_already.html"/>
+   <appContext helpID="imb_other_things" path="imb_other_things.html"/>
+   <appContext helpID="imb_custom_status" path="imb_custom_status.html"/>
+   <appContext helpID="imb_nicknames" path="imb_nicknames.html"/>
+   <appContext helpID="wc_task_ref" path="wc_task_ref.html"/>
+</map>

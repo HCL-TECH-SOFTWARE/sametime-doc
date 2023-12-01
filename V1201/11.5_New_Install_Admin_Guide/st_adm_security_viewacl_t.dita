@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="st_adm_security_viewacl_t" xml:lang="en-us">
+<title class="- topic/title ">Adding a name to a database Access Control
+List (ACL)</title>
+<shortdesc>Use the <tm tmtype="reg">Sametime</tm> Administration Tool to add a name to a database
+  Access Control List.</shortdesc>
+<taskbody>
+<context>When you enter a user name for a user with a Person document in the <tm tmtype="reg"
+    >Domino</tm> Directory on the <tm tmtype="reg">Sametime</tm> server, type the name exactly as it
+   appears in the first entry of the <uicontrol>User name</uicontrol> field in the user's Person
+    document.<p class="- topic/p ">When you enter the names of users or groups registered in an LDAP
+    directory in a <tm tmtype="reg">Sametime</tm> database ACL, use the fully qualified
+    Distinguished Name, but use forward slashes (/) as delimiters instead of commas. For example, if
+    the Distinguished Name for the user in the LDAP directory
+    is:<codeblock>uid = Joe Waters, ou=West, o=Example</codeblock></p><p class="- topic/p ">enter
+    the name in the Sametime database ACL using the
+    following format:<codeblock>uid = Joe Waters/ou=West/o=Example</codeblock></p><p
+    class="- topic/p ">You can also use asterisks for wildcards when entering names from an LDAP
+    directory or a <tm tmtype="reg">Domino</tm> Directory in an ACL. For example, entering
+     <codeph>*/ou=West/o=Example</codeph> is equivalent to entering all users in the
+     <codeph>ou=West/o=Example</codeph> branch of the directory to the ACL.</p>
+  </context>
+<steps>
+<step>
+        <cmd><xref href="st_adm_webad_startadmtool_t.dita">Open the Sametime Administration
+            tool.</xref></cmd>
+      </step>
+<step>
+<cmd>Click <uicontrol>LDAP Directory</uicontrol>.</cmd>
+</step>
+<step><cmd>Select <uicontrol>Access Control</uicontrol>.</cmd></step>
+<step><cmd>Select a database from the list.</cmd></step>
+<step><cmd>Click <uicontrol>Access</uicontrol>. The database ACL displays.</cmd>
+</step><?Pub Caret 43?>
+<step><cmd>Click <uicontrol>Add</uicontrol>.</cmd></step>
+<step><cmd>In the dialog box, type the exact user name from a Person
+document or the group name from a Group document. Click <uicontrol>OK</uicontrol>. </cmd>
+<info> <note class="- topic/p ">  It is possible to enter entities
+other than user and group names in an ACL. For more information about
+the types of entries that can exist in an ACL, see <xref
+class="- topic/xref " href="st_adm_security_usertypeacl_c.dita">User
+type - ACL settings</xref>.</note> </info></step>
+<step><cmd>Click the name you just entered so that the name is selected.</cmd>
+</step>
+<step><cmd>For <uicontrol>User Type</uicontrol>, select the type of
+user. For more information, see <xref class="- topic/xref "
+href="st_adm_security_usertypeacl_c.dita">User type - ACL settings</xref>.</cmd>
+</step>
+<step>
+        <cmd>For <uicontrol>Access</uicontrol>, assign an access level for the user.
+          <!--For more information, see <xref class="- topic/xref " href="st_adm_security_accesslevel_r.dita">Access level - ACL settings</xref>.--></cmd>
+      </step>
+<step><cmd>Edit the privileges if necessary. For more information,
+see <xref class="- topic/xref " href="st_adm_security_privileges_r.dita">Privileges
+- ACL settings</xref>.</cmd></step>
+<step><cmd>Click <uicontrol>Submit</uicontrol>.</cmd></step>
+</steps>
+</taskbody>
+<?tm 1261240972 13?>
+</task>
+<?Pub *0000004084?>

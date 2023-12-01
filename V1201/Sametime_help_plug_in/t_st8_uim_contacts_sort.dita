@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_st8_uim_contacts_sort" xml:lang="en-us">
+<title>How do I sort and filter my contact list?</title>
+<shortdesc>By default, your contact list displays contacts and groups
+in alphabetical order. You can choose to manually organize your contact
+list and even filter your list by contacts from specific server communities
+and online contacts only. </shortdesc>
+<prolog><metadata>
+<keywords><keyword>Contact list</keyword><keyword>Sort</keyword>
+<keyword>Sort contact names</keyword><keyword>Sort group names</keyword>
+</keywords>
+</metadata></prolog>
+<taskbody>
+<steps-unordered>
+<step><cmd>To manually organize contact or group names, do the following
+task:</cmd><info><table frame="all"><title>Options</title>
+<tgroup cols="2">
+<?PubTbl tgroup rth="1.00pt"?>
+<colspec colname="col1" colwidth="1*"/><colspec colname="col2"
+colwidth="1*"/>
+<thead>
+<row>
+<entry colname="col1">If you are using:</entry>
+<entry colname="col2">Do this:</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Sametime</tm> Connect</p></entry>
+<entry colname="col2"><p>Click <image
+href="images/ST_left_contacts_inactive.jpg"><alt> Contacts icon</alt>
+</image> to open the <uicontrol>Contacts</uicontrol> panel. Then,
+click <uicontrol>Contacts <image href="images/ST9_dropdown.jpg"
+scope="local"><alt>drop-down arrow icon</alt></image></uicontrol> in
+the action bar and clear the selections for <uicontrol>Contacts Alphabetically</uicontrol> and <uicontrol>Groups
+Alphabetically</uicontrol>. Return to the menu and select <uicontrol>Contacts
+Alphabetically</uicontrol> and <uicontrol>Groups Alphabetically</uicontrol> to
+display names in alphabetical order.</p><?Pub Caret -1?></entry>
+</row>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Notes</tm>
+          </p></entry>
+<entry colname="col2"><p>Click <uicontrol><image href="images/Embedded_ST_Contacts_icon.JPG" scope="local">
+<alt>Contacts icon</alt>
+</image> Sametime Contacts</uicontrol> to open the <uicontrol>Contacts</uicontrol> panel. Then,
+click <uicontrol>View <image href="images/ST9_dropdown.jpg" scope="local">
+<alt>drop-down arrow icon</alt>
+</image></uicontrol> in the action bar and clear the selections for <uicontrol>Contacts
+Alphabetically</uicontrol> and <uicontrol>Groups Alphabetically</uicontrol>. Then, drag a contact or
+group name to organize your contact list. Return to the menu and select <uicontrol>Contacts
+Alphabetically</uicontrol> and <uicontrol>Groups Alphabetically</uicontrol> to display names in
+alphabetical order.</p></entry>
+</row>
+</tbody>
+</tgroup>
+</table></info></step>
+<step><cmd>To filter your contact list by online contacts only, do
+the following task:</cmd><info><table frame="all"><title>Options</title>
+<tgroup cols="2">
+<?PubTbl tgroup rth="1.00pt"?>
+<colspec colname="col1" colwidth="1*"/><colspec colname="col2"
+colwidth="1*"/>
+<thead>
+<row>
+<entry colname="col1">If you are using:</entry>
+<entry colname="col2">Do this:</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Sametime</tm> Connect</p></entry>
+<entry colname="col2"><p>Click <image href="images/ST_left_contacts_inactive.jpg">
+<alt> Contacts icon</alt>
+</image> to open the <uicontrol>Contacts</uicontrol> panel. Then, click <uicontrol>Contacts <image
+href="images/ST9_dropdown.jpg" scope="local">
+<alt>drop-down arrow icon</alt>
+</image></uicontrol> in the action bar and select <uicontrol>Online Contacts Only</uicontrol> to
+display only contacts who are currently online. Clear this setting to display all contact names.</p></entry>
+</row>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Notes</tm>
+          </p></entry>
+<entry colname="col2"><p>Click <uicontrol><image href="images/Embedded_ST_Contacts_icon.JPG" scope="local">
+<alt>Contacts icon</alt>
+</image> Sametime Contacts</uicontrol> to open the <uicontrol>Contacts</uicontrol> panel. Then,
+click <uicontrol>View <image href="images/ST9_dropdown.jpg" scope="local">
+<alt>drop-down arrow icon</alt>
+</image></uicontrol> in the action bar and select <uicontrol>Online Contact Only</uicontrol> to
+display only contacts who are currently online. Clear this setting to display all contact names.</p></entry>
+</row>
+</tbody>
+</tgroup>
+</table></info></step>
+<step><cmd>To filter your contacts by server community, do the following
+task:</cmd><info><table frame="all"><title>Options</title>
+<tgroup cols="2">
+<?PubTbl tgroup rth="1.00pt"?>
+<colspec colname="col1" colwidth="1*"/><colspec colname="col2"
+colwidth="1*"/>
+<thead>
+<row>
+<entry colname="col1">If you are using:</entry>
+<entry colname="col2">Do this:</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Sametime</tm> Connect</p></entry>
+<entry colname="col2"><p>Click <image href="images/ST_left_contacts_inactive.jpg">
+<alt> Contacts icon</alt>
+</image> to open the <uicontrol>Contacts</uicontrol> panel. Then, click <uicontrol>Contacts <image
+href="images/ST9_dropdown.jpg" scope="local">
+<alt>drop-down arrow icon</alt>
+</image></uicontrol> in the action bar and select <uicontrol>Server Communities</uicontrol>. To hide
+contacts from a specific server community, clear the server community selection. </p></entry>
+</row>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Notes</tm>
+          </p></entry>
+<entry colname="col2"><p>Click <uicontrol><image href="images/Embedded_ST_Contacts_icon.JPG" scope="local">
+<alt>Contacts icon</alt>
+</image> Sametime Contacts</uicontrol> to open the <uicontrol>Contacts</uicontrol> panel. Then,
+click <uicontrol>View <image href="images/ST9_dropdown.jpg" scope="local">
+<alt>drop-down arrow icon</alt>
+</image></uicontrol> in the action bar and select <uicontrol>Server Communities</uicontrol>. To hide
+contacts from a specific server community, clear the server community selection.</p></entry>
+</row>
+</tbody>
+</tgroup>
+</table></info></step>
+</steps-unordered>
+</taskbody>
+<?tm 1365536096 0?>
+</task>
+<?Pub *0000006216?>

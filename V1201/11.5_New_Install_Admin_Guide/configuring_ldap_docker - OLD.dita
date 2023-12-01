@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="configuring_ldap_docker" xml:lang="en-us">
+    <title>Configuring LDAP on Docker</title>
+    <shortdesc>This top covers LDAP configuration in the Docker environment.</shortdesc>
+    <taskbody>
+        <context id="context_xp2_p4r_s5b">s the admin has already created the requisite
+            ldaptruststore.p12 file and that it is in the same location as the docker-compose.yml
+            file (where they run docker-compose commands for the Sametime Server</context>
+        <steps id="steps_zsy_1l5_j5b">
+            <step>
+                <cmd>Stop the Sametime services.</cmd>
+                <info>
+                    <codeblock id="codeblock_fhw_grb_b5b">docker-compose down</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Change directories to the root directory where the Sametime installation
+                    package was decompressed.</cmd>
+            </step>
+            <step>
+                <cmd>Edit the <filepath>custom.env</filepath> file and locate the LDAP
+                    section.</cmd>
+                <info>
+                    <ul id="ul_t4t_zgy_p5b">
+                        <li>Set the LDAP port. The default is 636.</li>
+                        <li> Set the SSL Enabled field to true. </li>
+                    </ul>
+                    <codeblock id="codeblock_cv2_vfy_p5b">
+LDAP_SSL_Enabled_ENV=1
+LDAP_SSL_PORT_ENV=<varname>port_number</varname></codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Create a file called <filepath>tlsldap.env</filepath> with the following
+                    content providing information to the trust LDAP store.</cmd>
+                <info>
+                    <codeblock id="codeblock_dtj_kmy_p5b">
+STI__Config__STLDAP_TLS_KEY_STORE_TYPE=p12
+STI__Config__STLDAP_TLS_KEY_STORE_FILE=/local/notesdata/ldaptruststore.p12
+STI__Config__STLDAP_TLS_KEY_STORE_PASSWORD=keystorepass
+</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Edit the <filepath>docker_compose.yaml</filepath> file to add a path to the
+                    LDAP trust store.</cmd>
+                <substeps id="substeps_g4j_spy_p5b">
+                    <substep>
+                        <cmd>Add the following line to the <codeph>env_file</codeph> section.</cmd>
+                        <info>
+                            <codeblock id="codeblock_c1r_5py_p5b">
+env_file:
+  - tlsldap.env</codeblock>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Add the following line to the <codeph>volumes</codeph> section.</cmd>
+                        <info>
+                            <codeblock id="codeblock_emj_vpy_p5b">
+volumes:
+  - ./ldaptruststore.p12:/local/notesdata/ldaptruststore.p12</codeblock>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+            <step id="docker_restart_server">
+                <cmd>Start the Sametime server to apply the changes.</cmd>
+                <info>
+                    <codeblock id="codeblock_btc_lj4_k5b">docker-compose up -d
+</codeblock>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

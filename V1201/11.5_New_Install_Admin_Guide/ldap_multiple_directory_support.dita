@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ldap_multiple_directory_support" xml:lang="en-us">
+    <title>Multiple directory support</title>
+    <shortdesc>Multiple directories are supported with the following restrictions:</shortdesc>
+<conbody>
+    <p><ul><li>Groups may only contain members present in the same directory server and base DN specified in the LDAP Server document. Sametime does not support mixed groups at this time.</li>
+        <li>Multiple replicas of the same directory in the stconfig.nsf database are not supported. For effective load balancing, you should route LDAP traffic through a load balancer.</li>
+        <li>If the browse feature is enabled on the server, certain features such as LDAP time-outs or the maximum number of search results returned may need to be disabled.</li>
+        <li>If you use multiple LDAP repositories, you must ensure that the base entries do not overlap, as that causes problems when Secure Socket Layer (SSL) is enabled. 
+            <p><b>For example,</b> the following base entries have a field in common, so they overlap:
+                </p>
+            <p><codeph>o=renovations</codeph></p>
+            <p><codeph>o=sales,o=renovations</codeph></p>
+            <p>These base entries use different fields and are acceptable:</p>
+            <p><codeph>o=renovations,c=us</codeph></p>
+            <p><codeph>o=sales</codeph></p></li>
+    </ul></p></conbody>
+</concept>

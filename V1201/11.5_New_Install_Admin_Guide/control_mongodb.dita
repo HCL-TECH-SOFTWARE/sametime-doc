@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="control_mongodb" xml:lang="en-us">
+    <title>Changing MongoDB log file size</title>
+    <shortdesc>This section provides information on how to control MongoDB log file
+        size.</shortdesc>
+    <taskbody>
+        <context>
+            <p>This seems to be a limitation on MongoDB side , in that there are no parameters or
+                settings to automatically control this.</p>
+            <p>You can do a couple of things to help keep it under control -</p>
+            <p>in etc/mongod.conf</p>
+            <p>add</p>
+            <p>logRotate: rename</p>
+            <p>and anytime the mongod service is restarted, it will create a new log file (and older
+                ones can be deleted or archived)</p>
+            <p>You can also manually rotate log files in the mongo shell by giving the command</p>
+            <p>db.adminCommand( { logRotate : 1 } )</p>
+            <p>There are more details here -</p>
+            <p><xref
+                    href="https://docs.mongodb.com/v3.6/tutorial/rotate-log-files/%22%20rel=%22nofollow%22%20style=%22box-sizing:%20border-box;%20text-decoration-line:%20none;%20padding:%200px;%20cursor:%20pointer;%20color:%20rgb(31,%20132,%20118);%20background:%20transparent;%20https://docs.mongodb.com/v3.6/tutorial/rotate-log-files/"
+                    format="html" scope="external"/></p>
+        </context>
+    </taskbody>
+</task>

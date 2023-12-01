@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_start_meeting_chatpartner" xml:lang="en-us">
+    <title>Starting a  meeting with a chat partner</title>
+    <shortdesc>The call feature available with a chat partner also allows you to initiate a meeting
+        with your chat partner or a group.</shortdesc>
+    <taskbody>
+        <context>
+            <p>From the menu option, you can see meetings that you are the owner and a member. You
+                can only start meetings for those that you are the owner.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Click the meeting icon ( <image alt="Add new contact" href="Images/meet.png"
+                        placement="inline" id="meet"/>) in the chat message field.</cmd>
+            </step>
+            <step>
+                <cmd>From the list of meetings, select the meeting that to use.</cmd>
+                <info>A <msgph>Meet me here: </msgph> with the meeting link displays in the chat
+                    input field.</info>
+            </step>
+            <step>
+                <cmd>Click the send message icon.</cmd>
+                <info>Your chat partners receive the meeting message and can click the link to join
+                    the meeting.</info>
+            </step>
+        </steps>
+    </taskbody>
+</task>
+

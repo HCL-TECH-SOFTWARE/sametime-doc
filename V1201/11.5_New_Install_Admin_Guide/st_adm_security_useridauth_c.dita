@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="st_adm_security_useridauth_c" xml:lang="en-us">
+<title class="- topic/title ">Using database ACLs for identification
+and authentication</title>
+<shortdesc>Identification and authentication is the process of determining
+the name of a user and verifying that users are who they say they
+are. You can use database Access Control Lists (ACLs) to control access
+to individual databases on the server. </shortdesc>
+<conbody>
+<p class="- topic/p ">For each database on the server, you can set
+the ACL to allow:</p>
+<ul class="- topic/ul ">
+<li class="- topic/li "> <xref class="- topic/xref "
+href="st_adm_security_anonacl_c.dita">Anonymous access</xref> <p
+class="- topic/p ">or</p> </li>
+<li class="- topic/li "> <xref class="- topic/xref "
+href="st_adm_security_basicpwdauth_c.dita">Basic password authentication</xref> </li>
+</ul>
+<p class="- topic/p ">The settings in the database ACLs work together with the "Maximum Internet
+   name &amp; password" setting for each database to control the level of access that web browser
+   users have to a database on the <tm tmtype="reg">Sametime</tm> server.</p>
+<section
+id="TION_AND_AUTHENTICATION_289_ABOUT_MIDTOPIC_327800867229339394"> <title
+class="- topic/title "> Using database ACLs</title><p class="- topic/p ">The
+database ACL defines user access to the content of the database. Before
+you set up basic password authentication or anonymous access to a
+database, you should be familiar with how to add users to a database
+ACL and the available settings within the ACL. For more information,
+see:</p><ul class="- topic/ul ">
+<li class="- topic/li "> <xref class="- topic/xref "
+href="st_adm_security_viewacl_t.dita">Adding a name to a database
+ACL</xref> </li>
+<li class="- topic/li "> <xref class="- topic/xref "
+href="st_adm_security_aclsetting_c.dita">Database ACL settings</xref> </li>
+</ul> </section>
+<section
+id="TION_AND_AUTHENTICATION_289_ABOUT_MIDTOPIC_327800867229339395"> <title
+class="- topic/title "> Maximum Internet name &amp; password setting</title><p
+class="- topic/p ">The "Maximum Internet name &amp; password" setting
+on the Advanced panel of each database ACL specifies the maximum level
+of access to the database that is allowed for web browser clients.
+This setting overrides individual levels set in the ACL. </p><p class="- topic/p ">Generally, administrators should not need to change the "Maximum Internet name
+    &amp; password" settings for databases on the <tm tmtype="reg">Sametime</tm> server. The default
+    settings should function adequately in most cases.</p><?Pub
+Caret 123?> </section>
+</conbody>
+<?tm 1261240971 2?>
+</concept>
+<?Pub *0000002893?>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="secure_rooms" xml:lang="en-us">
+    <title>Disabling secure meeting room names</title>
+    <shortdesc>Users are provisioned with a personal meeting room the first time that they log into
+        their meeting. Their personal meeting room is created with a secure name that cannot be
+        easily guessed by other users. For example: be:MeetMe.CWGRAff90q9HETLne4mhzA.</shortdesc>
+    <taskbody>
+        <context id="context_tcj_zgt_dnb">
+            <p>Meeting rooms with a user-friendly name or naming conventions might be preferred, for
+                example: MeetMe.username~40company.com. If this is the case, the secure naming
+                feature can be disabled.</p>
+            <p>Disabling secure meeting room name feature does not affect existing meeting rooms.
+                Changing the setting affects only the meeting rooms provisioned after changing the
+                setting.</p>
+        </context>
+    </taskbody>
+   
+</task>

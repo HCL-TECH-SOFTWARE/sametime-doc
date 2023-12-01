@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-us">
+<title>HCL <tm tmtype="reg">Sametime</tm> and HCL <tm tmtype="reg">Sametime</tm> Meetings 12.0
+Administration Guide</title>
+<topicmeta>
+<copyright>
+<copyryear year="1998"/>
+<copyryear year="2022"/>
+<copyrholder/>
+</copyright>
+</topicmeta>
+    <topicref href="11.5_New_Install_Admin_Guide/hcl_sametime_11_5_install_and_admin.ditamap" format="ditamap"/>
+    <topicref href="11.5_New_webmeeting_documentation/youtube_start_livestream.dita" toc="no"/>
+</map>
+

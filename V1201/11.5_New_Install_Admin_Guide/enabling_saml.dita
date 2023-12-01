@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="enabling_saml" xml:lang="en-us">
+    <title>Enabling SAML authentication in client installation packages</title>
+    <shortdesc>Ensure that Sametime® Connect and Embedded clients can connect to the Sametime Community Server using SAML by adding the new trusted audience URL to the client preferences before installing or updating the clients.</shortdesc>
+    <taskbody>
+<prereq>
+    <p>Enable SAML authentication for the deployment as explained in <xref
+                    href="enabling_sso_saml.dita">Enabling SAML authentication on the Sametime
+                    Community Server</xref>.</p>
+    <p>This task only applies to the Sametime Connect and Embedded clients; it does not affect web or mobile clients. During SAML login, Sametime redirects client connections from the initial IdP URL. If the redirected URL is not listed as a trusted site, Sametime stops loading the page and generates the following error message in the log: </p>
+    <p><codeph>URL redirected_url is not in the trusted sites list.</codeph></p>
+</prereq>
+<context>
+    <p>Ensure that Sametime Connect and Embedded clients can connect using SAML by adding the
+                trusted site's URL to the client preferences before installing or updating the
+                clients. This is the URL that you assigned in the
+                    <codeph>STSAML_TRUSTED_AUDIENCES</codeph> setting, as explained in <xref
+                    href="configuring_sso_saml.dita">Configuration settings related to SAML
+                    authentication</xref>. For more information on configuring client installation
+                packages, see<xref href="config_client_mng_xml_pref.dita"> Configuring Sametime
+                    Connect client preferences with the Expeditor managed settings framework</xref>. </p>
+    <p>Alternatively, users can enable SAML authentication themselves by modifying settings in the
+                client. For more information, see <xref href="enabling_saml_clients.dita">Enabling
+                    SAML authentication in installed clients</xref></p></context>
+<steps>
+    <step>
+        <cmd>Determine your company's SAML IdP URL.</cmd>
+        <info><p>The IdP URL is based on your Sametime Community Server host name, and provides the HTML page with at least 3 <![CDATA[<input>]]> tags for the User name, Password, and Submit fields. 
+            Upon a submit action, the URL might redirect to one or more URLs and receive the SAML token in response.</p></info>
+    </step>
+    <step>
+        <cmd>Decide whether you want to use <codeph>form</codeph> or <codeph>browser</codeph> as the IdP log-in type.</cmd>
+        <info><p>If you want to log in to your company's authentication server by typing a user name and password in a Sametime dialog box, use <codeph>form</codeph> as the <codeph>idp.type</codeph>; otherwise use browser.
+            
+        </p></info>
+    </step>
+    <step>
+        <cmd>Determine your company's SAML authentication settings by completing the following steps.
+        </cmd>
+        <info><ol>
+            <li>Browse to your IdP URL, view the HTML source of the log-in form, and collect the following values.
+            <ul>
+                <li><codeph>idp.form.username.tag</codeph> is the value in the
+                                        <parmname>name</parmname> attribute of the Intranet ID
+                                    label's <codeph>input</codeph> statement; this value is
+                                        <codeph>userID</codeph></li>
+                <li><codeph>idp.form.password.tag</codeph> is the value in the name attribute of the
+                                    Password label's input statement; this value is password</li>
+                <li><codeph>idp.form.submit.tag</codeph> is the value in the name attribute of the
+                                        <codeph>Sign in</codeph> input statement; this value is
+                                    submit</li>
+            </ul></li>
+        </ol>
+            <p>For example, if you browse to the example Community Server IdP URL, the following graphic shows where the values appear in the sample HTML source.</p>
+            <p><image href="Images/saml_example.png" placement="break" align="left" id="saml_example"></image></p></info>
+    </step>
+    <step>
+        <cmd>Add the information collected in the previous steps to the Sametime <codeph>plugin_customization.ini</codeph> file by completing the following steps.
+        </cmd>
+        <info><ol>
+            <li>Open the <codeph>plugin_customization.ini</codeph> file.
+            <ul>
+                <li><b>Windows™:</b> the file is located inside the client installation package, in the <codeph>deploy</codeph> directory</li>
+                <li><b>Mac:</b> the file is located separately from the client installation package</li>
+            </ul></li>
+            <li>Set the <codeph>samlTrustedSites</codeph> preference to the list all of the
+                            redirecting URLs used by your IdP; separate multiple URLs with a comma
+                            (,). If you have multiple SAML communities, include all of the
+                            redirecting URLs used by all of the SAML communities. If your IdP does
+                            not use redirecting URLs, leave this setting blank. Each URL can be as
+                            simple as <codeph>https://host_name</codeph>, or you can include a path
+                            as in <codeph>https://host_name/path</codeph> as shown in the following
+                            example.
+                                    <p><codeph>com.hcl.collaboration.realtime.community/samlTrustedSites=https://host1,https://host2/path</codeph></p></li>
+            <li>Set the <codeph>samlCommunities</codeph> preference to the list of fully qualified host names of all of your SAML communities; separate multiple host names with a semicolon (;).
+            </li>
+            <li>Set the <codeph>sametime.example.com.idp</codeph> to the IdP URL that you determined in Step 1.
+                <p>For example, if the Community Server's host name is sametime.example.com, then the appropriate setting is the IdP URL determined in the example from Step 1, and shown in the following statement:
+                </p>
+                <p><codeph><![CDATA[com.ibm.collaboration.realtime.community/sametime.example.com.idp=https://www.example.com/FIM/sps/SAML20/logininitial?TARGET=https://sametime.example.com&PROTOCOL=POST]]></codeph></p>
+            </li>
+            <li>Add the log-in type that you selected in Step 2 to the <codeph>idp.type</codeph> setting.</li>
+            <li>Add the tag settings that you collected from the HTML for the log-in page source in
+                            Step 3 to the following settings: <ul>
+                                <li><codeph>idp.form.username.tag</codeph></li>
+                                <li><codeph>idp.form.password.tag</codeph></li>
+                                <li><codeph>idp.form.submit.tag</codeph></li>
+                            </ul>
+                            <p>The following example shows completed settings using a log-in type of
+                                form and the tag settings from the sample HTML source shown in Step
+                                2:</p>
+                            <p><codeph>com.hcl.collaboration.realtime.community/sametime.example.com.idp.type=form</codeph></p>
+                            <p><codeph>com.hcl.collaboration.realtime.community/sametime.example.com.idp.form.username.tag=userID</codeph></p>
+                            <p><codeph>com.hcl.collaboration.realtime.community/sametime.example.com.idp.form.password.tag=password</codeph></p>
+                            <p><codeph>com.hcl.collaboration.realtime.community/sametime.example.com.idp.form.submit.tag=submit_button</codeph></p>
+                        </li>
+            <li>Save and close the file.</li>
+        </ol></info>
+    </step>
+    <step>
+                <cmd><b>(Mac clients only):</b> If you can install clients with the
+                        <codeph>plugin_customization.ini</codeph> file located outside of the client
+                    package, skip to step 5. If your deployment mechanism requires a single file,
+                    add the <codeph>plugin_customization.ini</codeph> file to the client
+                    installation package as explained in the following steps.</cmd>
+        <info><ol>
+            <li>Expand the client installation package.</li>
+            <li>Add the plugin_customization.ini file.</li>
+            <li>Compress the revised package.</li>
+            <li>Email the revised package to support@collabserv.com and request that HCL sign the package and return it to you.</li>
+        </ol></info>
+            </step>
+    <step>
+        <cmd>Distribute the updated installation packages to your users.</cmd>
+        <info>The SAML configuration information is automatically populated when your users install the client.</info>
+    </step>
+</steps>
+    </taskbody>
+</task>

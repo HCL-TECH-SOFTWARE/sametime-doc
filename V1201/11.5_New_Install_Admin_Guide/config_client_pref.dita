@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_client_pref" xml:lang="en-us">
+<title>Setting client preferences</title>
+<shortdesc>The following topics describe the different methods for setting preferences for the <tm
+   tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client and the <tm tmtype="reg"
+   trademark="Sametime">Sametime</tm> Embedded Client for <tm tmtype="reg" trademark="Notes"
+   >Notes</tm>.</shortdesc>
+<prolog><metadata>
+<keywords>
+<!--Insert <indexterm> tags here-->
+</keywords>
+</metadata></prolog>
+<taskbody></taskbody>
+</task>

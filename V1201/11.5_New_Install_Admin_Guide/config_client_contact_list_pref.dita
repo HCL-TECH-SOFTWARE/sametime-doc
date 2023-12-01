@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="config_client_contact_list_pref" xml:lang="en-us">
+<title>Contact list preferences</title>
+<shortdesc>The following table lists the contact list preferences for the <tm tmtype="reg" trademark="HCL">HCL</tm>
+  <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client and <tm tmtype="reg" trademark="Sametime">Sametime</tm> Embedded Client for <tm tmtype="reg" trademark="Notes">Notes</tm>.</shortdesc>
+<conbody>
+<p>
+<table id="table_b4t_42l_pz">
+<title>Contact List Preferences - com.ibm.collaboration.realtime.imhub  release 7.5.x and
+     later</title>
+<tgroup cols="4">
+<colspec colname="col1" colwidth="131*"/>
+<colspec colname="col2" colwidth="71*"/>
+<colspec colname="col3" colwidth="113*"/>
+<colspec colname="col4" colwidth="71*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+<entry colname="col4">Release</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">sortGroups</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to alphabetically sort groups in the contact
+list.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">sortContacts</entry>
+<entry colname="col2">Boolean. Default is true. </entry>
+<entry colname="col3">Specifies whether by default to alphabetically sort contacts in the contact
+list.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">alwaysEditStatusMsgActive</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to always edit the status message when changing
+status to available.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">alwaysEditStatusMsgAway</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to always edit the status message when changing
+status to away.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">alwaysEditStatusMsgInMtg</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to always edit the status message when changing
+status to in a meeting.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">alwaysEditStatusMsgDnd</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to always edit the status message when changing
+status to in a do not disturb.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showActionToolBar </entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to show the action toolbar in the contact list
+window. </entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showStatusBar</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to show the status bar in the contact list
+window.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showQuickFind</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to show quick find in the contact list
+window.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">flashAddedContacts </entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to flash newly added contacts.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showAddDialogSuccess</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to open a confirmation dialog after a contact has
+been added.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showAddGroupSuccess</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to open a confirmation dialog after a group has
+been added.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showAddPartnerSuccess</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to open a confirmation dialog after a chat
+partner has been added (through add button in chat window). </entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">
+<lines>autoSyncDefaultCommunity
+BuddyList</lines>
+</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to synchronize the 7.5 XML buddylist with the
+previous pre 7.5 contact list used by older clients. <tm tmtype="reg" trademark="Windows">Windows</tm> only. </entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">launchAtStartup </entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether or not to launch <tm tmtype="reg" trademark="Sametime">Sametime</tm> at system startup. The preference is valid only for stand-alone clients and
+        windows platform. If the preference is set it in plugin_customization.ini or managed
+        preferences framework, it does not work for the first launch of the <tm tmtype="reg" trademark="Sametime">Sametime</tm> client.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">hideWhenMinimized </entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether by default to hide the contact list window when minimized.
+        The preference is valid only for the <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+        Connect Client for <tm tmtype="reg" trademark="Microsoft">Microsoft</tm>
+        <tm tmtype="reg" trademark="Windows">Windows</tm>.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showCommunityIconBackground</entry>
+<entry colname="col2">Boolean. Default is false.</entry>
+<entry colname="col3">Specifies whether by default to show the community icon behind the
+contacts.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">statusImgBackgroundTransparency</entry>
+<entry colname="col2">Integer. Default is 60. </entry>
+<entry colname="col3">Specifies the transparency of the community background image. 0 is very
+prominent, 100 is completely transparent. </entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showHoverBizCard</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether or not to show the business card when hovering over
+contacts.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">hideContactsWhenOffline</entry>
+<entry colname="col2">Boolean. Default is false.</entry>
+<entry colname="col3">Specifies whether or not to hide the contact list tree when offline.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showBuddyListConflictDialog</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether or not to show the contact list conflict dialog when
+synchronizing the remote contact list.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">buddyListConflictPref</entry>
+<entry colname="col2">String. Default is merge.</entry>
+<entry colname="col3">Specifies the default behavior to follow in case of a remote/local
+synchronization conflict. Options include "merge", "keepLocal", and "replaceLocal".</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">warnWhenWatchLimitExceeded</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">When the watch limit is in effect, specifies whether or not to warn user when
+the number of contacts that can be monitored is exceeded.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">warnWhenContactLimitExceeded </entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">When "LimitContactListSize" policy is set, specifies whether or not to warn
+user when the contact list is approaching the maximum number allowed.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showShortNames</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether or not to show short names for contact list.</entry>
+<entry colname="col4">7.5.1 and later </entry>
+</row>
+<row>
+<entry colname="col1">alwaysOnTop</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether or not to make the contact list window stay visible. </entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showOnlineOnly</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether or not to show online contacts only in the contact list
+window.</entry>
+<entry colname="col4">7.5.1 and later </entry>
+</row>
+<row>
+<entry colname="col1">showStatusToolBar</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether or not to show My Status ToolBar in the contact list
+window.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">showContactList </entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether or not to show the contact list in the contact list
+window.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">
+<lines>confirmMultiPartyChatInvitation
+ToMoreThanX	</lines>
+</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether or not to confirm when users start events with groups larger
+than a specified number of people. The number value is specified by
+<lines><codeph>confirmMultiPartyChatInvitationToMoreThanXNumber</codeph></lines>.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">
+<lines>confirmMultiPartyChatInvitation
+ToMoreThanXNumber</lines>
+</entry>
+<entry colname="col2">Integer</entry>
+<entry colname="col3">Specifies a limit number. See
+<lines><codeph>confirmMultiPartyChatInvitationToMoreThanX</codeph></lines>. </entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">launchMinimized </entry>
+<entry colname="col2">Boolean.</entry>
+<entry colname="col3">Specifies whether or not to minimize Sametime when launching. It's valid only
+for stand-alone clients and windows platform.</entry>
+<entry colname="col4">8.5 and later</entry>
+</row>
+<row>
+<entry colname="col1">
+<lines>limitPublicGroupSubscriptions</lines>
+</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Takes contact list size of public groups into account to calculate the contact
+list size limit. The default value is <userinput>true</userinput>, which means that users cannot add
+a public group to their contact lists if doing so exceeds the contact list size. If users already
+have public groups in their contact lists, this preference causes the client to subscribe to each
+group in the list, from smallest to largest, until the limit is reached. Any other groups remaining
+in the contact list are shown as unsubscribed groups. Disabling a group subscription causes the
+client to add as many groups from the unsubscribed list as it can until the contact list size is
+reached again. Setting the value to <userinput>false</userinput> does not include the contact list
+size of public groups to calculate the contact list size limit. </entry>
+<entry colname="col4">8.5.2 and later</entry>
+</row>
+<row>
+<entry colname="col1">
+<lines>maxPublicGroupSize</lines>
+</entry>
+<entry colname="col2">Integer</entry>
+<entry colname="col3">The maximum number of contacts a public group can have that allows users to
+subscribe to it. Groups that exceed this size cannot be added to the contact list. If the group
+already exists in the contact list, users cannot subscribe to the group. You can set this preference
+when the <cmdname>limitPublicGroupSubscriptions</cmdname> preference is enabled.</entry>
+<entry colname="col4">8.5.2 and later</entry>
+</row>
+<row>
+<entry colname="col1">
+<lines>excludedPublicGroups</lines>
+</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">A comma-delimited list of public group names that should not be subscribed to
+(for example, <varname>employees_Active,employees_All</varname>). Groups in this list cannot be
+added to the contact list. If the group already exists in the contact list, users cannot subscribe
+to the group. You can set this preference when the <cmdname>limitPublicGroupSubscriptions</cmdname>
+preference is enabled.</entry>
+<entry colname="col4">8.5.2 and later</entry>
+<?Pub Caret 4?>
+</row>
+<row>
+<entry colname="col1">allowExportContactList</entry>
+<entry colname="col2">Boolean , default value is false</entry>
+<entry colname="col3">Specifies whether to allow users to export their contact list. When set to
+<codeph>false</codeph>, the <uicontrol>Export Contact List</uicontrol> option does not display on
+the <uicontrol>Manage Contact List</uicontrol> menu..</entry>
+<entry colname="col4">9.0.1 and later</entry>
+</row>
+</tbody>
+</tgroup>
+</table><table>
+<title>Contact List Preferences - com.ibm.rcp.ui</title>
+<tgroup cols="4">
+<colspec colname="col1" colwidth="131*"/>
+<colspec colname="col2" colwidth="71*"/>
+<colspec colname="col3" colwidth="113*"/>
+<colspec colname="col4" colwidth="71*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+<entry colname="col4">Release</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">HIDE_PANEL_com.ibm.collaboration.realtime.filteredbuddies.shelfview</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether the Primary Contacts panel displays in the contacts
+list.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+</tbody>
+</tgroup>
+</table></p>
+</conbody>
+</concept>

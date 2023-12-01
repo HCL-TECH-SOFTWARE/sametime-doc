@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Managed community settings","shortdesc":"<p class=\"shortdesc\">Define managed community settings in the <span class=\"ph filepath\">managed-community-configs.xml<\/span> file.<\/p>","href":"managed_community.html","attributes":{"data-id":"managed_community"},"menu":{"hasChildren":false},"tocID":"managed_community-d1907e3682","topics":[]}]});

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="add_a_new_community" xml:lang="en-us">
+ <title>Adding a new community Manually</title>
+ <shortdesc>Selecting Setup, a Community on the Welcome screen will display the Add Community
+  Screen.</shortdesc>
+ <conbody>
+  <p><uicontrol>For Name</uicontrol>, enter a display name that you would like to use for this
+   community.</p>
+  <p><uicontrol>For Host Server</uicontrol>, enter the server host URL.</p>
+  <p><uicontrol>For Port</uicontrol>, enter the server port number.</p>
+  <p>These are the minimum fields needed to configure a Sametime community. You may enter the
+    <uicontrol>User ID</uicontrol> in the <uicontrol>Community</uicontrol> screen or at the
+    <uicontrol>Login</uicontrol> screen. Tap back to be prompted to <uicontrol>Save</uicontrol> and
+   return to the Login screen or the Communities screen.</p>
+  <p>Some communities require additional properties to connection, these can be found under Advanced
+   Properties: </p>
+  <table frame="all" rowsep="1" colsep="1" id="table_v1q_q4j_rhb">
+   <title>Advanced Properties</title>
+   <tgroup cols="2">
+    <colspec colname="c1" colnum="1" colwidth="1*"/>
+    <colspec colname="c2" colnum="2" colwidth="1*"/>
+    <thead>
+     <row>
+      <entry>Option</entry>
+      <entry>Description</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>Allow Self Signed Certificate</entry>
+      <entry>This property is <uicontrol>OFF</uicontrol> by default. With it ON the identity of the
+       community server cannot be verified. If you are configuring for a test environment your
+       administrator may require you to set this to <uicontrol>ON</uicontrol>. </entry>
+     </row>
+     <row>
+      <entry>Connection Type</entry>
+      <entry>This property is typically set to Direct Connection. However, if your host server is
+       behind a firewall, you may need to use an authenticating proxy. Selecting Authentication
+       Proxy will require credentials used to authenticate with the proxy. Your administrator
+       provides any needed details. </entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+  <p>When done configuring advanced properties, tap back to return to the community screen, then
+   with a community selected tap back to the Login screen. </p>
+  <p><image href="Images/add_community_manually.png" id="image_wfp_1nk_mqb">
+    <alt>add_community_manually</alt>
+   </image></p>
+ </conbody>
+</concept>

@@ -1,0 +1,154 @@
+========================================================================
+IBM Corporation : ID Workbench V4.6.0-D37 (9/15/2017)
+                : ID Workbench BOM V2.2.1 (04/09/97)
+========================================================================
+Created: 10/13/20 12:18:40
+========================================================================
+Process: DITA map input to XHTML output
+========================================================================
+PRCCELL
+ <PATH> C:\TEMP\IDWB\idwt680071610\Git\sametime\11.5\Sametime_help_plug_in
+TRANSFORMPKG
+ ID Workbench Transforms V4.6.0-D37 (9/15/2017)
+PRIMARYFILE (Input File)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> hcl_sametime_11_5_help_plug_in.ditamap <SIZE> 2907 <DATE> 09-24-20 15:50:23
+PRIMARYFILE (DITA Default Search File)
+ <URL>  <PATH> C:\TEMP\IDWB\idwt680071610\Git\sametime\11.5\Sametime_help_plug_in <FILE> ditadflt.dsh <SIZE> 48 <DATE> 10-13-20 12:18:41
+PRIMARYFILE (Filter File)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> st_standalone.ditaval <SIZE> 692 <DATE> 09-22-20 22:27:04
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> st_faq.dita <SIZE> 3660 <DATE> 09-24-20 22:57:23
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> m_st8_uim_basics.dita <SIZE> 363 <DATE> 10-07-20 18:46:55
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> c_st8_uim_welcome.dita <SIZE> 3250 <DATE> 10-13-20 11:43:25
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_location.dita <SIZE> 3286 <DATE> 09-22-20 15:09:22
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> c_st9_accessibility.dita <SIZE> 4803 <DATE> 09-22-20 15:10:49
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> r_st9_keyboardshortcuts.dita <SIZE> 13964 <DATE> 10-13-20 11:52:15
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> m_st9_contacts.dita <SIZE> 999 <DATE> 09-22-20 15:14:15
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_entry_uim_contacts_shortfull_names.dita <SIZE> 3344 <DATE> 09-22-20 15:16:22
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_views.dita <SIZE> 6775 <DATE> 09-22-20 15:22:02
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st852_uim_import_contact_list.dita <SIZE> 2096 <DATE> 09-22-20 15:22:38
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st852_uim_export_contact_list.dita <SIZE> 1955 <DATE> 09-22-20 15:23:37
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_privacy.dita <SIZE> 1007 <DATE> 09-22-20 15:19:58
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st9_privacy_online.dita <SIZE> 2565 <DATE> 09-22-20 15:26:28
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st9_privacy_dnd.dita <SIZE> 2205 <DATE> 09-22-20 15:27:34
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st9_privacy_externalcomm.dita <SIZE> 2503 <DATE> 09-22-20 15:28:09
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> m_st8_uim_textchats.dita <SIZE> 487 <DATE> 09-22-20 15:34:38
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_chats_tab.dita <SIZE> 2165 <DATE> 09-22-20 15:30:14
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> how_to_customise_chat_window.dita <SIZE> 750 <DATE> 09-22-20 15:30:36
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_chat_nway.dita <SIZE> 1625 <DATE> 09-22-20 15:31:07
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_entry_uim_chat_timedate.dita <SIZE> 3196 <DATE> 09-22-20 15:36:41
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_emoticon_add.dita <SIZE> 1502 <DATE> 09-22-20 15:32:14
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_file_add_desk.dita <SIZE> 2093 <DATE> 09-22-20 15:37:21
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_chat_hist.dita <SIZE> 5757 <DATE> 09-22-20 15:39:56
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st852_uim_offline_messages.dita <SIZE> 2154 <DATE> 09-22-20 15:35:05
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> click_to_meet.dita <SIZE> 567 <DATE> 10-07-20 18:57:59
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> how_to_setup_meeting_url.dita <SIZE> 1676 <DATE> 10-07-20 20:48:42
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> how_to_customize_click_to_meet.dita <SIZE> 797 <DATE> 09-22-20 15:41:31
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> m_st8_uim_getconn.dita <SIZE> 614 <DATE> 09-22-20 16:29:30
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> c_st8_uim_servercom_whatis.dita <SIZE> 1028 <DATE> 10-07-20 19:42:12
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_servercom.dita <SIZE> 5399 <DATE> 09-22-20 15:53:46
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_otherIM.dita <SIZE> 3484 <DATE> 09-22-20 15:55:21
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> m_st8_uim_other.dita <SIZE> 481 <DATE> 10-07-20 18:49:07
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_screen_cap.dita <SIZE> 3205 <DATE> 09-22-20 16:02:13
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_auto_change_stat_meet.dita <SIZE> 3169 <DATE> 09-22-20 16:04:00
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_chat_notifica.dita <SIZE> 2995 <DATE> 09-22-20 16:16:32
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> c_st852_widgets_about.dita <SIZE> 2379 <DATE> 09-22-20 15:59:50
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st852_uim_live_text_use.dita <SIZE> 1371 <DATE> 09-22-20 16:00:16
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st852_uim_live_text_prefs.dita <SIZE> 1777 <DATE> 09-22-20 16:01:02
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> m_st8_uim_troubleshoot.dita <SIZE> 540 <DATE> 10-07-20 18:49:10
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> c_st8_uim_icons_unavail.dita <SIZE> 1472 <DATE> 10-07-20 17:49:04
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> t_st8_uim_contacts_sort.dita <SIZE> 6278 <DATE> 09-22-20 16:27:50
+DEPENDFILE (idwbditafmgr)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> c_st8_uim_contact_list_outofsynch.dita <SIZE> 2650 <DATE> 09-22-20 16:26:14
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\st_11_5_welcome.png <SIZE> 72192 <DATE> 10-13-20 11:23:27
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST_gear.jpg <SIZE> 916 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST_left_contacts_inactive.jpg <SIZE> 8058 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST9_dropdown.jpg <SIZE> 800 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\Embedded_ST_Contacts_icon.JPG <SIZE> 8032 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST_left_primary_inactive.JPG <SIZE> 8097 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST9_add_to_chat.jpg <SIZE> 966 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST9_sendfile.jpg <SIZE> 939 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\launchmeeting.png <SIZE> 1190 <DATE> 10-07-20 18:54:30
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST9_community_2_awareness_05.JPG <SIZE> 8034 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST9_overflow_chevron.JPG <SIZE> 7993 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST9_add_contact.jpg <SIZE> 916 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST9_screen_capture_d.jpg <SIZE> 944 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST9_copy_03.jpg <SIZE> 985 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST9_screencapture_save_button.jpg <SIZE> 911 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST9_screencapture_print_button.jpg <SIZE> 1028 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST_hamburger.jpg <SIZE> 782 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Graphic)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> images\ST_Awns_InAMtng_03.JPG <SIZE> 8062 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Misc)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> stylesMain.css <SIZE> 2104 <DATE> 06-26-19 15:50:35
+DEPENDFILE (Style Sheet)
+ <URL>  <PATH> C:\DITATools\IDWB\dita\plugins\AuthoringTools\xsl <FILE> ibmdita.css <SIZE> 13776 <DATE> 09-29-20 22:29:00
+OUTPUTFILE (Output File)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in\com.ibm.collaboration.realtime.help <FILE> hcl_sametime_11_5_help_plug_in.xml <SIZE> 4870 <DATE> 10-13-20 12:18:59
+OUTPUTFILE (Output File)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in\com.ibm.collaboration.realtime.help <FILE> hcl_sametime_11_5_help_plug_inindex.xml <SIZE> 932 <DATE> 10-13-20 12:18:57
+OUTPUTFILE (Output File)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in\com.ibm.collaboration.realtime.help <FILE> doc.zip <SIZE> 168355 <DATE> 10-13-20 12:19:00
+OUTPUTFILE (Log)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> hcl_sametime_11_5_help_plug_inxhm.log <SIZE> 25416 <DATE> 10-13-20 12:19:00
+OUTPUTFILE (Bom)
+ <URL>  <PATH> D:\Git\sametime\11.5\Sametime_help_plug_in <FILE> hcl_sametime_11_5_help_plug_inxhm.bom <SIZE> 11813 <DATE> 10-13-20 11:27:05
+<<< END OF BOM FILE >>>
+========================================================================

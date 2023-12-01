@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_join_meeting" xml:lang="en-us">
+  <title>Joining a meeting</title>
+  <?Pub Caret 3?>
+  <shortdesc>You can join an in-progress meeting to which an owner has invited you.</shortdesc>
+  <taskbody>
+    <context id="context_enm_jnk_z5b">Depending on the type of meeting, you might not gain access to
+      the meeting right away. If the meeting owner selected to admit participants, you first enter a
+        <term>waiting room</term> until a meeting moderator admits you into the meeting or declines
+      your admission.</context>
+    <steps id="steps_wlq_lzq_ktb">
+      <step>
+        <cmd>Tap <uicontrol>Meetings</uicontrol> on the menu.</cmd>
+      </step>
+      <step>
+        <cmd>Type the meeting name or locate the meeting on the <uicontrol>Scheduled</uicontrol>
+          tab.</cmd>
+      </step>
+      <step>
+        <cmd>Tap <uicontrol>Join</uicontrol>.</cmd>
+        <info>
+          <note id="note_a4f_wpv_hvb">If the meetings has not started and you are a moderator for
+            the meeting, <uicontrol>Start</uicontrol> is displayed and you can start the
+            meeting.</note>
+        </info>
+      </step>
+    </steps>
+  </taskbody>
+</task>

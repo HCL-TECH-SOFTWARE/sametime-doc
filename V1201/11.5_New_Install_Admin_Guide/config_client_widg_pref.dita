@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="config_client_widg_pref" xml:lang="en-us">
+<title>Live Text and Widgets preferences</title>
+<shortdesc>The following scenarios show the Live Text and Widgets preferences for the <tm
+   tmtype="reg" trademark="HCL">HCL</tm>
+  <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client . These scenarios apply to
+  setting preferences for the stand-alone client.</shortdesc>
+<prolog><metadata>
+<keywords>
+<!--Insert <indexterm> tags here-->
+</keywords>
+</metadata></prolog>
+<conbody><?Pub Caret 130?>
+<p>Case 1 (default): Disable both Live Text and Widgets</p>
+<p>This is the default scenario, set with the following preference
+in plugin_customization.ini:</p>
+<p><codeph>com.hcl.rcp.toolbox.admin/toolboxvisibleMaster=false</codeph></p>
+<p>Case 2: Enable both Live Text and Widgets</p>
+<p>Enable both Live Text and Widgets by setting the following preference
+to true in plugin_customization.ini:</p>
+<p><codeph>com.hcl.collaboration.realtime/enableSametimeLiveText=true</codeph></p>
+<p><note>This overrides the setting for <codeph>toolboxvisibleMaster</codeph>.
+You do not need to manually set <codeph>toolboxvisibleMaster</codeph> to
+true.</note></p>
+<p>Case 3: Enable only Live Text, not Widgets</p>
+<p>To enable only Live Text, managed preferences is required. Configure
+the following managed preferences:</p>
+<codeblock>&lt;ManagedSettings>
+&lt;settingGroup name="com.hcl.collaboration.realtime">
+&lt;!-- Enable live text support in Sametime -->
+&lt;setting name="enableSametimeLiveText" value="true" isLocked="false"/>
+&lt;/settingGroup>
+&lt;settingGroup name="com.hcl.rcp.toolbox.admin">
+&lt;!-- Disable widget support in Sametime -->
+&lt;setting name="toolboxvisible" value="false" isLocked="true"/>
+&lt;setting name="toolboxenableRecognizers" value="true" isLocked="true"/>
+&lt;/settingGroup>
+&lt;/ManagedSettings></codeblock>
+<p>Case 4: Enable only Widgets, not Live Text</p>
+<p>To enable only Widgets but not Live Text, managed preferences are
+required. Configure the following managed preferences:</p>
+<codeblock>&lt;ManagedSettings>
+&lt;settingGroup name="com.hcl.collaboration.realtime">
+&lt;!-- Disable live text support in Sametime -->
+&lt;setting name="enableSametimeLiveText" value="false" isLocked="false"/>
+&lt;/settingGroup>
+&lt;settingGroup name="com.hcl.rcp.toolbox.admin">
+&lt;!-- Enable widget support in Sametime -->
+&lt;setting name="toolboxvisible" value="true" isLocked="true"/>
+&lt;setting name="toolboxvisibleMaster" value="true" isLocked="true"/>
+&lt;setting name="toolboxenableRecognizers" value="false" isLocked="true"/>
+&lt;/settingGroup>
+&lt;/ManagedSettings></codeblock>
+</conbody>
+<?tm 1302041503 10?>
+</concept>
+<?Pub *0000003502?>

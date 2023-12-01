@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_st8_uim_chats_tab" xml:lang="en-us">
+<title>How do I display chats from different partners in separate
+windows?</title>
+<shortdesc>You can change your settings so that chats from different
+people display in different windows, instead of displaying as tabs
+in the same window.</shortdesc><?Pub Caret 120?>
+<taskbody>
+<steps>
+<step><cmd>Open the chat window preferences.</cmd><info><draft-comment><p><xref
+format="html"
+href="http://www.HCL.com/developerworks/lotus/demos/viewlets.html"
+scope="external">View a demonstration of this task</xref></p></draft-comment><table
+frame="all"><title>Options</title>
+<tgroup cols="2">
+<?PubTbl tgroup rth="1.00pt"?>
+<colspec colname="col1" colwidth="1*"/>
+<colspec colname="col2" colwidth="2.7*"/>
+<thead>
+<row>
+<entry colname="col1">If you are using:</entry>
+<entry colname="col2">Do this:</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">
+<p>HCL <tm tmtype="reg">Sametime</tm> Connect</p>
+</entry>
+<entry colname="col2">
+<p>Click <menucascade>
+<uicontrol><image href="images/ST_gear.jpg">
+<alt>Actions and preferences</alt>
+</image></uicontrol>
+<uicontrol>Preferences</uicontrol>
+</menucascade>. Then, click <uicontrol>Chat Window and Transcript</uicontrol> in the navigator.</p>
+</entry>
+</row>
+<row>
+<entry colname="col1">
+<p>HCL <tm tmtype="reg">Notes</tm>
+          </p>
+</entry>
+<entry colname="col2">
+<p>Click <menucascade>
+<uicontrol><image href="images/ST_gear.jpg">
+<alt>Actions and preferences</alt>
+</image></uicontrol>
+<uicontrol>Preferences</uicontrol>
+</menucascade>. Then, expand the <uicontrol>Sametime</uicontrol> section in the navigator and click
+<uicontrol>Chat Window and Transcript</uicontrol>.</p>
+</entry>
+</row>
+</tbody>
+</tgroup>
+</table></info></step>
+<step><cmd>Clear <uicontrol>Use tabbed window for multiple chats</uicontrol>.</cmd>
+</step>
+</steps>
+</taskbody>
+<?tm 1365534167 0?>
+</task>
+<?Pub *0000002114?>

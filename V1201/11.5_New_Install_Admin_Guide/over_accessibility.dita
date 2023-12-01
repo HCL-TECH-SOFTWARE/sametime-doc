@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="over_accessibility" xml:lang="en-us">
+<title>Accessibility features for Sametime</title>
+<!--Modify the heading so that the name of your product is in the heading. Use the following statement exactly as written.-->
+<shortdesc>Accessibility features help users who have a disability, such as restricted mobility or
+limited vision, to use information technology products successfully. <tm tmtype="reg"
+trademark="IBM">HCL</tm> strives to provide products with usable access for everyone.</shortdesc>
+<prolog/>
+<conbody>
+<!--Use this template to create a topic that describes the accessibility features of a product. In this topic, product_name refers to the accessibility features of the product, not the product documentation.
+
+For topic-based information, place this topic within the Reference category. If your product documentation does not
+have a category called "Reference", create a category called "Accessibility".
+
+You must also create an introductory topic within the "Getting started", "About this product", or "Welcome experience" section of the product documentation (if your product documentation does not have any of this topics, place the introductory accessibility topic within the existing introductory information or the product overview).
+
+Title the introductory topic "Accessibility", (using a concept template if you're working with DITA). Include the following information in the introductory topic:
+1) Use the following statement exactly as written: "HCL strives to provide products with usable access for everyone, regardless of age or ability."
+
+2) Use the following statement, exactly as written, if your product uses standard Windows navigation keys:
+"This product uses standard Windows navigation keys."
+If your product does not use standard Windows navigation keys, omit the preceding sentence.
+
+3)Include a hyperlink to the following reference topic.-->
+<section><title>Accessibility features</title><p><ph conref="define.dita#define/prod_st_long"/> uses the latest W3C Standard, <xref format="html"
+     href="http://www.w3.org/TR/wai-aria/" scope="external">WAI-ARIA 1.0</xref> to ensure compliance
+    to <xref format="html"
+     href="http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards"
+     scope="external">US Section 508</xref> and <xref format="html"
+     href="http://www.w3.org/TR/WCAG20/" scope="external">Web Content Accessibility Guidelines
+     (WCAG) 2.0</xref>. </p><!--Describe the user accessibility features of the offering even if the offering does not meet all of the requirements.
+
+Do not itemize every checkpoint that the product meets as many of these requirements are internal implementation requirements and might not mean anything to customers.
+
+Use the following paragraph for this section.  If your product does not support an item in the list, remove that item. Add any list items supported by your product, as needed.
+
+You can find detailed guidance for mapping checkpoints to user features in "Accessibility Features" at
+(http://w3.hcl.com/able/ci162/accessfeatures.html).--><note>For the
+best accessible experience, use the latest versions of both the screen
+reader and browser. </note><ul>
+<li>The following features are for vision-impaired users: <ul>
+<li>Can be operated by using only the keyboard</li>
+<li>Communicates all information independent of color</li>
+<li>Supports interfaces commonly used by screen readers and screen
+magnifiers</li>
+<li>Supports the attachment of alternate output devices</li>
+<li>Provides help information in an accessible format </li>
+<li>Supports high contrast using a white background (some icons may not display properly on a
+       colored background)<note type="attention">If you modify the level of contrast, you must
+        restart the <ph conref="define.dita#define/prod_st_long"/> client for the change to take
+        effect.</note><p>When a Sametime web browser user chooses to share the screen, the user is
+        prompted with three options: to share the entire screen, part of the screen, or a particular
+        application. For this prompt to be accessible to a screen reader, the user must install the
+         <tm tmtype="tm" trademark="Java">Java</tm> access bridge. For installation instructions,
+        see the <xref format="html"
+         href="http://www.oracle.com/technetwork/java/javase/tech/index-jsp-136191.html"
+         scope="external">Oracle web site</xref>.</p></li>
+</ul></li>
+<li>The following features are for users who have mobility impairments
+or limited use of their hands: <ul>
+<li>Allows the users to request more time to complete timed responses</li>
+<li>Can be operated by using only the keyboard</li>
+<li>Supports the attachment of alternative input and output devices</li>
+</ul></li>
+<li>The following features are for the deaf and hard of hearing users: <ul>
+<li>Supports alternatives to audio information</li>
+<li>Supports adjustable volume control </li>
+</ul></li><?Pub Caret 12?>
+<li>The console does not flash the screen at rates that could induce
+epileptic seizures</li>
+</ul><p>The help system for the Integrated Solutions Console has the following accessibility features: <ul>
+<li>Uses the accessibility support enabled by the browser that is used to display the help</li>
+<li>Enables navigation by using the keyboard </li>
+</ul></p></section>
+<section><title>Keyboard navigation</title><p>To move through the
+controls on a particular page, use the Tab key.</p><p>To click a link
+or control on a page using the keyboard, navigate to the link or control
+and press Enter.</p><p>To make a selection in a checkbox, use the
+Space key.</p><p>To change the navigation view using the keyboard,
+follow these steps. </p><p><ol>
+<li>Navigate to the View selection list pressing Tab. </li>
+<li>Use the up and down arrows to change the value of the selection
+list. </li>
+<li>Press Enter. </li>
+</ol> The tasks displayed in the navigation are changed according
+to your selection.</p></section>
+</conbody>
+</concept>
+

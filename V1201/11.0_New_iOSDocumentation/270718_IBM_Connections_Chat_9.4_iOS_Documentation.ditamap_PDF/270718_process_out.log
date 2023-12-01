@@ -1,0 +1,132 @@
+Buildfile: C:\DITATools\IDWB\bin\build_idwb_launch.xml
+ ======================================                               06:29:31
+ PROCESS: DITA map input to PDF output                                06:29:31
+ ======================================                               06:29:31
+ Starting ID Initialization/Verification...                           06:29:31
+ .. Temporary Directory C:\TEMP\IDWB\idwt1243059395\XFSFM-AP1\wd\270718 06:29:31
+ Information Development Workbench 4.7.0                              06:29:32
+ © Copyright IBM Corporation 1994, 2018.                              06:29:32
+ ... ID Initialization/Verification Complete ... (0)                  06:29:32
+ Start Process: 1 of 19 ...                                           06:29:32
+ End Process: 1 of 19 (0)                                             06:29:32
+ Start Process: 2 of 19 ...                                           06:29:32
+    Your files are being retrieved. They are not all being shown in   06:29:32
+    this console in order to speed up the processing and retrieval of 06:29:32
+    the files. For the complete list of files, see the processing log 06:29:32
+ End Process: 2 of 19 (0)                                             06:29:41
+ Start Process: 3 of 19 ...                                           06:29:41
+ End Process: 3 of 19 (0)                                             06:29:41
+ Start Process: 4 of 19 ...                                           06:29:41
+ End Process: 4 of 19 (0)                                             06:29:41
+ Start Process: 5 of 19 ...                                           06:29:41
+ End Process: 5 of 19 (0)                                             06:29:41
+ Start Process: 6 of 19 ...                                           06:29:41
+ End Process: 6 of 19 (0)                                             06:29:41
+ Start Process: 7 of 19 ...                                           06:29:41
+ End Process: 7 of 19 (0)                                             06:29:41
+ Start Process: 8 of 19 ...                                           06:29:41
+ End Process: 8 of 19 (0)                                             06:29:41
+ Start Process: 9 of 19 ...                                           06:29:41
+ End Process: 9 of 19 (0)                                             06:29:41
+ Start Process: 10 of 19 ...                                          06:29:41
+ End Process: 10 of 19 (0)                                            06:29:42
+ Start Process: 11 of 19 ...                                          06:29:42
+ End Process: 11 of 19 (0)                                            06:29:44
+ Start Process: 12 of 19 ...                                          06:29:44
+ End Process: 12 of 19 (0)                                            06:29:44
+ Start Process: 13 of 19 ...                                          06:29:44
+ End Process: 13 of 19 (0)                                            06:29:44
+ Start Process: 14 of 19 ...                                          06:29:44
+ End Process: 14 of 19 (0)                                            06:29:44
+ Start Process: 15 of 19 ...                                          06:29:44
+ End Process: 15 of 19 (0)                                            06:29:45
+ Start Process: 16 of 19 ...                                          06:29:45
+ End Process: 16 of 19 (0)                                            06:29:47
+ Start Process: 17 of 19 ...                                          06:29:47
+ End Process: 17 of 19 (0)                                            06:29:47
+ Start Process: 18 of 19 ...                                          06:29:47
+    Converting IBM_Connections_Chat_9.4_iOS_Documentation.idd to PDF  06:29:47
+    Converting IBM_Connections_Chat_9.4_iOS_Documentation.idd to PDF  06:29:47
+    Calling Client/Server Taskbroker (9.68.64.89:3016)...             06:29:51
+    If server not found or accessible, request will timeout in 1800 sec 06:29:53
+    If your server is behind a firewall, you may need to authenticate 06:29:53
+    yourself to the firewall, before running the transform or the     06:29:53
+    server may not be accessible                                      06:29:53
+    (S)AIX Server jtscxpp3 Processing iiddfpsl...                     19:29:52
+    (S)Starting Router Setup...                                       19:29:52
+    (S)...Router setup completed.                                     19:29:52
+    (S)*** Begin LOCAL on AIX Server Processing *** Steps: 7          19:29:52
+    (S)   Start Process: 1 of 7...                                    19:29:52
+    (S)   End Process: 1 of 7 (0)                                     19:29:52
+    (S)   Start Process: 2 of 7...                                    19:29:52
+    (S)   End Process: 2 of 7 (0)                                     19:29:53
+    (S)   Start Process: 3 of 7...                                    19:29:53
+    (S)   End Process: 3 of 7 (0)                                     19:29:53
+    (S)   Start Process: 4 of 7...                                    19:29:53
+    (S)   End Process: 4 of 7 (0)                                     19:29:53
+    (S)   Start Process: 5 of 7...                                    19:29:53
+    Retrieving Entity: chaticon.eps  ,  FTEMP.FIL ...                 06:29:56
+    ...Entity Retrieval Completed.(0)                                 06:29:56
+    Retrieving Entity: Chat_icon.eps  ,  FTEMP.FIL ...                06:29:58
+    ...Entity Retrieval Completed.(0)                                 06:29:58
+    Retrieving Entity: happy_emoticon.eps  ,  FTEMP.FIL ...           06:29:59
+    ...Entity Retrieval Completed.(0)                                 06:30:00
+    Retrieving Entity: winking_emoticon.eps  ,  FTEMP.FIL ...         06:30:01
+    ...Entity Retrieval Completed.(0)                                 06:30:01
+    Retrieving Entity: broadsmily_emoticon.eps  ,  FTEMP.FIL ...      06:30:02
+    ...Entity Retrieval Completed.(0)                                 06:30:03
+    Retrieving Entity: angry_emoticon.eps  ,  FTEMP.FIL ...           06:30:04
+    ...Entity Retrieval Completed.(0)                                 06:30:05
+    Retrieving Entity: half_emoticon.eps  ,  FTEMP.FIL ...            06:30:06
+    ...Entity Retrieval Completed.(0)                                 06:30:07
+    Retrieving Entity: eyebrow_emoticon.eps  ,  FTEMP.FIL ...         06:30:08
+    ...Entity Retrieval Completed.(0)                                 06:30:09
+    Retrieving Entity: sad_emoticon.eps  ,  FTEMP.FIL ...             06:30:10
+    ...Entity Retrieval Completed.(0)                                 06:30:10
+    Retrieving Entity: blushing_emoticon.eps  ,  FTEMP.FIL ...        06:30:11
+    ...Entity Retrieval Completed.(0)                                 06:30:12
+    Retrieving Entity: goofy_emoticon.eps  ,  FTEMP.FIL ...           06:30:13
+    ...Entity Retrieval Completed.(0)                                 06:30:13
+    Retrieving Entity: surprised_emoticon.eps  ,  FTEMP.FIL ...       06:30:15
+    ...Entity Retrieval Completed.(0)                                 06:30:15
+    Retrieving Entity: tongueout_emoticon.eps  ,  FTEMP.FIL ...       06:30:16
+    ...Entity Retrieval Completed.(0)                                 06:30:17
+    Retrieving Entity: idea_emoticon.eps  ,  FTEMP.FIL ...            06:30:17
+    ...Entity Retrieval Completed.(0)                                 06:30:18
+    Retrieving Entity: yes_emoticon.eps  ,  FTEMP.FIL ...             06:30:19
+    ...Entity Retrieval Completed.(0)                                 06:30:19
+    Retrieving Entity: no_emoticon.eps  ,  FTEMP.FIL ...              06:30:20
+    ...Entity Retrieval Completed.(0)                                 06:30:21
+    Retrieving Entity: thinking_emoticon.eps  ,  FTEMP.FIL ...        06:30:22
+    ...Entity Retrieval Completed.(0)                                 06:30:22
+    Retrieving Entity: crying_emoticon.eps  ,  FTEMP.FIL ...          06:30:23
+    ...Entity Retrieval Completed.(0)                                 06:30:24
+    (S)   End Process: 5 of 7 (0)                                     19:30:23
+    (S)   Start Process: 6 of 7...                                    19:30:23
+    (S)   End Process: 6 of 7 (0)                                     19:30:23
+    (S)   Start Process: 7 of 7...                                    19:30:23
+    (S)      Processing: 1 of 12.                                     19:30:23
+    (S)      Processing: 2 of 12.                                     19:30:23
+    (S)      Processing: 3 of 12.                                     19:30:23
+    (S)      Processing: 4 of 12.                                     19:30:23
+    (S)      Processing: 5 of 12.                                     19:30:23
+    (S)      Processing: 6 of 12.                                     19:30:23
+    (S)      Processing: 7 of 12.                                     19:30:23
+    (S)      Processing: 8 of 12.                                     19:30:24
+    (S)      Processing: 9 of 12.                                     19:30:25
+    (S)      Processing: 10 of 12.                                    19:30:26
+    (S)      Processing: 11 of 12.                                    19:30:27
+    (S)      Processing: 12 of 12.                                    19:30:27
+    (S)   End Process: 7 of 7 (0)                                     19:30:30
+    (S)*** Processing Completed ***                                   19:30:30
+    (S)      AIX ...End Server Processing. (0*0*0*0*0*0)              19:30:30
+    Files transferred from server. Starting client shutdown routinue  06:30:36
+    Exiting Client.                                                   06:30:37
+ End Process: 18 of 19 (0)                                            06:30:38
+ Start Process: 19 of 19 ...                                          06:30:38
+    Post processing                                                   06:30:38
+    Copying 2 output files to the output directory D:\XFSFM-AP1\wd\270718result\IBM_Connections_Chat_9.4_iOS_Documentation.ditamap_map2pdf 06:30:38
+ End Process: 19 of 19 (0)                                            06:30:39
+ BUILD SUCCESSFUL. 1 minute 7 seconds                                 06:30:39
+ INFO: Log Name is: IBM_Connections_Chat_9.4_iOS_Documentationpdf.log 06:30:39
+ Deleting temporary directory C:\TEMP\IDWB\idwt1243059395             06:30:39

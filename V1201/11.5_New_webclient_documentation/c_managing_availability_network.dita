@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="managing_availability_network" xml:lang="en-us">
+<title>Basics</title>
+ <shortdesc>After you log in, you can exchange text chats with your chat partners and more. </shortdesc>
+ <conbody>
+  <p>To start many basic tasks, just click the menu at the top – Contacts, Meetings, Settings, and
+   Log Out. The specific options you see for each menu depend upon the capabilities that are
+   available in your organization. </p>
+  <p>To start tasks for a specific contact or group, right-click the contact or group name to
+   display a list of options. Again, the specific options you see might vary. </p>
+ </conbody>
+</concept>
+<?Pub *0000001020?>

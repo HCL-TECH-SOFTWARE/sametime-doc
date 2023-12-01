@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="system_requirements" xml:lang="en-us">
+<title>System requirements</title>
+    <shortdesc>This document provides minimum system requirements for HCL Sametime Meetings Add-in
+        for Microsoft Outlook. Higher maintenance levels, such as fix packs and service packs, may
+        be supported as they become available.</shortdesc>
+<conbody>
+    <p><b>HCL Sametime Meetings Add-in System requirements</b></p>
+        <p>For information on Sametime Meetings Add-in System requirements, see the <xref
+            href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0089405"
+                format="html" scope="external">System requirements</xref> article. </p>
+</conbody>
+</concept>

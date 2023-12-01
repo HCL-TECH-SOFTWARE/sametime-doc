@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="notices" xml:lang="en-us">
+<!--***********THIS TEMPLATE IS PROVIDED FOR YOUR CONVENIENCE. CHECK ALL RELATED RESOURCES FOR CURRENCY BEFORE INCLUDING THIS INFORMAITON IN YOUR PRODUCT DOCUMENTATION.***********-->
+<!--Updated 16 July 2019. Removed IBM references so you can use this template for products that HCL has acquired outright, for example, Project Human products. (To use a single template to produce the same notices for dual-branded documentation use this template: <xref href="https://hclo365.sharepoint.com/:u:/r/sites/extendedhcluserassistanceteam/Shared%20Documents/HCL%20UA%20Guidelines/Notices-Documentation/notices.dita?csf=1&amp;e=sXyCR9" scope="external"/>. )
+Updated 21 October 2015. Updated to move the external instruction "Each copy or any portion of these sample programs or any derivative work must include a copyright notice" after the COPYRIGHT LICENSE statement out of the comment tag. -->
+<!--All documentation: This information is provided as a guideline for all product documentation regardless of delivery format. For the purpose of this topic, product documentation is non-marketing, post-sales information that is used with the product. This topic does not cover every legal detail that you might need to include in your Notices file. Contact the Intellectual Property attorney for your product with specific questions about the information that you must include in your Notices file. 
+The booknotices.dita template contains "starter" information for 
+your product legal notices. Be sure to include in your product legal notices all sections that are applicable to your product. You might have to edit some of the information as required for your product. 
+    -->
+<title>Notices</title>
+<conbody>
+<p>Licensed Materials - Property of HCL Limited.</p>
+<p>© Copyright HCL Technologies Limited 1998,
+2022<!--Add a comma, a space, and a second year after the first year. The first is the year is when the material was first released by a non-HCL company or HCL, for example, "...1999, 2018." The second year is the latest year that HCL released the documentation. If this is entirely new HCL content that has never been released, add the single year of release only. Then, for a later release in a later year, add the subsequent release year after a comman and space.--></p>
+<!--All documentation: Place this text after the first-level heading. Replace US in the first sentence as appropriate. Specify the country where the product is marketed. Consult your local Intellectual Property attorney if you are uncertain which country to use.-->
+<!--Every product collection must have its own set of translated legal topics. If you have only English legal topics (notices, privacy policy considerations, trademarks, etc.), include the second and third statements.-->
+<!--If the country is outside US, consult your local IP Law department to discuss translation requirements.  Translate your legal topics during your next normal product release cycle. You do not need to translate the legal topics unless there is a circumstance that warrants it. For example, the product or service is targeted for a non-US country.-->
+<p>This information was developed for products and services offered in the
+US.<!--This material might be available from HCL in other languages. However, you may be required
+to own a copy of the product or product version in that language in
+order to access it. --></p>
+<!--All documentation: Use these paragraphs as they are shown.-->
+<p>HCL may not offer the products, services, or features discussed in this document in other
+countries. Consult your local HCL representative for information on the products and services
+currently available in your area. Any reference to an HCL product, program, or service is not
+intended to state or imply that only that HCL product, program, or service may be used. Any
+functionally equivalent product, program, or service that does not infringe any HCL intellectual
+property right may be used instead. However, it is the user's responsibility to evaluate and verify
+the operation of any non-HCL product, program, or service.</p>
+<p>HCL may have patents or pending patent applications covering subject matter described in this
+document. The furnishing of this document does not grant you any license to these patents. You can
+send license inquiries, in writing,
+to:<lines><i>HCL
+330 Potrero Ave.
+Sunnyvale, CA 94085
+USA
+Attention: Office of the General Counsel</i></lines></p>
+<!--Software documentation only: Include the following statement if your information is distributed in Asia Pacific countries.-->
+<p>For license inquiries regarding double-byte character set (DBCS) information, contact the HCL
+Intellectual Property Department in your country or send inquiries, in writing,
+to:<lines><i>HCL
+330 Potrero Ave.
+Sunnyvale, CA 94085
+USA
+Attention: Office of the General Counsel</i></lines></p>
+<!--All documentation: Use these paragraphs as they are shown here. -->
+<p>HCL TECHNOLOGIES LTD. PROVIDES THIS PUBLICATION "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER
+EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF NON-INFRINGEMENT,
+MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Some jurisdictions do not allow disclaimer of
+express or implied warranties in certain transactions, therefore, this statement may not apply to
+you.</p>
+<p>This information could include technical inaccuracies or typographical errors. Changes are
+periodically made to the information herein; these changes will be incorporated in new editions of
+the publication. HCL may make improvements and/or changes in the product(s) and/or the program(s)
+described in this publication at any time without notice. </p>
+<!--All documentation: Include this paragraph to address general issues of exposure in publishing non-HCL web addresses. Some brands might require Intellectual Property Law (IPL) review of these references because of the attributes of specific products or specific uses of web addresses. If you know (or think you know) of questionable circumstances surrounding a non-HCL web address that you want to use, contact your Intellectual Property attorney.-->
+<p>Any references in this information to non-HCL websites are provided for convenience only and do
+not in any manner serve as an endorsement of those websites. The materials at those websites are not
+part of the materials for this HCL product and use of those websites is at your own risk.</p>
+<!--All documentation: Include this paragraph as shown to inform readers that any information that they submit to HCL becomes the property of HCL.-->
+<p>HCL may use or distribute any of the information you provide in any way it believes appropriate
+without incurring any obligation to you.</p>
+<!--Software documentation only: Use this statement as shown in documentation for software products.-->
+<!--This requirement arises from the CDPI (Clearly Differentiated Programming Interfaces) policy. It is a function of general antitrust law and therefore still relevant. To avoid antitrust claims, especially with respect to products where HCL might have large market share, HCL avoids using secret interfaces for one HCL software product to connect to another (unless there is an equivalent public way for other party's products to interact with our product). -->
+<p>Licensees of this program who wish to have information about it for the purpose of enabling: (i)
+the exchange of information between independently created programs and other programs (including
+this one) and (ii) the mutual use of the information which has been exchanged, should contact:
+<lines><i>HCL
+330 Potrero Ave.
+Sunnyvale, CA 94085
+USA
+Attention: Office of the General Counsel</i></lines></p>
+<p>Such information may be available, subject to appropriate terms and conditions, including in some
+cases, payment of a fee.</p>
+<p>The licensed program described in this document and all licensed material available for it are
+provided by HCL under terms of the HCL Customer Agreement, HCL International Program License
+Agreement or any equivalent agreement between us.</p>
+<!--All documentation as required: Use one of the following statements if the documentation contains performance data (including benchmark statements), client examples, or both.-->
+<p>The performance data discussed herein is presented as derived under specific operating
+conditions. Actual results may vary. </p>
+<!--OR-->
+<!--<p>The client examples cited are presented for illustrative purposes
+only. Actual performance results may vary depending on specific configurations
+and operating conditions.</p>-->
+<!--OR-->
+<!--<p>The performance data and client examples cited are presented for
+illustrative purposes only. Actual performance results may vary depending
+on specific configurations and operating conditions. </p>-->
+<!--All documentation: Use the following text in all documentation that contains information about non-HCL products.-->
+<p>Information concerning non-HCL products was obtained from the suppliers of those products, their
+published announcements or other publicly available sources. HCL has not tested those products and
+cannot confirm the accuracy of performance, compatibility or any other claims related to non-HCL
+products. Questions on the capabilities of non-HCL products should be addressed to the suppliers of
+those products.</p>
+<!--All documentation: Use the following text in all documentation that contains statements about future direction or intent.-->
+<p>Statements regarding HCL's future direction or intent are subject to change or withdrawal without
+notice, and represent goals and objectives only. </p>
+<!--All documentation: Use the following text in all documentation that contains information about the prices of products.-->
+<!--<p>All HCL prices
+shown are HCL's suggested retail prices, are current and are subject
+to change without notice. Dealer prices may vary.</p>-->
+<!--All documentation: Use the following text in all documentation that is released before the product that it supports is released and in all documentation that contains information that might change before the product is available.-->
+<!--<p>This information is for planning purposes only. The information
+herein is subject to change before the products described become available.</p>-->
+<!--All documentation: Use the following text in all documentation that contains examples that use fictitious names.-->
+<p>This information contains examples of data and reports used in daily business operations. To
+illustrate them as completely as possible, the examples include the names of individuals, companies,
+brands, and products. All of these names are fictitious and any similarity to actual people or
+business enterprises is entirely coincidental.</p>
+<!--Software documentation: Use the following text in all documentation that contains code samples. If each code sample has an HCL copyright, retain those notices. Ensure that HCL really owns the code and that the owner (even if an HCL employee) knows that code is in the documentation.-->
+<p>COPYRIGHT LICENSE: </p>
+<p>This information contains sample application programs in source language, which illustrate
+programming techniques on various operating platforms. You may copy, modify, and distribute these
+sample programs in any form without payment to HCL, for the purposes of developing, using, marketing
+or distributing application programs conforming to the application programming interface for the
+operating platform for which the sample programs are written. These examples have not been
+thoroughly tested under all conditions. HCL, therefore, cannot guarantee or imply reliability,
+serviceability, or function of these programs. The sample programs are provided "AS IS," without
+warranty of any kind. HCL shall not be liable for any damages arising out of your use of the sample
+programs.</p>
+<!--Software (programming) documentation: Use the following text in all documentation that contains large or complex samples. Acknowledge HCL as the source of large or complex samples that are created by HCL developers. Complete the copyright year or years and include the information in the following paragraph in each copy or any portion of these sample programs or any derivative works. If you have questions, contact your local Intellectual Property attorney regarding this text in your notices.-->
+<!---->
+<lines>Each copy or any portion of these sample programs or any derivative work must include a copyright notice as follows: 
+© (your company name) (year). 
+Portions of this code are derived from HCL Technologies Limited. Sample Programs. 
+© HCL Technologies Limited 1998, 2022.</lines>
+</conbody>
+<concept id="trademarks" xml:lang="en-us">
+<title>Trademarks</title>
+<conbody>
+<!--All documentation:  Add Trademarks as a second level heading. Include the HCL trademark attributions as described in the HCL trademark guidelines.-->
+<!--The legal text shown is the core required text. Match your text with the text that is officially maintained in the HCL trademark guidelines. Include additional trademarks and special attribution statements for your product according to the guidelines.-->
+<p audience="ibm">HCL Technologies Ltd. and HCL Technologies Ltd. logo, and hcl.com are trademarks
+or registered trademarks of HCL Technologies Ltd., registered in many jurisdictions worldwide. Other
+product and service names might be trademarks of HCL or other companies.</p>
+</conbody>
+</concept>
+<concept id="termsandconditions" xml:lang="en-us">
+<!--All documentation: Add "Terms and conditions for product documentation" as a second-level heading.-->
+<!--Under the heading, add the terms and conditions for product documentation. This text replaces the licensing agreement that is part of a product set and that covers the documentation and other material.-->
+<!--Add each terms and conditions section title as a third-level heading. If IDWB is your authoring tool, the heading levels are automatically done for you. You can check headings in your HTML source if necessary. -->
+<!--The "Terms and conditions text for product documentation: text is inlcuded in this template for your conveience.-->
+<title>Terms and conditions for product documentation</title>
+<conbody>
+<p>Permissions for the use of these publications are granted subject to the following terms and
+conditions.</p>
+<section>
+<title>Applicability</title>
+<p>These terms and conditions are in addition to any terms of use for the HCL website. </p>
+</section>
+<section>
+<title>Personal use</title>
+<p>You may reproduce these publications for your personal, noncommercial use provided that all
+proprietary notices are preserved. You may not distribute, display or make derivative work of these
+publications, or any portion thereof, without the express consent of HCL.</p>
+</section>
+<section>
+<title>Commercial use</title>
+<p>You may reproduce, distribute and display these publications solely within your enterprise
+provided that all proprietary notices are preserved. You may not make derivative works of these
+publications, or reproduce, distribute or display these publications or any portion thereof outside
+your enterprise, without the express consent of HCL.</p>
+</section>
+<section>
+<title>Rights</title>
+<p>Except as expressly granted in this permission, no other permissions, licenses or rights are
+granted, either express or implied, to the publications or any information, data, software or other
+intellectual property contained therein. </p>
+<p>HCL reserves the right to withdraw the permissions granted herein whenever, in its discretion,
+the use of the publications is detrimental to its interest or, as determined by HCL, the above
+instructions are not being properly followed. </p>
+<p>You may not download, export or re-export this information except in full compliance with all
+applicable laws and regulations, including all United States export laws and regulations. </p>
+<p>HCL MAKES NO GUARANTEE ABOUT THE CONTENT OF THESE PUBLICATIONS. THE PUBLICATIONS ARE PROVIDED
+"AS-IS" AND WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+IMPLIED WARRANTIES OF MERCHANTABILITY, NON-INFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE.</p>
+</section>
+</conbody>
+</concept>
+</concept>

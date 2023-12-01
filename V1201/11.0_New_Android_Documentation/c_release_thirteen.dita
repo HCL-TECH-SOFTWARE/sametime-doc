@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_release_thirteen" xml:lang="en-us">
+ <title>Release 11.6.3</title>
+    <shortdesc>Release 11.6.3 includes the following new features.</shortdesc>
+    <conbody><p><ul>
+                <li><b>Moderators can now mute dial-in users</b><p>If your organization has deployed
+                        the new TeamCall Meeting Gateway to facilitate dial-in users in your
+                        meetings, the 11.6.2 release together with the 11.6 IF1 meetings server will
+                        allow moderators to mute these dial-in participants. See more information
+                        about the TeamCall Meeting Gateway <xref
+                            href="https://blog.hcltechsw.com/sametime/hcl-digital-solutions-announces-first-telephony-partnership-for-hcl-sametime/"
+                            format="html" scope="external">here</xref>. </p></li>
+                <li><b>Minimum Android OS is now 8.0</b>
+                    <p>Devices must be running Android OS 8.0 and above to use version
+                    11.6.3.</p></li></ul></p></conbody>
+</concept>
+<?Pub *0000001020?>

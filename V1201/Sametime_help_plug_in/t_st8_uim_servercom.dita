@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_st8_uim_servercom" xml:lang="en-us">
+<title>How do I connect to more than one server community?</title>
+<shortdesc>You connect to a server community by adding it to your client and logging in to it. When
+you add a server community, an icon such as <image alt="Active community icon"
+href="images/ST9_community_2_awareness_05.JPG" placement="inline" scope="local"/> shows for that
+server community in the expandable area in your status card. This icon indicates whether you are
+logged in to the server community and your availability status. For example, "I am Available," is
+the status as shown in the preceding server community icon.</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Open the server community preferences.</cmd><info><table
+frame="all"><title>Options</title>
+<tgroup cols="2">
+<?PubTbl tgroup rth="1.00pt"?>
+<colspec colname="col1" colwidth="1*"/><colspec colname="col2"
+colwidth="1*"/>
+<thead>
+<row>
+<entry colname="col1">If you are using:</entry>
+<entry colname="col2">Do this:</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Sametime</tm> Connect</p></entry>
+<entry colname="col2"><p>Click <menucascade>
+<uicontrol><image href="images/ST_gear.jpg">
+<alt>Actions and preferences</alt>
+</image></uicontrol>
+<uicontrol>New</uicontrol>
+<uicontrol>Server Community</uicontrol>
+</menucascade>.</p></entry>
+</row>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Notes</tm>
+          </p></entry>
+<entry colname="col2"><p>In the <tm tmtype="reg">Notes</tm> Connect sidebar, click <menucascade>
+            <uicontrol><image href="images/ST_gear.jpg">
+              <alt>Actions and preferences</alt>
+             </image></uicontrol>
+            <uicontrol>New</uicontrol>
+            <uicontrol>Server Community</uicontrol>
+           </menucascade>.</p></entry>
+</row>
+</tbody>
+</tgroup>
+</table></info></step>
+<step><cmd>In the <uicontrol>Server community type</uicontrol> field,
+select the type of server community you are adding, if you have access
+to more than one type of server community. Server communities that
+use the same protocol or are from the same service provider are the
+same type.</cmd><stepxmp>For example, the server communities "sametime.yourcompanya.com"
+and "sametime.yourcompanyb.com" might both belong to the "<tm
+tmtype="reg" trademark="Sametime">Sametime</tm>" server community
+type.</stepxmp></step>
+<step importance="optional"><cmd>Server communities can be linked
+to one another by assigning them the same name in the <uicontrol>Server
+community name</uicontrol> field.  When server communities are linked,
+and you log in to at least one server community with the same name,
+the availability status of contacts and public groups in all server
+communities with that name can be determined, even if some of these
+server communities are offline. Enter a name for this server community
+if you want to link one or more server communities.</cmd></step>
+<step><cmd>Click the <uicontrol>Log In</uicontrol> tab and complete
+the fields.</cmd></step>
+<step><cmd>Click the <uicontrol>Server</uicontrol> tab and enter the <uicontrol>Host
+server</uicontrol> (the server that the client uses; the host name
+is similar to a web address, for example, sametime.yourcompany.com).</cmd>
+</step>
+<step><cmd> Enter the <uicontrol>Server community port</uicontrol> for
+this server community.</cmd></step>
+<step><cmd>Select or clear <uicontrol>Send keep alive signal after
+the following number of seconds</uicontrol> and specify how often
+to send a keepalive message to the server. The default is 60 seconds.
+This message checks the connectivity between the client and the server
+and gives you timely notifications if you are disconnected from the
+server.</cmd></step>
+<step><cmd>Click the <uicontrol>Connection</uicontrol> tab. Unless
+instructed by your administrator, do not change anything.</cmd></step>
+<step><cmd>Click the <uicontrol>Icon</uicontrol> tab to specify a
+unique icon that displays for this server community at the beginning
+of your contact list and next to contacts that belong to this server
+community. You must select <uicontrol>Show server community icons
+beneath contacts</uicontrol> in your contact list preferences for
+this icon to display.</cmd></step>
+<step><cmd>Select or clear <uicontrol>Log into this server community
+after completing this form</uicontrol> to determine whether you automatically
+log in to this server community after you add it.</cmd></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step>
+</steps>
+<result><p>Click <image href="images/ST9_overflow_chevron.JPG" scope="local">
+<alt>Show server connection details</alt>
+</image> in your status card to show your server community details.</p><?Pub Caret 30?><p>Click
+the arrow next to each server community icon to display a menu of
+options to log in, log out, or change your availability status. Click
+the arrow next to your current availability status message in your
+status card to do these same tasks for all of your server communities
+simultaneously.</p></result>
+</taskbody>
+<?tm 1369166326 1?>
+</task>
+<?Pub *0000005274?>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_create_moderated">
+    <title>Creating a new meeting</title>
+    <shortdesc>Because meetings are configurable, user access and capability vary depending on how
+        the meeting is created. Some moderated meetings are configured to restrict guest access.
+        This topic covers the basic steps on how to create a new meeting. To learn how to manage
+        your meetings, refer to the <xref href="participant_list.dita"/> section. </shortdesc>
+    <taskbody>
+        <prereq id="prereq_hr4_ph5_q5b">This feature is available to authenticated users only. For
+            more information, refer to <xref href="t_loggingin.dita"/>.</prereq>
+        <context>
+            <p>To create a new meeting, follow these steps:</p>
+        </context>
+        <steps id="steps_nph_zwc_stb">
+            <step>
+                <cmd>From the Meetings homepage, select <uicontrol>Get Started</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Create a new meeting</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter a name for the meeting.</cmd>
+                <info>Meeting names must be unique at the server level.</info>
+            </step>
+            <step>
+                <cmd>Select a meeting mode. </cmd>
+                <info>
+                    <p>
+                        <note id="note_gpy_3qy_5tb">Server administrators can set any of the three
+                            modes as default. Contact your administrator regarding
+                            configuration.</note>
+                    </p>
+                </info>
+                <choices id="choices_oph_zwc_stb">
+                    <choice><uicontrol>Collaboration</uicontrol>—By default, the meeting is
+                        accessible to anyone with the meeting link. Unless the
+                            <uicontrol>Moderated</uicontrol> box is selected, any authenticated user
+                        can start the meeting. Otherwise, only the meeting owner or moderators can
+                        start the meeting. Un-select the <uicontrol>Allow guests</uicontrol> box to
+                        make the meeting exclusive to authenticated users. </choice>
+                    <choice><uicontrol>Confidential</uicontrol>—The meeting is restricted to a
+                        designated set of authenticated users. Select <uicontrol>Manage
+                            members</uicontrol> and manually add the participants that can access
+                        the meeting. Otherwise, leave the list empty and share the meeting name or
+                        link to all intended users. In the latter scenario, <i>the waiting room must
+                            be enabled</i> and you have to manually admit the participants in to the
+                        meeting, deciding whether these users have one-time access or are added to
+                        the member list for future meeting instances. <p>By default, the waiting
+                            room is enabled. Un-select the <uicontrol>Waiting room</uicontrol> box
+                            to disable the waiting room. If guest access is allowed, then <i>the
+                                waiting room must be enabled</i> to create the room. Select the
+                                <uicontrol>Members can bypass</uicontrol> radio button to allow the
+                            members added to the <uicontrol>Manage members</uicontrol> list to skip
+                            the lobby and go straight to the meeting room.</p>Lastly, all
+                        participants are required to enter the password to access the meeting. </choice>
+                    <choice><uicontrol>Lecture</uicontrol>—Moderated meeting is mandatory for this
+                        mode. Although the meeting participants are in listen-only mode, moderators
+                        can give them speaker access so they can participate in the discussion. This
+                        choice is suited for presentations-type meetings. <p>By default,
+                                <uicontrol>Conference dial-in</uicontrol> and <uicontrol>Allow
+                                guests</uicontrol> are enabled and anyone with the meeting details
+                            can join. Disable guest access to allow only authenticated users with
+                            the meeting details to join the conference.</p></choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>Select meeting settings. Settings vary based on the meeting mode that you have
+                    selected.</cmd>
+                <info>
+                    <parml id="parml_pph_zwc_stb">
+                        <plentry>
+                            <pt>Conference dial-in</pt>
+                            <pd>When enabled, anyone with the meeting details can join. </pd>
+                        </plentry>
+                        <plentry>
+                            <pt>Meeting password</pt>
+                            <pd>When enabled, all participants, including moderators and owners, are
+                                required to enter a password to join the meeting. Enter the meeting
+                                password in the text box. Passwords must be at least eight
+                                characters. Be sure to store the password for later reference as it
+                                is not visible from the configuration page. <note
+                                    id="note_vtw_w5x_5tb">This is a required setting for
+                                    confidential-mode meetings. Once a password is set, an option to
+                                        <uicontrol>Change Password</uicontrol> becomes available.
+                                </note></pd>
+                        </plentry>
+                        <plentry>
+                            <pt>Member access</pt>
+                            <pd>
+                                <parml id="parml_rph_zwc_stb">
+                                    <plentry>
+                                        <pt>Allow guests</pt>
+                                        <pd>When enabled, guests or people outside of the
+                                            organization can join the meeting.</pd>
+                                    </plentry>
+                                    <plentry>
+                                        <pt>Manage members</pt>
+                                        <pd>This setting is enabled when the moderated option is
+                                            selected. The <uicontrol>Manage members</uicontrol>
+                                            feature allows meeting owners to add moderators to the
+                                            meeting. </pd>
+                                    </plentry>
+                                    <plentry>
+                                        <pt>Moderated</pt>
+                                        <pd>Only moderators or meeting owners can start the meeting.
+                                            When enabled, moderators can also control the other
+                                            aspects of the meeting such as who can present. For more
+                                            information, refer to <xref
+                                                href="meetings_moderated_management.dita"/>.</pd>
+                                    </plentry>
+                                    <plentry>
+                                        <pt>Restricted</pt>
+                                        <pd>Moderators can define which participants have access to
+                                            the meeting.</pd>
+                                    </plentry>
+                                </parml>
+                            </pd>
+                        </plentry>
+                        <plentry>
+                            <pt>Waiting room</pt>
+                            <pd>When enabled, moderators can control when a participant joins a
+                                meeting. The waiting room feature requires participants to remain in
+                                a waiting area before they are admitted in to the meeting.</pd>
+                            <pd>Moderators can allow authenticated users to bypass the waiting room
+                                and go directly in to the meeting.</pd>
+                        </plentry>
+                    </parml>
+                </info>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Start</uicontrol> to begin the meeting. Selecting
+                        <uicontrol>Start</uicontrol> automatically saves the meeting in the
+                        <uicontrol>My Meetings </uicontrol>list and redirects the owner to an active
+                    meeting room. You can also select<uicontrol> Save and Copy meeting
+                        link</uicontrol> to save the meeting in the <uicontrol>My
+                        Meetings</uicontrol> list and then share the meeting link to all intended
+                    participants.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

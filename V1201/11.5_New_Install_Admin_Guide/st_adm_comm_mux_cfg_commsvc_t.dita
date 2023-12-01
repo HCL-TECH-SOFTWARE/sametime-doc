@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="st_adm_comm_mux_cfg_commsvc_t" xml:lang="en-us">
+<title class="- topic/title ">Configuring client connectivity to the <tm tmtype="reg"
+   trademark="Sametime">Sametime</tm> Community Mux</title>
+<shortdesc>After you have configured the stand-alone <tm tmtype="reg" trademark="HCL">HCL</tm>
+  <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community Mux, give users the fully qualified
+  host name of the server and instruct them to set up their <tm tmtype="reg" trademark="Sametime"
+   >Sametime</tm> Connect Client preferences to connect to the multiplexer instead of directly to
+  the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community Server.</shortdesc>
+<taskbody>
+<context><p class="- topic/p ">Each user must update the <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+    Connect Client with the DNS name of the <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+    Community Mux server. If you have deployed multiple <tm tmtype="reg" trademark="Sametime"
+     >Sametime</tm> Community Mux servers, distribute users evenly among the servers. For example,
+    with two multiplexers, direct half of your users to use multiplexer 1 and the other half to use
+    multiplexer 2.</p></context>
+<steps>
+<step>
+    <cmd>Open <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client.</cmd>
+   </step>
+<step><cmd>Choose <menucascade><uicontrol>File</uicontrol><uicontrol>Preferences</uicontrol>
+<uicontrol>Server Communities</uicontrol></menucascade>.</cmd></step>
+<step>
+    <cmd>In the<uicontrol> Server Community</uicontrol> field, type the fully qualified host name of
+     the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community Mux server, such as
+      <userinput>messaging.example.com</userinput>, as instructed by the administrator.</cmd>
+   </step>
+</steps>
+</taskbody>
+
+</task>
+

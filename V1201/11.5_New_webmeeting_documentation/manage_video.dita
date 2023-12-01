@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="manage_video" xml:lang="en-us">
+  <title>Managing video quality</title>
+  <shortdesc>All meeting participants can change the meeting video quality from <i>audio only</i> to
+      <i>high definition</i> depending on the quality of your connection. You can make changes to
+    these settings at any time, and this only affects behavior on your meeting login.</shortdesc>
+  <taskbody><context>
+    <p>Scroll over the bottom of the meeting window, and then select the three dots to go to the
+        settings. Select <uicontrol>Manage video quality</uicontrol>.</p>
+    <p><image href="Images/video%20quality.png" id="image_ccd_mbq_5tb"/><note id="note_ygv_rbq_5tb"
+          >Changing to <i>low</i> automatically disables all video streaming, focusing on voice
+          connections only.</note></p>
+  </context></taskbody>
+</task>
+<?Pub *0000001020?>

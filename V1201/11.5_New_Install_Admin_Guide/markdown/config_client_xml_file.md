@@ -1,0 +1,190 @@
+# Defining preferences in the managed-settings.xml file {#config_client_xml_file .task}
+
+Follow these instructions to define preferences in a managed-settings.xml file.
+
+This is an XML file and rules for XML files apply. Additionally, the following items should be considered:
+
+-   Do not create any extra blank lines in the file.
+-   To use comments, precede the line with a hashtag \(\#\).
+-   Do not use the tab key to indent lines, use two spaces instead.
+-   Do not copy text from the help center and use it in your file because it may copy some of the encoding from the page and cause the file to fail.
+-   It is helpful to use an XML editor, but a plain text editor can be used as well. If using a plain text editor, it is important to check the file extension when saving \(must be .xml not .txt\).
+
+There is an example managed-settings.xml file attached to the [troubleshooting article](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0038860) which can be used to test managed settings in place of creating a new one.
+
+This procedure will demonstrate how to create the managed-settings.xml and define chat history preferences for enabling automatically save chats for 7 days.
+
+**Procedure**
+
+1.  Create a new file with UTF-8 encoding named “managed-settings.xml”.
+
+    **Note:** No other file names are supported.
+
+2.  Place the opening and ending statements in the file:
+
+    ```
+    <?xml version="1.0"?> 
+    
+    <ManagedSettings> 
+    
+     
+    
+    </ManagedSettings>
+    ```
+
+3.  In between the <ManagedSettings\> tags the settings must be defined. Thus, the last line of the file will be </ManagedSettings\>.
+
+4.  [Review the settings](config_client_pref_tables.md) that can be defined. For this example, the [chat logging preferences](config_client_chat_history_pref.md) will be changed.
+
+    **Note:** You can define other settings, this example is to only demonstrate the syntax.
+
+5.  Place the settingGroup tags in between the <ManagedSettings\> tags.
+
+    ```
+    <?xml version="1.0"?> 
+    
+    <ManagedSettings> 
+    
+    <settingGroup name=""> 
+    
+     
+    
+    </settingGroup> 
+    
+    </ManagedSettings> 
+    ```
+
+6.  On the preferences documentation pages, some tables provide the names of the settingGroup. For example, [in the Chat Preferences](config_client_chat_history_pref.md), table 2 is for Chat History Preferences. The settingGroup name is com.ibm.collaboration.realtime.chat.logging . The settings that are used for this example are “days.storage.max” and “logging.default”. This will configure the user’s client to automatically log all chats on the client-side and retain them for 7 days.
+
+    ![](Images/chat_preferences.png)
+
+    Place the name of the settingGroup in the <settingGroup name=””\> tag.
+
+    ```
+    <?xml version="1.0"?> 
+    
+    <ManagedSettings> 
+    
+    <settingGroup name="com.ibm.collaboration.realtime.chat.logging"> 
+    
+     
+    
+    </settingGroup> 
+    
+    </ManagedSettings> 
+    ```
+
+7.  When you define the settings \(which are placed inside the settingGroup tags\) there are several options. Refer to the table for the setting name.
+
+    In the example from above, the two settings used in the example are “days.storage.max” and “logging.default”. These will be defined in a tag called <setting name=”” value=””/\>. These lines are indented with two spaces.
+
+    ```
+    <?xml version="1.0"?> 
+    
+    <ManagedSettings> 
+    
+    <settingGroup name="com.ibm.collaboration.realtime.chat.logging"> 
+    
+      <setting name=”logging.default” value=”0”/> 
+    
+      <setting name=”days.storage.max” value=”7”/> 
+    
+    </settingGroup> 
+    
+    </ManagedSettings> 
+    ```
+
+    You can define settings from other settingGroups in the same file. Ensure that the formatting of spacing remains the same. For example, add a contact list preference to sort groups alphabetically by default. These settings are documented in the [Contact list preferences](config_client_contact_list_pref.md) topic.
+
+    Open the help center topic and locate the settingGroup name.
+
+    Locate the setting name.
+
+    ![](Images/contact_list.png)
+
+    Add the new settingGroup and setting names below the first settingGroup.
+
+    ```
+    <?xml version="1.0"?> 
+    
+    <ManagedSettings> 
+    
+    <settingGroup name="com.ibm.collaboration.realtime.chat.logging"> 
+    
+      <setting name=”logging.default” value=”0”/> 
+    
+      <setting name=”days.storage.max” value=”7”/> 
+    
+    </settingGroup> 
+    
+    <settingGroup name="com.ibm.collaboration.realtime.imhub"> 
+    
+      <setting name=”sortGroups” value=”true”/> 
+    
+    </settingGroup> 
+    
+    </ManagedSettings> 
+    ```
+
+8.  Enable optional features.
+
+    The *<**settingGroup**\>* tag has an attribute called “lastModDate” which when present every change to a setting group must also be accompanied by a change to the lastModDate attribute or the new values will not be updated. If you do not use the “lastModDate” attribute, the values are always updated, even if they are not new.
+
+    If you choose to use the lastModDate timestamp, the format is using the
+
+    *jav**a**.text.SimpleDateFormat* format. The syntax is *YYYYMMDDThhmmss*, where YYYY=year, MM=month, DD=day, hh=hours, mm=minutes, ss=seconds. The values following the T are optional.
+
+    An example of this:
+
+    ```
+    <?xml version="1.0"?> 
+    
+    <ManagedSettings> 
+    
+    <settingGroup name="com.ibm.collaboration.realtime.chat.logging" lastModDate=”2021-02-11T17:39:21-05”> 
+    
+      <setting name=”logging.default” value=”0”/> 
+    
+      <setting name=”days.storage.max” value=”7”/> 
+    
+    </settingGroup> 
+    
+    </ManagedSettings> 
+    ```
+
+    Each *<setting\>* tag can have the following optional attributes:
+
+    -   *isLocked* - Boolean. The default value is true. If true, the setting is read-only and any changes that a user or application make to the value set by you, the administrator, are prevented or later overwritten. If this attribute is set to false, the administrator's setting is treated as a default value that can be changed by the user.
+
+        ```
+        <?xml version="1.0"?> 
+        
+        <ManagedSettings> 
+        
+        <settingGroup name="com.ibm.collaboration.realtime.chat.logging"> 
+        
+          <setting name=”logging.default” value=”0” isLocked=”false”/> 
+        
+          <setting name=”days.storage.max” value=”7” isLocked=”true”/> 
+        
+        </settingGroup> 
+        
+        </ManagedSettings> 
+        ```
+
+        In the above example all chats will be saved automatically initially until the user changes the setting, and the chat history will be retained for 7 days, user not able to change this setting because it is locked.
+
+    -   *overwriteUnlocked* - Boolean. The default value is false. By default, a setting that is specified as being unlocked will be treated as a default and will not overwrite any existing value on the client. This is to avoid undoing changes that the user might have legitimately made. However, if this setting is set to true, the unlocked value will be overwritten with this new value even if it means clearing the user's existing value.
+    -   *restartRequired* - Boolean. The default value is false. This attribute applies only when you automatically update client preferences with the managed-settings.xml file. Setting this to true creates a user prompt to restart the client as soon as the managed setting is applied. Use this optional attribute only if a restart of the client is required to activate the preference. The restart occurs only if the setting that includes this attribute is updated.
+9.  Test the managed-settings.xml file for formatting errors. Open the file in a web browser and ensure that there are no syntax errors. If errors are present, edit the file and correct the syntax problem.
+
+
+[Deploy managed-settings.xml or managed-community-configs.xml file to a web server](example_preferences.md).
+
+-   **[Deploy managed-settings.xml or managed-community-configs.xml file to a web server](example_preferences.md)**  
+Once the xml file\(s\) is ready to be deployed to users, the file must be placed on a web server to host it. This can be any web server the users can reach.
+-   **[Updating the client policy to include the managed settings or managed community configs URL](update_client_policy.md)**  
+Once the xml file\(s\) is ready to be deployed to users, the file must be placed on a web server to host it. This can be any web server the users can reach.
+
+**Parent topic:**[Updating client preferences with the managed-settings.xml file](config_client_xml_location.md)
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="disable_background">
+    <title>Disabling virtual background</title>
+    <taskbody>
+        <context>
+            <p>By default, you can use a filter, blur your background, or use a default or custom
+                image or video to obscure your surroundings. Depending on your organization's
+                requirements, you can disable the virtual background feature by modifying the
+                applicable file.</p>
+            <ul id="ul_lj5_z2h_htb">
+                <li>Docker<ul id="ul_mj5_z2h_htb">
+                        <li>.env</li>
+                    </ul></li>
+                <li>Kubernetes<ul id="ul_nj5_z2h_htb">
+                        <li>values.yaml</li>
+                    </ul></li>
+            </ul>
+            <p>To restrict all users from using virtual backgrounds during a meeting, follow these
+                steps:</p>
+        </context>
+        <steps id="steps_dxm_fy5_ktb">
+            <step>
+                <cmd>Modify the configuration file. The default value is
+                    <varname>TRUE</varname>.</cmd>
+                <info>
+                    <ul id="ol_m3f_bb2_ltb">
+                        <li>For Docker, update the value of the
+                                <parmname>ENABLE_VIRTUAL_BACKGROUND</parmname>
+                            parameter:<codeblock id="codeblock_avq_5yq_p5b">ENABLE_VIRTUAL_BACKGROUND=false</codeblock></li>
+                        <li>For Kubernetes, update the value of the
+                                <parmname>VirtualBackgroundEnabled</parmname>
+                            parameter:<codeblock id="codeblock_hs2_wyq_p5b">virtualBackgroundEnabled: false</codeblock></li>
+                    </ul>
+                </info>
+            </step>
+            <step>
+                <cmd>Restart the Sametime server to apply the changes. For more information, refer
+                    to <xref
+                        href="https://help.hcltechsw.com/sametime/12/admin/starting_and_stopping_servers.html"
+                        format="html" scope="external">Starting and stopping servers</xref>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

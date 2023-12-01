@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_call_contact" xml:lang="en-us">
+<title>Calling a  contact</title>
+<?Pub Caret 3?>
+<shortdesc>You can call a contact or group from the chat window.</shortdesc>
+<taskbody>
+<context>
+   <p>To start a call, in a chat window, click the telephone icon (<image
+          href="Images/icon_telephone.png" alt="telephone icon" id="image_akv_5fn_ctb"/>). A call
+        started message is displayed and a meeting opens in a new tab with a banner with the name of
+        the person or group being called. If it is a group, the number of group members is also
+        displayed. The call recipients receive a chat message to join the meeting. By clicking
+          <uicontrol>Join</uicontrol> they are placed into the meeting. After the meeting is ended,
+        all participants see a message in their chat window indicating that the call has ended.</p>
+   <p>If the recipient doesn't respond to the join call, the call ends based on the timer used for
+        showing chat notification banners. The default is 20 seconds. A message is displayed
+        indicating that the meeting ended because the invited people were not available. Both
+        parties to the call receive a <msgph>Missed call</msgph> message in their chat window.</p>
+  </context>
+</taskbody>
+</task>

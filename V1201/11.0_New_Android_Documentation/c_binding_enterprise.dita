@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="binding_enterprise" xml:lang="en-us">
+  <title>Binding Android Enterprise to an EMM</title>
+  <shortdesc>Your EMM must be configured to enable Android Enterprise and recognize Android
+    Enterprise users. The following URL provides an overview for configuring a third party EMM
+    provider for Android Enterprise:<xref
+      href="https://support.google.com/work/android/answer/9419830?visit_id=637235846143191243-999978&amp;rd=1"
+      format="html" scope="external"/></shortdesc>
+
+<conbody>
+  <p>Some of the steps for enabling an EMM administrator console for Android Enterprise vary from provider to provider and we recommend that you consult your EMM documentation on exactly how the EMM manages Android Enterprise devices.</p></conbody></concept>
+<?Pub *0000001020?>

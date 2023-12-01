@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="t_manage_meetings" xml:lang="en-us">
+  <title>Managing meetings</title>
+  <shortdesc> You can join, start, pin, copy, edit, and remove meetings from your meeting
+    list.</shortdesc>
+  <taskbody>
+    <context>
+      <p> When you tap <uicontrol>Meetings</uicontrol> from the main menu, a list of meetings that
+        you own and attended opens. They are listed under one of the following tabs.<dl
+          id="dl_vcc_gss_bvb">
+          <dlentry>
+            <dt>My Meetings</dt>
+            <dd>List of meetings that you own.</dd>
+          </dlentry>
+          <dlentry>
+            <dt> Scheduled</dt>
+            <dd>List of scheduled meetings that are on your calendar.</dd>
+          </dlentry>
+          <dlentry>
+            <dt>Pinned </dt>
+            <dd>List of list of meetings that you pinned which is the same as marking them as a
+              favorite.</dd>
+          </dlentry>
+          <dlentry>
+            <dt>Recent </dt>
+            <dd>List of recent meetings that you joined.</dd>
+          </dlentry>
+        </dl>You can also join or start a meeting from this screen. See <xref format="dita"
+          href="t_start_meeting.dita" scope="local"/>.</p>
+      <p>From the <wintitle>Meetings</wintitle> screen, swipe right on the meeting name to access
+        the following tasks. Note that not all tasks are available for all meetings.<dl
+          id="dl_qbt_rsq_dtb">
+          <dlentry>
+            <dt>Copy</dt>
+            <dd>Copy a meeting link to the clipboard.</dd>
+          </dlentry>
+          <dlentry>
+            <dt>Edit</dt>
+            <dd>Change meeting settings with the exception of the meeting name. You can't change the
+              meeting name. For description of settings, see <xref format="dita"
+                href="t_create_meetings.dita" scope="local"/>.</dd>
+          </dlentry>
+          <dlentry>
+            <dt>Meeting Recordings</dt>
+            <dd>View recordings for a meeting. <note id="note_jhs_j25_hvb">Playing recordings on
+                your mobile device might incur additional fees to your mobile network plan.</note>
+              Recordings are available only for recently recorded meetings, and they are available
+              for a limited time.</dd>
+            <dd>Tap the <image href="Images/menu.png" alt="meeting menu icon" id="image_qwb_z5s_bvb"
+              />  to access recordings.</dd>
+          </dlentry>
+          <dlentry>
+            <dt>Meeting Reports</dt>
+            <dd>View reports about the meeting. Tap the menu icon <image href="Images/menu.png"
+                alt="meeting menu icon" id="image_zd1_trs_bvb"/> to select the type of report to
+              view or download. See <xref format="dita" href="reports_intro.dita" scope="local"/>
+              for information about the meeting types and generating reports. Reports are available
+              only for recent meetings.</dd>
+          </dlentry>
+          <dlentry>
+            <dt>Pin</dt>
+            <dd>You can make a meeting a favorite by pinning it. Meetings that you use frequently
+              are a good candidate to be pinned. When you tap the <uicontrol>meeting</uicontrol>
+              icon in a chat, the list of pinned meetings opens. With pinned meetings, you can to
+              easily send a meeting URL to chat partners.</dd>
+          </dlentry>
+        </dl></p>
+      <p>To remove a meeting, swipe left and tap the <uicontrol>delete</uicontrol> icon.</p>
+    </context>
+  </taskbody>
+</task>
+<?Pub *0000001020?>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_send_announcement" xml:lang="en-us">
+<title>Sending an announcement</title>
+<shortdesc>You can send a message to all the online members of a group simultaneously.</shortdesc>
+<taskbody>
+    <context id="context_qnx_qmq_hvb">
+      <p>Recipients get the announcement as a pop-up alert on their clients unless you allow the
+        recipients to respond to the message. In this case, a chat window opens in each recipient's
+        Sametime window</p>
+    </context>
+<steps>
+<step>
+<cmd>Click the menu icon ( <image alt="menu icon" href="Images/menu.png" placement="inline"
+id="menu"/>) in the navigator and select <uicontrol>Contacts</uicontrol>.</cmd>
+</step>
+<step>
+        <cmd>Click the menu icon next to the contact or group name to send a message and click
+            <uicontrol>Send Announcement</uicontrol>.</cmd>
+      </step>
+<step>
+<cmd>In the <wintitle>Send Announcement</wintitle> dialogue box, type the message.<draft-comment
+            author="debra.taylor">Is there a restriction on size?</draft-comment></cmd>
+</step>
+<step>
+        <cmd>To add additional people to the announcement, type a name in the <uicontrol>Search for
+            Recipients</uicontrol>. As you type suggestions are provided. Click a name to add to the
+          send list.</cmd>
+        <info>To remove a recipient, click the delete icon (<image href="Images/icon_delete.png"
+            alt="Delete icon" id="image_y1d_1fj_dtb"/>.</info>
+      </step>
+<step>
+    <cmd>To <draft-comment author="debra.taylor">I"m not sure what this is for</draft-comment>,
+     click <uicontrol>Display as overlay banner</uicontrol></cmd>
+   </step>
+<step>
+        <cmd>To send the message, click <uicontrol>Send</uicontrol>.</cmd>
+      </step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000002118?>

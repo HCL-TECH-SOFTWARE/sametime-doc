@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="upgrade_install_fixpack" xml:lang="en-us">
+    <title>Upgrading to a  new version or applying a fixpack</title>
+    <shortdesc>Newer versions and fix packs contain new features and fixes. You do not need to
+        remove your current Sametime 12 installation when upgrading to a new version.</shortdesc>
+    <taskbody>
+        <prereq id="fixpack_prereq">
+            <p>To install a new version or fix pack, the following conditions must be satisfied:<ul
+                    id="ul_abh_v3k_25b">
+                    <li>HCL Sametime 12 version is installed and configured</li>
+                    <li>Sametime server has access to a MongoDB server</li>
+                </ul></p>
+        </prereq>
+    </taskbody>
+</task>

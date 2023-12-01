@@ -1,0 +1,23 @@
+﻿
+<div>
+    <div class="footer">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/about/about-us">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/about/faqs">Acquisition FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/about/government">Government - US Federal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/about/welcome">Welcome</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/contact-us">Contact Us</a>
+                </li>
+            </ul>
+            Copyright HCL Technologies Limited 2020.
+    </div>
+</div>

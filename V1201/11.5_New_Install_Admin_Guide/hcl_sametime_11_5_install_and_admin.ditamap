@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-us">
+<title>HCL <tm tmtype="reg">Sametime</tm>Administration Guide 12.0.1</title>
+<topicmeta>
+<copyright>
+<copyryear year="1998"/>
+<copyryear year="2022"/>
+<copyrholder/>
+</copyright>
+</topicmeta>
+    <topicref href="administrator_doc.dita">
+        <topicref href="over_accessibility.dita"/>
+<topicref href="whats_new.dita"/>
+        <topicref href="overview_encryption.dita"/>
+        <topicref href="planning.dita">
+            <topicref href="sametime_premium.dita"/>
+            <topicref href="c_planning_prereqs.dita">
+                <topicref href="system_requirements.dita"/>
+                <topicref href="mongodb.dita"/>
+                <topicref href="ldap.dita"/>
+            </topicref>
+            <topicref href="c_planning_platforms.dita">
+                <topicref href="c_planning_docker.dita"/>
+                <topicref href="c_planning_kubernetes.dita"/>
+            </topicref>
+            <topicref href="planning_meetingserver.dita"/>
+            <topicref href="hcl_sametime_clients.dita"/>
+            <topicref href="topology.dita">
+                <topicref href="topology_chat.dita"/>
+                <topicref href="topology_premium.dita">
+                    <topicref href="managing_sametime_premium.dita"/>
+                </topicref>
+                <topicref href="topology_telephony.dita"/>
+                <topicref href="ports_sametime.dita"/>
+            </topicref>
+            <topicref href="network_planning.dita">
+                <topicref href="session_traversal_utilities.dita"/>
+                <topicref href="topology_turn.dita"/>
+            </topicref>
+            <topicref href="cluster_highavailability.dita">
+                <topicref href="plan_cluster_chat.dita"/>
+                <topicref href="plan_cluster_meetings.dita">
+                    <topicref href="plan_cluster_meetings_recorder.dita"/>
+                    <topicref href="plan_cluster_meetings_video.dita"/>
+                </topicref>
+                <topicref href="plan_cluster_mongodb.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="installing.dita">
+<topicref href="installation_roadmap.dita" navtitle="Installation roadmap"/>
+<topicref href="installation_mongodb.dita" navtitle="Installing the MongoDB">
+<topicref href="installing_mongodb_windows.dita" navtitle="Installing MongoDB on Windows"/>
+<topicref href="installing_mongodb_linux.dita"/>
+<topicref href="t_configure_mongodb.dita"/>
+</topicref>
+<topicref href="installation_sametime.dita" navtitle="Installing Sametime">
+                <topicref href="installation_prompt_descriptions.dita"/>
+                <topicref href="installation_sametime_kubernetes.dita">
+                    <topicref href="t_meetings_prepare_network.dita">
+                        <topicref href="t_meetings_kubernetes.dita"/>
+                    </topicref>
+                    <topicref href="t_meetings_sametime_image_docker.dita"/>
+                    <topicref href="t_meetings_configure_deployment.dita"/>
+                    <topicref href="t_configure_jitsi.dita"/>
+                    <topicref href="t_meetings_recordings.dita">
+                        <topicref href="t_single_node.dita" otherprops="notready"/>
+                    </topicref>
+                    <topicref href="t_installing_deploy_st_kubernetes.dita" otherprops="notready"/>
+                    <topicref href="t_ingress_install.dita" otherprops="notready">
+                        <topicref href="t_ingress_configure.dita" otherprops="notready"/>
+                    </topicref>
+                    <topicref href="t_meetings_verify.dita"/>
+                    <topicref href="installation_prometheus.dita" format="dita"/>
+                </topicref>
+                <topicref href="installation_sametime_docker.dita">
+                    <topicref href="installing_docker.dita"/>
+                    <topicref href="installing_on_docker.dita"/>
+                    <topicref href="t_installing_docker_extrahosts.dita"/>
+                </topicref>
+            </topicref>
+            <topicref href="installing_sametime_clients.dita">
+                <topicref href="installing_sametime_connect_and_embedded.dita"/>
+                <topicref href="installing_sametime_connect_and_embedded_macos.dita"/>
+                <topicref href="installing_connectclient_slientinstall.dita"/>
+                <topicref href="installing_sametime_ios_and_android.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="configuring.dita">
+            <topicref href="customize_branding.dita">
+                <topicref href="customize_kubernetes.dita"/>
+                <topicref href="customize_docker.dita"/>
+            </topicref>
+            <topicref href="t_configure_default_virtual_background.dita">
+                <topicref href="t_configure_virtual_docker.dita"/>
+                <topicref href="t_configure_virtual_k8s.dita"/>
+            </topicref>
+            <topicref href="configuring_stun.dita"/>
+            <topicref href="admin_st_buscard.dita">
+                <topicref href="config_buscard.dita"/>
+                <topicref href="config_buscard_custom_kubernetes.dita"/>
+                <topicref href="config_buscard_custom_docker.dita"/>
+                <topicref href="storing_photos.dita"/>
+                <topicref href="connections_photos.dita"/>
+            </topicref>
+            <topicref href="configuring_ldap.dita">
+                <topicref href="configuring_ldap_docker.dita" otherprops="notready"/>
+                <topicref href="configuring_ldap_kubernetes.dita" otherprops="notready"/>
+                <topicref href="configuring_ldap_password.dita"/>
+                <topicref href="configuring_ldap_multiple_docker.dita" format="dita" scope="local"
+                    otherprops="notready"/>
+                <topicref href="configuring_ldap_multiple_kubernetes.dita"/>
+                <topicref href="creating_custom_java.dita" otherprops="notready">
+                    <topicref href="config_chat_ldap_java_format.dita" otherprops="notready"/>
+                    <topicref href="config_chat_ldap_java_people.dita" otherprops="notready"/>
+                    <topicref href="config_class_file_docker.dita" otherprops="notready"/>
+                    <topicref href="config_class_file_kubernetes.dita"/>
+                </topicref>
+            </topicref>
+            <topicref href="update_ttl_index.dita"/>
+            <topicref href="managing_secrets_kubernetes.dita">
+                <topicref href="secrets_view.dita"/>
+                <topicref href="secrets_delete.dita"/>
+                <topicref href="secrets_modify.dita"/>
+            </topicref>
+            <topicref href="apply_configchanges_docker.dita"/>
+            <topicref href="apply_configchanges_kubernetes.dita"/>
+            <topicref href="chat_configuring.dita" format="dita" scope="local" otherprops="notready">
+                <topicref href="chat_configuring_sametimeini.dita" format="dita" scope="local"
+                    otherprops="notready">
+                    <topicref href="chat_configuring_sametimeini_docker.dita" format="dita"
+                        scope="local" otherprops="notready"/>
+                    <topicref href="chat_configuring_sametimeini_kubernetes.dita"
+                        otherprops="notready" format="dita" scope="local"/>
+                </topicref>
+            </topicref>
+            <topicref href="meetings_configuring.dita">
+                <topicref href="secure_rooms.dita">
+                    <topicref href="secure_rooms_docker.dita"/>
+                    <topicref href="secure_rooms_kubernetes.dita"/>
+                </topicref>
+                <topicref href="meetings_dialin.dita"/>
+                <topicref href="t_different_hostname.dita" otherprops="notready"/>
+                <topicref href="enable_dial_out.dita">
+                    <topicref href="enable_dialout_docker.dita" format="dita" scope="local"/>
+                    <topicref href="enable_dialout_kubernetes.dita" format="dita" scope="local"/>
+                </topicref>
+                <topicref href="meetings_configuring_max.dita"/>
+                <topicref href="enable_video_bridge.dita"/>
+                <topicref href="disable_sharing_meetings.dita"/>
+                <topicref href="enable_microsoft_outlook.dita"/>
+                <topicref href="turnserver_intro.dita">
+                    <topicref href="turnserver_ubuntu.dita"/>
+                    <topicref href="turnserver_centos.dita"/>
+                    <topicref href="turnserver_meetings_docker.dita"/>
+                    <topicref href="turnserver_meetings_kubernetes.dita"/>
+                </topicref>
+            </topicref>
+            <topicref href="verse_integration.dita">
+                <topicref href="verse_integration_docker.dita"/>
+                <topicref href="verse_integration_kubernetes.dita"/>
+            </topicref>
+            <topicref href="Managing_dashboard.dita">
+                <topicref href="t_grafana_docker.dita"/>
+                <topicref href="t_grafana_k8s.dita"/>
+            </topicref>
+            <topicref href="t_push_proxy.dita">
+                <topicref href="t_proxy_docker.dita"/>
+                <topicref href="t_proxy_k8s.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="securing.dita">
+            <topicref href="securing_connections.dita">
+                <topicref href="tls_configuration.dita">
+                    <topicref href="implement_tls_configuration.dita"/>
+                    <topicref href="implement_tls_configuration_individual.dita"/>
+                </topicref>
+                <topicref href="securing_connections_between_community_clients.dita"
+                    otherprops="notready">
+                    <topicref href="securing_connections_between_community_clients_kubernetes.dita"/>
+                    <topicref href="securing_connections_between_community_clients_docker.dita"/>
+                </topicref>
+                <topicref href="securing_connections_sametime_community_and_ldap.dita">
+                    <topicref href="securing_ldap_kubernetes.dita"/>
+                    <topicref href="securing_ldap_docker.dita"/>
+                </topicref>
+                <topicref href="t_create_truststore.dita" otherprops="notready"/>
+                <topicref href="java_keystore.dita" otherprops="notready"/>
+            </topicref>
+            <topicref href="enabling_sso.dita">
+                <topicref href="enabling_sso_ltpa.dita">
+                    <topicref href="ltpa_generate_key.dita"/>
+                    <topicref href="ltpa_configure_docker.dita"/>
+                    <topicref href="ltpa_configure_kubernetes.dita"/>
+                    <topicref href="ltpa_configure_connections.dita"/>
+                    <topicref href="ltpa_configure_domino.dita"/>
+                </topicref>
+                <topicref href="enabling_sso_saml.dita">
+                    <topicref href="enabling_saml_docker.dita"/>
+                    <topicref href="enabling_saml_kubernetes.dita"/>
+                    <topicref href="configuring_sso_saml.dita" otherprops="notready"/>
+                    <topicref href="enabling_saml.dita" otherprops="notready"/>
+                    <topicref href="enabling_saml_clients.dita" otherprops="notready"/>
+                </topicref>
+            </topicref>
+            <topicref href="security_mongodb.dita"/>
+<topicref href="security_mongodb_tls.dita" navtitle="Enabling TLS for the Mongo database"/>
+            <topicref href="updating_meeting_servers.dita">
+                <topicref href="tls_change_certificate_docker.dita"/>
+                <topicref href="tls_change_certificate_kubernetes.dita"/>
+            </topicref>
+            <topicref href="using_meeting_servers.dita"/>
+        </topicref>
+        <topicref href="administering.dita">
+            <topicref href="managing_sametime_client_preferences.dita">
+                <topicref href="st_adm_comm_manageclientlogin_c.dita">
+                    <topicref href="config_st_allowed_client_types.dita"/>
+                    <topicref href="st_adm_comm_prefloginlist_t.dita"/>
+                    <topicref href="st_adm_comm_singlelogintype_t.dita"/>
+                    <topicref href="new_client_ids.dita"/>
+                </topicref>
+                <topicref href="config_client_conn_ov.dita">
+                    <topicref href="config_client_conn_host.dita"/>
+                    <topicref href="config_client_conn_meth_ov.dita">
+                        <topicref href="config_client_conn_direct.dita"/>
+                        <topicref href="config_client_conn_tls.dita"/>
+                        <topicref href="config_client_conn_prox.dita"/>
+                    </topicref>
+                    <topicref href="config_client_conn_alt.dita"/>
+                </topicref>
+                <topicref href="sametime_client_configuration.dita">
+                    <topicref href="config_client_pref_tables.dita">
+                        <topicref href="config_client_access_pref.dita"/>
+                        <topicref href="config_client_status_pref.dita"/>
+                        <topicref href="config_client_cal_pref.dita"/>
+                        <topicref href="config_client_chat_history_pref.dita"/>
+                        <topicref href="config_client_comm_pref.dita"/>
+                        <topicref href="config_client_contact_list_pref.dita"/>
+                        <topicref href="config_client_ext_app_pref.dita"/>
+                        <topicref href="config_client_file_tran_pref.dita"/>
+                        <topicref href="config_client_widg_pref.dita"/>
+                        <topicref href="config_client_location_pref.dita"/>
+                        <topicref href="config_client_login_pref.dita"/>
+                        <topicref href="config_client_notes_pref.dita"/>
+                        <topicref href="config_client_stadv_pref.dita"/>
+                        <topicref href="config_client_notification_pref.dita"/>
+                        <topicref href="config_client_people_pref.dita"/>
+                        <topicref href="config_client_rules_mng_pref.dita"/>
+                        <topicref href="config_client_spellchecker_pref.dita"/>
+                        <topicref href="config_client_update_pref.dita"/>
+                    </topicref>
+                    <topicref href="config_client_connect_pref.dita"/>
+                    <topicref href="config_client_mng_xml_pref.dita">
+                        <topicref href="config_client_pref_plugin.dita">
+                            <topicref href="config_client_url_xml_file.dita"/>
+                        </topicref>
+                        <topicref href="config_client_xml_location.dita">
+                            <topicref href="config_client_xml_file.dita">
+                                <topicref href="example_preferences.dita"/>
+                                <topicref href="update_client_policy.dita"/>
+                            </topicref>
+                            <topicref href="config_client_update_interval_xml.dita"/>
+                            <topicref href="config_client_discontinue_xml_file.dita"/>
+                        </topicref>
+                    </topicref>
+                    <topicref href="alternate_client_configuration.dita"/>
+                    <topicref href="admin_st_mng_remotecomm.dita">
+                        <topicref href="managed_community.dita"/>
+                    </topicref>
+                    <topicref href="community_provisioning.dita"/>
+                </topicref>
+            </topicref>
+            <topicref href="t_managing_transfer_data.dita"/>
+            <topicref href="t_testing_sametime_chat.dita"/>
+            <topicref href="starting_and_stopping_servers.dita"/>
+            <topicref href="starting_and_stopping_mongodb.dita"/>
+            <topicref href="managing_policies.dita">
+                <topicref href="admin_ssc_policies_understand.dita"/>
+                <topicref href="configuring_policies.dita">
+                    <topicref href="t_docker_manage_meeting_policies.dita"/>
+                    <topicref href="t_kubernetes_manage_meeting_policies.dita"/>
+                </topicref>
+                <topicref href="admin_policy_im_ids.dita"/>
+                <topicref href="c_mobileclient_policies.dita">
+                    <topicref href="c_general_policies.dita">
+                        <topicref href="c_general_chat_policies.dita"/>
+                        <topicref href="c_general_meetings_policies.dita"/>
+                    </topicref>
+                    <topicref href="c_file_transfer.dita">
+                        <topicref href="c_general_file_transfers.dita"/>
+                        <topicref href="c_mobile_file_transfer_policies.dita"/>
+                    </topicref>
+                    <topicref href="c_security_policies.dita">
+                        <topicref href="c_inline_previews.dita"/>
+                        <topicref href="c_mobile_self_certificates.dita"/>
+                        <topicref href="c_requiring_password_entry.dita"/>
+                        <topicref href="c_restrict_copy_paste.dita"/>
+                        <topicref href="c_save_contacts.dita"/>
+                        <topicref href="c_prohibit_mobile_client.dita"/>
+                    </topicref>
+                </topicref>
+                <topicref href="creating_new_policy.dita"/>
+                <topicref href="changing_user_policy.dita"/>
+                <topicref href="assign_user_policy.dita"/>
+                <topicref href="admin_policy_enable_custom.dita"/>
+            </topicref>
+<topicref href="configuration_files.dita" navtitle="Configuration files"/>
+            <!--<topicref href="inst_config_chat_enable_stadmin.dita"/>-->
+            <topicref href="configuring_multi_tenacy.dita"/>
+            <topicref href="administering_mongodb.dita">
+                <topicref href="t_namechangeutility.dita">
+                    <topicref href="t_namechange_docker.dita"/>
+                    <topicref href="t_ldap_change.dita"/>
+                    <topicref href="t_delete_ldap.dita"/>
+                    <topicref href="t_verify_namechange.dita"/>
+                </topicref>
+                <topicref href="administering_mongodb_credential.dita"/>
+                <topicref href="control_mongodb.dita"/>
+            </topicref>
+            <topicref href="sametime_meeting_administering.dita">
+                <topicref href="disable_guest_access.dita"/>
+                <topicref href="enable_disable.dita"/>
+                <topicref href="increase_activecameras.dita"/>
+                <topicref href="recording.dita"/>
+                <topicref href="control_validity_length.dita"/>
+                <topicref href="disable_background.dita"/>
+                <topicref href="t_disable_background_upload.dita"/>
+            </topicref>
+            <topicref href="t_managing_transfer_data.dita"/>
+        </topicref>
+        <topicref href="troubleshooting.dita">
+            <topicref href="troubleshooting_contact_support.dita"/>
+            <topicref href="t_troubleshooting_sametime_docker.dita">
+                <topicref href="troubleshooting_debug_trace_docker.dita" otherprops="notready"/>
+            </topicref>
+            <topicref href="t_troubleshooting_sametime_kubernetes.dita">
+                <topicref href="t_enabling_community_debug.dita"/>
+                <topicref href="troubleshooting_kubernetes_logs.dita"/>
+                <topicref href="pods_descriptions.dita" otherprops="notready"/>
+                <topicref href="troubleshooting_kubernetes_transfer_pods.dita" otherprops="notready"/>
+                <topicref href="troubleshooting_kubernetes_pod_networktrace.dita"/>
+                <topicref href="pod_apply_changes.dita" otherprops="notready"/>
+                <topicref href="t_troubleshooting_kubernetes_host_not_found.dita"
+                    otherprops="notready"/>
+                <topicref href="t_troubleshooting_ldap_kubernetes.dita" otherprops="notready"/>
+            </topicref>
+            <topicref href="t_troubleshooting_sametime_server.dita" otherprops="notready"/>
+            <topicref href="t_troubleshooting_sametime_meetings.dita" otherprops="notready"/>
+            <topicref href="t_troubleshooting_sametime_chat.dita" otherprops="notready"/>
+            <topicref href="t_troubleshooting_clients.dita" otherprops="notready">
+                <topicref href="t_collecting_configuration_logging_data.dita"/>
+                <topicref href="t_logging_tracing.dita"/>
+            </topicref>
+            <topicref href="t_resolving_business_cards.dita"/>
+        </topicref>
+        <topicref href="migrating.dita">
+            <topicref href="c_migration_planning.dita"/>
+            <topicref href="upgrade_install_fixpack.dita">
+                <topicref href="upgrade_install_fixpack_docker.dita"/>
+                <topicref href="upgrade_install_fixpack_kubernetes.dita"/>
+                <topicref href="upgrade_revert_docker.dita"/>
+                <topicref href="upgrade_revert_kubernetes.dita"/>
+            </topicref>
+            <topicref href="migrating_upgrading.dita"/>
+            <topicref href="upgrading_meetings.dita">
+                <topicref href="upgrade_docker.dita"/>
+                <topicref href="upgrade_kubernetes.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="notices.dita"/>
+    </topicref>
+</map>

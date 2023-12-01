@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_chat" xml:lang="en-us">
+ <title>Using Sametime Chat</title>
+ <shortdesc>You can change your availability status, work with contacts, manage settings and chat
+  with other <tm tmtype="reg" trademark="Sametime">Sametime</tm> users. You can have multiple
+  devices logged in simultaneously with persistent chat histories on your devices.</shortdesc>
+</concept>
+<?Pub *0000001020?>

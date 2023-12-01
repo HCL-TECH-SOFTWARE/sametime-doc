@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="pod_apply_changes">
+    <title>Applying changes</title>
+    <taskbody>
+        <context id="context_k2l_fxc_ytb">
+            <p>After you have modified a secret, scale the pods for which changes were made. Scaling
+                the pod is similar to a reboot, first the pod is scaled to zero and then scaled to
+                one. For Sametime pods details, see <xref href="pods_descriptions.dita"
+                    scope="local" format="dita"/>. Scaling to zero removes all containers for the
+                specified pods and scaling to one restarts their use. When scaled back up from zero,
+                changes made are used by the pod.</p>
+        </context>
+        <steps id="steps_sqt_tqw_d5b">
+            <step id="scale_pod">
+                <cmd>Restart the pods with the changes. Use the <cmdname>kubectl scale</cmdname>
+                    command to scale the pods to zero and then to one that have been changed. You
+                    must run the commands for each pod that the change affects.</cmd>
+                <substeps id="substeps_frr_lwc_d5b">
+                    <substep>
+                        <cmd>Run the following command to scale the pod to zero.</cmd>
+                        <info>Scale the pod to zero, where <varname>pod_deployment_name</varname> is
+                            the pod name.<codeblock id="codeblock_cwz_mwc_d5b">
+kubectl scale deploy <varname>pod_deployment_name</varname> --replicas=0
+</codeblock></info>
+                    </substep>
+                    <substep>
+                        <cmd>Run the following command to scale the pod to one.</cmd>
+                        <info>
+                            <codeblock id="codeblock_i2c_4wc_d5b">
+kubectl scale deploy <varname>pod_deployment_name</varname> --replicas=1</codeblock>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+    </taskbody>
+</task>

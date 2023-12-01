@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="working_server_community_manager" xml:lang="en-us">
+<title>Working with the Server Community Manager</title>
+<shortdesc>The Server Community Manager allows you to create and maintain more than one set of
+server connection information and login ID and password information for a variety of Connections
+communities. Typically, the initial connection information is set up by your
+administrator.</shortdesc>
+<taskbody>
+<context>
+<p>From the login panel, choose the Connectivity action. The Server Community Manager displays. Your
+default settings (those initially configured for the device by your administrator) are stored in the
+community item named Default.</p>
+<p>The Server Community Manager lists all current available server communities. You can press the
+check box to select which community settings are the currently activate settings. Only one can be
+checked at a time.</p>
+<p>You can add additional server communities by performing the following procedure:</p>
+</context>
+<steps>
+<step>
+<cmd>Press the <uicontrol>Add server community</uicontrol> button at the bottom of the list.</cmd>
+</step>
+<?Pub Caret 40?>
+<step>
+<cmd>Choose either <uicontrol>My company's server</uicontrol> or <uicontrol>HCL Connections
+Cloud</uicontrol>.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000001480?>

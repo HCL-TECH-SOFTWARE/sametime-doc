@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="connections_photos" xml:lang="en-us">
+ <title>Using HCL Connections photos for the Sametime business card</title>
+ <shortdesc>You can use the HCL Connections profiles photos for the Sametime business cards. A
+      benefits for using this method is that updated photos in Connections are automatically updated
+      in Sametime.</shortdesc>
+<conbody>
+  
+   <p><b>Calculating the Connections Profiles Photo URL </b></p>
+   <p>The Connections user photo can be retrieved from  <filepath>/profiles/photo.do</filepath> API
+        (REST: GET) which can process different key values from the parameter sent to uniquely
+        identify the user details. <codeph>&lt;protocol>://&lt;connections
+            server>:&lt;port>/profiles/photo.do?<varname>parametername=value</varname></codeph></p>
+   <p>The following parameters can be included on the API. <ul id="ul_g1n_dry_l5b">
+          <li>distinguishedName</li>
+          <li>email=</li>
+          <li>uid=</li>
+          <li>userid=</li>
+          <li>key=</li>
+        </ul></p> 
+   <p>This configuration depends on which unique user identifier (userId) has been configured in the
+         LDAP settings. The default setting is distinguishedName.</p>
+   <p>In many cases the Sametime server is configured to use the DN as the Sametime userId. For
+         example: the DN is: CN=Foo Bar,OU=Users,O=Example,C=US In this case the
+            <parmname>distinguishedName</parmname> key should be used. The protocol is either HTTP
+         or HTTPS. For example:
+         <codeblock>http://connections.example.com:9080/profiles/photo.do?distinguishedName= </codeblock></p>
+   <p>If the Connections server protocol is HTTP and the port is 9080, below is an example of the
+      resulting URL after appending the user’s DN and encoding the spaces:
+      <codeblock>http://connections.example.com:9080/profiles/photo.do?distinguishedName=CN%3DFoo%20Bar%2COU%3DUsers%2CO%3DExample%2CC%3DUS </codeblock></p>
+   <p>The community service requires the absolute URL to be added to the person document or LDAP
+         record as an attribute. Many LDAP servers including Domino LDAP and Microsoft Active
+         Directory have an attribute that exists for this purpose called
+            <parmname>photoURL</parmname>. Populate the full URL for the photo in the
+            <parmname>photoURL</parmname> for each person record in the directory. For Domino LDAP
+         directories, the <parmname>photoURL</parmname> is located on the person document,
+            <uicontrol>Miscellaneous</uicontrol> tab.</p>
+   <p>Some LDAP servers may not display the <parmname>photoURL</parmname> attribute to an anonymous
+      bind, for example, Domino LDAP. Use an authenticated bind to the LDAP server when configuring
+      LDAP services, or configure the LDAP server to render the <parmname>photoURL</parmname> to
+      anonymous users. </p>
+   <p>If the <parmname>photoURL</parmname> is a protected resource, Single Sign On (SSO) must be
+         configured between the Sametime serve and Connections server. If the URL is available to
+         anonymous users, SSO is not required.  When configuring SSO, the Connections server and
+         Sametime server must share a common directory. For additional information, see <xref
+            href="enabling_sso_ltpa.dita" format="dita">Configuring SSO between Connections and
+            Sametime</xref>.</p>
+   <p>If you have not already configured the <filepath>UserInfoConfig.xml</filepath> file, review
+      the applicable topic for your environment and complete the configuration before setting the
+        <parmname>photoURL</parmname>.</p>
+ </conbody>
+
+</concept>
+

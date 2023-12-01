@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+Release Version: v.Q32021  
+-->
+
+<div class="after-search">
+ <!--   <div class="version-container">
+        <select id="versions" class="custom-select custom-select-md lang-selector" data-toggle="tooltip" title="Select a version">
+        </select>
+    </div> -->
+    <div class="language-container">
+      <!--  <label class="lang-label" for="languages">Language:</label> -->
+        <select id="languages" class="custom-select custom-select-md lang-selector" data-toggle="tooltip" title="Select a language">
+        </select>  
+    </div>
+</div>
+
+  

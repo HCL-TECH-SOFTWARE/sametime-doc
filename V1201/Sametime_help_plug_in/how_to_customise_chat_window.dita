@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="how_to_customise_chat_window" xml:lang="en-us">
+<title>How to customize chat window?</title>
+<shortdesc>You can customize chat window appearance by changing the bubble style as per your
+preference. </shortdesc>
+<taskbody>
+<steps>
+<step>
+<cmd>Click the gear icon. </cmd>
+</step>
+<step>
+<cmd>Navigate to Preferences.</cmd>
+</step>
+<step>
+<cmd>Click Chat Window and Transcript.</cmd>
+</step>
+<step>
+<cmd>Scroll to Chat Display Style and select either Classic or Bubble from the drop-down menu.</cmd>
+<info>
+<note>The default value for this property is "Bubble".</note>
+</info>
+</step>
+</steps>
+</taskbody>
+</task>

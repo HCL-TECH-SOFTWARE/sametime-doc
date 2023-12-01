@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_st8_uim_auto_change_stat_meet" xml:lang="en-us">
+<title>How do I automatically change my status whenever I have a meeting
+scheduled?</title>
+<shortdesc>If you have this feature, you can simplify your life by having your status automatically
+  change to "In a Meeting" <image alt="In a Meeting icon" href="images/ST_Awns_InAMtng_03.JPG"
+   placement="inline" scope="local"/> whenever you are in a meeting that is scheduled in your HCL
+   <tm tmtype="reg">Notes</tm> or <tm tmclass="special" tmowner="Microsoft Corporation" tmtype="tm"
+   trademark="Microsoft">Microsoft</tm> Outlook calendars.</shortdesc><?Pub
+Caret 208?>
+<prolog><metadata>
+<keywords><keyword>Status</keyword><keyword>Change status</keyword>
+<keyword>Availability status</keyword><keyword>Change availability
+status</keyword><keyword></keyword></keywords>
+</metadata></prolog>
+<taskbody>
+<steps>
+<step><cmd>Set the status to automatically display when you are in
+a scheduled meeting.</cmd><info><table frame="all"><title>Options</title>
+<tgroup cols="2">
+<?PubTbl tgroup rth="1.00pt"?>
+<colspec colname="col1" colwidth="1*"/><colspec colname="col2"
+colwidth="1*"/>
+<thead>
+<row>
+<entry colname="col1">If you are using:</entry>
+<entry colname="col2">Do this:</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Sametime</tm> Connect</p></entry>
+<entry colname="col2"><p>Click <menucascade>
+<uicontrol><image href="images/ST_gear.jpg">
+<alt>Actions and preferences</alt>
+</image></uicontrol>
+<uicontrol>Preferences</uicontrol>
+</menucascade>. Then, expand the <uicontrol>Auto-Status Changes</uicontrol> section in the navigator
+and click <uicontrol>Calendar Service</uicontrol>.<note>If you do not see the option for Calendar
+Service, contact your administrator for details.</note></p></entry>
+</row>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Notes</tm>
+          </p></entry>
+<entry colname="col2"><p>Click <menucascade>
+<uicontrol><image href="images/ST_gear.jpg">
+<alt>Actions and preferences</alt>
+</image></uicontrol>
+<uicontrol>Preferences</uicontrol>
+</menucascade>. Then, expand the <uicontrol>Sametime</uicontrol> section in the navigator. Then,
+expand the <uicontrol>Auto-Status Changes</uicontrol> section and click <uicontrol>Calendar
+Service</uicontrol>.<note>If you do not see the option for Calendar Service, contact your
+administrator for details.</note></p></entry>
+</row>
+</tbody>
+</tgroup>
+</table></info></step>
+<step>
+    <cmd>Select whether and how often to check your calendar. If you are using <tm tmtype="reg"
+      >Notes</tm>, you will also have to enter your <tm tmtype="reg">Notes</tm> password.</cmd>
+   </step>
+<step><cmd>Specify the password to use.</cmd></step>
+<step><cmd>Click <uicontrol>Apply</uicontrol>.</cmd></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step>
+</steps>
+</taskbody>
+<?tm 1365517815 2?>
+</task>
+<?Pub *0000003192?>

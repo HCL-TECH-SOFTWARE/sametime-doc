@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="whats_new" xml:lang="en-us">
+    <title>What's new</title>
+    <shortdesc>HCL Sametime and HCL Sametime Premium 12.0.1 provides many new features, enhancements
+        and fixes to servers and clients. For information on these new features and enhancement, see
+        the <xref
+            href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0101413"
+            scope="external" format="html">HCL Sametime and HCL Sametime Premium 12.0.1 Release
+            Information</xref> article.</shortdesc>
+    <conbody>
+        <p>For a listing of fixes provided in 12.0.1, refer to the  <xref
+                href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0101468"
+                scope="external" format="html">HCL Sametime and HCL Sametime Premium 12.0.1 Fix
+                List</xref>.</p>
+    </conbody>
+</concept>

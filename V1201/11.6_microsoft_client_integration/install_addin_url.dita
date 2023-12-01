@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="install_addin_url" xml:lang="en-us">
+<title>Installing the Sametime Meeting add-in from a URL</title>
+<shortdesc>You can install the HCL <tm tmtype="reg" trademark="Sametime">Sametime Meetings</tm>
+add-in to Microsoft Outlook from a URL.</shortdesc>
+<taskbody>
+<steps>
+<step>
+<cmd>Click <uicontrol>Get Add-ins</uicontrol>.</cmd>
+<info><image href="Images/getaddins.png" placement="inline" align="left" id="image_lnb_vch_spb"
+alt="Graphic showing Get Add-ins icon"/></info>
+</step>
+<step>
+<cmd>In the <wintitle>Add-Ins</wintitle> window, click <uicontrol>My add-ins</uicontrol>.</cmd>
+<info>
+<image href="Images/addin.png" placement="break" align="left" id="addin"
+alt="Graphic showing My add-ins window"/>
+</info>
+</step>
+<step>
+<cmd>In the Custom add-ins section, click <uicontrol>Add a custom add-in</uicontrol>. </cmd>
+<info>
+<image href="Images/custom_addin.png" placement="break" align="left" id="custom_addin"
+alt="Graphi showing Custom add-ins window"/>
+</info>
+</step>
+<step>
+<cmd>From the drop-down menu select <uicontrol>Add from URL</uicontrol>.</cmd>
+<info>
+<image href="Images/add_url.png" placement="break" align="left" id="add_url"
+alt="Graphic showing Add from URL link"/>
+</info>
+</step>
+<step>
+<cmd>Enter the URL for the add-in manifest file and click <uicontrol>OK</uicontrol>. The manifest
+file is located where the user hosts the application.</cmd>
+<info>For
+example:<codeblock>https://<varname>sametimemeeting_hostname</varname>/outlook/manifest.xml</codeblock><image
+href="Images/add_url_manifest.png" placement="break" align="left" id="add_url_manifest"
+alt="Graphic showing Add private add-in from a URL window"/></info>
+</step>
+<step>
+<cmd>A warning message displays on screen. Click <uicontrol>Install</uicontrol>. </cmd>
+<info>
+<image href="Images/warning.png" placement="break" align="left" id="warning"
+alt="Graphic showing warning message"/>
+</info>
+</step>
+<step>
+<cmd>After the installation completes, the HCL Sametime Meetings add-in is listed under the
+<uicontrol>Custom add-ins</uicontrol> section.</cmd>
+<info>
+<image href="Images/sametimemeetings_addin.png" placement="break" align="left"
+id="sametimemeetings_addin" alt="Graphic showing HCL Sametime Meeting added "/>
+</info>
+</step>
+</steps>
+<result>You can now add a Sametime meeting when scheduling a meeting in Outlook. The Sametime
+Meeting icon is located in the meeting scheduler task bar. Click the icon to add a meeting room to
+the meeting invitation.<image href="Images/outlook_taskbar_addin.jpg"
+alt="Outllook meeting schedule with Sametime Meeting icon in task bar"/></result>
+</taskbody>
+<?tm 1372177686 0?>
+</task>
+<?Pub *0000001896?>

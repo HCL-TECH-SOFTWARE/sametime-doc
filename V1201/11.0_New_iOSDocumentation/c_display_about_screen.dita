@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="display_about_screen" xml:lang="en-us">
+ <title>Displaying Sametime product information</title>
+ <shortdesc>You can find information about the installed HCL Sametime product on the
+   <wintitle>About</wintitle> screen.</shortdesc>
+ <conbody>
+  <p>Tap the menu icon ( <image href="Images/menu_icon.jpg" id="image_cnd_1cr_ktb" alt="menu icon"
+   />) and select <uicontrol>About HCL Sametime</uicontrol>.</p>
+    <p>The <wintitle>About</wintitle> screen displays the product name, third-party notices
+      information, the product version, and build level. You must have this information  if you
+      contact HCL support.</p>
+ </conbody>
+</concept>
+<?Pub *0000001020?>

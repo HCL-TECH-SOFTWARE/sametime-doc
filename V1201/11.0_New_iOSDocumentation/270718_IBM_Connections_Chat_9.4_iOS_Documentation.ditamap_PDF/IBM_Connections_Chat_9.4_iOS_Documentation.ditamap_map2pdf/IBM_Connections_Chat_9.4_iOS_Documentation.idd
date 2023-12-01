@@ -1,0 +1,858 @@
+<!DOCTYPE IBMIDDOC PUBLIC "+//ISBN 0-933186::IBM//DTD IBMIDDoc//EN"[
+<!ENTITY dt2mg7 SYSTEM "chaticon.eps" NDATA graphics>
+<!ENTITY dt2mg13 SYSTEM "Chat_icon.eps" NDATA graphics>
+<!ENTITY dt2mg22 SYSTEM "happy_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg23 SYSTEM "winking_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg24 SYSTEM "broadsmily_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg25 SYSTEM "angry_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg26 SYSTEM "half_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg27 SYSTEM "eyebrow_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg28 SYSTEM "sad_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg29 SYSTEM "blushing_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg30 SYSTEM "goofy_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg31 SYSTEM "surprised_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg32 SYSTEM "tongueout_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg33 SYSTEM "idea_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg34 SYSTEM "yes_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg35 SYSTEM "no_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg36 SYSTEM "thinking_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg37 SYSTEM "crying_emoticon.eps" NDATA graphics>
+<!ENTITY dt2mg43 SYSTEM "sout.gif" NDATA graphics>
+<!ENTITY dt2mg44 SYSTEM "pdf.gif" NDATA graphics>
+
+]><ibmiddoc docstyle="ibm8x11" noteindent="no-noteindent" xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1" language="ENGLISH">
+
+<prolog xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1">
+<ibmbibentry xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1">
+<doctitle xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1"><titleblk xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1"><title xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="title:1">IBM Connections Chat 9.4 iOS Documentation</title></titleblk></doctitle></ibmbibentry><propdefs xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1"></propdefs><revdefs xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1"></revdefs>
+<ldescs xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1"></ldescs>
+<copyrdefs xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1"></copyrdefs>
+<idxdefs xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1"></idxdefs></prolog>
+<frontm xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1"><toc layout="twocol" xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1"><gendtitle xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1"></toc></frontm>
+<body xtrf="IBM_Connections_Chat_9.4_iOS_Documentation.ditamap" xtrc="map:1">
+
+<d xtrf="c_getting_started.dita" xtrc="concept:1" id="getting_started">
+<dprolog xtrf="c_getting_started.dita" xtrc="concept:1"><titleblk xtrf="c_getting_started.dita" xtrc="concept:1"><title xtrf="c_getting_started.dita" xtrc="title:1">Getting started</title></titleblk><metadata type="concept" xtrf="c_getting_started.dita" xtrc="conbody:1"></dprolog><dintro xtrf="c_getting_started.dita" xtrc="shortdesc:1">
+<p xtrf="c_getting_started.dita" xtrc="shortdesc:1">IBM Connections Chat enables you to use Connections awareness and chat features on Mobile
+devices This documentation describes how to install and use Connections Chat on a mobile
+device.</p></dintro><dbody xtrf="c_getting_started.dita" xtrc="concept:1">
+
+<d xtrf="c_system_requirements.dita" xtrc="concept:1" id="system_requirements">
+<dprolog xtrf="c_system_requirements.dita" xtrc="concept:1"><titleblk xtrf="c_system_requirements.dita" xtrc="concept:1"><title xtrf="c_system_requirements.dita" xtrc="title:1">System requirements</title></titleblk><metadata type="concept" xtrf="c_system_requirements.dita" xtrc="conbody:1"></dprolog><dintro xtrf="c_system_requirements.dita" xtrc="shortdesc:1">
+<p xtrf="c_system_requirements.dita" xtrc="shortdesc:1">Connections Chat for iOS supports Apple iPhone, iPod Touch, or iPad with iOS 6.0 or
+later.</p></dintro><dbody xtrf="c_system_requirements.dita" xtrc="concept:1"></dbody></d>
+
+<d xtrf="c_installing_connections_chat.dita" xtrc="concept:1" id="installing_connections_chat">
+<dprolog xtrf="c_installing_connections_chat.dita" xtrc="concept:1"><titleblk xtrf="c_installing_connections_chat.dita" xtrc="concept:1"><title xtrf="c_installing_connections_chat.dita" xtrc="title:1">Installing Connections Chat on your device</title></titleblk><metadata type="concept" xtrf="c_installing_connections_chat.dita" xtrc="conbody:1"></dprolog><dintro xtrf="c_installing_connections_chat.dita" xtrc="shortdesc:1">
+<p xtrf="c_installing_connections_chat.dita" xtrc="shortdesc:1">To use IBM Connections Chat, first install Connections Chat on your iPhone
+device.</p></dintro><dbody xtrf="c_installing_connections_chat.dita" xtrc="concept:1">
+<p xtrf="c_installing_connections_chat.dita" xtrc="p:1">To install Connections Chat on your device, obtain the application through either through iTunes
+or the Apple App Store application. Additionally, your device may come preloaded with the app. </p></dbody></d>
+
+<d xtrf="t_adding_server_apple_device.dita" xtrc="task:1" id="adding_server_apple_device">
+<dprolog xtrf="t_adding_server_apple_device.dita" xtrc="task:1"><titleblk xtrf="t_adding_server_apple_device.dita" xtrc="task:1"><title xtrf="t_adding_server_apple_device.dita" xtrc="title:1">Adding a server on an Apple device</title></titleblk><metadata type="task" xtrf="t_adding_server_apple_device.dita" xtrc="taskbody:1"></dprolog><dintro xtrf="t_adding_server_apple_device.dita" xtrc="shortdesc:1">
+<p xtrf="t_adding_server_apple_device.dita" xtrc="shortdesc:1">You can change the server connection information, but typically you use the connection
+information that was set up by your administrator.</p></dintro><dbody xtrf="t_adding_server_apple_device.dita" xtrc="task:1">
+<p xtrf="t_adding_server_apple_device.dita" xtrc="context:1"><bridge xtrf="t_adding_server_apple_device.dita" xtrc="context:1"><title xtrf="t_adding_server_apple_device.dita" xtrc="context:1">About this task</title><p xtrf="t_adding_server_apple_device.dita" xtrc="p:1">Choose which kind of server you want to add:</p></bridge></p>
+<p xtrf="t_adding_server_apple_device.dita" xtrc="steps:1"><bridge xtrf="t_adding_server_apple_device.dita" xtrc="steps:1"><title xtrf="t_adding_server_apple_device.dita" xtrc="steps:1">Procedure</title><ol xtrf="t_adding_server_apple_device.dita" xtrc="steps:1">
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:1"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:1">From the login panel, choose the <ph xtrf="t_adding_server_apple_device.dita" xtrc="uicontrol:1" style="bold">Community</ph> entry.</ph></li>
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:2"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:2">In the Communities panel, press <ph xtrf="t_adding_server_apple_device.dita" xtrc="uicontrol:2" style="bold">Add Community</ph>.</ph></li>
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:3"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:3">Choose either <ph xtrf="t_adding_server_apple_device.dita" xtrc="uicontrol:3" style="bold">My company's server</ph> or <ph xtrf="t_adding_server_apple_device.dita" xtrc="uicontrol:4" style="bold">IBM Connections
+Cloud</ph>.</ph></li></ol></bridge></p>
+
+<d xtrf="t_adding_server_apple_device.dita" xtrc="task:2" id="my_company_server">
+<dprolog xtrf="t_adding_server_apple_device.dita" xtrc="task:2"><titleblk xtrf="t_adding_server_apple_device.dita" xtrc="task:2"><title xtrf="t_adding_server_apple_device.dita" xtrc="title:2">My company's server</title></titleblk><metadata type="task" xtrf="t_adding_server_apple_device.dita" xtrc="task:2"></dprolog><dbody xtrf="t_adding_server_apple_device.dita" xtrc="task:2">
+<p xtrf="t_adding_server_apple_device.dita" xtrc="context:2"><bridge xtrf="t_adding_server_apple_device.dita" xtrc="context:2"><title xtrf="t_adding_server_apple_device.dita" xtrc="context:2">About this task</title><p xtrf="t_adding_server_apple_device.dita" xtrc="p:2">If you select <ph xtrf="t_adding_server_apple_device.dita" xtrc="uicontrol:5" style="bold">My company's server</ph>, you will need to set values as
+specified by your system administrator in the resulting dialog:</p></bridge></p>
+<p xtrf="t_adding_server_apple_device.dita" xtrc="steps:2"><bridge xtrf="t_adding_server_apple_device.dita" xtrc="steps:2"><title xtrf="t_adding_server_apple_device.dita" xtrc="steps:2">Procedure</title><ol xtrf="t_adding_server_apple_device.dita" xtrc="steps:2">
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:4"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:4">For Host Server, enter the server host name. </ph></li>
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:5"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:5">For Port, enter the server port. </ph></li>
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:6"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:6">Select Secure Connection on or off. </ph></li>
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:7"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:7">Enable the Direct connection or Authenticating Proxy option to use a direct socket connection.</ph></li>
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:8"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:8">Enter the Photo Port. </ph></li>
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:9"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:9">Enter your User ID and/or password if you want Connections to remember them. </ph></li>
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:10"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:10">Enter a name for the community if you want to name the community. </ph></li>
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:11"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:11">Press Add to add the community.</ph> <note xtrf="t_adding_server_apple_device.dita" xtrc="note:1"><notebody xtrf="t_adding_server_apple_device.dita" xtrc="note:1">Your system administrator may provide a link which fills in some of the above values for you
+automatically. They may also add Pre-configured communities to your community list.</notebody></note></li></ol></bridge></p></dbody></d>
+
+<d xtrf="t_adding_server_apple_device.dita" xtrc="task:3" id="connections_cloud">
+<dprolog xtrf="t_adding_server_apple_device.dita" xtrc="task:3"><titleblk xtrf="t_adding_server_apple_device.dita" xtrc="task:3"><title xtrf="t_adding_server_apple_device.dita" xtrc="title:3">IBM Connections Cloud</title></titleblk><metadata type="task" xtrf="t_adding_server_apple_device.dita" xtrc="task:3"></dprolog><dbody xtrf="t_adding_server_apple_device.dita" xtrc="task:3">
+<p xtrf="t_adding_server_apple_device.dita" xtrc="context:3"><bridge xtrf="t_adding_server_apple_device.dita" xtrc="context:3"><title xtrf="t_adding_server_apple_device.dita" xtrc="context:3">About this task</title><p xtrf="t_adding_server_apple_device.dita" xtrc="p:3">If you select <ph xtrf="t_adding_server_apple_device.dita" xtrc="uicontrol:6" style="bold">IBM Connections Cloud</ph>, configuration is more automatic. You
+must be connected to a network so that the IBM Connections Cloud community can be created.</p><p xtrf="t_adding_server_apple_device.dita" xtrc="p:4">Specify the correct values for the below options:</p></bridge></p>
+<p xtrf="t_adding_server_apple_device.dita" xtrc="steps:3"><bridge xtrf="t_adding_server_apple_device.dita" xtrc="steps:3"><title xtrf="t_adding_server_apple_device.dita" xtrc="steps:3">Procedure</title><ol xtrf="t_adding_server_apple_device.dita" xtrc="steps:3">
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:12"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:12">Enter your user ID. </ph></li>
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:13"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:13">Enter your password if you want Connections to remember it. </ph></li>
+<li xtrf="t_adding_server_apple_device.dita" xtrc="step:14"><ph xtrf="t_adding_server_apple_device.dita" xtrc="cmd:14">Press <ph xtrf="t_adding_server_apple_device.dita" xtrc="uicontrol:7" style="bold">Add</ph> to add the community.</ph> <ph xtrf="t_adding_server_apple_device.dita" xtrc="info:2">You can create multiple communities using the above procedures. IBM Connections Cloud
+communities display in the Communities panel along with local server communities. If you have
+multiple communities, click on the community in the <ph xtrf="t_adding_server_apple_device.dita" xtrc="uicontrol:8" style="bold">Communities</ph> panel that
+you want to use.</ph></li></ol></bridge></p></dbody></d></dbody></d>
+
+<d xtrf="starting_chat_connections.dita" xtrc="concept:1" id="starting_connections_chat">
+<dprolog xtrf="starting_chat_connections.dita" xtrc="concept:1"><titleblk xtrf="starting_chat_connections.dita" xtrc="concept:1"><title xtrf="starting_chat_connections.dita" xtrc="title:1">Starting Connections Chat</title></titleblk><metadata type="concept" xtrf="starting_chat_connections.dita" xtrc="conbody:1"></dprolog><dintro xtrf="starting_chat_connections.dita" xtrc="shortdesc:1">
+<p xtrf="starting_chat_connections.dita" xtrc="shortdesc:1">After installing Connections Chat, you can start the application.</p></dintro><dbody xtrf="starting_chat_connections.dita" xtrc="concept:1">
+<p xtrf="starting_chat_connections.dita" xtrc="p:1">On most iOS devices, Connections Chat will be installed on your home screen. You may need to
+scroll to the right to see it. Look for the IBM Chat icon: 
+<fig xtrf="starting_chat_connections.dita" xtrc="fig:1" id="starting_connections_chat__fig_aqn_kfx_rhb"><mmobj xtrf="starting_chat_connections.dita" xtrc="image:1" placement="standalone" halign="left"><objref obj="dt2mg7" xtrf="starting_chat_connections.dita" xtrc="image:1"><textalt xtrf="starting_chat_connections.dita" xtrc="image:1">chaticon</textalt></mmobj></fig></p>
+<p xtrf="starting_chat_connections.dita" xtrc="p:2">After starting Connections, log in.</p></dbody></d>
+
+<d xtrf="t_configuring_connections.dita" xtrc="task:1" id="configuring_connections">
+<dprolog xtrf="t_configuring_connections.dita" xtrc="task:1"><titleblk xtrf="t_configuring_connections.dita" xtrc="task:1"><title xtrf="t_configuring_connections.dita" xtrc="title:1">Configuring Connections</title></titleblk><metadata type="task" xtrf="t_configuring_connections.dita" xtrc="taskbody:1"></dprolog><dintro xtrf="t_configuring_connections.dita" xtrc="shortdesc:1">
+<p xtrf="t_configuring_connections.dita" xtrc="shortdesc:1">You can configure a variety of settings for Connections from your device.</p></dintro><dbody xtrf="t_configuring_connections.dita" xtrc="task:1">
+<p xtrf="t_configuring_connections.dita" xtrc="context:1"><bridge xtrf="t_configuring_connections.dita" xtrc="context:1"><title xtrf="t_configuring_connections.dita" xtrc="context:1">About this task</title><p xtrf="t_configuring_connections.dita" xtrc="p:1">To configure Connections Chat on your device, perform the following procedure: </p></bridge></p>
+<p xtrf="t_configuring_connections.dita" xtrc="steps:1"><bridge xtrf="t_configuring_connections.dita" xtrc="steps:1"><title xtrf="t_configuring_connections.dita" xtrc="steps:1">Procedure</title><ol xtrf="t_configuring_connections.dita" xtrc="steps:1">
+<li xtrf="t_configuring_connections.dita" xtrc="step:1"><ph xtrf="t_configuring_connections.dita" xtrc="cmd:1">Open the IBM Chat application.</ph></li>
+<li xtrf="t_configuring_connections.dita" xtrc="step:2"><ph xtrf="t_configuring_connections.dita" xtrc="cmd:2">On the iPhone, select the Settings button on the bottom right. If your server has Connections
+Voice enabled, select More... then Settings. <?idd:break>On the iPad, tap the gear icon. Settings
+that have to do with your online status are located on the Status panel.</ph></li>
+<li xtrf="t_configuring_connections.dita" xtrc="step:3"><ph xtrf="t_configuring_connections.dita" xtrc="cmd:3">From the Settings menu, you can configure the following items:</ph> 
+<table xtrf="t_configuring_connections.dita" xtrc="table:1" id="configuring_connections__table_cct_pby_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="t_configuring_connections.dita" xtrc="title:2">Settings Menu</cap><tgroup cols="2" xtrf="t_configuring_connections.dita" xtrc="tgroup:1"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="t_configuring_connections.dita" xtrc="colspec:1"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="t_configuring_connections.dita" xtrc="colspec:2"><thead xtrf="t_configuring_connections.dita" xtrc="thead:1">
+<row xtrf="t_configuring_connections.dita" xtrc="row:1">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:1" colname="col1">Option</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:2" colname="col2">Description</entry></row></thead><tbody xtrf="t_configuring_connections.dita" xtrc="tbody:1">
+<row xtrf="t_configuring_connections.dita" xtrc="row:2">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:3" colname="col1">Community </entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:4" colname="col2">Allows the user to switch active communities. (iPad only)</entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:3">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:5" colname="col1">Offline Contacts</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:6" colname="col2">Set whether or not to show offline contacts in your contact list.</entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:4">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:7" colname="col1">Status Messages</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:8" colname="col2">Set whether or not to show the status messages for people in your contact list.</entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:5">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:9" colname="col1">Contact Photos</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:10" colname="col2">Set whether or not to show the photos of people in your contact list.</entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:6">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:11" colname="col1">Remain Online</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:12" colname="col2">Set the length of time you want to remain online in Connections Chat.</entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:7">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:13" colname="col1">Chat History</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:14" colname="col2">Allow you turn your chat history collection on and off, as well as set the interval to delete
+the history.</entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:8">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:15" colname="col1">Voice and Video</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:16" colname="col2">Only available on iPads. Provides the following additional options:
+<ul xtrf="t_configuring_connections.dita" xtrc="ul:1">
+<li xtrf="t_configuring_connections.dita" xtrc="li:1">May contain the option <ph xtrf="t_configuring_connections.dita" xtrc="uicontrol:1" style="bold">Method for Placing Calls</ph>. If your device is
+configured for only one dialing method, the option will not be present. Options are: 
+<ul xtrf="t_configuring_connections.dita" xtrc="ul:2">
+<li xtrf="t_configuring_connections.dita" xtrc="li:2">Always Ask</li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:3">Connections Voice Chat</li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:4">OpenScape Mobile</li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:5">iPhone (if the device supports phone dialing).</li></ul></li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:6">The option <ph xtrf="t_configuring_connections.dita" xtrc="uicontrol:2" style="bold">Connections Voice and Video</ph> which contains the following switches
+<ul xtrf="t_configuring_connections.dita" xtrc="ul:3">
+<li xtrf="t_configuring_connections.dita" xtrc="li:7">Enable Voice and Video</li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:8">Enable Voice Only (allows you to receive voice calls but not send video)</li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:9">Wi-Fi Only Video Chats (restricts video chats if you are not connected to Wi-Fi</li></ul></li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:10">The switch <ph xtrf="t_configuring_connections.dita" xtrc="uicontrol:3" style="bold">Save Call History</ph>. If this is set to off, no call history will
+be saved. Calls older than 14 days will automatically be deleted.</li></ul></entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:9">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:17" colname="col1">Connections Voice</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:18" colname="col2">Only available on iPhones. Provides the following additional options: 
+<ul xtrf="t_configuring_connections.dita" xtrc="ul:4">
+<li xtrf="t_configuring_connections.dita" xtrc="li:11">May contain the option <ph xtrf="t_configuring_connections.dita" xtrc="uicontrol:4" style="bold">Method for Placing Calls</ph>. If your device is
+configured for only one dialing method, the option will not be present. Options are: 
+<ul xtrf="t_configuring_connections.dita" xtrc="ul:5">
+<li xtrf="t_configuring_connections.dita" xtrc="li:12">Always Ask</li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:13">Connections Voice Chat</li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:14">OpenScape Mobile</li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:15">iPhone (if the device supports phone dialing).</li></ul></li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:16">The option <ph xtrf="t_configuring_connections.dita" xtrc="uicontrol:5" style="bold">Connections Voice</ph> which contains the following switches
+<ul xtrf="t_configuring_connections.dita" xtrc="ul:6">
+<li xtrf="t_configuring_connections.dita" xtrc="li:17">Enable Voice</li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:18">Wi-Fi Only Video Chats (restricts video chats if you are not connected to Wi-Fi</li></ul></li>
+<li xtrf="t_configuring_connections.dita" xtrc="li:19">The switch <ph xtrf="t_configuring_connections.dita" xtrc="uicontrol:6" style="bold">Save Call History</ph>. If this is set to on, call history older
+than 14 days will be deleted.</li></ul></entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:10">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:19" colname="col1">Help and Support </entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:20" colname="col2">Displays the Connections Chat documentation, and allows you to mail Connections debug log
+files.<note xtrf="t_configuring_connections.dita" xtrc="note:1"><notebody xtrf="t_configuring_connections.dita" xtrc="note:1">On iPads, Help and Support is accessed using the Gear button in the lower part of the
+screen.</notebody></note></entry></row></tbody></tgroup></table></li>
+<li xtrf="t_configuring_connections.dita" xtrc="step:4"><ph xtrf="t_configuring_connections.dita" xtrc="cmd:4">From the Status panel, you can configure the following items: </ph> 
+<table xtrf="t_configuring_connections.dita" xtrc="table:2" id="configuring_connections__table_wtw_jcy_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="t_configuring_connections.dita" xtrc="title:3">Status Panel Settings</cap><tgroup cols="2" xtrf="t_configuring_connections.dita" xtrc="tgroup:2"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="t_configuring_connections.dita" xtrc="colspec:3"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="t_configuring_connections.dita" xtrc="colspec:4"><thead xtrf="t_configuring_connections.dita" xtrc="thead:2">
+<row xtrf="t_configuring_connections.dita" xtrc="row:11">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:21" colname="col1">Option</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:22" colname="col2">Description</entry></row></thead><tbody xtrf="t_configuring_connections.dita" xtrc="tbody:2">
+<row xtrf="t_configuring_connections.dita" xtrc="row:12">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:23" colname="col1">Community </entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:24" colname="col2">Allows the user to switch active communities. (iPad only)</entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:13">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:25" colname="col1">Share Location </entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:26" colname="col2">Sets whether or not your location (city/town) is provided to other users who are logged into
+Connections Chat.</entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:14">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:27" colname="col1">Background Status </entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:28" colname="col2">Sets the status that is used on the proxy server when your device cannot be reached. This
+will never make you more available than your current status. For example, if your current status is
+"Away" it will never make you "Available".</entry></row></tbody></tgroup></table></li></ol></bridge></p>
+
+<d xtrf="t_configuring_connections.dita" xtrc="task:2" id="device_settings">
+<dprolog xtrf="t_configuring_connections.dita" xtrc="task:2"><titleblk xtrf="t_configuring_connections.dita" xtrc="task:2"><title xtrf="t_configuring_connections.dita" xtrc="title:4">Connections chat from device settings</title></titleblk><metadata type="task" xtrf="t_configuring_connections.dita" xtrc="task:2"></dprolog><dbody xtrf="t_configuring_connections.dita" xtrc="task:2">
+<p xtrf="t_configuring_connections.dita" xtrc="context:2"><bridge xtrf="t_configuring_connections.dita" xtrc="context:2"><title xtrf="t_configuring_connections.dita" xtrc="context:2">About this task</title><p xtrf="t_configuring_connections.dita" xtrc="p:2">You can also configure Connections Chat from your device's Settings page. To do so, perform the
+following procedure:</p></bridge></p>
+<p xtrf="t_configuring_connections.dita" xtrc="steps:2"><bridge xtrf="t_configuring_connections.dita" xtrc="steps:2"><title xtrf="t_configuring_connections.dita" xtrc="steps:2">Procedure</title><ol xtrf="t_configuring_connections.dita" xtrc="steps:2">
+<li xtrf="t_configuring_connections.dita" xtrc="step:5"><ph xtrf="t_configuring_connections.dita" xtrc="cmd:5">Tap the Settings application on your the home screen of your device.</ph></li>
+<li xtrf="t_configuring_connections.dita" xtrc="step:6"><ph xtrf="t_configuring_connections.dita" xtrc="cmd:6">In the left sidebar, under Apps, tap IBM Chat to open the Connections Chat application settings
+menu.</ph></li>
+<li xtrf="t_configuring_connections.dita" xtrc="step:7"><ph xtrf="t_configuring_connections.dita" xtrc="cmd:7">From this Settings menu, you can configure the following items:</ph> 
+<table xtrf="t_configuring_connections.dita" xtrc="table:3" id="device_settings__table_or4_wfy_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="t_configuring_connections.dita" xtrc="title:5">Application Settings Menu </cap><tgroup cols="2" xtrf="t_configuring_connections.dita" xtrc="tgroup:3"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="t_configuring_connections.dita" xtrc="colspec:5"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="t_configuring_connections.dita" xtrc="colspec:6"><thead xtrf="t_configuring_connections.dita" xtrc="thead:3">
+<row xtrf="t_configuring_connections.dita" xtrc="row:15">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:29" colname="col1">Option</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:30" colname="col2">Description</entry></row></thead><tbody xtrf="t_configuring_connections.dita" xtrc="tbody:3">
+<row xtrf="t_configuring_connections.dita" xtrc="row:16">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:31" colname="col1">Keyboard</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:32" colname="col2">Allows you to select whether pressing "Return" sends a chat message, or inserts a return
+character so you can have multi-line messages. </entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:17">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:33" colname="col1">Background Session</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:34" colname="col2">If turned Off, Connections Chat will not run in the background, and you will appear offline
+if you leave the Connections Chat app.</entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:18">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:35" colname="col1">Logging</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:36" colname="col2">Enables additional logging. Normally keep off except when troubleshooting a problem with IBM
+support.</entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:19">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:37" colname="col1">Connect at Launch</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:38" colname="col2">If turned On, Connections Chat will attempt to connect to the last server it was logged in
+to. If turned Off, it will not attempt this connection. This will typically be turned On except when
+debugging a connection problem with IBM Support.</entry></row>
+<row xtrf="t_configuring_connections.dita" xtrc="row:20">
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:39" colname="col1">About IBM Connections Chat</entry>
+<entry xtrf="t_configuring_connections.dita" xtrc="entry:40" colname="col2">Provides basic information about your version of IBM Connections Chat. </entry></row></tbody></tgroup></table></li></ol></bridge></p></dbody></d></dbody></d></dbody></d>
+
+<d xtrf="c_managing_availability_network.dita" xtrc="concept:1" id="managing_availability_network">
+<dprolog xtrf="c_managing_availability_network.dita" xtrc="concept:1"><titleblk xtrf="c_managing_availability_network.dita" xtrc="concept:1"><title xtrf="c_managing_availability_network.dita" xtrc="title:1">Managing availability on the network</title></titleblk><metadata type="concept" xtrf="c_managing_availability_network.dita" xtrc="conbody:1"></dprolog><dintro xtrf="c_managing_availability_network.dita" xtrc="shortdesc:1">
+<p xtrf="c_managing_availability_network.dita" xtrc="shortdesc:1">You can log in, change your status, and set up alerts that notify you when others become
+available.</p></dintro><dbody xtrf="c_managing_availability_network.dita" xtrc="concept:1">
+
+<d xtrf="t_loggingin.dita" xtrc="task:1" id="loggingin">
+<dprolog xtrf="t_loggingin.dita" xtrc="task:1"><titleblk xtrf="t_loggingin.dita" xtrc="task:1"><title xtrf="t_loggingin.dita" xtrc="title:1">Logging in</title></titleblk><metadata type="task" xtrf="t_loggingin.dita" xtrc="taskbody:1"></dprolog><dintro xtrf="t_loggingin.dita" xtrc="shortdesc:1">
+<p xtrf="t_loggingin.dita" xtrc="shortdesc:1">After you start IBM Connections Chat, the login panel is displayed.</p></dintro><dbody xtrf="t_loggingin.dita" xtrc="task:1">
+<p xtrf="t_loggingin.dita" xtrc="context:1"><bridge xtrf="t_loggingin.dita" xtrc="context:1"><title xtrf="t_loggingin.dita" xtrc="context:1">About this task</title><p xtrf="t_loggingin.dita" xtrc="p:1">You must start Connections Chat before logging in. To find Connections Chat on your device, look
+for the IBM Chat icon:
+<fig xtrf="t_loggingin.dita" xtrc="fig:1" id="loggingin__fig_elx_lhy_rhb"><mmobj xtrf="t_loggingin.dita" xtrc="image:1" placement="standalone" halign="left"><objref obj="dt2mg13" xtrf="t_loggingin.dita" xtrc="image:1"><textalt xtrf="t_loggingin.dita" xtrc="image:1">ChatIcon</textalt></mmobj></fig></p><p xtrf="t_loggingin.dita" xtrc="p:2">To log in: </p></bridge></p>
+<p xtrf="t_loggingin.dita" xtrc="steps:1"><bridge xtrf="t_loggingin.dita" xtrc="steps:1"><title xtrf="t_loggingin.dita" xtrc="steps:1">Procedure</title><ol xtrf="t_loggingin.dita" xtrc="steps:1">
+<li xtrf="t_loggingin.dita" xtrc="step:1"><ph xtrf="t_loggingin.dita" xtrc="cmd:1">Ensure a Connections community has been created and configured. Your administrator should have
+provided you these details. </ph></li>
+<li xtrf="t_loggingin.dita" xtrc="step:2"><ph xtrf="t_loggingin.dita" xtrc="cmd:2">Next to <ph xtrf="t_loggingin.dita" xtrc="uicontrol:1" style="bold">User ID</ph>, enter your user ID.</ph></li>
+<li xtrf="t_loggingin.dita" xtrc="step:3"><ph xtrf="t_loggingin.dita" xtrc="cmd:3">Next to <ph xtrf="t_loggingin.dita" xtrc="uicontrol:2" style="bold">Password</ph>, enter your password.</ph></li>
+<li xtrf="t_loggingin.dita" xtrc="step:4"><ph xtrf="t_loggingin.dita" xtrc="cmd:4">Change the <ph xtrf="t_loggingin.dita" xtrc="uicontrol:3" style="bold">Log in status</ph> option to indicate your availability when you
+log in. The default status is "Available."</ph> <note xtrf="t_loggingin.dita" xtrc="note:1"><notebody xtrf="t_loggingin.dita" xtrc="note:1">When you log in, you might see the following message: "Unable to retrieve contact list." The
+message is displayed whenever you log in until you set up a contact list.</notebody></note></li></ol></bridge></p></dbody></d>
+
+<d xtrf="c_using_mainscreen.dita" xtrc="concept:1" id="using_main_screen">
+<dprolog xtrf="c_using_mainscreen.dita" xtrc="concept:1"><titleblk xtrf="c_using_mainscreen.dita" xtrc="concept:1"><title xtrf="c_using_mainscreen.dita" xtrc="title:1">Using the main screen</title></titleblk><metadata type="concept" xtrf="c_using_mainscreen.dita" xtrc="conbody:1"></dprolog><dintro xtrf="c_using_mainscreen.dita" xtrc="shortdesc:1">
+<p xtrf="c_using_mainscreen.dita" xtrc="shortdesc:1">The main screen gives you access to all of IBM Connections Chat
+functionality.</p></dintro><dbody xtrf="c_using_mainscreen.dita" xtrc="concept:1">
+<p xtrf="c_using_mainscreen.dita" xtrc="p:1">The following options are available in the left action bar on iPads. On an iPhone, they are
+available from either the tabs at the bottom of the screen or from the
+<ph xtrf="c_using_mainscreen.dita" xtrc="uicontrol:1" style="bold">More</ph>... menu.</p>
+<table xtrf="c_using_mainscreen.dita" xtrc="table:1" id="using_main_screen__table_ipk_dpb_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="c_using_mainscreen.dita" xtrc="title:2">Main screen options</cap><tgroup cols="2" xtrf="c_using_mainscreen.dita" xtrc="tgroup:1"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="c_using_mainscreen.dita" xtrc="colspec:1"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="c_using_mainscreen.dita" xtrc="colspec:2"><thead xtrf="c_using_mainscreen.dita" xtrc="thead:1">
+<row xtrf="c_using_mainscreen.dita" xtrc="row:1">
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:1" colname="col1">Option</entry>
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:2" colname="col2">Description</entry></row></thead><tbody xtrf="c_using_mainscreen.dita" xtrc="tbody:1">
+<row xtrf="c_using_mainscreen.dita" xtrc="row:2">
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:3" colname="col1">Search</entry>
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:4" colname="col2">Search your contact list, or your corporate directory for chat partners.</entry></row>
+<row xtrf="c_using_mainscreen.dita" xtrc="row:3">
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:5" colname="col1">Chats</entry>
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:6" colname="col2">Displays the text chat screen, which maintains a list of all active chats you are currently
+engaged in. If you are not participating in any chats, the screen displays a list of recent chats,
+with the most recent at the top.</entry></row>
+<row xtrf="c_using_mainscreen.dita" xtrc="row:4">
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:7" colname="col1">Contacts</entry>
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:8" colname="col2">Opens the Contacts screen, which list your contacts and groups.</entry></row>
+<row xtrf="c_using_mainscreen.dita" xtrc="row:5">
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:9" colname="col1">Favorites</entry>
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:10" colname="col2">Opens your favorite contacts list. </entry></row>
+<row xtrf="c_using_mainscreen.dita" xtrc="row:6">
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:11" colname="col1">Audio Chat</entry>
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:12" colname="col2">Displays the audio chat screen, which displays a list of recent audio chats, with the most
+recent listed at the top. It also shows the dialing keypad. When you are engaged in an audio chat,
+the controls will be on this screen.</entry></row>
+<row xtrf="c_using_mainscreen.dita" xtrc="row:7">
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:13" colname="col1">Video Chat</entry>
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:14" colname="col2">Displays the video chat screen, which displays a list of recent video chats, with the most
+recent listed at the top. When you are engaged in a video chat, you will participate from this
+screen. 
+<p xtrf="c_using_mainscreen.dita" xtrc="p:2">Video chatting is only available on iPads.</p></entry></row>
+<row xtrf="c_using_mainscreen.dita" xtrc="row:8">
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:15" colname="col1">Status</entry>
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:16" colname="col2">Shows your current status on Connections Chat. You can change your status by pressing this
+button.</entry></row>
+<row xtrf="c_using_mainscreen.dita" xtrc="row:9">
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:17" colname="col1">User</entry>
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:18" colname="col2">This option is only available on iPads, and is at the bottom of the action bar. It displays
+three additional options:
+<ul xtrf="c_using_mainscreen.dita" xtrc="ul:1">
+<li xtrf="c_using_mainscreen.dita" xtrc="li:1">Log Out: logs you out of Connections Chat. </li>
+<li xtrf="c_using_mainscreen.dita" xtrc="li:2">Settings: Opens the settings dialog. </li>
+<li xtrf="c_using_mainscreen.dita" xtrc="li:3">Help and Support: Opens a page with links to the IBM Connections website and for sending support
+logs to IBM.</li></ul>
+<p xtrf="c_using_mainscreen.dita" xtrc="p:3">On iPhones, you can reach the <ph xtrf="c_using_mainscreen.dita" xtrc="uicontrol:2" style="bold">Settings</ph> dialog from the
+<ph xtrf="c_using_mainscreen.dita" xtrc="uicontrol:3" style="bold">More</ph>... menu. You can also access the Help and Support page on an iPhone from
+the <ph xtrf="c_using_mainscreen.dita" xtrc="uicontrol:4" style="bold">Settings</ph> dialog.</p></entry></row>
+<row xtrf="c_using_mainscreen.dita" xtrc="row:10">
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:19" colname="col1">Settings</entry>
+<entry xtrf="c_using_mainscreen.dita" xtrc="entry:20" colname="col2">Displays the configuration menu for Connections Chat on your device. </entry></row></tbody></tgroup></table></dbody></d>
+
+<d xtrf="t_addingcontacts.dita" xtrc="task:1" id="adding_contacts">
+<dprolog xtrf="t_addingcontacts.dita" xtrc="task:1"><titleblk xtrf="t_addingcontacts.dita" xtrc="task:1"><title xtrf="t_addingcontacts.dita" xtrc="title:1">Adding contacts</title></titleblk><metadata type="task" xtrf="t_addingcontacts.dita" xtrc="taskbody:1"></dprolog><dintro xtrf="t_addingcontacts.dita" xtrc="shortdesc:1">
+<p xtrf="t_addingcontacts.dita" xtrc="shortdesc:1">A contact is someone whom you have added to one or more of your groups. When you are
+online, by default only contacts that are also online are visible.</p></dintro><dbody xtrf="t_addingcontacts.dita" xtrc="task:1">
+<p xtrf="t_addingcontacts.dita" xtrc="context:1"><bridge xtrf="t_addingcontacts.dita" xtrc="context:1"><title xtrf="t_addingcontacts.dita" xtrc="context:1">About this task</title><p xtrf="t_addingcontacts.dita" xtrc="p:1">After you add a contact, you can start a chat with the contact or display information about the
+contact without searching through the directory.</p><p xtrf="t_addingcontacts.dita" xtrc="p:2">To add a contact to a group:</p></bridge></p>
+<p xtrf="t_addingcontacts.dita" xtrc="steps:1"><bridge xtrf="t_addingcontacts.dita" xtrc="steps:1"><title xtrf="t_addingcontacts.dita" xtrc="steps:1">Procedure</title><ol xtrf="t_addingcontacts.dita" xtrc="steps:1">
+<li xtrf="t_addingcontacts.dita" xtrc="step:1"><ph xtrf="t_addingcontacts.dita" xtrc="cmd:1">From the Contact List, tap on the group to which you want to add the contact. The Group screen
+appears.</ph></li>
+<li xtrf="t_addingcontacts.dita" xtrc="step:2"><ph xtrf="t_addingcontacts.dita" xtrc="cmd:2">Press the <ph xtrf="t_addingcontacts.dita" xtrc="uicontrol:1" style="bold">+</ph> button, then <ph xtrf="t_addingcontacts.dita" xtrc="uicontrol:2" style="bold">Add Contact</ph>.</ph></li>
+<li xtrf="t_addingcontacts.dita" xtrc="step:3"><ph xtrf="t_addingcontacts.dita" xtrc="cmd:3">Enter some of the contact information in the search bar. Enter the name of the contact, given
+name first. You can also enter the first few letters of the given name. Press
+<ph xtrf="t_addingcontacts.dita" xtrc="uicontrol:3" style="bold">Search</ph>.</ph></li>
+<li xtrf="t_addingcontacts.dita" xtrc="step:4"><ph xtrf="t_addingcontacts.dita" xtrc="cmd:4">Tap on the contact you want to add.</ph></li>
+<li xtrf="t_addingcontacts.dita" xtrc="step:5"><ph xtrf="t_addingcontacts.dita" xtrc="cmd:5">Tap <ph xtrf="t_addingcontacts.dita" xtrc="uicontrol:4" style="bold">Add to Contact List</ph>.</ph></li>
+<li xtrf="t_addingcontacts.dita" xtrc="step:6"><ph xtrf="t_addingcontacts.dita" xtrc="cmd:6">Next to Nickname, type a nickname for the contact. A nickname is the name that is displayed in
+the Contact List. The nickname is visible only to you.</ph></li>
+<li xtrf="t_addingcontacts.dita" xtrc="step:7"><ph xtrf="t_addingcontacts.dita" xtrc="cmd:7">Choose the group from the Group name list if you want the contact in a different group. </ph></li>
+<li xtrf="t_addingcontacts.dita" xtrc="step:8"><ph xtrf="t_addingcontacts.dita" xtrc="cmd:8">Press the <ph xtrf="t_addingcontacts.dita" xtrc="uicontrol:5" style="bold">Done</ph> button.</ph></li></ol></bridge></p>
+<p xtrf="t_addingcontacts.dita" xtrc="result:1"><bridge xtrf="t_addingcontacts.dita" xtrc="result:1"><title xtrf="t_addingcontacts.dita" xtrc="result:1">Results</title><p xtrf="t_addingcontacts.dita" xtrc="result:1">The contact is added to the group that you selected.</p></bridge></p></dbody></d>
+
+<d xtrf="t_creating_groups.dita" xtrc="task:1" id="creating_groups">
+<dprolog xtrf="t_creating_groups.dita" xtrc="task:1"><titleblk xtrf="t_creating_groups.dita" xtrc="task:1"><title xtrf="t_creating_groups.dita" xtrc="title:1">Creating groups</title></titleblk><metadata type="task" xtrf="t_creating_groups.dita" xtrc="taskbody:1"></dprolog><dintro xtrf="t_creating_groups.dita" xtrc="shortdesc:1">
+<p xtrf="t_creating_groups.dita" xtrc="shortdesc:1">You can organize your contacts by placing them into groups. You can create a group when
+adding a contact.</p></dintro><dbody xtrf="t_creating_groups.dita" xtrc="task:1">
+<p xtrf="t_creating_groups.dita" xtrc="context:1"><bridge xtrf="t_creating_groups.dita" xtrc="context:1"><title xtrf="t_creating_groups.dita" xtrc="context:1">About this task</title><p xtrf="t_creating_groups.dita" xtrc="p:1">To create a group:</p></bridge></p>
+<p xtrf="t_creating_groups.dita" xtrc="steps:1"><bridge xtrf="t_creating_groups.dita" xtrc="steps:1"><title xtrf="t_creating_groups.dita" xtrc="steps:1">Procedure</title><ol xtrf="t_creating_groups.dita" xtrc="steps:1">
+<li xtrf="t_creating_groups.dita" xtrc="step:1"><ph xtrf="t_creating_groups.dita" xtrc="cmd:1">From the contact list, tap the <ph xtrf="t_creating_groups.dita" xtrc="uicontrol:1" style="bold">+</ph> button.</ph></li>
+<li xtrf="t_creating_groups.dita" xtrc="step:2"><ph xtrf="t_creating_groups.dita" xtrc="cmd:2">Tap <ph xtrf="t_creating_groups.dita" xtrc="uicontrol:2" style="bold">Add Personal Group</ph>.</ph></li>
+<li xtrf="t_creating_groups.dita" xtrc="step:3"><ph xtrf="t_creating_groups.dita" xtrc="cmd:3">Enter the name for the group in the Group Name field.</ph></li>
+<li xtrf="t_creating_groups.dita" xtrc="step:4"><ph xtrf="t_creating_groups.dita" xtrc="cmd:4">Press <ph xtrf="t_creating_groups.dita" xtrc="uicontrol:3" style="bold">Done</ph>. </ph></li></ol></bridge></p>
+<p xtrf="t_creating_groups.dita" xtrc="result:1"><bridge xtrf="t_creating_groups.dita" xtrc="result:1"><title xtrf="t_creating_groups.dita" xtrc="result:1">Results</title><p xtrf="t_creating_groups.dita" xtrc="result:1">The new group is created.</p><p xtrf="t_creating_groups.dita" xtrc="p:2">You can now add more contacts to the group. You can also add
+groups that your administrator has defined by instead tapping <ph xtrf="t_creating_groups.dita" xtrc="uicontrol:4" style="bold">Add Public
+Group</ph> and entering the name that the administrator has specified. </p></bridge></p></dbody></d>
+
+<d xtrf="t_changing_onlinestatus.dita" xtrc="task:1" id="changing_onlinestatus">
+<dprolog xtrf="t_changing_onlinestatus.dita" xtrc="task:1"><titleblk xtrf="t_changing_onlinestatus.dita" xtrc="task:1"><title xtrf="t_changing_onlinestatus.dita" xtrc="title:1">Changing your online status</title></titleblk><metadata type="task" xtrf="t_changing_onlinestatus.dita" xtrc="taskbody:1"></dprolog><dintro xtrf="t_changing_onlinestatus.dita" xtrc="shortdesc:1">
+<p xtrf="t_changing_onlinestatus.dita" xtrc="shortdesc:1">Your online status includes your availability, your location, and is displayed in the
+left Status action bar on an iPad, or at the top of the Contact List on an iPhone. People who are
+logged in can see your online status.</p></dintro><dbody xtrf="t_changing_onlinestatus.dita" xtrc="task:1">
+<p xtrf="t_changing_onlinestatus.dita" xtrc="context:1"><bridge xtrf="t_changing_onlinestatus.dita" xtrc="context:1"><title xtrf="t_changing_onlinestatus.dita" xtrc="context:1">About this task</title><p xtrf="t_changing_onlinestatus.dita" xtrc="p:1">In addition to changing your online status, you can customize the message that is displayed with
+your availability and manage your list of locations.</p><p xtrf="t_changing_onlinestatus.dita" xtrc="p:2">To change your online status message:</p></bridge></p>
+<p xtrf="t_changing_onlinestatus.dita" xtrc="steps:1"><bridge xtrf="t_changing_onlinestatus.dita" xtrc="steps:1"><title xtrf="t_changing_onlinestatus.dita" xtrc="steps:1">Procedure</title><ol xtrf="t_changing_onlinestatus.dita" xtrc="steps:1">
+<li xtrf="t_changing_onlinestatus.dita" xtrc="step:1"><ph xtrf="t_changing_onlinestatus.dita" xtrc="cmd:1">Tap on the status toolbar (iPhone) or status icon (iPad). </ph></li>
+<li xtrf="t_changing_onlinestatus.dita" xtrc="step:2"><ph xtrf="t_changing_onlinestatus.dita" xtrc="cmd:2">From the Status menu, you can configure the following items:</ph> 
+<table xtrf="t_changing_onlinestatus.dita" xtrc="table:1" id="changing_onlinestatus__table_gbw_cmy_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="t_changing_onlinestatus.dita" xtrc="title:2">Status Options </cap><tgroup cols="2" xtrf="t_changing_onlinestatus.dita" xtrc="tgroup:1"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="t_changing_onlinestatus.dita" xtrc="colspec:1"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="t_changing_onlinestatus.dita" xtrc="colspec:2"><thead xtrf="t_changing_onlinestatus.dita" xtrc="thead:1">
+<row xtrf="t_changing_onlinestatus.dita" xtrc="row:1">
+<entry xtrf="t_changing_onlinestatus.dita" xtrc="entry:1" colname="col1">Option</entry>
+<entry xtrf="t_changing_onlinestatus.dita" xtrc="entry:2" colname="col2">Description</entry></row></thead><tbody xtrf="t_changing_onlinestatus.dita" xtrc="tbody:1">
+<row xtrf="t_changing_onlinestatus.dita" xtrc="row:2">
+<entry xtrf="t_changing_onlinestatus.dita" xtrc="entry:3" colname="col1">Community</entry>
+<entry xtrf="t_changing_onlinestatus.dita" xtrc="entry:4" colname="col2">Choose what Connections Chat community to use, if you have more than one. 
+<p xtrf="t_changing_onlinestatus.dita" xtrc="p:3">On iPads, this
+option is available under the Settings panel.</p></entry></row>
+<row xtrf="t_changing_onlinestatus.dita" xtrc="row:3">
+<entry xtrf="t_changing_onlinestatus.dita" xtrc="entry:5" colname="col1">Status</entry>
+<entry xtrf="t_changing_onlinestatus.dita" xtrc="entry:6" colname="col2">Change your status to one of the following options:
+<ul xtrf="t_changing_onlinestatus.dita" xtrc="ul:1">
+<li xtrf="t_changing_onlinestatus.dita" xtrc="li:1">Available</li>
+<li xtrf="t_changing_onlinestatus.dita" xtrc="li:2">Away</li>
+<li xtrf="t_changing_onlinestatus.dita" xtrc="li:3">In a Meeting</li>
+<li xtrf="t_changing_onlinestatus.dita" xtrc="li:4">Do Not Disturb</li></ul>
+<p xtrf="t_changing_onlinestatus.dita" xtrc="p:4">You can customize the messages displayed for any selected status option. For example, if you
+choose "Away", you might customize the message to say "At a doctor's appointment." You can also add
+or remove messages for any status option. Use one of the following methods to customize the message
+for the option chosen or to modify the list of messages. </p><note xtrf="t_changing_onlinestatus.dita" xtrc="note:1"><notebody xtrf="t_changing_onlinestatus.dita" xtrc="note:1">To display the list of messages
+for the selected status option, select the current message under the Status Messages section.
+<ul xtrf="t_changing_onlinestatus.dita" xtrc="ul:2">
+<li xtrf="t_changing_onlinestatus.dita" xtrc="li:5">To use an existing message, choose one of the available messages.</li>
+<li xtrf="t_changing_onlinestatus.dita" xtrc="li:6">To add a new message, choose the Add action (iPad) or the<ph xtrf="t_changing_onlinestatus.dita" xtrc="uicontrol:1" style="bold">New status
+message</ph>  row, then type the new message and select <ph xtrf="t_changing_onlinestatus.dita" xtrc="uicontrol:2" style="bold">Save</ph>.</li>
+<li xtrf="t_changing_onlinestatus.dita" xtrc="li:7">To remove a message, press <ph xtrf="t_changing_onlinestatus.dita" xtrc="uicontrol:3" style="bold">Edit</ph> and select which message to remove.</li></ul></notebody></note>
+<p xtrf="t_changing_onlinestatus.dita" xtrc="p:5">Existing message cannot be edited. They can only be deleted.</p></entry></row>
+<row xtrf="t_changing_onlinestatus.dita" xtrc="row:4">
+<entry xtrf="t_changing_onlinestatus.dita" xtrc="entry:7" colname="col1">Background Status</entry>
+<entry xtrf="t_changing_onlinestatus.dita" xtrc="entry:8" colname="col2">Set the status which appears when the Connections Chat application is put in the background
+(for example, opening a different application and making it the focus). You can also set how long
+you want to remain online once Connections Chat is put in the background.</entry></row>
+<row xtrf="t_changing_onlinestatus.dita" xtrc="row:5">
+<entry xtrf="t_changing_onlinestatus.dita" xtrc="entry:9" colname="col1">Share Location</entry>
+<entry xtrf="t_changing_onlinestatus.dita" xtrc="entry:10" colname="col2">Shows your physical location. This row is not editable. </entry></row></tbody></tgroup></table></li></ol></bridge></p></dbody></d></dbody></d>
+
+<d xtrf="c_working_with_your_contacts.dita" xtrc="concept:1" id="working_with_your_contacts">
+<dprolog xtrf="c_working_with_your_contacts.dita" xtrc="concept:1"><titleblk xtrf="c_working_with_your_contacts.dita" xtrc="concept:1"><title xtrf="c_working_with_your_contacts.dita" xtrc="title:1">Working with your contacts</title></titleblk><metadata type="concept" xtrf="c_working_with_your_contacts.dita" xtrc="conbody:1"></dprolog><dintro xtrf="c_working_with_your_contacts.dita" xtrc="shortdesc:1">
+<p xtrf="c_working_with_your_contacts.dita" xtrc="shortdesc:1">You can use the Contacts screen to manage your contact lists, view contact information,
+as well as engage in text, audio, and video chats with your contact.</p></dintro><dbody xtrf="c_working_with_your_contacts.dita" xtrc="concept:1">
+<p xtrf="c_working_with_your_contacts.dita" xtrc="p:1">You can view the screen by pressing the <ph xtrf="c_working_with_your_contacts.dita" xtrc="uicontrol:1" style="bold">Contacts</ph> button in the left action
+bar on an iPad, or from the Options menu on an iPhone. Press the All Contacts link at the top of the
+list display all of your contacts, organized alphabetically by name. If you have created groups for
+your contacts, they will appear below the All Contacts link, also organized alphabetically. You can
+scroll through the lists of contacts and groups using your fingers. Press the contact you are
+looking for to open the Person Card associated with it.</p><note xtrf="c_working_with_your_contacts.dita" xtrc="note:1"><notebody xtrf="c_working_with_your_contacts.dita" xtrc="note:1">On an iPhone, the default view is the Chat tab. To see the Contacts information for the person
+card you must press the business card icon in the upper right of the card.</notebody></note>
+
+<d xtrf="c_working_with_your_contacts.dita" xtrc="concept:2" id="concept_cr5_fmb_rhb">
+<dprolog xtrf="c_working_with_your_contacts.dita" xtrc="concept:2"><titleblk xtrf="c_working_with_your_contacts.dita" xtrc="concept:2"><title xtrf="c_working_with_your_contacts.dita" xtrc="title:2">Working with groups </title></titleblk><metadata type="concept" xtrf="c_working_with_your_contacts.dita" xtrc="concept:2"></dprolog><dbody xtrf="c_working_with_your_contacts.dita" xtrc="concept:2">
+<p xtrf="c_working_with_your_contacts.dita" xtrc="p:2">Navigate through the groups you have created by pressing them in the list. You navigate through
+sub-groups in the same way, with each having its own list in a separate pane. You can also swipe
+back and forth between the different cards using your fingers. When you find the contact you are
+looking for, press the name to open the Person Card associated with it.</p></dbody></d>
+
+<d xtrf="c_working_with_your_contacts.dita" xtrc="concept:3" id="working_with_groups">
+<dprolog xtrf="c_working_with_your_contacts.dita" xtrc="concept:3"><titleblk xtrf="c_working_with_your_contacts.dita" xtrc="concept:3"><title xtrf="c_working_with_your_contacts.dita" xtrc="title:3">Working with Person Cards</title></titleblk><metadata type="concept" xtrf="c_working_with_your_contacts.dita" xtrc="concept:3"></dprolog><dbody xtrf="c_working_with_your_contacts.dita" xtrc="concept:3">
+<p xtrf="c_working_with_your_contacts.dita" xtrc="p:3">Whenever you press the name of a contact, its Person Card displays. The Person Card is a central
+hub for getting information about and interacting with your contacts. There are several options
+available from the Person Card:</p>
+<table xtrf="c_working_with_your_contacts.dita" xtrc="table:1" id="working_with_groups__table_idp_qmb_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="c_working_with_your_contacts.dita" xtrc="title:4">Person Card options</cap><tgroup cols="2" xtrf="c_working_with_your_contacts.dita" xtrc="tgroup:1"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="c_working_with_your_contacts.dita" xtrc="colspec:1"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="c_working_with_your_contacts.dita" xtrc="colspec:2"><thead xtrf="c_working_with_your_contacts.dita" xtrc="thead:1">
+<row xtrf="c_working_with_your_contacts.dita" xtrc="row:1">
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:1" colname="col1">Option</entry>
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:2" colname="col2">Description</entry></row></thead><tbody xtrf="c_working_with_your_contacts.dita" xtrc="tbody:1">
+<row xtrf="c_working_with_your_contacts.dita" xtrc="row:2">
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:3" colname="col1">Information tab</entry>
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:4" colname="col2">Provides basic information about your contact, including: 
+<ul xtrf="c_working_with_your_contacts.dita" xtrc="ul:1">
+<li xtrf="c_working_with_your_contacts.dita" xtrc="li:1">Email address - Press an address to send a message to your contact using your device's mail
+application.</li>
+<li xtrf="c_working_with_your_contacts.dita" xtrc="li:2">Phone number - Press a phone number to initiate an Audio Chat with your contact. If you have
+more than one calling method configured on your device, a drop down menu will display your calling
+options. Press one to initiate the call.</li>
+<li xtrf="c_working_with_your_contacts.dita" xtrc="li:3">Physical address - Press the physical address of your contact to display its location in your
+device's map application.</li></ul></entry></row>
+<row xtrf="c_working_with_your_contacts.dita" xtrc="row:3">
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:5" colname="col1">Chat tab</entry>
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:6" colname="col2">Opens the chat pane for you to initiate a text chat with your contact. For more information,
+refer to <xref refid="text_chatting_apple_device" xtrf="c_working_with_your_contacts.dita" xtrc="xref:1">
+<p xtrf="c_working_with_your_contacts.dita" xtrc="p:4">This is the
+default view for iPhones.</p></entry></row>
+<row xtrf="c_working_with_your_contacts.dita" xtrc="row:4">
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:7" colname="col1">Audio Chat button</entry>
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:8" colname="col2">This button at the top right of the Person Card initiates an Audio Chat with your contact,
+using your default calling method. If you wish to use another calling method, press one of your
+contact's listed phone numbers to display your list of options. For more information, refer to <xref refid="audio_chatting_appledevice" xtrf="c_working_with_your_contacts.dita" xtrc="xref:2"></entry></row>
+<row xtrf="c_working_with_your_contacts.dita" xtrc="row:5">
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:9" colname="col1">Video Chat button</entry>
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:10" colname="col2">This button at the top right of the Person Card initiates a Video Chat with your contact. For
+more information, refer to <xref refid="video_chatting" xtrf="c_working_with_your_contacts.dita" xtrc="xref:3"></entry></row>
+<row xtrf="c_working_with_your_contacts.dita" xtrc="row:6">
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:11" colname="col1">Action Menu button</entry>
+<entry xtrf="c_working_with_your_contacts.dita" xtrc="entry:12" colname="col2">Provides additional options for your contact, including: 
+<ul xtrf="c_working_with_your_contacts.dita" xtrc="ul:2">
+<li xtrf="c_working_with_your_contacts.dita" xtrc="li:4">Add/Remove From Favorites - Lets you add or remove this contact from your Favorites list. </li>
+<li xtrf="c_working_with_your_contacts.dita" xtrc="li:5">Add to Connections Contacts - Allows you to add the contact to your device's internal contact
+list. </li>
+<li xtrf="c_working_with_your_contacts.dita" xtrc="li:6">Send an Announcement - Starts the announcement dialog, with this contact listed first in the
+addresses list. Add additional contacts, enter the message text, then press Send to send the
+announcement to the selected contacts.</li></ul></entry></row></tbody></tgroup></table></dbody></d></dbody></d>
+
+<d xtrf="c_textchatting_apple_device.dita" xtrc="concept:1" id="text_chatting_apple_device">
+<dprolog xtrf="c_textchatting_apple_device.dita" xtrc="concept:1"><titleblk xtrf="c_textchatting_apple_device.dita" xtrc="concept:1"><title xtrf="c_textchatting_apple_device.dita" xtrc="title:1">Text chatting on your Apple device</title></titleblk><metadata type="concept" xtrf="c_textchatting_apple_device.dita" xtrc="conbody:1"></dprolog><dintro xtrf="c_textchatting_apple_device.dita" xtrc="shortdesc:1">
+<p xtrf="c_textchatting_apple_device.dita" xtrc="shortdesc:1">You can start a chat, insert emoticons, and use quick response messages in your
+chats.</p></dintro><dbody xtrf="c_textchatting_apple_device.dita" xtrc="concept:1">
+
+<d xtrf="t_startingachat.dita" xtrc="task:1" id="starting_a_chat">
+<dprolog xtrf="t_startingachat.dita" xtrc="task:1"><titleblk xtrf="t_startingachat.dita" xtrc="task:1"><title xtrf="t_startingachat.dita" xtrc="title:1">Starting a chat</title></titleblk><metadata type="task" xtrf="t_startingachat.dita" xtrc="taskbody:1"></dprolog><dintro xtrf="t_startingachat.dita" xtrc="shortdesc:1">
+<p xtrf="t_startingachat.dita" xtrc="shortdesc:1">You can start a chat with someone in your Contact List.</p></dintro><dbody xtrf="t_startingachat.dita" xtrc="task:1">
+<p xtrf="t_startingachat.dita" xtrc="context:1"><bridge xtrf="t_startingachat.dita" xtrc="context:1"><title xtrf="t_startingachat.dita" xtrc="context:1">About this task</title><p xtrf="t_startingachat.dita" xtrc="p:1">To start a chat with someone in your Contact List:</p></bridge></p>
+<p xtrf="t_startingachat.dita" xtrc="steps:1"><bridge xtrf="t_startingachat.dita" xtrc="steps:1"><title xtrf="t_startingachat.dita" xtrc="steps:1">Procedure</title><ol xtrf="t_startingachat.dita" xtrc="steps:1">
+<li xtrf="t_startingachat.dita" xtrc="step:1"><ph xtrf="t_startingachat.dita" xtrc="cmd:1">Tap on the name of the contact in your Contacts list to display their Person Card.</ph></li>
+<li xtrf="t_startingachat.dita" xtrc="step:2"><ph xtrf="t_startingachat.dita" xtrc="cmd:2">Press the <ph xtrf="t_startingachat.dita" xtrc="uicontrol:1" style="bold">Chat </ph> tab.</ph></li>
+<li xtrf="t_startingachat.dita" xtrc="step:3"><ph xtrf="t_startingachat.dita" xtrc="cmd:3">Type your message and then tap the <ph xtrf="t_startingachat.dita" xtrc="uicontrol:2" style="bold">Send</ph> button.</ph></li>
+<li xtrf="t_startingachat.dita" xtrc="step:4"><ph xtrf="t_startingachat.dita" xtrc="cmd:4">Look for a response from your chat partner in the chat window.</ph></li>
+<li xtrf="t_startingachat.dita" xtrc="step:5"><ph xtrf="t_startingachat.dita" xtrc="cmd:5">Close the chat window when you are done chatting. </ph> 
+<ul xtrf="t_startingachat.dita" xtrc="ul:1">
+<li xtrf="t_startingachat.dita" xtrc="li:1">On an iPad, swipe to the right. </li>
+<li xtrf="t_startingachat.dita" xtrc="li:2">On an iPhone, tap the <ph xtrf="t_startingachat.dita" xtrc="uicontrol:3" style="bold">Active</ph> button to display the Chats screen. Make
+sure <ph xtrf="t_startingachat.dita" xtrc="uicontrol:4" style="bold">Active</ph> is selected, tap <ph xtrf="t_startingachat.dita" xtrc="uicontrol:5" style="bold">Edit</ph>, and then tap the
+red bar next to the chat you wish to close. Tap the <ph xtrf="t_startingachat.dita" xtrc="uicontrol:6" style="bold">Close</ph> button to close
+that chat.</li></ul></li></ol></bridge></p></dbody></d>
+
+<d xtrf="c_inserting_emoticons.dita" xtrc="concept:1" id="inserting_emoticons">
+<dprolog xtrf="c_inserting_emoticons.dita" xtrc="concept:1"><titleblk xtrf="c_inserting_emoticons.dita" xtrc="concept:1"><title xtrf="c_inserting_emoticons.dita" xtrc="title:1">Inserting emoticons</title></titleblk><metadata type="concept" xtrf="c_inserting_emoticons.dita" xtrc="conbody:1"></dprolog><dintro xtrf="c_inserting_emoticons.dita" xtrc="shortdesc:1">
+<p xtrf="c_inserting_emoticons.dita" xtrc="shortdesc:1">You can insert an emoticon into a chat message. An emoticon is a graphical icon used to
+convey emotional tone.</p></dintro><dbody xtrf="c_inserting_emoticons.dita" xtrc="concept:1">
+<p xtrf="c_inserting_emoticons.dita" xtrc="p:1"> If your chat partner has a version of instant messaging that does not support rich text or
+emoticons, your chat partner will see the ASCII representation of the emoticon, such as :-) instead
+of 
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:1" id="inserting_emoticons__fig_skc_ggx_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:1" placement="standalone" halign="left"><objref obj="dt2mg22" xtrf="c_inserting_emoticons.dita" xtrc="image:1"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:1">happy</textalt></mmobj></fig>. Perform the following steps to add an emoticon to a chat message. </p>
+<p xtrf="c_inserting_emoticons.dita" xtrc="p:2">At the point in the message where you want to insert the emoticon, perform one of the following
+steps: </p>
+<ul xtrf="c_inserting_emoticons.dita" xtrc="ul:1">
+<li xtrf="c_inserting_emoticons.dita" xtrc="li:1">Type the ASCII representation of the emoticon. </li>
+<li xtrf="c_inserting_emoticons.dita" xtrc="li:2">Choose the <ph xtrf="c_inserting_emoticons.dita" xtrc="uicontrol:1" style="bold">Insert Emoticon</ph> action, highlight the emoticon you want to
+insert, and choose the <ph xtrf="c_inserting_emoticons.dita" xtrc="uicontrol:2" style="bold">Select</ph> action. </li></ul>
+<p xtrf="c_inserting_emoticons.dita" xtrc="p:3">Although you initially see the ASCII representation of the emoticon, when you send the message,
+your chat history displays the equivalent Emoji emoticon. Your chat partner will see the Emoji
+emoticon if he is running Connections Chat on an Apple device. Otherwise, he will see a Connections
+emoticon. Your chat partner's instant messaging version must support emoticons for them to be
+visible.</p>
+<p xtrf="c_inserting_emoticons.dita" xtrc="p:4">The table below describes the emoticons you can use and their ASCII representations. </p><note xtrf="c_inserting_emoticons.dita" xtrc="note:1"><notebody xtrf="c_inserting_emoticons.dita" xtrc="note:1">The icons displayed are the original Connections icons, not the Emoji icons you will see in
+your device.</notebody></note>
+<table xtrf="c_inserting_emoticons.dita" xtrc="table:1" id="inserting_emoticons__table_scy_xtb_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="c_inserting_emoticons.dita" xtrc="title:2">Table of emoticons</cap><tgroup cols="2" xtrf="c_inserting_emoticons.dita" xtrc="tgroup:1"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="c_inserting_emoticons.dita" xtrc="colspec:1"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="c_inserting_emoticons.dita" xtrc="colspec:2"><thead xtrf="c_inserting_emoticons.dita" xtrc="thead:1">
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:1">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:1" colname="col1">Emoticon</entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:2" colname="col2">ASCII representation</entry></row></thead><tbody xtrf="c_inserting_emoticons.dita" xtrc="tbody:1">
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:2">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:3" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:2" id="inserting_emoticons__fig_hq5_5gx_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:2" placement="standalone" halign="left"><objref obj="dt2mg22" xtrf="c_inserting_emoticons.dita" xtrc="image:2"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:2">happy</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:4" colname="col2">:-)</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:3">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:5" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:3" id="inserting_emoticons__fig_rvn_ygx_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:3" placement="standalone" halign="left"><objref obj="dt2mg23" xtrf="c_inserting_emoticons.dita" xtrc="image:3"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:3">winking</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:6" colname="col2">;)</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:4">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:7" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:4" id="inserting_emoticons__fig_kn2_ghx_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:4" placement="standalone" halign="left"><objref obj="dt2mg24" xtrf="c_inserting_emoticons.dita" xtrc="image:4"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:4">broadsmily</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:8" colname="col2">:-D</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:5">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:9" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:5" id="inserting_emoticons__fig_avk_vsy_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:5" placement="standalone" halign="left"><objref obj="dt2mg25" xtrf="c_inserting_emoticons.dita" xtrc="image:5"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:5">angry</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:10" colname="col2">:-@</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:6">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:11" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:6" id="inserting_emoticons__fig_yhy_zsy_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:6" placement="standalone" halign="left"><objref obj="dt2mg26" xtrf="c_inserting_emoticons.dita" xtrc="image:6"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:6">half</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:12" colname="col2">:-/</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:7">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:13" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:7" id="inserting_emoticons__fig_m5m_dty_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:7" placement="standalone" halign="left"><objref obj="dt2mg27" xtrf="c_inserting_emoticons.dita" xtrc="image:7"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:7">eyebrow</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:14" colname="col2">/:)</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:8">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:15" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:8" id="inserting_emoticons__fig_i5v_nhx_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:8" placement="standalone" halign="left"><objref obj="dt2mg28" xtrf="c_inserting_emoticons.dita" xtrc="image:8"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:8">sad</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:16" colname="col2">:-(</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:9">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:17" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:9" id="inserting_emoticons__fig_obj_qhx_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:9" placement="standalone" halign="left"><objref obj="dt2mg29" xtrf="c_inserting_emoticons.dita" xtrc="image:9"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:9">blushing</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:18" colname="col2">:-$</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:10">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:19" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:10" id="inserting_emoticons__fig_mnz_jty_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:10" placement="standalone" halign="left"><objref obj="dt2mg30" xtrf="c_inserting_emoticons.dita" xtrc="image:10"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:10">goofy</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:20" colname="col2">:-S</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:11">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:21" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:11" id="inserting_emoticons__fig_f5s_shx_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:11" placement="standalone" halign="left"><objref obj="dt2mg31" xtrf="c_inserting_emoticons.dita" xtrc="image:11"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:11">surprised</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:22" colname="col2">:-O</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:12">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:23" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:12" id="inserting_emoticons__fig_ccp_pty_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:12" placement="standalone" halign="left"><objref obj="dt2mg32" xtrf="c_inserting_emoticons.dita" xtrc="image:12"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:12">tongueout</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:24" colname="col2">:-P</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:13">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:25" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:13" id="inserting_emoticons__fig_gxm_vhx_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:13" placement="standalone" halign="left"><objref obj="dt2mg33" xtrf="c_inserting_emoticons.dita" xtrc="image:13"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:13">idea</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:26" colname="col2">(i)</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:14">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:27" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:14" id="inserting_emoticons__fig_cst_vty_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:14" placement="standalone" halign="left"><objref obj="dt2mg34" xtrf="c_inserting_emoticons.dita" xtrc="image:14"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:14">yes</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:28" colname="col2">(y)</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:15">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:29" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:15" id="inserting_emoticons__fig_odr_xty_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:15" placement="standalone" halign="left"><objref obj="dt2mg35" xtrf="c_inserting_emoticons.dita" xtrc="image:15"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:15">no</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:30" colname="col2">(n)</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:16">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:31" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:16" id="inserting_emoticons__fig_hwn_33x_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:16" placement="standalone" halign="left"><objref obj="dt2mg36" xtrf="c_inserting_emoticons.dita" xtrc="image:16"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:16">thinking</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:32" colname="col2">0:-)</entry></row>
+<row xtrf="c_inserting_emoticons.dita" xtrc="row:17">
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:33" colname="col1">
+<fig xtrf="c_inserting_emoticons.dita" xtrc="fig:17" id="inserting_emoticons__fig_unr_k3x_rhb"><mmobj xtrf="c_inserting_emoticons.dita" xtrc="image:17" placement="standalone" halign="left"><objref obj="dt2mg37" xtrf="c_inserting_emoticons.dita" xtrc="image:17"><textalt xtrf="c_inserting_emoticons.dita" xtrc="image:17">crying</textalt></mmobj></fig></entry>
+<entry xtrf="c_inserting_emoticons.dita" xtrc="entry:34" colname="col2">:'(</entry></row></tbody></tgroup></table></dbody></d>
+
+<d xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:1" id="viewing_working_chats_chatdevice">
+<dprolog xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:1"><titleblk xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:1"><title xtrf="c_viewing_working_chatandchathistory.dita" xtrc="title:1">Viewing and working with your chats and chat history</title></titleblk><metadata type="concept" xtrf="c_viewing_working_chatandchathistory.dita" xtrc="conbody:1"></dprolog><dintro xtrf="c_viewing_working_chatandchathistory.dita" xtrc="shortdesc:1">
+<p xtrf="c_viewing_working_chatandchathistory.dita" xtrc="shortdesc:1">Using the Chats tab on the main application, you can view and organize open and closed
+chats by date, search through your chats by name, and delete older chats.</p></dintro><dbody xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:1">
+<p xtrf="c_viewing_working_chatandchathistory.dita" xtrc="p:1">On your Apple device, you can view an archived collection of your chats from the
+<ph xtrf="c_viewing_working_chatandchathistory.dita" xtrc="uicontrol:1" style="bold">Chats</ph> tab of the Connections Chat application. Once inside the Chats tab, the
+following segmented views are available:</p>
+<table xtrf="c_viewing_working_chatandchathistory.dita" xtrc="table:1" id="viewing_working_chats_chatdevice__table_chh_51c_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="c_viewing_working_chatandchathistory.dita" xtrc="title:2">Chat tab views</cap><tgroup cols="2" xtrf="c_viewing_working_chatandchathistory.dita" xtrc="tgroup:1"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="c_viewing_working_chatandchathistory.dita" xtrc="colspec:1"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="c_viewing_working_chatandchathistory.dita" xtrc="colspec:2"><thead xtrf="c_viewing_working_chatandchathistory.dita" xtrc="thead:1">
+<row xtrf="c_viewing_working_chatandchathistory.dita" xtrc="row:1">
+<entry xtrf="c_viewing_working_chatandchathistory.dita" xtrc="entry:1" colname="col1">View</entry>
+<entry xtrf="c_viewing_working_chatandchathistory.dita" xtrc="entry:2" colname="col2">Description</entry></row></thead><tbody xtrf="c_viewing_working_chatandchathistory.dita" xtrc="tbody:1">
+<row xtrf="c_viewing_working_chatandchathistory.dita" xtrc="row:2">
+<entry xtrf="c_viewing_working_chatandchathistory.dita" xtrc="entry:3" colname="col1">Active</entry>
+<entry xtrf="c_viewing_working_chatandchathistory.dita" xtrc="entry:4" colname="col2">The Active chat tab lists all open chats, including single and group chats, ordered by
+received time of latest message. 
+<p xtrf="c_viewing_working_chatandchathistory.dita" xtrc="p:2">The rows display the contact name or the group chat subject as
+the title, along with the last message in the conversation. </p>
+<p xtrf="c_viewing_working_chatandchathistory.dita" xtrc="p:3">You can use the
+<ph xtrf="c_viewing_working_chatandchathistory.dita" xtrc="uicontrol:2" style="bold">Edit</ph> button at the top or side swipe a row to close the chats and remove them
+from the list. </p></entry></row>
+<row xtrf="c_viewing_working_chatandchathistory.dita" xtrc="row:3">
+<entry xtrf="c_viewing_working_chatandchathistory.dita" xtrc="entry:5" colname="col1">History</entry>
+<entry xtrf="c_viewing_working_chatandchathistory.dita" xtrc="entry:6" colname="col2">The History chat tab shows all chats, including active and closed ones, ordered
+alphabetically by contact name. The first row lists multi-person chats, if any exist.
+<p xtrf="c_viewing_working_chatandchathistory.dita" xtrc="p:4">For an iPad,
+you can use the Edit button at the top to delete a chat from the list. On an iPhone, you can swipe a
+row to delete chats from the list. </p></entry></row></tbody></tgroup></table>
+
+<d xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:2" id="working_with_chathistory">
+<dprolog xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:2"><titleblk xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:2"><title xtrf="c_viewing_working_chatandchathistory.dita" xtrc="title:3">Working with chat history </title></titleblk><metadata type="concept" xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:2"></dprolog><dintro xtrf="c_viewing_working_chatandchathistory.dita" xtrc="shortdesc:2">
+<p xtrf="c_viewing_working_chatandchathistory.dita" xtrc="shortdesc:2">With the <ph xtrf="c_viewing_working_chatandchathistory.dita" xtrc="uicontrol:3" style="bold">History</ph> view under the <ph xtrf="c_viewing_working_chatandchathistory.dita" xtrc="uicontrol:4" style="bold">Chats</ph> tab,
+you can view and manage the archived transcripts of all your chats, both open and closed. From here,
+you can view either multi-person chats or single person chats.</p></dintro><dbody xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:2">
+<p xtrf="c_viewing_working_chatandchathistory.dita" xtrc="p:5">To view multi-person chats, select the <ph xtrf="c_viewing_working_chatandchathistory.dita" xtrc="uicontrol:5" style="bold">Multi-Person Chat</ph> row. Entries in
+this view are listed by date, in reverse chronological order, with the titles showing the group chat
+subject. Select any entry to open the conversation transcript for that day. You can use the
+<ph xtrf="c_viewing_working_chatandchathistory.dita" xtrc="uicontrol:6" style="bold">Edit</ph> button at the top to delete chats from the list. </p>
+<p xtrf="c_viewing_working_chatandchathistory.dita" xtrc="p:6">To view transcripts of single person chats, select any of the contact names listed below the
+Multi-Person Chat row. Doing so displays a list of the chat dates in which you had conversations
+with that contact. Select one of the dates to open the transcript for that chat. You can use the
+<ph xtrf="c_viewing_working_chatandchathistory.dita" xtrc="uicontrol:7" style="bold">Edit</ph> button at the top to delete transcripts from the list. </p>
+<p xtrf="c_viewing_working_chatandchathistory.dita" xtrc="p:7">In any of the history views, you can use the Search field to search your chats for a contact,
+specific text within transcripts, a group chat participant, or the subject of a group chat. </p>
+
+<d xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:3" id="configuring_chat_history">
+<dprolog xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:3"><titleblk xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:3"><title xtrf="c_viewing_working_chatandchathistory.dita" xtrc="title:4">Configuring chat history </title></titleblk><metadata type="concept" xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:3"></dprolog><dbody xtrf="c_viewing_working_chatandchathistory.dita" xtrc="concept:3">
+<p xtrf="c_viewing_working_chatandchathistory.dita" xtrc="p:8">The chat history feature is enabled by default and can be configured in the Settings panel.
+Select the sub-option <ph xtrf="c_viewing_working_chatandchathistory.dita" xtrc="uicontrol:8" style="bold">Chat History</ph> to display the Chat History settings.
+Press <ph xtrf="c_viewing_working_chatandchathistory.dita" xtrc="uicontrol:9" style="bold">Chat History</ph> to turn the option on or off. The <ph xtrf="c_viewing_working_chatandchathistory.dita" xtrc="uicontrol:10" style="bold">Delete
+History</ph> button allows you to set how long chat transcripts should be saved. By default,
+chat history never expires. </p></dbody></d></dbody></d></dbody></d></dbody></d>
+
+<d xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:1" id="audio_chatting_appledevice">
+<dprolog xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:1"><titleblk xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:1"><title xtrf="c_audio_chatting_apple_device.dita" xtrc="title:1">Audio chatting on your Apple device</title></titleblk><metadata type="concept" xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:1"></dprolog><dintro xtrf="c_audio_chatting_apple_device.dita" xtrc="shortdesc:1">
+<p xtrf="c_audio_chatting_apple_device.dita" xtrc="shortdesc:1">You can initiate an audio chat with someone in your contact list on IBM Connections Chat
+using your Apple device.</p></dintro><dbody xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:1">
+
+<d xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:2" id="initiating_an_audiochat">
+<dprolog xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:2"><titleblk xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:2"><title xtrf="c_audio_chatting_apple_device.dita" xtrc="title:2">Initiating an audio chat </title></titleblk><metadata type="concept" xtrf="c_audio_chatting_apple_device.dita" xtrc="conbody:1"></dprolog><dbody xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:2">
+<p xtrf="c_audio_chatting_apple_device.dita" xtrc="p:1">To begin an audio chat with someone in your contacts list, press the audio chat icon from their
+Person Card. They will receive a notification that you wish to begin an audio chat and either accept
+or decline it. </p>
+<p xtrf="c_audio_chatting_apple_device.dita" xtrc="p:2">If you want to initiate an audio chat using something other than your default calling method,
+open the <ph xtrf="c_audio_chatting_apple_device.dita" xtrc="uicontrol:1" style="bold">Information</ph> tab of the contact's Person Card. Select one of the
+phone numbers listed in this view. A drop down menu will display, with the calling options that are
+available to you. Tap the dialing option you wish to use. </p><note xtrf="c_audio_chatting_apple_device.dita" xtrc="note:1"><notebody xtrf="c_audio_chatting_apple_device.dita" xtrc="note:1">If there is only one dialing option available, the call will immediately take initiate using
+that option.</notebody></note></dbody></d>
+
+<d xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:3" id="participating_audiochat">
+<dprolog xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:3"><titleblk xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:3"><title xtrf="c_audio_chatting_apple_device.dita" xtrc="title:3">Participating in an audio chat </title></titleblk><metadata type="concept" xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:3"></dprolog><dbody xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:3">
+<p xtrf="c_audio_chatting_apple_device.dita" xtrc="p:3">Once an audio chat has begun, you and your chat partner will hear each other speaking through
+your devices. The following options are available during an audio chat:</p>
+<table xtrf="c_audio_chatting_apple_device.dita" xtrc="table:1" id="participating_audiochat__table_gly_n3c_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="c_audio_chatting_apple_device.dita" xtrc="title:4">Audio chat options</cap><tgroup cols="2" xtrf="c_audio_chatting_apple_device.dita" xtrc="tgroup:1"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="c_audio_chatting_apple_device.dita" xtrc="colspec:1"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="c_audio_chatting_apple_device.dita" xtrc="colspec:2"><thead xtrf="c_audio_chatting_apple_device.dita" xtrc="thead:1">
+<row xtrf="c_audio_chatting_apple_device.dita" xtrc="row:1">
+<entry xtrf="c_audio_chatting_apple_device.dita" xtrc="entry:1" colname="col1">Option</entry>
+<entry xtrf="c_audio_chatting_apple_device.dita" xtrc="entry:2" colname="col2">Description</entry></row></thead><tbody xtrf="c_audio_chatting_apple_device.dita" xtrc="tbody:1">
+<row xtrf="c_audio_chatting_apple_device.dita" xtrc="row:2">
+<entry xtrf="c_audio_chatting_apple_device.dita" xtrc="entry:3" colname="col1">Mute</entry>
+<entry xtrf="c_audio_chatting_apple_device.dita" xtrc="entry:4" colname="col2">Temporarily mutes your audio on the call.</entry></row>
+<row xtrf="c_audio_chatting_apple_device.dita" xtrc="row:3">
+<entry xtrf="c_audio_chatting_apple_device.dita" xtrc="entry:5" colname="col1">Keypad</entry>
+<entry xtrf="c_audio_chatting_apple_device.dita" xtrc="entry:6" colname="col2">Open the device's keypad for entering information.</entry></row>
+<row xtrf="c_audio_chatting_apple_device.dita" xtrc="row:4">
+<entry xtrf="c_audio_chatting_apple_device.dita" xtrc="entry:7" colname="col1">End Call</entry>
+<entry xtrf="c_audio_chatting_apple_device.dita" xtrc="entry:8" colname="col2">End the audio chat.</entry></row></tbody></tgroup></table>
+
+<d xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:4" id="working_audio_chat_tab">
+<dprolog xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:4"><titleblk xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:4"><title xtrf="c_audio_chatting_apple_device.dita" xtrc="title:5">Working with the Audio Chat tab </title></titleblk><metadata type="concept" xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:4"></dprolog><dbody xtrf="c_audio_chatting_apple_device.dita" xtrc="concept:4">
+<p xtrf="c_audio_chatting_apple_device.dita" xtrc="p:4">The Audio Chat tab on the left menu displays two panes of information. </p>
+<p xtrf="c_audio_chatting_apple_device.dita" xtrc="p:5">The first pane is a list of recent audio chats, with the most recent listed at the top. The list
+indicates with icons whether an audio chat was initiated by you, received by you, declined by you,
+or if you have any missed calls. Tapping on any of the list items displays the Person Card of that
+chat partner.</p>
+<p xtrf="c_audio_chatting_apple_device.dita" xtrc="p:6">The second pane contains the dialing keypad. You can use the keypad to directly dial a number
+using Connections Voice Chat or a third party dialer.</p>
+<p xtrf="c_audio_chatting_apple_device.dita" xtrc="p:7"><xref refid="sametime_unified_telephony_features" xtrf="c_audio_chatting_apple_device.dita" xtrc="xref:1"></p>
+<p xtrf="c_audio_chatting_apple_device.dita" xtrc="p:8">IBM Connections Chat for iOS has the ability to place Sametime&regtm; Unified Telephony calls as well
+as change where your incoming Sametime Unified Telephony calls are routed.</p>
+<p xtrf="c_audio_chatting_apple_device.dita" xtrc="p:9"><xref refid="third_party_dialer_applications" xtrf="c_audio_chatting_apple_device.dita" xtrc="xref:2"></p>
+<p xtrf="c_audio_chatting_apple_device.dita" xtrc="p:10">IBM Connections Chat for iOS has the ability to place calls using the Siemens OpenScape Mobile
+client.</p></dbody></d></dbody></d>
+
+<d xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:1" id="sametime_unified_telephony_features">
+<dprolog xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:1"><titleblk xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:1"><title xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="title:1">Using Sametime Unified Telephony features on an iOS device</title></titleblk><metadata type="concept" xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="conbody:1"></dprolog><dintro xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="shortdesc:1">
+<p xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="shortdesc:1">IBM Connections Chat for iOS has the ability to place Sametime&regtm; Unified Telephony calls
+as well as change where your incoming Sametime Unified Telephony calls are routed.</p></dintro><dbody xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:1"><note xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="note:1"><notebody xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="note:1">IBM Connections Chat for iOS does not support the receiving of in-bound calls using Sametime
+Unified Telephony or Connections Voice. </notebody></note>
+<p xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="p:1">The Connections Chat for iOS client supports the following Sametime Unified Telephony features.
+To verify that you have Sametime Unified Telephony enabled on your Apple device, when you log into a
+Sametime Unified Telephony enabled server through your Connections Chat for iOS device you will see
+a Call icon on the tab bar (iPhone) or at the top of the screen (iPad). Also, under
+<ph xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="uicontrol:1" style="bold">Settings</ph> &gt; <ph xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="uicontrol:2" style="bold">Voice and Video </ph> (iPad) or
+<ph xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="uicontrol:3" style="bold">Settings</ph> &gt; <ph xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="uicontrol:4" style="bold">Connections Voice</ph> (iPhone), pressing the
+blue indicator button on the Connections Voice Chat option opens a view for the Sametime Unified
+Telephony settings. 
+<ul xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="ul:1">
+<li xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="li:1">Place a Sametime Unified Telephony call to a contact from your Connections Chat contact list. </li>
+<li xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="li:2">Dial an external number from the standard Apple device dialer, and have it be placed through
+Sametime Unified Telephony. </li>
+<li xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="li:3">Override your call routing rules with a specified preferred device.</li>
+<li xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="li:4">For Android tablets, a dialer is built into the Connections client, since tablets do not have a
+native dialer.</li></ul></p>
+
+<d xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:2" id="sametime_unified_telephony_settings">
+<dprolog xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:2"><titleblk xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:2"><title xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="title:2">Sametime Unified Telephony Settings </title></titleblk><metadata type="concept" xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:2"></dprolog><dintro xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="shortdesc:2">
+<p xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="shortdesc:2">To access the Sametime Unified Telephony settings screen, select
+<ph xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="uicontrol:5" style="bold">Settings</ph> &gt; <ph xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="uicontrol:6" style="bold">Voice and Video</ph> (iPad) or
+<ph xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="uicontrol:7" style="bold">Settings</ph> &gt; <ph xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="uicontrol:8" style="bold">Connections Voice</ph> (iPhone). Select the blue
+indicator button in the Connections Voice Chat option. </p></dintro><dbody xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:2">
+
+<d xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:3" id="overriding_sametime_unified_telephony_rules">
+<dprolog xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:3"><titleblk xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:3"><title xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="title:3">Overriding Sametime Unified Telephony rules </title></titleblk><metadata type="concept" xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:3"></dprolog><dbody xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:3">
+<p xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="p:2">The desktop Connections Connect client allows you to set up call routing rules that determine
+what number you can be reached at when someone places a call to you via Sametime Unified Telephony.
+This is good since the caller only needs to either call your Sametime Unified Telephony unified
+number, or select click to call on your contact entry, and the Sametime Unified Telephony server
+will handle the details of parsing the rules and calling the correct physical phone number. </p>
+<p xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="p:3">While the Apple client does not give you the ability to create your own incoming call rules, it
+does provide the ability to override them and have all your incoming calls go to a specific phone.
+This is useful, for example, if you are traveling and forget to change your call rules on your
+desktop client. </p>
+<p xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="p:4">To override your Sametime Unified Telephony rules, select <ph xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="uicontrol:9" style="bold">Override SUT
+Rules</ph>. This will open the Preferred device view which contains all your preset preferred
+devices. Select the phone you want the incoming calls to come to. </p></dbody></d></dbody></d>
+
+<d xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:4" id="using_mobile_number">
+<dprolog xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:4"><titleblk xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:4"><title xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="title:4">Using a mobile number</title></titleblk><metadata type="concept" xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:4"></dprolog><dbody xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="concept:4">
+<p xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="p:5">By default, the Sametime Unified Telephony ring back number is set to your Apple device's number.
+The ringback number is the number that rings when you initiate a Sametime Unified Telephony call.
+You can choose to <ph xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="uicontrol:10" style="bold">Use Connections Voice</ph> or you can change this ringback
+number (for example, to a nearby desktop phone in a hotel or conference room). Enter a new ringback
+number by selecting the <ph xtrf="c_using_sametime_unified_telephony_features_android_device.dita" xtrc="uicontrol:11" style="bold">Ringback Number</ph> field and typing in a new number.</p></dbody></d></dbody></d>
+
+<d xtrf="t_third_party_dialer_application.dita" xtrc="task:1" id="third_party_dialer_applications">
+<dprolog xtrf="t_third_party_dialer_application.dita" xtrc="task:1"><titleblk xtrf="t_third_party_dialer_application.dita" xtrc="task:1"><title xtrf="t_third_party_dialer_application.dita" xtrc="title:1">Using Third Party dialer applications on an iOS device</title></titleblk><metadata type="task" xtrf="t_third_party_dialer_application.dita" xtrc="taskbody:1"></dprolog><dintro xtrf="t_third_party_dialer_application.dita" xtrc="shortdesc:1">
+<p xtrf="t_third_party_dialer_application.dita" xtrc="shortdesc:1">IBM Connections Chat for iOS has the ability to place calls using the Siemens OpenScape
+Mobile client.</p></dintro><dbody xtrf="t_third_party_dialer_application.dita" xtrc="task:1">
+<p xtrf="t_third_party_dialer_application.dita" xtrc="context:1"><bridge xtrf="t_third_party_dialer_application.dita" xtrc="context:1"><title xtrf="t_third_party_dialer_application.dita" xtrc="context:1">About this task</title><p xtrf="t_third_party_dialer_application.dita" xtrc="p:1">This feature requires that your company install the Siemens OpenScape UC server and that you have
+properly installed and configured the OpenScape Mobile client on your device.</p><p xtrf="t_third_party_dialer_application.dita" xtrc="p:2">To configure dialing for the OpenScape Mobile client, perform the following procedure:</p></bridge></p>
+<p xtrf="t_third_party_dialer_application.dita" xtrc="steps:1"><bridge xtrf="t_third_party_dialer_application.dita" xtrc="steps:1"><title xtrf="t_third_party_dialer_application.dita" xtrc="steps:1">Procedure</title><ol xtrf="t_third_party_dialer_application.dita" xtrc="steps:1">
+<li xtrf="t_third_party_dialer_application.dita" xtrc="step:1"><ph xtrf="t_third_party_dialer_application.dita" xtrc="cmd:1">Open the IBM Chat application.</ph></li>
+<li xtrf="t_third_party_dialer_application.dita" xtrc="step:2"><ph xtrf="t_third_party_dialer_application.dita" xtrc="cmd:2">On the iPhone, select the <ph xtrf="t_third_party_dialer_application.dita" xtrc="uicontrol:1" style="bold">Settings</ph> button on the bottom right. On the
+iPad, tap the gear icon. Select <ph xtrf="t_third_party_dialer_application.dita" xtrc="uicontrol:2" style="bold">Voice and Video</ph> on an iPad, or
+<ph xtrf="t_third_party_dialer_application.dita" xtrc="uicontrol:3" style="bold">Connections Voice Chat</ph> on an iPhone. </ph></li>
+<li xtrf="t_third_party_dialer_application.dita" xtrc="step:3"><ph xtrf="t_third_party_dialer_application.dita" xtrc="cmd:3">Choose one of the following options under Method for Placing Calls.</ph> <note xtrf="t_third_party_dialer_application.dita" xtrc="note:1"><notebody xtrf="t_third_party_dialer_application.dita" xtrc="note:1">Your system administrator may choose to disable third party dialing.</notebody></note> 
+<table xtrf="t_third_party_dialer_application.dita" xtrc="table:1" id="third_party_dialer_applications__table_nyd_twy_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="t_third_party_dialer_application.dita" xtrc="title:2">Method for placing calls </cap><tgroup cols="2" xtrf="t_third_party_dialer_application.dita" xtrc="tgroup:1"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="t_third_party_dialer_application.dita" xtrc="colspec:1"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="t_third_party_dialer_application.dita" xtrc="colspec:2"><thead xtrf="t_third_party_dialer_application.dita" xtrc="thead:1">
+<row xtrf="t_third_party_dialer_application.dita" xtrc="row:1">
+<entry xtrf="t_third_party_dialer_application.dita" xtrc="entry:1" colname="col1">Option</entry>
+<entry xtrf="t_third_party_dialer_application.dita" xtrc="entry:2" colname="col2">Description</entry></row></thead><tbody xtrf="t_third_party_dialer_application.dita" xtrc="tbody:1">
+<row xtrf="t_third_party_dialer_application.dita" xtrc="row:2">
+<entry xtrf="t_third_party_dialer_application.dita" xtrc="entry:3" colname="col1">Always Ask</entry>
+<entry xtrf="t_third_party_dialer_application.dita" xtrc="entry:4" colname="col2">You will always be prompted to choose a method when dialing.</entry></row>
+<row xtrf="t_third_party_dialer_application.dita" xtrc="row:3">
+<entry xtrf="t_third_party_dialer_application.dita" xtrc="entry:5" colname="col1">Connections Voice Chat</entry>
+<entry xtrf="t_third_party_dialer_application.dita" xtrc="entry:6" colname="col2">Calls will always be placed using Sametime&regtm; Unified Telephony.</entry></row>
+<row xtrf="t_third_party_dialer_application.dita" xtrc="row:4">
+<entry xtrf="t_third_party_dialer_application.dita" xtrc="entry:7" colname="col1">OpenScape Mobile</entry>
+<entry xtrf="t_third_party_dialer_application.dita" xtrc="entry:8" colname="col2">Calls will always be placed using the OpenScape Mobile dialer.</entry></row>
+<row xtrf="t_third_party_dialer_application.dita" xtrc="row:5">
+<entry xtrf="t_third_party_dialer_application.dita" xtrc="entry:9" colname="col1">iPhone</entry>
+<entry xtrf="t_third_party_dialer_application.dita" xtrc="entry:10" colname="col2">Calls will always be placed using the cell phone.</entry></row></tbody></tgroup></table>
+<note xtrf="t_third_party_dialer_application.dita" xtrc="note:2"><notebody xtrf="t_third_party_dialer_application.dita" xtrc="note:2">These options are not available if you do not have the proper functionality on your device;
+for example, an iPad with no data plan will not have the iPhone option.</notebody></note></li></ol></bridge></p></dbody></d></dbody></d>
+
+<d xtrf="c_video_chatting_apple_device.dita" xtrc="concept:1" id="video_chatting">
+<dprolog xtrf="c_video_chatting_apple_device.dita" xtrc="concept:1"><titleblk xtrf="c_video_chatting_apple_device.dita" xtrc="concept:1"><title xtrf="c_video_chatting_apple_device.dita" xtrc="title:1">Video chatting</title></titleblk><metadata type="concept" xtrf="c_video_chatting_apple_device.dita" xtrc="concept:1"></dprolog><dintro xtrf="c_video_chatting_apple_device.dita" xtrc="shortdesc:1">
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="shortdesc:1">You can initiate a video chat with someone on your contacts list from IBM Connections
+Chat on your Apple device.</p></dintro><dbody xtrf="c_video_chatting_apple_device.dita" xtrc="concept:1">
+
+<d xtrf="c_video_chatting_apple_device.dita" xtrc="concept:2" id="initiating_video_chat">
+<dprolog xtrf="c_video_chatting_apple_device.dita" xtrc="concept:2"><titleblk xtrf="c_video_chatting_apple_device.dita" xtrc="concept:2"><title xtrf="c_video_chatting_apple_device.dita" xtrc="title:2">Initiating a video chat </title></titleblk><metadata type="concept" xtrf="c_video_chatting_apple_device.dita" xtrc="conbody:1"></dprolog><dbody xtrf="c_video_chatting_apple_device.dita" xtrc="concept:2">
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="p:1">There are several ways to being a video chat:</p>
+<ul xtrf="c_video_chatting_apple_device.dita" xtrc="ul:1">
+<li xtrf="c_video_chatting_apple_device.dita" xtrc="li:1">Press the <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:1" style="bold">Start a Video Chat</ph> option from the contact's business card.
+(iPhone only)</li>
+<li xtrf="c_video_chatting_apple_device.dita" xtrc="li:2">Select the <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:2" style="bold">Video Chat</ph> button on the top right hand corner of the business
+card. (iPad only)</li>
+<li xtrf="c_video_chatting_apple_device.dita" xtrc="li:3">At the top of an in progress chat window, select the <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:3" style="bold">Video Chat</ph> button.
+(iPhone only)</li></ul>
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="p:2">The person will receive a notification that you wish to begin a video chat and either accept or
+decline it. </p>
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="p:3">If a video chat is already in progress with one of your contacts and you have navigated away from
+it, you can resume it one of several ways:</p>
+<ul xtrf="c_video_chatting_apple_device.dita" xtrc="ul:2">
+<li xtrf="c_video_chatting_apple_device.dita" xtrc="li:4">Tap the <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:4" style="bold">Video Call In Progress</ph> bar at the top of the screen (iPhone
+only).</li>
+<li xtrf="c_video_chatting_apple_device.dita" xtrc="li:5">Navigate back to the business card for your chat partner (iPad only).</li>
+<li xtrf="c_video_chatting_apple_device.dita" xtrc="li:6">Select <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:5" style="bold">Resume this Video Chat</ph> from the contact's business card (iPhone
+only).</li>
+<li xtrf="c_video_chatting_apple_device.dita" xtrc="li:7">Select the <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:6" style="bold">Video Chat</ph> tab (iPhone and iPad).</li></ul></dbody></d>
+
+<d xtrf="c_video_chatting_apple_device.dita" xtrc="concept:3" id="receiving_video_chat">
+<dprolog xtrf="c_video_chatting_apple_device.dita" xtrc="concept:3"><titleblk xtrf="c_video_chatting_apple_device.dita" xtrc="concept:3"><title xtrf="c_video_chatting_apple_device.dita" xtrc="title:3">Receiving a video chat request </title></titleblk><metadata type="concept" xtrf="c_video_chatting_apple_device.dita" xtrc="concept:3"></dprolog><dbody xtrf="c_video_chatting_apple_device.dita" xtrc="concept:3">
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="p:4">If someone attempts to initiate a video chat with you, you will receive a notification on your
+screen. The following options are available:</p>
+<table xtrf="c_video_chatting_apple_device.dita" xtrc="table:1" id="receiving_video_chat__table_ics_lrc_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="c_video_chatting_apple_device.dita" xtrc="title:4">Video chat request options</cap><tgroup cols="2" xtrf="c_video_chatting_apple_device.dita" xtrc="tgroup:1"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="c_video_chatting_apple_device.dita" xtrc="colspec:1"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="c_video_chatting_apple_device.dita" xtrc="colspec:2"><thead xtrf="c_video_chatting_apple_device.dita" xtrc="thead:1">
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:1">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:1" colname="col1">Option</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:2" colname="col2">Description</entry></row></thead><tbody xtrf="c_video_chatting_apple_device.dita" xtrc="tbody:1">
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:2">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:3" colname="col1">Answer</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:4" colname="col2">Accept the request and begin the video chat.</entry></row>
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:3">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:5" colname="col1">Answer with Audio Only</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:6" colname="col2">Accept the request as an audio chat instead of a video chat.</entry></row>
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:4">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:7" colname="col1">Decline</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:8" colname="col2">Decline the chat invitation.</entry></row></tbody></tgroup></table></dbody></d>
+
+<d xtrf="c_video_chatting_apple_device.dita" xtrc="concept:4" id="participating_video_chat">
+<dprolog xtrf="c_video_chatting_apple_device.dita" xtrc="concept:4"><titleblk xtrf="c_video_chatting_apple_device.dita" xtrc="concept:4"><title xtrf="c_video_chatting_apple_device.dita" xtrc="title:5">Participating in a video chat </title></titleblk><metadata type="concept" xtrf="c_video_chatting_apple_device.dita" xtrc="concept:4"></dprolog><dbody xtrf="c_video_chatting_apple_device.dita" xtrc="concept:4">
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="p:5">Once a video chat has begun, you and your chat partner will both see and hear each other through
+your device. Your contact will appear in a video frame, with a small preview version of your own
+feed in the top, right corner. </p><note xtrf="c_video_chatting_apple_device.dita" xtrc="note:1"><notebody xtrf="c_video_chatting_apple_device.dita" xtrc="note:1">The preview version of your video feed can be relocated by pressing and dragging the window to
+one of the four corners of your contact's video feed.</notebody></note>
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="p:6">Once the video chat has begun, you can display the chat option bar by tapping the video of your
+contact. The following options are available:
+<table xtrf="c_video_chatting_apple_device.dita" xtrc="table:2" id="participating_video_chat__table_xhy_dsc_rhb" frame="all" rowsep="1" colsep="1"><cap xtrf="c_video_chatting_apple_device.dita" xtrc="title:6">Video chat options</cap><tgroup cols="2" xtrf="c_video_chatting_apple_device.dita" xtrc="tgroup:2"><colspec colname="col1" colnum="1" colwidth="1*" xtrf="c_video_chatting_apple_device.dita" xtrc="colspec:3"><colspec colname="col2" colnum="2" colwidth="1*" xtrf="c_video_chatting_apple_device.dita" xtrc="colspec:4"><thead xtrf="c_video_chatting_apple_device.dita" xtrc="thead:2">
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:5">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:9" colname="col1">Option</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:10" colname="col2">Description</entry></row></thead><tbody xtrf="c_video_chatting_apple_device.dita" xtrc="tbody:2">
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:6">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:11" colname="col1">End Call</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:12" colname="col2">End the video chat.</entry></row>
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:7">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:13" colname="col1">Stop Video</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:14" colname="col2">Temporarily suspend video transmission from your device. Your chat partner will still receive
+your audio.</entry></row>
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:8">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:15" colname="col1">Mute Audio</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:16" colname="col2">Temporarily mute the audio from your device. Your chat partner will still receive your video
+transmission.</entry></row>
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:9">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:17" colname="col1">Hold Call</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:18" colname="col2">Pause the call completely, temporarily suspending both your audio and video
+transmissions.</entry></row>
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:10">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:19" colname="col1">Switch Camera</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:20" colname="col2">Switch between your device's two camera, usually front or back. This option is only available
+on devices with multiple cameras.</entry></row>
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:11">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:21" colname="col1">Full Screen</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:22" colname="col2">Enter full screen mode. This expands the video feed from your chat partner across the entire
+screen of your device. 
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="p:7">To exit full screen mode, make a pinching gesture on the screen, double
+tap the screen, or press the Embedded Video button from the options bar.</p><note xtrf="c_video_chatting_apple_device.dita" xtrc="note:2"><notebody xtrf="c_video_chatting_apple_device.dita" xtrc="note:2">This option only
+appears if you are in embedded video mode.</notebody></note></entry></row>
+<row xtrf="c_video_chatting_apple_device.dita" xtrc="row:12">
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:23" colname="col1">Minimize Video</entry>
+<entry xtrf="c_video_chatting_apple_device.dita" xtrc="entry:24" colname="col2">On an iPad, this shrinks a full screen video feed to an embedded version in the IBM
+Connections Chat client. On an iPhone, this dismisses the video and puts the client on Hold until
+the video is resumed.<note xtrf="c_video_chatting_apple_device.dita" xtrc="note:3"><notebody xtrf="c_video_chatting_apple_device.dita" xtrc="note:3">On an iPad, this option only appears if you are in full screen
+mode.</notebody></note></entry></row></tbody></tgroup></table></p>
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="p:8">If, during the course of the conversation, you navigate away from the video chat, you can return
+to it in one of four ways:
+<ul xtrf="c_video_chatting_apple_device.dita" xtrc="ul:3">
+<li xtrf="c_video_chatting_apple_device.dita" xtrc="li:8">Tap the <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:7" style="bold">Video Call in Progress</ph> banner at the top of the device
+screen.</li>
+<li xtrf="c_video_chatting_apple_device.dita" xtrc="li:9">Navigate back to your chat partner&csq;s Business Card using the Contacts tab. </li>
+<li xtrf="c_video_chatting_apple_device.dita" xtrc="li:10">Choose your chat partner's contact from the Favorites tab, if he or she has previously been
+marked as a favorite. </li>
+<li xtrf="c_video_chatting_apple_device.dita" xtrc="li:11">Tap the <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:8" style="bold">Video Chat</ph> tab from the More menu. If a video chat is in
+progress, the tab will pulse red.</li></ul></p></dbody></d>
+
+<d xtrf="c_video_chatting_apple_device.dita" xtrc="concept:5" id="using_video_chat_tab">
+<dprolog xtrf="c_video_chatting_apple_device.dita" xtrc="concept:5"><titleblk xtrf="c_video_chatting_apple_device.dita" xtrc="concept:5"><title xtrf="c_video_chatting_apple_device.dita" xtrc="title:7">Using the Video Chat tab </title></titleblk><metadata type="concept" xtrf="c_video_chatting_apple_device.dita" xtrc="concept:5"></dprolog><dbody xtrf="c_video_chatting_apple_device.dita" xtrc="concept:5">
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="p:9">If no video chat is presently occurring, tapping the <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:9" style="bold">Video Chat</ph> tab from
+the <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:10" style="bold">More</ph> menu displays a video chat list, showing a record of all video chats
+that have occurred on the device, with the most recent video chat at the top. The list indicates
+with icons whether a video chat was initiated by you, received by you, declined by you, or if you
+missed any calls. Tapping on any of the list items displays the Business Card of that chat
+partner.</p>
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="p:10">If a video chat is presently occurring, tapping the <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:11" style="bold">Video Chat</ph> tab will
+return you to the chat if you have navigated away from it. </p></dbody></d>
+
+<d xtrf="c_video_chatting_apple_device.dita" xtrc="concept:6" id="configuring_video_chat">
+<dprolog xtrf="c_video_chatting_apple_device.dita" xtrc="concept:6"><titleblk xtrf="c_video_chatting_apple_device.dita" xtrc="concept:6"><title xtrf="c_video_chatting_apple_device.dita" xtrc="title:8">Configuring video chat </title></titleblk><metadata type="concept" xtrf="c_video_chatting_apple_device.dita" xtrc="concept:6"></dprolog><dbody xtrf="c_video_chatting_apple_device.dita" xtrc="concept:6">
+<p xtrf="c_video_chatting_apple_device.dita" xtrc="p:11">To configure video chat options, select <ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:12" style="bold">Settings</ph> from the
+<ph xtrf="c_video_chatting_apple_device.dita" xtrc="uicontrol:13" style="bold">More</ph> menu. Then select Voice and Video. You can choose the method for placing
+calls and whether or not to enable both voice and video chats, voice chats only, as well as restrict
+chat calls to WiFi connections only.</p></dbody></d></dbody></d></body></ibmiddoc>

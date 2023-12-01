@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_buscard_custom_kubernetes" xml:lang="en-us">
+  <title>Customizing business cards in Kubernetes</title>
+  <shortdesc>You can override the default business cards configuration by creating an
+      <parmname>extra-community-configs</parmname> secret to hold the configuration
+    files.</shortdesc>
+  <taskbody>
+    <context id="context_rqd_3sk_35b">
+      <p>Kubectl commands are used to pull the existing file from the community pod to your local
+        machine. You modify these files locally with the required settings, then create the secret
+        containing the files.</p>
+      <p>The following procedures describes the steps to create a new secret. The example used in
+        the steps shows creating a secret called <filepath>extra-community-configs</filepath> which
+        overrides the <filepath>values.yaml</filepath> settings for LDAP. The
+          <filepath>extra-community-configs</filepath> secret contains a copy of the configuration
+        files used by the Community pod. For more information on secrets, see <xref
+          href="managing_secrets_kubernetes.dita" format="dita" scope="local"/>.</p>
+    </context>
+    <steps id="steps_igj_hsk_35b">
+      <step>
+        <cmd>Create a directory on your machine called <filepath>extra-community-config</filepath>
+          at the root of where the Sametime installation package was decompressed.</cmd>
+        <info>
+          <codeblock id="codeblock_l15_ptb_k5b">mkdir extra-community-config</codeblock>
+        </info>
+      </step>
+      <step>
+        <cmd>Use the <cmdname>cd</cmdname> command to change to the
+            <filepath>extra-community-config</filepath> directory.</cmd>
+        <info>
+          <codeblock id="codeblock_g1v_5tb_k5b">cd extra-community-config</codeblock>
+        </info>
+      </step>
+      <step>
+        <cmd>Find the community pod name by running the <cmdname>get pods</cmdname> command.</cmd>
+        <info>The pod name has some hashes in it, for example: <codeph>community-77d4695988-2bzrx):
+            kubectl get pods</codeph>.</info>
+      </step>
+      <step>
+        <cmd>Run the following command to pull a copy of the
+            <filepath>StCommunityConfig.xml</filepath> file from the community pod specifying the
+          name of the pod.</cmd>
+        <info><codeblock id="codeblock_edt_5ty_ztb">kubectl exec -it <varname>pod_name</varname> --container community -- cat /local/notesdata/StCommunityConfig.xml >./StCommunityConfig.xml</codeblock>This
+          file must be available.  No changes to it are needed at this time.</info>
+      </step>
+      <step>
+        <cmd>Run the following command to pull a copy of the <filepath>UserInfoConfig.xml</filepath>
+          file from the community pod specifying the name of the pod.</cmd>
+        <info>
+          <codeblock id="codeblock_blp_b5y_ztb">kubectl exec -it <varname>pod_name</varname> --container community -- cat /local/notesdata/UserInfoConfig.xml >./UserInfoConfig.xml</codeblock>
+        </info>
+      </step>
+      <step>
+        <cmd>Using a text editor, open the local copy of the <filepath>UserInfoConfig.xml</filepath>
+          file in edit mode. Modify the file as needed.</cmd>
+        <info>When finish, save and close the file.</info>
+      </step>
+      <step>
+        <cmd>Ensure that you are in the <filepath>extra-community-config</filepath> directory that
+          was created earlier. Run the following command to create the secret. If you have a
+          namespace dedicated to Sametime, add the <parmname>-n</parmname> argument with your
+          namespace to ensure it is created in the correct namespace. </cmd>
+        <info>
+          <codeblock id="codeblock_aqb_x5y_ztb">kubectl create secret generic extra-community-config --from-file=./ </codeblock>
+        </info>
+      </step>
+      <step>
+        <cmd>Use the <cmdname>cd</cmdname> command to change to the <filepath>helm</filepath>
+          directory where the Sametime installation package was decompressed.</cmd>
+        <info>
+          <codeblock id="codeblock_kyk_15b_k5b">cd helm</codeblock>
+        </info>
+      </step>
+      <step>
+        <cmd>Open the <filepath>values.yaml</filepath> file and put in edit mode. </cmd>
+      </step>
+      <step>
+        <cmd>Add the following line to the <filepath>values.yaml</filepath> file.</cmd>
+        <info>
+          <codeblock id="codeblock_xq2_1vy_ztb">overrideCommunityConfigSecret: extra-community-config</codeblock>
+        </info>
+        <info>When finished save and close the file..</info>
+      </step>
+      <step conref="securing_ldap_kubernetes.dita#securing_ldap_kubernetes/apply_changes_helmupgrade">
+        <cmd/>
+      </step>
+      <step conref="pod_apply_changes.dita#pod_apply_changes/scale_pod">
+        <cmd/>
+      </step>
+    </steps>
+  </taskbody>
+</task>

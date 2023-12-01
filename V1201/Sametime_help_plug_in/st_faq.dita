@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<?Pub Sty _display FontColor="red"?>
+<reference id="foo" xml:lang="en-us">
+<title><?Pub Dtl?>HCL Sametime Connect and Embedded Users Guide</title>
+<refbody outputclass="main">
+<section outputclass="section faq"><table frame="none"
+outputclass="presentation">
+<tgroup cols="2" colsep="0" rowsep="0"><colspec colname="col1"
+colwidth="1*"/><colspec colname="col2" colwidth="1*"/>
+<tbody>
+<row>
+<entry colname="col1" colsep="0" valign="top"><p outputclass="sectionhead">Basics</p><p><xref
+                                        href="c_st8_uim_welcome.dita"/></p><p><xref
+                                        href="t_st8_uim_location.dita"/></p><p><xref format="dita"
+                                        href="c_st9_accessibility.dita" scope="local" type="concept"
+                                    /></p><xref format="dita" href="r_st9_keyboardshortcuts.dita"
+                                    scope="local" type="reference"/><p outputclass="sectionhead"
+                                    >Work with chats</p><p><xref href="t_st8_uim_chats_tab.dita"
+                                    /></p><p><xref href="t_st8_uim_chat_nway.dita"/></p><p><xref
+                                        href="t_entry_uim_chat_timedate.dita"/></p><p><xref
+                                        href="t_st8_uim_emoticon_add.dita"/></p><p><xref
+                                        href="t_st8_uim_file_add_desk.dita"/></p><p><xref
+                                        href="t_st8_uim_chat_hist.dita"/></p><p><xref format="dita"
+                                        href="t_st852_uim_offline_messages.dita" scope="local"
+                                        type="task"/></p><p outputclass="sectionhead">Work with
+                                    contacts</p><p><xref
+                                        href="t_entry_uim_contacts_shortfull_names.dita"
+                                        /></p><p><xref href="t_st8_uim_views.dita"/></p><p><xref
+                                        href="t_st852_uim_import_contact_list.dita"/></p><p><xref
+                                        href="t_st852_uim_export_contact_list.dita"/></p><p><xref
+                                        href="t_st8_uim_privacy.dita"/></p></entry>
+<entry colname="col2">
+<p outputclass="sectionhead">Click to meet</p>
+<p><xref href="how_to_setup_meeting_url.dita#how_to_setup_meeting_url">How to setup a meeting
+URL?</xref></p>
+<p><xref href="how_to_customize_click_to_meet.dita#how_to_customize_click_to_meet">How to customize
+click to meet? </xref></p><p
+outputclass="sectionhead">Make more connections</p><p><xref
+href="c_st8_uim_servercom_whatis.dita"></xref></p><p><xref
+href="t_st8_uim_servercom.dita"></xref></p><p><xref
+href="t_st8_uim_otherIM.dita"></xref></p><p outputclass="sectionhead">Other
+things you can do</p><p><xref href="t_st8_uim_screen_cap.dita"></xref></p><p><xref
+href="t_st8_uim_auto_change_stat_meet.dita"></xref></p><p><xref
+href="t_st8_uim_chat_notifica.dita"></xref></p><p><xref
+href="c_st852_widgets_about.dita"></xref></p><p><xref
+href="t_st852_uim_live_text_use.dita"></xref></p><p><xref
+href="t_st852_uim_live_text_prefs.dita"></xref></p><p
+outputclass="sectionhead">Troubleshooting</p><p><xref
+href="c_st8_uim_icons_unavail.dita"></xref></p><p><xref
+href="t_st8_uim_contacts_sort.dita"></xref></p><p><xref
+href="c_st8_uim_contact_list_outofsynch.dita"></xref></p></entry>
+</row>
+</tbody>
+</tgroup>
+</table></section>
+</refbody>
+</reference>
+<?Pub *0000007798?>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="lock_meeting" xml:lang="en-us">
+  <title>Locking the meeting</title>
+  <shortdesc>This section provides information on how the user can lock the meeting.</shortdesc>
+  <conbody>
+    <p><b>Description</b></p>
+    <p>The <uicontrol>Lock meeting</uicontrol> option allows the moderator to lock the entire meeting to
+      prevent others from joining. </p>
+    <p>
+      <image href="Images/lock_meeting.png" placement="break" align="left"
+        id="image_lb2_3n5_bpb"/>
+    </p>
+  </conbody>
+</concept>
+<?Pub *0000001020?>

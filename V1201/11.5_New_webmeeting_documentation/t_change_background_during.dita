@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_change_background_during">
+    <title>Changing your background during a meeting</title>
+    <taskbody>
+        <context id="context_d3f_3dy_p5b">
+            <p>Some background options are accessible only from within the meeting. To change your
+                background during a meeting, follow these steps:</p>
+        </context>
+        <steps id="steps_nmh_3dy_p5b">
+            <step>
+                <cmd>Scroll over to the bottom of the meeting window and select <uicontrol>More
+                        Actions</uicontrol>
+                    <image href="Images/t_more_actions_button.png" id="image_yxw_bm1_k5b"/>.</cmd>
+                <info><image href="Images/i_change_background.png" id="image_k2j_3sz_vtb"/></info>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Change background</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Select any of the following: </cmd>
+                <choices id="choices_m2p_jtz_vtb">
+                    <choice>+ Custom Background—Upload an image from your desktop or mobile device
+                        to use as your background. There is no limit to how many background images
+                        you can upload. <note id="note_tzj_snb_f5b">This option is available to
+                            aunthenticated users only. Currently, Sametime supports any of these
+                            image types:<ul id="ul_z5x_xpb_f5b">
+                                <li>BMP</li>
+                                <li>CUR</li>
+                                <li>DDS</li>
+                                <li>GIF</li>
+                                <li>ICNS</li>
+                                <li>ICO</li>
+                                <li>JPEG</li>
+                                <li>KTX</li>
+                                <li>PNG</li>
+                                <li>PNM (PAM, PBM, PFM, PGM, PPM)</li>
+                                <li>PSD</li>
+                                <li>SVG</li>
+                                <li>TIFF</li>
+                                <li>WebP</li>
+                            </ul></note></choice>
+                    <choice>None—Remove any added filter and revert settings to default (shows your
+                        physical background).</choice>
+                    <choice>Slight Blur—Slightly blur your surroundings and show only your face and
+                        body during the meeting.</choice>
+                    <choice>Blur—Completely blur your surroundings and show only your face and body
+                        during the meeting.</choice>
+                    <choice>Share your screen—Share your screen as a background with all meeting
+                        participants. Choose which part of your screen is shared.<note
+                            id="note_wpq_kwz_vtb">The screen share option is available to Google
+                            Chrome users only.</note><ul id="ol_wcq_rtz_vtb">
+                            <li><uicontrol>Entire Screen</uicontrol>—Show your entire screen,
+                                including all open applications, browsers, and tabs. </li>
+                            <li><uicontrol>Window</uicontrol>—Show a specific window to your
+                                audience. </li>
+                            <li><uicontrol>Chrome Tab</uicontrol>—Show a specific web browser
+                                tab.</li>
+                        </ul></choice>
+                    <choice>Default background image—Select a default image as your
+                        background.</choice>
+                </choices>
+                <info>
+                    <note id="note_sqd_tdy_p5b">Some options are available to authenticated users
+                        only. To access all of the options, try <xref href="t_loggingin.dita"/>.
+                    </note>
+                </info>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Apply</uicontrol>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

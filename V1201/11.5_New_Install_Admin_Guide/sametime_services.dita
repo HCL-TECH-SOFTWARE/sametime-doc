@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="sametime_services" xml:lang="en-us">
+    <title>Sametime Community and Proxy services</title>
+    <shortdesc>This section describes the functionality of <tm tmtype="reg">Sametime</tm> services. </shortdesc>
+    <conbody>
+        <p>
+            <table frame="all" rowsep="1" colsep="1" id="table_idp_qmb_rhb">
+                <title><b>Sametime Application Settings</b></title>
+                <tgroup cols="2">
+                    <colspec colname="c1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>Service</entry>
+                            <entry>Functional Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Sametime Community Service</entry>
+                            <entry>
+                                <p>Supports the following clients: <ul>
+                                        <li>Standalone rich client </li>
+                                        <li>Embedded rich client in <tm tmtype="reg">HCL</tm> Notes
+                                        </li>
+                                    </ul></p>
+                                <p>Configurable features include but are not limited to: <ul>
+                                        <li>Multi-way chat </li>
+                                        <li>Contact lists </li>
+                                        <li>Chat</li>
+                                        <li>Business card </li>
+                                        <li>Chat history </li>
+                                        <li>Offline messaging </li>
+                                        <li>Persistent chat </li>
+                                        <li>Multiple file and folder transfer </li>
+                                        <li>Plugins, API integration</li>
+                                    </ul></p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry>Sametime Proxy Service</entry>
+                            <entry>
+                                <p>Supports the following clients:<ul>
+                                        <li>Browser based client </li>
+                                        <li>Embedded clients in HCL Verse, HCL iNotes, HCL
+                                            Connections, HCL Digital Experience </li>
+                                        <li>Mobile Clients for iOS and Android </li>
+                                    </ul></p>
+                                <p>Configurable features include but are not limited to:<ul>
+                                        <li>Multi-way chat </li>
+                                        <li>Contact lists </li>
+                                        <li>Chat</li>
+                                        <li>Business card </li>
+                                        <li>Persistent chat </li>
+                                        <li>API Integration</li>
+                                    </ul>
+                                </p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </p>
+    </conbody>
+</concept>

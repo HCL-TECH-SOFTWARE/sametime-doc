@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="t_keyboard_shortcuts">
+    <title>Keyboard shortcuts</title>
+    <shortdesc></shortdesc>
+    <conbody>
+        <p>You can navigate within Sametime using a combination of keys.</p>
+        <table frame="top" rowsep="0" id="table_swy_svz_z5b">
+            <title>Keyboard shortcuts for general navigation</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Action</entry>
+                        <entry>Keyboard shortcut</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Move from one interface element to the next</entry>
+                        <entry>Tab key</entry>
+                    </row>
+                    <row>
+                        <entry>Select a link or control on a page</entry>
+                        <entry>Navigate to the link and press Enter</entry>
+                    </row>
+                    <row>
+                        <entry>Select or clear a check box</entry>
+                        <entry>Spacebar</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="top" rowsep="0" id="table_d4q_tzz_z5b">
+            <title>Keyboard shortcuts for meeting actions</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Action</entry>
+                        <entry>Keyboard shortcut</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Show or hide video thumbnails</entry>
+                        <entry>F</entry>
+                    </row>
+                    <row>
+                        <entry>Show or hide keyboard shortcuts</entry>
+                        <entry>?</entry>
+                    </row>
+                    <row>
+                        <entry>Push to talk</entry>
+                        <entry>Spacebar</entry>
+                    </row>
+                    <row>
+                        <entry>Show the speaker's status</entry>
+                        <entry>T</entry>
+                    </row>
+                    <row>
+                        <entry>Focus on your video </entry>
+                        <entry>0</entry>
+                    </row>
+                    <row>
+                        <entry>Focus on another person's video </entry>
+                        <entry>1–9</entry>
+                    </row>
+                    <row>
+                        <entry>Mute or unmute</entry>
+                        <entry>M</entry>
+                    </row>
+                    <row>
+                        <entry>Open and close the chat</entry>
+                        <entry>C</entry>
+                    </row>
+                    <row>
+                        <entry>View and exit full screen</entry>
+                        <entry>S</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>

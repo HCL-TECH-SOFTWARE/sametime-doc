@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="defining_id_attribute" xml:lang="en-us">
+    <title>Defining the ID attribute for Active Directory </title>
+    <shortdesc>If your Sametime® servers connect to an Active Directory (LDAP) server and you prefer to use the DN attribute rather than the objectGUID attribute for the Sametime internal user ID, you must assign the DistinguishedName attribute to be the internal ID for Sametime users. Doing so guarantees that Active Directory returns the DN attribute in the same case-sensitive and space-sensitive format. Forcing Sametime to use a consistent attribute for the internal user ID prevents awareness problems caused by ambiguous internal user IDs. </shortdesc>
+<taskbody>
+<context>
+    <p>If you choose the DN attribute for the Sametime internal user ID, but do not assign the DistinguishedName attribute as the internal ID, you may see the following problems: </p>
+    <p><ul><li>Awareness for some users does not work. </li>
+        <li>A user's name appears multiple times in the same Contact list. </li>
+        <li>Policies might not be applied, so the user might receive only default policies. </li></ul></p>
+    <p><note>You can assign the objectGUID attribute as the internal user ID to eliminate the need to run the name change tool in the future. </note></p></context>
+<steps>
+    <step>
+        <cmd>Launch the HCL Notes or Administration client, as the administrator. </cmd>
+    </step>
+    <step>
+        <cmd>Click on <uicontrol>Open</uicontrol> > <uicontrol>Applications</uicontrol> > <uicontrol>Open an application</uicontrol>. </cmd>
+    </step>
+    <step>
+                <cmd>In the servername field, enter the hostname of the Sametime server. </cmd>
+            </step>
+    <step>
+        <cmd>In the filename field, enter <codeph>“stconfig.nsf”</codeph>.</cmd>
+    </step>
+    <step>
+                <cmd>Scroll to the LDAPServer document and double-click to open it.</cmd>
+            </step>
+    <step>
+        <cmd>Place the document in edit mode by double-clicking inside the document. </cmd>
+    </step>
+    <step>
+        <cmd>In the field name <codeph>“The attribute of the person entry that defines the internal ID of a Sametime user”</codeph> enter <codeph>“DistinguishedName”</codeph>. </cmd>
+    </step>
+    <step>
+        <cmd>Click <uicontrol>File</uicontrol> > <uicontrol>Save</uicontrol> to save the document. </cmd>
+    </step>
+    <step>
+        <cmd>Restart the Community server for the change to take effect. </cmd>
+    </step>
+</steps>
+</taskbody>
+</task>

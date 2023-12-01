@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_manage_recordings" xml:lang="en-us">
+  <title>Managing recordings</title>
+  <?Pub Caret 3?>
+  <shortdesc>Recordings for meetings that you own are displayed from the main menu by tapping
+      <uicontrol>Meeting Recordings</uicontrol>.</shortdesc>
+  <taskbody>
+    <context id="context_grc_bg4_v5b">
+      <p id="recording_owner">If you are not the meeting owner, you do not see recordings for the
+        meeting. Recording that show in a meeting chat are there because the meeting owner shared
+        the recording. When a recording is stopped, the meeting owner can choose to share the
+        recording in the chat. You have access to this link until you leave the group chat. However,
+        you can find the link in the recent meeting list.</p>
+      <p>If you are accessing the recording from the <wintitle>Recordings</wintitle> screen by
+        tapping <uicontrol>Meeting Recordings</uicontrol> on the main menu, the following options
+        are available.</p>
+      <ul id="ul_k54_rrx_f5b">
+        <li>Play the recording by clicking the play button on the recording icon.</li>
+        <li>Download the recording to your mobile device.</li>
+        <li>Copy the recording to the clipboard.</li>
+        <li>Edit the name of the recording.</li>
+        <li>Delete the recording.</li>
+      </ul>
+      <p>Use the following steps to access recordings in the <wintitle>Recent Meeting</wintitle>
+        page.</p>
+    </context>
+    <steps id="steps_qln_zh4_v5b">
+      <step>
+        <cmd>On the main menu, tap <uicontrol>Meetings</uicontrol>.</cmd>
+      </step>
+      <step>
+        <cmd>Select the <uicontrol>Recent</uicontrol> tab and find the meeting you attended which
+          was recorded.</cmd>
+      </step>
+      <step>
+        <cmd>Swipe right on the meeting and click the <uicontrol>menu</uicontrol> icon (<image
+            href="Images/menu.png" id="image_p5b_x34_v5b" alt="menu icon"/>).</cmd>
+        <info>If the meeting owner shared the recording, it is listed. To see a list of recent
+          meetings with recordings, tap the filter icon in the bottom left corner of the screen then
+          tap <menucascade>
+            <uicontrol>Filtered by</uicontrol>
+            <uicontrol>Recordings</uicontrol>
+          </menucascade>. </info>
+      </step>
+    </steps>
+  </taskbody>
+</task>

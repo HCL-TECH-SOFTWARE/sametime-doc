@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_general_chat_policies">
+    <title><b>General chat policies</b></title>
+    <shortdesc>These policies control chat behavior. Edit the following policies to fit your
+        business needs.</shortdesc>
+    <conbody>
+        <section id="section_sx5_cbg_htb">
+            <title><parmname>Policy id = im.enableOfflineMessages, Default Setting:
+                ON</parmname></title>
+            <p>By default, you can send messages to offline users. Turn this setting off to disable
+                offline messages. <note id="note_ps4_xb4_htb">Regardless of the setting, you need to
+                    be active on your mobile device to receive message notifications.</note></p>
+        </section>
+        <section id="section_r4c_fbg_htb">
+            <title><parmname>Policy id = im.persistentChatEnabled, Default Setting:
+                ON</parmname></title>
+            <p>By default, chat history is stored in the server. Leave this setting on if you want
+                the full chat transcript to be available to all clients using the same ID. When
+                turned off, the chat history is maintained only at the clients and is deleted
+                immediately when the user is logged out.</p>
+            <note id="note_plk_mcg_htb">Regardless of the setting, chat history is no longer stored
+                    <i>locally</i> on mobile devices.</note>
+        </section>
+    </conbody>
+</concept>

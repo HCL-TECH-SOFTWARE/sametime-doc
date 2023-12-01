@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_using" xml:lang="en-us">
+ <title>Using the Sametime Meetings Add-in</title>
+ <shortdesc>The Sametime Meetings add-in for MicroSoft Outlook Add-in gives you the ability to
+  choose an existing Sametime Meeting, create and edit a Sametime meeting, and create an instant
+  Sametime meeting.</shortdesc>
+</concept>
+<?Pub *0000001020?>

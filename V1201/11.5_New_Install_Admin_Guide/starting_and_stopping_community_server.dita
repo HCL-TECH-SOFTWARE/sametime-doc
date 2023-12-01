@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="starting_and_stopping_community_server" xml:lang="en-us">
+<title>Starting and stopping the Community server</title>
+    <shortdesc>Follow the below process to start and stop the Sametime Community server on Windows and Linux.</shortdesc>
+<taskbody>
+        <context><p><b>Windows</b></p><p>Use the associated Domino service in the services panel. It
+                will start and stop all Sametime Community processes.</p>To get a list of the
+            Sametime related services on windows, you can use these two commands:<p>
+                <codeblock id="codeblock_orh_skg_spb">sc queryex type=service state=all | find "ST " | find "SERVICE_NAME"
+
+sc queryex type=service state=all | find "Sametime " | find "SERVICE_NAME"</codeblock>
+            </p><p>The list will look like this:
+                <codeblock id="codeblock_kxd_vkg_spb">SERVICE_NAME: Sametime Server
+SERVICE_NAME: Sametime Services Framework
+
+SERVICE_NAME: ST Admin Service
+SERVICE_NAME: ST Chat History
+SERVICE_NAME: ST Chat Logging
+SERVICE_NAME: ST Community
+SERVICE_NAME: ST Community Launch
+SERVICE_NAME: ST Conference
+SERVICE_NAME: ST Configuration
+SERVICE_NAME: ST Convomap
+SERVICE_NAME: ST Directory
+SERVICE_NAME: ST File Transfer
+SERVICE_NAME: ST Logger
+SERVICE_NAME: ST Mux
+SERVICE_NAME: ST Offline Messages
+SERVICE_NAME: ST OnlineDir
+SERVICE_NAME: ST Places
+SERVICE_NAME: ST Policy
+SERVICE_NAME: ST Polling
+SERVICE_NAME: ST Presence
+SERVICE_NAME: ST Presence Compatibility
+SERVICE_NAME: ST Presence Subscriptions
+SERVICE_NAME: ST Privacy
+SERVICE_NAME: ST Resolve
+SERVICE_NAME: ST Security
+SERVICE_NAME: ST User Storage
+SERVICE_NAME: ST UserInfo
+SERVICE_NAME: ST Users
+</codeblock></p><p><b>Linux</b></p><p>You
+                must enter the following commands in the command line to stop and start the
+                Community Server. </p><p>
+                <ul id="ul_vlw_qj1_gnb">
+                    <li>You must run these commands under the notes user.</li>
+                    <li>Change directories to the /local/notesdata directory (or where the Domino
+                        server's notes.ini file resides).</li>
+                    <li>To <b>Start</b> community - <codeph>. /ststart</codeph><note>This command
+                            starts in the foreground. </note></li>
+                    <li>To <b>start</b> Community in <b>background</b> - <codeph>./ststart
+                            background</codeph><note>This command starts in the foreground.
+                        </note></li>
+                    <li>To <b>Stop</b> Community - <codeph>./ststart stop</codeph></li>
+                    <li>To <b>Restart </b> Community - <codeph>./ststart restart</codeph></li>
+                    <li>To <b>get Status</b> - <codeph>./ststart status</codeph></li>
+                </ul>
+            </p></context>
+    </taskbody>
+</task>

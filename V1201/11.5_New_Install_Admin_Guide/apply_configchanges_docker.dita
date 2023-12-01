@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="apply_confichanges_docker" xml:lang="en-us">
+    <title>Applying configuration changes in Docker</title>
+    <shortdesc>Configuration files contain environment variables that can be changed and applied to
+        the Sametime server.</shortdesc>
+    <taskbody>
+        <context id="context_tcj_zgt_dnb">You can make configuration changes by modifying the
+            following files. <ul id="ul_lg1_y5m_15b">
+                <li><filepath>custom.env</filepath></li>
+                <li><filepath>.env</filepath></li>
+                <li><filepath>docker-compose.yml</filepath></li>
+            </ul><p>The <cmdname>docker-compose</cmdname> command is used to apply the
+                changes.</p><!--<p>Docker  https://docs.docker.com/compose/env-file/  - Declare default environment varialbes in file Docker doc topic</p>--><note>Values
+                in the Docker commands are case sensitive and must be entered in lower
+            case.</note></context>
+        <steps>
+            <step>
+                <cmd>Shut down the Sametime server.</cmd>
+                <info>
+                    <codeblock id="codeblock_rxs_k2h_15b">docker-compose down
+</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Modify the configuration file.</cmd>
+            </step>
+            <step>
+                <cmd>Save changes to the configuration files.</cmd>
+            </step>
+            <step>
+                <cmd>Delete the <filepath>jitsi-conifg</filepath> directory with the options
+                    recursive and force.</cmd>
+                <info>
+                    <codeblock>rm -rf jitsi-config/</codeblock>
+                    <p>The <filepath>jitsi-config</filepath> directory on Docker is built on start
+                        up with the new configuration values.</p>
+                </info>
+            </step>
+            <step>
+                <cmd>Save and Restart the server to apply the changes.</cmd>
+                <info>
+                    <codeblock id="codeblock_emt_4kk_mvb">
+docker-compose down 
+docker-compose up -d</codeblock>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

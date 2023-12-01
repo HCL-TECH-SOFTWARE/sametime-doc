@@ -1,0 +1,118 @@
+#Project Information
+site_name: HCL Sametime Help Center
+site_description: >-
+  A next-gen documentation site for HCL Sametime
+site_url: https://opensource.hcltechsw.com/sametime-doc
+use_directory_urls: false
+docs_dir: v1202
+site_dir: docs/v1202
+
+# Theme Configuration
+theme:
+  name: material
+  logo: assets/st_logo.png
+  favicon: assets/favicon.png
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - search.share
+    - search.suggest
+  custom_dir: theme_overrides/
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # Static files
+  static_templates:
+    - 404.html
+
+
+# Markdown Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+
+extra:
+#  analytics: 
+#    provider: custom
+#    property: UA-169645537-2
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HCL-TECH-SOFTWARE
+  version:
+    provider: mike
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - manage
+
+# Repository
+repo_url: https://github.com/HCL-TECH-SOFTWARE/sametime-doc
+repo_name: hcl-software/sametime-doc
+edit_uri: edit/main/docs
+
+
+# Customization
+extra_css:
+  - stylesheets/style.css
+
+plugins:
+  - section-index
+  - search
+  
+ #Table of contents 
+nav:
+# HCL Sametime Documentation
+      - Introducing Sametime: index.md
+# What's New
+      - What&apos;s new in Sametime&quest;: admin/whats_new.md 
+# Installing
+      - Installing Sametime:
+        - admin/installation_sametime.md
+        - Installation road map: admin/installation_roadmap.md
+        - Installing MondoDB:
+          - admin/installation_mongodb.md
+        - Installing MongoDB on Windows: admin/installing_mongodb_windows.md
+        - Installing MongoDB on Linux: admin/installing_mongodb_linux.md 
+        - Configuring MongoDB for Sametime: admin/t_configure_mongodb.md
+# Administering
+      - Administering Sametime: 
+        - admin/administrator_doc.md
+        - Planning: 
+          - admin/planning.md
+          - Sametime versus Sametime Premium: admin/sametime_premium.md
+          - Prerequistes:
+            - admin/c_planning_prereqs.md
+            - System Requirements: admin/system_requirements.md
+            - MongoDB: admin/mongodb.md
+            - LDAP: admin/ldap.md
+        - Installing Sametime:
+          - admin/installation_sametime.md
+          - Installation road map: admin/installation_roadmap.md
+          - Installing the MongoDB:
+            - admin/installation_mongodb.md
+            - Installing MongoDB on Windows: admin/installing_mongodb_windows.md
+            - Installing MongoDB on Linux: admin/installing_mongodb_linux.md
+            - Configuring MongoDB for Sametime: admin/t_configure_mongodb.md
+          - Installing Sametime: 
+            - admin/installation_sametime.md
+            - Information to provide during installation: admin/installation_prompt_descriptions.md
+            - Installing Sametime in a Kubernetes environment: 
+              - admin/installation_sametime_kubernetes.md
+              - Preparing the network:
+                - admin/t_meetings_prepare_network.md
+                - Configuring host aliases for Kubernetes deployments: admin/t_meetings_kubernetes.md

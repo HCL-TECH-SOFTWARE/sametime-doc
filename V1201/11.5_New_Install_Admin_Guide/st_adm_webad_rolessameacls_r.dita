@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN"
+ "reference.dtd">
+<?Pub Sty _display FontColor="red"?>
+<reference id="st_adm_webad_rolessameacls_r" xml:lang="en-us">
+<title class="- topic/title ">Roles in <tm tmtype="reg">Sametime</tm> database ACLs</title>
+<shortdesc>Roles provide a way to define the access an administrator has to the features and
+  settings of the <tm tmtype="reg">Sametime</tm> Administration Tool. </shortdesc>
+<refbody>
+<section> <p class="- topic/p ">For example, the <tm tmtype="reg">Sametime</tm> Configuration database
+    (stconfig.nsf) ACL contains three roles: ServerMonitor, ServerAdmin, or DatabaseAdmin. If you
+    assign only the ServerMonitor role to an administrator, the administrator can monitor server
+    memory, disk space, and other server statistics but cannot perform any other administrative
+    functions. Assign all roles to an administrator if you want the administrator to have full
+    access to all administrative functions.</p><?Pub Caret 19?><p class="- topic/p ">Access Control List (ACL) roles are defined in the following <tm tmtype="reg"
+     >Sametime</tm> databases:</p> </section>
+</refbody>
+<?tm 1261181270 4?>
+</reference>
+<?Pub *0000001375?>

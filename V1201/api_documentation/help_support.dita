@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="help_support" xml:lang="en-us">
+<title>Help and Support</title>
+ <shortdesc>Tap the menu icon to display the <uicontrol>Help and Support</uicontrol> screen.</shortdesc>
+ <conbody><p>From here you can navigate to online help documentation, view logs, or send logs to Support.  To send logs, tap Report a Problem and select your default email application. This will pre-populate the email with the support contact email to HCL (heyhcl@pnp-hcl.com) and a subject line that will route the logs to HCL support.</p>
+</conbody>
+</concept>
+<?Pub *0000002018?>

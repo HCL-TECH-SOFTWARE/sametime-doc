@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="getting_started" xml:lang="en-us">
+<title>Basics</title>
+ <shortdesc>HCL <tm tmtype="reg" trademark="Sametime">Sametime</tm> enables you to use Sametime
+  awareness and chat features on the web client. This documentation describes how to install and use
+  HCL <tm tmtype="reg" trademark="Sametime">Sametime</tm> on a web client. </shortdesc>
+</concept>
+<?Pub *0000001020?>

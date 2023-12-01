@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="configuration_files" xml:lang="en-us">
+<title>Community configuration files</title>
+<shortdesc>Configuration files maintain information used by the Sametime server for various
+        reasons.</shortdesc>
+    <conbody>
+        <p>Override the defaults of the Sametime community container/pod. </p>
+        <p>In Sametime v12, configuration files are generated on demand based on information in the
+            Docker or Kubernetes container management configuration file.<table frame="all"
+                rowsep="1" colsep="1" id="table_drr_qvm_v5b">
+                <title>Primary configuration files used by the container management system</title>
+                <tgroup cols="3">
+                    <colspec colname="newCol1" colnum="1" colwidth="1*"/>
+                    <colspec colname="c1" colnum="2" colwidth="1*"/>
+                    <colspec colname="newCol3" colnum="3" colwidth="1*"/>
+                    <thead>
+                        <row>
+                            <entry>File Name</entry>
+                            <entry>Environment</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry><filepath>sametime.ini</filepath></entry>
+                            <entry>Kubernetes  Docker</entry>
+                            <entry>Sectioned configuration file used by the Sametime server. It is
+                                generated on demand based on values in <filepath>
+                                    custom.env</filepath> or <filepath>values.yaml</filepath> files.
+                                Settings can be over-ridden if needed<note id="note_lmn_mgq_pvb">The
+                                    file must conform to the XML syntax rules.</note></entry>
+                        </row>
+                        <row>
+                            <entry><filepath>StCommunityConfig.xml</filepath></entry>
+                            <entry>Kubernetes  Docker</entry>
+                            <entry>Contains LDAP settings and more. Link to new topic (see
+                                    Casey)<note id="note_eml_zwp_pvb">In versions previous to V12
+                                    this file was named
+                                <filepath>stconfig.nsf</filepath>.</note></entry>
+                        </row>
+                        <row>
+                            <entry>UserInfoConfig.xml</entry>
+                            <entry>Kubernetes  Docker</entry>
+                            <entry>Contains configuration data for business cards.<note
+                                    id="note_grj_jgq_pvb">The file must conform to the XML syntax
+                                    rules.</note></entry>
+                        </row>
+                        <row>
+                            <entry>Policies.server.xml</entry>
+                            <entry>Kubernetes  Docker</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Policies.user.xml</entry>
+                            <entry>Kubernetes  Docker</entry>
+                            <entry/>
+                        </row>
+                        <row>
+                            <entry>Clustering</entry>
+                            <entry>Kubernetes</entry>
+                            <entry/>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table><draft-comment author="debra.taylor">Need file name for "Clustering".  When is
+                the Sametime.ini file generated, during install or each time ST
+                accessed?</draft-comment><note id="note_crk_3vp_pvb">In releases prior to version
+                12, there are several configuration files used by different Sametime
+            servers.</note></p>
+        <p>Configuration values can be modified. Where a modification can be done it is covered in
+            the appropriate topic. For example, updates to LTPA keys are covered in the <xref
+                href="enabling_sso_ltpa.dita" format="dita" scope="local"/> topics.</p>
+    </conbody>
+</concept>

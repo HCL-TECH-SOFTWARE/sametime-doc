@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="securing_connections_between_community_clients_kubernetes" xml:lang="en-us">
+    <title>Configuring TLS for Sametime mux on Kubernetes</title>
+    <taskbody>
+        <prereq id="prereq_tbm_hpr_mvb">You can use a self-signed certificate or a third party
+            certificate to configure TSL for Sametime mux. Obtain a third party certificate and
+            private key with a subject that contains the host name assigned to the mux Kubernetes
+            service. If you do not know the mux Kubernetes service IP address issue the <cmdname>
+                kubectl get svc | grep mux</cmdname> command. <draft-comment author="debra.taylor"
+                    ><p>Complete the steps in the topic "Creating a keystore for mux"</p>Need
+                link</draft-comment></prereq>
+        <context id="context_swm_m4k_y5b">
+            <p>TLS can be used to secure the connection between the Sametime Connect client and
+                Sametime embedded client inside of HCL Notes to the Sametime mux. </p>
+            <p>The changes in this task apply to the community and mux pods.</p>
+        </context>
+        <steps id="steps_kpx_qnk_y5b">
+            <step>
+                <cmd>Create a secret that contains your trust store.</cmd>
+                <info>
+                    <codeblock id="codeblock_dns_snk_y5b">kubectl create secret generic samlConfigSecret --from-literal=KeyStorePassword=samet1me --from-file=./saml.p12 </codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>In the <filepath>values.yaml</filepath> file remove the comment tag (#)
+                    surrounding the  <parmname>muxTlsConfigSecret: mux-secret</parmname>
+                    parameter.</cmd>
+            </step>
+            <step>
+                <cmd>Save and close the <filepath>values.yaml</filepath> file.</cmd>
+            </step>
+            <step
+                conref="securing_ldap_kubernetes.dita#securing_ldap_kubernetes/apply_changes_helmupgrade">
+                <cmd/>
+            </step>
+            <step conref="pod_apply_changes.dita#pod_apply_changes/scale_pod">
+                <cmd/>
+            </step>
+        </steps>
+    </taskbody>
+</task>

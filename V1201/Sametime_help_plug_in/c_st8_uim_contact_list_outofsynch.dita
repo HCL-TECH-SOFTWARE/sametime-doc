@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<concept id="c_st8_uim_contact_list_outofsynch" xml:lang="en-us">
+<title>What does the contact list conflict message mean?</title>
+<shortdesc>Your contact list is stored both on your community server
+and on your workstation. If you use Sametime on more than one computer,
+you might see a contact list conflict message. The message displays
+when your contact list on one of these computers gets out-of-synch
+with the version on the server.</shortdesc>
+<conbody>
+<p><note type="tip"> To update a contacts’ nickname automatically
+so it does not get out-of-sync, edit a contact's nickname by right-clicking
+a contact.</note></p>
+<p>When you see a contact list conflict message, you can select from
+the following options:</p>
+<p>Before you select an option, think about the implications of your
+choice.</p>
+<table><title>Options and examples</title><desc><p outputclass="summary"> A
+simple table that explains the options and information to help you
+choose. The first column lists options, and the second column gives
+an example of when you might use it.<draft-comment>this info should
+be in the UI eventually.</draft-comment></p></desc>
+<tgroup cols="2"><colspec colname="col1"/><colspec colname="col2"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Option</entry>
+<entry colname="col2">What to consider</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">Replace the server copy with the local copy</entry>
+<entry colname="col2">Choose this option if you are confident that
+the version on your computer is the most current. If you choose this
+option, you lose any changes from versions on other computers.</entry>
+</row>
+<row>
+<entry colname="col1">Replace the local copy with the server copy</entry><?Pub
+Caret -1?>
+<entry colname="col2">Choose this option if a version on another computer
+is more current. <p>For example, you clean up a long and unorganized
+contact list on one computer, and your changes are saved to the server.
+If you start another computer and see the conflict message, choose
+this option, so your changes are not lost.</p></entry>
+</row>
+<row>
+<entry colname="col1">Merge the server and local copies</entry>
+<entry colname="col2">Choose this option if you often use both computers,
+so both contact lists are up-to-date but contain some different contacts.
+All contacts from both versions are merged into one list.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</conbody>
+</concept>
+<?Pub *0000002595?>

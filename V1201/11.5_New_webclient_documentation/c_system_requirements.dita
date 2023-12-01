@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="system_requirements" xml:lang="en-us">
+<title>System requirements</title>
+ <shortdesc>HCL <tm tmtype="reg" trademark="Sametime">Sametime</tm> for iOS supports Apple devices running iOS 12.0 or later and iPadOS 13.0 or later.</shortdesc>
+</concept>
+<?Pub *0000001020?>

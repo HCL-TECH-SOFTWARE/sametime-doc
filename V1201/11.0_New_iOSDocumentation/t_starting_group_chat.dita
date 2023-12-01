@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="t_starting_group_chat" xml:lang="en-us">
+   <title>Starting a group chat</title>
+   <shortdesc>You can start a chat with a group of people from your Contact List.</shortdesc>
+   <taskbody>
+      <context id="context_pr5_5j5_hvb">
+         <p> You can start a group chat in one of three ways.<ul id="ul_gdh_xj5_hvb">
+               <li>When you are already in a chat with an individual contact, select
+                     <uicontrol>Start Group Chat</uicontrol> in the menu bar, and then choose the
+                  invitees. </li>
+               <li>Select a contact group, and then press <uicontrol>Start Group Chat</uicontrol> in
+                  the menu bar. Edit the invitee list, if necessary.</li>
+               <li>Long press a contact group, and then press <uicontrol>Start Group
+                     Chat</uicontrol> in the menu bar. Edit the invitee list, if necessary.</li>
+            </ul></p>
+      </context>
+      <postreq>
+         <p>Select the <uicontrol>Participants</uicontrol> tab from the Group Chat Card for a list
+            of all participants. The app shows in gray text the names of the invitees who have not
+            responded.</p>
+      </postreq>
+   </taskbody>
+</task>
+<?Pub *0000001020?>

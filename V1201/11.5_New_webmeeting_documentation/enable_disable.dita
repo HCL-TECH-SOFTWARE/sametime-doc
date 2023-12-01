@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="enable_disable" xml:lang="en-us">
+  <title>Enabling and disabling my camera</title>
+  <shortdesc>All users can enable or disable their camera in a meeting. To lower bandwidth usage or
+    to avoid distractions during a meeting, moderators can turn off active cameras. The video stream
+    of users will be limited to the last few speakers. All other videos with their microphone are
+    inactive or muted. </shortdesc>
+  <taskbody>
+    <prereq id="prereq_lcm_yhq_5tb">Browser permissions must be granted to enable the camera.
+          <p><image href="Images/enable_disable_video.png" id="image_vtg_shq_5tb"/></p></prereq>
+  </taskbody>
+</task>
+<?Pub *0000001020?>
+
+

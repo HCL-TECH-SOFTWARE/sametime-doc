@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="installing_sametime_clients" xml:lang="en-us">
+<title>Installing Sametime clients</title>
+    <shortdesc>Sametime clients can be installed on a Windows or Mac machines.</shortdesc>
+<taskbody>
+<context>
+    <p>Beginning with Sametime version 11, all directories and registries are HCL branded. If you
+                are upgrading from a previous Sametime client, you must uninstall that version and
+                then install Sametime version 11 or later.<note id="note_tfv_cc4_4tb">For version
+                    12, upgrades on Windows and Mac are supported from a Sametime 11 client.
+                    Upgrades from a 9.0.1 or earlier versions on Windows are not supported. If you
+                    run a version of Sametime that is not supported for upgrades, you must uninstall
+                    that version and then install Sametime 11.</note><draft-comment
+                    author="debra.taylor">The note is repeating what is stated before the note.Which
+                    version do we want to keep?</draft-comment></p></context>
+</taskbody>
+</task>

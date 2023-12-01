@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="update_ttl_index" xml:lang="en-us">
+        <title>Updating the time-to-live index for persistent chat</title>
+        <shortdesc>The time-to-live (TTL) setting defines how long the chat history is stored in the
+        database. The default value is 90 days. However, administrators can update the value based
+        on the organization's preferred setting.</shortdesc>
+        <taskbody>
+        <prereq id="prereq_ndf_hbm_vsb">The TTL index in MongoDB must be rebuilt. For more
+            information, refer to <xref
+                href="https://www.mongodb.com/docs/v4.4/tutorial/manage-indexes/#manage-indexes"
+                format="html" scope="external">Manage Indexes</xref> in the MongoDB
+            documentation.</prereq>
+            <context>
+            <p>To update the TTL settings used by the Sametime server involves modifying the
+                following files.<ul id="ul_lj5_z2h_htb">
+                    <li><filepath>custom.env</filepath> for Docker</li>
+                    <li><filepath>helm/values.yaml</filepath> for Kubernetes</li>
+                </ul><note id="note_tsx_dfh_htb">These values are case sensitive and must be entered
+                    as shown below.</note></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Modify the configuration file. The minimum value is 1.</cmd>
+                <choices id="choices_hyb_wdq_5tb">
+                    <choice>For Docker, update the
+                            <parmname>CLI__ChatLogging__CL_MONGO_HISTORY_TTL</parmname> parameter.
+                        In the following example, the value is set to 7
+                        days.<codeblock id="codeblock_k3y_zdq_5tb">CLI__ChatLogging__CL_MONGO_HISTORY_TTL=7</codeblock></choice>
+                    <choice>For Kubernetes, update the
+                            <parmname>CLI__ChatLogging__CL_MONGO_HISTORY_TTL</parmname> parameter.
+                        In the following example, the value is set to 7
+                        days.<codeblock id="codeblock_oft_k2q_5tb">CLI__ChatLogging__CL_MONGO_HISTORY_TTL: 7</codeblock></choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>Modify the Convomap Max Days configuration value to match the MongoDB TTL
+                    value. The minimum value is 1.</cmd>
+                <choices id="choices_hgt_cfd_g5b">
+                    <choice>For Docker, update the
+                            <parmname>STI__convomap__CONVOMAP_MAX_DAYS</parmname> parameter. In the
+                        following example, the value is set to 7
+                        days.<codeblock id="codeblock_igt_cfd_g5b">STI__convomap__CONVOMAP_MAX_DAYS=7</codeblock></choice>
+                    <choice>For Kubernetes, update the
+                            <parmname>STI__convomap__CONVOMAP_MAX_DAYS</parmname> parameters. In the
+                        following example, the value is set to 7
+                        days.<codeblock id="codeblock_jgt_cfd_g5b">STI__convomap__CONVOMAP_MAX_DAYS: 7</codeblock></choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>You can update the <parmname>STI__convomap__CONVOMAP_MAX_HOURS</parmname>
+                    parameter to add hours to the time frame. In the following examples, the value
+                    is set to 2 hours.</cmd>
+                <choices id="choices_sqc_f2d_g5b">
+                    <choice>Docker:
+                        <codeblock id="codeblock_lt2_f2d_g5b">STI__convomap__CONVOMAP_MAX_HOURS=2</codeblock></choice>
+                    <choice>Kubernetes:
+                        <codeblock id="codeblock_mt2_f2d_g5b">STI__convomap__CONVOMAP_MAX_HOURS: 2</codeblock></choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>In the Mongo shell, run the following commands.</cmd>
+                <info><codeblock>use chatlogging</codeblock><codeblock>db.EVENTS.getIndexes()</codeblock><codeblock>db.EVENTS.dropIndex("TimeStamp_1")</codeblock>The
+                        <codeph>db.EVENTS.dropIndex</codeph> command defines the name of the index
+                    to drop. The value is <codeph>TimeStamp_1</codeph>.</info>
+            </step>
+            <step>
+                <cmd>Restart the Sametime server to apply the changes. The TTL index is updated with
+                    the new value.</cmd>
+                <info>For more information, refer to <xref
+                        href="https://help.hcltechsw.com/sametime/12/admin/starting_and_stopping_servers.html"
+                        format="html" scope="external">Starting and stopping servers</xref>. </info>
+            </step>
+            <step>
+                <cmd>Run the following command to confirm that the value for
+                        <codeph>TimeStamp_1</codeph> is updated. </cmd>
+                <info>
+                    <codeblock>db.EVENTS.getIndexes()</codeblock>
+                </info>
+            </step>
+        </steps></taskbody>
+</task>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="foo" path="st_faq.html"/>
+   <appContext helpID="m_st8_uim_basics" path="m_st8_uim_basics.html"/>
+   <appContext helpID="c_st8_uim_welcome.dita" path="c_st8_uim_welcome.html"/>
+   <appContext helpID="t_st8_uim_location.dita" path="t_st8_uim_location.html"/>
+   <appContext helpID="accessibilityfeaturesforsametime"
+               path="c_st9_accessibility.html"/>
+   <appContext helpID="keyboardshortcutsandotheraccessibilityfeatures"
+               path="r_st9_keyboardshortcuts.html"/>
+   <appContext helpID="m_st8_uim_textchats" path="m_st8_uim_textchats.html"/>
+   <appContext helpID="t_st8_uim_chats_tab" path="t_st8_uim_chats_tab.html"/>
+   <appContext helpID="how_to_customise_chat_window"
+               path="how_to_customise_chat_window.html"/>
+   <appContext helpID="t_st8_uim_chat_nway" path="t_st8_uim_chat_nway.html"/>
+   <appContext helpID="t_entry_uim_chat_timedate"
+               path="t_entry_uim_chat_timedate.html"/>
+   <appContext helpID="working_server_community_manager"
+               path="t_st8_uim_emoticon_add.html"/>
+   <appContext helpID="t_st8_uim_file_add_desk" path="t_st8_uim_file_add_desk.html"/>
+   <appContext helpID="t_st8_uim_chat_hist" path="t_st8_uim_chat_hist.html"/>
+   <appContext helpID="howdoisendmessagestoofflineusers"
+               path="t_st852_uim_offline_messages.html"/>
+   <appContext helpID="m_st9_contacts" path="m_st9_contacts.html"/>
+   <appContext helpID="t_entry_uim_contacts_shortfull_names"
+               path="t_entry_uim_contacts_shortfull_names.html"/>
+   <appContext helpID="t_st8_uim_views" path="t_st8_uim_views.html"/>
+   <appContext helpID="t_entry_uim_contacts_shortfull_names"
+               path="t_entry_uim_contacts_shortfull_names.html"/>
+   <appContext helpID="t_st852_uim_import_contact_list"
+               path="t_st852_uim_import_contact_list.html"/>
+   <appContext helpID="t_st852_uim_export_contact_list"
+               path="t_st852_uim_export_contact_list.html"/>
+   <appContext helpID="t_st8_uim_privacy" path="t_st8_uim_privacy.html"/>
+   <appContext helpID="t_privacy_online" path="t_st9_privacy_online.html"/>
+   <appContext helpID="t_st9_privacy_dnd" path="t_st9_privacy_dnd.html"/>
+   <appContext helpID="t_st9_privacy_externalcomm"
+               path="t_st9_privacy_externalcomm.html"/>
+   <appContext helpID="click_to_meet.dita" path="click_to_meet.html"/>
+   <appContext helpID="how_to_setup_meeting_url" path="how_to_setup_meeting_url.html"/>
+   <appContext helpID="how_to_customize_click_to_meet"
+               path="how_to_customize_click_to_meet.html"/>
+   <appContext helpID="m_st8_uim_getconn" path="m_st8_uim_getconn.html"/>
+   <appContext helpID="c_st8_uim_servercom_whatis"
+               path="c_st8_uim_servercom_whatis.html"/>
+   <appContext helpID="t_st8_uim_servercom" path="t_st8_uim_servercom.html"/>
+   <appContext helpID="t_st8_uim_otherIM" path="t_st8_uim_otherIM.html"/>
+   <appContext helpID="m_st8_uim_other" path="m_st8_uim_other.html"/>
+   <appContext helpID="t_st8_uim_screen_cap.dita" path="t_st8_uim_screen_cap.html"/>
+   <appContext helpID="t_st8_uim_auto_change_stat_meet"
+               path="t_st8_uim_auto_change_stat_meet.html"/>
+   <appContext helpID="t_st8_uim_chat_notifica" path="t_st8_uim_chat_notifica.html"/>
+   <appContext helpID="c_using_main_screen" path="c_st852_widgets_about.html"/>
+   <appContext helpID="t_st852_uim_live_text_use"
+               path="t_st852_uim_live_text_use.html"/>
+   <appContext helpID="t_st852_uim_live_text_prefs"
+               path="t_st852_uim_live_text_prefs.html"/>
+   <appContext helpID="m_st8_uim_troubleshoot" path="m_st8_uim_troubleshoot.html"/>
+   <appContext helpID="c_st8_uim_icons_unavail" path="c_st8_uim_icons_unavail.html"/>
+   <appContext helpID="t_st8_uim_contacts_sort" path="t_st8_uim_contacts_sort.html"/>
+   <appContext helpID="c_st8_uim_contact_list_outofsynch"
+               path="c_st8_uim_contact_list_outofsynch.html"/>
+</map>

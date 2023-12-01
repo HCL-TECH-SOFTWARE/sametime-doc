@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="upgrade_kubernetes">
+    <title>Upgrading Sametime 11.5 and Sametime 11.6 Kubernetes deployments</title>
+    <taskbody>
+        <prereq id="prereq_y1s_32g_c5b">
+            <p>To upgrade from Sametime 11.5 or Sametime 11.6 to Sametime 12, the following
+                conditions must be satisfied:</p>
+            <p>
+                <ul id="ol_cj1_2sl_c5b">
+                    <li>HCL Sametime Meetings 11.5 or Sametime 11.6 must be installed and
+                        configured.</li>
+                    <li>Sametime has access to a MongoDB server. You can re-use your existing
+                        MongoDB server.<note id="note_xq1_gsl_c5b"> There are no special
+                            configuration steps required for the database. It automatically creates
+                            when the Sametime server connects to MongoDB.</note></li>
+                    <li>Prepare migration steps before upgrading to the latest Sametime version. The
+                        upgrade gives you a new community and proxy component that replaces your
+                        existing components.<ul id="ol_lby_mtl_c5b">
+                            <li>Have a back-out plan. Create a backup of the following files.<ul
+                                    id="ul_ncb_rtl_c5b">
+                                    <li>docker-compose.yml</li>
+                                    <li>custom.env</li>
+                                    <li>.env</li>
+                                </ul></li>
+                        </ul></li>
+                    <li>Docker Compose 1.29 or higher must be installed in your Sametime
+                        environment.</li>
+                </ul>
+            </p>
+        </prereq>
+        <context>
+            <p>To upgrade from Sametime 11.5 or Sametime 11.6 to Sametime 12, follow these
+                steps:</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Extract the 11.5, 11.6, or 11.6 IF1 zip files to any directory on either the
+                    master Kubernetes host itself or on a machine which has management access to the
+                    Kubernetes cluster.</cmd>
+            </step>
+            <step>
+                <cmd>Deploy the docker images.</cmd>
+                <info>
+                    <codeblock id="codeblock_q2q_byl_c5b">./load.sh</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Edit values.yaml where needed.</cmd>
+            </step>
+            <step>
+                <cmd>Run the command below to detect the current settings and copy or update them as
+                    needed.</cmd>
+                <info>
+                    <codeblock id="codeblock_wzl_1zl_c5b">./prepareDeployment.sh</codeblock>
+                </info>
+                <info><image href="Images/i_upgrade_kub_2.png" id="image_gsb_4zl_c5b"/></info>
+            </step>
+            <step>
+                <cmd>Answer <uicontrol>Y</uicontrol> to proceed. If <uicontrol>N</uicontrol> (no) is
+                    answered, the install script prompts for the necessary steps.</cmd>
+            </step>
+            <step>
+                <cmd>Run the command below to upgrade to Sametime 12. </cmd>
+                <info>
+                    <codeblock id="codeblock_mxm_tzl_c5b">helm upgrade meetings -n default helm/.</codeblock>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+    <task id="task_sxq_dwl_c5b">
+        <title>Revert to the previous version</title>
+        <taskbody>
+            <context id="context_crm_hxl_c5b">
+                <p>If you encounter a problem, run the helm command to roll back to the previous
+                    version.</p>
+            </context>
+        </taskbody>
+    </task>
+</task>

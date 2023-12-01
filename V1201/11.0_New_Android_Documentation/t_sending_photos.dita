@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="sending_photos" xml:lang="en-us">
+<title>Sending photos</title>
+<?Pub Caret 3?>
+<shortdesc>You can send photos to an individual contact or a group from the chat view.</shortdesc>
+<taskbody>
+<context>
+<p>Perform the following steps to add a photo to a chat message:</p>
+</context>
+<steps>
+<step>
+<cmd>Choose the <uicontrol>Send Photo</uicontrol> action from the chat menu.</cmd>
+</step>
+<step>
+<cmd>Choose <uicontrol>Take new photo</uicontrol> to take a picture from your device camera, or
+choose <uicontrol>Send saved picture</uicontrol> to choose a photo from one of your photo
+galleries.</cmd>
+</step>
+<step>
+<cmd>Press <uicontrol>OK</uicontrol> to send the photo, or choose <uicontrol>Cancel</uicontrol> to
+cancel the action.</cmd>
+<info>
+<p>
+<note>You can't send a photo to an offline user or to a chat history.</note>
+</p>
+</info>
+</step>
+</steps>
+</taskbody>
+</task>

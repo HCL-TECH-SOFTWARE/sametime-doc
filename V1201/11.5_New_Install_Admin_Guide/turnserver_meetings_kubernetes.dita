@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="turnserver_meetings_kubernetes" xml:lang="en-us">
+    <title>Configuring the TURN server for Kubernetes</title>
+    <taskbody>
+    <context>
+      <p>You can configure the Sametime server to enable a TURN server on port 443 for
+          Kubernetes.<note id="note_p1j_ss1_m5b">Running the script to prepare deployment prompts
+          for TURN server configuration. The following process is to enable TURN post deployment.
+          For more information, refer to <xref href="t_meetings_configure_deployment.dita"/>.
+        </note></p>
+    </context>
+<steps>
+<step>
+        <cmd>Update the <filepath>values.yaml</filepath> file with the following values. Ensure that
+          the syntax for the YAML file is followed.</cmd>
+        <info>
+          <codeblock id="codeblock_opt_mnf_m5b">turnEnable: true
+globalModules: turncredentials
+turnHost:&lt;turn host name>
+turnPort: 443
+turnTransport: tcp
+jvbTcpHarvesterDisabled: true</codeblock>
+        </info>
+      </step>
+<step>
+        <cmd>Update the <filepath>helm/templates/sametime-secrets.yaml</filepath> file.</cmd>
+        <info>Locate the TurnSecret variable and set the value to the base64 encoded secret as set
+          in the TURN
+          configuration.<codeblock id="codeblock_iyk_1w1_m5b">TurnSecret: &lt;base64encoded secret as set in TURN configuration></codeblock></info>
+        <info>
+          <note id="note_bjs_sv1_m5b">If you need to generate a base64 encoded secret, use the
+            following command. Use the unencoded value provided in your TURN
+            configuration.<codeblock id="codeblock_wzj_vv1_m5b">/bin/echo -n $(openssl rand -hex 32) | base64</codeblock></note>
+        </info>
+      </step>
+<step>
+        <cmd>Run the <cmdname>helm update</cmdname> command to enable the configuration
+          changes.</cmd>
+      </step>
+</steps></taskbody>
+</task>
+    

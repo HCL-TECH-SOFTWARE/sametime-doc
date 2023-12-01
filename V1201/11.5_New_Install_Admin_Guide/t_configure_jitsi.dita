@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_configure_jitsi">
+    <title>Enabling multiple videobridges</title>
+    <shortdesc>This section covers the steps on how to enable multiple videobridges. Below are a
+        list of several secrets defined in the sametime-global-secrets resource. There are others
+        not mentioned here as well. Refer to <xref href="managing_secrets_kubernetes.dita"/> for the
+        basic guidelines regarding post-installation configuration. </shortdesc>
+    <taskbody>
+        <prereq id="prereq_cbl_bbk_w5b">
+            <p>Obtain the geolocation license key from <xref href="https://geolocation-db.com/"
+                    format="html" scope="external">Geolocation DB</xref>. The location service
+                determines the region matching and is needed for the primary installation.</p>
+        </prereq>
+        <context>
+            <p>This configuration must be done as part of installation. </p>
+        </context>
+        <steps id="steps_q3p_tgv_t5b">
+            <step>
+                <cmd>Run the command to prepare the primary deployment. </cmd>
+                <info>
+                    <codeblock id="codeblock_lzm_5lk_55b">./prepareDeployment.sh</codeblock>
+                </info>
+                <info>When prompted, answer <uicontrol>Y</uicontrol> to the <msgph>Enable
+                        Octo</msgph> prompt. For more information, refer to <xref
+                        href="t_meetings_configure_deployment.dita"/>.</info>
+            </step>
+            <step>
+                <cmd>Deploy the helm charts. Save the deployed charts for future reference. For more
+                    information, refer to <xref href="t_installing_deploy_st_kubernetes.dita"
+                        scope="local" format="dita"/>.</cmd>
+                <info>
+                    <codeblock id="codeblock_pgr_pjh_y5b">helm install sametime .</codeblock>
+                    <note id="note_xhb_sjh_y5b">
+                        <ul id="ul_rg5_fyy_fnb">
+                            <li>The command assumes you are in the helm directory. The
+                                    <codeph>.</codeph> represents current directory.</li>
+                            <li> Instead of <codeph>sametime</codeph>, you can choose any
+                                descriptive name for the deployment. You can also deploy the
+                                application in a namespace through the <codeph>-n or
+                                    --namespace</codeph> option. First create the namespace with
+                                    <codeph>kubectl create namespace</codeph>.</li>
+                        </ul>
+                    </note>
+                </info>
+            </step>
+            <step>
+                <cmd>Confirm if you have a working single region deployment. For more information,
+                    refer to Kubernetes <xref
+                        href="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/"
+                        format="html" scope="external">Deployment</xref>.</cmd>
+            </step>
+            <step>
+                <cmd>Obtain <codeph>MeetingLocationSecret</codeph>,
+                    <codeph>JvbAuthPassword</codeph>, and <codeph>JwtSecret</codeph> from the
+                    primary installation. You can find this in
+                        <codeph>&lt;ReleaseName>-global-secrets</codeph>.</cmd>
+            </step>
+            <step>
+                <cmd>Ensure that the TCP primary Prosody is open on port 5222 for the secondary JVB
+                    to connect. The prosody host is accessible through the network load balancer if
+                    one is available in your deployment. Every deployment has a different FQDN and
+                    region. Run the command to obtain the FQDN of the prosody host on the primary
+                    deployment.</cmd>
+                <info>
+                    <codeblock id="codeblock_dd2_kzh_y5b">kubectl get service jitsi -o yaml | grep -E 'hostname|ip'</codeblock>
+                    <p>If your deployment does not have a load balancer, you may use the nginx
+                        ingress controller to forward tcp-services for port 5222. Make sure you
+                        configure the nginx-ingress-controller to <xref
+                            href="https://kubernetes.github.io/ingress-nginx/user-guide/exposing-tcp-udp-services/"
+                            format="html" scope="external">enable tcp-services</xref>. Then in the
+                        tcp-services configmap, add an entry. In the following example, the primary
+                        Sametime deployment is in the default
+                        namespace.<codeblock id="codeblock_gzs_b13_y5b">"5222": default/jitsi:5222</codeblock></p>
+                </info>
+            </step>
+            <step>
+                <cmd>Run the command for the second deployment, using the information gathered in
+                    step 4.</cmd>
+                <info>
+                    <codeblock id="codeblock_egn_qc4_v5b">./prepareDeployment.sh </codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Optional: Repeat step 6 for every deployment if you have more than one primary
+                    or secondary installation. </cmd>
+            </step>
+            <step>
+                <cmd>Switch to each remote regional cluster and deploy each deployment using helm.
+                    Save the deployed charts.</cmd>
+                <info>
+                    <note id="note_w43_5nh_y5b">Assuming you use a single kubectl client to deploy
+                        against the primary and remote clusters, you can run the command to see the
+                        possible cluster
+                        contexts.<codeblock id="codeblock_pyl_xnh_y5b">kubectl config get-contexts</codeblock></note>
+                </info>
+                <info>
+                    <p>You can use the <codeph>--kube-context</codeph> on the helm command and the
+                            <codeph>--context</codeph> option on the kubectl command to switch the
+                        context as you perform tasks against each deployment.</p>
+                </info>
+                <stepresult>After enabling multiple videobridges, you end up with a single primary
+                    installation and one or more secondary installations. Having multiple primary
+                    installations in one or multiple regions is not required.</stepresult>
+            </step>
+        </steps>
+        <postreq id="postreq_avy_yqh_y5b">
+            <ol>
+                <li>Open the correct port to establish a UDP connection. Primary JVB talks to
+                    secondary JVB and vice versa through <parmname>JVB_OCTO_BIND_PORT</parmname>.
+                        <ul id="ul_ov1_mtt_v5b">
+                        <li>In a Kubernetes environment, JVB has a separate node group. Port 4096
+                            should be open for UDP in that node group.</li>
+                        <li>JVB should be reachable from the other JVB through port 4096.</li>
+                    </ul><note id="note_i4t_xk3_y5b">You can obtain the IP address of JVB using
+                            <xref href="http://ifconfig.me" format="html" scope="external"/>. An
+                        alternative method is to set <parmname>harvestOctoPublic </parmname> to
+                            <userinput>false</userinput> in the <filepath>values.yaml</filepath>
+                        file and then enter the JVB public address in
+                            <parmname>jvbOctoPublicAddress</parmname> in
+                            <filepath>values.yaml</filepath> for both primary and secondary
+                        installations.</note></li>
+                <li>Test the UDP connection to ensure that the users who have joined from separate
+                    bridges are able to communicate.</li>
+            </ol>
+        </postreq>
+    </taskbody>
+</task>

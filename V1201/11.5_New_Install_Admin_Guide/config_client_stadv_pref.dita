@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="config_client_stadv_pref" xml:lang="en-us">
+<title><tm tmtype="reg" trademark="Sametime">Sametime</tm> Advanced preferences (Sametime 9.0.1
+                only)</title>
+        <shortdesc>These settings only apply to environments that include the Sametime 9.0.1 Advanced Server.
+                </shortdesc>
+<conbody>
+        <p>The following table lists the preferences that are available for the <tm tmtype="reg"
+                trademark="HCL">HCL</tm>
+                <tm tmtype="reg" trademark="Sametime">Sametime</tm> Advanced client. These preferences are set in
+                the <codeph>plugin_customization.ini</codeph> file.</p>
+<p><table><title>Global Preferences - com.ibm.collaboration.realtime</title>
+<tgroup cols="3"><colspec colname="col1" colwidth="99*"/><colspec
+colname="col2" colwidth="99*"/><colspec colname="col3" colwidth="101*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">enableAdvanced</entry>
+<entry colname="col2">Boolean (default value is <userinput>false</userinput>)</entry>
+<entry colname="col3">When the value is set to <userinput>true</userinput>, the <tm tmtype="reg"
+         trademark="Sametime">Sametime</tm> Advanced plug-ins installed with the client become
+        active. </entry>
+</row>
+<row>
+<entry colname="col1">enableInstantShare</entry>
+<entry colname="col2">Boolean (default value is <userinput>false</userinput>)</entry>
+<entry colname="col3">If enableAdvanced is set to <userinput>false</userinput>,
+but the value of enableInstantShare is set to <userinput>true</userinput>,
+the instant share feature is available. Otherwise, the value of enableInstantShare
+is ignored.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<table id="table_jmj_wdl_pz">
+<title>Sametime Advanced Preferences - com.ibm.collaboration.realtime.persistentChat</title>
+<tgroup cols="3">
+<colspec colname="col1" colwidth="99*"/>
+<colspec colname="col2" colwidth="99*"/>
+<colspec colname="col3" colwidth="101*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">showAdvancedVersioningAlert </entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Suppress client version warnings when accessing a Sametime 9.0 (or higher)
+server from an older Connect or Embedded client.</entry>
+</row>
+</tbody>
+</tgroup>
+</table><table><title>Broadcast and Persistent Chat Preferences - com.ibm.collaboration.realtime.bcs</title>
+<tgroup cols="3"><colspec colname="col1" colwidth="99*"/><colspec
+colname="col2" colwidth="99*"/><colspec colname="col3" colwidth="101*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">sametimeAdvancedServerName</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Required. Fully qualified <tm tmtype="reg" trademark="WebSphere">Apache
+         Tomcat</tm> Application Server host name, for example:
+        <userinput>sales</userinput>.</entry>
+</row>
+<row>
+<entry colname="col1">sametimeAdvancedServerPort</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Required. <tm tmtype="reg" trademark="Sametime">Sametime</tm> Advanced Server
+        port number.</entry>
+</row>
+<row>
+<entry colname="col1">sametimeCommunityServer</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Required. Default <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+        Community Server host name. This is the server users log in to for awareness and
+        chat.</entry>
+</row>
+<row>
+<entry colname="col1">broadcastToolsServerName</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Required. Fully qualified <tm tmtype="reg" trademark="WebSphere">Apache
+         Tomcat</tm> Application Server host name.</entry>
+</row>
+<row>
+<entry colname="col1">broadcastToolsServerPort</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Required. <tm tmtype="reg" trademark="WebSphere">Apache Tomcat</tm>
+        Application Server port number. The port number is normally 1883 for HTTP and 8883 for SSL,
+        but can be any port specified by the administrator.</entry>
+</row>
+<row>
+<entry colname="col1">useHTTPS</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">If you are using SSL while connecting to the
+server, set to true. If you are using HTTP set to <userinput>false</userinput>.</entry>
+</row>
+<row>
+<entry colname="col1">advancedServerConnectionType</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Connection type to connect to the <tm tmtype="reg" trademark="Sametime"
+         >Sametime</tm> Advanced server. Set to 0 for a direct connection to the server. Set to 1 to
+        connect through a reverse proxy.</entry>
+</row>
+<row>
+<entry colname="col1">broadcastServerConnectionType</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Connection type to connect to the Broadcast
+Tools server. Set to 1 for a direct connection to the server. Set
+to 2 to connect using SSL.</entry>
+</row>
+<row>
+<entry colname="col1">useHttpProxy</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Set to <userinput>true</userinput> if you are
+using an HTTP forward proxy; otherwise set it to <userinput>false</userinput>.</entry>
+</row>
+<row>
+<entry colname="col1">proxyHost</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Type the proxy IP address or host name if you
+are using a HTTP proxy, otherwise leave it blank.</entry>
+</row>
+<row>
+<entry colname="col1">proxyPort</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Type the HTTP proxy port to which you are connecting.</entry>
+</row>
+<row>
+<entry colname="col1">proxyUserName</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Type the user name if the HTTP proxy requires
+one for authentication; otherwise leave it blank.</entry>
+</row>
+<row>
+<entry colname="col1">reverseProxyBaseURL</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Type the reverse proxy base URL to use if connecting
+through a reverse proxy. For example: <filepath>http://mycompany.example.com/mycontext</filepath><lines> Leave blank otherwise.</lines></entry>
+</row>
+<row>
+<entry colname="col1">reverseProxyUserName</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Enter the reverse proxy user name if the proxy
+is authenticating. Leave blank if you are not using reverse proxies. </entry>
+</row>
+<row>
+<entry colname="col1">jmsProtocol</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Indicate whether the client connects with a
+secure connection using the Security Secure Sockets Layer (SSL) or
+not. The default is <userinput>disthub</userinput> (to connect without
+SSL). Enter <userinput>disthubs</userinput> to connect with SSL.</entry>
+</row>
+<row>
+<entry colname="col1">liveNameResolveTimeout</entry>
+<entry colname="col2">String (the default is 10000 milliseconds)</entry>
+<entry colname="col3">Time allowed in milliseconds for awareness names
+to resolve. The default is 10000.</entry>
+</row>
+<row>
+<entry colname="col1">notifyNewOpenCommunities</entry>
+<entry colname="col2">Boolean (the default is<userinput>true</userinput> )</entry>
+<entry colname="col3">Alert users when a new open community is created.</entry>
+</row>
+<row>
+<entry colname="col1">notifyNewModeratedCommunities</entry>
+<entry colname="col2">Boolean (the default is<userinput>true</userinput> )</entry>
+<entry colname="col3">Alert users when a new moderated community is
+created.</entry>
+</row>
+<row>
+<entry colname="col1">notifyNewPrivateCommunities</entry>
+<entry colname="col2">Boolean (the default is<userinput>true</userinput> )</entry>
+<entry colname="col3">Alert users when a new private community is
+created</entry>
+</row>
+<row>
+<entry colname="col1">blockBroadcastOnDoNotDisturb</entry>
+<entry colname="col2">Boolean (the default is<userinput>true</userinput> )</entry>
+<entry colname="col3">Blocks broadcasts when client is set to "Do
+not disturb".</entry>
+</row>
+<row>
+<entry colname="col1">blockBroadcastOnInMeeting</entry>
+<entry colname="col2">Boolean (the default is<userinput>false</userinput> )</entry>
+<entry colname="col3">Blocks broadcasts when client is set to "In
+a meeting".</entry>
+</row>
+<row>
+<entry colname="col1">notifyChatRoomAddMember</entry>
+<entry colname="col2">Boolean (the default is<userinput>true</userinput> )</entry>
+<entry colname="col3">Alerts users when a chat room has a new member.</entry>
+</row>
+<row>
+<entry colname="col1">blockChatRoomNotifyOnDoNotDisturb</entry>
+<entry colname="col2">Boolean (the default is<userinput>true</userinput> )</entry>
+<entry colname="col3">Blocks chat room notifications the client to
+"Do not disturb".</entry>
+</row>
+<row>
+<entry colname="col1">blockChatRoomNotifyOnInMeeting</entry>
+<entry colname="col2">Boolean (the default is<userinput>false</userinput> )</entry>
+<entry colname="col3">Blocks chat room notifications when user is
+in a meeting.</entry>
+</row>
+<row>
+<entry colname="col1">broadcastServerUserIdType</entry>
+<entry colname="col2">String (the default is<userinput>email</userinput> )</entry>
+<entry colname="col3">Specifies the LDAP attribute used as the user
+ID.</entry>
+</row>
+<row>
+<entry colname="col1">useTokens</entry>
+<entry colname="col2">Boolean (the default is<userinput>true</userinput> )</entry>
+<entry colname="col3">Determines whether the client uses an LTPA token at login. Set this to
+         <userinput>false</userinput> only if there is no way to set up Single Sign-On between the
+         <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community Server and the <tm
+         tmtype="reg" trademark="Sametime">Sametime</tm> Advanced Server. </entry>
+</row>
+<row>
+<entry colname="col1">chatRoomLaunchURLRichClient</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies what type of chat room window the users sees. The value
+         <userinput>true</userinput> represents the <tm tmtype="reg" trademark="Sametime"
+         >Sametime</tm> client chat room and the value <userinput>false</userinput> represents the
+        web browser chat room.</entry><?Pub Caret 90?>
+</row>
+<row>
+<entry colname="col1">onlyActiveChatRooms</entry>
+<entry colname="col2">Boolean (default value is <userinput>false</userinput>)</entry>
+<entry colname="col3">Limits the chat room list to active chat rooms,
+suppressing disabled and archived chat rooms from the list.</entry>
+</row>
+<row>
+<entry colname="col1">showToolTip</entry>
+<entry colname="col2">Boolean (default value is <userinput>true</userinput>)</entry>
+<entry colname="col3">Displays the description associated with a chat
+room when the user mouses over the chat room name.</entry>
+</row>
+<row>
+<entry colname="col1">updateInterval</entry>
+<entry colname="col2">String (default value is 600000 milliseconds,
+or 10 minutes)</entry>
+<entry colname="col3">Specifies the wait (in milliseconds) before
+chat room data is refreshed. You can improve server performance by
+refreshing less frequently.</entry>
+</row>
+</tbody>
+</tgroup>
+</table><table><title>Community Preferences - com.ibm.collaboration.community</title>
+<tgroup cols="3"><colspec colname="col1" colwidth="99*"/><colspec
+colname="col2" colwidth="99*"/><colspec colname="col3" colwidth="101*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">loginTokenRefreshInterval</entry>
+<entry colname="col2">String (default value is 900000 milliseconds, or 15 minutes)</entry>
+<entry colname="col3">LTPA token timeout in seconds. Best practice is to set this value to 5 minutes
+less than the token expiration time configured on the WebSphere server hosting Sametime Advanced,
+and on the Community Server. The value should be specified in milliseconds. For example, if the
+server-side token expiration timeout is 24 hours, configure loginTokenRefreshInterval=86100000
+(which is 23 hours and 55 minutes) on the client.</entry>
+</row>
+</tbody>
+</tgroup>
+</table></p>
+</conbody>
+<?tm 1381172431 13?>
+</concept>
+<?Pub *0000011436?>

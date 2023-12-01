@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="configuring_ldap_docker" xml:lang="en-us">
+    <title>Configuring LDAP on Docker</title>
+    <shortdesc><draft-comment>Tagged as not ready</draft-comment><draft-comment
+            author="debra.taylor"/>Content needed.</shortdesc>
+</task>

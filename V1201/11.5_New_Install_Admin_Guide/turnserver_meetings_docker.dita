@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="turnserver_meetings_docker" xml:lang="en-us">
+<title>Configuring the TURN Server for Docker</title>
+<shortdesc>You can configure the Sametime Meeting service to enable a TURN server on port 443 for
+        Docker.</shortdesc>
+<taskbody>
+<steps>
+<step>
+                <cmd>Update the following configuration in the <filepath>custom.env</filepath>
+                    file.</cmd>
+                <info>
+                    <codeblock># Enable TURN for JVB (bridge mode) connections
+TURN_ENABLE=1
+
+# Secret for connect to TURN server
+# Add the same secret that you used to configure TURN server.
+TURN_SECRET=secret
+
+# Announce FQDN/IP address of the turn server via XMPP server (XEP-0215).
+# If empty or not set, variable DOCKER_HOST_ADDRESS will be used by default.
+TURN_HOST=turn.example.com
+
+# TLS/TCP/UDP turn port for connection
+TURN_PORT=443
+
+# Transport for stun/turn connection. Can be tcp or udp.
+TURN_TRANSPORT=tcp</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Add the following configuration to the <filepath>custom.env</filepath>
+                    file.</cmd>
+                <info>
+                    <codeblock id="codeblock_amd_5y1_m5b">TURN_CREDENTIALS=secret</codeblock>
+                </info>
+            </step>
+<step>
+                <cmd>Update the following configuration in the <filepath>.env</filepath> file.</cmd>
+                <info>
+                    <codeblock>GLOBAL_MODULES=turncredentials</codeblock>
+                </info>
+            </step>
+<step>
+                <cmd>Restart Docker.</cmd>
+                <info>
+                    <codeblock>docker-compose up -d</codeblock>
+                </info>
+            </step>
+</steps>
+</taskbody>
+</task>
+    

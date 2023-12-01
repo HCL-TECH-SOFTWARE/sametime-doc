@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="edit_meeting_telephony" xml:lang="en-us">
+        <title>Editing existing meeting</title>
+        <shortdesc>The conference dial-in option on the edit existing meeting page allows you to
+                enable conference dial-in for an existing meeting. </shortdesc>
+        <conbody>
+                <p><b>Description</b></p>
+                <p>A user must select the <uicontrol>Conference dial-in</uicontrol> checkbox to edit
+                        an existing meeting and click <uicontrol>Copy meeting link</uicontrol>. The
+                        user can share the conference number that displays on the screen for other
+                        users to join the meeting. </p>
+                <p><image href="Images/start_join_telepathy.png" placement="inline" align="left"
+                                id="image_o2n_sjm_bpb"/></p>
+        </conbody>
+</concept>
+<?Pub *0000001020?>
+

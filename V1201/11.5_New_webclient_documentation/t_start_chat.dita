@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_start_chat" xml:lang="en-us">
+<title>Starting a chat</title>
+<shortdesc>You can start a chat with anyone within your chat community.</shortdesc>
+<taskbody>
+<context>There are several ways you can initiate a chat:<ul>
+<li>From your contact list</li>
+<li>Locate a person</li>
+<li>From your list of previous chats</li>
+</ul></context>
+<steps>
+<step>
+<cmd>Locate the person that you want to chat with.</cmd>
+</step>
+<step>
+<cmd>Type your message in the chat message field. </cmd>
+<info>You can do one or more of the following within the chat message field.</info>
+<choices>
+<choice>You can attach a file to your message by using the attach icon (<image
+href="Images/ST9_sendfile.jpg" alt="attache file icon"/>). </choice>
+<choice>You can also send a meeting link to switch from a chat to a meeting. Click the meeting icon
+       (<image href="Images/meet.png" alt="meeting icon"/>) and an instant meeting is started and
+      the link sent to your chat partners.</choice>
+<choice>Locate and add an emoji to your message by clicking the emoji icon (<image
+       href="Images/icon_emoji.jpg" alt="emoji icon"/>).</choice>
+</choices>
+</step>
+<step>
+    <cmd>Press <uicontrol>Enter</uicontrol> or the send icon (<image href="Images/icon_send.jpg"
+      alt="send icon"/>) to send your message to your chat partner.</cmd>
+   </step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000002118?>

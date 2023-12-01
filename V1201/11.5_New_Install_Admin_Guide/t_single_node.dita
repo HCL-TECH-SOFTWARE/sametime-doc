@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_single_node" xml:lang="en-us">
+ <title>Creating persistent volume for a single node deployment</title>
+ <shortdesc><draft-comment author="debra.taylor">tagged not ready</draft-comment>This procedure
+  describes an approach to configuring persistent local node storage for the meeting recordings pod
+  in a Kubernetes environment.</shortdesc>
+ <taskbody>
+<context>
+ <p>This procedure assumes that you have a single worker node running the
+     <parmname>meetings-recording.node</parmname> and persistence is mapped from the available disk
+    space on the node itself. However, there are many complexities related to managing persistence
+    in a Kubernetes environment. So you should find a solution that meets your needs, which might
+    involve using network mounts, elastic cloud storage, and so forth.</p>
+</context>
+<steps>
+   <step>
+<cmd>Extract the <filepath>sametime_meetings.zip</filepath> file and change to the directory with
+the extracted files. The extracted files contain YAML configuration files used in the following
+steps.</cmd>
+</step>
+ <step>
+<cmd>From the worker node, run the following commands to create a mount point on the host.</cmd>
+<info>
+<p>
+<codeblock>sudo mkdir -p /mnt/disk/vol1
+sudo chcon -Rt svirt_sandbox_file_t /mnt/disk/vol1
+sudo chmod 777 /mnt/disk/vol1</codeblock>
+</p>
+</info>
+</step>
+ <step>
+<cmd>Run the following command to create a local storage class.</cmd>
+<info>
+<codeblock>kubectl create -f kubernetes/storage/single-node/storage-class.yaml</codeblock>
+</info>
+</step>
+ <step>
+    <cmd>From the directory with the extracted files, edit the following settings in
+      the<filepath>kubernetes/storage/single-node/persistent-volume.yaml</filepath> file.</cmd>
+    <info>
+     <ul>
+      <li>Replace the value of <codeph>REPLACE_WITH_NODE_NAME</codeph> with your single node
+       name.</li>
+      <li>Adjust the capacity: storage: value to reflect your expected storage needs.</li>
+     </ul>
+    </info>
+   </step>
+ <step>
+<cmd>Run the following command to create a persistent volume.</cmd>
+<info>
+<codeblock>kubectl create -f kubernetes/storage/single-node/peristent-volume.yaml</codeblock>
+</info>
+</step>
+ <step>
+<cmd>Run the following command to create the persistent volume claim.</cmd>
+<info>
+<codeblock>kubectl create -f kubernetes/storage/single-node/peristent-volume-claim.yaml</codeblock>
+</info>
+</step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000003147?>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="loggingin" xml:lang="en-us">
+<title>Signing in to Sametime</title>
+ <shortdesc>You can join a Sametime meeting as an authenticated user or guest user. This topic
+        describes the steps on how to sign in to your Sametime account in a web browser. </shortdesc>
+<taskbody>
+        <prereq id="prereq_ph1_fqc_stb">You need your organization's unique meeting URL to connect
+            to the Sametime server. The meeting URL is in the following
+            format.<codeblock id="codeblock_qk2_lrc_stb">https://meetings.customname.com/</codeblock></prereq>
+<context>
+<p>As a pre-requisite, guests are required to <uicontrol>Join as a guest</uicontrol> and then enter
+                their <i>display name</i>. Unlike authenticated users, guests have limited access to
+                the meeting features. </p>
+            <p>Sign in to your account to create, start, or join a meeting. Your account credentials
+                are the same whether you are using the Sametime embedded client or the standalone
+                client. If your organization uses Single Sign-On (SSO), authenticate using the same
+                credentials as other internal services.</p>
+            <p>To sign in to your account, follow these steps:</p>
+</context>
+        <steps id="steps_udc_1cd_stb">
+            <step>
+                <cmd>In a web browser, go to the meeting URL. For access assistance, contact the
+                    meeting moderator.</cmd>
+                <info>
+                    <note id="note_ucf_vbh_rtb">Microsoft Internet Explorer is not supported. For
+                        more information, refer to <xref
+                            href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0097599"
+                            format="html" scope="external">System Requirements</xref>.</note>
+                </info>
+            </step>
+            <step>
+                <cmd>On the login page, select <uicontrol>Login</uicontrol>.</cmd>
+            </step>
+            <step>
+                <cmd>Enter your username and password, and then select <uicontrol>Login</uicontrol>. </cmd>
+                <stepresult>After you have signed in to your account, the Meetings homepage is
+                    displayed. From the homepage, you can start, edit, and delete a defined meeting
+                    room. You can also access your personal room, start an instant meeting, or
+                    create a moderated meeting. <p><image href="Images/meeting_create.jpg"
+                            alt="Meeting landing page" id="image_egd_mgl_stb"/></p></stepresult>
+            </step>
+        </steps>
+
+</taskbody>
+</task>
+<?Pub *0000002118?>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="working_with_your_contacts" xml:lang="en-us">
+<title>Working with your contacts</title>
+<shortdesc>You can use the Contacts screen to manage your contact lists, view contact information,
+as well as engage in text, audio, and video chats with your contact.</shortdesc>
+<conbody>
+<p>You can view the screen by pressing the <uicontrol>Contacts</uicontrol> button in the left action
+bar on an iPad, or from the Options menu on an iPhone. Press the All Contacts link at the top of the
+list display all of your contacts, organized alphabetically by name. If you have created groups for
+your contacts, they will appear below the All Contacts link, also organized alphabetically. You can
+scroll through the lists of contacts and groups using your fingers. Press the contact you are
+looking for to open the Person Card associated with it.</p>
+<note>On an iPhone, the default view is the Chat tab. To see the Contacts information for the person
+card you must press the business card icon in the upper right of the card.</note>
+</conbody>
+<concept id="concept_cr5_fmb_rhb">
+<title>Working with groups </title>
+<conbody>
+<p>Navigate through the groups you have created by pressing them in the list. You navigate through
+sub-groups in the same way, with each having its own list in a separate pane. You can also swipe
+back and forth between the different cards using your fingers. When you find the contact you are
+looking for, press the name to open the Person Card associated with it.</p>
+</conbody>
+</concept>
+<concept id="working_with_groups">
+<title>Working with Person Cards</title>
+<conbody>
+<p>Whenever you press the name of a contact, its Person Card displays. The Person Card is a central
+hub for getting information about and interacting with your contacts. There are several options
+available from the Person Card:</p>
+<table frame="all" rowsep="1" colsep="1" id="table_idp_qmb_rhb">
+<title>Person Card options</title>
+<tgroup cols="2">
+<colspec colname="c1" colnum="1" colwidth="1*"/>
+<colspec colname="c2" colnum="2" colwidth="1*"/>
+<thead>
+<row>
+<entry>Option</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Information tab</entry>
+<entry>Provides basic information about your contact, including: <ul>
+<li>Email address - Press an address to send a message to your contact using your device's mail
+application.</li>
+<li>Phone number - Press a phone number to initiate an Audio Chat with your contact. If you have
+more than one calling method configured on your device, a drop down menu will display your calling
+options. Press one to initiate the call.</li>
+<li>Physical address - Press the physical address of your contact to display its location in your
+device's map application.</li>
+</ul></entry>
+</row>
+<row>
+<entry>Chat tab</entry>
+<entry>Opens the chat pane for you to initiate a text chat with your contact. For more information,
+refer to <xref href="c_textchatting_apple_device.dita#text_chatting_apple_device"/><p>This is the
+default view for iPhones.</p></entry>
+</row>
+<row>
+<entry>Audio Chat button</entry>
+<entry>This button at the top right of the Person Card initiates an Audio Chat with your contact,
+using your default calling method. If you wish to use another calling method, press one of your
+contact's listed phone numbers to display your list of options. For more information, refer to <xref
+href="c_audio_chatting_apple_device.dita#audio_chatting_appledevice"/></entry>
+</row>
+<row>
+<entry>Video Chat button</entry>
+<entry>This button at the top right of the Person Card initiates a Video Chat with your contact. For
+more information, refer to <xref href="c_video_chatting_apple_device.dita#video_chatting"/></entry>
+</row>
+<row>
+<entry>Action Menu button</entry>
+<entry>Provides additional options for your contact, including: <ul>
+<li>Add/Remove From Favorites - Lets you add or remove this contact from your Favorites list. </li>
+<li>Add to Connections Contacts - Allows you to add the contact to your device's internal contact
+list. </li>
+<li>Send an Announcement - Starts the announcement dialog, with this contact listed first in the
+addresses list. Add additional contacts, enter the message text, then press Send to send the
+announcement to the selected contacts.</li>
+</ul></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</conbody>
+</concept>
+<?tm 1364930070 2?>
+</concept>
+<?Pub *0000002132?>

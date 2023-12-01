@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-us"><title>HCL Sametime Connect and Embedded Users Guide</title>
+    <topicref href="connect_embedded_doc.dita">
+        <topicref href="m_st8_uim_basics.dita">
+            <topicref href="c_st8_uim_welcome.dita"/>
+            <topicref href="t_st8_uim_location.dita"/>
+            <topicref href="c_st9_accessibility.dita"/>
+            <topicref href="r_st9_keyboardshortcuts.dita"/>
+        </topicref>
+        <topicref href="m_st8_uim_textchats.dita">
+            <topicref href="t_st8_uim_chats_tab.dita"/>
+            <topicref href="how_to_customise_chat_window.dita"/>
+            <topicref href="t_st8_uim_chat_nway.dita"/>
+            <topicref href="t_entry_uim_chat_timedate.dita"/>
+            <topicref href="t_st8_uim_emoticon_add.dita"/>
+            <topicref href="t_st8_uim_file_add_desk.dita"/>
+            <topicref href="t_st8_uim_chat_hist.dita"/>
+            <topicref href="t_st852_uim_offline_messages.dita"/>
+        </topicref>
+        <topicref href="m_st9_contacts.dita">
+            <topicref href="t_entry_uim_contacts_shortfull_names.dita"/>
+            <topicref href="t_st8_uim_views.dita"/>
+            <topicref href="t_entry_uim_contacts_shortfull_names.dita"/>
+            <topicref href="t_st852_uim_import_contact_list.dita"/>
+            <topicref href="t_st852_uim_export_contact_list.dita"/>
+            <topicref href="t_st8_uim_privacy.dita">
+                <topicref href="t_st9_privacy_online.dita"/>
+                <topicref href="t_st9_privacy_dnd.dita"/>
+                <topicref href="t_st9_privacy_externalcomm.dita"/>
+            </topicref>
+        </topicref>
+        <topicref href="click_to_meet.dita">
+            <topicref href="how_to_setup_meeting_url.dita"/>
+            <topicref href="how_to_customize_click_to_meet.dita"/>
+        </topicref>
+        <topicref href="m_st8_uim_getconn.dita">
+            <topicref href="c_st8_uim_servercom_whatis.dita"/>
+            <topicref href="t_st8_uim_servercom.dita"/>
+            <topicref href="t_st8_uim_otherIM.dita"/>
+        </topicref>
+        <topicref href="m_st8_uim_other.dita">
+            <topicref href="t_st8_uim_screen_cap.dita"/>
+            <topicref href="t_st8_uim_auto_change_stat_meet.dita"/>
+            <topicref href="t_st8_uim_chat_notifica.dita"/>
+            <topicref href="c_st852_widgets_about.dita"/>
+            <topicref href="t_st852_uim_live_text_use.dita"/>
+            <topicref href="t_st852_uim_live_text_prefs.dita"/>
+        </topicref>
+        <topicref href="m_st8_uim_troubleshoot.dita">
+            <topicref href="c_st8_uim_icons_unavail.dita"/>
+            <topicref href="t_st8_uim_contacts_sort.dita"/>
+            <topicref href="c_st8_uim_contact_list_outofsynch.dita"/>
+        </topicref>
+    </topicref>
+</map>

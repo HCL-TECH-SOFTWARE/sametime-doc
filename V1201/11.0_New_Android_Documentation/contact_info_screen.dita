@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="contact_info_screen" xml:lang="en-us">
+<title>Contact Info Screen</title>
+ <shortdesc>When in a chat view with another <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+  user tap the user avatar in the header or select Contact Info from the overflow menu to display
+  the Contact Info screen where the contact Name, nickname, photo or default avatar, title and
+  awareness status displays. Tapping the chat icon starts a chat with the contact. </shortdesc>
+ <conbody><p>If the contact has provided an email or phone number, these also display. Tapping an email
+   address launches the system default mail app. Tapping the phone number prompts you to dial the
+   number if you are on a device capable of placing calls.</p>
+  <p>You may also assign a nickname to a contact from the Contact Info screen. Nicknames are shown
+   throughout the app in the place of the user’s formal name.</p></conbody>
+</concept>
+<?Pub *0000001020?>

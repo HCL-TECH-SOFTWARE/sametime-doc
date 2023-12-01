@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="starting_a_chat" xml:lang="en-us">
+<title>Starting a chat</title>
+<?Pub Caret 3?>
+<shortdesc>You can start a chat with someone in your Contact List.</shortdesc>
+<taskbody>
+<context>
+<p>To start a chat with someone in your Contact List:</p>
+</context>
+<steps>
+<step>
+<cmd>Tap on the name of the contact in your Contacts list to display their Person Card.</cmd>
+</step>
+<step>
+<cmd>Press the <uicontrol>Chat </uicontrol> tab.</cmd>
+</step>
+<step>
+<cmd>Type your message and then tap the <uicontrol>Send</uicontrol> button.</cmd>
+</step>
+<step>
+<cmd>Look for a response from your chat partner in the chat window.</cmd>
+</step>
+<step>
+<cmd>Close the chat window when you are done chatting. </cmd>
+<info>
+<ul>
+<li>On an iPad, swipe to the right. </li>
+<li>On an iPhone, tap the <uicontrol>Active</uicontrol> button to display the Chats screen. Make
+sure <uicontrol>Active</uicontrol> is selected, tap <uicontrol>Edit</uicontrol>, and then tap the
+red bar next to the chat you wish to close. Tap the <uicontrol>Close</uicontrol> button to close
+that chat.</li>
+</ul>
+</info>
+</step>
+</steps>
+</taskbody>
+</task>

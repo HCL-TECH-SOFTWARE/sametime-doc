@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="chat_config_sametimeini_docker" xml:lang="en-us">
+    <title>Configuring the <filepath>sametime.ini</filepath> file on Docker</title>
+    <shortdesc>
+        <draft-comment author="debra.taylor">Tagged not ready</draft-comment>
+    </shortdesc>
+    <taskbody>
+        <prereq id="prereq_bdb_n4k_mvb">
+            <p>Determine the setting format by reviewing the topic “Configuring the sametime.ini
+                file” </p>
+        </prereq>
+        <steps id="steps_fw5_d4k_mvb">
+            <step>
+                <cmd>Open the <filepath>custom.env</filepath> file for editing. </cmd>
+            </step>
+            <step>
+                <cmd>Insert the <filepath>sametime.ini</filepath> parameters.</cmd>
+            </step>
+            <step>
+                <cmd>Save and close the <filepath>custom.env</filepath> file.</cmd>
+            </step>
+            <step>
+                <cmd> Follow the steps in Applying configuration changes in Docker <draft-comment
+                        author="debra.taylor">(applyconfigchanges_docker.dita)
+                    </draft-comment></cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

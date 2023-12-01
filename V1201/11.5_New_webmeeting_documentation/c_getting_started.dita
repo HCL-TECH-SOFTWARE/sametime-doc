@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="getting_started" xml:lang="en-us">
+<title>Getting started</title>
+ <shortdesc>For a quick overview of the Sametime meeting client features and components, see our
+      <xref href="https://www.hcltechsw.com/products/sametime/quick-start-guide" format="html"
+      scope="external">Quick Start Guide</xref>. If you require step-by-step instructions for the
+    meeting client interface, you can continue to the topic of interest. </shortdesc>
+</concept>
+<?Pub *0000001020?>

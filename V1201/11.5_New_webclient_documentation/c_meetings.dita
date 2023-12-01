@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_meetings" xml:lang="en-us">
+ <title>Meetings</title>
+ <shortdesc>If you are using HCL Sametime Premium, you can create, start, and participate in
+  Sametime meetings.</shortdesc>
+ <conbody>
+  <p>There are several ways to initiate a meeting from Sametime chat.<ul id="ul_l24_32v_ctb">
+    <li> You can participant in an already created meeting that you have received a link.</li>
+    <li>You can create a meeting and invite others to participate.</li>
+    <li>You can start an instant meeting.</li>
+    <li>You can start a meeting with a chat partner or group using the call feature. </li>
+   </ul></p>
+  <p>Click <uicontrol>Meetings</uicontrol> option in the menu to display your meetings and ones that
+   you are a member. From here you can add a meeting and access the Sametime Meetings landing page.
+    <image href="Images/meeting_landingpage.png" id="image_fsm_g2c_dtb"/></p>
+  <p>To add a meeting, you must know the meeting URL, referred to as the <term>meeting link</term>.
+   Click <uicontrol>Add Meeting</uicontrol>. Enter the meeting URL and a unique name for the
+   meeting. Click <uicontrol>Add</uicontrol> and the meeting is added to your meeting list.</p>
+  <p>When in a chat, you can easily invite your chat partner by sending a meeting link in a chat
+   message. To send a meeting link, click the meeting icon (<image href="Images/meet.png"
+    id="image_scf_t2c_dtb" alt="Meetng icon"/>)  in the chat message field and select the meeting
+   link. Click ths send icon (<image href="Images/icon_send.jpg" id="image_zgd_z2c_dtb"
+    alt="Send icon"/>) to send the link.</p>
+  <p>Additional information for using Sametime Meetings is in the <xref
+    href="https://help.hcltechsw.com/sametime/12/meetings/c_client_user_guide.html" format="html"
+    scope="external">Sametime Web Client Users Guide</xref>.</p>
+ </conbody>
+</concept>
+<?Pub *0000001020?>

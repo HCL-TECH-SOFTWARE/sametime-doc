@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_make_request">
+    <title>Making a Request</title>
+    <taskbody><context>
+        <p>To make an API request, follow these steps:</p>
+    </context>
+        <steps>
+            <step>
+                <cmd>Expand the endpoint. In the example below, we expanded the <wintitle>GET
+                        Recent</wintitle> endpoint.</cmd>
+                <info><image href="Images/t_make_request_1.png" id="image_kjl_rpl_nvb"/></info>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Try it out</uicontrol>. After selecting <uicontrol>Try it
+                        out</uicontrol>, the parameter becomes editable.</cmd>
+                <info><image href="Images/t_make_request_2.png" id="image_xw3_5pl_nvb"/></info>
+            </step>
+            <step>
+                <cmd>Enter the required information.</cmd>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Execute</uicontrol>.</cmd>
+            </step>
+        </steps></taskbody>
+</task>

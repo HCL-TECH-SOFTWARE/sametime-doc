@@ -1,0 +1,145 @@
+https://jira.cwp.pnp-hcl.com/browse/SAME-46593
+
+Git commands
+mkdocs build
+mkdocs serve (CTRl C to close live serve)
+git branch -m main master
+git fetch origin
+git branch -u origin/master master
+git remote set-head origin -a
+
+- DITA OT 
+https://www.dita-ot.org/download. Add the install folder to your PATH environment variable, and cd to your ditamap folder. 
+The actual command is just "dita -i <mapname> -f markdown -o <output folder>".
+"dita -i <all-onprem.ditamap> -f markdown -o <out>"
+dita -i all-onprem.ditamap -f markdown -o out
+
+Navigate in cmd prompt to directory where ditamap resides:
+
+All Only
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=hcl_sametime_11_5_install_and_admin.ditamap --format=markdown -o markdown
+
+Leap
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=LEAP_toc.ditamap --format=markdown -o markdown
+
+
+Tiny Editors
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=index.ditamap --format=markdown -o markdown
+index.ditamap
+
+Admin Only
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=connections_top_kc.ditamap --format=markdown -o markdown
+
+Connectors
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=top_connectors.ditamap --format=markdown -o markdown
+
+Connectors Admin
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=connectors.ditamap --format=markdown -o markdown
+
+End User
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=end_user_ddita.ditamap --format=markdown -o markdown
+
+Single File
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=cec-inst-creating-database.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=cec-inst-create-db2-jdbc.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=cec-inst-create-db2-linux.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=cec-inst-create-db2-windows.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=cec-inst-create-mssql-database.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=cec-inst-create-oracle-jdbc-provider.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=cec-inst-database-migration.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=cec-inst-mssql-jdbc-provider.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=cec-inst-using-db2-database.dita --format=markdown -o markdown
+
+
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=t_install_fixpack.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=t_downloading_cr.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=t_update_connections_databases_for_v65_cr1.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=c_installing_fix-packs.dita --format=markdown -o markdown
+C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=t_admin_profiles_configure_adv_search.dita --format=markdown -o markdown
+
+
+c_install_share_dialog.md
+Connections end user 8 moving from DITA to Markdown and use MKDocs
+- Ditaot to MD script 
+- to remove from all md files {#aframe .reference}  find and replce in folders with \{.+\}
+- In Wikis have some numbered and unordered Lists combining into one paragragh.   See if we can work on the conversation.
+- Handle indents / Parent topics
+- Html entities instead of symbols 
+  - = &hyphen;
+  : = &colon;
+  / = &frasl;
+  \ = &#92; or &bsol;
+  ( = &#40;
+  ) = &#41;
+  . = &#46;
+  ' = &apos;
+  ? = &#63;
+List of Formatting features in MKDocs:
+
+Make sure Tables are shown correctly.
+Make sure Note, Warning and Important are as per the standard.
+Fix all the missing Images.
+Fix all the broken links.
+Parent topics and Child topics are removed.
+Related Information topic links are restored and are as per standard.
+Spelling, Grammer mistakes are corrected.
+Unwanted characters are removed.
+Make sure Titles and Headings are short and relavent to the respective content.
+
+MK Docs Info
+
+No $ use instead
+python -m pip install mkdocs
+python -m mkdocs
+python -m mkdocs build
+python -m mkdocs serve
+python -m mkdocs new 
+
+Creating a new project
+Getting started is super easy. To create a new project, run the following command from the command line:
+mkdocs new dx-95-md
+cd dx-95-md
+
+Developer$ mkdocs new dx-95-md
+INFO     -  Creating project directory: dx-95-md
+INFO     -  Writing config file: dx-95-md/mkdocs.yml
+INFO     -  Writing initial docs: dx-95-md/docs/index.md
+Developer$ cd dx-95-md
+
+
+
+Developer:dx-95-md $ mkdocs serve
+INFO     -  Building documentation...
+INFO     -  Cleaning site directory
+INFO     -  Documentation built in 0.24 seconds
+INFO     -  [14:03:38] Serving on http://127.0.0.1:8000/
+
+
+$ python --version
+Python 3.10.1
+$ pip --version
+pip 20.0.2 from /usr/local/lib/python3.10.1/site-packages/pip (python 3.10.1)
+
+python -m mkdocs build
+
+python -m mkdocs serve
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+[I 160402 15:50:43 server:271] Serving on http://127.0.0.1:8000
+[I 160402 15:50:43 handlers:58] Start watching changes
+[I 160402 15:50:43 handlers:60] Start detecting changes
+
+=========================
+Leap issues w conversion to markdownC:\Users\david.sayer\Documents\GitHub-test\leap-mkdocs-test\9.3.3>C:\DITAOT\dita-ot-3.7.3\dita-ot-3.7.3\bin\dita --input=LEAP_toc.ditamap --format=markdown -o markdown
+[move-meta] file:/C:/Users/david.sayer/Documents/GitHub-test/leap-mkdocs-test/9.3.3/tutorials.ditamap:8:57: 
+[DOTX019W][WARN]: The type attribute on a topicref was set to 'task', but the topicref references a 'learningOverview' topic. 
+This may cause your links to sort incorrectly in the output. Note that the type attribute cascades in maps, so the value 'task' may come from an ancestor topicref.
+
+[move-meta] file:/C:/Users/david.sayer/Documents/GitHub-test/leap-mkdocs-test/9.3.3/tutorials.ditamap:12:55: 
+[DOTX019W][WARN]: The type attribute on a topicref was set to 'task', but the topicref references a 'learningOverview' topic. 
+This may cause your links to sort incorrectly in the output. Note that the type attribute cascades in maps, so the value 'task' may come from an ancestor topicref.
+
+[move-meta] file:/C:/Users/david.sayer/Documents/GitHub-test/leap-mkdocs-test/9.3.3/reference.ditamap:21:45: 
+[DOTX019W][WARN]: The type attribute on a topicref was set to 'reference', but the topicref references a 'concept' topic. 
+This may cause your links to sort incorrectly in the output. Note that the type attribute cascades in maps, so the value 'reference' may come from an ancestor topicref.
+

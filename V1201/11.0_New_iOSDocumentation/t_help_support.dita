@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="t_help_support" xml:lang="en-us">
+  <title>Getting help and contacting support</title>
+  <shortdesc>You can access the online <cite>HCL Sametime iOS Users Guide</cite> and contact support
+    from the <wintitle>Help and Support</wintitle> screen.</shortdesc>
+  <taskbody>
+    <context>From the <wintitle>Help and Support</wintitle> screen, you can navigate to online
+      documentation, view logs, and send logs.</context>
+    <steps id="steps_lyf_pdr_dtb">
+      <step>
+        <cmd>Tap the menu icon and tap <uicontrol>Help and Support</uicontrol>.</cmd>
+        <choices id="choices_fwp_xdr_dtb">
+          <choice>Tap <uicontrol>Need Help</uicontrol> to open the Users Guide in a browser window.
+            You can also access other Sametime documents at the same web site.</choice>
+          <choice>Tap <uicontrol>View Log</uicontrol> to open the log viewer. From the
+              <wintitle>View Log</wintitle> screen, you can refresh the log and send the log to
+            another person.<p>You must enable trace logging to capture logs. The Debug Logging
+              setting is part of the device settings. See <xref format="dita"
+                href="t_managing_device_settings.dita" scope="local"/> for details.</p></choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>Tap <uicontrol>Close</uicontrol> to return to the main screen.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>
+<?Pub *0000001020?>

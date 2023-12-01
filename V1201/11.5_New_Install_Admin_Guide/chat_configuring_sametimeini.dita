@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="chat_config_sametimeini" xml:lang="en-us">
+    <title>Configuring the <filepath>sametime.ini</filepath> file</title>
+    <shortdesc><draft-comment author="debra.taylor">Tagged not ready</draft-comment>There are many
+        configuration options in Sametime to override the default behaviors. Server configuration
+        options are in the <filepath>sametime.ini</filepath> file.</shortdesc>
+    <conbody>
+        <draft-comment author="debra.taylor">Determine the setting format by reviewing the topic
+            “Configuring the sametime.ini file” </draft-comment>
+        <p>The <filepath>sametime.ini</filepath> file is part of the community pod. Most of the
+            parameters within the file pertain to community related services such as interactions
+            with LDAP, SAML, authentication, Connect client, chat, security, and more.<draft-comment
+                author="debra.taylor">Kubernetes focused.  Should "chat" be "Web Chat
+                client"?</draft-comment></p>
+        <p>Care must be taken if you change this file. In previous Sametime versions, updating the
+            file was not</p>
+        <p>Note that in Sametime 12, the defaults for many parameters changed, and overriding them
+            should be done with caution. If you have any questions about previous server tuning from
+            an older release, contact HCL Support for guidance. </p>
+        <p>The setting prefix <parmname>STI</parmname> followed by two underscores, followed by the
+            section name, then a two underscores, then the parameter and the value. For example, to
+            add a setting called ST_COMMUNITY_ID to the [Config] section, the new parameter format
+            is <parmname>STI__Config__ST_COMMUNITY_ID</parmname>.</p>
+        <p>The value is different with Kubernetes and Docker. <ul id="ul_rmr_1gj_pvb">
+                <li>For Docker, simply use the = sign and set the value. For example:
+                    STI__Config__ST_COMMUNITY_ID=sametime </li>
+                <li>For Kubernetes, the value is a keypair in the values.yaml and the value is set
+                    in quotes. For example: STI__Config__ST_COMMUNITY_ID: "sametime"</li>
+            </ul></p>
+        <p> If you need to modify a <filepath>sametime.ini</filepath> setting, follow the guidance
+            in the topic for your deployment on Docker or Kubernetes. </p>
+        <section>
+            <title>Format</title>
+            <p>The <filepath>sametime.ini</filepath> file is a sectioned configuration file.
+                Sections are noted with square brackets, for example: <codeph>[Config]</codeph>. The
+                parameters used in the <filepath>sametime.ini</filepath> file are valid only when
+                placed within the correct section. Other considerations when working with the file include:<ul>
+                    <li>Do not duplicate section names or parameters.</li>
+                    <li>Use only characters allowed within an XML file.</li>
+                </ul></p>
+            <p>Parameters are specified as a parameter and value pair. The format is different for
+                Docker and Kubernetes.<dl>
+                    <dlentry>
+                        <dt>Docker</dt>
+                        <dd><varname>parameter</varname>=<parmname>value</parmname></dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Kubernetes</dt>
+                        <dd><varname>parameter</varname>:<parmname>value</parmname></dd>
+                    </dlentry>
+                </dl></p>
+            <p>These settings are documented throughout the help center as well as in the HCL
+                support portal in knowledge articles. The various documentation may have the older
+                (before Sametime 12) notation of the <filepath>sametime.ini</filepath> settings with
+                the section name listed separately. </p>
+        </section>
+    </conbody>
+</concept>

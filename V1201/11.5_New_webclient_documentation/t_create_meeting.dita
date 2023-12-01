@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_create_meeting" xml:lang="en-us">
+ <title>Creating a meeting</title>
+ <shortdesc>You can create a meeting, if you are using Sametime Premium.</shortdesc>
+ <taskbody>
+  <context>
+      <p>From the Chat menu option, you can see meetings that you are the owner or a member. You can
+        only start meetings that you are the owner. From the menu you can also access to the
+        Sametime Meetings landing page where you can create a meeting.</p>
+    </context>
+  <steps>
+   <step>
+    <cmd>Click the menu icon ( <image alt="Add new contact" href="Images/menu.png"
+      placement="inline" id="menu"/>) next to your name and select
+     <uicontrol>Meetings</uicontrol>.</cmd>
+   </step>
+   <step>
+        <cmd>Click <uicontrol>Sametime Meetings</uicontrol> to open HCL Sametime Meetings in a new
+          browser tab.</cmd>
+      </step>
+      <step>
+        <cmd>From the meeting landing page, click <uicontrol>Get Started</uicontrol> and select
+            <uicontrol>Create a new meeting</uicontrol>.</cmd>
+      </step>
+      <step>
+        <cmd>Type a name for the meeting.</cmd>
+        <info>Meeting names must be unique at the server level.</info>
+      </step>
+      <step>
+        <cmd>Select a meeting mode.</cmd>
+        <choices id="choices_inp_jxb_dtb">
+          <choice>Select <uicontrol>Collaboration</uicontrol> if the meeting is open to anyone that
+            is provided with the meeting link.</choice>
+          <choice>Select <uicontrol>Confidential</uicontrol> if the meeting is restricted to a
+            designated set of participants. You expect all participants to use credentials to access
+            the meeting. If guest access is allowed, you must have waiting room enabled.</choice>
+          <choice>Select <uicontrol>Lecture</uicontrol> if the meeting participants are to be in
+            listen-only mode. This choice is suited for presentations type meetings.</choice>
+        </choices>
+      </step>
+      <step>
+        <cmd>Select meeting settings. Settings vary based on the meeting mode that you
+          selected.</cmd>
+        <info>
+          <parml id="parml_jnp_jxb_dtb">
+            <plentry>
+              <pt>Conference dial-in</pt>
+              <pd>When enabled, anyone with the meeting details can join. </pd>
+            </plentry>
+            <plentry>
+              <pt>Meeting password</pt>
+              <pd>When enabled, a password is required for the meeting. Define the meeting password
+                in the text box. Passwords must be at least eight characters. </pd>
+              <pd>This is a required setting for confidential-mode meetings.<p><uicontrol>Meeting
+                    password</uicontrol> will require all participants, including moderators/owners,
+                  to enter a password to join the meeting. Be sure to store this password for later
+                  reference as it will not be visible from the configuration page.<note
+                    id="note_knp_jxb_dtb">If a password is set, an option to <uicontrol>Change
+                      Password</uicontrol> is available. </note></p></pd>
+            </plentry>
+            <plentry>
+              <pt>Waiting room</pt>
+              <pd>Enable to place participants into a waiting room until you let them into the
+                meeting.</pd>
+              <pd>Allows for meeting members not to be placed into the waiting room, instead they go
+                directly into the meeting.</pd>
+            </plentry>
+          </parml>
+        </info>
+      </step>
+      <step>
+        <cmd>Manage meeting participants access and more in the <uicontrol>Member access
+          </uicontrol> section</cmd>
+        <info>
+          <parml>
+            <plentry>
+              <pt>Allow guests</pt>
+              <pd>When enabled, guests or people outside of the organization can join the
+                meeting.</pd>
+            </plentry>
+            <plentry>
+              <pt>Manage members</pt>
+              <pd>This setting is enabled when the Moderated option is selected. The Manage members
+                feature allows hosts to add moderators to the meeting. </pd>
+            </plentry>
+            <plentry>
+              <pt>Moderated</pt>
+              <pd>This setting determines who can start the meeting. If enabled, only moderators can
+                start the meeting and control participant features such as who can present during
+                the meeting. </pd>
+            </plentry>
+            <plentry>
+              <pt>Restricted</pt>
+              <pd>This setting enables the meeting hosts to restrict who has access to the
+                meeting.</pd>
+            </plentry>
+          </parml>
+        </info>
+      </step>
+      <step>
+        <cmd>Click <uicontrol>Start</uicontrol> to begin the meeting or click <uicontrol>Save and
+            Copy meeting link</uicontrol> to share the meeting link with others.</cmd>
+        <info>Clicking <uicontrol>Start</uicontrol> opens the meeting in a new tab and saves the
+          meeting in your <uicontrol>My Meetings </uicontrol> list on the <wintitle>Sametime
+            Meetings</wintitle> landing page.</info>
+      </step>
+  </steps>
+ </taskbody>
+</task>
+

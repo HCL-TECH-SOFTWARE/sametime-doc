@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="moderate_create_new" xml:lang="en-us">
+<title>Create a meeting</title>
+ <shortdesc>You can create a moderated/personal meeting from the <uicontrol>Create a new
+   meeting</uicontrol> screen.</shortdesc>
+<conbody>
+  <p>To create a meeting: <ol id="ol_htp_yzb_cnb">
+        <li>Tap <uicontrol>Meeting name</uicontrol> to give a name to your personal meeting
+            room.<note>When you type the <uicontrol>Meeting name</uicontrol>, it activates
+              <uicontrol>Start Meeting</uicontrol> or <uicontrol>Save and copy</uicontrol>.
+          </note></li>
+        <li>Tap <uicontrol>Meeting Password</uicontrol> to add a password. <note>The minimum length
+            of the password must be 8 characters. </note></li>
+        <li> Tap <uicontrol>Moderated Meeting</uicontrol> to control the aspects of the meeting.
+            <note>This option allows only you or a designated moderator to start and control the
+            other aspects of the meeting. </note></li>
+        <li>Tap <uicontrol>Allow guest access</uicontrol> for users to enter the meeting in
+          view-only mode. </li>
+        <li>Tap <uicontrol>Save</uicontrol> to return to the <uicontrol>My Meetings</uicontrol> list
+          where your meeting will be saved at the top of the list. </li>
+      </ol><image href="Images/create_new_meetings.png" align="left" placement="break"
+        id="create_new_meetings"/></p>
+ </conbody>
+</concept>
+<?Pub *0000001020?>

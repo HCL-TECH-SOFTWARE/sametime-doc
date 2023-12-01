@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_ingress_configure" xml:lang="en-us">
+  <title>Configuring Ingress for Mux</title>
+  <shortdesc>
+    <draft-comment author="debra.taylor"> not ready</draft-comment>
+  </shortdesc>
+  <taskbody>
+    <prereq id="prereq_xjc_z3d_pvb">Complete the steps in the topic  <xref
+        href="t_ingress_install.dita" format="dita" scope="local"/> It is recommended to save the
+      file that you are creating as a result of this topic. Do not save the file in the helm folder,
+      save it at the root directory or sub-directory where the Sametime installation package was
+      unzipped. </prereq>
+    <context id="context_wpm_t3d_pvb">
+      <p>Sametime mux serves connections from Sametime Connect and embedded clients on port 1533.
+        This connection can be routed through the ingress controller as well. This is suitable for
+        an on-premise Kubernetes cluster. </p>
+      <p>If you are deploying in a cloud hosted Kubernetes environment (Google Kubernetes Engine,
+        Amazon Elastic Kubernetes Service, etc) the Sametime mux is deployed as a Kubernetes load
+        balancer service automatically. These steps are not necessary for cloud hosted
+        environments.</p>
+    </context>
+    <steps id="steps_aqk_z3d_pvb">
+      <step>
+        <cmd> For traffic to flow through the Ingress controller, you must apply a configuration map
+          to Ingress.</cmd>
+        <info>Create a file called <filepath>mux-configmap.yaml</filepath> with the following
+          content.</info>
+        <info>
+          <codeblock id="codeblock_rl1_43b_mvb">
+apiVersion: v1
+kind: ConfigMap
+metadata:
+   name: tcp-services
+   namespace: <varname>namespace_name</varname>
+data:
+   1533: "default/mux:mux"</codeblock>
+        </info>
+        <info>If ingress is installed in a namespace, include the <codeph>namespace:
+              <varname>namespace_name</varname>
+          </codeph> statement, otherwise remove it.<draft-comment author="debra.taylor">Verify above
+            statement.</draft-comment></info>
+      </step>
+      <step>
+        <cmd>Apply the configMap values to the configuration by running the following command.</cmd>
+        <info>
+          <codeblock id="codeblock_itb_y34_4tb">kubectl apply -f mux-configmap.yaml</codeblock>
+        </info>
+      </step>
+      <step>
+        <cmd>Run the following <cmdname>kubectl patch</cmdname> command so that port 1533 is
+          available.</cmd>
+        <info>
+          <codeblock id="codeblock_mwv_snb_mvb">kubectl -n ingress-nginx patch deployment ingress-nginx-controller --type=json -p='[\{"op": "replace", "path": "/spec/template/spec/containers/0/args", "value": ["/nginx-ingress-controller","--publish-service=$(POD_NAMESPACE)/ingress-nginx-controller","--election-id=ingress-controller-leader","--controller-class=k8s.io/ingress-nginx","--configmap=$(POD_NAMESPACE)/ingress-nginx-controller","--tcp-services-configmap=$(POD_NAMESPACE)/tcp-services"] }]' </codeblock>
+        </info>
+      </step>
+    </steps>
+  </taskbody>
+</task>
+<?Pub *0000003147?>

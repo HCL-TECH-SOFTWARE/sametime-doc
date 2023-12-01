@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="setting_notifications" xml:lang="en-us">
+<title>Setting up notifications</title>
+<?Pub Caret 3?>
+<shortdesc>You can set notifications to alert you with sound, speech, vibration, or light when
+someone begins a Connections chat.</shortdesc>
+<taskbody>
+<context>
+<p>To set notifications:</p>
+</context>
+<steps>
+<step>
+<cmd>Select the <uicontrol>Menu</uicontrol> action, select the <uicontrol>Settings</uicontrol>
+action, then select the <uicontrol>Notifications </uicontrol> option.</cmd>
+</step>
+<step>
+<cmd>Select the <uicontrol>Notification</uicontrol> options you want to enable.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>

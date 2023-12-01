@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_release_eleven_latest" xml:lang="en-us">
+ <title>Release 11.6.1</title>
+    <shortdesc>Release 11.6.1 includes the following new features.</shortdesc>
+    <conbody><p><ul>
+                <li><b>URL Previews</b> - URLs sent or received in a chat can now show a preview of
+                    the page that the URL represents. <note>You can control this behavior by a new
+                        11.6 user policy that is off by default. Your administrator will need to set
+                        policy <codeph>im.urlPreviewEnabled</codeph> to true.</note></li>
+                <li><b>New Scheduled Meetings View</b> - Now you can join Sametime meetings from
+                    your calendar without ever leaving the sametime app. Tap the meetings menu and,
+                    you will see a new Scheduled list showing calendar events from your Verse and or
+                    Apple calendar. Simply, tap the event in the list to join the associated
+                    Sametime meeting, dial a conference number or open a detail view for the
+                    calendar event.</li>
+                <li><b>Pinned Meetings</b> - Pinned is the new name for the Saved meetings list and,
+                    now it is much easier to add and remove meetings from the list. You can still
+                    add them manually, but you can also use swipe menus on My Meetings and Recent
+                    lists to Pin and Unpin individual meetings. To send a meeting link in a chat,
+                    tap the meeting icon in the chat window and select a meeting from the list of
+                    pinned meetings. </li>
+                <li><b>CarPlay Preview</b> - With this release, we are making available the ability
+                    to join the audio portion of meetings using CarPlay. Simply use the CarPlay UI
+                    to list your My Meetings or Recents list and Start or Join meetings. You can
+                    also use CarPlay to dial into meetings that have telephony configured.</li>
+        <li><b>AppConfig Updates </b> - Support for setting the URL Preview policy is added to
+                    AppConfig. We also removed some policy settings from AppConfig that you can
+                    define using the server-based user policies. For more information, see, <xref
+                        href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0078619"
+                        format="html" scope="external">Configuring HCL Sametime for iOS via an EMM
+                        Provider</xref>. </li></ul></p></conbody>
+</concept>
+<?Pub *0000001020?>

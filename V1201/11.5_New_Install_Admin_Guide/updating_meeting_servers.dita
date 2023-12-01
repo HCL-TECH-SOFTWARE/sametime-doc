@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="updating_meeting_servers" xml:lang="en-us">
+    <title>Updating the Sametime server TLS certificates</title>
+    <shortdesc>The Sametime server is pre-configured with a self-signed certificate. You can replace
+        the self-signed certificate with a third party certificate.</shortdesc>
+    <taskbody>
+        <context id="context_vsl_xly_r5b">
+            <p>Ensure that the certificate chain is complete and in the correct order.  An
+                incorrectly configured list of certificates can cause authentication failures.</p>
+        </context>
+    </taskbody>
+</task>

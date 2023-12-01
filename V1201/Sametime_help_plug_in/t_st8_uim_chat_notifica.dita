@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_st8_uim_chat_notifica" xml:lang="en-us">
+<title>How do I customize the notifications I get for different events?</title>
+<shortdesc>You can choose how to be alerted for a variety of events.
+For example, you can be alerted by a sound when you receive an invitation
+or by bringing the chat window to the front of your screen when someone
+starts a new chat with you.</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Open the notifications dialog box.</cmd><info><table
+frame="all"><title>Options</title>
+<tgroup cols="2">
+<?PubTbl tgroup rth="1.00pt"?>
+<colspec colname="col1" colwidth="1*"/><colspec colname="col2"
+colwidth="1*"/>
+<thead>
+<row>
+<entry colname="col1">If you're using:</entry>
+<entry colname="col2">Do this:</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Sametime</tm> Connect</p></entry>
+<entry colname="col2"><p>Click <menucascade><uicontrol><image
+href="images/ST_gear.jpg"><alt>Actions and preferences</alt></image></uicontrol>
+<uicontrol>Preferences</uicontrol></menucascade>. Then, click <uicontrol>Notifications</uicontrol> in
+the navigator.</p></entry>
+</row>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Notes</tm>
+          </p></entry>
+<entry colname="col2"><p>Click <menucascade><uicontrol><image
+href="images/ST_gear.jpg"><alt>Actions and preferences</alt></image></uicontrol>
+<uicontrol>Preferences</uicontrol></menucascade>. Then, expand the <uicontrol>Sametime</uicontrol> section
+in the navigator and click <uicontrol>Notifications</uicontrol>.</p><?Pub
+Caret 109?></entry>
+</row>
+</tbody>
+</tgroup>
+</table></info></step>
+<step><cmd>Select an event.</cmd></step>
+<step><cmd>Click <uicontrol>Modify Notification Display</uicontrol>,
+if this button is available for the event you selected.</cmd></step>
+<step><cmd>Specify where alerts should display and the width, height,
+and edge padding of the alert window.</cmd></step>
+<step><cmd>Under <uicontrol>Notification settings</uicontrol>, select
+whether to display alerts as a standard window or as a bubble, and
+options related to your selection.</cmd></step>
+<step importance="optional"><cmd>Click <uicontrol>Show Preview</uicontrol> to
+preview the alert window with the settings you specified.</cmd></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step>
+<step><cmd>Select the audio and visual notification options for the
+event. Options may vary, depending on the event.</cmd></step>
+<step><cmd>Click <uicontrol>Apply Sounds to All Events</uicontrol> to
+play the selected sound for all events.</cmd></step>
+<step><cmd>Click <uicontrol>Apply</uicontrol>.</cmd></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step>
+</steps>
+</taskbody>
+<?tm 1365534417 0?>
+</task>
+<?Pub *0000002963?>

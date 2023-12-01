@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="participant_list" xml:lang="en-us">
+  <title>Managing meetings </title>
+  <shortdesc>This section focuses on the additional controls that are available to meeting owners
+    and moderators. </shortdesc>
+  <conbody>
+    <section id="section_zj4_fbn_x5b">
+      <title>Participant list</title>
+      <p>Meeting owners and moderators can keep track of the participants and manage the meeting
+        from the <wintitle>Participant list</wintitle>
+        <image href="Images/participants.png"/>.</p>
+      <p>The said users have the following capabilities. <ul id="ul_m4j_ky5_bpb">
+          <li><uicontrol>Lower hand</uicontrol>—Lower a participant's hand when it is raised during
+            the meeting.</li>
+          <li><uicontrol>Make presenter</uicontrol>—Allow participants to share their screen or
+            share a video in a moderated meeting. </li>
+          <li><uicontrol>Make moderator</uicontrol>—Promote a participant to moderator indefinitely.
+            You can promote authenticated users only. <note>This option is exclusive to meeting
+              owners. </note></li>
+          <li><uicontrol>Mute</uicontrol>—Place a participant on mute. Participants can still unmute
+            themselves when necessary.</li>
+          <li><uicontrol>Stop camera</uicontrol>—Turn off a participant’s camera. Participants can
+            still turn on their camera when necessary.</li>
+          <li><uicontrol>Kick out the participant</uicontrol>—Kick a participant out of the meeting.
+            Participants can re-enter unless the room is locked. <image href="Images/part_img.png"
+              placement="break" align="left" id="image_lb2_3n5_bpb"/><note>These options are
+              specific to Sametime 11.5. Depending on the configuration, not all features may be
+              available to you. Contact your administrator for assistance.</note></li>
+        </ul></p>
+    </section>
+    <section id="section_azb_xws_q5b">
+      <title>More Actions</title>
+      <p>In addition to the features described in the <xref href="c_getting_started.dita"/> and
+          <xref href="user_friendly.dita"/> sections, moderators can record the conversation,
+        configure the additional settings, end the meeting, and start a YouTube live stream. These
+        options are accessible from <uicontrol>More actions <image
+            href="Images/t_more_actions_button.jpg" id="image_rpx_b15_q5b"/></uicontrol>. </p>
+      <p>As a moderator, take note of the following rules.</p>
+      <p>
+        <ol id="ol_ejt_bhs_q5b">
+          <li>Moderators can change the meeting settings at any time. For more information, refer to
+              <xref href="meetings_moderated_management.dita"/>.</li>
+          <li>Enable <uicontrol>Meeting password</uicontrol> to require all the participants,
+            including the moderators, to enter the password as a pre-requisite to joining. For more
+            information, refer to <xref href="create_meetings.dita"/>.</li>
+          <li>Enable <uicontrol>Moderated</uicontrol> to control the flow of the meeting and to also
+            grant presenter rights to select users. When enabled, only one participant can present
+            at a time.</li>
+          <li>By default, guests including outsiders are allowed to join the meeting. Un-select
+              <uicontrol>Allow guests</uicontrol> to restrict users outside your organization from
+            joining.</li>
+          <li>Select <uicontrol>Lecture</uicontrol> to allow participants to join a meeting in
+            listen-only mode. The owner and moderators of the meeting can permit any participants to
+            speak and share screen and video. </li>
+          <li>End-to-end encryption is a preview feature that adds an extra layer of security for
+            your most private internal meetings. <p><image href="Images/c_end2end.png"/></p><note
+              id="note_fjt_bhs_q5b">
+              <ul id="ul_bh4_qjf_rpb">
+                <li>Recording, live streaming, and conference dial-in are not available in an
+                  end-to-end encrypted meeting.</li>
+                <li>Users trying to log in through mobile or unsupported browsers cannot participate
+                  in an end-to-end encrypted meeting.</li>
+                <li>As a preview feature, if a meeting is intended to use end-to-end encryption and
+                  have more than two attendees, then at least three users should join before
+                  enabling end-to-end encryption.</li>
+              </ul>
+            </note>
+          </li>
+        </ol>
+      </p>
+    </section>
+  </conbody>
+  <?Pub Sty _display FontColor="red"?>
+</concept>
+<?Pub *0000002118?>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="release" xml:lang="en-us">
+    <title>Release 11.5</title>
+    <conbody>
+        <p>
+            <ul>
+                <li><b>New modern look</b>
+                    <p>HCL Sametime 11.5 has a simplified, user-oriented look with a cleaner,
+                        modernized user interface, along with a new color scheme and design.</p><p>
+                        <image href="Images/Webclient.png" placement="break" align="left"
+                            id="WebClient"/>
+                    </p></li>
+                <li>
+                    <p><b>Click to meet feature</b></p>
+                    <p>The Click to meet feature is integrated in the Web Chat client and supports
+                        persistent chat across multiple devices. Click to meet lets you start a
+                        meeting with the Sametime Meeting application from a chat conversation. The
+                        "Launch Meeting and Send Invitation" option appears as buttons on the chat
+                        conversation window. When you click the button, a meeting invitation is sent
+                        and the Sametime Meeting application opens in the web browser. Simply enter
+                        your login credentials or enter as a guest user and Click to meet is
+                        enabled!</p>
+                </li>
+                <li>
+                    <p><b>Persistent Chat and Multiple Device Support Sametime Meetings</b>
+                    </p>
+                    <p>Sametime 11.5 delivers a simple and intuitive persistent chat experience that
+                        works the way users expect it to work. Chat flows seamlessly across desktop,
+                        web, and mobile devices. Chat history is available from any device. When you
+                        are logged on to multiple devices, chats sync across them all.</p>
+                </li>
+            </ul>
+        </p>
+    </conbody>
+</concept>

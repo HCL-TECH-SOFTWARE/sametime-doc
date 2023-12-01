@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="managing_your_contacts" xml:lang="en-us">
+<title>Managing your contacts</title>
+ <shortdesc>Tap the menu icon and then the Contacts item to display the Contacts screen.</shortdesc>
+<conbody>
+ <p>When you are online, by default only contacts that are also online are visible, but this can be
+   changed in settings. The contacts screen is a list of your personal and public groups.</p>
+ <p>Personal groups are those that you create for organizing your own contacts. Public groups are those that have been created by an administrator and are already populated with contacts. You can create a hierarchy of groups and contacts under your personal groups, but public groups are static. They can be added as subgroups to personal groups, but you cannot add contacts or subgroups to a public group.</p>
+ <p>As you navigate throughout your contacts hierarchy, each screen has a plus icon at the top.</p>
+ <p>From anywhere in the Contacts view, or within a group, the following options are available in the overflow menu at the upper right.</p>
+<table frame="all" rowsep="1" colsep="1" id="table_idp_qmb_rhb">
+<title>Contact Actions</title>
+<tgroup cols="2">
+<colspec colname="c1" colnum="1" colwidth="1*"/>
+<colspec colname="c2" colnum="2" colwidth="1*"/>
+<thead>
+<row>
+<entry>Option</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+ <entry>Announcement</entry>
+ <entry>Tapping it displays the Announcement screen.  From here you can send a message to all the
+       online members of the group.  The announcement displays as a popup alert on the recipient’s
+       client unless you set the Allow to Respond switch ON.  In this case, a chat opens on each of
+       the recipient’s clients.</entry>
+</row>
+<row>
+ <entry>Add Contact</entry>
+ <entry>This action displays the Add Contact screen where prompt displays to search for the name of
+       a contact. As you start typing, any local contacts that you may have in other groups display
+       under the local results heading. To perform a Directory Search on the server, tap the search
+       icon on the keyboard. Once you find the contact you are looking for, tap it to display the
+       contact information so you can be sure you are adding the correct contact. If you are adding
+       from the main contacts screen, you can also specify the group to add the contact. If you are
+       adding from within a group, you can add the contact to the group you are in. This action is
+       not allowed within a public group.</entry>
+</row>
+<row>
+<entry>Add Group</entry>
+ <entry>This action displays the Add Group dialog first prompting whether you want to add a Private
+       or Public group. The default is a Private group, which is a group specific to you. Public
+       groups are visible to other users. Private groups can be nested within other groups, Public
+       groups cannot. Name your new group and tap Add.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+<p>From the Contacts view there are also several options available by long pressing the group.</p>
+ <table frame="all" rowsep="1" colsep="1" id="table_idp_qmb_rhb_new">
+  <title>Context Actions with Groups</title>
+  <tgroup cols="2">
+   <colspec colname="c1" colnum="1" colwidth="1*"/>
+   <colspec colname="c2" colnum="2" colwidth="1*"/>
+   <thead>
+    <row>
+     <entry>Option</entry>
+     <entry>Description</entry>
+    </row>
+   </thead>
+   <tbody>
+    <row>
+     <entry>Rename Group</entry>
+     <entry>This action opens a dialog to rename this group. The current group name shows in the
+       title, edit it in the text field and tap Yes to rename.</entry>
+    </row>
+    <row>
+     <entry>Remove Group</entry>
+     <entry>Selecting this opens a confirmation dialog to remove this group. Click Yes to
+       confirm.</entry>
+    </row>
+    <row>
+     <entry>Announcement</entry>
+     <entry>This action opens the Announcement dialog and pre-select each online user in this
+       group.</entry>
+    </row>
+   </tbody>
+  </tgroup>
+ </table>
+</conbody>
+</concept>
+<?tm 1364930070 2?>
+<?Pub *0000002132?>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="install_plugin" xml:lang="en-us">
+<title>Installing Sametime Meetings Add-in</title>
+    <shortdesc>To use HCL <tm tmtype="reg" trademark="Sametime">Sametime Meetings</tm>, install the
+        custom add-in to Microsoft Outlook from a URL or a file.</shortdesc>
+</concept>

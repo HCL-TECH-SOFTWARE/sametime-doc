@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_st852_uim_import_contact_list" xml:lang="en-us">
+<title>How do I import a <tm tmtype="reg" trademark="Sametime">Sametime</tm> contact
+list?</title>
+<shortdesc>You can import an HCL <tm tmtype="reg">Sametime</tm> contact list as a way to quickly add
+  a large number of contacts to your existing contact list. Or, you can import a pre-populated
+  contact list, if you don&apos;t already have one, or replace your existing contact list with the
+  names you import.</shortdesc>
+<prolog><metadata>
+<keywords><keyword>contact list</keyword><keyword>importing</keyword>
+<keyword>importing contact list</keyword></keywords>
+</metadata></prolog>
+<taskbody>
+<steps>
+<step>
+        <cmd>Click <menucascade>
+            <uicontrol><image href="images/ST_gear.jpg">
+                <alt/>
+              </image></uicontrol>
+            <uicontrol>Manage Contacts</uicontrol>
+            <uicontrol>Import Contact List</uicontrol>
+          </menucascade></cmd>
+      </step>
+<step><cmd>Select one of the following import options:</cmd>
+<substeps>
+<substep><cmd><uicontrol>From server</uicontrol> to import a <tm
+tmtype="reg" trademark="Sametime">Sametime</tm> contact list from
+another server community you are logged in to.</cmd></substep>
+<substep><cmd><uicontrol>From file</uicontrol> and search for a file
+that contains the <tm tmtype="reg" trademark="Sametime">Sametime</tm> contact
+list you want to import.</cmd></substep>
+</substeps>
+</step>
+<step><cmd>If you are asked about replacing your contact list, select <uicontrol>Replace
+existing contact list with imported list</uicontrol> to remove your
+existing <tm tmtype="reg" trademark="Sametime">Sametime</tm> contacts
+list and replace it with the imported one. Clear this option to merge
+the contents of the two <tm tmtype="reg" trademark="Sametime">Sametime</tm> contact
+lists.</cmd></step><?Pub Caret 1?>
+</steps>
+</taskbody>
+<?tm 1365610896 5?>
+</task>
+<?Pub *0000002068?>

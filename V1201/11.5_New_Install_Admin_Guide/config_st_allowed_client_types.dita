@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_st_allowed_client_types" xml:lang="en-us">
+<title>Configuring allowed client types</title>
+<shortdesc>You can define the types of clients that can connect to the Sametime server.</shortdesc>
+<taskbody>
+  <context>When using this setting, only client IDs that are on the list are allowed to connect to
+      the Sametime server. For more information on the list of Sametime client IDs, see <xref
+        href="new_client_ids.dita">Sametime Client IDs</xref>. This is an optional task. Follow
+      these steps to specify the list of client types.  </context>
+<steps>
+      <step>
+        <cmd>Open a text editor on the Sametime server.</cmd>
+      </step>
+      <step>
+        <cmd>Open the <filepath>sametime.ini</filepath> file located in the Sametime server
+          installation directory.</cmd>
+        <info>The default directory in Windows is <filepath>C:\program files\HCL\domino</filepath>.
+        </info>
+      </step>
+      <step>
+        <cmd>In the Config section, enter the client type IDs for the allowed client types in the
+            <codeph>VPS_ALLOWED_LOGIN_TYPES</codeph> flag. If the flag is not specified or its value
+          is empty, then all client types are allowed to connect to the server. It is a
+          comma-separated list.</cmd>
+        <info>
+          <codeblock id="codeblock_ujh_rtp_3tb">[Config]VPS_ALLOWED_LOGIN_TYPES=130B,130A</codeblock>
+          <note>Once the <codeph>VPS_ALLOWED_LOGIN_TYPES</codeph> flag is used, you must update the
+            values whenever you add new client types; otherwise the new client type cannot log in.
+          </note>
+        </info>
+      </step>
+      <step>
+        <cmd>Save the <filepath>sametime.ini</filepath> file. </cmd>
+      </step>
+      <step>
+        <cmd>Restart the Sametime server to commit the changes. </cmd>
+      </step>
+    </steps>
+</taskbody>
+</task>
+

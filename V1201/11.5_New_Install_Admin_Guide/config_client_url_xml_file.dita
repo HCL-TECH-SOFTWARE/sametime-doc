@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_client_url_xml_file" xml:lang="en-us">
+<title>Changing the URL for the settings XML file in the plugin_customization.ini
+file</title>
+<shortdesc>If you must change the URL for the managed settings file,
+do so by updating the plugin_customization.ini file.</shortdesc>
+<taskbody>
+<context>Follow these steps to update the plugin_customization.ini
+file with the new file name or URL.</context>
+<steps>
+<step><cmd>Verify that the settings XML file is in the location where
+it will be called from the plugin_customization.ini file.</cmd></step>
+<step>
+    <cmd>In the plugin_customization.ini file, change the key that defines the Expeditor Managed
+     settings framework and the name and location of the settings XML
+      file.<filepath>com.ibm.rcp.managedsettings.provider.file/URL</filepath> and the name and
+     location of the settings XML file to be used. For example:</cmd>
+    <info>
+     <p>
+      <codeblock>com.ibm.rcp.managedsettings.provider.file/URL=http://sametime.example.com/demo/managed-settings.xml
+or
+com.ibm.rcp.managedsettings.provider.file/URL=file://c:/data/managed-settings.xml</codeblock>
+     </p>
+    </info>
+   </step>
+</steps>
+<result>The next update runs with the old URL, but subsequent updates
+run with the new URL. If the new URL is not reachable at the time
+of the update, the setting will not be saved and the original URL
+will continue to be used. The URL will not be changed until it is
+updated at a time that the URL can be reached.</result>
+</taskbody>
+
+</task>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_using_meetings" xml:lang="en-us">
+ <title>Using HCL <tm tmtype="reg">Sametime</tm> Meetings Plug-in</title>
+ <shortdesc>These are the new features and enhancements introduced in recent releases of HCL <tm
+   tmtype="reg" trademark="Sametime">Sametime</tm> for Web Chat Client.</shortdesc>
+</concept>
+<?Pub *0000001020?>

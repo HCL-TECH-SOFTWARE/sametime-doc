@@ -1,0 +1,13 @@
+<div style="background-color:#0066b3;height: 60px;">
+    <font color="white" style="    display: -webkit-flex; display: flex; list-style-type: none;justify-content: flex-end;padding: 20px 0;"> <a href="https://support.hcltechsw.com/csm" style="color:#8cd7fa; margin-right: auto;"><img width="110" src="https://help.hcltechsw.com/notes/assets/img/HCL_Logo-white.svg" href="https://help.hcltechsw.com/notes/assets/img/HCL_Logo-white.svg" alt="HCL Logo" target="_blank" style="margin: 0px 15px;" />
+        <span class="nav-bar-separator-pipe"></span><span class="title" style="margin-left: 15px; vertical-align: middle; font-size: large;;">Help Center</span></a>
+        
+        <div align="right"><span class="title"><a href="https://www.hcltech.com/" target="_blank" style="color:#8cd7fa; margin-right: 20px;">HCL TECHNOLOGIES</a>
+            <span class="title"><a href="https://www.hcltechsw.com/wps/portal/about" target="_blank" style="color:#8cd7fa; margin-right: 20px;">ABOUT US</a></span>
+            <span class="title"><a href="https://www.hcltechsw.com/wps/portal/products" target="_blank" style="color:#8cd7fa; margin-right: 20px;">PRODUCTS &#38; SOLUTIONS</a></span>
+            <span class="title"><a href="https://www.hcltechsw.com/wps/portal/resources" target="_blank" style="color:#8cd7fa; margin-right: 20px;">RESOURCES</a></span>
+            <span class="title"><a href="https://www.hcltechsw.com/wps/portal/contact-us" target="_blank" style="color:#8cd7fa; margin-right: 20px;">CONTACT US</a></span>
+        
+        </span></div>
+</font></div>
+

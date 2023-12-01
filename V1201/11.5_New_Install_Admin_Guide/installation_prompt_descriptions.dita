@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="installation_prompt_descriptions" xml:lang="en-us">
+        <title>Information to provide during installation</title>
+        <shortdesc>During the install process,  you are prompted for information used to tailor the
+                installation for your environment.</shortdesc>
+        <conbody>
+                <p>The Sametime install prompts for several details pertaining to the environment.
+                        Before initiating the process, gather the listed details.</p>
+                <dl id="dl_mcy_nrn_4tb">
+                        <dlentry>
+                                <dt>Sametime server name</dt>
+                                <dd>The fully qualified name of the Sametime server.</dd>
+                        </dlentry>
+                        <dlentry>
+                                <dt>MongoDB</dt>
+                                <dd>
+                                        <dl id="dl_v4f_vrn_4tb">
+                                                <dlentry>
+                                                  <dt>Mongo host</dt>
+                                                  <dd>The host name of the MongoDB server.</dd>
+                                                </dlentry>
+                                                <dlentry>
+                                                  <dt>Mongo port</dt>
+                                                  <dd>The port number used to communicate with the
+                                                  MongoDB server.</dd>
+                                                </dlentry>
+                                                <dlentry>
+                                                  <dt>Administrator user name</dt>
+                                                  <dd>The user name of the MongoDB administrator
+                                                  defined when configuring the MongoDB. The default
+                                                  MongoDB administrator is
+                                                  <userinput>sametimeUser</userinput>.</dd>
+                                                </dlentry>
+                                                <dlentry>
+                                                  <dt>Password</dt>
+                                                  <dd>The password for the the MongoDB administrator
+                                                  defined when configuring the MongoDB. The default
+                                                  MongoDB password is
+                                                  <userinput>sametime</userinput>.</dd>
+                                                </dlentry>
+                                                <dlentry>
+                                                  <dt>Connection URL</dt>
+                                                  <dd>A secure URL to connect to the MongoDB server.
+                                                  The supplied URL overrides the default MongoDB
+                                                  URL.</dd>
+                                                </dlentry>
+                                        </dl>
+                                </dd>
+                        </dlentry>
+                        <dlentry>
+                                <dt>LDAP</dt>
+                                <dd>
+                                        <dl id="dl_wwq_1sn_4tb">
+                                                <dlentry>
+                                                  <dt>LDAP server</dt>
+                                                  <dd>The host name or IP address of the LDAP
+                                                  server.</dd>
+                                                </dlentry>
+                                                <dlentry>
+                                                  <dt>LDAP port</dt>
+                                                  <dd>The port used to communicate with the LDAP
+                                                  server.</dd>
+                                                </dlentry>
+                                                <dlentry>
+                                                  <dt>Bind name and password</dt>
+                                                  <dd>The bind account name and password for
+                                                  Sametime to access LDAP.</dd>
+                                                </dlentry>
+                                                <dlentry>
+                                                  <dt>Base DN</dt>
+                                                  <dd>The base location where Sametime begins a
+                                                  search for users and groups.</dd>
+                                                </dlentry>
+                                                <dlentry>
+                                                  <dt>TLS access</dt>
+                                                  <dd>If LDAP is access using TLS, provide the port
+                                                  number.</dd>
+                                                </dlentry>
+                                        </dl>
+                                </dd>
+                        </dlentry>
+                        <dlentry>
+                                <dt>JWT Secret</dt>
+                                <dd>The Base64 encoded JWT_SECRET from the Sametime deployment. If
+                                        migrating from another version of Sametime, you can re-use
+                                        your existing secret. If you don't have one the install
+                                        program generates it.</dd>
+                        </dlentry>
+                        <dlentry>
+                                <dt>TURN server</dt>
+                                <dd>The fully-qualified host name of a TURN server.</dd>
+                        </dlentry>
+                        <dlentry>
+                                <dt>TCP configuration</dt>
+                                <dd>The port number used for TCP communications. The default is port
+                                        number 4443.</dd>
+                        </dlentry>
+                        <dlentry>
+                                <dt>LTPA configuration</dt>
+                                <dd>If you plan to use LTPA, generate the LTPA keys and password
+                                        before running the install program. See <xref
+                                                href="enabling_sso_ltpa.dita"/>. </dd>
+                        </dlentry>
+                </dl>
+        </conbody>
+</concept>

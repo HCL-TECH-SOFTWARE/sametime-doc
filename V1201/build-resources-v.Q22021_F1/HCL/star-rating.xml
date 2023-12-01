@@ -1,0 +1,44 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8"></meta>
+    </head>
+
+    <body>
+        <hr/>
+        <div class="ratingForm">
+            <div class="form-group">
+                <legend id="ratingStarLabel">Rate this topic</legend>
+                <div class="rate">
+                    <input type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                </div>
+            </div>
+			<br></br>
+			<br></br>
+            <div class="form-group">
+                <legend id="ratingCommentLabel">Comment on this topic.</legend>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="rateCheck"/>
+                    <label class="form-check-label" for="rateCheck" id="rateCheckLabel">
+                        By clicking this box, you acknowledge that you are NOT a U.S. Federal Government 
+                        employee or agency, nor are you  submitting information with respect to or on behalf 
+                        of one. HCL provides software and services to U.S. Federal Government customers through 
+                        its partners immixGroup, Inc. Contact this team at <a href="https://hcltechsw.com/resources/us-government-contact">https://hcltechsw.com/resources/us-government-contact</a>.  Do not include any personal data in this Comment box.
+                    </label>
+                </div>
+                <textarea class="form-control form-control-lg" id="rate-comment" rows="3" disabled="true"></textarea>
+            </div>
+            <input type="button" id="rate-submit" class="btn btn-primary btn-lg" value="Submit" disabled="true"> </input>
+        </div>
+    </body>
+
+</html>

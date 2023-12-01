@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_class_file_kubernetes" xml:lang="en-us">
+    <title>Configuring the class file on Kubernetes</title>
+    <shortdesc>You can use a custom Java class file to transform your searches for LDAP for the
+        community pod.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_afk_2vy_l5b">
+            <p>You must have already created and compiled the class file using Java 1.8.</p>
+        </prereq>
+        <context>
+            <p>To configure a custom Java class file to transform your searches for LDAP for the
+                community pod in Kubernetes you need to complete the following tasks.<ul
+                    id="ul_dv1_qqx_fvb">
+                    <li>Create a ConfigMap with your compiled class file</li>
+                    <li>Modify the community <filepath>pod.yaml</filepath> file to load the
+                        ConfigMap </li>
+                    <li>Override the default LDAP settings to use the class file</li>
+                </ul></p>
+            <p>The changes in this task affect the following pods:<ul id="ul_yqd_j1d_d5b">
+                    <li>community</li>
+                </ul></p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Create a <filepath>configmap</filepath> with your compiled class file.</cmd>
+                <substeps id="substeps_o1s_kvy_l5b">
+                    <substep>
+                        <cmd>Name the compiled class file
+                                <filepath>StLdapCustomizedAttributes.class</filepath>.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Create a folder on the machine where you run the
+                                <cmdname>kubectl</cmdname> commands called
+                                <filepath>ldap-custom-filter</filepath>.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Place the <filepath>StLdapCustomizedAttributes.class</filepath> file
+                            into the <filepath>ldap-custom-filter</filepath> folder.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Change directories to the <filepath>ldap-custom-filter</filepath>
+                            folder.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Run the following command to create a ConfigMap with the
+                                <filepath>StLdapCustomizedAttributes.class</filepath> within
+                            it.</cmd>
+                        <info>
+                            <codeblock id="codeblock_ftc_dwy_l5b">
+kubectl create configmap ldap-custom-filter --from-file=./ </codeblock>
+                        </info>
+                        <info>
+                            <note id="note_ds3_msw_fvb">If you have a namespace dedicated to
+                                Sametime, add the <parmname>-n</parmname> argument with your
+                                namespace to ensure it is created in the correct namespace. </note>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Modify the <filepath>pod.yaml</filepath> file for the community pod to load the
+                    ConfigMap.</cmd>
+                <substeps id="substeps_hrq_4sw_fvb">
+                    <substep>
+                        <cmd> Use a text editor to open the file <filepath>pod.yaml</filepath> in
+                            the <filepath>helm/charts/community/templates/</filepath>
+                            directory.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Locate the <codeph>volumeMounts:</codeph> section and under the first
+                                <codeph>mountPath,</codeph> statement create a new line and add the
+                            following stanza.</cmd>
+                        <info>
+                            <codeblock id="codeblock_cyr_2sc_mvb">
+- name: ldap-custom-filter 
+configMap: ldap-custom-filter
+name: </codeblock>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Correct the indentation using only spaces so that the alignment of the
+                            new lines is the same as the lines above it. When finished it should
+                            look like the following:</cmd>
+                        <info><image href="Images/classfile_example_podyaml.png"
+                                id="image_kwz_5nc_gvb" alt="Example of stanza format"/></info>
+                    </substep>
+                    <substep>
+                        <cmd>Save and close the <filepath>pod.yaml</filepath> file.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Override the default LDAP settings to use the class file.</cmd>
+                <substeps id="substeps_btd_ntw_fvb">
+                    <substep>
+                        <cmd>Make a directory on your machine called
+                                <filepath>extra-community-config</filepath> at the root of where the
+                            Sametime installation package was decompressed.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Change to the <filepath>extra-community-config</filepath>
+                            directory.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Find the community pod name by running the <cmdname>get pods</cmdname>
+                            command. The pod name has some hashes in it, for example:
+                                <codeph>community-77d4695988-2bzrx):</codeph>.</cmd>
+                        <info>
+                            <codeblock id="codeblock_shv_5tw_fvb">kubectl get pods</codeblock>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Run the following command to pull a copy of the
+                                <filepath>StCommunityConfig.xml</filepath> file, specifying the name
+                            of the pod.</cmd>
+                        <info>
+                            <codeblock id="codeblock_ugr_ttw_fvb"> kubectl exec -it <varname>pod_name</varname> --container community -- cat /local/notesdata/StCommunityConfig.xml >./StCommunityConfig.xml </codeblock>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Update the configuration that pertains to your custom Java class. Open
+                            the <filepath>StCommunityConfig.xml</filepath> file that was just copied
+                            to your machine. Then edit the <codeph>&lt;LDAP></codeph> section as it
+                            pertains to your configuration. The changes depend on what you are
+                            modifying, refer to the following table for guidance.</cmd>
+                        <info>
+                            <table frame="all" rowsep="1" colsep="1" id="table_i23_tmb_hvb">
+                                <title/>
+                                <tgroup cols="4">
+                                    <colspec colname="c1" colnum="1" colwidth="2*"/>
+                                    <colspec colname="c2" colnum="2" colwidth="1*"/>
+                                    <colspec colname="c3" colnum="3" colwidth="1*"/>
+                                    <colspec colname="newCol4" colnum="4" colwidth="1*"/>
+                                    <thead>
+                                        <row>
+                                            <entry>Type of change</entry>
+                                            <entry>Parameter name</entry>
+                                            <entry>What to specify</entry>
+                                            <entry>Example</entry>
+                                        </row>
+                                    </thead>
+                                    <tbody>
+                                        <row>
+                                            <entry>Search filter for resolving person names </entry>
+                                            <entry>PersonResolveFilter </entry>
+                                            <entry>classname.methodname() for your custom
+                                                code</entry>
+                                            <entry><codeph>StLdapCustomized.peopleResolveFilter()
+                                                </codeph></entry>
+                                        </row>
+                                        <row>
+                                            <entry>Search filter for resolving group names </entry>
+                                            <entry>GroupResolveFilter </entry>
+                                            <entry>Class name and method name for a group filter,
+                                                using the following format:
+                                                  <codeph>Classname.methodname() </codeph></entry>
+                                            <entry><codeph>StLdapCustomized.groupsResolveFilter()</codeph>.
+                                            </entry>
+                                        </row>
+                                        <row>
+                                            <entry>Attribute of the person entry that defines the
+                                                person's name </entry>
+                                            <entry>DescAttribute </entry>
+                                            <entry>Class name and method name for the formatting,
+                                                with the name of the attribute inside, for example:
+                                                  Classname.methodname(<varname>attribute_name</varname>) </entry>
+                                            <entry><codeph>StLdapCustomizedAttributes.displayName(cn)
+                                                </codeph></entry>
+                                        </row>
+                                    </tbody>
+                                </tgroup>
+                            </table>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Save and close the <filepath>StCommunityConfig.xml</filepath>
+                            file.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Ensure you are in the <filepath>extra-community-config</filepath>
+                            directory that was created earlier then run the following command to
+                            create the secret.</cmd>
+                        <info>
+                            <codeblock id="codeblock_x4d_2qd_gvb"> kubectl create secret generic extra-community-config --from-file=./ </codeblock>
+                            <note id="note_llz_cqd_gvb">If you have a namespace dedicated to
+                                Sametime, add the <parmname>-n</parmname> argument with your
+                                namespace to ensure it is created in the correct namespace.</note>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Change to the <filepath>helm</filepath> directory where the Sametime
+                            installation package was decompressed.</cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Open the<filepath> values.yaml</filepath> file and place in edit mode.
+                        </cmd>
+                    </substep>
+                    <substep>
+                        <cmd>Add the following line.</cmd>
+                        <info>
+                            <codeblock id="codeblock_qfm_kqd_gvb">overrideCommunityConfigSecret: extra-community-config</codeblock>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Save and close the <filepath>values.yaml</filepath> file.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+            <step
+                conref="securing_ldap_kubernetes.dita#securing_ldap_kubernetes/apply_changes_helmupgrade">
+                <cmd/>
+            </step>
+            <step conref="pod_apply_changes.dita#pod_apply_changes/scale_pod">
+                <cmd/>
+            </step>
+        </steps>
+    </taskbody>
+</task>

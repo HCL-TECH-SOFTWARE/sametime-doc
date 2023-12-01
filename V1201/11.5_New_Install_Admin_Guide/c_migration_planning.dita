@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_migration_planning">
+    <title>Planning for migration to Sametime 12</title>
+    <shortdesc>This section describes the best practices for planning migration from an earlier
+        Sametime release.</shortdesc>
+    <conbody>
+        <p>If the older Sametime deployment is not configured for LDAP, then the contact lists must
+            be converted using the <codeph>Stnamechange</codeph> utility before migrating. The
+                <codeph>Stnamechange</codeph> utility is currently unavailable on Sametime 12. Run
+            the utility on Sametime 9, 10, or 11 before migrating.</p>
+        <section id="section_wqy_grv_15b">
+            <title>Side-by-side migration</title>
+            <p>
+                <ul id="ol_klt_gny_3tb">
+                    <li>Sametime 12 does not support upgrades from an existing community or proxy
+                        server to Sametime 12. Sametime 12 is now containerized, and you have to
+                        deploy the new images and then migrate your users.</li>
+                    <li>If the new server is part of the same community as your existing servers,
+                        block port 1516 between the new server and existing server to prevent
+                        confusion while testing and validating new features. Prior to migrating,
+                        make sure port 1516 is open.</li>
+                </ul>
+            </p>
+        </section>
+        <section id="section_ahy_55v_15b">
+            <title>VPUSERINFO.NSF</title>
+            <p>
+                <note id="note_dhz_4m2_ltb">Running the <codeph>notes-migration</codeph> tool moves
+                    your contact list to MongoDB. For more information on how to migrate your
+                    contacts, refer to <xref href="migrating_upgrading.dita"/>.</note>
+            </p>
+            <p>
+                <ul id="ol_b4m_3ny_3tb">
+                    <li>Prior to the migration, you must purge stale users from
+                            <filepath>vpuserinfo.nsf</filepath>. This step can be done manually with
+                        a Lotuscript agent, or by using the <codeph>NameChange</codeph> utility.
+                        Domino database maintenance should be performed after purging stale users. </li>
+                    <li>If the older Sametime deployment is not configured for LDAP, then the
+                        contact lists must be converted using the <codeph>Stnamechange</codeph>
+                        utility. The <codeph>Stnamechange</codeph> utility is currently unavailable
+                        on Sametime 12. Run the utility on Sametime 9, 10 or 11 before
+                        migrating.</li>
+                </ul>
+            </p>
+        </section>
+        <section id="section_xvg_1xv_15b">
+            <title>SAMETIME.INI</title>
+            <p>
+                <ul id="ol_bv3_nny_3tb">
+                    <li>You can migrate your tuning settings for LDAP from the old server to the new
+                        server. Note the setting in the <filepath>sametime.ini</filepath> and add
+                        them to the Sametime 12 environment.</li>
+                    <li><codeph>ST_COMMUNITY_ID</codeph> should match the old server. This step
+                        ensures the clients show awareness properly after migrating.</li>
+                </ul>
+            </p>
+        </section>
+        <section id="section_q5t_d1b_b5b">
+            <title>Policies</title>
+            <p>
+                <ul id="ul_xzs_21b_b5b">
+                    <li>Policies are configured in <filepath>policies.user.xml</filepath>. You must
+                        start your new server configuration with the
+                            <filepath>policies.user.xml</filepath> file that comes with the Sametime
+                        12 install and manually configure, when needed. There are settings in the
+                        new server version that were not in the older versions of Sametime and in
+                        the deployment.</li>
+                    <li>If you are using <filepath>managed-settings.xml</filepath> or
+                            <filepath>managed-community-conf.xml</filepath>, be sure to include
+                        these files in the new Sametime 12 policies.</li>
+                </ul>
+            </p>
+        </section>
+        <section id="section_yl4_f1b_b5b">
+            <title>Moving the users</title>
+            <p>Once you are finished testing and are ready to migrate the users, there are a few
+                different strategies to choose from.</p>
+            <p>
+                <ul id="ol_bdl_sny_3tb">
+                    <li>Using the DNS. The hostname is the same, and there are no additional
+                        configurations on the client side. In this scenario, the DNS would be
+                        changed to point to the new environment.<ul id="ol_ym1_tny_3tb">
+                            <li>DNS may take some time to propagate throughout your network. You may
+                                need to leave both old and new servers running simultaneously for a
+                                period of time. Be certain the <filepath>vpuserinfo.nsf</filepath>
+                                has been migrated to the Sametime 12 deployment to keep the contacts
+                                up to date. You can check the <filepath>stlog.nsf</filepath> or
+                                community logins by date to see how many users are still on the old
+                                server. Restarting the old servers periodically also forces users
+                                onto the new servers as soon as DNS is updated.</li>
+                        </ul></li>
+                </ul>
+            </p>
+            <ul id="ol_ozh_d4y_3tb">
+                <li>Using a load balancer. If existing environment has a load balancer in front of
+                    it, then you can simply add the new servers behind the load balancer and shut
+                    down the old servers.</li>
+                <li>Pushing a new hostname using <filepath>Managed-Community-Configs.xml</filepath>.
+                    You can create the <filepath>managed-community-configs.xml</filepath> file and
+                    push it to the users using a Sametime policy. The settings takes effect the next
+                    time a user restarts their client. It is configured for the new hostname.</li>
+            </ul>
+        </section>
+        <section id="section_byy_31b_b5b">
+            <title>Have a back-out plan</title>
+            <p>You must have a back-out plan in case your migration does not succeed. </p>
+        </section>
+    </conbody>
+</concept>

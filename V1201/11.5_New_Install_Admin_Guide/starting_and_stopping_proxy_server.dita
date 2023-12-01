@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="starting_and_stopping_proxy_server" xml:lang="en-us">
+<title>Starting and stopping the Proxy server</title>
+    <shortdesc></shortdesc>
+<taskbody>
+<context>
+    <p>To start the server:</p>
+    <p>sametimeproxy\bin\startup.bat (startup.sh)</p>
+    <p>To stop the server:</p>
+    <p>sametimeproxy\bin\shutdown.bat (shutdown.sh)</p>
+    <p><note><ul><li>If the server hangs during shutdown, kill the process.
+    </li>
+        <li>If this server is on a separate host, be sure to add it's IP to the Trusted IPs of the Sametime Community server. Stconfig.nsf > Community Connectivity: Community Trusted IPS. Use colon to separate lists of IPs to be trusted. (192.168.1.5: 192.168.1.10, etc).
+        </li>
+        <li>If MongoDB is running on Windows, it may be required for the Windows server’s domain name to be in the proxy server’s DNS hosts file. For example, if the Windows server’s domain name is, “WIN-SERVERNAME” then the Sametime Proxy should add this in its host file.
+        </li></ul></note></p>
+    <p><b>Example:#</b>mapping the windows domain name of the MongoDB to this uservers hosts file, so redirects will work</p>
+    <p>10.123.55.55 WIN-SERVERNAME</p>
+</context>
+</taskbody>
+</task>

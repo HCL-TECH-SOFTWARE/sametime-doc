@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="loggingin" xml:lang="en-us">
+<title>Logging in and out</title>
+ <shortdesc>Use the Sametime app to login to a Sametime community.</shortdesc>
+<taskbody>
+  <prereq id="prereq_mwy_52q_dtb">
+   <p>You must start the HCL <tm tmtype="reg" trademark="Sametime">Sametime</tm> app before logging
+    in. To find Sametime on your device, look for the <tm tmtype="reg" trademark="Sametime"
+     >Sametime</tm> icon. <image href="Images/chat_icon_new.png" placement="break" align="left"
+     id="image_fcf_hfq_dtb" alt="Sametime icon"/></p>
+   <p>Additionally, a community must be configured to log into its chat community.</p>
+  </prereq>
+<steps>
+<step>
+    <cmd>On the Log in screen, enter your credentials in the <uicontrol>User ID</uicontrol> and
+      <uicontrol>Password</uicontrol> fields.</cmd>
+    <info> If your login process is by password the<uicontrol> Password</uicontrol> field apprears.
+     If the login requires your corporate credentials, you are  redirected to your corporate web
+     page to complete the login process.</info>
+   </step>
+<step>
+    <cmd>Select you availability status in the <uicontrol>Status</uicontrol> field. The default is
+      <uicontrol>I am available</uicontrol>.</cmd>
+    <info>You can set your status as one of the following:<ul id="ul_kkl_vgq_dtb">
+      <li>I am available</li>
+      <li>I am away</li>
+      <li>In a meeting</li>
+      <li>Do not disturb</li>
+     </ul><p>After you are logged in, the status displays below your name.</p></info>
+   </step>
+<step>
+    <cmd>Tap <uicontrol>Log In</uicontrol>.</cmd>
+    <info>After your credentials are verified, the Sametime <wintitle>Chat</wintitle> screen is
+     displayed.</info>
+   </step>
+   <step>
+    <cmd>To exit chat, click the menu icon and select <uicontrol>Logout</uicontrol>.</cmd>
+   </step>
+</steps>
+</taskbody>
+<?tm 1351004034 0?>
+</task>
+<?Pub *0000002118?>

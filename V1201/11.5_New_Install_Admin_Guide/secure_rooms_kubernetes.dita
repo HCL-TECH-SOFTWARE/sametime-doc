@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="secure_rooms_kubernetes" xml:lang="en-us">
+    <title>Disabling secure rooms on Kubernetes</title>
+    <taskbody>
+        <steps id="steps_itp_1vx_wtb">
+            <step>
+                <cmd>Chang to the helm directory where the Sametime installation package was
+                    decompressed.</cmd>
+                <info>
+                    <codeblock id="codeblock_rbc_4km_s5b">cd helm</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Open the <filepath>values.yaml</filepath> file and put in edit mode. </cmd>
+            </step>
+            <step>
+                <cmd>Locate the <codeph>useSecurePersonalRoomName</codeph> value and change the
+                    value to false.</cmd>
+                <info>
+                    <codeblock id="codeblock_ucj_5km_s5b">useSecurePersonalRoomName: false
+</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Save and close the <filepath>values.yaml</filepath> file.</cmd>
+            </step>
+            <step
+                conref="securing_ldap_kubernetes.dita#securing_ldap_kubernetes/apply_changes_helmupgrade">
+                <cmd/>
+            </step>
+            <step conref="pod_apply_changes.dita#pod_apply_changes/scale_pod">
+                <cmd/>
+            </step>
+        </steps>
+    </taskbody>
+</task>

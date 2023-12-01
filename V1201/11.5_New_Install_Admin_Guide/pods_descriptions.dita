@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="pod_descriptions" xml:lang="en-us">
+    <title>Pods in Sametime</title>
+    <shortdesc>A <term>pod</term> is a group of one or more containers that share storage and
+        network resources. </shortdesc>
+    <conbody>
+        <p>The following table describes the Sametime pods and the containers in which the pod
+            runs.</p>
+        <table frame="all" rowsep="1" colsep="1">
+            <title>Description of Sametime pods</title>
+            <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="1*"/>
+                <colspec colname="c3" colnum="3" colwidth="1*"/>
+                <thead>
+                    <row>
+                        <entry>Pod Name</entry>
+                        <entry>Container </entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Activity</entry>
+                        <entry/>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>App-registry </entry>
+                        <entry/>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>Auth</entry>
+                        <entry>NA</entry>
+                        <entry>Interacts with the Sametime server for SSO.</entry>
+                    </row>
+                    <row>
+                        <entry>backgrounds</entry>
+                        <entry>NA</entry>
+                        <entry>Provides the backgrounds in meetings.</entry>
+                    </row>
+                    <row>
+                        <entry>Catalog</entry>
+                        <entry>NA</entry>
+                        <entry>Maintains the list of meetings that belongs to a user and the the
+                            recent meetings list. Interacts with the MongoDB.</entry>
+                    </row>
+                    <row>
+                        <entry>Click2call</entry>
+                        <entry>NA</entry>
+                        <entry>Provides the click to call interface in web chat.</entry>
+                    </row>
+                    <row>
+                        <entry>Community</entry>
+                        <entry>community, pushgateway</entry>
+                        <entry>Performs all authentication, interacts directly with the LDAP
+                            service. Enforces policies. Interacts with MongoDB for persistent chat.
+                            Retrieves and serves business cards data.</entry>
+                    </row>
+                    <row>
+                        <entry>files</entry>
+                        <entry>files, scanner</entry>
+                        <entry>Provides file transfer service in meetings and web chat</entry>
+                    </row>
+                    <row>
+                        <entry>Jibri-web</entry>
+                        <entry>NA</entry>
+                        <entry>Provides a web interface to the recordings</entry>
+                    </row>
+                    <row>
+                        <entry>Jitsi</entry>
+                        <entry>prosody, jigasi, jicofo</entry>
+                        <entry>The video bridge that streams the media to users. <p>Jigasi container
+                                for SIP messages (integration with telephony). </p><p>Jicofo
+                                (conference focus) – messages about features used in meetings,
+                                participants joining and dropping.</p></entry>
+                    </row>
+                    <row>
+                        <entry>Lobby</entry>
+                        <entry>NA</entry>
+                        <entry>Runs the lobby service for meetings.</entry>
+                    </row>
+                    <row>
+                        <entry>Location</entry>
+                        <entry>NA</entry>
+                        <entry>Used when telephony is integrated to assist users with the telephone
+                            numbers.</entry>
+                    </row>
+                    <row>
+                        <entry>Mux</entry>
+                        <entry>NA</entry>
+                        <entry>Allows the Connect and Embedded clients in Notes to connect over port
+                            1533. Has a svc with an IP address for users to connect.</entry>
+                    </row>
+                    <row>
+                        <entry>Proxy</entry>
+                        <entry>NA</entry>
+                        <entry>Runs the web chat service allowing users to connect with mobile
+                            clients or web clients for chat.</entry>
+                    </row>
+                    <row>
+                        <entry>Recorder</entry>
+                        <entry>jibri, pushgateway, await-prosody</entry>
+                        <entry>Save meeting recordings when a user records a meeting.<p>It is also
+                                used for livestreaming.</p></entry>
+                    </row>
+                    <row>
+                        <entry>Recordings</entry>
+                        <entry>NA</entry>
+                        <entry>Interacts with the persistent volume to store recordings.</entry>
+                    </row>
+                    <row>
+                        <entry>Video</entry>
+                        <entry>jvb, prometheus-exporter</entry>
+                        <entry>Interacts with STUN server.</entry>
+                    </row>
+                    <row>
+                        <entry>Web Serves</entry>
+                        <entry>NA</entry>
+                        <entry>Serves the web interface to the users</entry>
+                    </row>
+                    <row>
+                        <entry>Outlook</entry>
+                        <entry>NA</entry>
+                        <entry>When the Oulook add-in feature is enabled, this process interacts
+                            with the Outlook add-in.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_create_group" xml:lang="en-us">
+<title>Adding a group to your contact list</title>
+<shortdesc>You can organize your contacts by placing them into groups. </shortdesc>
+<taskbody>
+<context>
+<p otherprops="st">There are two types of groups: personal groups and public groups. You create your
+        own personal groups and select the contacts that you want to add to them. Any personal
+        groups that you create display only on your contact list. Public groups are created by your
+        system administrator. Each public group has a defined list of members. You cannot change who
+        is a member of a public group.</p>
+                        <p>The contacts screen is a list of your personal and public groups.
+                                        <term>Personal groups</term> are those that you create for
+                                organizing your own contacts. <term>Public groups</term> are those
+                                that an administrator created and populated with contacts. You can
+                                create a hierarchy of groups and contacts under your personal groups
+                                but public groups are static. They can be added as subgroups to
+                                personal groups, but you cannot add contacts or subgroups to a
+                                public group.</p>
+</context>
+<steps>
+<step>
+<cmd>Click the menu icon ( <image alt="menu icon" href="Images/menu.png" placement="inline"
+id="menu"/>) in the navigator and select <uicontrol>Contacts</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Click <uicontrol>+ New Group</uicontrol> and the <wintitle>New Group</wintitle> dialogue
+displays.</cmd>
+</step>
+<step otherprops="st">
+<cmd>Select the type of group you want to add.</cmd>
+<substeps>
+<substep>
+<cmd>Select <uicontrol>Add a new personal group</uicontrol> to name the group that you want to
+add.</cmd>
+<info>After you add a personal group, add contacts to it.</info>
+</substep>
+<substep>
+<cmd>Select <uicontrol>Search for a public group</uicontrol> to find a public group to which you
+have access.</cmd>
+<info>After you add a public group, all members of that group display on your contact list.</info>
+</substep>
+</substeps>
+</step>
+<step otherprops="LL">
+<cmd>Enter a name for the group that you want to add in the <uicontrol>New Group</uicontrol>
+field.</cmd>
+    <info>If you want this group to be a subgroup of an existing group in your contact list, click
+      <uicontrol>Add as a subgroup to the selected group</uicontrol> and then select a name from the
+      <uicontrol>Select a group</uicontrol> field.</info>
+</step>
+<step>
+<cmd>Click <uicontrol>Add</uicontrol>.</cmd>
+<stepresult>The added group is displayed in your list of groups.</stepresult>
+</step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000002841?>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="upgrade_revert_kubernetes" xml:lang="en-us">
+    <title>Reverting to a previous version on Kubernetes</title>
+    <shortdesc/>
+    <taskbody>
+        <context id="context_grp_j4k_25b">If you encounter a problem, you can return to the previous
+            Sametime version. Helm commands to return to a previous release on Kubernetes. To roll
+            back to the previous version, run the <cmdname>helm rollback</cmdname> command. For more
+            information about the command, see the <xref
+                href="https://helm.sh/docs/helm/helm_rollback/" scope="external" format="html">Helm
+                Rollback</xref> topic in the Helm documentation. If you don't know the previous
+            release number, you can use the <cmdname>helm history</cmdname> command. For additional
+            information on how to identify the prior release number, see the <xref
+                href="https://helm.sh/docs/helm/helm_history/" scope="external" format="html">Helm
+                History</xref> topic in the Helm documentation.</context>
+    </taskbody>
+</task>

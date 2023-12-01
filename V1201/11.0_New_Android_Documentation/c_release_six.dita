@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_release_six" xml:lang="en-us">
+ <title>Release 11.5.0</title>
+    <shortdesc>Release 11.5.0 includes the following new features. </shortdesc>
+    <conbody><p><ul><li><b>Support for 11.5.0 Meetings</b> - Version 11.5.0 of the HCL Sametime mobile client is
+                    required to join meetings hosted by an HCL Sametime 11.5.0 server.</li>
+                <li><b>New My Meetings tab</b> - The Meetings dialog will contain a My Meetings tab
+                    when connected to an 11.5.0 server. The user can manage their personal meetings
+                    under this new tab.</li>
+                <li><b>Bug Fixes</b></li></ul></p></conbody>
+</concept>
+<?Pub *0000001020?>

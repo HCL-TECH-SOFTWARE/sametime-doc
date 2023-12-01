@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_planning_servers" xml:lang="en-us">
+ <title>Sametime services</title>
+ <shortdesc>The Sametime server is comprised of services depending on the product that you
+  installed.</shortdesc>
+</concept>
+<?Pub *0000001020?>

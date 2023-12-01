@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_start_meeting_c2meet" xml:lang="en-us">
+  <title>Starting a meeting by using click to meet</title>
+  <?Pub Caret 3?>
+  <shortdesc>You can start a meeting from within the chat window. This action is called <term>click
+      to meet</term>. By using this feature, you can start meetings that you own during a chat
+    session.</shortdesc>
+  <taskbody>
+    <steps id="steps_qcw_nq3_y5b">
+      <step>
+        <cmd>At the bottom of the screen, click the <uicontrol>meet</uicontrol> icon (<image
+            href="Images/icon_meet.png" alt="Meeting icon" id="image_ewl_4q3_y5b"/>) .</cmd>
+        <info>A list of meetings that you own opens.</info>
+      </step>
+      <step>
+        <cmd>Click the meeting to start.</cmd>
+        <info>Sametime sends the link for the meeting preceded with <uicontrol>Meet me here:
+              <varname>meeting_name</varname></uicontrol> to your chat partners.</info>
+      </step>
+      <step>
+        <cmd>Click the link and then <uicontrol>Start</uicontrol> to begin the meeting.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>

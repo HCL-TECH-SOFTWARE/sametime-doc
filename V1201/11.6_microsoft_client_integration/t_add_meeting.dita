@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_add_meeting" xml:lang="en-us">
+  <title>Adding a meeting</title>
+  <shortdesc>The creating a new room option allows users to create a new meeting room in the task
+    pane. </shortdesc>
+  <taskbody>
+    <context>
+      <p>When the user creates a new room, the user can set: <ul id="ul_qc2_mql_rpb">
+          <li>Name</li>
+          <li>Password</li>
+          <li>Moderated</li>
+          <li>Room Moderators</li>
+          <li>Allow guests</li>
+          <li>Enable dial-in</li>
+        </ul></p>
+      <p>To create a new room:</p>
+    </context>
+    <steps>
+      <step>
+        <cmd>Click the Select Room option.</cmd>
+      </step>
+      <step>
+        <cmd>Click the New Room button. </cmd>
+      </step>
+      <step>
+        <cmd>Enter a name in the name field. </cmd>
+      </step>
+      <step>
+        <cmd>Click Password protected if you want the meeting to be protected by a password.</cmd>
+      </step>
+      <step>
+        <cmd>Click Moderated if you want the meet to be moderator-led.</cmd>
+        <info>
+          <note>You can select Moderators from the attendees listed in the Outlook meeting.</note>
+        </info>
+      </step>
+      <step>
+        <cmd>Click guest access to allow guest users to access the meeting link.</cmd>
+      </step>
+      <step>
+        <cmd>Click Add to meeting.</cmd>
+      </step>
+      <step>
+        <cmd>The task pane closes, and the room information updates to the Outlook meeting.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>
+<?Pub *0000002118?>

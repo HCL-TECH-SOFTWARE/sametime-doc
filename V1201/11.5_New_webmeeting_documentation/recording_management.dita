@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="recording_management" xml:lang="en-us">
+  <title>Recordings management - FAQ's</title>
+  <shortdesc>When the user records a meeting, they can access the link from the meeting room in the
+    meeting client, group chat and one-on-one chat in the webchat client, and meeting recording link
+    from the email.  </shortdesc>
+  <conbody>
+    <p>This topic has some frequently asked questions about the all-new meetings recordings
+      management.</p>
+    <p><i>Where will the meeting recording links be available?</i></p>
+    <p>The meeting recording links will show only in the owner's recording list irrespective of
+      whether he shared it or not. </p>
+    <p><i>How can the meeting owner share a meeting recording? </i></p>
+    <p>When the meeting owner stops the recording, a confirmation dialog box displays that will ask
+      the owner to stop the recording or not. By default, the option to share the recording in the
+      group chat is checked. The meeting owner can uncheck it based on their preference. This
+      setting will remain the same for all the future recordings for that meeting room until the
+      owner changes it in the next meeting. </p>
+    <p><i>Will the meeting moderator get the option to share the recording?</i></p>
+    <p>When a moderator stops recording a confirmation dialog displays with the option to share in
+      disable state. The default meeting recording setting set by the owner for the meeting room
+      will reflect here. </p>
+    <p>If the meeting owner sets the option to share the recording, a single meeting recording link
+      appears in the group chat. </p>
+    <p><i>Can a guest user access the meeting link?</i></p>
+    <p>No, if a guest user clicks on the meeting recording link, they cannot access it.</p>
+    <p><i>Where can the authenticated users access the recording link from? </i></p>
+    <p>The authenticated users can access the recording link from the meeting room in the meeting
+      client, group chat and one-on-one chat in the webchat client, and meeting recording link from
+      the email. </p>
+    <p><i>What if the owner who starts the meeting leaves or disconnects from the meeting?</i></p>
+    <p>The moderator on behalf of the owner can stop the recording. However, the moderator cannot
+      change the default sharing option that is set by the owner. </p>
+    <p><i>Does the recording stop when everyone leaves the meeting? </i></p>
+    <p>Recording stops automatically when the last person leaves the meeting. Based on the default
+      sharing option set by the owner, the recording link will either be shared or not shared with
+      all authenticated meeting attendees. </p>
+    <p><i>What if someone forgets to leave the meeting?</i></p>
+    <p>The recording automatically stops when there is a silence of 10 mins. Based on the default
+      sharing option set by the owner, the recording link will either be shared or not shared with
+      all authenticated meeting attendees. </p>
+  </conbody>
+</concept>
+<?Pub *0000001020?>
+
+

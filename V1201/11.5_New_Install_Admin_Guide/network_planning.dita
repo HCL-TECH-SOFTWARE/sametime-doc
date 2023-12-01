@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="network_planning" xml:lang="en-us">
+<title>Network planning for meetings</title>
+<shortdesc/>
+<conbody>
+<p>Sametime meetings generate two types of traffic: web traffic and RTP media streams. Web traffic
+is standard HTTPS. And, media streams by default use UDP for optimal performance. If the UDP service
+is unavailable, enabling TCP for RTP media streams is supported.</p>
+<p>To support the Sametime default configuration, use  the following ports for client access: <ul>
+<li>For Kubernetes deployments: TCP port 443 and UDP port 30000</li>
+<li>For Docker deployments: TCP port 443 and UDP port 10000</li>
+</ul></p>
+<p>If you enable TCP for media streams, you can configure it to use TCP port 443. However, it does
+not send media streams as HTTPS data. Confirm with your security and firewall teams that this
+non-standard use of HTTPS port 443 will be permitted.</p>
+<p>The amount of bandwidth consumed by Sametime Meetings depends on several factors, such as the
+            quality of video being shared, the number of video and audio streams being shared, and
+            more. The default limit for simultaneous video streams is <i>8</i>. Increasing this
+            value affects bandwidth consumption. For more information, refer to <xref
+                href="increase_activecameras.dita"/>.</p>
+<p>You must discuss the design of your Sametime deployment with your network and security teams
+before implementation. Many common network layer devices and technologies introduce latency, which
+can degrade the user experience. Identify all potential bottlenecks, for example, firewall, proxy,
+VPN, packet shapers, and intrusion prevention devices before deploying servers.</p>
+</conbody>
+</concept>

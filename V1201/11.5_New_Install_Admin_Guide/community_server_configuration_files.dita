@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="community_server_configuration_files" xml:lang="en-us">
+<title>Sametime server configuration files</title>
+    <shortdesc>There are a number of configuration files on the Sametime server that a backup copy
+        should be retained after the server configuration is complete.</shortdesc>
+<conbody>
+<table frame="all" rowsep="1" colsep="1" id="table_cgn_xzz_gsb">
+<tgroup cols="3">
+<colspec colname="c1" colnum="1" colwidth="1.61*"/>
+<colspec colname="c2" colnum="2" colwidth="1.61*"/>
+<colspec colname="c3" colnum="3" colwidth="2.23*"/>
+<thead>
+<row>
+<entry>File name</entry>
+<entry>Location</entry>
+<entry>Contents</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>StCommunityConfig.xml</entry>
+<entry>Windows: <filepath> Domino\Data</filepath><p>Linux: <filepath>
+/local/notesdata</filepath></p></entry>
+<entry>The HCL Notes database that is accessed using the HCL Notes or Administrator client.</entry>
+</row>
+<row>
+<entry>sametime.ini</entry>
+<entry>Windows: Domino program directory<p>Linux: <filepath>/local/notesdata</filepath></p>
+</entry>
+<entry>Created when the Sametime server is started and based on values in the custom.env or
+                            values.yaml files.<p>This file is a sectioned configuration file. The
+                                sections are noted in square brackets, for example<codeph>
+                                    [Config]</codeph>. Settings must be located in the correct
+                                section, otherwise they do not take effect.</p><p>Considerations:
+                                    <ul id="ul_akh_psn_s5b">
+                                    <li>Do not duplicate section names or parameters.</li>
+                                    <li>Do not use illegal XML characters.</li>
+                                </ul></p>
+                        </entry>
+</row>
+<row>
+<entry>chatlogging.ini</entry>
+<entry>Windows: Domino program directory<p>Linux: <filepath>/local/notesdata</filepath></p></entry>
+<entry>This file is used to configure persistent chat logging.</entry>
+</row>
+<row>
+<entry>notes.ini<draft-comment author="debra.taylor">Should this row be
+                            deleted?</draft-comment></entry>
+<entry>Windows: Domino program directory<p>Linux: <filepath>/local/notesdata</filepath></p></entry>
+<entry>This file is used to configure, tune and secure the Domino server that is utilized by the
+Sametime Community server.</entry>
+</row>
+<row>
+<entry>UserInfoConfig.xml</entry>
+<entry>Windows: Domino program directory<p>Linux: <filepath>/local/notesdata</filepath></p></entry>
+<entry>Used to configure business cards. <p>It is important to ensure that XML syntax rules are
+                                followed when changing this file to prevent errors.</p></entry>
+</row>
+<row>
+<entry>policies.user.xml</entry>
+<entry>Windows: Domino program directory<p>Linux: <filepath>/local/notesdata</filepath></p></entry>
+<entry>Used to configure business cards. <p>It is important to ensure that XML syntax rules are
+                                followed when changing this file to prevent errors.</p></entry>
+</row>
+                    <row>
+                        <entry>Policies.server.xml</entry>
+                        <entry/>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>clustering</entry>
+                        <entry/>
+                        <entry>Applicable only in a Kubernetes environment.</entry>
+                    </row>
+</tbody>
+</tgroup>
+</table></conbody>
+</concept>

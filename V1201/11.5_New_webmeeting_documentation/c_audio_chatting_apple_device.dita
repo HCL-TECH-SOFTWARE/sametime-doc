@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="audio_chatting_appledevice" xml:lang="en-us">
+<title>Audio chatting on your Apple device</title>
+<shortdesc>You can initiate an audio chat with someone in your contact list on HCL Connections Chat
+using your Apple device.</shortdesc>
+<concept id="initiating_an_audiochat">
+<title>Initiating an audio chat </title>
+<conbody>
+<p>To begin an audio chat with someone in your contacts list, press the audio chat icon from their
+Person Card. They will receive a notification that you wish to begin an audio chat and either accept
+or decline it. </p>
+<p>If you want to initiate an audio chat using something other than your default calling method,
+open the <uicontrol>Information</uicontrol> tab of the contact's Person Card. Select one of the
+phone numbers listed in this view. A drop down menu will display, with the calling options that are
+available to you. Tap the dialing option you wish to use. </p>
+<note>If there is only one dialing option available, the call will immediately take initiate using
+that option.</note>
+</conbody>
+</concept>
+<concept id="participating_audiochat">
+<title>Participating in an audio chat </title>
+<conbody>
+<p>Once an audio chat has begun, you and your chat partner will hear each other speaking through
+your devices. The following options are available during an audio chat:</p>
+<table frame="all" rowsep="1" colsep="1" id="table_gly_n3c_rhb">
+<title>Audio chat options</title>
+<tgroup cols="2">
+<colspec colname="c1" colnum="1" colwidth="1*"/>
+<colspec colname="c2" colnum="2" colwidth="1*"/>
+<thead>
+<row>
+<entry>Option</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Mute</entry>
+<entry>Temporarily mutes your audio on the call.</entry>
+</row>
+<row>
+<entry>Keypad</entry>
+<entry>Open the device's keypad for entering information.</entry>
+</row>
+<row>
+<entry>End Call</entry>
+<entry>End the audio chat.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</conbody>
+<concept id="working_audio_chat_tab">
+<title>Working with the Audio Chat tab </title>
+<conbody>
+<p>The Audio Chat tab on the left menu displays two panes of information. </p>
+<p>The first pane is a list of recent audio chats, with the most recent listed at the top. The list
+indicates with icons whether an audio chat was initiated by you, received by you, declined by you,
+or if you have any missed calls. Tapping on any of the list items displays the Person Card of that
+chat partner.</p>
+<p>The second pane contains the dialing keypad. You can use the keypad to directly dial a number
+using Connections Voice Chat or a third party dialer.</p>
+<p><xref
+href="c_using_sametime_unified_telephony_features_android_device.dita#sametime_unified_telephony_features"
+/></p>
+<p>HCL Connections Chat for iOS has the ability to place Sametime® Unified Telephony calls as well
+as change where your incoming Sametime Unified Telephony calls are routed.</p>
+<p><xref href="t_third_party_dialer_application.dita#third_party_dialer_applications"/></p>
+<p>HCL Connections Chat for iOS has the ability to place calls using the Siemens OpenScape Mobile
+client.</p>
+</conbody>
+</concept>
+</concept>
+</concept>
+<?Pub *0000001020?>

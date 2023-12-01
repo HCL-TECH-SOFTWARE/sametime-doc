@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="notifications" xml:lang="en-us">
+ <title>Notifications</title>
+ <shortdesc>This setting controls the Sametime notifications. If you are on an Android 8 or newer
+  device this opens the system notification panel for the app. If on an Android 6 or 7 device, it
+  opens the application notification panel. </shortdesc>
+ <conbody>
+    <draft-comment author="debra.taylor">This topic needs work. doesn't match UI.</draft-comment><p>For Android 8 and newer device the system notification options are: 
+ </p><ul>
+  <li><uicontrol>Announcement</uicontrol> – Enabled by default, controls notifications when an
+    incoming announcement is received </li>
+  <li><uicontrol>Chat</uicontrol> – Enabled by default, controls notifications when an incoming
+    message is received </li>
+  <li><uicontrol>Invitations</uicontrol> – Enabled by default, controls notifications when an
+    incoming invite, such as when you are invited to join a group, is received </li>
+  <li><uicontrol>Status</uicontrol> – Enabled by default, controls notifications for status changes </li>
+</ul>
+    <parml id="parml_bfl_fzm_2tb">
+      <plentry>
+        <pt>Show notifications</pt>
+        <pd/>
+      </plentry>
+      <plentry>
+        <pt>Alerts</pt>
+        <pd/>
+      </plentry>
+      <plentry>
+        <pt>App icon badges</pt>
+        <pd/>
+      </plentry>
+      <plentry>
+        <pt>Notifications categories</pt>
+        <pd/>
+      </plentry>
+    </parml>
+  <p>For Android 6 and 7 devices, the following notification settings are available:  </p>
+ <ul>
+  <li><uicontrol>Enable sound</uicontrol> – Enabled by default, this plays a notification sound for
+    any incoming notification, such as a message, invitation or announcement </li>
+  <li><uicontrol>Enable vibration</uicontrol> – Enabled by default, it vibrates the device for an
+    incoming notification </li>
+  <li><uicontrol>Enable light</uicontrol> – Enabled by default, it flashs the device LED for an
+    incoming notification</li>
+ </ul></conbody>
+</concept>
+<?Pub *0000001020?>

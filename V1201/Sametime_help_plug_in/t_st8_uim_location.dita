@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_st8_uim_location.dita" xml:lang="en-us">
+<title>How do I show others where I am?</title>
+<shortdesc>Display your location and contact information in your status
+card when you are available online. When you do, others see this information
+when they hover their cursor over your name in the contact list or
+engage in an online chat with you.</shortdesc>
+<taskbody>
+<context><p>Show others where you are by specifying geographic location
+settings or profiles. You can specify geographic location information
+for more than one location, for example, for your London office and
+for your New York office. That way, when you are sitting in your London
+office, others see your London profile. When you are in your New York
+office, they see your New York profile.</p><p>When you log in for the first time or when you are in a new geographic location that does not
+    have location settings specified, you will be prompted to specify geographic location
+    information. To specify your geographic location settings, refer to the following steps,
+    starting with step 2. <note>Geographic location settings in the <tm tmtype="reg">Sametime</tm>
+     client are not the same as location settings or profiles in the <tm tmtype="reg">Notes</tm>
+     software. </note></p></context>
+<steps>
+<step><cmd>Open the Geographic Location settings. </cmd><info><table
+frame="all"><title>Options</title>
+<tgroup cols="2">
+<?PubTbl tgroup rth="1.00pt"?>
+<colspec colname="col1" colwidth="1*"/><colspec colname="col2"
+colwidth="1*"/>
+<thead>
+<row>
+<entry colname="col1">If you are using:</entry>
+<entry colname="col2">Do this:</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Sametime</tm> Connect</p></entry>
+<entry colname="col2"><p>Click the name of your current geographic
+location in your status bar.<note>If you have never set a geographic
+location, you will see "Set my geographic location."</note></p></entry>
+</row>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Notes</tm></p></entry>
+<entry colname="col2"><p>Click the name of your current geographic location in your status bar in the <tm tmtype="reg"
+            >Notes</tm> sidebar.<note>If you have never set your geographic location, you will see
+            "Set my geographic location."</note></p></entry>
+</row>
+</tbody>
+</tgroup>
+</table></info><stepresult>Your current location is indicated by the
+label <uicontrol>(Current)</uicontrol> next to the profile name in
+the list of location profiles.</stepresult></step>
+<step>
+                <cmd>Use one of the existing profiles or create a new one. To use existing location
+                    information for your current location, click the existing location profile and
+                    then click <uicontrol>Apply selected to current location</uicontrol>.</cmd>
+            </step>
+<step><cmd>Complete the fields, as appropriate.</cmd></step>
+<step><cmd>Click <uicontrol>Apply</uicontrol>.</cmd></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step>
+</steps>
+</taskbody><?Pub Caret -1?>
+</task>
+<?Pub *0000003303?>

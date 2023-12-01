@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="trbl_client_log_trace" xml:lang="en-us">
+<title>Logging and tracing on the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Embedded and
+  Connect Clients</title>
+<shortdesc>You can provide these instructions to <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+  Embedded and Connect Client users to enable tracing on their clients. Trace logs are stored in a
+  workspace folder on the user's local hard drive or a network drive.</shortdesc>
+<conbody>
+<ol>
+<li>Locate the client workspace as explained in <xref
+href="trbl_client_locate_workspace.dita">Locating the client workspace</xref>.</li>
+<li>On the computer where you use the client, use a text editor and open the
+<filepath>rcpinstall.properties</filepath> file which is located in the following directory
+according to the client:<ul>
+<li><tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect
+         Client<p><filepath>C:\Users\<varname>user_name</varname>\AppData\Roaming\HCL\Sametime\.config\rcpinstall.properties</filepath></p></li>
+<li><tm tmtype="reg" trademark="Sametime">Sametime</tm> Embedded Client<p><filepath>C:\Program
+        Files\HCL\Notes\Data\workspace\.config\rcpinstall.properties</filepath></p></li>
+</ul></li><?Pub
+Caret 191?>
+<li>Add the following lines to the end of the file, depending on what kind of issue you're
+     diagnosing.<p>General client issues:
+     </p><codeblock>com.hcl.collaboration.realtime.level=FINE</codeblock><p>Telephony and
+     audio/video issues, including <tm tmtype="reg" trademark="Sametime">Sametime</tm> Unified
+     Telephony and Meetings: </p><p>General issues:
+     </p><codeblock>com.hcl.collaboration.realtime.internal.telephony.level=FINE
+com.hcl.collaboration.realtime.telephony.level=FINE
+com.hcl.collaboration.realtime.telephony.tcspi.level=FINEST
+com.hcl.collaboration.realtime.telephony.softphone.level=FINER
+com.hcl.collaboration.realtime.telephony.softphone.mfw.level=FINER</codeblock><p>Audio/video
+     quality
+     issues:</p><codeblock>com.hcl.collaboration.realtime.internal.telephony.level=FINE
+com.hcl.collaboration.realtime.telephony.level=FINE
+com.hcl.collaboration.realtime.telephony.softphone.level=FINER
+com.hcl.collaboration.realtime.telephony.softphone.mfw.level=FINER
+</codeblock><p>Instant
+     messaging issues:
+     </p><codeblock>com.lotus.sametime.community.kernel.level=FINER
+com.lotus.sametime.im.level=FINEST
+com.lotus.sametime.places.level=FINEST
+com.hcl.collaboration.realtime.rtcadapter.level=FINEST
+com.hcl.collaboration.realtime.people.internal.level=FINE
+com.hcl.collaboration.realtime.internal.sametime.level=FINER
+com.hcl.collaboration.realtime.login.level=FINEST
+com.hcl.collaboration.realtime.community.internal.level=FINEST</codeblock><p>Login
+     issues: </p><p>General login failures:
+     </p><codeblock>com.hcl.collaboration.realtime.community.internal.level=FINEST
+com.hcl.collaboration.realtime.im.community.level=FINEST
+org.apache.commons.httpclient.level=FINE
+com.hcl.rcp.internal.security.auth.module.level=FINEST
+com.hcl.collaboration.realtime.login.level=FINEST
+com.lotus.sametime.community.level=FINEST</codeblock><p>SSO
+     failures:
+     </p><codeblock>com.hcl.collaboration.realtime.community.internal.level=FINEST
+com.hcl.collaboration.realtime.im.community.level=FINEST
+org.apache.commons.httpclient.level=FINE
+com.hcl.rcp.internal.security.auth.module.level=FINEST
+com.hcl.collaboration.realtime.login.level=FINEST
+com.lotus.sametime.community.level=FINEST
+com.hcl.rcp.internal.security.level=FINEST
+com.hcl.rcp.security.level=FINEST</codeblock><p>Managed
+     settings:
+     </p><codeblock>com.hcl.collaboration.realtime.policy.sametime.managedsettings.level=FINEST</codeblock><p>Meetings:
+     </p><p>General meeting issues:
+     </p><codeblock>com.hcl.rtc.meetings.level=FINER
+com.hcl.rtc.spaces.level=FINER
+com.hcl.collaboration.realtime.appshare.level=FINER
+com.hcl.rtccore.level=FINER
+com.hcl.sharedmaps.level=FINER</codeblock><p>Calendar
+     integration
+     issues:</p><codeblock>com.hcl.rtc.meetings.servers.level=FINEST
+com.hcl.rtc.meetings.shelf.level=FINEST
+com.hcl.rtc.meetings.shelf.ui.level=FINEST
+com.hcl.rtc.meetings.util.level=FINEST
+com.hcl.collaboration.realtime.calendar.level=FINER
+com.hcl.collaboration.realtime.calendar.notes.level=FINEST</codeblock><p>Connectivity
+     issues:</p><codeblock>com.hcl.rtccore.level=FINEST
+com.hcl.rtc.spaces.level=FINER
+</codeblock><p>Screen
+     sharing issues:
+     </p><codeblock>com.hcl.rtc.meetings.appshare.level=FINER
+com.hcl.collaboration.realtime.appshare.level=FINER
+</codeblock><p>Document
+     sharing/conversion issues:
+     </p><codeblock>com.hcl.rtc.meetings.documents.level=FINER
+com.hcl.rtc.meetings.appkit.image.level=FINER
+com.hcl.workplace.converter.level=FINER</codeblock><p>(Optional)
+     Prevent more of the log and trace files from being overwritten by increasing the values of the
+     following settings from the default to a larger
+     number:<codeblock>com.hcl.rcp.core.internal.logger.boot.RCPTraceHandler.count=20 
+com.hcl.rcp.core.internal.logger.boot.RCPLogHandler.count=12 </codeblock></p><p>The
+     default settings save 12 trace files and 6 log files (Connect client) or 10 trace files and 6
+     log files (Embedded client). In this example, we are saving 20 trace files and 12 log files for
+     the Connect client.</p></li>
+<li>Save and close the file.</li>
+<li>Restart your Connect Client.</li>
+<li>View the error log and trace files in the Connect Client, by clicking <menucascade>
+<uicontrol>Help</uicontrol><uicontrol>Support</uicontrol><uicontrol>View
+Log</uicontrol></menucascade> and <uicontrol>View Trace</uicontrol>. <p>In
+most cases, <uicontrol>View Trace</uicontrol> provides the most useful
+information.</p></li>
+<li>(Optional) You can collect logs and other data into a zip file
+and provide it to someone else for diagnostics. <ol>
+<li>In the <tm tmtype="reg" trademark="Sametime">Notes</tm> embedded client, click <menucascade>
+       <uicontrol>Help</uicontrol>
+       <uicontrol>Support</uicontrol>
+       <uicontrol>Collect Support Data</uicontrol>
+      </menucascade>. <p>In the stand-alone Connect Client, click <menucascade>
+        <uicontrol><image href="images/ST_gear.jpg" placement="inline">
+          <alt>gear icon</alt>
+         </image></uicontrol>
+        <uicontrol>Help</uicontrol>
+        <uicontrol>Support</uicontrol>
+        <uicontrol>Collect Support Data</uicontrol>
+       </menucascade>. </p></li>
+<li>Select <uicontrol>Enable Customized Tracing</uicontrol>, and then
+click <uicontrol>Next</uicontrol>.</li>
+<li>Select one or more <tm tmtype="reg" trademark="Sametime">Sametime</tm> options, and then click
+       <uicontrol>Next</uicontrol>.</li>
+<li>Specify if you want to reproduce the issue, and then click <uicontrol>Collect</uicontrol>.
+When the collection completes, a link to the collection zip file is
+provided.</li>
+</ol></li>
+</ol>
+</conbody>
+<?tm 1390920815 8?>
+</concept>
+<?Pub *0000005973?>

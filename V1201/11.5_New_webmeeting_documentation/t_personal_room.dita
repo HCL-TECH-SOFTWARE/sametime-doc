@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_personal_room">
+    <title>Accessing your personal room</title>
+    <shortdesc>The first time you log in as an authenticated user, a personal room is created for
+        you. A personal room is a unique and secure room that is permanently reserved for you. </shortdesc>
+    <taskbody>
+        <context>
+            <p>You can find your personal room on the <wintitle>My Meetings</wintitle> tab of the
+                Meetings homepage. The default room name is <wintitle>Sametime Meeting
+                    Room</wintitle>. To edit the name or settings, refer to <xref
+                    href="meetings_moderated_management.dita"/>. </p>
+            <p><image href="Images/t_personal_room.png" id="image_lxd_qwb_w5b"/><note
+                    id="note_mxd_qwb_w5b">Unlike other rooms, you cannot delete this room. <p>To
+                        start a meeting with your personal room, follow these steps:</p></note></p>
+        </context>
+        <steps id="steps_ixl_swb_w5b">
+            <step>
+                <cmd>From the Meetings homepage, select the <wintitle>My Meetings</wintitle>
+                    tab.</cmd>
+            </step>
+            <step>
+                <cmd>Select your personal room from the list. The meeting preview window is
+                    displayed.</cmd>
+                <info><image href="Images/t_personal_room_start.png" id="image_l5n_byb_w5b"/></info>
+            </step>
+            <step>
+                <cmd>Select <uicontrol>Start meeting</uicontrol>. </cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

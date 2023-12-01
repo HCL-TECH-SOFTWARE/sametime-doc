@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="whats_new" xml:lang="en-us">
+ <title>New features in HCL Sametime 12 for iOS</title>
+ <shortdesc>HCL <tm tmtype="reg" trademark="Sametime">Sametime</tm> for iOS version 12 has new
+    features and enhancements.</shortdesc>
+ <conbody>
+    <section id="section_lxs_jzx_dvb">
+      <title>12.0.4</title>
+      <parml id="parml_mxs_jzx_dvb">
+        <plentry>
+          <pt>Filter your active chats</pt>
+          <pd>When viewing active chats you can filter on one-to-one chats, group chats, and meeting
+            chats. </pd>
+        </plentry>
+      </parml>
+    </section>
+    <section id="section_blx_bd4_v5b">
+      <title>12.0.3</title>
+      <parml id="parml_zsz_g24_v5b">
+        <plentry>
+          <pt>Managing the waiting room</pt>
+          <pd>Mobile moderator can manage the waiting room. Moderators attending a meeting on a
+            mobile device can admit other participants who are in the waiting room.</pd>
+        </plentry>
+        <plentry>
+          <pt>CarPlay improvements</pt>
+          <pd>When users join a meeting on CarPlay, they see with an active meeting screen while
+            they attend the meeting. When they leave the meeting, Sametime returns them to the
+            meetings list.</pd>
+        </plentry>
+      </parml>
+    </section>
+    <section id="section_cvr_zc4_v5b">
+      <title>12.0.2 and 12.0.1</title>
+      <p>HCL Sametime 12.0.1 and 12.0.2 contain bug fixes only.</p>
+    </section>
+    <section id="section_fpb_k5n_v5b">
+      <title>12.0</title>
+      <parml id="parml_ynd_p5n_v5b">
+        <plentry>
+          <pt>Sounds for incoming chats and announcements</pt>
+          <pd>Sounds have always played for incoming chat and announcement notifications when the
+            app is in the background. With version 12.0, a sound also plays for these events when
+            the app is in the foreground. You can turn the sounds on by using the new notification
+            settings. </pd>
+        </plentry>
+      </parml>
+      <p>The following new features are only available when your device is connected to a Sametime
+        12.0 server:</p>
+      <parml id="parml_ncm_m5n_v5b">
+        <plentry>
+          <pt>Server based Recent Meetings </pt>
+          <pd>With version 12.0 the Recent Meetings list queries the server to get recent meetings
+            update. This update means that your Recent Meetings list is same no matter which client
+            you use to display them. Because you can use mobile clients can to join meetings on
+            multiple servers you might see some discrepancy between the Recent Meeting list on a
+            mobile client and the Recent Meeting list on the browser or another mobile client. This
+            discrepancy happens because the mobile client also lists joined meetings on other
+            servers whereas the browser only lists joined meetings that are on the server you're
+            connected to. Meetings that you joined on servers prior to version 12.0 are still stored
+            locally and then merged with the version 12.0 meetings in the Recent Meetings list.</pd>
+        </plentry>
+        <plentry>
+          <pt>Meeting filters for viewing the list of recent meetings</pt>
+          <pd>By default, when you view meetings listed in <uicontrol>Recent</uicontrol>, Sametime
+            lists all meetings that you joined while you logged into the app. The list includes
+            meetings that used a Sametime 12 server or an earlier version. With the Sametime mobile
+            app version 12.0, you can customize the list by using the following filters:<dl
+              id="dl_ocm_m5n_v5b">
+              <dlentry>
+                <dt>My Meetings</dt>
+                <dd>Lists only instances of meetings that you own. The list includes meetings that
+                  you joined and those that you didn't join.</dd>
+              </dlentry>
+              <dlentry>
+                <dt>Recordings</dt>
+                <dd>Lists the meetings that you have joined that have an associated recording.</dd>
+              </dlentry>
+              <dlentry>
+                <dt>Calls</dt>
+                <dd>Lists the calls that you participated in.</dd>
+              </dlentry>
+            </dl></pd>
+        </plentry>
+        <plentry>
+          <pt>Meeting reports and recordings</pt>
+          <pd>Meeting owners can access reports for their meetings. You can access these reports by
+            opening the <uicontrol>Recent</uicontrol> tab and then tapping the
+              <uicontrol>More</uicontrol> menu icon. You can view two reports: Summary Report and
+            Full Report. If  someone recorded the meeting, the <uicontrol>More</uicontrol> menu
+            includes the recordings.</pd>
+        </plentry>
+        <plentry>
+          <pt>Muting conversations</pt>
+          <pd>With version 12.0, you can mute individual conversations. The ability to mute is
+            helpful when you participate in a group that is very active.</pd>
+        </plentry>
+        <plentry>
+          <pt>Click to call</pt>
+          <pd>With this feature you can connect directly with a contact or group by clicking the
+            call icon in the upper right corner of the chat window. When you place a call, a new
+            meeting starts. Those you call receive a join message and get placed into the meeting
+            when they join the call.</pd>
+          <pd>Version 12.0 includes notification settings for incoming calls.</pd>
+        </plentry>
+        <plentry>
+          <pt>Meeting modes enhancement</pt>
+          <pd>When you create a meeting, you can select a mode for the type of meeting. Each mode
+            has a set of options with the most common mode setting already selected. You can choose
+            from three modes: <ul id="ul_pcm_m5n_v5b">
+              <li>Collaboration: Flexible and fully customizable </li>
+              <li>Confidential: Maximum level of security </li>
+              <li>Lecture: Ideal for large moderated meetings</li>
+            </ul></pd>
+        </plentry>
+        <plentry>
+          <pt>File transfer</pt>
+          <pd>In addition to sending pictures from the camera or a photos app, in version 12.0 you
+            can send files in a chat. The files are uploaded and saved as a link in the chat that
+            you or a chat partner can download later. The HCL Sametime mobile app uses the Files app
+            to select the file to send. Files that you download are also saved in the Files app.
+              <note id="note_qcm_m5n_v5b">The mobile client does not support the previous file
+              transfer method, where you had to be online to receive the file.</note></pd>
+        </plentry>
+        <plentry>
+          <pt>Token log in</pt>
+          <pd>When you log in to the Sametime server with log-in credentials, the app sends secure
+            tokens to the client for use throughout the session. These tokens are also used to
+            authenticate with the Sametime meeting service. The tokens can also be used to
+            authenticate the session instead of using login credentials. The use of secure tokens
+            permit a login session to persist while the secure tokens remain valid. The session ends
+            when you use the <uicontrol>Logout</uicontrol> menu option or when the token expires. </pd>
+          <pd>The <uicontrol>Remain online</uicontrol> setting takes precedent in determining how
+            long to remain logged in when the HCL Sametime app runs in the background until the
+            setting expires. However, when you bring the HCL Sametime app back to the foreground,
+            the secure tokens are used to log in if they haven't expired.</pd>
+        </plentry>
+        <plentry>
+          <pt>Meeting waiting room support</pt>
+          <pd>When you join a meeting that was configured with a waiting room, you remain in the
+            waiting room until you are either admitted or denied access to the meeting. You can see
+            messages from the meeting owner while you are in the waiting room.</pd>
+        </plentry>
+        <plentry>
+          <pt>Custom branding for meetings</pt>
+          <pd>Business customers can use their own branding for meetings. Administrators can
+            configure the Sametime server to use a business logo to which the meeting screen is
+            displays during the join process.</pd>
+        </plentry>
+      </parml>
+      <parml id="parml_byg_ggy_z5b">
+        <plentry>
+          <pt>New default policy options for the mobile app</pt>
+          <pd>Policies that the login process passes down specify the behavior of the HCL Sametime
+            mobile app. The Sametime administrator uses policies to turn on and off features. For
+            example, administrators can use file transfer policies to turn off file transfer when
+            they assess that the security risks in the customer's environment are too great.</pd>
+          <pd>In Sametime 12.0, the default settings for many mobile policies to enable all mobile
+            features. However, an administrator can modify them to meet the needs of the
+            organization. For details about policies, see the HCL Sametime Administrator Guide. The
+              <xref href="https://help.hcltechsw.com/sametime/12/admin/c_mobileclient_policies.html"
+              scope="external" format="html">Mobile client policies</xref> topic describes the
+            policies that the mobile client uses.</pd>
+        </plentry>
+      </parml>
+    </section>
+ </conbody>
+</concept>
+<?Pub *0000001020?>

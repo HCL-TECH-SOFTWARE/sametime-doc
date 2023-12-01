@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_configure_default_virtual_background">
+    <title>Adding virtual backgrounds to the global library</title>
+    <shortdesc>By default, you can customize your meetings with virtual backgrounds and themes. As
+        an administrator, you can choose which backgrounds and themes are available to all users.  </shortdesc>
+</task>

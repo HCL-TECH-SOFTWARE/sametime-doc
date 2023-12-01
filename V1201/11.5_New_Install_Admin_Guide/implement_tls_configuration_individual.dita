@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="implement_tls_configuration_individual" xml:lang="en-us">
+    <title>Implementing the Individual TLS Scope</title>
+    <shortdesc/>
+<taskbody>
+<prereq><ul>
+    <li>GSKit must be installed.</li>
+    <li>You must have a key store and trust store as a .p12 or .jks file. </li>
+</ul></prereq>
+<context>
+    <p>You can use the global TLS settings for some of the connections and override some or all of
+                them. If you desire to use a combination of the global settings as well as override
+                them for specific services, be sure to review and implement the topic <xref
+                    href="implement_tls_configuration.dita">Implementing the Global TLS
+                Scope</xref>. </p>
+    <p>It is also possible to have each individual type of connection use its own settings and not enable the global settings.</p>
+    <p>When you are overriding or not using the global settings , pre-fix the configuration settings with the service name you are wanting to secure.  
+        
+    </p>
+    <p>The service pre-fixes take the place of “ST” in the sametime.ini settings that are detailed
+                in the topic <xref href="implement_tls_configuration.dita">Implementing the Global
+                    TLS Scope</xref>.</p>
+    <p>These are the pre-fixes: </p>
+    <p><table frame="all" rowsep="1" colsep="1" id="Required_parameters ">
+        <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="1*"/>
+            <colspec colname="c2" colnum="2" colwidth="1*"/>
+            <colspec colname="c3" colnum="3" colwidth="1*"/>
+            <thead>
+                <row>
+                    <entry>Prefix</entry>
+                    <entry>Applies to</entry>
+                    <entry>Description</entry>
+                </row>
+            </thead>
+            <tbody>
+                <row>
+                    <entry>ST_</entry>
+                    <entry>Global Scope </entry>
+                    <entry>The global setting prefix that applies to all services unless one of the
+                                    below settings overrides the global setting.</entry>
+                </row>
+                <row>
+                    <entry>STMUX_</entry>
+                    <entry>Sametime Multiplexer </entry>
+                    <entry>These are for the Sametime Multiplexer both standalone and the one on the Community Server. These are client to server interactions on port 1533. </entry>
+                </row>
+                <row>
+                    <entry>STSRV_ </entry>
+                    <entry>St Community </entry>
+                    <entry>These are the settings for server side applications connecting to the Community Server on port 1516. Examples of this include the standalone Mux and the Sametime Proxy Server.</entry>
+                </row>
+                <row>
+                    <entry>STLDAP_ </entry>
+                    <entry>LDAP</entry>
+                    <entry>These are interactions between the Sametime Server and the LDAP server. In this case the Sametime server is a client to LDAP and the communications are typically secured on port 1516. </entry>
+                </row>
+                <row>
+                    <entry>STSAML_</entry>
+                    <entry>SAML</entry>
+                    <entry>These settings are used to validate signed responses (encrypted assertions) from the IdP are valid. </entry>
+                </row>
+               
+            </tbody>
+        </tgroup>
+    </table></p>
+    <p>To use the prefix, review the setting from <xref href="implement_tls_configuration.dita"
+                    >Implementing the Global TLS Scope</xref> table 1. Replace “ST_” with the
+                prefixes from the table above for each type of server interaction. </p>
+    <p><b>For example,</b> to configure the trust store for the Sametime Mux, take the setting
+                “ST_TLS_TRUST_STORE_TYPE”. Remove “ST_” from the beginning and use “STMUX_” prefix
+                in front of the parameter. The resulting parameter is STMUX_TLS_TRUST_STORE_TYPE.
+                This substitution concept works for all parameters listed on the <xref
+                    href="implement_tls_configuration.dita">Implementing the Global TLS Scope</xref>
+                topic. </p>
+    <p>Once the required sametime.ini parameters are in place be sure to finish configuring your service by completing the topic for the service you are wanting to secure. </p></context>
+</taskbody>
+</task>

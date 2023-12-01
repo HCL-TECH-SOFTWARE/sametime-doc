@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="starting_and_stopping_meeting_servers" xml:lang="en-us">
+<title>Starting and stopping Meeting servers</title>
+    <shortdesc>This section provides information on starting and stopping HCL Sametime Meeting servers.</shortdesc>
+    <taskbody>
+        <context id="context_zrn_zks_pnb">This page will provide steps to stop and start the
+            Sametime Meeting server on Docker and Kubernetes.<p><b>Procedure</b></p><ol
+                id="ol_bbl_fls_pnb">
+                <li>Stop the Meeting
+                            server.<p><b>Docker:</b></p><codeblock>docker-compose down
+</codeblock><p><b>Kubernetes:
+                        </b></p><codeblock>helm uninstall sametime-meetings</codeblock><note>In
+                        helm, the term <b>uninstall</b> is terminating the deployment. Additionally,
+                        the command assumes you are in the helm directory. The . represents current
+                        directory.</note></li>
+                <li>Start the Meeting server.<p><b>Docker:</b>
+                    </p><codeblock>docker-compose up -d
+</codeblock><p><b>Kubernetes:
+                        </b></p><codeblock>helm install sametime-meetings .
+</codeblock><note>In
+                        helm, the term <b>install</b> is a deployment of the applications.
+                        Additionally, the command assumes you are in the helm directory. The .
+                        represents current directory.</note></li>
+            </ol></context>
+    </taskbody>
+</task>

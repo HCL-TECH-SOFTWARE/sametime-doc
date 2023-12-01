@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="getting_started" xml:lang="en-us">
+  <title>Getting started with Sametime Meetings Add-in for Outlook</title>
+ <shortdesc>The Sametime Meetings add-in allows you to add a Sametime meeting room to an Outlook
+  meeting invitation.</shortdesc>
+<conbody>
+<p>The Sametime Meeting add-in is included when installing the Sametime Meeting. It can be installed
+into your Outlook environment either by URL or file. After the add-in is installed, you can add a
+Sametime Meeting room to a meeting invitation. <image href="Images/outlook_addin.jpg"
+alt="Outllook meeting schedule with Sametime Meeting icon in task bar"/></p>
+</conbody>
+</concept>
+<?Pub *0000001020?>

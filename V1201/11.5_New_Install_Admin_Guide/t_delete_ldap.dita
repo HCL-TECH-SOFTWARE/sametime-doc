@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_delete_ldap">
+    <title>Deleting user IDs</title>
+    <taskbody>
+        <prereq id="prereq_yvv_b4b_nvb">Stop the Sametime server prior to running the Sametime
+            database utility. Refer to <xref href="starting_and_stopping_servers.dita"/> for the
+            steps.</prereq>
+        <context id="context_awv_b4b_nvb">
+            <p>To remove specified individual contact names from contact lists and privacy lists,
+                follow these steps:</p>
+        </context>
+        <steps id="steps_cwv_b4b_nvb">
+            <step>
+                <cmd>Using a text editor, create a CSV file for only one type of change. You cannot
+                    mix name change types in the same CSV. Follow the syntax below. The file must be
+                    saved in UTF-8 format.</cmd>
+                <info>
+                    <codeblock id="codeblock_dwv_b4b_nvb">Delete
+uid</codeblock>
+                </info>
+                <info>For example,</info>
+                <info>
+                    <codeblock id="codeblock_jth_24b_nvb">DELETE
+uid=John Deere,ou=sametime,dc=hcl,dc=com
+uid=Marta Smith,ou=sametime,dc=hcl,dc=com
+cn=portaladminid,o=example.com </codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Copy the CSV file into an accessible read or writable location.</cmd>
+            </step>
+            <step>
+                <cmd>Edit the .env file used to contain the environment variables. Follow the syntax
+                    below.</cmd>
+                <info>
+                    <codeblock id="codeblock_ewv_b4b_nvb">MONGO_CONNECTION_URL=mongodb://sametimeUser:xxxxxxxx@192.168.1.1:27017/admin?authSource=admin&amp;authMechanism=SCRAM-SHA-256&amp;readPreference=primary&amp;directConnection=true&amp;ssl=false
+USER_ID_CSV=/data/test_id.csv</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Run the command below manually on a stand-alone community server or on a server
+                    in a cluster which replicates the change throughout the cluster. The CSV file is
+                    mounted in the container for the application to access and process.</cmd>
+                <info>
+                    <codeblock id="codeblock_ub4_5nk_nvb">docker run -v &lt;path-to-data-directory>:&lt;path-to-data-directory>:rw --env-file default.env hclcr.io/st/sametime-db-utility</codeblock>
+                </info>
+            </step>
+        </steps>
+        <postreq id="postreq_c1y_w33_nvb">Verify if the changes have been applied. For more
+            information, refer to <xref href="t_verify_namechange.dita"/>.</postreq>
+    </taskbody>
+</task>

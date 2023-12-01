@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="chat_others" xml:lang="en-us">
+  <title>Chatting with meeting participants</title>
+  <shortdesc>By default, the chat feature is enabled. You can communicate with all meeting
+    participants using the chat function. Guest users can only access the chat room through the
+    active meeting. </shortdesc>
+  <taskbody><context>
+    <p>The feature is collapsed by default and can be expanded at any time to interact with other
+        participants.</p>
+      <p><image href="Images/chat_icon.png" id="image_aly_vcq_5tb"/>
+      </p>
+    <p>In addition to the chat box in the meeting room, authenticated users can access the chat by
+        using the following clients. <ul id="ul_kzm_dl3_bpb">
+          <li>Sametime standalone client </li>
+          <li>Sametime embedded client </li>
+          <li>Sametime mobile app</li>
+          <li>Sametime web proxy client </li>
+        </ul></p>
+    <p>Due to the persistent chat feature, chat information can be checked later. Contact your
+        server administrator for the details.</p>
+      <p>Meeting recording notifications are also communicated in the active chat session. </p>
+  </context></taskbody>
+</task>
+<?Pub *0000001020?>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_mobile_file_transfer_policies">
+    <title>Mobile file transfer policies </title>
+    <shortdesc>By default, you can send files to other users and subsequently download the shared
+        files. Edit the following policies to fit your business needs.</shortdesc>
+    <conbody>
+        <section id="section_mpp_hdg_htb">
+            <title><parmname>Policy id = im.mobile.allowSendFiles, Default Setting:
+                ON</parmname></title>
+            <p>By default, you can upload files in a one-to-one chat. This policy only applies to
+                the <i>Choose from Files</i> menu item in the chat window. Leave this setting on
+                with <parmname>Policy id = 1</parmname> to allow users to upload files in a
+                one-to-one chat. Uploading files in a group chat will also require <parmname>Policy
+                    id = im.allowTransferringFilesToNwayParticipants</parmname> to be turned
+                    on.<note id="note_vtg_wbj_3tb">Sending photos from either the camera or the
+                    photos app is controlled with <parmname>Policy id =
+                        im.mobile.allowSendImages</parmname> which is discussed below.</note></p>
+        </section>
+        <section id="section_ix3_jdg_htb">
+            <title><parmname>Policy id = im.mobile.allowReceiveFiles, Default Setting:
+                ON</parmname></title>
+            <p>By default, downloaded files on mobile devices are stored outside of Sametime. Turn
+                this setting off if you don't want files to be stored outside of the application.
+                This policy covers the following download types.</p>
+            <sectiondiv>
+                <ul id="ul_kss_rdg_htb">
+                    <li>Files shared in a chat — <parmname>Policy id =
+                            im.mobile.allowReceiveFiles</parmname> must be turned on to allow files
+                        to be downloaded and subsequently saved outside of the application.</li>
+                    <li>Meeting recordings—By default, you can stream the playback of a recording on
+                        Sametime. To allow the download and subsequent saving of a meeting
+                        recording. <parmname>Policy id = im.mobile.allowReceiveFiles</parmname> must
+                        be turned on.</li>
+                    <li>Meeting reports—By default, reports can always be downloaded and viewed
+                        within Sametime. To allow reports to be saved outside of Sametime,
+                            <parmname>Policy id = im.mobile.allowReceiveFiles</parmname> must be
+                        turned on.</li>
+                </ul>
+            </sectiondiv>
+        </section>
+        <section id="section_d4p_sdg_htb">
+            <title><parmname>Policy id = im.mobile.allowSendImages, Default Setting:
+                ON</parmname></title>
+            <p>This policy must be turned on to allow images from the device camera or photos app to
+                be sent as inline images in a chat. It does not prevent image files such as PNG or
+                JPG images from being sent through the <i>Choose from Files</i> menu.<note
+                    id="note_f5v_tdg_htb">Starting with Sametime 12.0, mobile clients no longer
+                    consider Policy 2009 when sending inline images.</note></p>
+        </section>
+        <section id="section_aks_wdg_htb">
+            <title><parmname>Policy id = im.mobile.allowShareChatImages, Default Setting:
+                    ON</parmname></title>
+            <p>By default, you can share images from the chat. Turn this setting off to restrict
+                users from sharing images from the chat.</p>
+        </section>
+    </conbody>
+</concept>

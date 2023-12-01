@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="config_client_cal_pref" xml:lang="en-us">
+<title>Calendar preferences</title>
+<shortdesc>The following table lists the calendar preferences for the <tm tmtype="reg"
+   trademark="HCL">HCL</tm>
+  <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client and <tm tmtype="reg"
+   trademark="Sametime">Sametime</tm> Embedded Client for <tm tmtype="reg" trademark="Notes"
+   >Notes</tm>.</shortdesc><?Pub
+Caret 65?>
+<prolog><metadata>
+<keywords>
+<!--Insert <indexterm> tags here-->
+</keywords>
+</metadata></prolog>
+<conbody>
+<p><table><title>Calendar Preferences - com.ibm.collaboration.realtime.calendar
+ release 7.5.x and later</title>
+<tgroup cols="4"><colspec colname="col1" colwidth="99*"/><colspec
+colname="col2" colwidth="92*"/><colspec colname="col3" colwidth="104*"/>
+<colspec colname="col4" colwidth="103*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+<entry colname="col4">Release</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">alertMeWhenMeetingStarts</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">In Auto-Status Changes for Meetings scheduled
+in my calendar, specify whether to alert user when user has a meeting
+scheduled in the calendar. </entry>
+<entry colname="col4">8.5.1.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">enabled</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specify wether or not to enable auto status
+change for meetings scheduled in user's calendar.</entry>
+<entry colname="col4">8.0 and later</entry>
+</row>
+<row>
+<entry colname="col1">promptMe</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">In Auto-Status Changes for meetings scheduled
+in my calendar, specify whether to prompt user before changing the
+status when user have a meeting scheduled in the calendar.	</entry>
+<entry colname="col4">8.0 and later</entry>
+</row>
+<row>
+<entry colname="col1">statusMsg</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">In Auto-Status Changes for meetings scheduled
+in my calendar, specify the status message when user select "Automatically
+change my status."</entry>
+<entry colname="col4">8.0 and later</entry>
+</row>
+<row>
+<entry colname="col1">setback</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">In Auto-Status Changes for meetings scheduled
+in my calendar, specify whether to return to user's previous status
+when the meeting is over.</entry>
+<entry colname="col4">8.0 and later</entry>
+</row>
+<row>
+<entry colname="col1">outlook_enabled</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">In Calendar Service page, specify whether to
+check Outlook calendar for meetings to allow auto status changes.
+It's valid only if the Outlook service is available.</entry>
+<entry colname="col4">8.0 and later</entry>
+</row>
+<row>
+<entry colname="col1">notes_enabled</entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">In Calendar Service page, specify whether to check <tm tmtype="reg"
+         trademark="Notes">Notes</tm> calendar for meetings to allow auto status changes. It's valid
+        only if the <tm tmtype="reg" trademark="Notes">Notes</tm> service is available.</entry>
+<entry colname="col4">8.0 and later</entry>
+</row>
+<row>
+<entry colname="col1">interval</entry>
+<entry colname="col2">Positive integer value, unit is minutes. 10
+minutes is the default.	</entry>
+<entry colname="col3">In Calendar Service page, specify the interval that <tm tmtype="reg"
+         trademark="Sametime">Sametime</tm> retrieves calendar information for an auto-status
+        change. This value is not for the interval to update auto-status. </entry>
+<entry colname="col4">8.0 and later</entry>
+</row>
+</tbody>
+</tgroup>
+</table></p>
+</conbody>
+<?tm 1264195603 7?>
+</concept>
+<?Pub *0000004107?>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_chat_ldap_java_format" xml:lang="en-us">
+<title>Example: Writing a <tm tmtype="tm" trademark="Java">Java</tm> class
+to format names returned in a search</title>
+<shortdesc>To return a user name in a format that is not available
+in an LDAP directory entry attribute, you can write a <tm tmtype="tm"
+trademark="Java">Java</tm> class that manipulates existing information
+in the LDAP directory to produce the user name in the desired format.</shortdesc>
+<taskbody>
+<context><p class="- topic/p ">In most environments, the value of the <uicontrol>The attribute of the person
+     entry that defines the user's name</uicontrol> setting can specify a common LDAP directory
+    attribute, such as <uicontrol>cn</uicontrol> (common name) or <uicontrol>mail</uicontrol> (email
+    address). When configured in this way, the search returns the value assigned to a user's cn or
+    mail directory attribute and displays this value in the <tm tmtype="reg" trademark="HCL"
+     >HCL</tm>
+    <tm tmtype="reg" trademark="Sametime">Sametime</tm> client user interface. </p><p
+class="- topic/p ">To return names in a format different from the
+LDAP directory attributes, create a custom <tm tmtype="tm"
+trademark="Java">Java</tm> class. For example, you might create a <tm
+tmtype="tm" trademark="Java">Java</tm> class that does the following:<ul>
+<li>Combines the values of two LDAP directory attributes to produce
+the user name in a desired format.</li>
+<li>Edits the information in a single LDAP directory attribute to
+produce the user name in a format that is different than the value
+specified by the attribute.</li>
+</ul></p></context>
+<example><p class="- topic/p ">The sample code that follows shows
+how to combines the values of the sn and givenName attributes to return
+a user name with the surname shown first, assuming the following requirements:</p><ul
+class="- topic/ul ">
+<li class="- topic/li ">LDAP searches must return a user name in the
+format surname, given name (for example: Smith, John)</li>
+<li class="- topic/li ">None of the LDAP directory attributes specify
+the user name in the surname, given name format.</li>
+<li class="- topic/li ">The LDAP directory attribute <uicontrol>sn</uicontrol> specifies
+each user's surname.</li>
+<li class="- topic/li ">The LDAP directory attribute <uicontrol>givenName</uicontrol> specifies
+each user's given name.</li>
+</ul><p>Sample code</p><p class="- topic/p ">This example takes values
+from the sn and givenName directory attributes and combines these
+values into a single display name in the format of surname, given
+name.</p><codeblock>public class StLdapCustomizedAttributes
+
+{
+
+public static String displayName (String givenName, String sn) 
+
+{
+
+String result = sn + ", " + givenName;
+
+return result;
+
+}
+
+}
+</codeblock></example>
+<postreq>After writing your <tm tmtype="tm" trademark="Java">Java</tm> class, complete the tasks in
+         this section to implement it in either Docker or Kubernetes.</postreq>
+</taskbody>
+
+</task>
+

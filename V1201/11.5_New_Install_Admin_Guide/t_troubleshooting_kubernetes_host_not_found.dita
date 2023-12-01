@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_troubleshooting_kubernetes_host_not_found">
+    <title>Kubernetes: Containers not starting due to "Host not found"</title>
+    <shortdesc>Use this information on troubleshooting Sametime 12 Premium on Kubernetes -
+        containers not starting due to "Host not found."</shortdesc>
+    <taskbody>
+        <context id="context_yvv_dz2_5mb">
+            <p>After installing Sametime 12, the server is not responding correctly. You may
+                experience any of the following symptoms:<ul id="ul_nb1_y12_wnb">
+                    <li>Unable to create or save a meeting room</li>
+                    <li>Can't get a list of meeting rooms</li>
+                    <li>Recordings fail</li>
+                    <li>Unable to login</li>
+                    <li>Group chat inside the meeting fails</li>
+                    <li>Media streams do not work</li>
+                </ul></p>
+            <p>To investigate the issue, use the
+                command:<codeblock id="codeblock_xdj_cb1_ptb">kubectl get po</codeblock></p>
+            <p>This will display a list of the processes (pods) running. In a normal working
+                environment, you'll see all of the processes with status "running". </p>
+            <p>
+                <image href="Images/troubleshoot_kubernetes.png" placement="break" align="left"
+                    id="troubleshoot_kubernetes"/>
+            </p>
+            <p>If any of your processes in this list are not "Running" it indicates a problem.
+                Typically with the problems described above it indicates an issue with the meeting
+                server connecting to MongoDB or the Sametime Proxy. To further investigate these two
+                areas you'll take the name of the process as it is in the name column. For storage
+                related issues (creating/retrieving meeting rooms), it is the catalog process. Run
+                the below commands to further
+                investigate.<codeblock id="codeblock_ydj_cb1_ptb">kubectl describe catalog</codeblock></p>
+            <p>For authentication issues, investigate the "auth"
+                process.<codeblock id="codeblock_zdj_cb1_ptb">kubectl logs &lt;auth-name> </codeblock></p>
+            <p>For example using the screenshot above the auth process name is
+                auth-77fbc6cf67-vrf77, then the command
+                is:<codeblock id="codeblock_a2j_cb1_ptb">kubectl logs auth-77fbc6cf67-vrf77</codeblock></p>
+            <p>For recordings, investigate the "recordings"
+                process.<codeblock id="codeblock_b2j_cb1_ptb">kubectl logs &lt;recordings-name></codeblock></p>
+            <p>For other Sametime Proxy related issues, investigate the "web"
+                process.<codeblock id="codeblock_c2j_cb1_ptb">kubectl logs &lt;web-name></codeblock></p>
+            <p>For media issues, investigate the "video"
+                process.<codeblock id="codeblock_d2j_cb1_ptb">kubectl logs deploy/video</codeblock></p>
+            <p>If you see errors about "host not found" then the Kubernetes environment is having
+                difficulty resolving the MongoDB server and/or Proxy server.</p>
+            <p><b>Resolution</b></p>
+            <p>If the DNS is unable to consistently resolve the host names for MongoDB and/or
+                Sametime Proxy, these hostnames and IP addresses can be added to the configuration
+                manually. In Kubernetes you can add these hostnames and the IP addresses to the host
+                aliases. For further reading on this feature see: <xref
+                    href="https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/"
+                    format="html" scope="external">Adding entries to Pod /etc/hosts with
+                    HostAliases</xref>.</p>
+            <p>Each pod that is producing a "host not found" error message will need to have the
+                host aliases updated.</p>
+            <p>You can modify the template, so that any future changes that you wish to incorporate
+                will bring these host aliases. Or you can also modify the instance that is running,
+                so that the change will be in effect immediately.<note id="note_e2j_cb1_ptb">If you
+                    modify the instance that is running, you will lose these settings if you restart
+                    the pod. It is recommended to change the template.</note></p>
+            <ol id="ol_xpk_fd2_wnb">
+                <li>Use the below table to determine which template needs to be modified. Also the
+                    command to modify the running instance is provided.<table frame="all" rowsep="1"
+                        colsep="1" id="table_st4_jd2_wnb">
+                        <title>Template to be modified</title>
+                        <tgroup cols="4">
+                            <colspec colname="c1" colnum="1" colwidth="1*"/>
+                            <colspec colname="c2" colnum="2" colwidth="1*"/>
+                            <colspec colname="c3" colnum="3" colwidth="1*"/>
+                            <colspec colname="c4" colnum="4" colwidth="1*"/>
+                            <thead>
+                                <row>
+                                    <entry>Name to resolve</entry>
+                                    <entry>Pod</entry>
+                                    <entry>Template name(s)</entry>
+                                    <entry>Command to modify running instance.</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry>Hostname of the Sametime Proxy</entry>
+                                    <entry>auth and web pods</entry>
+                                    <entry>
+                                        <p>helm/charts/web/templates/deployment.yaml</p>
+                                        <p>helm/charts/auth/templates/deployment.yaml</p>
+                                    </entry>
+                                    <entry>
+                                        <p>
+                                            <codeblock id="codeblock_f2j_cb1_ptb">kubectl edit deploy web</codeblock>
+                                        </p>
+                                        <p>
+                                            <codeblock id="codeblock_g2j_cb1_ptb">kubectl edit deploy auth</codeblock>
+                                        </p>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>Hostname of the MongoDB server</entry>
+                                    <entry>catalog</entry>
+                                    <entry>helm/charts/catalog/templates/deployment.yaml</entry>
+                                    <entry>
+                                        <codeblock id="codeblock_h2j_cb1_ptb">kubectl edit deply catalog</codeblock>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>STUN server host</entry>
+                                    <entry>video</entry>
+                                    <entry>helm/charts/video/templates/deployment.yaml</entry>
+                                    <entry>
+                                        <codeblock id="codeblock_i2j_cb1_ptb">kubectl edit deploy video</codeblock>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>Recording repository host</entry>
+                                    <entry>recordings</entry>
+                                    <entry>helm/charts/recordings/templates/deployment.yaml</entry>
+                                    <entry>
+                                        <codeblock id="codeblock_j2j_cb1_ptb">kubectl edit deploy recordings</codeblock>
+                                    </entry>
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table></li>
+                <li>Modify the template.<p>First a note about yaml files - do not use the tab key
+                        for indentation, when using indentation use two spaces for each
+                        indentation.</p><p>Open the template in a text editor (such as
+                        vi).</p><p>Locate the line restartPolicy=Always and insert a new
+                        line.</p><p>Use the below example text to include the hostnames that need to
+                        be resolved:<codeblock id="codeblock_k2j_cb1_ptb">hostAliases:
+    - hostnames:
+      - "sametimeproxy.example.com"
+      - "sametimeproxyalias.example.com"
+      ip: "10.10.10.10"
+    - hostnames:
+      - "mongodb.example.com"
+      ip: "10.10.10.11"</codeblock></p><p>In the hostnames field your server
+                        may only be known as one hostname, you can add multiple aliases if
+                        desired.</p><p>Before saving the template, make sure the indentations are
+                        correct, using only spaces for indentation. The "hostAliases:" line should
+                        line up exactly under the "restartPolicy" line at the same level of
+                        indententaion. You may need to correct the other lines as well after copy
+                        and pasting them. Visually it should look like this:</p><p>
+                        <image href="Images/restart_policy.png" placement="break" align="left"
+                            id="restart_policy"/>
+                    </p><note id="note_l2j_cb1_ptb">There should be no extra blank lines in the
+                        template, so be sure to remove any.</note><p>Save and close the template
+                        when changes are complete.</p><p>This process should be completed for all
+                        templates involved.</p></li>
+                <li>Apply the changes to the server.<p>Run the
+                        commands:<codeblock id="codeblock_m2j_cb1_ptb">helm uninstall sametime-meetings
+
+helm install sametime-meetings .</codeblock></p><note id="note_n2j_cb1_ptb"
+                        >The dot at the end is part of the command.</note></li>
+            </ol>
+        </context>
+    </taskbody>
+</task>

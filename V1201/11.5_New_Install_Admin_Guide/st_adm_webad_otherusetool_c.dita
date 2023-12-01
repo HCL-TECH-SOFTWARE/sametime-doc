@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="st_adm_webad_otherusetool_c" xml:lang="en-us">
+<title class="- topic/title ">Adding a <tm tmtype="reg">Sametime</tm> administrator in the <tm
+   tmtype="reg">Domino</tm> LDAP</title>
+<shortdesc>Use the <tm tmtype="reg">Domino</tm> Directory to give a group of administrators access
+  to the <tm tmtype="reg">Sametime</tm> Administration Tool.</shortdesc>
+<conbody>
+<p class="- topic/p ">The administrator account that is created during the <tm tmtype="reg"
+    >Sametime</tm> deployment can access all features of the <tm tmtype="reg">Sametime</tm>
+   Administration Tool ,and can provide other administrators with access to the Administration
+   Tool.</p>
+<p class="- topic/p ">This procedure applies only to the LDAP-formatted <tm tmtype="reg">Domino</tm>
+   Directory that functions as the user repository for a <tm tmtype="reg">Sametime</tm> deployment.
+   If you use a different LDAP directory, create the new administrator using your LDAP directory
+   tools. </p>
+</conbody>
+</concept>
+

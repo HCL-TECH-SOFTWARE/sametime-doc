@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="t_uninstall_addin" xml:lang="en-us">
+ <title>Removing the Sametime Meetings Add-in</title>
+ <shortdesc>The uninstall the Sametime meetings add-in, users must remove the custom add-in the
+  users added to Microsoft outlook.</shortdesc>
+ <taskbody>
+  <steps id="steps_vzm_flh_ftb">
+   <step>
+    <cmd>Navigate to your My add-in window.  Click the <uicontrol>Get add-ins</uicontrol> icon
+     located in the task bar.</cmd>
+   </step>
+   <step>
+    <cmd>On the <wintitle>Add-ins for Outlook</wintitle> window, click <uicontrol>My
+      Add-ins</uicontrol>.</cmd>
+    <info>The Sametime Meetings add-in is located in <uicontrol>Custom Addins</uicontrol>
+     section.</info>
+   </step>
+   <step>
+    <cmd>Click the Manage Add-in icon (within the Sametime Meeting tile and select
+      <uicontrol>Remove</uicontrol>. </cmd>
+    <info><image href="Images/remove_addin.png" id="image_nr3_d4h_ftb"
+      alt="User interface showing Sametime add-in tile and remove function"/></info>
+   </step>
+  </steps>
+ </taskbody>
+</task>
+<?Pub *0000001896?>

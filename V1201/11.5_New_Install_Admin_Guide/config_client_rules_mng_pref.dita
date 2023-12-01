@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="config_client_rules_mng_pref" xml:lang="en-us">
+<title>Rules manager preferences</title>
+<shortdesc>The following tables list the rules manager preferences for the <tm tmtype="reg"
+   trademark="HCL">HCL</tm>
+  <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client and <tm tmtype="reg"
+   trademark="Sametime">Sametime</tm> Embedded Client for <tm tmtype="reg" trademark="Notes"
+   >Notes</tm>.</shortdesc>
+<conbody>
+<table><title><tm tmtype="reg" trademark="Sametime">Sametime</tm> Rules Manager Preferences -
+                com.ibm.collaboration.realtime.telephony.sti.rulesmgr release 8.5.1 and later </title><desc><p outputclass="summary">This
+is a table.</p></desc>
+<tgroup cols="4"><colspec colname="col1" colwidth="110*"/><colspec
+colname="col2" colwidth="79*"/><colspec colname="col3" colwidth="110*"/>
+<colspec colname="col4" colwidth="93*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+<entry colname="col4">Release</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1">blockIncomingCalls </entry>
+<entry colname="col2">Boolean. Default is true. </entry>
+<entry colname="col3">Block all incoming calls. </entry>
+<entry colname="col4">8.5.1 and later  </entry>
+</row>
+<row>
+<entry colname="col1">rulesForComputerOnlyUsers</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Causes default rules to only apply for computer
+only users. </entry>
+<entry colname="col4">8.5.1  and later </entry>
+</row>
+<row>
+<entry colname="col1">hideCallRoutingPrefs</entry>
+<entry colname="col2">Boolean. Default is false. </entry>
+<entry colname="col3">Hide the call routing preference pages.</entry>
+<entry colname="col4"> 8.5.1  and later  </entry>
+</row>
+<row>
+<entry colname="col1">disableRulesEditing  </entry>
+<entry colname="col2">Boolean. Default is true. </entry>
+<entry colname="col3">Disable the ability to edit call routing rules.</entry>
+<entry colname="col4"> 8.5.1 and later </entry>
+</row>
+<row>
+<entry colname="col1">disableOfflineCalling</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Disable ability for a computer only user to
+call an offline contact. </entry>
+<entry colname="col4"> 8.5.1 and later </entry>
+</row>
+<row>
+<entry colname="col1">disableExternalCalling </entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Disable ability for a computer only user to
+call an external contact or phone number. </entry>
+<entry colname="col4"> 8.5.1 and later </entry>
+</row>
+<row>
+<entry colname="col1">disableNonComputerCalls</entry>
+<entry colname="col2">Boolean. Default is true.  </entry>
+<entry colname="col3">Disable ability for a computer only user to
+call using anything other than their computer.</entry>
+<entry colname="col4"> 8.5.1 and later  </entry>
+</row>
+<row>
+<entry colname="col1">hidePreferredDevices  </entry>
+<entry colname="col2">Boolean. Default is false.</entry>
+<entry colname="col3">Hide the preferred device list.</entry>
+<entry colname="col4"> 8.5.1 and later </entry>
+</row>
+<row>
+<entry colname="col1">disablePreferredDevices</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Disable the preferred devices list.</entry>
+<entry colname="col4"> 8.5.1 and later   </entry>
+</row>
+<row>
+<entry colname="col1">hideAllocatedDevices</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Hide allocated devices so they cannot be used
+to answer calls or as a transfer target.  </entry>
+<entry colname="col4"> 8.5.1 and later </entry>
+</row>
+<row>
+<entry colname="col1"><lines>disablePreferredNumber
+Changes</lines></entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Disable the ability to add new preferred numbers.</entry>
+<entry colname="col4"> 8.5.1 and later   </entry>
+</row>
+<row>
+<entry colname="col1">replaceConditions</entry>
+<entry colname="col2">Boolean. Default is true. </entry>
+<entry colname="col3">Replace the users conditions with the defaults.</entry>
+<entry colname="col4"> 8.5.1 and later   </entry>
+</row>
+<row>
+<entry colname="col1">computerOnlyPrefix</entry>
+<entry colname="col2">String. Default is +999.</entry>
+<entry colname="col3">Unified number prefix which identifies a user
+as a computer only user.</entry>
+<entry colname="col4"> 8.5.1 and later   </entry>
+</row>
+<row>
+<entry colname="col1">callRoutingConditions</entry>
+<entry colname="col2">String. Default is <codeblock>/config/callRoutingConditions.xml</codeblock>.</entry>
+<entry colname="col3">URL pointing to an XML file which defines the
+default call routing rules.</entry>
+<entry colname="col4"> 8.5.1 and later </entry>
+</row>
+</tbody>
+</tgroup>
+</table><?Pub Caret 3?>
+</conbody>
+</concept>
+<?Pub *0000005079?>

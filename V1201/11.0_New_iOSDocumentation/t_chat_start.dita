@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_chat_start" xml:lang="en-us">
+  <title>Starting a chat</title>
+  <?Pub Caret 3?>
+  <shortdesc>You can start a chat conversation from the chat main screen or directly with an
+    individual or group in your contact list.</shortdesc>
+  <taskbody>
+    <context>You can send chat messages to both users who are online and offline. However, users who
+      are offline do not receive the message until they are online.</context>
+    <steps>
+      <step>
+        <cmd>Tap the name of the contact in your <uicontrol>Contacts</uicontrol> list to display
+          their person card.</cmd>
+      </step>
+      <step>
+        <cmd>Open the <uicontrol>Chat </uicontrol> tab.</cmd>
+      </step>
+      <step>
+        <cmd>Type your message and then tap <uicontrol>Send</uicontrol>.</cmd>
+      </step>
+      <step>
+        <cmd>Look for a response from your chat partner in the chat window.</cmd>
+      </step>
+      <step>
+        <cmd>Close the chat window when you finish chatting:</cmd>
+        <info>
+          <ul>
+            <li>On an iPad, swipe right. </li>
+            <li>On an iPhone, tap <uicontrol>Active</uicontrol> to display the Chats screen. Make
+              sure <uicontrol>Active</uicontrol> shows selected, tap <uicontrol>Edit</uicontrol>,
+              and then tap the red bar next to the chat to close. Tap <uicontrol>Close</uicontrol>
+              to close that chat.</li>
+          </ul>
+        </info>
+      </step>
+    </steps>
+  </taskbody>
+  <task id="task_zq5_msr_bvb">
+    <title>Starting a chat from Chat screen </title>
+    <taskbody>
+      <steps id="steps_wm5_4sr_bvb">
+        <step>
+          <cmd>From the main menu, tap <uicontrol>Chat</uicontrol>.</cmd>
+        </step>
+        <step>
+          <cmd>Click the message icon at the top of the screen.</cmd>
+        </step>
+        <step>
+          <cmd>Type the name of the person to chat with in the <uicontrol>search</uicontrol>
+            field.</cmd>
+          <info>The directory shows the results. When you see the person to chat with, tap their
+            name.</info>
+        </step>
+        <step>
+          <cmd>Type your message into the message field.</cmd>
+        </step>
+        <step>
+          <cmd>Tap the <uicontrol>send</uicontrol> icon (<image href="Images/icon_send.jpg"
+              id="image_evk_15r_bvb" alt="Send icon"/>) to send the message.</cmd>
+        </step>
+      </steps>
+    </taskbody>
+  </task>
+  <task id="task_eqb_f5r_bvb">
+    <title>Starting a chat from your contact list</title>
+    <taskbody>
+      <steps id="steps_fqb_f5r_bvb">
+        <step>
+          <cmd>From the main menu, tap <uicontrol>Contacts</uicontrol>.</cmd>
+        </step>
+        <step>
+          <cmd>Choose a chat partner from your list of contacts or tap the <uicontrol>plus
+              sign</uicontrol> to create a contact.</cmd>
+        </step>
+        <step>
+          <cmd>Tap the group the person is in and tap their name.</cmd>
+        </step>
+        <step>
+          <cmd>Tap the <uicontrol>message</uicontrol> icon (<image href="Images/icon_chat.png"
+              alt="message icon" id="image_mcw_r5r_bvb"/>) to open the chat screen.</cmd>
+        </step>
+        <step>
+          <cmd>Type your message into the message field.</cmd>
+        </step>
+        <step>
+          <cmd>Tap the <uicontrol>send</uicontrol> icon (<image href="Images/icon_send.jpg"
+              alt="Send icon" id="image_gqb_f5r_bvb"/>) to send the message.</cmd>
+        </step>
+      </steps>
+    </taskbody>
+  </task>
+</task>

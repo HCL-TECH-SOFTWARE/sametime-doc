@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="c_st8_uim_icons_unavail" xml:lang="en-us">
+<title>Why are some icons in the user interface disabled?</title>
+<shortdesc>You might notice that some icons in the user interface,
+for example, some of those in the action bar at the beginning of your
+contact list or in the chat window, are disabled and you cannot click
+them.</shortdesc>
+<conbody>
+<p>Why might icons be disabled?</p>
+<ul>
+<li>If your chat partner is using an older client, some features might
+not be available to them. In this case, the icons for these features
+are disabled in your chat window.</li>
+<li>If you have more than one <tm tmtype="reg">Sametime</tm> server community and you select
+    contacts from different server communities to perform collaborative activities, such as chatting
+    with multiple chat partners, icons for these activities are disabled.
+    Participants in such activities must be from the same server community.</li>
+<li>If your system administrator has turned off certain policies,
+so that some features are not available to you, the icons for these
+features are disabled.</li><?Pub Caret 114?>
+</ul>
+</conbody>
+<?tm 1364916201 0?>
+</concept>
+<?Pub *0000001481?>

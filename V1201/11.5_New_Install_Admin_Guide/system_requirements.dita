@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="system_requirements" xml:lang="en-us">
+<title>System requirements</title>
+    <shortdesc>System requirements includes the minimum HCL Sametime and HCL Sametime Premimum
+        requirements, such as: operating systems, hardware, software, and more.</shortdesc>
+<conbody>
+        <p>The minimum requirements must be available to install the product successfully. For
+            detail system requirements, see the <xref
+                href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0097599"
+                format="html" scope="external">System requirements</xref> article.</p>
+        <p>The graphic below shows a simple topology with required components: MongoDB and LDAP. The
+            system requirements article along with the installation and configuration topics
+            provides details for including them in your environment. <image
+                href="Images/topology_simple.png" id="image_xpp_bzz_gtb"
+                alt="Simple Sametime topology " placement="break" align="center"/></p>
+    </conbody>
+</concept>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="installing_sametime_ios_and_androidtask_js5_2mv_dlb" xml:lang="en-us">
+<title>Installing Sametime iOS and Android clients</title>
+    <shortdesc>You can find the latest HCL Sametime mobile clients in the Apple App Store and Google
+        Play Store.</shortdesc>
+<taskbody>
+<context>
+    <p> Refer to the Sametime mobile documentation for more information on mobile clients.</p>
+    <p><ul><li><xref href="https://help.hcltechsw.com/sametime/12/ios/index.html" format="html"
+                            scope="external">HCL Sametime iOS Documentation</xref>.</li>
+       <li><xref href="https://help.hcltechsw.com/sametime/12/android/index.html" format="html"
+                            scope="external">HCL Sametime Android Documentation</xref>.</li></ul></p>
+</context>
+</taskbody>
+</task>

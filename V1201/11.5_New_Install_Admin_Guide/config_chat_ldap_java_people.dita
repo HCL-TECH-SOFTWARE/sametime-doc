@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_chat_ldap_java_people" xml:lang="en-us">
+<title>Example: Writing a <tm tmtype="tm" trademark="Java">Java</tm> class
+to filter searches for people and groups</title>
+<shortdesc>If a single search filter is not adequate to resolve user
+or group name searches, you can write a <tm tmtype="tm" trademark="Java">Java</tm> class
+containing a method that specifies exactly how directory searches
+are conducted. The class can invoke different LDAP search filters
+depending on search criteria entered by users. </shortdesc>
+<taskbody>
+<context><p>The <uicontrol>Search filter for resolving person names</uicontrol> and the <uicontrol>Search
+					filter for resolving group names</uicontrol> settings in the LDAP directory
+				settings of the <tm tmtype="reg" trademark="Sametime">Sametime</tm>  Administration
+				Tool define the LDAP directory search filters responsible for selecting user and
+				group names from the LDAP directory.</p><?Pub Caret 97?><p
+class="- topic/note ">You do not have to write <tm tmtype="tm"
+trademark="Java">Java</tm> classes to control the search behavior
+for both users and groups. You can use a <tm tmtype="tm" trademark="Java">Java</tm> class
+to control the search behavior for users while using a single LDAP
+search filter to control the search behavior for groups, or vice versa.</p><p>The
+specific source code that you write to support customized LDAP searches
+is entirely dependent on your environment. This section provides a
+code sample to help you understand how to write the <tm tmtype="tm"
+trademark="Java">Java</tm> class appropriate for your environment.</p><note>The
+searched name must be escaped according to LDAP RFC2254 before adding
+it to the created LDAP filter. Use the escape and the isHex methods
+as is from the following example. </note></context>
+<example><p>The following example invokes different LDAP directory search filters based on the text string
+				that is entered into the <tm tmtype="reg" trademark="Sametime">Sametime</tm>  user
+				interface by a user. The search filters invoked by the method are dependent on the
+				directory schema and the search behavior needed for the environment. Assume that
+				three different users want to add the user Victor Lazlow to their <tm tmtype="reg"
+					trademark="Sametime">Sametime</tm> Connect Client buddy lists. Each of the three
+				users searches for Victor Lazlow in a different way. The logic of the <tm
+					tmtype="tm" trademark="Java">Java</tm> class dictates the results of these three
+				user searches:</p><ul>
+<li>User 1<p>Input: User 1 enters <userinput>Victor L*</userinput> into the <tm tmtype="reg"
+							trademark="Sametime">Sametime</tm> client user interface to add Victor
+						Lazlow to the Contacts list. </p><p>Results: This search attempt returns an
+						error because the <tm tmtype="tm" trademark="Java">Java</tm> class is
+						programmed to return an error when the user enters a text string that
+						includes an asterisk.</p></li>
+<li>User 2<p>Input: User 2 enters <userinput>Victor_Lazlow@example.com</userinput> into the <tm
+							tmtype="reg" trademark="Sametime">Sametime</tm> client interface.
+						</p><p>Results: This search attempt succeeds and returns the value
+						"Victor_Lazlow@example.com" (Victor Lazlow's email address) from the LDAP
+						directory. The search attempt succeeds in this way because the <tm
+							tmtype="tm" trademark="Java">Java</tm> class is programmed to return an
+						LDAP search filter that can resolve an LDAP directory search to a user's
+						email address. The <tm tmtype="tm" trademark="Java">Java</tm> class returns
+						this email address search filter if the search text string entered by the
+						end user includes the "at" character (@). </p></li>
+<li>User 3<p>Input: User 3 enters "Victor L" into the <tm tmtype="reg" trademark="Sametime"
+							>Sametime</tm>  client interface. This search attempt succeeds and
+						returns the common name (cn) directory attribute of "Victor Lazlow."
+						</p><p>Results: The search attempt succeeds in this way because the <tm
+							tmtype="tm" trademark="Java">Java</tm> class is programmed to return an
+						LDAP search filter that can resolve an LDAP directory search to a user's
+						common name (cn). The <tm tmtype="tm" trademark="Java">Java</tm> class
+						returns this common name search filter if the search text string entered by
+						the end user does not include either an asterisk or "at" (@) character.
+					</p></li>
+</ul><p>Sample code</p><p>The code sample that follows shows the <tm tmtype="tm" trademark="Java">Java</tm> source code
+				that produces this search behavior. This code creates a <tm tmtype="tm"
+					trademark="Java">Java</tm> class named <parmname>StLdapCustomized</parmname>
+				that includes the <parmname>peopleResolveFilter</parmname> method. The if statements
+				in the <parmname>peopleResolveFilter</parmname> method examine the text string
+				entered by the user in the <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+				client user interface and return the appropriate LDAP search filter based on this
+				text string. The comments in the source code explain the purpose of each if
+				statement. </p><codeblock>public class StLdapCustomized
+{
+	/**
+	 * String representing an escaped forward slash sign '\'
+	 */
+	private final static String SLASH_SIGN_CONVERTED = "\\5c";
+
+	/**
+	 * String representing an escaped * sign '*'
+	 */
+	private final static String STAR_SIGN_CONVERTED = "\\2a";
+
+	/**
+	 * String representing an escaped opening bracket sign '('
+	 */
+	private final static String OPENING_BRACKET_SIGN_CONVERTED = "\\28";
+
+	/**
+	 * String representing an escaped closing bracket sign ')'
+	 */
+	private final static String CLOSING_BRACKET_SIGN_CONVERTED = "\\29";
+
+	/**
+	 * Escape problematic characters in the name to match the LDAP filter escaping
+	 * criteria according to RFC2254
+	 * rfc2254 - The String Representation of LDAP Search 
+	 * @param name the name to escape
+	 * @return an escaped string
+	 */
+	private static String escape(String name)
+	{
+		StringBuffer escapedName = new StringBuffer();
+		for (int i=0; i&lt; name.length(); ){
+			switch(name.charAt(i)){
+			case '\\':
+				// if the next 2 chars are hex we don't need to escape
+				if((i&lt; name.length()-2) &amp;&amp; isHex(name.charAt(i+1)) &amp;&amp;
+						isHex(name.charAt(i+2))){
+					escapedName.append('\\');
+					escapedName.append(name.charAt(++i));
+					escapedName.append(name.charAt(++i));
+				}
+				else{
+					escapedName.append(SLASH_SIGN_CONVERTED);
+				}
+				i++;
+				break;
+
+			case '*':
+				escapedName.append(STAR_SIGN_CONVERTED);
+				i++;
+				break;
+
+			case '(':
+				escapedName.append(OPENING_BRACKET_SIGN_CONVERTED);
+				i++;
+				break;
+
+			case ')':
+				escapedName.append(CLOSING_BRACKET_SIGN_CONVERTED);
+				i++;
+				break;
+
+			default:
+				escapedName.append(name.charAt(i));
+			i++;
+
+			}
+		}
+
+		return escapedName.toString();
+	}
+
+	/**
+	 * Verifies whether this char is a hex char
+	 * @param c
+	 * @return
+	 */
+	private static  boolean isHex(char c){
+		boolean hex = true;
+		hex = !( Character.digit(c, 16) == -1);
+		return hex;
+	}
+
+	/**
+	 * Generates a search filter for finding a user, given the user's 
+	 * name. 
+	 * The searched name is escaped according to LDAP filters escaping rules.
+	 * The checks on the searched name format should be done before escaping the value.
+	 * @param name The user's name as provided by the Sametime client.
+	 * @return The search filter, or null if the name is invalid. 
+	 * */ 
+
+	public static String peopleResolveFilter (String name) 
+	{ 
+		String escapedName;
+		// prevent users from adding their own wildcards
+		if (name.indexOf('*') != -1) 
+			return null;
+
+		// if name looks like email, do not search with wildcards, and only search in mail attribute 
+		if (name.indexOf('@') != -1) 
+		{
+			escapedName = escape(name);
+			return "(&amp;(objectclass=person)(mail=" + escapedName + ")) ";
+		}
+
+		// otherwise, search as CN with wildcard
+		escapedName = escape(name);
+		return "(&amp;(objectclass=person) (cn=" + escapedName + "*))";
+	}
+}</codeblock></example>
+<postreq>After writing your <tm tmtype="tm" trademark="Java">Java</tm> class, complete the tasks in
+			this section to implement it in either Docker or Kubernetes.</postreq>
+</taskbody>
+
+</task>

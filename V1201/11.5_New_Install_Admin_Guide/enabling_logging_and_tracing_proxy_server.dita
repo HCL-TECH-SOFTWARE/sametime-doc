@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="enabling_logging_and_tracing_proxy_server" xml:lang="en-us">
+<title>Enabling logging and tracing on the Proxy server</title>
+    <shortdesc>To enable tracing for the HCL Sametime 11 Proxy Server, in the folder with the Sametime proxy application, locate the "logging.properties" file located in the conf subfolder.</shortdesc>
+<taskbody>
+<context>
+    <p><ol>
+        <li>With a text editor, un-comment the two lines at the bottom of the file:
+                            <p>com.ibm.level=FINE</p><p>com.ibm.handlers =
+                            2localhost.org.apache.juli.AsyncFileHandler</p></li>
+        <li>Restart the HCL Sametime Proxy Server to enable.</li>
+    </ol></p>
+    <p>When sending data to the HCL Support team, be sure to include the entire contents of the "logs" folder.</p>   
+</context>
+</taskbody>
+</task>

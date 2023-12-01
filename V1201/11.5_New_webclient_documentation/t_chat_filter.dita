@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_chat_filter" xml:lang="en-us">
+ <title>Filtering chats</title>
+ <shortdesc>Several predefined filters are available to sort chats.</shortdesc>
+ <taskbody>
+  <context>
+   <p>Use the <uicontrol>Find a person search</uicontrol> field to locate a person and open the chat
+    conversation area with that person.</p>
+   <p>The chat filter provides for filtering active chats. Click the icon for the desired filter.
+    The focused icon turns red. The filter persists until changed.<dl id="dl_kcy_d4q_hvb">
+     <dlentry>
+      <dt><image href="Images/icon_allchat.png" id="image_ytg_fpq_hvb"/></dt>
+      <dd>Displays all chats.</dd>
+     </dlentry>
+     <dlentry>
+      <dt><image href="Images/icon_one2one.png" id="image_if5_fpq_hvb"/></dt>
+      <dd>Displays one-to-one chats.</dd>
+     </dlentry>
+     <dlentry>
+      <dt><image href="Images/icon_group.png" id="image_mdm_cpq_hvb"/></dt>
+      <dd>Displays group chats.</dd>
+     </dlentry>
+     <dlentry>
+      <dt><image href="Images/icon_meetingchat.png" id="image_s43_gpq_hvb"/></dt>
+      <dd>Displays meeting chats for meetings you are a member. Meeting chats are distinguishable
+       from others by the icon (<image href="Images/icon_meeting.png" id="image_wkd_ym1_rvb"/>)
+       associated with them. </dd>
+     </dlentry>
+    </dl></p>
+   <p>Each filter displays the last 150 conversations, listed from the newest to oldest
+    conversation. The number of unread messages is shown next to the filter.</p>
+  </context>
+ </taskbody>
+</task>
+<?Pub *0000002118?>

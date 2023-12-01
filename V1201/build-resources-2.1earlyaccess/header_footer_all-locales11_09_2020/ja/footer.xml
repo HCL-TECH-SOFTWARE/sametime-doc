@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div>
+    <div class="footer">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/legal/disclaimer">特記事項</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/legal/privacy">プライバシー</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link footer-launch" style="color:white;" target="_blank" href="https://www.hcltechsw.com/wps/portal/legal/terms-use">ご利用条件</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link footer-launch ot-sdk-show-settings" style="color:white;" href="#">Cookie の設定</a>
+            </li>
+        </ul>
+    </div>
+</div>

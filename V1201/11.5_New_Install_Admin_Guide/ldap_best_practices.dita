@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ldap_best_practices" xml:lang="en-us">
+    <title>Best Practices</title>
+    <shortdesc>The Community article Best Practices for using LDAP with Sametime on the Sametime wiki contains an overview of LDAP components and describes how the Sametime Community Server works with LDAP to provide authentication, name lookups, and name resolution. The article describes best practices for creating search filters, setting sametime.ini parameters, and enhancing Sametime and LDAP performance.</shortdesc>
+</concept>

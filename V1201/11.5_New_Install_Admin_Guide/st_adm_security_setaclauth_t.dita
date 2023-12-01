@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="st_adm_security_setaclauth_t" xml:lang="en-us">
+<title class="- topic/title ">Setting up anonymous access in a database
+Access Control List (ACL)</title>
+<shortdesc>To allow anonymous access to a database, you can add the
+Anonymous entry to the ACL and assign an access level to the Anonymous
+entry. </shortdesc>
+<taskbody>
+<context> Alternatively, you can remove the Anonymous entry from the
+ACL and assign an access level to the Default entry in the ACL. When
+the Anonymous entry is removed from the ACL, anonymous users receive
+the access level and privileges assigned to the Default entry in the
+database ACL. <p class="- topic/p ">Use the following procedure to
+allow anonymous users to access a database:</p> </context>
+<steps>
+<step>
+    <cmd><xref href="st_adm_webad_startadmtool_t.dita"> Open the Sametime Administration Tool.
+     </xref></cmd>
+   </step><?Pub Caret 13?>
+<step>
+<cmd>Select <uicontrol>LDAP Directory</uicontrol>.</cmd>
+</step>
+<step><cmd>Select <uicontrol>Access Control</uicontrol>.</cmd></step>
+<step><cmd>Select a database from the list.</cmd></step>
+<step><cmd>Click the <uicontrol>Advanced</uicontrol> button.</cmd>
+</step>
+<step>
+        <cmd>Set the <uicontrol>Maximum Internet name &amp; password</uicontrol> access to Manager,
+          which is the maximum access level.</cmd>
+        <info>
+          <p class="- topic/p ">
+            <uicontrol>Note</uicontrol> The <uicontrol>Maximum Internet name &amp;
+              password</uicontrol> setting on the advanced panel of each <xref class="- topic/xref "
+              href="st_adm_security_aclsetting_c.dita">database Access Control List (ACL)</xref>
+            specifies the maximum database access level granted to web browser clients. This setting
+            overrides higher individual access levels set in the ACL. For example, if you set the
+              <uicontrol>Maximum Internet name &amp; password</uicontrol> to Author, and assign
+            Editor access to the Anonymous entry in the database ACL, anonymous users will only have
+            Author access to the database. Alternatively, if you set the <uicontrol>Maximum Internet
+              name &amp; password</uicontrol> to Manager, and assign Reader access to the Anonymous
+            entry in the database ACL, anonymous users will only have Reader access to the database.
+          </p>
+        </info>
+      </step>
+<step><cmd>Click the <uicontrol>Access</uicontrol> button.</cmd><info> <p
+class="- topic/p ">If the Anonymous entry exists in the ACL, select
+the Anonymous entry and assign an access level (for example, Author).
+Edit the default privileges if necessary.</p><p class="- topic/p ">If
+the Anonymous entry does not exist in the ACL, users who access the
+database anonymously receive the access level and privileges assigned
+to the Default entry in the ACL.</p> <note class="- topic/p ">If the
+Anonymous entry does not exist in the ACL, the administrator also
+has the option to create an Anonymous entry and assign an access level
+and privileges. In this case, users receive the access level associated
+with the Anonymous entry instead of the Default entry.</note> </info>
+</step>
+<step><cmd>Click <uicontrol>Submit</uicontrol>.</cmd></step>
+</steps>
+</taskbody>
+<?tm 1261240978 12?>
+</task>
+<?Pub *0000003777?>

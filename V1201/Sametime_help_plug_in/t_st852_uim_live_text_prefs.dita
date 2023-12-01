@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_st852_uim_live_text_prefs" xml:lang="en-us">
+<title>How do I set preferences for live text?</title>
+<shortdesc>If live text is available to you, you can turn it off or
+on and, if it is on, set the preferences for which items, or "content
+types," available to you are recognized as live text and how they appear.</shortdesc>
+<prolog><metadata>
+<keywords><keyword>Live text</keyword><keyword>Use live text</keyword>
+<keyword>Act on live text</keyword><keyword>Preferences</keyword>
+<keyword>Live text Preferences</keyword></keywords><?Pub Caret -2?>
+</metadata></prolog>
+<taskbody>
+<context><p>Your administrator determines whether you have live text
+and, if you do, which items support live text and the options available
+for them.</p></context>
+<steps>
+<step><cmd>Click <menucascade><uicontrol><image href="images/ST_gear.jpg">
+<alt>Actions and preferences</alt></image></uicontrol><uicontrol>Preferences</uicontrol>
+</menucascade> and then click <uicontrol>Live Text</uicontrol> in
+the navigator. </cmd></step>
+<step><cmd>Under <uicontrol>Live Text</uicontrol>, enable it to ensure
+that it is turned on, and select the style for the underline that
+displays for live text items or "content types."</cmd></step>
+<step><cmd>Under <uicontrol>Live Text Content Types</uicontrol>, select
+the items or "content types" for which you want live text.</cmd></step>
+<step><cmd>Click <uicontrol>Apply</uicontrol>.</cmd></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000001747?>

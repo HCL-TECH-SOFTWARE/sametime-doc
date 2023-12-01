@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="admin_st_buscard" xml:lang="en-us">
+<title>Setting up business cards</title>
+ <shortdesc>You can configure the Sametime server so that business card information about an
+    individual displays when a user hovers over a name in a chat window or a contact list. Business
+    card information also displays at the top of an active chat window.</shortdesc>
+<conbody>
+  
+   <p>Business cards are configured to access user information from the LDAP directory. To access
+      the user information from the LDAP directory, Sametime provides a search engine called a
+        <term>black box</term>.  </p>
+    <p>By default, you can choose the following fields to display in the business card.<ul
+        id="ul_ucg_qtw_35b">
+        <li>Photo</li>
+        <li>Name</li>
+        <li>Company</li>
+        <li>E-mail address</li>
+        <li>Telephone</li>
+        <li>Address or location</li>
+        <li>Title</li>
+      </ul> To troubleshoot problems with business cards, see <xref
+        href="t_resolving_business_cards.dita" scope="local" format="dita"/>.</p>
+    <p>Business card photos must meet the following requirements:<ul>
+        <li>Photos must be less than 45K in size. Photos 10K or less are  recommended.</li>
+        <li>Photo file types .jpg and .gif are supported.</li>
+        <li>Photos to be used in business card for mobile or web clients they must be in the format
+          of a URL, such as hosted from a web server or HCL Connections Profiles server.</li>
+      </ul></p>
+    <section id="section_pny_k5w_35b">
+      <title>Planning for business cards</title>
+      <p>A single LDAP server must be used as the primary repository to retrieve user information. A
+        secondary repository is optional and must be configured as a secondary LDAP server for
+        business cards.</p>
+    </section>
+    <section id="tasktroubleshooting_ay3_nrv_4tb">
+      <title>Planning for photos</title>
+      <p>If photos are used in a business card , they can be stored in the LDAP directory or in the
+        format of a URL hosted from a web server. For mobile and web clients using the Sametime
+        Proxy server, they must be stored in the format of a URL. Importing photos into a directory
+        using an <filepath>image/jpeg</filepath> type is only supported on the Connect and Embedded
+        clients.</p>
+      <p>Importing photos into a directory increases the size of the directory. The increase in size
+        can affect the performance of other applications that use the directory.</p>
+      <p>Depending on the Sametime client type, the attribute to defined the photo location is
+          different.<ul id="ul_otk_nvw_35b">
+          <li><codeph>PhotoURL</codeph> supports the Web and Mobile clients. </li>
+          <li><codeph>ImagePath</codeph> supports the Connect and Notes Embedded clients. </li>
+          <li>Photos set to <filepath>image/jpeg</filepath> type supports the  Connect and Notes
+            Embedded clients.</li>
+        </ul><codeph>PhotoURL</codeph> and <codeph>ImagePath</codeph> can be mapped to the same LDAP
+        field. To support all Sametime client types using a URL, update the Sametime server
+          <filepath>UserInfoConfig.xml</filepath> file to define both <codeph>PhotoURL</codeph> and
+          <codeph>ImagePath</codeph>. For example: <codeblock id="codeblock_pqq_svw_35b">
+ &lt;Detail Type="text/plain" FieldName="PhotoURL" Id="ImagePath"/>
+ &lt;Detail Type="text/plain" FieldName="PhotoURL" Id="PhotoURL"/>
+
+&lt;Set params="MailAddress,Name,Title,Location,Telephone,PhotoURL,ImagePath,Company" SetId="0"/>
+&lt;Set params="MailAddress,Name,Title,Location,Telephone,PhotoURL,ImagePath,Company" SetId="1"/></codeblock></p>
+      <p>After you have identified where the user information is stored, proceed to the applicable
+        topic to configure business cards.</p>
+    </section>
+ </conbody>
+
+</concept>
+

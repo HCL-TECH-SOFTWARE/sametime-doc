@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="m_stadv_uim_about_screensh" xml:lang="en-us">
+<title>Share my screen with others</title>
+<shortdesc>If Instant Share is available to you, you can share an
+application, a portion of your screen, or your entire screen with
+colleagues, even if they are not in the same physical location as
+you. You can also give them control of your shared screen, so that
+they can navigate through, and even edit, any open documents in the
+shared portion of your screen. Instant Share participants can also
+take snap shots of the shared screen to save to their computers.</shortdesc>
+<taskbody>
+<context><note>To use Instant Share, your administrator must install <tm
+tmtype="reg" trademark="Sametime">Sametime</tm> Communicate and <tm
+tmtype="reg" trademark="Sametime">Sametime</tm> Conference.</note>Read
+here to learn more.</context>
+</taskbody>
+<?tm 1369404483 2?>
+</task><?Pub Caret -3?>
+<?Pub *0000001069?>

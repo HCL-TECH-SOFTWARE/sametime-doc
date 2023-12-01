@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="installation_mongodb" xml:lang="en-us">
+<title>Installing the MongoDB</title>
+<shortdesc>The MongoDB Community Server can be downloaded from the MongoDB website. You can install
+        MongDB on Windows and Linux platforms. </shortdesc>
+<conbody>
+<p>For information on MongoDB about it's purpose for HCL Sametime and deployment options, see <xref
+                                href="mongodb.dita"/>.</p>
+</conbody>
+</concept>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="installing_sametime_community_server" xml:lang="en-us">
+<title>Uninstalling and Reinstalling Sametime Community Server v11/v11FP1</title>
+    <shortdesc>This section provides information on uninstalling and reinstalling customer installed
+        Sametime Community Server v11/v11FP1 on top of domino v11.0.1 on linux..</shortdesc>
+    <taskbody>
+        <context>
+            <p/>
+            <p>The proper way to uninstall Sametime is using the Uninstaller that is included in the
+                _HCL folder.</p>
+            <note>The user can't find uninstaller.bin under datadir/_uninstst folder like the way it
+                can be seen for V9.0.1 community server.</note>
+            <p> For example, in /local/notesdata for a Sametime FP1 installation, the folder is
+                called " _HCL Sametime Server 11.0 FP1_installation/" and in that folder, there is
+                an executable called "Change HCL Sametime Server 11.0 FP1 Installation". Execute
+                this script to uninstall Sametime 11 FP1. </p>
+            <p>There is a similar script for 11.0.</p>
+            <p>
+                <note>Be sure to backup key files as needed -<p> - stconfig.nsf</p><p> -
+                        sametime.ini</p><p> - vpuserinfo.nsf</p><p> - UserInfoConfig.xml</p><p> -
+                        chatlogging.ini</p></note>
+            </p>
+            <p>To uninstall Domino , follow this TN - <xref
+                    href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0035166"
+                    format="html" scope="external"
+                    >https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0035166</xref></p>
+            <p>If you are preparing this server for a clean install and are not worried about
+                backups or preserving Domino itself, then the simplest method of cleaning a linux
+                machine is to:<ol id="ol_gl5_m55_5qb">
+                    <li>Delete the: <ol id="ol_dkv_n55_5qb">
+                            <li><codeph>/local/notesdata</codeph> directory.</li>
+                            <li><codeph>/opt/hcl</codeph> directory.</li>
+                            <li><codeph>/var/.com.zerog.registry.xml</codeph> file.</li>
+                        </ol></li>
+                    <li>Then proceed with the re-installs.</li>
+                </ol></p>
+        </context>
+    </taskbody>
+</task>

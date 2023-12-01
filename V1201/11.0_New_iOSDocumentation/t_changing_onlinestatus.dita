@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="changing_onlinestatus" xml:lang="en-us">
+<title>Changing your status</title>
+<?Pub Caret 3?>
+ <shortdesc>Your online status includes your availability and status message. The top of the
+    application menu displays this information. Tap your current status to make changes. Other
+    logged-in Sametime users can see your online status.</shortdesc>
+<taskbody>
+<steps>
+ <step>
+        <cmd>Tap the <uicontrol>menu</uicontrol> icon.</cmd>
+      </step>
+ <step>
+  <cmd>Tap your current availability status at the top of the menu to display the status message screen.</cmd>
+ </step>
+ <step>
+    <cmd>Select a status.</cmd>
+    <info>After you log in your default your status is "I am available". You can change your
+          availability status to one of the following states:<ul>
+            <li>I am available</li>
+            <li>I am away</li>
+            <li>In a meeting</li>
+            <li>Do not disturb</li>
+          </ul></info>
+   </step>
+   <step>
+    <cmd>To add a custom message or more details to your status, tap <uicontrol>Add more details to
+      your status</uicontrol>.</cmd>
+    <info>
+     <p>A text field opens where you can type a status message. For example, if you choose
+              <uicontrol>Away</uicontrol>, you might add a custom message such as <userinput>At a
+              doctor's appointment</userinput>.</p>
+     <p>You can add a custom message for each status. The message remains with that status until you
+            change or remove the message. When you tap a status, you see all custom messages that
+            you use with it. When you have multiple messages associated with a status, you can
+            select which one to use by tapping it.</p>
+     <p>To remove a message, select the message and swipe left.</p>
+    </info>
+   </step>
+</steps>
+</taskbody>
+</task>

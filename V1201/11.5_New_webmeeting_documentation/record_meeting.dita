@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generalTask.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="record_meeting" xml:lang="en-us">
+  <title>Recording a meeting</title>
+  <shortdesc>When enabled, and depending on the configuration, any authenticated user can record a
+    meeting. You can leave if you do not consent to be recorded during the meeting. By default, a
+    link is generated to the chat immediately after the recording has ended. Authenticated users can
+    access the recording link from the meeting room. Guests, on the other hand, do not have access
+    to the recordings. The meeting recording links are accessible only in the owner's recording list
+    irrespective of whether he shared it or not.</shortdesc>
+  <taskbody>
+    <context id="context_pfl_3fj_w5b">
+      <p>To record a meeting, follow these steps:</p>
+    </context>
+    <steps id="steps_ybm_ckj_w5b">
+      <step>
+        <cmd>Scroll over to the bottom of the meeting window and select <uicontrol>More
+            actions</uicontrol>
+          <image href="Images/t_more_actions_button.png" id="image_zbm_ckj_w5b"/>.</cmd>
+        <info><image href="Images/record_meeting0.png" id="image_vgd_kkj_w5b"/></info>
+      </step>
+      <step>
+        <cmd>Select <uicontrol>Start recording</uicontrol>. The following message is
+          displayed.</cmd>
+        <info><image href="Images/record_meeting1.png" id="image_lwk_rkj_w5b"/></info>
+      </step>
+      <step>
+        <cmd>Select <uicontrol>Start</uicontrol>. All meeting participants are notified when the
+          meeting is being recorded. </cmd>
+        <info><image href="Images/record_meeting3.png" id="image_qqj_nmj_w5b"/></info>
+      </step>
+    </steps>
+  </taskbody>
+  <task id="task_p4l_bqj_w5b">
+    <title>Stop the recording</title>
+    <taskbody>
+      <context id="context_rbd_1h4_w5b">
+        <p>To stop recording, follow these steps:</p>
+      </context>
+      <steps id="steps_sbd_1h4_w5b">
+        <step>
+          <cmd>Scroll over to the bottom of the meeting window and select <uicontrol>More
+              actions</uicontrol>
+            <image href="Images/t_more_actions_button.png" id="image_tbd_1h4_w5b"/>. The following
+            message is displayed.</cmd>
+          <info><image href="Images/record_meeting5.png" id="image_sdd_b2p_w5b"/></info>
+        </step>
+        <step>
+          <cmd>Select <uicontrol>Stop recording</uicontrol>. By default, the option to share the
+            recording in the group chat is selected. This setting remains the same for that meeting
+            room until changes are made. </cmd>
+          <info>
+            <note id="note_fjk_3fm_x5b">The recording automatically stops when no sound is detected
+              for 10 minutes or when the last person leaves the meeting. </note>
+          </info>
+          <info><image href="Images/record_meeting7.png" id="image_b5m_3n4_w5b"/></info>
+        </step>
+        <step>
+          <cmd>Select <uicontrol>Stop</uicontrol>. The moderator, on behalf of the owner, can stop
+            the recording. However, the moderator cannot change the default sharing option that is
+            set by the meeting owner. By default, a single meeting recording link is generated in
+            the chat. </cmd>
+          <info><image href="Images/record_meeting8.png" id="image_cxx_hp4_w5b"/></info>
+          <info>
+            <note id="note_i4h_dpm_x5b">Guest users do not have access to the meeting recordings.
+              Try <xref href="t_loggingin.dita"/> or requesting for a copy from the meeting owner or
+              moderators. </note>
+          </info>
+        </step>
+      </steps>
+    </taskbody>
+  </task>
+</task>
+<?Pub *0000001020?>
+
+

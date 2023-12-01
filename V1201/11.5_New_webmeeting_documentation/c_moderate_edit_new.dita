@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_moderate_edit_new" xml:lang="en-us">
+<title>Edit a meeting</title>
+ <shortdesc>You can edit a meeting for <uicontrol>My Meetings</uicontrol>,
+      <uicontrol>Recent</uicontrol>, and <uicontrol>Saved</uicontrol>.</shortdesc>
+<conbody>
+  <p><note>
+        <ul id="ul_plk_qhc_cnb">
+          <li><uicontrol>Edit</uicontrol> and <uicontrol>Copy</uicontrol> apply to both
+              <uicontrol>My Meetings</uicontrol> and <uicontrol>Saved</uicontrol>. Swipe left to
+            edit or copy a meeting. </li>
+          <li><uicontrol>Delete</uicontrol> applies to <uicontrol>My Meetings</uicontrol>,
+              <uicontrol>Recent</uicontrol>, and <uicontrol>Saved</uicontrol>. Swipe right to delete
+            a meeting. </li>
+        </ul>
+      </note></p>
+    <p>You can <uicontrol>Edit a meeting</uicontrol> either when no one is present in the meeting
+      room or when the meeting starts. </p>
+    <p><b>Edit Meeting - No one is in meeting room </b></p>
+    <p>
+      <ol id="ol_htp_yzb_cnb">
+        <li>Tap <uicontrol>Edit</uicontrol> for a modal view to edit options. <note>The
+              <uicontrol>Meeting name</uicontrol> is in read-only mode. You cannot edit it.
+          </note></li>
+        <li>Tap <uicontrol>Meeting Password</uicontrol> to add a password. <note>The minimum length
+            of the password must be 8 characters. </note></li>
+        <li> Tap <uicontrol>Moderated Meeting</uicontrol> to control the aspects of the meeting.
+            <note>This option allows only you or a designated moderator to start and control the
+            other aspects of the meeting. </note></li>
+        <li>Tap <uicontrol>Allow guest access</uicontrol> for users to enter the meeting in
+          view-only mode. </li>
+        <li>You can either start the meeting through <uicontrol>Start Meeting</uicontrol> or save it
+          for later by tapping <uicontrol>Save and copy</uicontrol>. </li>
+      </ol>
+    </p>
+  <p><image href="Images/edit_meeting.png" align="left" placement="break"/></p>
+    <p><b>Edit Meeting - Meeting starts </b></p>
+    <p>
+      <ol id="ol_sps_4kc_cnb">
+        <li>Tap <uicontrol>Edit</uicontrol>. <note>When the meeting is in progress <uicontrol>Start
+              meeting</uicontrol> changes to <uicontrol>Meeting in progress</uicontrol>.
+          </note></li>
+        <li>Tap <uicontrol>Meeting Password</uicontrol> to add a password. <note>The minimum length
+            of the password must be 8 characters. </note></li>
+        <li> Tap <uicontrol>Moderated Meeting</uicontrol> to control the aspects of the meeting.
+            <note>This option allows only you or a designated moderator to start and control the
+            other aspects of the meeting. </note></li>
+        <li>Tap <uicontrol>Allow guest access</uicontrol> for users to enter the meeting in
+          view-only mode. </li>
+        <li>Tap <uicontrol>Save and copy</uicontrol>. A prompt/message displays. <note>The prompt
+            message depends on the change made to the meeting. </note></li>
+      </ol>
+    </p>
+  <p><image href="Images/meeting_starts.png" align="left" placement="break"/></p>
+ </conbody>
+</concept>
+<?Pub *0000001020?>

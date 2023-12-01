@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="administrator_doc" xml:lang="en-US">
+<title>HCL <tm tmtype="reg">Sametime</tm> Administration Guide 12.0.1</title>
+<conbody>
+<p>The Administration Guide contains information for installing and configuring HCL Sametime Premium
+and Sametime.</p>
+<section id="section_s1b_dcn_3kb">
+<title>Getting Started</title>
+<p>
+<ul id="ul_awt_hcn_3kb">
+<li><xref href="whats_new.dita" scope="local" format="dita"/></li>
+<li><xref href="planning.dita">Planning</xref></li>
+<li><xref href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0100619"
+                                                  format="html" scope="external">System
+                                                  requirements</xref>
+                                        </li>
+</ul>
+</p>
+</section>
+<section id="section_dhd_xcn_3kb">
+<title>Troubleshooting and Support</title>
+<p>
+<ul id="ul_i4d_zcn_3kb">
+<li><xref href="https://hclpnpsupport.hcltech.com/csm" format="html" scope="external">HCL Customer
+Support</xref></li>
+                    <li><xref
+                            href="https://hclpnpsupporttest.service-now.com/csm?id=sametime_support"
+                            format="html" scope="external">Sametime Resources</xref></li>
+<li><xref format="html" scope="external"
+href="https://support.hcltechsw.com/community?id=community_forum&amp;sys_id=e3c946d01b80841077761fc58d4bcb04"
+><tm trademark="Sametime" tmtype="reg">Sametime</tm> community forum</xref></li>
+</ul>
+</p>
+</section>
+<section id="section_ok4_wty_hlb">
+<title>Additional Resources</title>
+<p>
+<ul id="ul_wnc_d5y_hlb">
+<li><xref href="https://help.hcltechsw.com/sametime/12/meetings/index.html" format="html"
+                            scope="external">Using HCL Sametime Premium Meetings </xref></li>
+<li><xref href="https://help.hcltechsw.com/sametime/12/addin/index.html" format="html"
+                            scope="external">HCL Sametime Meetings Add-in for Microsoft
+                        Users</xref>.</li>
+<li><xref href="https://help.hcltechsw.com/sametime/12/ios/index.html" format="html"
+                            scope="external">HCL Sametime iOS Users Guide</xref></li>
+<li><xref href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0078619"
+format="html" scope="external">Configuring Sametime for iOS via an EMM Provider </xref></li>
+<li><xref href="https://help.hcltechsw.com/sametime/12/android/index.html" format="html"
+                            scope="external">HCL Sametime Android Users Guide</xref></li>
+<li><xref href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0078794"
+format="html" scope="external">Configuring Sametime for Android Enterprise with EMMs</xref></li>
+</ul>
+</p>
+</section>
+</conbody>
+</concept>

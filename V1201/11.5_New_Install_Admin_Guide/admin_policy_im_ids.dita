@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="admin_policy_im_ids" xml:lang="en-us">
+<title>Sametime policy IDs</title>
+ <shortdesc>This section describes the policies and configurations available in the Sametime
+    deployment.</shortdesc>
+<conbody>
+    <table frame="top" rowsep="0" id="table_nkx_h2v_4tb">
+      <title>Server community</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1*"/>
+        <colspec colname="c2" colnum="2" colwidth="1*"/>
+        <thead>
+          <row>
+            <entry>Policy ID</entry>
+            <entry>Description</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>im.2019.label</entry>
+            <entry>User must set this community as the default server community (IC)</entry>
+          </row>
+          <row>
+            <entry>im.2011.label</entry>
+            <entry>Allow user to add multiple server communities (IC) </entry>
+          </row>
+          <row>
+            <entry>im.2001.label</entry>
+            <entry>Allow user to add external users using Sametime gateway communities</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="top" rowsep="0" id="table_bgh_l2v_4tb">
+      <title>General chat</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1*"/>
+        <colspec colname="c2" colnum="2" colwidth="1*"/>
+        <thead>
+          <row>
+            <entry>Policy ID</entry>
+            <entry>Description</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>im.2002.label</entry>
+            <entry>Allow user to save chat transcripts (IC)<note type="attention"
+                id="note_vgs_t1h_4tb">Local chat history is unencrypted. To disable and restrict
+                users from saving a local copy, refer to <xref href="configuring_policies.dita"
+                />.</note></entry>
+          </row>
+          <row>
+            <entry>im.2004.label</entry>
+            <entry>Automatically save chat transcripts (IC)</entry>
+          </row>
+          <row>
+            <entry>im.2006.label</entry>
+            <entry>Define the maximum days to save automatically saved chat transcripts (IC)</entry>
+          </row>
+          <row>
+            <entry>im.2008.label</entry>
+            <entry>Allow custom emoticons (IC)</entry>
+          </row>
+          <row>
+            <entry>im.enableOfflineMessages.label</entry>
+            <entry>Allow user to send offline messages</entry>
+          </row>
+          <row>
+            <entry>im.mobile.disableChatHistory.label</entry>
+            <entry>Disable chat history</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="top" rowsep="0" id="table_ixv_rfv_4tb">
+      <title>General meeting</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1*"/>
+        <colspec colname="c2" colnum="2" colwidth="1*"/>
+        <thead>
+          <row>
+            <entry>Policy ID</entry>
+            <entry>Description</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>im.thirdPartyMeetingEnabled</entry>
+            <entry>Set to true to enable Sametime  Meetings</entry>
+          </row>
+          <row>
+            <entry>im.meetingsEnabled</entry>
+            <entry>Set to true to enable Sametime Meetings</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="top" rowsep="0" id="table_och_ffv_4tb">
+      <title>File transfer</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1*"/>
+        <colspec colname="c2" colnum="2" colwidth="1*"/>
+        <thead>
+          <row>
+            <entry>Policy ID</entry>
+            <entry>Description</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>im.1.label</entry>
+            <entry>Allow user to transfer files through server (IC)</entry>
+          </row>
+          <row>
+            <entry>im.2.label</entry>
+            <entry>Maximum individual file transfer size, in Kilobytes, for files sent through the
+              server (IC)</entry>
+          </row>
+          <row>
+            <entry>im.3.label</entry>
+            <entry>Use exclude file types transfer list, for files sent through the server
+              (IC)</entry>
+          </row>
+          <row>
+            <entry>im.4.label</entry>
+            <entry>Types to exclude from transfer. Type the three-letter extension of each file
+              type, separated by a comma or semicolon (IC) </entry>
+          </row>
+          <row>
+            <entry>im.2005.label</entry>
+            <entry>Allow client-to-client file transfer (IC) </entry>
+          </row>
+          <row>
+            <entry>im.2009.label</entry>
+            <entry>Allow screen capture and images (IC) </entry>
+          </row>
+          <row>
+            <entry>im.2020.label</entry>
+            <entry>Set maximum image size for custom emoticons, screen captures, and inline images
+              (IC) </entry>
+          </row>
+          <row>
+            <entry>im.2021.label</entry>
+            <entry>KB</entry>
+          </row>
+          <row>
+            <entry>im.allowTransferringMultipleFilesAndFolders.label</entry>
+            <entry>Allow transferring multiple files and folders (for Sametime advance users
+              only)</entry>
+          </row>
+          <row>
+            <entry> im.allowTransferringFilesToNwayParticipants.label</entry>
+            <entry>Allow transferring files to participants in an n-way session</entry>
+          </row>
+          <row>
+            <entry> im.maxNumberUsersToReceiveSingleFileInOneFileTransferSession.label</entry>
+            <entry>Maximum number of users to receive a single file in one file transfer
+              session</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="top" rowsep="0" id="table_u5x_yfv_4tb">
+      <title>Mobile client</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1*"/>
+        <colspec colname="c2" colnum="2" colwidth="1*"/>
+        <thead>
+          <row>
+            <entry>Policy ID</entry>
+            <entry>Description</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>im.2010.label</entry>
+            <entry>Allow mobile client</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <table frame="top" rowsep="0" id="table_rrz_dgv_4tb">
+      <title>Password and security</title>
+      <tgroup cols="2">
+        <colspec colname="c1" colnum="1" colwidth="1*"/>
+        <colspec colname="c2" colnum="2" colwidth="1*"/>
+        <thead>
+          <row>
+            <entry>Policy ID</entry>
+            <entry>Description</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>im.2012.label</entry>
+            <entry>Sametime update site URL (IC)</entry>
+          </row>
+          <row>
+            <entry>im.2013.label</entry>
+            <entry>Allow user to install plug-ins (IC)</entry>
+          </row>
+          <row>
+            <entry>im.2014.label</entry>
+            <entry>Limit contact list size</entry>
+          </row>
+          <row>
+            <entry>im.2015.label</entry>
+            <entry>Contacts</entry>
+          </row>
+          <row>
+            <entry>im.2022.label</entry>
+            <entry>Sametime optional plug-in site URLs. Type the URLs separated by a comma or
+              semicolon (IC)</entry>
+          </row>
+          <row>
+            <entry>im.3000.label</entry>
+            <entry>Allow all Sametime Connect features to be used with integrated clients
+              (IC)</entry>
+          </row>
+          <row>
+            <entry> im.mobile.allowContactExport.label</entry>
+            <entry>Allow contact export </entry>
+          </row>
+          <row>
+            <entry>im.mobile.allowLocationReporting.label</entry>
+            <entry>Allow location reporting </entry>
+          </row>
+          <row>
+            <entry>im.mobile.offlineAccessEnabled.label</entry>
+            <entry>Enable offline access</entry>
+          </row>
+          <row>
+            <entry>im.mobile.offlineAccessPwdMinLength.label</entry>
+            <entry>Offline access password minimum length</entry>
+          </row>
+          <row>
+            <entry>im.mobile.offlineAccessPwdExpiryDays.label</entry>
+            <entry>Offline access password expiry days</entry>
+          </row>
+          <row>
+            <entry>im.mobile.offlineAccessPromptDelayMin.label</entry>
+            <entry>Offline access prompt delay</entry>
+          </row>
+          <row>
+            <entry>im.mobile.disablePasswordSave.label</entry>
+            <entry>Disable password save</entry>
+          </row>
+          <row>
+            <entry> im.mobile.offlineAccessPwdRequired.label</entry>
+            <entry>Offline access password required</entry>
+          </row>
+          <row>
+            <entry>im.mobile.disableUntrustedSsl.label</entry>
+            <entry>Disable untrusted SSL</entry>
+          </row>
+          <row>
+            <entry>im.mobile.disableUrlDialler.label</entry>
+            <entry>Disable URL dialer</entry>
+          </row>
+          <row>
+            <entry>im.mobile.forceLogoutDurationMin.label</entry>
+            <entry>Minimum force log out duration</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+  </conbody>
+</concept><?Pub Caret -3?>
+<?Pub *0000003674?>

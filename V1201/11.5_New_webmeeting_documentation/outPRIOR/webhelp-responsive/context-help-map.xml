@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="getting_started" path="c_getting_started.html"/>
+   <appContext helpID="system_requirements" path="system_requirements.html"/>
+   <appContext helpID="loggingin" path="t_loggingin.html"/>
+   <appContext helpID="create_meetings.dita" path="create_meetings.html"/>
+   <appContext helpID="join_meetings.dita" path="join_meetings.html"/>
+   <appContext helpID="generate_meetings.dita" path="generate_meetings.html"/>
+   <appContext helpID="meetings_moderated" path="c_meetings_moderated.html"/>
+   <appContext helpID="c_meetings_telephony" path="c_meetings_telephony.html"/>
+   <appContext helpID="create_meeting_telephony" path="create_meeting_telephony.html"/>
+   <appContext helpID="edit_meeting_telephony" path="edit_meeting_telephony.html"/>
+   <appContext helpID="dial_webapp" path="dial_webapp.html"/>
+   <appContext helpID="dial_webapp_guest" path="dial_webapp_guest.html"/>
+   <appContext helpID="usingthemainscreen" path="t_usingthemainscreen.html"/>
+   <appContext helpID="user_friendly" path="user_friendly.html"/>
+   <appContext helpID="chat_others" path="chat_others.html"/>
+   <appContext helpID="raise_hands" path="raise_hand.html"/>
+   <appContext helpID="mute_unmute" path="mute_unmute.html"/>
+   <appContext helpID="enable_disable" path="enable_disable.html"/>
+   <appContext helpID="start_stop_camera" path="start_stop_camera.html"/>
+   <appContext helpID="additional_mac" path="additional_mac.html"/>
+   <appContext helpID="leave_meeting" path="leave_meeting.html"/>
+   <appContext helpID="share_screen" path="share_screen.html"/>
+   <appContext helpID="manage_video" path="manage_video.html"/>
+   <appContext helpID="blur_video" path="blur_video.html"/>
+   <appContext helpID="screen_size" path="screen_size.html"/>
+   <appContext helpID="share_youtube" path="share_youtube.html"/>
+   <appContext helpID="copy_meeting" path="copy_meeting.html"/>
+   <appContext helpID="camera_microphone" path="camera_microphone.html"/>
+   <appContext helpID="participant_list" path="participant_list.html"/>
+   <appContext helpID="youtube_integration" path="youtube_integration.html"/>
+   <appContext helpID="settings_moderator" path="settings_moderator.html"/>
+   <appContext helpID="record_meeting" path="record_meeting.html"/>
+   <appContext helpID="recording_management" path="recording_management.html"/>
+   <appContext helpID="end_meeting" path="end_meeting.html"/>
+   <appContext helpID="participant_view" path="participant_view.html"/>
+   <appContext helpID="global_controls" path="global_controls.html"/>
+   <appContext helpID="individual_controls" path="individual_controls.html"/>
+   <appContext helpID="lock_meeting" path="lock_meeting.html"/>
+   <appContext helpID="meetings_moderated_management"
+               path="meetings_moderated_management.html"/>
+   <appContext helpID="change_layout" path="change_layout.html"/>
+</map>

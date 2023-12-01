@@ -1,0 +1,1451 @@
+<!-- Elements added to main will be displayed on all pages -->
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A next-gen documentation site for HCL Sametime">
+      
+      
+      
+        <link rel="canonical" href="https://opensource.hcltechsw.com/sametime-doc/admin/config_client_chat_history_pref.html">
+      
+      <link rel="icon" href="../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Chat preferences {#config_client_chat_history_pref .concept} - HCL Sametime Help Center</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+<!--  OneTrust Cookies Consent Notice start  -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/99b8d579-c52a-43c9-ab7b-a35e60de7103/OtAutoBlock.js"></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="99b8d579-c52a-43c9-ab7b-a35e60de7103"></script>
+<script type="text/javascript"> 
+	function OptanonWrapper() { } 
+</script>
+<!--  OneTrust Cookies Consent Notice end  -->
+
+<!--  Global site tag (gtag.js) - Google Analytics start -->
+<script src="https://www.googletagmanager.com/gtag/js?id=UA-169645537-2" class="optanon-category-C0002-C0003-C0004-C0005"></script>
+<script type="text/plain" class="optanon-category-C0002-C0003-C0004-C0005">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169645537-2');
+</script>
+ 
+<!--  Global site tag (gtag.js) - Google Analytics end -->
+
+    
+    
+    
+  <meta property="og:image" content="https://opensource.hcltechsw.com/digital-experience/site-thumbnail.png" />
+  
+
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="None" data-md-color-accent="None">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#config_client_chat_history_pref" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+<div>
+   <a href="https://www.hcltechsw.com/"> 
+  <img width="150" height="30" src="https://help.hcltechsw.com/assets/images/HCL_Software_Logo_White.svg" alt="HCL Logo" target="_blank"></a>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="dropdown">
+  <button class="dropbtn">Resources <i class="fa fa-caret-down"></i></button> 
+  <div class="dropdown-content">
+  <a href="https://support.hcltechsw.com" target="_blank">Customer Support</a>
+  <a href="https://academy.hcltechsw.com" target="_blank">Software Academy</a>
+  <a href="https://support.hcltechsw.com/community" target="_blank">Community Forums</a>
+
+</div>
+</div>
+  
+  <!-- Uncomment the following announcement if you need it -->
+  <!--
+ <div class="md-banner--feedback" style="display:inline">
+
+  <strong>We value your feedback on this site.</strong> Please report any issues you find <a class="announcement__link" href="https://github.com/HCL-TECH-SOFTWARE/digital-experience/issues">via Github</a>. 
+  
+  <div class="md-banner--feedback">Looking for v8.5 or v9.0? <a class="announcement__link"  href="https://help.hcltechsw.com/digital-experience/9.5/welcome_hcl_dx.html">Check the legacy Help Center.</a>
+</div>  
+</div>
+-->
+
+</div>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a href="../.."> 
+    <strong>Click here to go to latest.</strong>
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),outdated=__md_get("__outdated",sessionStorage);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="HCL Sametime Help Center" class="md-header__button md-logo" aria-label="HCL Sametime Help Center" data-md-component="logo">
+      
+  <img src="../assets/st_logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HCL Sametime Help Center
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chat preferences {#config_client_chat_history_pref .concept}
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/HCL-TECH-SOFTWARE/sametime-doc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    hcl-software/sametime-doc
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../index.html" class="md-tabs__link">
+      Introducing Sametime
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="whats_new.html" class="md-tabs__link">
+      What&apos;s new in Sametime&quest;
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="installation_sametime.html" class="md-tabs__link">
+      Installing Sametime
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="administrator_doc.html" class="md-tabs__link">
+      Administering Sametime
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="HCL Sametime Help Center" class="md-nav__button md-logo" aria-label="HCL Sametime Help Center" data-md-component="logo">
+      
+  <img src="../assets/st_logo.png" alt="logo">
+
+    </a>
+    HCL Sametime Help Center
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/HCL-TECH-SOFTWARE/sametime-doc" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    hcl-software/sametime-doc
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Introducing Sametime
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="whats_new.html" class="md-nav__link">
+        What&apos;s new in Sametime&quest;
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="installation_sametime.html">Installing Sametime</a>
+          
+            <label for="__nav_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Installing Sametime" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Installing Sametime
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installation_roadmap.html" class="md-nav__link">
+        Installation road map
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installation_mongodb.html" class="md-nav__link">
+        Installing MondoDB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installing_mongodb_windows.html" class="md-nav__link">
+        Installing MongoDB on Windows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installing_mongodb_linux.html" class="md-nav__link">
+        Installing MongoDB on Linux
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="t_configure_mongodb.html" class="md-nav__link">
+        Configuring MongoDB for Sametime
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="administrator_doc.html">Administering Sametime</a>
+          
+            <label for="__nav_4">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Administering Sametime" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Administering Sametime
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1" type="checkbox" id="__nav_4_1" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="planning.html">Planning</a>
+          
+            <label for="__nav_4_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Planning" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_1">
+          <span class="md-nav__icon md-icon"></span>
+          Planning
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sametime_premium.html" class="md-nav__link">
+        Sametime versus Sametime Premium
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_1_2" type="checkbox" id="__nav_4_1_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="c_planning_prereqs.html">Prerequistes</a>
+          
+            <label for="__nav_4_1_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Prerequistes" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_1_2">
+          <span class="md-nav__icon md-icon"></span>
+          Prerequistes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="system_requirements.html" class="md-nav__link">
+        System Requirements
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mongodb.html" class="md-nav__link">
+        MongoDB
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ldap.html" class="md-nav__link">
+        LDAP
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2" type="checkbox" id="__nav_4_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="installation_sametime.html">Installing Sametime</a>
+          
+            <label for="__nav_4_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Installing Sametime" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installing Sametime
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installation_roadmap.html" class="md-nav__link">
+        Installation road map
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_2" type="checkbox" id="__nav_4_2_2" >
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="installation_mongodb.html">Installing the MongoDB</a>
+          
+            <label for="__nav_4_2_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Installing the MongoDB" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installing the MongoDB
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installing_mongodb_windows.html" class="md-nav__link">
+        Installing MongoDB on Windows
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installing_mongodb_linux.html" class="md-nav__link">
+        Installing MongoDB on Linux
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="t_configure_mongodb.html" class="md-nav__link">
+        Configuring MongoDB for Sametime
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_3" type="checkbox" id="__nav_4_2_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="installation_sametime.html">Installing Sametime</a>
+          
+            <label for="__nav_4_2_3">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Installing Sametime" data-md-level="3">
+        <label class="md-nav__title" for="__nav_4_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Installing Sametime
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="installation_prompt_descriptions.html" class="md-nav__link">
+        Information to provide during installation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_3_2" type="checkbox" id="__nav_4_2_3_2" >
+      
+      
+      
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="installation_sametime_kubernetes.html">Installing Sametime in a Kubernetes environment</a>
+          
+            <label for="__nav_4_2_3_2">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Installing Sametime in a Kubernetes environment" data-md-level="4">
+        <label class="md-nav__title" for="__nav_4_2_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Installing Sametime in a Kubernetes environment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_2_3_2_1" type="checkbox" id="__nav_4_2_3_2_1" >
+      
+      
+      
+        
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="t_meetings_prepare_network.html">Preparing the network</a>
+          
+            <label for="__nav_4_2_3_2_1">
+              <span class="md-nav__icon md-icon"></span>
+            </label>
+          
+        </div>
+      
+      <nav class="md-nav" aria-label="Preparing the network" data-md-level="5">
+        <label class="md-nav__title" for="__nav_4_2_3_2_1">
+          <span class="md-nav__icon md-icon"></span>
+          Preparing the network
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="t_meetings_kubernetes.html" class="md-nav__link">
+        Configuring host aliases for Kubernetes deployments
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <a href="https://github.com/HCL-TECH-SOFTWARE/sametime-doc/edit/main/docs/admin/config_client_chat_history_pref.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 class="concept" id="config_client_chat_history_pref">Chat preferences</h1>
+<p>The following tables list the chat preferences for the HCL Sametime Connect Client and Sametime Embedded Client for Notes®.</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Variable type</th>
+<th>Description</th>
+<th>Release</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>enableNwayRichText</td>
+<td>Boolean. Default is false.</td>
+<td>Specifies whether or not to enable the client to support rich text in a multi-user chat. Rich text is enabled in a multi-user chat session only if all clients participating in the chat session have this setting enabled.</td>
+<td>8.5.1.1 and later</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Variable type</th>
+<th>Description</th>
+<th>Release</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>days.storage.max</td>
+<td>A positive number.</td>
+<td>Delete saved transcripts after this number of days. This setting will be overwritten by the value set on the server policy.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>delete.old</td>
+<td>A positive number. The default is false.</td>
+<td>Delete saved transcripts. This setting will be overwritten by the value set on the server policy. If the policy allows transcripts to be deleted, set this value to true initially.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>logging.default</td>
+<td>0 = Automatically save chats, 1 = Do not automatically save chats, 2 = Prompt me to save chats</td>
+<td>Default chat logging action.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>logging.enabled</td>
+<td>Boolean. Default is false.</td>
+<td>Specify whether or not to save a local copy of the chat history. This attribute works in conjunction with the <a href="admin_policy_im_ids.html">Sametime policy IDs</a>. Edit the policies as necessary. If the server policy is not configured to allow save chat, this setting is ignored.<strong>Attention:</strong> Local chat history is unencrypted. To disable and restrict users from saving a local copy, refer to <a href="config_client_xml_location.html">Updating client preferences with the managed-settings.xml file</a>.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>|7.5.1 and later|
+|logging.service|service.notes = Notes logging, service.file = File system logging|Type of chat logging service.| |
+|display.context|True = Display, false = Do not display|Display the saved transcript between two users for the current day in the chat window.|7.5.1 and later|
+|display.context.background|True = Display, false = Do not display|Display background highlighting when displaying saved transcripts in chats.|7.5.1 and later|
+|root.location|A string of a valid path on the computer.|Location for automatically saved chats Directory path. Do not use '\' as the file separator. Use '\\' or '/' instead. Example using absolute path: ```
+com.ibm.collaboration.
+realtime.chat.logging/
+root.location=
+C:\Documents\user\
+SametimeTranscripts 
+<div class="highlight"><pre><span></span><code>Releases 8.0.2 and later support the use of a relative path. Example using a path relative to the user profile folder for Windows™ and Mac: ```
+com.ibm.collaboration.
+realtime.chat.logging
+/root.location=
+\\SametimeTranscripts
+</code></pre></div></p>
+<p>For Linux™, ```
+com.ibm.collaboration.
+realtime.chat.logging/
+root.location=
+SametimeTranscripts
+<div class="highlight"><pre><span></span><code>|7.5.1 and later|
+|save.file.location|A string of a valid path on the computer.|Default location for manually saved chats. Do not use &#39;\\&#39; as the file separator. Use &#39;\\\\&#39; or &#39;/&#39; instead. Example using absolute path: ```
+com.ibm.collaboration.realtime.chat.logging/ave.file.location=C:\\Documents\\user\\SavedChats 
+</code></pre></div></p>
+<p>Releases 8.0.2 and later support the use of a relative path. Example using a path relative to the user profile folder for Windows and Mac: ```
+com.ibm.collaboration.
+realtime.chat.logging/
+root.location=
+\SametimeTranscripts </p>
+<div class="highlight"><pre><span></span><code> For Linux, ```
+com.ibm.collaboration.
+realtime.chat.logging/
+root.location=
+SametimeTranscripts
+</code></pre></div>
+<p>|7.5.1 and later|
+|prompt.save|Boolean|If using mail service for logging, specify whether to display a confirmation after manually saving chats to the mail file.|7.5.1 and later|
+|reset.user.resets.logging.prefs|Boolean. Default is false.|Specify whether to prompt user to reset logging preferences after resetting user.|7.5.1 and later|
+|firsttime.askprefs|Boolean. Default is true.|Specify whether to prompt user to set logging preferences when Sametime® launched for the first time. When the value is set to true, loggging.enabled should also be set to define the default enablement state for saving chat transcripts.|7.5.1 and later|
+|schedule.delete.old|Boolean. Default is false.|Specify whether or not to start the scheduled file-based chat history deletion task. The task is scheduled at a 12-hour interval, starting from the login time. The local chat history is deleted automatically only if the corresponding server policy is enabled for it.|8.5.2 IFR1 and later|</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Variable type</th>
+<th>Description</th>
+<th>Release</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>allowSaveOverride</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether to show menu item "Prevent Transcript save" in chat window Tools menu</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>noPersonListLiveNames</td>
+<td>Boolean. Default is false.</td>
+<td>Specifies whether to use Live Names in the chat history viewer person list.</td>
+<td>8.5.2 and later</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Variable type</th>
+<th>Description</th>
+<th>Release</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>showuserinfo</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to display the business card in the chat window.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>showtimestamp</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to display timestamps in the chat transcript area.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>showdatestamp</td>
+<td>Boolean.</td>
+<td>Specifies whether or not to display date stamps in the chat transcript area.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>showemoticons</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to display emoticons in the chat transcript.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>usemyfont</td>
+<td>Boolean. Default is false.</td>
+<td>Specifies whether or not to override chat partner's font settings with my own.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>entersend</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not Enter is used to send a message or Shift+Enter. Enter sends, Shift+Enter newline</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>showstatusupdates</td>
+<td>Boolean. Default is false.</td>
+<td>Specifies whether or not to display status updates for my chat partner in the transcript.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>esccloses</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not ESC closes the chat window.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>showuserleft</td>
+<td>Boolean. Default is false.</td>
+<td>Specifies whether or not to display a message when my chat partner closes their chat window.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>warnWhenInMtg</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to pop a warning message when I try to open a chat window when a person is in a meeting.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>warnWhenAway</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to pop a warning message when I try to open a chat window when a person is away.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>dontPopWhenMin</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not the chat window pops to the front when I manually minimize the window.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>showActionBar</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to show the actions toolbar.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>showStatusBar</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to show the status message bar at the bottom.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>showToolsBar</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to show the message tools bar.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>showSendButton</td>
+<td>Boolean.</td>
+<td>Specifies whether or not to show send button in the chat window.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>showQuickFind</td>
+<td>Boolean.</td>
+<td>Specifies whether or not to show quick find in the tabbed chat window.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>useTabs</td>
+<td>Boolean. Default is false.</td>
+<td>Specifies whether or not to use a single tabbed window for all chats.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>horizontalTabs</td>
+<td>Boolean. Default is false (vertical).</td>
+<td>Specifies whether to use horizontal or vertical tabs. Does not apply unless useTabs is true.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>warnNewMessageArrived</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to pop a message dialog when I try to close the window at the same time I am receiving a message.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>warnNewMessageArrived</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Threshhold</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>|Long. Default is 450.|It is used in conjunction with the warnNewMessageArrived preference. When warnNewMessageArrived is true, if set this to 10000 (10 seconds) and try to close chat window 5 seconds after the last message, the warning dialog will pop up. It is not recommended to change the default value.|7.5.1 and later|
+|useDefaultGO|Boolean. Default is true.|Specifies whether or not to use the system's default orientation for typing or to manually set one.|7.5.1 and later|
+|sendAreaGO|Integer.|Specifies which orientation to use in the typing area if useDefaultGO is false. Not set by default because useDefaultGO is true. Only accepts two values, 67108864 (SWT.RIGHT_TO_LEFT) or 33554432 (SWT.LEFT_TO_RIGHT)|7.5.1 and later|
+|timeformat|Integer. Default is 12.|Specifies the default time format to use (12 or 24 hour clock).|7.5.1 and later|
+|maxChatsShowWarn|Boolean|If using tabbed window, specifies whether or not to show a warning dialog when current chat count exceeds the predefined value.|7.5.1 and later|
+|maxChats|Integer. Default is 50.|Specifies a predefined value for maxChatsShowWarn|7.5.1 and later|
+|saveChats|Boolean|Specifies whether or not to save opened chats across sessions.|7.5.1 and later|
+|transcript.view.limit|Integer. Default is 0.|Specifies a limit to the number of text/graphics lines that are maintained in the chat window. Setting to 0 means no limit.|8.5 and later|
+|ProvideTabbedBrowser<br />
+ Cache</p>
+<p>|Boolean. Default is true.|Specifies whether when using tabbed chats if the browser window can be cached to improve memory when the chat is not active.|8.5.1 and later|
+|persistPosition|Boolean|Specify whether to remember the position of chat windows. If it is set, the chat window position is remembered each time on window close action and used as the default location for next chat window open action.|8.5 and later|
+|xpos|Integer|Specify the X value of chat window position.|7.5.1 and later|
+|ypos|Integer|Specify the Y value of chat window position.|7.5.1 and later|
+|windowWidth|Integer|Specify the width of chat window.|7.5.1 and later|
+|windowHeight|Integer|Specify the height of chat window.|7.5.1 and later|
+|sendAreaHeight|Integer|Specify the height of the input box of chat window.|7.5.1 and later|
+|replyWithOfflineMessageContent|Boolean. Default is true.|Specify whether or not to include the received message when replying to an offline message.|8.5.2 IFR1 and later|
+|disableInlineIME|Boolean. Default is false.|Specify whether or not to disable inline mode for an input method in the chat input area of a chat window. Apply this setting if there is problem with a specific input method, such as a Traditional Chinese Input Method Editor (IME).|8.5.2 IFR1 and later|
+|participantsViewPosition|String.|Specifies the location of the n-way chat participant list panel on either the side of the chat transcript area.|9.0 and later|
+|sortTabs|Boolean. Default is false.|Specifies whether or not to sort the chat tabs in a tabbed chat window.|9.0 and later|
+|sortOrder|String. Default is two_way:n_way:chat_room|Specifies the order of chat tab types, if the setting is true for sortTabs. The user can change the sort of if desired.|9.0 and later|
+|autoAcceptInvitation|Boolean. Default is true.|Allows invitee to automatically join a multi-person chat without clicking Accept when invited to join the chat.|9.0 and later|
+|allowOthersToSeeTranscript|Boolean. Default is true.|Allows new chat invitees to see the previous chat transcript when they join the chat.|9.0 and later|</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th>Variable type</th>
+<th>Description</th>
+<th>Release</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>disableRichText</td>
+<td>Boolean. Default is false.</td>
+<td>Specifies whether or not to disable rich text for all chats.</td>
+<td>8.5.2 and later</td>
+</tr>
+<tr>
+<td>disableRichTextWithAnon</td>
+<td>Boolean. Default is false.</td>
+<td>Specifies whether or not to disable rich text for chats with anonymous users.</td>
+<td>8.5.2 and later</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Parent topic:</strong><a href="config_client_pref_tables.html">Sametime client preferences</a></p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+ 
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-hcl md-grid1">
+     <a href="https://www.hcltechsw.com/legal/disclaimer" class="nav-link footer-launch" target="_blank">Disclaimer</a>
+	 <a href="https://www.hcltechsw.com/legal/privacy" class="nav-link footer-launch" target="_blank">Privacy</a>
+	 <a href="https://www.hcltechsw.com/legal/terms-use" class="nav-link footer-launch" target="_blank">Terms of use</a>
+	 
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+
+  
+    
+  
+
+
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        <label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+    
+    
+  </body>
+</html>

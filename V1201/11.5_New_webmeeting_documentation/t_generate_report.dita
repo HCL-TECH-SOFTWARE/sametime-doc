@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_generate_report">
+    <title>Generating meeting reports</title>
+    <shortdesc>By default, all meetings listed on the <uicontrol>Recent</uicontrol> tab are
+        available for 90 days. Meeting reports are not accessible for meetings removed from the
+        list.  </shortdesc>
+    <taskbody>
+        <context>
+            <p>You can generate a report during the meeting by selecting the download button from
+                the participants list. For more information refer to <xref
+                    href="participant_view.dita"/>.</p>
+            <p>
+                <image href="Images/i_report_within_meeting.png" id="image_orw_tyn_15b"/></p>
+            <p>To generate meeting reports from the Meetings homepage, follow these steps.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>On your Meetings homepage, select the <uicontrol>Recent</uicontrol> tab. A list
+                    of your recent meetings is displayed.</cmd>
+                <info><image href="Images/t_generate_report.jpg" id="image_tyn_1xy_5tb"/></info>
+            </step>
+            <step>
+                <cmd>Find the meeting, and then select the three dots on the right for the
+                    settings.</cmd>
+            </step>
+            <step>
+                <cmd>Hover over <uicontrol>Meeting reports</uicontrol>, and then select the report
+                    type.</cmd>
+                <choices id="choices_gj2_2xy_5tb">
+                    <choice><uicontrol>Summary</uicontrol>—Select this option to download a summary
+                        of the meeting details as well as the participant list. A summary report
+                        includes the following details:<ul id="ol_th3_sxy_5tb">
+                            <li>Date</li>
+                            <li>Start time</li>
+                            <li>End time</li>
+                            <li>Duration</li>
+                            <li>Moderated</li>
+                            <li>Guest allowed</li>
+                            <li>Password</li>
+                            <li>Dial-in</li>
+                        </ul></choice>
+                    <choice><uicontrol>Full report</uicontrol>—Select this option to download a full
+                        report. This report includes the basic information provided in a summary
+                        report, as well as the following information:<ul id="ol_njl_cdz_xtb">
+                            <li>Moderators</li>
+                            <li>Presenters</li>
+                            <li>Meeting recordings</li>
+                            <li>Meeting activity log</li>
+                            <li>Chat transcript</li>
+                        </ul></choice>
+                </choices>
+            </step>
+        </steps>
+    </taskbody>
+</task>

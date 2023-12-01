@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_create_meetinglist" xml:lang="en-us">
+  <title>Creating a meeting list</title>
+  <shortdesc>You can create a list of meetings for easier access when sending a meeting request to a
+    chat partner.</shortdesc>
+  <taskbody>
+    <context>The meeting list is referenced when you start a meeting from a the chat conversation
+      area. See <xref href="t_start_meeting_chatpartner.dita" scope="local" format="dita"/> for more
+      information.</context>
+    <steps id="steps_g4k_glc_rvb">
+      <step>
+        <cmd>Click the menu icon ( <image alt="Add new contact" href="Images/menu.png"
+            placement="inline" id="menu"/>) next to your name and select
+            <uicontrol>Meetings</uicontrol>.</cmd>
+      </step>
+      <step>
+        <cmd>Click <uicontrol>Add Sametime Meetings</uicontrol>.</cmd>
+      </step>
+      <step>
+        <cmd>Type the URL for the meeting in the <uicontrol>Enter a URL</uicontrol> field.</cmd>
+      </step>
+      <step>
+        <cmd>Type a name for the meeting in the <uicontrol>Add a name</uicontrol> field.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>
+

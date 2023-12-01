@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_client_conn_direct" xml:lang="en-us">
+<title>Connecting the client through a direct connection over TCP/IP</title>
+<shortdesc>When a user starts the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client
+  with a <uicontrol>Direct connection</uicontrol> preference, the client connects to the <tm
+   tmtype="reg" trademark="Sametime">Sametime</tm> Community server using a unique <tm tmtype="reg"
+   trademark="Sametime">Sametime</tm> protocol over TCP/IP. By default, the Community Server listens
+  for this connection on port 1533. Use this preference when the connection does not need to occur
+  through a proxy server, and the network does not block TCP/IP connections on the port used by the
+  client.</shortdesc>
+<taskbody>
+<prereq>A successful connection depends on these prerequisites.<ul>
+<li>The client&apos;s preferences for the server community must contain
+a valid Host server and Server community port for a TCP/IP connection.</li>
+<li>The <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community Server Connection Settings for
+            <uicontrol>Client Connections</uicontrol>, as defined in the <tm tmtype="reg"
+            trademark="Sametime">Sametime</tm> configuration database, must match the Host server
+          and Server community port specified in the client. The default port is 1533.</li>
+</ul><p>The connection can fail if it must pass through a proxy server
+or network that prevents direct TCP/IP Connections on the specified
+port.</p></prereq>
+<context>Follow these steps to select the <uicontrol>Direct connection</uicontrol> method
+for the client.</context>
+<steps>
+<step>
+    <cmd>From the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect  client, click <menucascade>
+      <uicontrol>File</uicontrol>
+      <uicontrol>Preferences</uicontrol>
+     </menucascade>.</cmd>
+   </step>
+<step><cmd>Do one of the following:</cmd>
+<choices>
+<choice>To select this connection method for all server communities,
+click <uicontrol>Server Communities</uicontrol>. In the "Global connection
+settings" section, click <uicontrol>Direct connection</uicontrol> and
+click <uicontrol>OK</uicontrol>.</choice>
+<choice>To select this connection method for only one server community,
+click <uicontrol>Server Communities</uicontrol>, select the server
+community name, and open the <uicontrol>Connection</uicontrol> tab.
+Deselect <uicontrol>Use global connection settings</uicontrol>, then
+click <uicontrol>Direct connection</uicontrol> and click <uicontrol>OK</uicontrol>.
+Click <uicontrol>OK</uicontrol> to close the <uicontrol>Preferences</uicontrol> window.</choice>
+</choices>
+</step>
+</steps>
+</taskbody>
+
+</task>
+

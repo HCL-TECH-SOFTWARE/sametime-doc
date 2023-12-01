@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="t_st8_uim_chat_nway" xml:lang="en-us">
+<title>How do I invite someone to a chat I'm already having?</title>
+<shortdesc>If you are in a text chat with one chat partner, you can
+quickly invite someone to join the chat. </shortdesc>
+<taskbody>
+  <steps>
+   <step>
+    <cmd>Click <image alt="Invite Others icon" href="images/ST9_add_to_chat.jpg" placement="inline"
+      scope="local"/> in an open chat window to invite someone to a chat you are already having.
+    </cmd>
+   </step>
+   <step>
+    <cmd>Specify the <uicontrol>Topic</uicontrol> for the group chat.</cmd>
+   </step>
+   <step>
+    <cmd>In the <uicontrol>Find a person or group</uicontrol> field, enter the names of the contacts
+     to add to the invitation.</cmd>
+   </step>
+   <?Pub Caret 31?>
+   <step>
+    <cmd>Select <uicontrol>Allow new chat invitees to see previous chat transcript when they join
+      the chat</uicontrol> to enable a contact who joins the conversation to see the previous chat
+     history.</cmd>
+    <info>
+     <note>To enable this option, you must select to automatically save chats in chat history
+      preferences. Changes will take effect the next time you open a new chat.</note>
+    </info>
+   </step>
+   <step>
+    <cmd>Click <uicontrol>Send</uicontrol> to send the invitation to join the chat to that
+     person.</cmd>
+   </step>
+  </steps>
+  <postreq>
+   <p>After the person accepts the invitation, all chat partners display in the chat window and can
+    chat with one another. </p>
+  </postreq>
+ </taskbody>
+<?tm 1365534906 0?>
+</task>
+<?Pub *0000001596?>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="release_two" xml:lang="en-us">
+ <title>Release 11.0.0</title>
+ <shortdesc>HCL branded Sametime with secure, persistent chat.</shortdesc>
+</concept>
+<?Pub *0000001020?>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="creating_new_policy" xml:lang="en-us">
+    <title>Creating a new policy other than the default policy</title>
+    <shortdesc>Sametime policies are configured in the <filepath>policies.user.xml</filepath> file. </shortdesc>
+<taskbody>
+<context>
+</context>
+<steps>
+    <step>
+                <cmd>Remote into the Sametime server. </cmd>
+            </step>
+    <step><cmd>Browse to the policies.user.xml file located in the Domino program directory.</cmd></step>
+    <step><cmd>Open the file using a text or XML editor.</cmd></step>
+    <step>
+                <cmd>To create a new instant messaging policy, locate the sample at the top of the
+                    file. It is inside of the commented lines that begin with
+                        <codeph>&lt;!—</codeph> and end with <codeph>--!></codeph>. </cmd>
+            </step>
+    <step>
+                <cmd>Remove the comment syntax <codeph>&lt;! –</codeph> and
+                    <codeph>--!></codeph>.</cmd>
+            </step>
+    <step><cmd>Make modifications as desired to the sample.  </cmd></step>
+    <step><cmd>Save and close the file. </cmd></step>
+    <step>
+                <cmd>For the policy to take immediate effect, restart the Sametime server.
+                    Otherwise, the policy refresh happens once per hour. "</cmd>
+            </step>
+</steps>
+</taskbody>
+</task>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="config_client_ext_app_pref" xml:lang="en-us">
+<title>External application preferences</title>
+<shortdesc>The following table lists the external application preferences for the <tm tmtype="reg"
+   trademark="HCL">HCL</tm>
+  <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client and <tm tmtype="reg"
+   trademark="Sametime">Sametime</tm> Embedded Client for <tm tmtype="reg" trademark="Notes"
+   >Notes</tm>.</shortdesc>
+<conbody>
+<p><draft-comment>7.5.x is EOS so shouldn't it come out of the table?</draft-comment><table>
+<title>External application Preferences - com.ibm.collaboration.realtime.ui  release 7.5.x and
+     later</title>
+<tgroup cols="4"><colspec colname="col1" colwidth="116*"/><colspec
+colname="col2" colwidth="73*"/><colspec colname="col3" colwidth="116*"/>
+<colspec colname="col4" colwidth="82*"/>
+<thead>
+<row valign="bottom">
+<entry colname="col1">Attribute</entry>
+<entry colname="col2">Variable type</entry>
+<entry colname="col3">Description</entry>
+<entry colname="col4">Release</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1"><lines>external.application.use.
+default.mail	</lines></entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Specifies whether or to use default mail program
+for email.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">AllowEMailFunction</entry>
+<entry colname="col2">Boolean. Default is true.</entry>
+<entry colname="col3">Provides a mechanism for disable/enable the mail function entries. If set to
+        true, user can use mail function in <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+        client; if set to false, the menu/toolbar about mail function will be disabled. </entry><?Pub
+Caret 115?>
+<entry colname="col4">8.0 and later</entry>
+</row>
+<row>
+<entry colname="col1"><lines>external.application.use.
+custom.browser	</lines></entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether or not to use a custom browser
+on <tm tmtype="reg" trademark="Linux">Linux</tm>.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1"><lines>external.application.use.
+custom.mail</lines></entry>
+<entry colname="col2">Boolean</entry>
+<entry colname="col3">Specifies whether or not to use a custom mail
+application on <tm tmtype="reg" trademark="Linux">Linux</tm>.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">external.custom.browser</entry>
+<entry colname="col2">String</entry>
+<entry colname="col3">Specifies the custom browser on <tm tmtype="reg"
+trademark="Linux">Linux</tm>.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">external.application.mail</entry>
+<entry colname="col2">String. <p>"System Default", "<tm tmtype="reg"
+trademark="Notes">Notes</tm>", "Evolution", "KMail" and "Thunderbird"
+on <tm tmtype="reg" trademark="Linux">Linux</tm>. "</p><p><tm
+tmtype="reg" trademark="Notes">Notes</tm>", "Outlook <tm tmtype="tm"
+trademark="Express">Express</tm>" and other available mail applications
+on <tm tmtype="reg" trademark="Windows">Windows</tm>.</p></entry>
+<entry colname="col3">Specifies the default mail application.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1"><lines>external.application.use.
+default.mail	</lines></entry>
+<entry colname="col2">Boolean	</entry>
+<entry colname="col3">Specifies whether or not to use default mail
+application.</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">external.custom.mail</entry>
+<entry colname="col2">String	</entry>
+<entry colname="col3">Specifies the user mail application on <tm
+tmtype="reg" trademark="Linux">Linux</tm>.	</entry>
+<entry colname="col4">7.5.1 and later</entry>
+</row>
+<row>
+<entry colname="col1">disableHostnameWarning</entry>
+<entry colname="col2">Boolean. Default is false. </entry>
+<entry colname="col3">Specifies whether or not to validate that the
+server name is a fully qualified domain name. </entry>
+<entry colname="col4">8.5.1 and later</entry>
+</row>
+</tbody>
+</tgroup>
+</table></p>
+</conbody>
+</concept>
+

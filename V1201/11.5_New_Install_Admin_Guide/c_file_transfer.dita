@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_file_transfer">
+    <title>File transfer policies</title>
+    <shortdesc>Sametime allows users to download files through links in the chat. Mobile support has
+        also been added for this new functionality. </shortdesc>
+    <conbody>
+        <note id="note_awy_pf3_3tb">The old file transfer protocol is not supported by Sametime
+            mobile.</note>
+    </conbody>
+</concept>

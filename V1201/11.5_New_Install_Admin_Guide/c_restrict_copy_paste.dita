@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="c_restrict_copy_paste">
+    <title>Copying and pasting of chat content to external applications</title>
+    <shortdesc>Depending on your organization's security policy, you can restrict users from copying
+        chat content to the clipboard and sharing outside of the application. Edit the following
+        policy to fit your business needs.</shortdesc>
+    <conbody>
+        <section id="section_g5h_qym_htb">
+            <title><cmdname>Policy id = im.mobile.restrictClipboard, Default Setting:
+                ON</cmdname></title>
+            <p>By default, Sametime restricts users from copying chat content to the clipboard and
+                then sharing outside of the application. Meetings URLs and recording links are not
+                affected by this policy. Users are always allowed to copy and paste chat content
+                within Sametime. Turn this setting off to allow users to share chat content outside
+                the application.</p>
+        </section>
+    </conbody>
+</concept>

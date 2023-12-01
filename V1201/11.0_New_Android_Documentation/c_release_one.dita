@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="release_one" xml:lang="en-us">
+ <title>Release 11.0.1</title>
+ <shortdesc>Release 11.0.1 includes the following new features.</shortdesc>
+ <conbody>
+  <p><ul><li><b>Android Enterprise support</b> This allows for the use of Enterprise Mobility Management
+     (EMM) capable of managing Android Enterprise profiles, such as Google MaaS360 or
+     MobileIron.</li>
+   <li>Updated Navigation Drawer with improved UI and performance.</li>
+   <li>Improved Login flow with community setting validation.</li>
+   <li>Bug fixes.</li>
+    <li><b>App Configuration using an EMM Provider</b> HCL Sametime for Android supports managed
+     configuration via the most common Enterprise Mobility Management (EMM) providers. See <xref
+      href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0078794"
+      format="html" scope="external">Configuring HCL Sametime for Android via a EMM</xref> Provider
+     for more information.</li></ul></p>
+ </conbody>
+ </concept>
+<?Pub *0000001020?>

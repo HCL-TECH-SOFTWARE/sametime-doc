@@ -1,0 +1,70 @@
+<html>
+  <body>
+
+    <div class="form-group">
+      <input class="form-control form-control-lg mx-auto col-md-5" type="text" placeholder="Filter by product name" id="searchBox" onclick="myFunction()" onkeyup="filterFunction()"/>
+      <div id="myDropdown" class="dropdown-content list-group mx-auto col-md-5">
+      </div>
+    </div>
+    <script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+
+            <!--
+$(function() {
+    let dropdown = document.getElementById('myDropdown')
+    let aElement;
+    let topicref = document.getElementsByClassName("topicref");
+  
+    for (let element of topicref) {
+      aElement = element.getElementsByTagName('a')[0];
+      if (!aElement.href.endsWith('#')) {
+        let a = document.createElement("a");
+        a.href = aElement.href;
+        a.text = aElement.text;
+        a.classList.value = 'list-group-item list-group-item-action mx-auto col-md-5';
+        a.style.display = 'none';
+        dropdown.appendChild(a);
+      }
+    }
+  });
+
+function myFunction() {
+  document.getElementById("searchBox").value = ""
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches("#searchBox")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("searchBox");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        console.log(true);
+        a[i].style.display = "";
+    } else {
+        console.log(false);
+        a[i].style.display = "none";
+    }
+  }
+}
+-->
+    </script>
+  </body>
+</html>

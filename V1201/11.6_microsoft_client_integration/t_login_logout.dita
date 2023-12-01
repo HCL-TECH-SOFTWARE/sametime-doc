@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_login_logout" xml:lang="en-us">
+  <title>Logging into  and out of HCL Sametime </title>
+  <shortdesc>Before you can add a Sametime meeting your Outlook calendar event, you must be logged
+    into Sametime Meetings.</shortdesc>
+  <taskbody>
+    <context id="context_abs_kpj_gtb">If you are not already logged into HCL Sametime, you are
+      presented the login screen when you open the add-in.</context>
+    <steps id="steps_zzt_r4j_gtb">
+      <step>
+        <cmd>Locate  and click the HCL Sametime Meetings add-in logo (<image
+            href="Images/addin_logo.png" id="image_a4c_1pj_gtb" alt="sametime add-in logo"/>).</cmd>
+      </step>
+      <step>
+        <cmd>Click the <uicontrol>Sign in</uicontrol> and enter your credentials.</cmd>
+        <info>After the credentials are verified, a list of your currently defined meetings is
+          displayed. Along, with other features such as creating a new meeting are available for you
+          to use.</info>
+      </step>
+      <step>
+        <cmd>To log out of Sametime Meetings, click the menu icon ( <image
+            href="Images/sametime_menu.png" id="image_dwv_kqj_gtb" alt="sametime menu"/>) and select
+            <uicontrol>Sign out</uicontrol>.</cmd>
+      </step>
+    </steps>
+  </taskbody>
+</task>
+<?Pub *0000002118?>

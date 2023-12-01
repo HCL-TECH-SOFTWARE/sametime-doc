@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="c_contact_info_screen" xml:lang="en-us">
+ <title>Viewing a contact's information</title>
+ <shortdesc>You can view details about a person you are chatting with or in your contacts list. The
+   <wintitle>Contact Info </wintitle> screen includes the name, nickname, photo or default avatar,
+  title and awareness status displays.</shortdesc>
+ <conbody>
+  <p>If the person provided an email or phone number this information is also displayed. <ul
+    id="ul_fp5_mtz_bvb">
+    <li>Tapping an email address shows the available email programs on your mobile device.</li>
+    <li>Tapping the phone number prompts you to dial the number if you are on a device capable of
+     placing calls.</li>
+   </ul></p>
+  <p>You can access other features by the email address and phone number. Long pressing an email
+   address displays the iOS menu for email addresses showing all the available options for an email
+   address. The following options might be available:<ul id="ul_zrn_jvq_ktb">
+    <li><uicontrol>New Mail Message</uicontrol></li>
+    <li><uicontrol>Facetime Audio</uicontrol></li>
+    <li><uicontrol>Facetime</uicontrol></li>
+    <li><uicontrol>Send Message</uicontrol> (using the Apple Messages app)`</li>
+    <li><uicontrol>Add to Contacts</uicontrol> (Apple Contacts)</li>
+    <li><uicontrol>Copy Email</uicontrol></li>
+   </ul></p>
+  <p>You might also assign a nickname to a contact from the <wintitle>Contact Info</wintitle>
+   screen. Nicknames are visible throughout the app in place of the users' formal names. </p>
+  <p>Long pressing a phone number displays the iOS menu for phone numbers, showing all the available
+   options for a phone number. The options are as follows: <ul id="ul_x5r_vtz_bvb">
+    <li><uicontrol>Call</uicontrol></li>
+    <li><uicontrol>Facetime Audio</uicontrol></li>
+    <li><uicontrol>Facetime</uicontrol></li>
+    <li><uicontrol>Send Message</uicontrol> (using the Apple Messages app)</li>
+    <li><uicontrol>Add to Contacts</uicontrol> (Apple Contacts)</li>
+    <li><uicontrol>Copy</uicontrol></li>
+   </ul></p>
+ </conbody>
+</concept>
+<?Pub *0000001020?>

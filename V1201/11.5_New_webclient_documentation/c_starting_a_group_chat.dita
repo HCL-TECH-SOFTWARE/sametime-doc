@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="starting_a_group_chat" xml:lang="en-us">
+<title>Starting a group chat</title>
+<shortdesc>You can start a chat with a group of people from your Contact List.</shortdesc>
+<conbody>
+<p> You can start a group chat in one of three ways. </p>
+<ul>
+<li>When you are already in a chat with an individual contact, select <uicontrol>Start Group
+Chat</uicontrol> in the menu bar, and then choose the invitees. </li>
+<li>Select a contact group, then press <uicontrol>Start Group Chat</uicontrol> in the menu bar. Edit
+the invitee list, if necessary. </li>
+<li>Long press a contact group, then press <uicontrol>Start Group Chat</uicontrol> in the menu bar.
+Edit the invitee list, if necessary.</li>
+</ul>
+<p>Select the <uicontrol>Participants</uicontrol> tab from the Group Chat Card for a list of all
+participants. The names of the invitees who have not responded will be grayed out. </p>
+</conbody>
+</concept>
+<?Pub *0000001020?>

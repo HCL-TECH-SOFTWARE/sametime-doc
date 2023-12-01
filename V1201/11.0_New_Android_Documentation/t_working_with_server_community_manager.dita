@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="working_with_server_community_manager" xml:lang="en-us">
+<title>Working with the Server Community Manager</title>
+<?Pub Caret 3?>
+<shortdesc>The Server Community Manager allows you to create and maintain more than one set of
+server connection information and login ID and password information for a variety of Connections
+communities. Typically, the initial connection information is set up by your
+administrator.</shortdesc>
+<taskbody>
+<context>
+<p>From the login panel, choose the <uicontrol>Connectivity</uicontrol> action. The Server Community
+Manager displays. Your default settings (those initially configured for the device by your
+administrator) are stored in the community item named <uicontrol>Default</uicontrol>.</p>
+<p>The Server Community Manager lists all current available server communities. You can press the
+check box to select which community settings are the currently activate settings. Only one can be
+checked at a time.</p>
+<p>You can add additional server communities by performing the following procedure:</p>
+</context>
+<steps>
+<step>
+<cmd>Press the <uicontrol>Add server community</uicontrol> button at the bottom of the list.</cmd>
+</step>
+<step>
+<cmd>Choose either <uicontrol>My company's server</uicontrol> or <uicontrol>HCL Connections
+Cloud</uicontrol>.</cmd>
+</step>
+</steps>
+</taskbody>
+<task id="create_connections_community">
+<title>Create Connections community</title>
+<taskbody>
+<context>
+<p>The <uicontrol>My company's server</uicontrol> option allows you to create a Connections
+community for your company's private Connections server. </p>
+<p>To do so, perform the following procedure:</p>
+<note>If your administrator supplies a configuration URL, you can use it to set up these parameters
+automatically. Select the configuration URL from your mobile device where Connections is installed.
+This will invoke Connections and populate the Community server information provided in the URL. You
+will then be at the login screen to enter your user and password information.</note>
+</context>
+<steps>
+<step>
+<cmd>Select <uicontrol>My company's server</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Fill in the dialog with the following settings:</cmd>
+</step>
+<stepsection>
+<table frame="all" rowsep="1" colsep="1" id="table_v1q_q4j_rhb">
+<title>Server Community</title>
+<tgroup cols="2">
+<colspec colname="c1" colnum="1" colwidth="1*"/>
+<colspec colname="c2" colnum="2" colwidth="1*"/>
+<thead>
+<row>
+<entry>Option</entry>
+<entry>Description</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry>Community name</entry>
+<entry>The original name for the community. It must be a unique name among all the other community
+names on your device.</entry>
+</row>
+<row>
+<entry>Server</entry>
+<entry>The URL for the Community's Connections Proxy server.<note>Connections Chat connects to a
+Connections Proxy server and the Android client will not work without it. </note></entry>
+</row>
+<row>
+<entry>Secure Connection</entry>
+<entry>Determines if the connection uses SSL.</entry>
+</row>
+<row>
+<entry>Allow Untrusted SSL</entry>
+<entry>If set, this allows you to log into a Connections server with an untrusted certificate.
+Generally this is not recommended </entry>
+</row>
+<row>
+<entry>Port</entry>
+<entry>The port used to connect to the community server.</entry>
+</row>
+<row>
+<entry>Authenticating proxy settings</entry>
+<entry>Proxy settings for connecting to the community server, if necessary.</entry>
+</row>
+<row>
+<entry>User ID</entry>
+<entry>The user ID you use to connect to the community.</entry>
+</row>
+<row>
+<entry>Password</entry>
+<entry>The password for your user ID.</entry>
+</row>
+<row>
+<entry>Save password</entry>
+<entry>Sets whether or not the application remembers your password in between connections.</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</stepsection>
+<step>
+<cmd>Press the <uicontrol>Back</uicontrol> action to save connectivity settings and return to the
+Server Community Manager.</cmd>
+</step>
+</steps>
+</taskbody>
+</task>
+<task id="connections_cloud">
+<title>HCL Connections Cloud</title>
+<taskbody>
+<context>
+<p>The <uicontrol>HCL Connections Cloud</uicontrol> option allows you to create a Connections
+community as part of the global HCL Connections Cloud service. </p>
+<p>To do so, perform the following procedure:</p>
+</context>
+<steps>
+<step>
+<cmd>Select <uicontrol>HCL Connections Cloud</uicontrol>.</cmd>
+</step>
+<step>
+<cmd>Change the name of the HCL Connections Cloud community, if desired. The default is HCL
+Connections Cloud.</cmd>
+</step>
+<step>
+<cmd>Enter your HCL Connections Cloud user name and password.</cmd>
+</step>
+<step>
+<cmd>Press the <uicontrol>Back</uicontrol> action to save connectivity settings and return to the
+Server Community Manager.</cmd>
+<info>
+<p>You can create multiple communities using the above procedures. HCL Connections Cloud communities
+display in the Communities panel along with local server communities. If you have multiple
+communities, click on the community in the <uicontrol>Communities</uicontrol> panel that you want to
+use.</p>
+<p>If the administrator adds a server community with Mobile Device Management (MDM), you can view
+the server settings but will only be able to edit the User ID and Password fields.</p>
+</info>
+</step>
+</steps>
+</taskbody>
+</task>
+</task>
+<?Pub *0000003147?>

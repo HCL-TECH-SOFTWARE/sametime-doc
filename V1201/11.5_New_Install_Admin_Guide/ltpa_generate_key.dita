@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="ltpa_generate_key" xml:lang="en-us">
+    <title>Generating LTPA keys</title>
+    <shortdesc>Lightweight Third Party Authentication (LTPA) uses keys to encrypt and decrypt data
+        being passed.</shortdesc>
+    <taskbody>
+        <context id="context_n14_z2j_rtb">
+            <p>The generated keys must be shared and configured within the Sametime server and must
+                be available before you can configure SSO using LTPA.</p>
+            <p>Using an instance of Websphere Liberty is one method that you can use to generate
+                LTPA keys. When  the Websphere Liberty server is started an LTPA key is created. You
+                can copy the key onto both the host machine and the Domino server.</p>
+        </context>
+        <steps id="steps_t4l_rxh_ttb">
+            <step>
+                <cmd>From Docker, issue the following command to start a Websphere Liberty
+                    server.</cmd>
+                <info>
+                    <codeblock id="codeblock_d4k_zxh_ttb">docker run -d -p 9080:9080 -p 9443:9443 websphere-liberty:latest</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Copy the key from ltpa.keys from that instance: </cmd>
+                <info><codeblock id="codeblock_ly2_j25_j5b">docker cp <varname>container_id</varname>:/output/resources/security/ltpa.keys ./ltpa.keys</codeblock>
+                    <varname>container_id</varname> is the Websphere Liberty container ID. To obtain
+                    the container ID, open a terminal and issue the following command:
+                        <codeblock id="codeblock_my2_j25_j5b">docker ps</codeblock><p>The default
+                        password used by Websphere Liberty is
+                    <userinput>WebAS</userinput>.</p></info>
+            </step>
+        </steps>
+        <postreq id="postreq_iwr_byh_k5b">Configure the LTPA keys in Docker or Kubernetes where
+            Sametime is running.</postreq>
+    </taskbody>
+</task>

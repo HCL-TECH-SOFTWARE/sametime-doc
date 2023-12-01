@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+   <appContext helpID="api_intro" path="api_intro.html"/>
+   <appContext helpID="c_get_familiar" path="c_get_familiar.html"/>
+   <appContext helpID="c_swagger" path="c_swagger.html"/>
+   <appContext helpID="c_getting_started" path="c_getting_started.html"/>
+   <appContext helpID="t_get_auth_keys" path="t_get_auth_keys.html"/>
+   <appContext helpID="t_make_request" path="t_make_request.html"/>
+   <appContext helpID="c_SDK" path="c_SDK.html"/>
+   <appContext helpID="t_install" path="t_install.html"/>
+   <appContext helpID="c_documentation" path="c_documentation.html"/>
+</map>

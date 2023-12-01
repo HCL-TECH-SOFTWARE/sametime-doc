@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="sametime_proxy_faq" xml:lang="en-us">
+<title>Clustering and high availability</title>
+    <shortdesc>This topic explains the high availability capabilities of Sametime Community services and example deployment scenarios.</shortdesc></concept>

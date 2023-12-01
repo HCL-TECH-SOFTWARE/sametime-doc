@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Arbortext, Inc., 1988-2011, v.4002-->
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_st8_uim_otherIM" xml:lang="en-us">
+<title>How do I chat with people who are members of a public instant
+messaging network?</title>
+<shortdesc>If your system administrator connects one of your server
+communities to any public instant messaging networks, you can chat
+with members of those networks. </shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Open the New Contact dialog box.</cmd><info><table frame="all">
+<title>Options</title>
+<tgroup cols="2">
+<?PubTbl tgroup rth="1.00pt"?>
+<colspec colname="col1" colwidth="1*"/><colspec colname="col2"
+colwidth="1*"/>
+<thead>
+<row>
+<entry colname="col1">If you are using:</entry>
+<entry colname="col2">Do this:</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Sametime</tm> Connect</p></entry>
+<entry colname="col2"><p>Click <image href="images/ST9_add_contact.jpg">
+<alt>Add to contact list</alt></image> in the navigator.</p></entry>
+</row>
+<row>
+<entry colname="col1"><p>HCL <tm tmtype="reg">Notes</tm></p></entry>
+<entry colname="col2"><p>Click <uicontrol><image href="images/Embedded_ST_Contacts_icon.JPG" scope="local">
+             <alt>Contacts icon</alt>
+            </image> Sametime Contacts</uicontrol> to open the Contacts panel in the <tm
+            tmtype="reg">Notes</tm> sidebar. Then, click <uicontrol><image
+             href="images/ST9_add_contact.jpg">
+             <alt>New</alt>
+            </image><image href="images/ST9_dropdown.jpg">
+             <alt>drop-down arrow icon</alt>
+            </image></uicontrol> and select <uicontrol>New Contact</uicontrol>.</p><?Pub
+Caret 102?></entry>
+</row>
+</tbody>
+</tgroup>
+</table></info></step>
+<step><cmd>Select <uicontrol>Add external user by email address</uicontrol></cmd>
+<info><note>Depending on your server community, you might not see
+this option.</note></info></step>
+<step><cmd>In the <uicontrol>Server community</uicontrol> field, select
+the server community that is connected to the public instant messaging
+network. Your administrator determines which server communities you
+have access to and whether any of them are connected to any public
+instant messaging networks.</cmd></step>
+<step><cmd>Specify the contact's email address, nickname, and group
+to which you want to add this contact. Make sure that you enter the
+correct email address because it is not validated with the network.
+If you enter an incorrect email address, the contact shows in your
+contact list, but with an offline status.</cmd></step>
+<step><cmd>If you have access to more than one public instant messaging
+network, select the network for the contact you are adding. </cmd>
+</step>
+<step><cmd>Click <uicontrol>Close</uicontrol>.</cmd><info><note>Before
+you can chat with this contact, they might need to grant you permission
+to chat with them. You might also need to grant permission to them
+before they can add you to their contact list.</note></info></step>
+</steps>
+<result>
+   <p>The contact's email address (or nickname, if you specified one), shows in the contact list. An
+    icon for the network shows next to the contact's name in the contact list.</p>
+  </result>
+</taskbody>
+<?tm 1365536149 0?>
+</task>
+<?Pub *0000003380?>

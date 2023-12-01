@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<task id="t_control_audio" xml:lang="en-us">
+  <title>Controlling audio</title>
+  <shortdesc>With various settings you can control sounds while you use Sametime meetings and
+    chat.</shortdesc>
+  <taskbody>
+    <context id="context_m2l_hct_z5b">
+      <p>To control sounds for notifications, tap <menucascade>
+          <uicontrol>Settings</uicontrol>
+          <uicontrol>Notifications</uicontrol>
+        </menucascade> on the app menu. <ul id="ul_gm4_1sj_bvb">
+          <li>When you turn off <uicontrol>Show notification</uicontrol> settign no notifications
+            are received.</li>
+          <li>When you turn on the setting, you can select from the notification list settings for
+            individual notifications. </li>
+        </ul>Tap <uicontrol>Notification categories</uicontrol> to view the list and turn on and off
+        sound for individual notifications.</p>
+      <p>You can also mute individual chat conversations from the conversation screen. Open the
+        conversation and tap the <uicontrol>menu</uicontrol> icon (<image href="Images/menu.png"
+          id="image_xjr_4dt_z5b" alt="menu icon"/>) located at the upper right corner and tap
+          <uicontrol>Mute</uicontrol>. To turn sound back on, return to the menu and tap
+          <uicontrol>Unmute</uicontrol>.</p>
+      <p>By using the meeting settings you can set initial audio settings for the times when you
+        join or start a meeting. You can use the <uicontrol>sound</uicontrol> icon during the
+        meeting to override the initial settings.</p>
+    </context>
+  </taskbody>
+</task>
+<?Pub *0000001020?>

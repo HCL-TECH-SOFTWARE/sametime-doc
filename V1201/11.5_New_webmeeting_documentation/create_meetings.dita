@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<?Pub Inc?>
+<concept id="create_meetings.dita" xml:lang="en-us">
+ <title>Creating a Sametime meeting</title>
+ <shortdesc>Authenticated users can create, manage, and start meetings. This section describes the
+  types of meetings and meeting modes and the steps on how start or create one. </shortdesc>
+</concept>

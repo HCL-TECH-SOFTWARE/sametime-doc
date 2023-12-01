@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<concept id="managing_app_settings" xml:lang="en-us">
+<title>Managing Sametime app settings</title>
+ <shortdesc>You can manage settings for the HCL Sametime app on your mobile device. Settings persist
+    on the server so the server maintains the settings on installations and other mobile
+    devices.</shortdesc>
+<conbody>
+  <p>From the app menu, tap <uicontrol>Settings</uicontrol> to display the application settings.
+      Access settings under the following categories:<ul id="ul_szt_dxp_y5b">
+        <li>Contact List</li>
+        <li>General</li>
+        <li>Notifications</li>
+      </ul></p>
+ <table frame="all" rowsep="1" colsep="1" id="table_idp_qmb_rhb">
+   <title>Sametime app settings</title>
+  <tgroup cols="3">
+    <colspec colname="newCol1" colnum="1" colwidth="1*"/>
+    <colspec colname="c1" colnum="2" colwidth="1*"/>
+    <colspec colname="c2" colnum="3" colwidth="1*"/>
+    <thead>
+     <row>
+      <entry>Category</entry>
+      <entry>Option</entry>
+      <entry>Description</entry>
+     </row>
+    </thead>
+    <tbody>
+          <row>
+            <entry>Contact List</entry>
+            <entry>Show Offline Contacts</entry>
+            <entry>Set whether to show contacts who are offline in your contact list.</entry>
+          </row>
+          <row>
+            <entry morerows="3">General</entry>
+            <entry>Cellular Data Preference</entry>
+            <entry>These preferences determine meeting behavior when you aren't on a wifi
+              connection. <dl id="dl_qpn_2nq_bvb">
+                <dlentry>
+                  <dt>Stream over WiFi only</dt>
+                  <dd>Enable to join a meeting in audio-only mode. You cannot see videos. However,
+                    you can see presentations. </dd>
+                </dlentry>
+                <dlentry>
+                  <dt>Download over WiFi only</dt>
+                  <dd>Enable to download  a meeting recording over wifi only.</dd>
+                </dlentry>
+                <dlentry>
+                  <dt>Stream over WiFi only</dt>
+                  <dd>Enable to play a meeting recording over wifi only.</dd>
+                </dlentry>
+              </dl>Using these features when not on a WiFi connections might incur fees by your
+              provider. The default preferences are join a meeting in audio-only mode, and you not
+              allowed download or play meeting recordings.</entry>
+          </row>
+     <row>
+      <entry>Community Settings</entry>
+      <entry>Contains the Sametime server connection information required to connection to the host
+              sever. Settings include the host server URL, port, security, connection type, and log
+              in credentials, </entry>
+     </row>
+     <row>
+      <entry>Connect at Launch</entry>
+            <entry>With this setting set to <codeph>on</codeph>, after you configure the app, the
+              app automatically logs in whenever the app starts from the
+                <uicontrol>application</uicontrol> icon.</entry>
+     </row>
+     <row>
+      <entry>Remain Online</entry>
+      <entry>Set the length of time you want to remain online when you put the app in the
+       background.</entry>
+     </row>
+     <row>
+      <entry morerows="1">Notifications</entry>
+      <entry>Incoming calls</entry>
+      <entry>Specify how you want to handle incoming calls.<p>Select either <uicontrol>Answer
+                  Call</uicontrol> or <uicontrol>Open Conversation </uicontrol> to set the behavior
+                when you are not currently in the app. <ul id="ul_hky_qlf_cvb">
+                  <li>When <uicontrol>Answer Call</uicontrol> is selected, you can answer the call
+                    by tapping the notification.</li>
+                  <li>When <uicontrol>Open Conversation </uicontrol> is selected, when you tap the
+                    notification, the conversation opens. Tap <uicontrol>Join</uicontrol> to answer
+                    the call..</li>
+                </ul></p><p>When you are in the Sametime app and receive a call and <uicontrol>Show
+                  Notification</uicontrol> is on, the app displays the call notification and tapping
+                the notification opens the conversation. To play the call ring tone with
+                notification, turn on <uicontrol>Play Sound</uicontrol>. When <uicontrol>Show
+                  Notification</uicontrol> is off, the notification sound is also off.</p></entry>
+     </row>
+     <row>
+      <entry>Incoming Messages</entry>
+      <entry>Specify how you want to handle incoming notifications. Turn off and on sound for the
+              following types of messages: <ul id="ul_jms_k4f_cvb">
+                <li>Chat messages</li>
+                <li>Group messages</li>
+                <li>Announcements</li>
+              </ul>The message number badge changes regardless of whether the sound is on or off.
+              Open the conversation to join.<p>Tap <uicontrol>Modify Notification
+                  Settings</uicontrol> to change Sametime notification and device
+              settings.</p></entry>
+     </row>
+    </tbody>
+   </tgroup>
+ </table>
+</conbody>
+</concept>
+<?Pub *0000002132?>

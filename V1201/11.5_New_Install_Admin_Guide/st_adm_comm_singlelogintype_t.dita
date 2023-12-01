@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="st_adm_comm_singlelogintype_t" xml:lang="en-us">
+<title>Configuring the single login type</title>
+<shortdesc>The single login type mode means that only one login per user is allowed. When a client
+    attempts to log in to the Sametime server, the server checks if there are any existing logins of
+    the same user and disconnects them. Any client on the exclusion list is not disconnected, which
+    is useful for users who want to run multiple clients simultaneously. </shortdesc>
+<taskbody>
+<context><p>To configure the single login function and exclude certain
+client types from qualifying as logins, edit the <filepath>sametime.ini</filepath> file.</p></context>
+<steps>
+<step>
+        <cmd>Open a text editor on the Sametime server.</cmd>
+      </step>
+<step>
+        <cmd>Open the <filepath>sametime.ini</filepath> file located in the Sametime server
+          installation directory. For example, the default directory in Windows is
+            <filepath>C:\program files\HCL\domino</filepath>.</cmd>
+      </step>
+<step>
+        <cmd>In the Config section, set the following flag to activate single client login
+          mode:</cmd>
+        <info>
+          <p><userinput>VP_ONLY_SINGLE_LOGIN_ALLOWED=1</userinput></p>
+          <p>If the flag is set to <varname>1</varname> the server works in the single login allowed
+            mode. When a new client login request is received, all the previous logins are
+            disconnected. Only one client type connection per computer is allowed at one time
+            (related to client types, not users).</p>
+        </info>
+      </step>
+<step><cmd importance="optional">Specify which client types are not
+considered logins when the server checks whether to accept or disconnect
+clients. Separate the client types with commas.</cmd><info><p><userinput>VPS_EXCLUDED_LOGIN_TYPES=<varname>clienttype1,
+            clienttype2</varname></userinput></p><p>In the following configuration, even though
+            single client login mode is activated, logins originating from C++ clients and Unified
+            instant messaging clients are not disconnected if they have logged in from the Sametime
+            client too. </p><userinput>VPS_EXCLUDED_LOGIN_TYPES=<varname>1002, 1304
+            </varname></userinput>
+        </info></step>
+<step>
+        <cmd>To access Sametime from the <tm tmtype="reg" trademark="HCL">HCL</tm>
+          <tm tmtype="reg" trademark="Notes">Notes</tm> Basic client, update or add these settings
+          as indicated.</cmd>
+        <info>
+          <ul>
+            <li>Reset <codeph>VP_SECURITY_LEVEL=7000 to VP_SECURITY_LEVEL=6510</codeph></li>
+            <li>Add this setting to the [Config] section:
+                <codeph>ST_MINIMAL_CLIENT_VERSION=6510</codeph></li>
+          </ul>
+        </info>
+      </step>
+<step><cmd>Save the <filepath>sametime.ini</filepath> file. </cmd>
+</step>
+</steps>
+</taskbody>
+
+</task>
+

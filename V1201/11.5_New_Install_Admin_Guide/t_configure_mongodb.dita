@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="configure_mongodb" xml:lang="en-us">
+ <title>Configuring MongoDB for Sametime</title>
+ <?Pub Caret 3?>
+  <shortdesc>This topic describes how to configure MongoDB on both the Windows and Linux platform to
+    support an HCL Sametime and HCL Sametime Premium deployment.</shortdesc>
+ <taskbody>
+    <context id="context_udz_xw3_ytb">MongoDB security is not enabled by default. Securing MongoDB
+      is not required for Sametime, but provides the best results. For more information, see <xref
+        href="security_mongodb.dita" scope="local" format="dita"/>.<note id="note_eh2_5vk_lvb"> In
+        the following steps, MongoDB version 4.4 is used as an example. If you are using a different
+        version of MongoDB, refer to the MongoDB documentation for how to issue commands for the
+        version that you are using.</note></context>
+  <steps>
+      <step>
+        <cmd>Start the MongoDB server as a service, if it has not already been started.</cmd>
+      </step>
+    <step>
+        <cmd>Start the MongoDB console.</cmd>
+        <info>
+          <ul id="ul_csg_sb4_htb">
+            <li>For Windows, run the <codeph id="codeblock_gzl_mp5_m5b">mongo.exe</codeph> program
+              which is in the following directory: <filepath>C:\Program
+                Files\MongoDB\Server\4.4\bin</filepath></li>
+            <li>For Linux, run <filepath>>mongo</filepath>.</li>
+          </ul>
+        </info>
+      </step>
+   <step>
+        <cmd>From the MongoDB console, run the following commands to create
+            <codeph>sametimeUser</codeph> in MongoDB.</cmd>
+        <info>You can use and modify the following example. If you change the user and password, you
+          must use the new values when you configure the Sametime server in a later step.
+          <codeblock id="codeblock_w3f_z2t_4tb">
+use admin</codeblock><codeblock id="codeblock_my3_d2f_4tb">
+db.createUser({user: "sametimeUser", pwd: "sametime", roles:[{role:"readWrite", db:"chatlogging"},{ role:"readWrite", db:"mobileOffline"},{ role:"readWrite", db:"meeting"},{role:"dbAdmin", db:"meeting"},{role:"userAdminAnyDatabase", db:"admin"}]})</codeblock></info>
+        <stepresult>When complete, a message is displayed that the user was added along with details
+          as shown in the following example.<image href="Images/configure_mongodb_successmsg.png"
+            placement="break" align="left" id="image_lsc_jd4_htb"/></stepresult>
+      </step>
+    <step>
+        <cmd>From the MongoDB console, run the following commands to create the
+            <uicontrol>chatlogging</uicontrol> database with <uicontrol>events</uicontrol> and
+            <uicontrol>sessions</uicontrol> collections in MongoDB.</cmd>
+        <info>
+          <codeblock id="codeblock_zfp_pgf_4tb">
+use chatlogging     
+</codeblock>
+          <codeblock id="codeblock_ogy_pgf_4tb">
+db.EVENTS.insertOne({"_id" : "dummy"})</codeblock>
+          <codeblock id="codeblock_z2c_qgf_4tb">       
+db.SESSIONS.insertOne({"_id" : "dummy"}) </codeblock>
+          <note id="note_uxd_zd4_htb">The commands are case sensitive and must be typed as
+            shown.</note>
+        </info>
+      </step>
+    <step>
+        <cmd>Stop the MongoDB server and exit the console to pick up the new schema version change.
+          To exit the MongoDB console, use the <cmdname>exit</cmdname> command.</cmd>
+        <info>To shut down the MongoDB server:<ul id="ul_tvj_j24_htb">
+            <li>On Windows stop the MongoDB service</li>
+            <li>On Linux use run the <cmdname>service mongod stop</cmdname> command</li>
+          </ul></info>
+      </step>
+    <step>
+        <cmd>Edit the <filepath>mongod.cfg</filepath> file.</cmd>
+        <info>
+          <ul id="ul_urj_tf4_htb">
+            <li>Windows: <filepath>C:\Program Files\MongoDB\Server\4.4\bin </filepath></li>
+            <li>Linux: <filepath> /etc/mongod.conf  </filepath></li>
+          </ul>
+        </info>
+        <substeps id="substeps_q4y_zf4_htb">
+          <substep>
+            <cmd>Remove the comment character or add the <codeph>replication</codeph> statement. Add
+              add <codeph>replSetName: rs0</codeph> under it.</cmd>
+            <info>
+              <codeblock id="codeblock_h41_fg4_htb">
+replication:
+  replSetName: rs0</codeblock>
+            </info>
+          </substep>
+          <substep>
+            <cmd>Under # network interfaces, add <codeph>bindIpAll: true</codeph>.</cmd>
+            <info>
+              <codeblock id="codeblock_zqd_lg4_htb">
+net:
+  port: 27017
+  bindIp: 127.0.0.1
+  bindIpAll: true</codeblock>
+            </info>
+            <info>
+              <note id="note_lpy_5h4_htb">
+                <ul id="ul_mpy_5h4_htb">
+                  <li>You can copy and paste the instructions from this document. Be aware that the
+                    format of the instructions is critical and must remain the same. The
+                    indentations are two spaces and not a tab. Also, there can be no trailing spaces
+                    at the end of each line.</li>
+                  <li>If the MongoDB logs and data were different from the default values, confirm
+                    this file needs to be updated correctly.</li>
+                </ul>
+              </note>
+            </info>
+          </substep>
+          <substep>
+            <cmd>Save the file. Make sure the file is not saved as a <filepath>.txt</filepath>
+              filetype when saving.</cmd>
+          </substep>
+        </substeps>
+      </step>
+    <step>
+        <cmd>Start the MongoDB service.</cmd>
+        <choices id="choices_rf2_dp5_m5b">
+          <choice>For Windows, start the MongoDB Server ( MongoDB) service from the Wiondows
+            Services panel.</choice>
+          <choice>For Linux, run the following command:
+            <codeblock id="codeblock_pk4_fp5_m5b">service mongod start </codeblock></choice>
+        </choices>
+      </step>
+    <step>
+        <cmd>Start the MongoDB console.</cmd>
+        <choices id="choices_tnb_jp5_m5b">
+          <choice>For Windows:
+            <codeblock id="codeblock_y55_jp5_m5b">C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe</codeblock></choice>
+          <choice>For Linux: <codeblock id="codeblock_id2_lp5_m5b">>mongo </codeblock></choice>
+        </choices>
+      </step>
+    <step>
+        <cmd>From the MongoDB console, run the following command to initiate the Replica Set in
+          MongoDB.</cmd>
+        <info>
+          <codeblock id="codeblock_ysr_m34_htb">
+rs.initiate()</codeblock>
+          <note id="note_rzy_534_htb">For Windows, review the message that is displayed. The
+            expected message is <msgph id="codeblock_nqs_x34_htb">rs0:Secondary</msgph> or <msgph
+              id="codeblock_obt_1j4_htb">rs0:OTHER</msgph>. Press <uicontrol>Enter</uicontrol> and
+            the message changes to <msgph id="codeblock_qd2_2j4_htb">rs0:Primary></msgph>.
+              <cmdname>rs.conf()</cmdname><image href="Images/primary.png" placement="break"
+              align="left" id="image_t4x_fj4_htb"/></note>
+        </info>
+      </step>
+    <step>
+        <cmd>The replica set is now operational. To view the replica set conﬁguration, run the
+          command from the MongoDB Console. To check the status of the replica set, use the
+            <cmdname>rs.status()</cmdname> command.</cmd>
+        <info>
+          <p>At this point, you can exit the console using the <cmdname>exit</cmdname> command. </p>
+        </info>
+        <info>
+          <note id="note_tfx_rj4_htb">When MongoDB is not configured on the local host, the
+            configuration must reflect the correct host name or IP. See the <xref
+              href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0076424"
+              format="html" scope="external">HCL Sametime 11 clients fail when MongoDB host is not
+              configured correctly on the Community server</xref> article for known issues.</note>
+        </info>
+      </step>
+  </steps>
+   <postreq>After the MongoDB is configured, you can install Sametime. Refer to the <xref
+        href="installation_sametime.dita"/> topic for details.</postreq>
+ </taskbody>
+</task>

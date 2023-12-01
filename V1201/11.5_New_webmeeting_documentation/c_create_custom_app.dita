@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="create_custom_app" xml:lang="en-us">
+ <title>Creating a custom app configuration profile</title>
+ <shortdesc>HCL Sametime for iOS supports custom managed configuration which allows the EMM administrator to preconfigure many HCL Sametime for iOS settings and policies.</shortdesc>
+
+<conbody>
+ <p>Any setting defined using the EMM takes precedence over a similar setting or policy defined at
+   the Sametime server. Setting custom app configuration will vary by EMM. All EMM providers support
+   the concept of Apple managed configuration using custom keys and values. However, some EMM
+   providers now support definition of these parameters using an app’s AppConfig XML definition file
+   as defined by the <xref href="https://www.appconfig.org/" format="html" scope="external"
+    >AppConfig Community</xref>.</p>
+ <p>HCL Sametime for iOS provides the file HCL_Sametime_AppConfig.xml through the <xref
+        href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0078619"
+        format="html" scope="external">EMM Configuration XML file for HCL Sametime for iOS</xref>
+      support article which defines the supported configuration settings for this app.</p>
+ <p>If your EMM supports an AppConfig.xml file, it is recommended to use this file over manually entering in managed configuration keys and values.</p>
+ <p>Not all EMM providers support AppConfig.xml, and if your provider does not support this format yet, you can still enter in configuration keys and values separately.</p>
+ <p>See the <xref href="c_create_ios_app.dita" format="dita">HCL Sametime iOS App Configuration
+    Reference</xref> for a listing of keys and values supported by HCL Sametime for iOS.</p></conbody></concept>
+<?Pub *0000001020?>

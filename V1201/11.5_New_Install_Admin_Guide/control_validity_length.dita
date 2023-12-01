@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="control_validity_length" xml:lang="en-us">
+<title>Managing user sign-on</title>
+<shortdesc>You can control how long your Sametime meeting credentials are maintained to reduce the
+number of times you have to sign-in.</shortdesc>
+<taskbody>
+<context>
+<p>A token is maintained by the meeting sever to control how often you sign-in to your Sametime
+Meeting. The default value is 30 days. You can modify this value or turn off the feature by
+including the JWT_REFRESH_DURATION_DAYS environment variable in the YAML file. You can specify any
+number of whole days to retain login credentials.  To disable this feature, set the value to 0.</p>
+<note>When you modify the <filepath>docker-compose.yml</filepath> file, follow the syntax rules for
+YAML files to prevent coding errors. When you modify the YAML file, the indentations of entries are
+spaces, not tab characters.</note>
+</context>
+</taskbody>
+<task id="task_vf2_mqz_xrb">
+<title>Managing user sign-on in Docker</title>
+<taskbody>
+<steps>
+<step>
+<cmd>Edit the <filepath>docker-compose.yml</filepath> file and locate the auth section within the
+file.</cmd>
+<info>The file is in the root directory .</info>
+</step>
+<step>
+<cmd>Add the JWT_REFRESH_DURATION_DAYS environment variable.</cmd>
+<info>Specify the duration in this format
+<varname>environment_variable</varname>=<varname>number_of_days</varname>.
+<codeblock>JWT_REFRESH_DURATION_DAYS=<varname>number_of_days</varname></codeblock><p>The following
+example shows the auth section with the JWT_REFRESH_DURATION_DAYS environment variable set to 10
+days. <image href="Images/sample_dockeryaml_refresh.jpg"
+alt="Sample yaml file with JWT_REFRESH_DURATION_DAYS variable with value of 10"/></p></info>
+</step>
+<step>
+<cmd>Run the following commands for changes to activate the YAML file.</cmd>
+<info>
+<codeblock>
+docker-compose down 
+delete jitsi-config folder
+docker-compose up -d</codeblock>
+</info>
+</step>
+</steps>
+</taskbody>
+</task>
+<task id="task_p3b_nqz_xrb">
+<title>Managing user sign-on in Kubernetes</title>
+<taskbody>
+<context>You can change settings temporarily or permanently. To temporarily change the setting, run
+the following command to change the setting in a deployed environment:<codeblock>kubectl set env deploy/auth JWT_REFRESH_DURATION_DAYS=<varname>number_of_days</varname></codeblock>
+<p>To permanently change the setting, complete the following steps:</p>
+</context>
+<steps>
+<step>
+<cmd>Edit the <filepath>deployment.yaml</filepath> file, which contains the auth environment
+variables.</cmd>
+<info>You can find the file in the <codeph>helm/charts/auth/templates</codeph> directory.</info>
+</step>
+<step>
+<cmd>Add the JWT_REFRESH_DURATION_DAYS environment variable.</cmd>
+<info>Specify the duration in this format <varname>environment_variable</varname>:
+<varname>number_of_days</varname>.
+<codeblock>name: JWT_REFRESH_DURATION_DAYS value: <varname>number_of_days</varname>
+</codeblock><p>The
+following example shows the auth section with the JWT_REFRESH_DURATION_DAYS environment variable set
+to 10 days. <image href="Images/sample_kubernetesyaml_refresh.jpg"
+alt="Sample yaml file with JWT_REFRESH_DURATION_DAYS variable with value of 10"/></p></info>
+</step>
+<step>
+<cmd>Run the following commands to activate the YAML:</cmd>
+<info>
+<codeblock>
+helm uninstall sametime-meetings
+helm install sametime-meetings </codeblock>
+</info>
+</step>
+</steps>
+</taskbody>
+</task>
+</task>

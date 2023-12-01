@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_setavailabilitystatus" xml:lang="en-us">
+<title>Setting your status</title>
+<shortdesc>Your online status includes your availability and status message. The top of the
+                application menu displays this information . Tap your current status to make
+                changes. Other logged-in Sametime users can see your online status.</shortdesc>
+<taskbody>
+<context>
+<p>After you log in, by default your status is set to available. You can change your availability
+                status to show others that you are away, in a meeting, or do not want to be
+                    disturbed.<image href="Images/status.png" id="image_ej4_1pn_ctb"
+                    alt="Status list" placement="break"/></p>
+</context>
+<steps>
+<step>
+<cmd>Click the drop-down arrow next to your current status which is located under your name.</cmd>
+</step>
+<step>
+<cmd>Select a status.</cmd>
+</step>
+<step>
+                                <cmd>To add a custom message or more details to your status,  click
+                                                <uicontrol>Custom status message</uicontrol>. </cmd>
+                                <info>
+                                        <p>A text field opens, where you can type a status message.
+                                                For example, if you choose <uicontrol>I am
+                                                  away</uicontrol>, you might add a custom message
+                                                such as <userinput>At a doctor's
+                                                  appointment</userinput>.</p>
+                                        <p>The message is removed when you select a different
+                                                status.</p>
+                                </info>
+                        </step>
+<step>
+                <cmd>When you are finished, click the return arrow (<image
+                        href="Images/icon_returnarrow.jpg" alt="return arrow icon"/>).</cmd>
+            </step>
+</steps>
+</taskbody>
+</task>
+<?Pub *0000002118?>

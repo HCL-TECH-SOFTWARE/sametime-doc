@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="update_client_policy" xml:lang="en-us">
+    <title>Updating the client policy to include the managed settings or managed community configs URL </title>
+    <shortdesc>Once the xml file(s) is ready to be deployed to users, the file must be placed on a web server to host it. This can be any web server the users can reach.</shortdesc>
+<taskbody>
+        <prereq id="prereq_vds_m4t_w4b">This step requires operating system access to the Sametime
+            Community server. </prereq>
+        <context id="context_vyq_pxs_w4b">
+            <p>After creating a managed-settings.xml file or a managed-community-configs.xml file
+                and placing the files on a web server, the URL to the file(s) must be defined inside
+                the Sametime Policy.</p>
+        </context>
+        <steps>
+            <step>
+                <cmd>Follow the instructions in the topic <xref href="configuring_policies.dita"/>
+                    for instructions on how to remote into the server and locate the
+                    policies.user.xml file. </cmd>
+            </step>
+            <step>
+                <cmd>Create a backup of the policies.user.xml file by making a copy of it and saving it to another location. </cmd>
+            </step>
+            <step>
+                <cmd>You can modify the default policy or <xref href="creating_new_policy.dita"
+                        >create new policies</xref>. If you create a new policy, be certain to <xref
+                        href="changing_user_policy.dita">increase the policy weight</xref> and <xref
+                        href="assign_user_policy.dita">assign the policy to a group</xref>. Each
+                    policy weight must be unique. </cmd>
+            </step>
+            <step>
+                <cmd>The Sametime server will look in the folder specified in the URL for both a managed-settings.xml and a managed-community-configs.xml. If you are using both types of files, your URL defined in the policy must be scoped to the folder path where the two files reside.</cmd>
+            </step>
+            <step>
+                <cmd>For the purposes of this topic, these steps will modify the default policy.  The managed-settings.xml and managed-community-configs.xml are part of the “im” policy. </cmd>
+                <info>
+                    <ol id="ol_ecs_wpt_w4b">
+                        <li>Open the policies.user.xml file using a text or XML editor. </li>
+                        <li>To modify the default template locate the line that begins with:
+                            <codeblock>&lt;policy id="im.default.policy" weight="1"> </codeblock></li>
+                        <li>Within this section, locate the attribute id=”im.2012”. Change the
+                                <b>default-value=””</b> to your managed-settings URL
+                                folder.<note>The URL must specify the folder in which the file
+                                resides. The server automatically appends both managed-settings.xml
+                                and managed-community-configs.xml to the URL and looks for both
+                                files. </note><p>
+                                <codeblock>default-value=”http://www.example.com/default/” </codeblock>
+                            </p><p>For example:
+                                <codeblock>&lt;p:policy-attribute current-value="" default-value=" http://www.example.com/default" description="im.2012.desc" id="im.2012" label="im.2012.label" master-attribute-link="null" possible-value-labels="null" possible-values="null" type="string" visible="true"/> 
+
+ </codeblock></p><p><option>Managed
+                                    settings only apply to the user’s primary (or default)
+                                    community. It may also be helpful to set the “im.2019” policy
+                                    attribute. User must set this community as the default server
+                                    community” which will force the user to set this server to be
+                                    their default community. </option></p><p>For example:
+                                <codeblock>&lt;p:policy-attribute current-value="1" default-value="1" description="im.2019.desc" id="im.2019" label="im.2019.label" master-attribute-link="null" possible-value-labels="null" possible-values="null" type="boolean" visible="true"/> </codeblock></p></li>
+                    </ol>
+                </info>
+            </step>
+            <step>
+                <cmd>Save and close the file. </cmd>
+                <info>
+                    <note>
+                        <ul id="ul_tbr_crt_w4b">
+                            <li>As a best practice, open the policies.user.xml file with a browser
+                                to check for any formatting problems. </li>
+                            <li>Sametime policies refresh once per hour. You can wait one hour and
+                                then test the settings, or you can restart the “ST Policy” service
+                                (Windows only) to test right away. </li>
+                            <li>When testing Managed Settings, be aware that settings are retrieved
+                                upon login. The settings may not take effect until the client is
+                                restarted. </li>
+                        </ul>
+                    </note>
+                    <p>For troubleshooting managed settings and to download a sample file see the
+                        article <xref
+                            href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0038860"
+                            format="html" scope="external">How to troubleshoot Managed Settings for
+                            Sametime</xref>. </p>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+</task>

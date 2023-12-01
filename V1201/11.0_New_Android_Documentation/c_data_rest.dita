@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="data_rest" xml:lang="en-us">
+  <title>Data at Rest Security</title>
+  <shortdesc>When devices are configured for Android Enterprise, device encryption is required. Before a work profile can be created, encryption must be enabled. All data at rest and managed by applications is encrypted.</shortdesc></concept>
+<?Pub *0000001020?>

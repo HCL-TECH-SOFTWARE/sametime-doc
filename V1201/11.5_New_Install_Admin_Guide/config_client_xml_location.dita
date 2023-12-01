@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_client_xml_location" xml:lang="en-us">
+<title>Updating client preferences with the managed-settings.xml file</title>
+    <shortdesc>Sametime rich clients such as the embedded Sametime client in HCL Notes and the full
+        Sametime standalone client are based upon the Eclipse framework. These clients can process a
+            <filepath>managed-settings.xml</filepath> file to receive new or updated preferences
+        automatically. The <filepath>managed-settings.xml</filepath> file is policy based, and each
+        policy can define a different xml file to apply preferences to different groups of users. </shortdesc><?Pub
+Caret 333?>
+<taskbody>
+<context>Use a <filepath>managed-settings.xml</filepath> file to manage and define client
+            preferences. The file is hosted on a web server. At login time, the client receives
+            policies then checks for the existence of the <filepath>managed-settings.xml</filepath>
+            file according to the "<tm tmtype="reg" trademark="Sametime">Sametime</tm> update site
+            URL" policy. <p>For example, if the configured URL is http://example.com/updates, the
+                client looks for updated preferences in
+                http://example.com/updates/managed-settings.xml.</p><p>The
+                    <filepath>managed-settings.xml</filepath> file can override and control any
+                client preference, including hidden configuration preferences and preferences in the
+                client user interface. Many preferences can also be set as read-only by specifying a
+                locked="true" attribute for the preference. </p><p>The client settings which can be
+                managed using managed-settings.xml are listed in <xref
+                    href="config_client_pref_tables.dita"/> as well as its subtopics.</p><p>There is
+                a separate configuration file: managed-community-configs.xml which is used to manage
+                or change client connectivity and connection preferences. See the topic: <xref
+                    href="admin_st_mng_remotecomm.dita"/>.</p><note><tm tmtype="reg"
+                    trademark="Sametime">Sametime</tm> embedded clients for <tm tmtype="reg"
+                    trademark="Notes">Notes</tm> can also be managed through the <tm tmtype="reg"
+                    trademark="Domino">Domino</tm> Desktop policy settings document.
+                </note><p>Follow these steps to create and post a
+                    <filepath>managed-settings.xml</filepath> file.</p></context>
+<steps>
+<step><cmd>Create a settings XML file and save it as <filepath>managed-settings.xml</filepath>.</cmd>
+</step>
+<step><cmd>Define preferences in the settings XML file.</cmd></step>
+<step>
+                <cmd>Place the <filepath>managed-settings.xml</filepath> file on a web server to
+                    host the file.</cmd>
+            </step>
+            <step>
+                <cmd>Update the Sametime Policy for the user in the
+                        <filepath>policies.user.xml</filepath> file.</cmd>
+            </step>
+</steps>
+<result>Changes take effect the next time the user starts Sametime. Settings found in the
+                <filepath>managed-settings.xml</filepath> take precedence over matching settings in
+            the <filepath>plugin_customization.ini</filepath> file.</result>
+<postreq>To test changes in a <filepath>managed-settings.xml</filepath> file, create a policy set
+            that includes the administration update site URL and place the .xml file in the location
+            specified by the update site URL. Apply the policy to yourself and log in to the client
+            to verify the preferences. <p>To troubleshoot managed settings, see <xref
+                    href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0038860"
+                    format="html" scope="external">Troubleshooting Sametime Managed
+                Settings</xref>.</p></postreq>
+</taskbody>
+
+</task>
+

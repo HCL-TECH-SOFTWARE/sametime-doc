@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_client_connect_pref" xml:lang="en-us">
+<title>Selecting preferences in the client</title>
+<shortdesc>In the <uicontrol>Preferences</uicontrol> dialog of the <tm tmtype="reg" trademark="HCL"
+   >HCL</tm>
+  <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client and the <tm tmtype="reg"
+   trademark="Notes">Notes</tm> client, users can choose any <tm tmtype="reg"
+   trademark="Sametime">Sametime</tm> preferences that have not been locked by the
+  administrator.</shortdesc>
+<taskbody>
+<steps>
+<step><cmd>Log in to the client.</cmd></step>
+<step><cmd>Depending on the client, open preferences: </cmd><info><p>Embedded in the <tm tmtype="reg" trademark="Notes">Notes</tm> client - Click <menucascade>
+       <uicontrol>File</uicontrol>
+       <uicontrol>Preferences</uicontrol>
+       <uicontrol>Sametime</uicontrol>
+      </menucascade>.</p><p>In the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client - Click the
+       <uicontrol>Actions and Preferences</uicontrol> menu (the gear icon).</p></info></step>
+<step><cmd>Click a feature in the features list.</cmd></step>
+<step><cmd>Select the preferred behavior for that feature, and then
+click <uicontrol>Apply</uicontrol>.</cmd></step>
+<step><cmd>Click <uicontrol>OK</uicontrol>.</cmd></step>
+</steps>
+<result>Any preferences set using this method can be overwritten by <tm tmtype="reg"
+    trademark="Sametime">Sametime</tm> policies. Preferences set using this method are stored in the
+   end-user's profile directory either within an XML document or a .pref file. <draft-comment>Where
+    are preferences stored for <tm tmtype="reg" trademark="Sametime">Sametime</tm> Embedded Client
+    in <tm tmtype="reg" trademark="Notes">Notes</tm> client?</draft-comment></result>
+
+</taskbody>
+
+</task>

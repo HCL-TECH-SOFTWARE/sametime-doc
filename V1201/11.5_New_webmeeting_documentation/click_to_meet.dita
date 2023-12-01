@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Inc?>
+<task id="click_to_meet.dita" xml:lang="en-us">
+ <title>Click to meet</title>
+ <shortdesc>Click to meet lets you start a meeting through a Third party conferencing application
+    from the chat conversation. The <uicontrol><image href="Images/launchmeeting.png"/> Launch
+      Meeting and Send Invitation</uicontrol> option appears as a button on the chat conversation
+    window. When you click the button, an invitation is sent in the chat window, and the Sametime
+    Meeting URL displays. </shortdesc>
+</task>
+<?Pub *0000000530?>
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
+ "concept.dtd">
+<?Pub Sty _display FontColor="red"?>
+<concept id="preventing_data_leak" xml:lang="en-us">
+  <title>Preventing Data Leaks</title>
+  <shortdesc>With Android Enterprise, data can be copied and pasted between applications within the Work profile since they have been approved by the company Android Enterprise administrator.</shortdesc>
+  <conbody><p>Similarly, the screen capture capability is controlled through the EMM administration console for all applications managed within the work profile. Attachments and files can be shared with other applications with the work profile since those applications are also approved and managed.</p></conbody></concept>
+<?Pub *0000001020?>

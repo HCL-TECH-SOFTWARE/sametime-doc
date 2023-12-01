@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en-us"><title>HCL Sametime Meetings Users Guide</title>
+<topicmeta>
+<copyright>
+<copyryear year="1998"/>
+<copyryear year="2022"/>
+<copyrholder/>
+</copyright>
+</topicmeta>
+        <topicref href="c_client_user_guide.dita">
+                <topicref href="c_getting_started.dita" navtitle="Getting started">
+                        <topicref href="system_requirements.dita"/>
+                        <topicref href="t_keyboard_shortcuts.dita"/>
+                        <topicref href="c_whats_new.dita"/>
+                        <topicref href="t_loggingin.dita" navtitle="Logging In"/>
+                        <topicref href="join_meetings.dita">
+                                <topicref href="c_instant_meetings.dita"/>
+                                <topicref href="c_meetings_moderated.dita"/>
+                                <topicref href="t_dialout_invite.dita"/>
+                                <topicref href="c_meetings_telephony.dita"/>
+                        </topicref>
+                        <topicref href="t_usingthemainscreen.dita" navtitle="Using the Main Menu"/>
+                        <topicref href="create_meetings.dita">
+                                <topicref href="t_personal_room.dita"/>
+                                <topicref href="generate_meetings.dita"/>
+                                <topicref href="t_create_moderated.dita"/>
+                        </topicref>
+                        <topicref href="manage_meetings.dita" navtitle="Managing your meeting">
+                                <topicref href="meetings_moderated_management.dita"/>
+                                <topicref href="t_generate_report.dita"/>
+                        </topicref>
+                </topicref>
+                <topicref href="user_friendly.dita">
+                        <topicref href="chat_others.dita"/>
+                        <topicref href="raise_hand.dita"/>
+                        <topicref href="mute_unmute.dita"/>
+                        <topicref href="enable_disable.dita"/>
+                        <topicref href="start_stop_camera.dita">
+                                <topicref href="additional_mac.dita"/>
+                        </topicref>
+                        <topicref href="leave_meeting.dita"/>
+                        <topicref href="share_screen.dita"/>
+                        <topicref href="manage_video.dita"/>
+                        <topicref href="t_change_background.dita">
+                                <topicref href="t_virtual_background_before.dita"/>
+                                <topicref href="t_change_background_during.dita"/>
+                                <topicref href="t_virtual_background_1.dita"/>
+                        </topicref>
+                        <topicref href="youtube_share_video.dita" navtitle="Sharing a YouTube video"/>
+                        <topicref href="screen_size.dita"/>
+                        <topicref href="copy_meeting.dita"/>
+                        <topicref href="camera_microphone.dita"/>
+                </topicref>
+                <topicref href="participant_list.dita">
+                        <topicref href="t_waiting_room.dita"/>
+                        <topicref href="youtube_start_livestream.dita"
+                                navtitle="Sharing a YouTube video"/>
+                        <topicref href="record_meeting.dita"/>
+                        <topicref href="lock_meeting.dita"/>
+                        <topicref href="end_meeting.dita"/>
+                </topicref>
+        </topicref>
+</map>

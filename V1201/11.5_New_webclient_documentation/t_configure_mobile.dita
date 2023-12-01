@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN"
+ "task.dtd">
+<?Pub Sty _display FontColor="red"?>
+<?Pub Inc?>
+<task id="t_configure_mobile" xml:lang="en-us">
+<title>Configuring a mobile device for chats</title>
+<?Pub Caret 3?>
+<shortdesc>You can use your mobile device as your chat client using the QR code provided in the
+      <wintitle>Settings</wintitle> menu.</shortdesc>
+<taskbody>
+<context> Using the HCL Sametime app allows you to synchronize communicate across devices which is
+      secure and persistent. The app can be found in your app store for Android and iOS
+      devices.</context>
+<steps>
+<step>
+<cmd>Click the menu icon ( <image alt="menu icon" href="Images/menu.png" placement="inline"
+id="menu"/>) in the navigator and select <menucascade>
+<uicontrol>Settings</uicontrol>
+<uicontrol>Configure Mobile Client</uicontrol>
+</menucascade>.</cmd>
+</step>
+   <step>
+    <cmd>Install the HCL Sametime app on your mobile device.</cmd>
+   </step>
+<step>
+    <cmd>After the install completes, start the app.</cmd>
+    <info>After the app starts, you have the option to scan a QR code or to manually configure the
+     app for your community. The following instructions are for using the QR code.</info>
+   </step>
+      <step>
+        <cmd>Using your mobile device, scan the QR Code.</cmd>
+        <info>Point the mobile device camera at a Sametime community QR code. If the code is valid.
+          it captures the community configuration and opens the <wintitle>Add Community</wintitle>
+          screen on the mobile device.</info>
+      </step>
+      <step>
+        <cmd>Confirm the settings and tap <uicontrol>Validate</uicontrol> to verify the community
+          with your server.</cmd>
+      </step>
+   <step>
+    <cmd>Enter your credentials.</cmd>
+    <info>You can save your password for future logins, by turning on <uicontrol>Remember
+      Password</uicontrol>. </info>
+   </step>
+   <step>
+    <cmd>Tap <menucascade>
+      <uicontrol>Save</uicontrol>
+      <uicontrol>Yes</uicontrol>
+     </menucascade> to store your information.</cmd>
+   </step>
+   <step>
+    <cmd>Respond to the license agreement.</cmd>
+    <info>The log-in screen opens. Enter your password and select your status. Click <uicontrol>Log
+            In</uicontrol> to access the chat community.</info>
+   </step>
+</steps>
+</taskbody>
+</task>

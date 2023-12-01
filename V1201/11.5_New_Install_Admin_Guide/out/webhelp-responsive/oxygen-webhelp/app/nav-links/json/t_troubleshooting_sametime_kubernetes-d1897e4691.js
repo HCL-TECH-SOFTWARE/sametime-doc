@@ -1,0 +1,1 @@
+define({"topics":[{"title":"Capturing a network trace in a pod","shortdesc":"<p class=\"shortdesc\"\/>","href":"troubleshooting_kubernetes_pod_networktrace.html","attributes":{"data-id":"troubleshooting_kubernetes_pod_networktrace"},"menu":{"hasChildren":false},"tocID":"troubleshooting_kubernetes_pod_networktrace-d1897e4707","topics":[]}]});

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="ports_sametime" xml:lang="en-us">
+    <title>Ports used by Sametime services</title>
+    <shortdesc>Sametime services use several ports for communication. If firewalls are in use in
+        your environment, all traffic on these ports should be permitted
+        bidirectionally.</shortdesc>
+<conbody>
+        <table frame="all" rowsep="1" colsep="1" id="table_jjw_3p5_qtb">
+            <title>Ports used by Sametime services</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="2.14*"/>
+                <thead>
+                    <row>
+                        <entry>Port Number</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>80</entry>
+                        <entry>Used to listen for HTTP communications. All communication over this
+                            port is redirected to HTTPS port 443. Port 80 is the default port
+                            assigned during the product install process. </entry>
+                    </row>
+                    <row>
+                        <entry>389 </entry>
+                        <entry>Used for unsecure communications from the Sametime server to the LDAP
+                            server. </entry>
+                    </row>
+                    <row>
+                        <entry>443 </entry>
+                        <entry>Used for HTTP commnications over a secure connection. </entry>
+                    </row>
+                    <row>
+                        <entry>636 </entry>
+                        <entry>Use for secure communications with LDAP for directory services.
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>1516 </entry>
+                        <entry>Used as an internal port between the community and proxy
+                            pods.</entry>
+                    </row>
+                    <row>
+                        <entry>1533</entry>
+                        <entry>Used to listen for direct TCP/IP connections from Sametime Connect
+                                clients.<p>A <term>Direct</term> TCP/IP connection is when a
+                                Sametime client uses a unique Sametime protocol over TCP/IP to
+                                establish a connection with community services.</p></entry>
+                    </row>
+                    <row>
+                        <entry>1935</entry>
+                        <entry>Used when streaming YouTube videos.</entry>
+                    </row>
+                    <row>
+                        <entry>5280, 5222</entry>
+                        <entry> In Kubernetes environments, for websockets to function properly the
+                            video pods using node port must be able to reach the service Cluster IP
+                            for Jitsi on ports 5280 and 5222. <p>See the <xref
+                                    href="https://support.hcltechsw.com/csm?id=kb_article&amp;sysparm_article=KB0101583"
+                                    format="html" scope="external">Websockets fail to load after
+                                    installing Sametime 11.6 or 12.0.x on Kubernetes</xref> article
+                                for more information.</p></entry>
+                    </row>
+                    <row>
+                        <entry>10000</entry>
+                        <entry>Used by audio and video clients to stream media data when deploying
+                            Sametime on Docker. </entry>
+                    </row>
+                    <row>
+                        <entry>19302</entry>
+                        <entry>This UDP port is the default STUN port used by both the client and
+                            meeting server for NAT traversal.</entry>
+                    </row>
+                    <row>
+                        <entry>27017</entry>
+                        <entry>Used for communication with the MongoDB. </entry>
+                    </row>
+                    <row>
+                        <entry>30000</entry>
+                        <entry>Used by audio and video clients to stream media data when deploying
+                            Sametime on Kubernetes.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="config_client_conn_host" xml:lang="en-us">
+<title>Defining the host server and port for connecting to a Sametime server</title>
+<shortdesc>The Sametime Connect client uses the <uicontrol>Host</uicontrol> and <uicontrol>Server
+   community port</uicontrol> preferences to determine the host name and port it should use when
+  attempting a connection to the Sametime server. This section also includes optional steps for
+  configuring client with the Sametime Mux. </shortdesc>
+<taskbody>
+<prereq>Verify the <uicontrol>Connectivity</uicontrol> settings for client Connections set for the
+   Sametime server. The client&apos;s successful connection depends on defining the correct
+    <uicontrol>host name</uicontrol>, <uicontrol>port</uicontrol>, and <uicontrol>connection
+    method</uicontrol> for the server.<ul>
+    <li>In the <uicontrol>Client Connections</uicontrol> section, type the fully qualified host name
+     and port from which services listen for direct TCP/IP Connections and HTTP-tunneled Connections
+     from the services clients. </li>
+    <li>In the <uicontrol>HTTP Tunneled Client Connections</uicontrol> section, type the fully
+     qualified Host Name and Port from which Community Services clients can make HTTP-tunneled
+     Connections to the services multiplexer. Services clients can make HTTP-tunneled connections on
+     both ports 80 and 8082 by default.</li>
+    <li>In the <uicontrol>HTTPS Tunneled Client Connections</uicontrol> section, type the fully
+     qualified Host Name and Port from which the Community Services clients attempt HTTPS
+     Connections when accessing the Sametime server through an HTTPS proxy server.</li>
+   </ul></prereq>
+<context><p>Follow these instructions to define the host server and
+port for a server community.</p>
+ <p>Follow these instructions to define the host server and port for a server community. </p>
+<ol>
+ <li>From the Sametime Connect client, click <uicontrol>File</uicontrol> > <uicontrol>Preferences</uicontrol>.</li>
+ <li>Select <uicontrol>Server Communities</uicontrol>. </li>
+ <li>Do one of the following:  
+ <ul>
+  <li>To add a new server connection, click <uicontrol>Add New Server Community</uicontrol>. </li>
+  <li>To change an existing server connection, expand the <uicontrol>Server Community list</uicontrol> and select the community name. </li>
+ </ul></li>
+ <li>For an existing community, proceed to the next step. For a new community, provide a community name and log in information.</li>
+ <li>Click the <uicontrol>Connection tab</uicontrol>. </li>
+ <li>Provide a host server and port. The method chosen for connecting to the server may also affect the Host server and port you use here. 
+ <ul>
+  <li>Host server </li>
+  <li>The client connects most efficiently when the Host server matches the home Sametime server defined in the user's Person document. </li>
+  <li>If you have set up a rotating DNS system for load balancing, specify the DNS name (<b>for example,</b> <codeph>sametime.cscluster.com</codeph>) of the rotating DNS system in this field. </li>
+  <li>If you have configured the environment to support load balancing, users must enter the fully qualified host name of the Load Balancer Server in this field. </li>
+  <li>Server community port </li>
+  <li>The method you choose for connecting to the server also affects the port setting.
+   <p><b>For example,</b> if you choose Direct connection using HTTP protocol and the client that operates behind a firewall that only allows outbound Connections on port 80, you must change the default port from 1533 to port 80.</p></li></ul></li>
+ <li>For an existing community, click <uicontrol>OK</uicontrol> to close the Preferences window. </li>
+ <li>For a new community, click OK to save and then OK to close the Preferences window. </li>
+</ol>
+ <p><b>Configuring client connectivity to the Sametime Community Mux</b></p>
+ <p>After you have configured the stand-alone <tm tmtype="reg" trademark="HCL">HCL</tm>
+  <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community Mux, give users the fully qualified
+  host name of the server and instruct them to set up their <tm tmtype="reg" trademark="Sametime"
+   >Sametime</tm> Connect Client preferences to connect to the multiplexer instead of directly to
+  the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community Server.</p>
+ <p>Each user must update the <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+  Connect Client with the DNS name of the <tm tmtype="reg" trademark="Sametime">Sametime</tm>
+  Community Mux server. If you have deployed multiple <tm tmtype="reg" trademark="Sametime"
+   >Sametime</tm> Community Mux servers, distribute users evenly among the servers. For example,
+  with two multiplexers, direct half of your users to use multiplexer 1 and the other half to use
+  multiplexer 2.</p>
+<p><b>Procedure</b></p>
+<ol>
+ <li>Open <tm tmtype="reg" trademark="Sametime">Sametime</tm> Connect Client.</li>
+ <li>Choose <menucascade><uicontrol>File</uicontrol><uicontrol>Preferences</uicontrol>
+  <uicontrol>Server Communities</uicontrol></menucascade>.</li>
+ <li>In the<uicontrol> Server Community</uicontrol> field, type the fully qualified host name of
+  the <tm tmtype="reg" trademark="Sametime">Sametime</tm> Community Mux server, such as
+  <userinput>messaging.example.com</userinput>, as instructed by the administrator.</li>
+</ol></context>
+</taskbody>
+</task>
+

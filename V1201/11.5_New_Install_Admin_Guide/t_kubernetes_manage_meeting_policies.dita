@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="t_kubernetes_manage_meeting_policies">
+    <title>Managing policies on Kubernetes</title>
+    <shortdesc>As administrators, you define what end-users can do on a cluster to comply with
+        organization requirements. This section outlines the steps on how to manage policies in a
+        Kubernetes environment.</shortdesc>
+    <taskbody>
+        <prereq id="prereq_udp_ryc_qtb">You need to have a Kubernetes cluster, and the kubectl
+            command-line tool must be configured to communicate with your cluster.</prereq>
+        <context id="context_i1h_jvc_qtb">
+            <p>You can manage your policies on Kubernetes by modifying copies of
+                    <filepath>policies.users.xml</filepath> and
+                    <filepath>policies.servers.xml</filepath> files and adding an
+                    <parmname>overrideCommunityPolicy</parmname> parameter to
+                    <codeph>values.yaml</codeph>.</p>
+            <p>To manage your policies on Kubernetes, follow these steps:</p>
+        </context>
+        <steps id="steps_k1h_jvc_qtb">
+            <step>
+                <cmd>Copy the following extra community policy files out of the container to a local
+                    directory. </cmd>
+                <info>
+                    <codeblock id="codeblock_l1h_jvc_qtb">kubectl  exec -it &lt;podID> --container community -- cat /local/notesdata/policies.user.xml > ./policies.user.xml
+kubectl  exec -it &lt;podID> --container community -- cat /local/notesdata/policies.server.xml > ./policies.server.xml</codeblock>
+                </info>
+                <info>
+                    <note id="note_kd4_z3r_qtb">Both files are needed even if you are updating only
+                        one file.</note>
+                </info>
+                <info>
+                    <p>To find and identify the &lt;podID>, run the
+                        command:<codeblock id="codeblock_e32_2jr_qtb">kubectl get po</codeblock></p>
+                </info>
+            </step>
+            <step>
+                <cmd>Create a directory to store the extra community policy files. Move the copied
+                    files to the new directory. In the example below, the directory is called
+                        <i>extra-community-policy</i>. </cmd>
+                <info>
+                    <codeblock id="codeblock_z4j_xvc_qtb">extra-community-policy</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Switch to the <filepath>extra-community-policy</filepath> directory. Edit the
+                    policy files and save the changes.</cmd>
+            </step>
+            <step>
+                <cmd>Create the extra-community-policy ConfigMap from the directory with the policy
+                    files with the command:</cmd>
+                <info>
+                    <codeblock id="codeblock_vp3_rxc_qtb">kubectl create configmap extra-community-policy --from-file=/.</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Edit <codeph>values.yaml</codeph> and add:</cmd>
+                <info>
+                    <codeblock id="codeblock_dm5_xs2_qtb">overrideCommunityPolicy: extra-community-policy</codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Run the command:</cmd>
+                <info>
+                    <codeblock id="codeblock_jsx_ft2_qtb">helm upgrade &lt;sametime_deployment></codeblock>
+                </info>
+            </step>
+            <step>
+                <cmd>Scale the community pod.</cmd>
+                <info>
+                    <codeblock id="codeblock_x5t_qkr_qtb">kubectl scale deploy community --replicas=0
+kubectl scale deploy community --replicas=1</codeblock>
+                </info>
+            </step>
+        </steps>
+    </taskbody>
+    <task id="task_sdb_4zc_qtb">
+        <title>Updating configuration values</title>
+        <taskbody>
+            <prereq id="prereq_aqj_xzc_qtb">This procedure assumes that you have previously made
+                adjustments to your policies, following the detailed steps above. </prereq>
+            <steps>
+                <step>
+                    <cmd>Delete the ConfigMap extra-community-policy:</cmd>
+                    <info>
+                        <codeblock id="codeblock_zqy_4pr_qtb">kubectl delete cm  extra-community-policy</codeblock>
+                    </info>
+                </step>
+                <step>
+                    <cmd>Locate and edit the policies as necessary.</cmd>
+                </step>
+                <step>
+                    <cmd>Create the extra-community-policy ConfigMap:</cmd>
+                    <info>
+                        <codeblock id="codeblock_g2l_1qr_qtb">kubectl create configmap extra-community-policy --from-file=./</codeblock>
+                    </info>
+                </step>
+                <step>
+                    <cmd>Scale the community pod.</cmd>
+                    <info>
+                        <codeblock id="codeblock_slz_bqr_qtb">kubectl scale deploy community --replicas=0
+kubectl scale deploy community --replicas=1</codeblock>
+                    </info>
+                </step>
+            </steps>
+        </taskbody>
+    </task>
+</task>
