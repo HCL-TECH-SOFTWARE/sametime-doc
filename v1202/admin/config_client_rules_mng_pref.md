@@ -26,5 +26,5 @@ The following tables list the rules manager preferences for the HCL® Sametime®
 
 .|URL pointing to an XML file which defines the default call routing rules.|8.5.1 and later|
 
-**Parent topic:**[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
 

@@ -9,5 +9,5 @@ The following table lists the accessibility preferences for the HCL® Sametime®
 |useLessVerbose|Boolean. Default is false.|Specifies whether or not to set less verbose messages for screen readers \(less verbose will not read status change events and typing events in the chat window\).|7.5.1 and later|
 |useArrowKeyForQuickfind|Boolean. Default is false.|Specifies whether to use the arrow key for quick find.|8.5.1 and later|
 
-**Parent topic:**[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
 

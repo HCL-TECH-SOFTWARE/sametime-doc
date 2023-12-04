@@ -21,5 +21,5 @@ When you complete the prerequisite task, a service is created. Use the service t
     service mongod stop
 
 
-**Parent topic:**[Administering](administering.md)
+**Parent Topic: **[Administering](administering.md)
 

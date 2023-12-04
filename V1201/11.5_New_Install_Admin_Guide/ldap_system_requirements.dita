@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="ldap_system_requirements" xml:lang="en-us">
-    <title>System requirements</title>
-    <shortdesc>Sametime works with V3-compliant LDAP servers.</shortdesc>
-</concept>

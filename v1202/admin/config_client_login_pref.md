@@ -27,5 +27,5 @@ The following table lists the login preferences for the HCL® Sametime® Connect
 |resetUser|Boolean. Default is false.|Specifies whether or not to reset user information when the client starts.|7.5.1 and later|
 |displayAuthServerSSO|Boolean. Default is true.|Specifies whether or not to display Authentication server information in the community Log In tab.|7.5.1 and later|
 
-**Parent topic:**[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
 

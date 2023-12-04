@@ -7,14 +7,12 @@ To install a new version or fix pack, the following conditions must be satisfied
 -   HCL Sametime 12 version is installed and configured
 -   Sametime server has access to a MongoDB server
 
--   **[Installing a fix pack on Docker](upgrade_install_fixpack_docker.md)**  
+-   **[Upgrading on Docker](upgrade_install_fixpack_docker.md)**  
 
--   **[Installing a fix pack on Kubernetes](upgrade_install_fixpack_kubernetes.md)**  
-
--   **[Reverting to a previous version on Docker](upgrade_revert_docker.md)**  
-
+-   **[Upgrading on Kubernetes](upgrade_install_fixpack_kubernetes.md)**  
+The Sametime upgrade packages contain full helm charts.
 -   **[Reverting to a previous version on Kubernetes](upgrade_revert_kubernetes.md)**  
 
 
-**Parent topic:**[Migrating and Upgrading](migrating.md)
+**Parent Topic: **[Migrating and Upgrading](migrating.md)
 

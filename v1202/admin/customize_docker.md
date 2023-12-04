@@ -1,4 +1,6 @@
-# Adding corporate branding to meeting pages using Docker {#customize_docker .task}
+# Adding corporate branding to meeting pages using Docker or Podman {#customize_docker .task}
+
+The Docker and Podman commands are similar. The only difference is that docker precedes the command when issued in a Docker environment and podman precedes the name in a Podman environment. Example commands used in the Sametime documentation are shown using Docker. For Podman, change docker to podman.
 
 1.  To customize the product name, product logo, and banner edit the custom.env file in the directory where the installation package was decompressed.
 
@@ -10,19 +12,19 @@
             REACT_APP_PRODUCT_NAME=new\_product\_name
             ```
 
-        -   To change the logo, add the following statement specifying the location and name of the new logo. The image file can be any size. It is re-sized to approximately 260x260 pixels.
+        -   To change the logo used in meeting pages, add the following statement specifying the location and name of the new logo. The image file can be any size. It is re-sized to approximately 260x260 pixels.
 
             ``` {#codeblock_acs_srq_dvb}
-            REACT_APP_PRODUCT_LOGO_URL=https://meetings.hcl-showcase.com/images/branding/Showcase_Logo.jpg
+            REACT_APP_PRODUCT_LOGO=https://meetings.hcl-showcase.com/images/branding/Showcase_Logo.jpg
             ```
 
-            The logo can either be a URL to an accessible image like https://mycompany.com/assets/logo.png or it can be an absolute path like /images/branding/my-logo.png. If you use the absolute path, the image must be placed on the system using the following command.
+            You can specify the relative or full URL to the logo. If you use the relative URL, the image must be placed on the system using the following command.
 
             ``` {#codeblock_kzz_grf_htb}
             cp my-logo.png sametime-config/web/branding/.
             ```
 
-            Add the following statement containing the URL to the Sametime server where you access meetings. This is used for gathering meeting reports.
+            Add the following statement containing the URL to the Sametime server where you access meetings. This is used for meeting reports.
 
             ``` {#codeblock_i5p_p33_3tb}
             REACT_APP_PRODUCT_LOGO_URL=https://meetings.hcl-showcase.com/images/branding/Showcase_Logo.jpg"
@@ -64,5 +66,5 @@
     You must specify at a minimum the app-app-512x512.png file. When it is the only file available, it also used for the app-192x192.png file.
 
 
-**Parent topic:**[Adding corporate branding to meeting pages](customize_branding.md)
+**Parent Topic: **[Adding corporate branding to meeting pages](customize_branding.md)
 

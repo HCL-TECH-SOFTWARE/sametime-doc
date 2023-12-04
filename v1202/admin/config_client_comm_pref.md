@@ -47,5 +47,5 @@ The following tables list the default community preferences and alternate commun
 |altCommunityConfig.altHost.altHostID.loginByToken|Boolean|Determines if the client logs in by token. If the token login fails and the password is available, the client attempts password-based authentication instead.|
 |tryLastSuccesfulConfigFirst|Boolean. Default is true.|Determines if the client first tries the alternate community it last connected to successfully. If you change the value to false, the client always attempts Connections to the alternate communities in the default priority order set in the managedIDs list, regardless of which alternate community connection was successful last.|
 
-**Parent topic:**[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
 

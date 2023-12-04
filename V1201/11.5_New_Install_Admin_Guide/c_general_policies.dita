@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="c_general_policies">
-    <title>General policies</title>
-    <shortdesc>General policies apply to all clients. This section describes the unique response of
-        the mobile client to these policies. </shortdesc>
-</concept>

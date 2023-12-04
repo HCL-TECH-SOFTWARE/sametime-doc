@@ -41,9 +41,9 @@ The changes in this task affect the following pods:
 
         ``` {#codeblock_cyr_2sc_mvb}
         
-        - name: ldap-custom-filter 
-        configMap: ldap-custom-filter
-        name: 
+          - name: ldap-custom-filter 
+            configMap: ldap-custom-filter
+               name: 
         ```
 
     3.  Correct the indentation using only spaces so that the alignment of the new lines is the same as the lines above it. When finished it should look like the following:
@@ -64,13 +64,23 @@ The changes in this task affect the following pods:
         kubectl get pods
         ```
 
-    4.  Run the following command to pull a copy of the StCommunityConfig.xml file, specifying the name of the pod.
+    4.  Pull a copy of the StCommunityConfig.xml file from the community pod.
 
-        ``` {#codeblock_ugr_ttw_fvb}
+        Run the following command, where podname is the pod name found in the previous step.
+
+        ``` {#codeblock_yb3_ntx_dyb}
          kubectl exec -it pod\_name --container community -- cat /local/notesdata/StCommunityConfig.xml >./StCommunityConfig.xml 
         ```
 
-    5.  Update the configuration that pertains to your custom Java class. Open the StCommunityConfig.xml file that was just copied to your machine. Then edit the `<LDAP>` section as it pertains to your configuration. The changes depend on what you are modifying, refer to the following table for guidance.
+    5.  Pull a copy of the StCommunityConfig.xml file from the community pod.
+
+        Run the following command, where podname is the pod name which is the same as the previous step.
+
+        ``` {#codeblock_z4r_ntx_dyb}
+         kubectl exec -it pod\_name --container community -- cat /local/notesdata/StCommunityConfig.xml >./StCommunityConfig.xml 
+        ```
+
+    6.  Update the configuration that pertains to your custom Java class. Open the StCommunityConfig.xml file that was copied to your machine. Then edit the `<LDAP>` section as it pertains to your configuration. The changes depend on what you are modifying, refer to the following table for guidance.
 
         |Type of change|Parameter name|What to specify|Example|
         |--------------|--------------|---------------|-------|
@@ -78,9 +88,9 @@ The changes in this task affect the following pods:
         |Search filter for resolving group names|GroupResolveFilter|Class name and method name for a group filter, using the following format: `Classname.methodname()`|`StLdapCustomized.groupsResolveFilter()`.|
         |Attribute of the person entry that defines the person's name|DescAttribute|Class name and method name for the formatting, with the name of the attribute inside, for example: Classname.methodname\(attribute\_name\)|`StLdapCustomizedAttributes.displayName(cn)`|
 
-    6.  Save and close the StCommunityConfig.xml file.
+    7.  Save and close the StCommunityConfig.xml file.
 
-    7.  Ensure you are in the extra-community-config directory that was created earlier then run the following command to create the secret.
+    8.  Ensure you are in the extra-community-config directory that was created earlier then run the following command to create the secret.
 
         ``` {#codeblock_x4d_2qd_gvb}
          kubectl create secret generic extra-community-config --from-file=./ 
@@ -88,17 +98,17 @@ The changes in this task affect the following pods:
 
         **Note:** If you have a namespace dedicated to Sametime, add the -n argument with your namespace to ensure it is created in the correct namespace.
 
-    8.  Change to the helm directory where the Sametime installation package was decompressed.
+    9.  Change to the helm directory where the Sametime installation package was decompressed.
 
-    9.  Open thevalues.yaml file and place in edit mode.
+    10. Open thevalues.yaml file and place in edit mode.
 
-    10. Add the following line.
+    11. Add the following line.
 
         ``` {#codeblock_qfm_kqd_gvb}
         overrideCommunityConfigSecret: extra-community-config
         ```
 
-    11. Save and close the values.yaml file.
+    12. Save and close the values.yaml file.
 
 4.  Apply your changes to the environment.
 
@@ -132,5 +142,5 @@ The changes in this task affect the following pods:
         ```
 
 
-**Parent topic:**[Creating custom Java classes for searching LDAP](creating_custom_java.md)
+**Parent Topic: **[Creating custom Java classes for searching LDAP](creating_custom_java.md)
 

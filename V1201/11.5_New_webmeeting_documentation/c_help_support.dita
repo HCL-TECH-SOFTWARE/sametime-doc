@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
- "concept.dtd">
-<?Pub Sty _display FontColor="red"?>
-<concept id="help_support" xml:lang="en-us">
-<title>Help and Support</title>
- <shortdesc>Tap the <uicontrol>Menu</uicontrol> icon and then <uicontrol>Help&#38;Support</uicontrol> to display the Help and Support screen. From here you can display this help or view Logs and optionally send them to Support.</shortdesc>
-</concept>
-<?Pub *0000001020?>

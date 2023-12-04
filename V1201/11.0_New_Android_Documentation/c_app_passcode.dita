@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
- "concept.dtd">
-<?Pub Sty _display FontColor="red"?>
-<concept id="app_passcode" xml:lang="en-us">
-  <title>App Passcodes</title>
-  <shortdesc>Starting with Android 7, app passcodes can be configured for the work profile so when an Android Enterprise application is launched, the passcode must be entered. This capability is dependent on your specific EMM provider support.</shortdesc></concept>
-<?Pub *0000001020?>

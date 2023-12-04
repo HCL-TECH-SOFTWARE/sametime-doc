@@ -160,5 +160,5 @@ This example consolidates multiple communities with various hosts into a single 
 </managed-communities>
 ```
 
-**Parent topic:**[Updating connectivity settings with the managed-community-configs.xml file](admin_st_mng_remotecomm.md)
+**Parent Topic: **[Updating connectivity settings with the managed-community-configs.xml file](admin_st_mng_remotecomm.md)
 

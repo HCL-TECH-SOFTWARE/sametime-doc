@@ -1,6 +1,6 @@
 # Installing Docker {#installing_docker .task}
 
-This section provides information on installing Docker.
+This section provides information on how to install Docker.
 
 All commands provided require running as ROOT or SUDO access. If not running as root user, preface all commands with sudo.
 
@@ -106,5 +106,5 @@ All commands provided require running as ROOT or SUDO access. If not running as 
     ![](Images/docker_service.png)
 
 
-**Parent topic:**[Installing Sametime in a Docker environment](installation_sametime_docker.md)
+**Parent Topic: **[Installing Sametime in a Docker or Podman environment](installation_sametime_docker.md)
 

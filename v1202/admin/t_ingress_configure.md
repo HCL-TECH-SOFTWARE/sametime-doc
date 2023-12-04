@@ -1,8 +1,6 @@
 # Configuring Ingress for Mux {#t_ingress_configure .task}
 
-
-
-Complete the steps in the topic [Installing Ingress](t_ingress_install.md) It is recommended to save the file that you are creating as a result of this topic. Do not save the file in the helm folder, save it at the root directory or sub-directory where the Sametime installation package was unzipped.
+Complete the steps in the topic [Installing Ingress](t_ingress_install.md). It is recommended to save the file that you are creating as a result of this topic. Do not save the file in the helm folder; save it at the root directory or sub-directory where the Sametime installation package was unzipped.
 
 Sametime mux serves connections from Sametime Connect and embedded clients on port 1533. This connection can be routed through the ingress controller as well. This is suitable for an on-premise Kubernetes cluster.
 
@@ -38,5 +36,7 @@ If you are deploying in a cloud hosted Kubernetes environment \(Google Kubernete
     ```
 
 
-**Parent topic:**[Installing Ingress](t_ingress_install.md)
+Verify the service. For more information, see [Testing Sametime chat and meeting clients](t_testing_sametime_chat.md).
+
+**Parent Topic: **[Installing Ingress](t_ingress_install.md)
 

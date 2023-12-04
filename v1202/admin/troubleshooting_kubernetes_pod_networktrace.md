@@ -47,7 +47,7 @@
 7.  To stop and save the capture press Ctrl+C.
 
 
-**Parent topic:**[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
+**Parent Topic: **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
 
 [Transferring files from a pod to a Linux shell](troubleshooting_kubernetes_transfer_pods.md)
 

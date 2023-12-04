@@ -1,8 +1,8 @@
-# Disable sharing of meetings recording {#disable_sharing_meetings .task}
+# Disable sharing of meeting recording {#disable_sharing_meetings .task}
 
 By default meeting recordings can be shared with others. You can change a setting to disable sharing of meeting recordings.
 
-To disable sharing of meetings recordings, set the `SHARE_RECORDINGS_BY_DEFAULT` parameter to false on the Meetings server. When the value is set to false, the option to share recordings when editing meeting settings or stopping a recording is not available.
+To disable sharing of meetings recordings, set the SHARE\_RECORDINGS\_BY\_DEFAULT parameter to false on the Meetings server. When the value is set to false, the option to share recordings when editing meeting settings or stopping a recording is not available.
 
 -   For Docker, change `SHARE_RECORDINGS_BY_DEFAULT` setting in the custom.env file.
 
@@ -17,5 +17,5 @@ To disable sharing of meetings recordings, set the `SHARE_RECORDINGS_BY_DEFAULT`
     ```
 
 
-**Parent topic:**[Meetings](meetings_configuring.md)
+**Parent Topic: **[Meetings](meetings_configuring.md)
 

@@ -1,6 +1,8 @@
-# Disabling secure rooms on Docker {#secure_rooms_docker .task}
+# Disabling secure rooms on Docker and Podman {#secure_rooms_docker .task}
 
-1.  Edit the docker-compose.yaml file.
+The Docker and Podman commands are similar. The only difference is that docker precedes the command when issued in a Docker environment and podman precedes the name in a Podman environment. Example commands used in the Sametime documentation are shown using Docker. For Podman, change docker to podman.
+
+1.  Edit the docker-compose.yml file.
 
 2.  Locate the `STCONF_MEETING_SECUREUSERROOMNAME` variable in the Proxy section and set the value to `false`.
 
@@ -21,5 +23,5 @@
         ```
 
 
-**Parent topic:**[Disabling secure meeting room names](secure_rooms.md)
+**Parent Topic: **[Disabling secure meeting room names](secure_rooms.md)
 

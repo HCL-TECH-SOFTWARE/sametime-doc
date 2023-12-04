@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="installation_sametime" xml:lang="en-us">
-<title>Installing Sametime</title>
-<shortdesc>You can install Sametime Premium and Sametime in a Docker or Kubernetes container
-        environment.</shortdesc>
-</concept>

@@ -2,6 +2,12 @@
 
 This section provides information on administering on Sametime environments.
 
+-   **[Sametime Admin overview](adminui_overview.md)**  
+The Sametime Admin is a web access interface used to work with policies and analytic data related to Sametime Meetings and chat features.
+-   **[Managing policies](adminui_policy_manage.md)**  
+Sametime policies allow administrators to control user access to features.
+-   **[Monitoring your meeting and chat metrics with Grafana](adminui_grafana_overview.md)**  
+Sametime uses the third-party software, Grafana, to generate insightful graphs and visualizations derived from time-series database \(TSDB\) data. Integrating Grafana into your Sametime environment allows you to see analytic metrics about Sametime meetings and chats on a Grafana dashboard. The metrics can be used to monitor Sametime usage and resources.
 -   **[Managing Sametime clients](managing_sametime_client_preferences.md)**  
 This section provides information on managing Sametime clients.
 -   **[Managing file transfer data](t_managing_transfer_data.md)**  
@@ -12,16 +18,22 @@ This article assumes that you have successfully installed and configured Sametim
 Starting and stopping the Sametime server involves starting and stopping the Sametime services running in the container management system.
 -   **[Starting and stopping MongoDB](starting_and_stopping_mongodb.md)**  
 
--   **[Managing policies](managing_policies.md)**  
-Sametime policies allows administrators to control user access to features.
--   **[Community configuration files](configuration_files.md)**  
+-   **[Configuration files](configuration_files.md)**  
 Configuration files maintain information used by the Sametime server for various reasons.
 -   **[Enabling multi-tenancy](configuring_multi_tenacy.md)**  
 Multi-tenancy allows multiple organizations to be part of the Sametime community. With multi-tenancy, Sametime users can chat, add users and groups to contact lists, and have awareness of users in their organization or in other organizations that are configured to be visible to them.
+-   **[Using the Sametime Database utility](c_dbutility.md)**  
+The Sametime Database utility is used to synchronize the information with that of the Sametime server database.
 -   **[MongoDB](administering_mongodb.md)**  
 This section provides information relating to administering MongoDB.
+-   **[Defining chat message deletion limits](chat_msg_delete_options.md)**  
+The chat deletion settings define how long a user has the ability to delete a message and undo the deletion. The default deletion time is twenty-four hours and one hour to undo the deletion.
 -   **[Managing Sametime Meetings](sametime_meeting_administering.md)**  
 This topic explains the features you can enable or disable for meetings. Currently, the settings that you can change are global settings that apply to the entire server. User policies cannot control the settings.
+-   **[Disabling the mobile notification limiter on Docker or Podman](t_disable_rate_limiter_docker.md)**  
+Sametime sends notifications to mobile devices \(phones and tablets\) through the Apple Push Notification service \(APNs\) for Apple and through the Google Firebase Cloud Messaging service \(FCM\) for Android. Sametime includes a mobile notification limiter service that monitors various conditions to help ensure that mobile device notifications are sent at appropriate times and frequencies. By default, the service monitors whether multiple clients are active, which client was most recently active, and whether messages have been read, and might limit the notifications to avoid redundancy. You can disable the notification limiter to send notifications to all connected clients.
+-   **[Disabling the mobile notification limiter on Kubernetes](t_disable_rate_limiter_kubernetes.md)**  
+Sametime sends notifications to mobile devices \(phones and tablets\) through the Apple Push Notification service \(APNs\) for Apple and through the Google Firebase Cloud Messaging service \(FCM\) for Android. Sametime includes a mobile notification limiter service that monitors various conditions to help ensure that mobile device notifications are sent at appropriate times and frequencies. By default, the service monitors whether multiple clients are active, which client was most recently active, and whether messages have been read, and might limit the notifications to avoid redundancy. You can disable the notification limiter to send notifications to all connected clients.
 
-**Parent topic:**[HCL Sametime Administration Guide 12.0.1](administrator_doc.md)
+**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 

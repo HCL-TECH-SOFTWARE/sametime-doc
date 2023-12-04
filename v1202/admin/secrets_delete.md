@@ -14,5 +14,5 @@ The following example shows the command to delete extra-community-configs secret
  kubectl delete secret extra-community-configs
 ```
 
-**Parent topic:**[Managing secrets in Kubernetes](managing_secrets_kubernetes.md)
+**Parent Topic: **[Managing secrets in Kubernetes](managing_secrets_kubernetes.md)
 

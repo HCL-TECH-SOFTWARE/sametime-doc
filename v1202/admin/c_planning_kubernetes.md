@@ -1,50 +1,51 @@
-# Planning for Kubernetes {#c_planning_kubernetes .concept}
+# Planning for Sametime in a Kubernetes environment {#c_planning_kubernetes .concept}
 
-If you are unfamiliar with these technologies, refer to [Platforms](c_planning_platforms.md). To learn more about Kubernetes, see [An Overview of Kubernetes](https://www.hcltech.com/blogs/overview-kubernetes).
+Kubernetes provides container orchestration for managing containers. When using this platform, you must consider how to manage operations, scalability, and security.
 
-## Is Kubernetes better than Docker? {#section_erh_cgy_2tb .section}
+Kubernetes is a third-party product. HCL support is available to assist in configuration and support-related issues as they pertain to the Sametime product. If you require assistance with a full Kubernetes deployment, reach out to HCL Services or one of our HCL Business Partners to inquire about professional services.
 
-Docker and Kubernetes have different goals and outcomes. The decision should depend on your end goal. Docker is about containerization; Kubernetes is about container orchestration. The Docker containers are the building blocks. A small deployment has the bare minimum number of containers to produce a solution that allows users to collaborate, but without scalability, load balancing, etc. If you are deploying for a small group and do not require scalability, Docker is a simple solution. Kubernetes builds on the base containers and allows them to auto scale; load balance across multiple physical or virtual hosts, even bringing up and tearing down new hosts to deal with load variance.
+**Note:** Packages for Kubernetes can be downloaded directly from your vendor.
 
-Meetings are sized based on what is happening on the server at any given time. There are many variables including the size \(CPU and Memory\) of the Docker instance. A large Docker instance can support up to 200 concurrent peak users, but that does not take into consideration how many of the meetings are being recorded. Meeting recordings are CPU intensive. A Docker instance is best suited for a small department or focused team than an enterprise size deployment.
+## Manage operations {#section_sdv_x43_ywb .section}
 
-You can overcome these limitations through Kubernetes autoscaling. Autoscaling adds and removes nodes as needed based upon current usage and monitoring. Kubernetes is recommended if you are deploying Sametime meetings for your entire organization. For sizing and deployment related questions, [contact HCL](https://volt.myhclsandbox.com/volt-apps/anon/org/app/7fc42e3c-19f4-48df-87fc-09d0ac7c3296/launch/index.html?form=F_Form1).
+Kubernetes automates the deployment and management of containerized applications. The number of concurrent users that Sametime can support depends on the size of the deployment. For sizing and deployment-related questions, [contact HCL](https://volt.myhclsandbox.com/volt-apps/anon/org/app/7fc42e3c-19f4-48df-87fc-09d0ac7c3296/launch/index.html?form=F_Form1). If you are unfamiliar with this technology, see [An Overview of Kubernetes](https://www.hcltech.com/blogs/overview-kubernetes).
 
-## Can Sametime support high availability? {#section_hqt_xvz_2tb .section}
+High-availability clusters
+:   High availability is supported for the front-end web traffic to the Kubernetes cluster. You can deploy multiple web front ends on different physical or virtual nodes pointing to the same back end in order to both distribute load and survive a node outage.
 
-High availability is supported for the front-end web traffic to the Kubernetes cluster. You can deploy multiple web front ends on different physical/virtual nodes pointing to the same back end in order to both distribute load and survive a node outage.
+    High availability is not supported for active meetings. If a server hosting a meeting goes down, then ongoing meetings on that server are interrupted. There is a reconnection timer built into the client that causes all the clients to reconnect and be distributed to an available node. In some circumstances, a server going down results in the client thinking the meeting has ended. Users can quickly re-join the meeting from their Recent meetings list and meet again on an available server momentarily.
 
-High availability is not supported for active meetings. If a server hosting a meeting goes down, users in meetings on that server will be interrupted. There is a reconnection timer built into the client which will cause all the clients to re-connect and be distributed to another available node. In some circumstances, a server going down will result in the client thinking the meeting has ended. Users can quickly re-join the meeting from their "recent meetings" list and will be meeting again on an available server momentarily.
+Cloud deployment
+:   You can run a Kubernetes cluster on your own hardware or a different cloud provider. You can also use a third-party Kubernetes cloud provider, such as Amazon EKS, Google GKE, or other third-party Kubernetes provider to deploy Sametime. Each cloud provider makes security recommendations for running workloads securely in their environment. Refer to the cloud provider's security documentation for further details.
 
-## What is the maximum number of participants in a meeting? {#section_mf4_1wz_2tb .section}
+    -   [Deploying Sametime 12 on Google Kubernetes Engine](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0099614) for Google GKE deployment.
+    -   [Deploying Sametime Meetings in Amazon's AWS Elastic Kubernetes Services](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0085515) for Kubernetes Cloud deployment. The examples in this knowledge article are based on the version 11.5 guide and are not the exact steps for version 12. For version 12, the cluster.yaml file is found in the location of the Sametime 12 installation directory under /kubernetes/stack/eks/cluster.yaml. For additional information, see [Deploying Sametime 12 on Google Kubernetes Engine \(GKE\)](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0099614).
 
-By default, there is a limit of 100 participants for every meeting. To reach a wider audience, you can start a live stream and share the link to all intended participants.
+## Scalability {#section_yh5_w43_ywb .section}
 
-## How many concurrent users can Sametime support? {#section_cx5_511_ftb .section}
+Kubernetes automatically scales a cluster up and down in line with demand without increasing your operations team. To achieve optimal performance, you can provision the infrastructure for Kubernetes before you can install, configure, and connect a component to create a cluster.
 
-This depends on the size of the deployment. For sizing and deployment related questions, [contact HCL](https://volt.myhclsandbox.com/volt-apps/anon/org/app/7fc42e3c-19f4-48df-87fc-09d0ac7c3296/launch/index.html?form=F_Form1).
+Meeting size
+:   By default, there is a limit of 100 participants for every meeting. To reach a wider audience, you can start a live stream and share the link with all intended participants. The limit is configurable. For more information, refer to [Configuring the maximum number of meeting participants](meetings_configuring_max.md).
 
-## What level of help does HCL technical support provide for Kubernetes-related issues? { .section}
+## Security {#section_hrd_ww2_jwb .section}
 
-Kubernetes is a third-party products. HCL support is available to assist in configuration and support-related issues as it pertains to the Sametime product. If you require assistance with a full Kubernetes deployment, reach out to [HCL Services](https://www.hcltechsw.com/wps/portal/contact-us) or one of our HCL Business Partners to inquire about professional services.
+With Kubernetes, you must integrate security throughout the layers of the solution stack before deploying and running the container. Because cloud-native security is multilayer, it is an effective way to address threats across every level of workflow.
 
-## Are the supported packages for Kubernetes available on the HCL License and Delivery Portal? {#section_jpf_y11_ftb .section}
+For additional information, see [Overview of Cloud Native Security](https://kubernetes.io/docs/concepts/security/overview/) in the Kubernetes documentation.
 
-No, packages for Kubernetes can be downloaded directly from your vendor.
+## Disaster recovery {#section_rvv_hw1_ftb .section}
 
-## How do we backup and restore Kubernetes? {#section_rvv_hw1_ftb .section}
+The backup and restore process is handled outside of Sametime. Consult with your Kubernetes vendor for details.
 
-The backup and restore process is handled outside of Sametime. Consult with your Docker vendor for details.
+## Beyond container orchestration {#section_n2b_1p3_ywb .section}
 
-## Is clustering automatic for Kubernetes? {#section_psr_4w1_ftb .section}
+Aside from container orchestration, you can also use Kubernetes to abstract the infrastructure away from higher-level services and applications, making these applications more portable and flexible. Furthermore, Kubernetes allows you to build a much-needed and future-ready architecture.
 
-Yes, but there is additional configuration required in a Kubernetes environment.
+-   **[Planning for a Kubernetes cluster configuration](c_planning_kubernetes_cluster.md)**  
 
-## Can I deploy Sametime Meetings in a Kubernetes Cloud? {#section_azv_pw1_ftb .section}
+-   **[Planning for Openshift](c_planning_openshift.md)**  
+OpenShift is a cloud-based Kubernetes platform. Planning considerations and procedures used to deploy Sametime in an Openshift environment are the same as the Kubernetes platform with the additional considerations addressed in this topic.
 
-Yes. For more information, refer to [deploying Sametime Meetings in Amazon's AWS Elastic Kubernetes Services](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0085515). The examples in this knowledge article is based on version 11.5 guide and are not the exact steps for version 12. For version 12, the cluster.yaml file is found in the location of the Sametime 12 installation directory under /kubernetes/stack/eks/cluster.yaml.
-
-For additional information, see[https://support.hcltechsw.com/csm?id=kb\_article&sysparm\_article=KB0099614](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0099614).
-
-**Parent topic:**[Platforms](c_planning_platforms.md)
+**Parent Topic: **[Platforms](c_planning_platforms.md)
 

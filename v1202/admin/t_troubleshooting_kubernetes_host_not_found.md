@@ -11,73 +11,66 @@ After installing Sametime 12, the server is not responding correctly. You may ex
 -   Group chat inside the meeting fails
 -   Media streams do not work
 
-To investigate the issue, use the command:
+To investigate the issue, use the following command to display a list of running pods. In a normal working environment, all processes have a status of **Running**.
 
 ``` {#codeblock_xdj_cb1_ptb}
 kubectl get po
 ```
 
-This will display a list of the processes \(pods\) running. In a normal working environment, you'll see all of the processes with status "running".
-
 ![](Images/troubleshoot_kubernetes.png)
 
-If any of your processes in this list are not "Running" it indicates a problem. Typically with the problems described above it indicates an issue with the meeting server connecting to MongoDB or the Sametime Proxy. To further investigate these two areas you'll take the name of the process as it is in the name column. For storage related issues \(creating/retrieving meeting rooms\), it is the catalog process. Run the below commands to further investigate.
+If there are any processes not in Running status, it indicates a problem. Typically, for the previously listed symptoms this indicates an issue with the meeting server connecting to MongoDB or the Sametime proxy. To investigate further, use the kubectl describe command, which provides detailed information about a specified process. Specify the name of the process as listed in the **NAME** column. For example,
 
-``` {#codeblock_ydj_cb1_ptb}
-kubectl describe catalog
-```
+-   Issues related to storage such as creating or retrieving meeting rooms, look at the catalog process.
 
-For authentication issues, investigate the "auth" process.
+    ``` {#codeblock_ezm_11q_twb}
+    kubectl describe catalog\_name
+    ```
 
-``` {#codeblock_zdj_cb1_ptb}
-kubectl logs <auth-name> 
-```
+-   For authentication issues, investigate the auth process.
 
-For example using the screenshot above the auth process name is auth-77fbc6cf67-vrf77, then the command is:
+    ``` {#codeblock_qbf_c1q_twb}
+    kubectl logs auth\_name
+    ```
+
+-   For recordings, investigate the recordings process.
+
+    ``` {#codeblock_w5f_31q_twb}
+    kubectl logs recordings\_name
+    ```
+
+-   For other Sametime Proxy related issues, investigate the "web" process.
+
+    ``` {#codeblock_edt_vyf_xwb}
+    kubectl logs web\_name
+    ```
+
+-   For media issues, investigate the "video" process.
+
+    ``` {#codeblock_dsl_xyf_xwb}
+    kubectl logs deploy/video
+    ```
+
+
+For example, to investigate authentication issues if the auth process name is For authentication issues, investigate the auth process name is auth-77fbc6cf67-vrf77, run the following command:
 
 ``` {#codeblock_a2j_cb1_ptb}
 kubectl logs auth-77fbc6cf67-vrf77
 ```
 
-For recordings, investigate the "recordings" process.
-
-``` {#codeblock_b2j_cb1_ptb}
-kubectl logs <recordings-name>
-```
-
-For other Sametime Proxy related issues, investigate the "web" process.
-
-``` {#codeblock_c2j_cb1_ptb}
-kubectl logs <web-name>
-```
-
-For media issues, investigate the "video" process.
-
-``` {#codeblock_d2j_cb1_ptb}
-kubectl logs deploy/video
-```
-
 If you see errors about "host not found" then the Kubernetes environment is having difficulty resolving the MongoDB server and/or Proxy server.
 
-**Resolution**
+If the DNS is consistently unable to resolve the host names for MongoDB or Sametime Proxy, you can manually add the host names and IP addresses to the configuration. These host names and IP addresses can be added to the host aliases. For additional information, see the [Adding entries to Pod /etc/hosts with HostAliases](https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/) topic in the Kubernetes documentation. The host aliases must be updated for each pod that is receiving the host not found error message.
 
-If the DNS is unable to consistently resolve the host names for MongoDB and/or Sametime Proxy, these hostnames and IP addresses can be added to the configuration manually. In Kubernetes you can add these hostnames and the IP addresses to the host aliases. For further reading on this feature see: [Adding entries to Pod /etc/hosts with HostAliases](https://kubernetes.io/docs/concepts/services-networking/add-entries-to-pod-etc-hosts-with-host-aliases/).
+You can modify the template, so that any future changes to incorporate bring these host aliases. Or, you can modify the instance that is running, so that the change is in effect immediately.
 
-Each pod that is producing a "host not found" error message will need to have the host aliases updated.
-
-You can modify the template, so that any future changes that you wish to incorporate will bring these host aliases. Or you can also modify the instance that is running, so that the change will be in effect immediately.
-
-**Note:** If you modify the instance that is running, you will lose these settings if you restart the pod. It is recommended to change the template.
+**Note:** If you modify the instance that is running, you lose these settings if you restart the pod. To ensure that the change is always incorporated, change the template.
 
 1.  Use the below table to determine which template needs to be modified. Also the command to modify the running instance is provided.
 
-    |Name to resolve|Pod|Template name\(s\)|Command to modify running instance.|
-    |---------------|---|------------------|-----------------------------------|
-    |Hostname of the Sametime Proxy|auth and web pods|helm/charts/web/templates/deployment.yaml
-
- helm/charts/auth/templates/deployment.yaml
-
-|    ``` {#codeblock_f2j_cb1_ptb}
+    |Name|Pod|Template names|Command to modify running instance.|
+    |----|---|--------------|-----------------------------------|
+    |Hostname of the Sametime Proxy|auth and web pods|helm/charts/web/templates/deployment.yamlhelm/charts/auth/templates/deployment.yaml|    ``` {#codeblock_f2j_cb1_ptb}
 kubectl edit deploy web
     ```
 
@@ -148,5 +141,5 @@ kubectl edit deploy recordings
     **Note:** The dot at the end is part of the command.
 
 
-**Parent topic:**[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
+**Parent Topic: **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
 

@@ -1,121 +1,68 @@
 # Applying Let's Encrypt certificates {#using_meeting_servers .task}
 
-The Sametime Meeting server is preconfigured with a self-signed certificate. This section describes how to replace the self-signed certificate with a third-party certificate.
+This topic describes how to replace the self-signed certificate with a third-party certificate.
 
-**Note:** Let's Encrypt certificates expire every 90 days. To automatically renew the certificates, users can use [Certbot](https://certbot.eff.org/). Otherwise, users can renew certificates when they expire.
+The Sametime server is preconfigured with a self-signed certificate.
 
-**Parent topic:**[Securing](securing.md)
+**Note:** Let's Encrypt certificates expire every 90 days. To automatically renew the certificates, users can use [Certbot](https://certbot.eff.org/). Otherwise, users can renew certificates when they expire. For details on setting up automatic renewal, refer to the Certbot documentation.
+
+**Parent Topic: **[Securing](securing.md)
 
 ## Kubernetes {#using_meeting_server_kubernetes}
 
 Obtain one or more certificates and private key. Afterward, run the following commands to configure the Ingress to use them.
 
-1.  For KEY\_FILE specify the private key file and for CERT\_FILE specify the certificates file.
+1.  Run the following command to verify if the secret currently exists.
 
-    ```
-    
-    kubectl -n ingress-nginx delete secret ingress-tls-cert
-    export CERT_NAME=ingress-tls-cert
-    export KEY_FILE=privkey.pem
-    export CERT_FILE=fullchain.pem
-    kubectl -n ingress-nginx create secret tls ${CERT_NAME} --key ${KEY_FILE} --cert ${CERT_FILE}
-    kubectl patch deployment nginx-ingress-controller -n ingress-nginx --patch "$(cat kubernetes/ingress/nginx-tls-patch.yaml)"
+    ``` {#codeblock_dnq_5ww_p5b}
+    kubectl get secrets
     ```
 
-2.  Restart the ingress controller:
+2.  If the tls-secret exists, delete it.
 
-    ```
-    
-    kubectl scale deployment nginx-ingress-controller -n ingress-nginx --replicas=0
-    kubectl scale deployment nginx-ingress-controller -n ingress-nginx --replicas=1
+    ``` {#codeblock_ddy_rxw_p5b}
+    kubectl delete secret tls-secret
     ```
 
-3.  Setup Certbot to automatically renew certificates.
+3.  Create a new tls-secret secret with the new certificate and private key.
 
-    Refer to the Let's Encrypt documentation for details on using Certbot with Kubernetes.
+    ``` {#codeblock_rkb_hyw_p5b}
+    create secret tls tls-secret --key tls.key --cert tls.crt
+    ```
+
+    Where the value for key is the private key file and cert is the certificate file.
+
+4.  Verify
+
+    ``` {#codeblock_k1x_l4x_p5b}
+    kubectl get secret tls-secret -o yaml
+    ```
 
 
 ## Docker {#using_meeting_servers_docker}
 
-Generate a Let's Encrypt certificate. Afterward, apply the encryption certificate on the Sametime Meeting server.
+Generate a Let's Encrypt certificate. Afterward, apply the encryption certificate on the Sametime server.
 
 1.  Set ENABLE\_LETSENCRYPT to 1 in the docker-compose.yml file.
 
-2.  Find
+2.  Retrieve the PEM files provided by Let's Encrypt and locate the following files
 
-    ``` {#codeblock_u2q_wtv_tsb}
-    fullchain.pem
-    privkey.pem
-    ```
-
-3.  Copy the specified files in the following folder:
+    -   fullchain.pem
+    -   privkey.pem
+3.  Copy the specified files in the folder below:
 
     ``` {#codeblock_a5h_d5v_tsb}
-    jitsi-config/web/letsencrypt/live/
+    sametime-config/web/acme-certs/
     ```
 
-    **Note:** If a value for the LETSENCRYPT\_DOMAIN is specified, the path is `jitsi-config/web/letsencrypt/live/<LETSENCRYPT_DOMAIN >/.`
+    **Note:** If a value for the LETSENCRYPT\_DOMAIN is specified, then the path is sametime-config/web/acme-certs/<LETSENCRYPT\_DOMAIN\>/.
 
-4.  Restart to apply the changes.
+4.  Restart the server to apply the changes.
 
     ```
-    > docker-compose down
-    > docker-compose up -d
+    
+    docker-compose down
+    docker-compose up -d
     ```
-
-5.  Use Certbot to renew the certificates.
-
-    1.  Under the NGINX section add the following code to the volumes section.
-
-        ```
-         ${CONFIG}/web/data/letsencrypt:/data/letsencrypt:Z
-        
-        ```
-
-    2.  Run `Docker-compose up -d`.
-
-    3.  After the initial start, add the following in the jitsi-config/web/nginx/meet.conf file. Follow the syntax pattern in the file.
-
-        ```
-        
-        location ^~ /.well-known
-        { allow all; root /data/letsencrypt/; } 
-        ```
-
-    4.  Modify Docker-compose down, Docker-compose up -d to restart.
-
-    5.  Validate if they are working properly.
-
-    6.  Use Docker to run the certbot/letsencrypt request to renew certificates.
-
-        For example:
-
-        ```
-        
-        docker run -it --rm \
-        -v certs:/etc/letsencrypt \
-        -v certs-data:/data/letsencrypt \
-        deliverous/certbot \
-        certonly \
-        --webroot --webroot-path=/data/letsencrypt \
-        -d example.com -d www.example.com
-        ```
-
-        Specify the full absolute path to the jitsi-config folder on the certs and certs-data commands. For example: `-v certs:/etc/letsencrypt \` would be
-
-        ```
-        
-        -v /stmeetings/jitsi-config/web/letsencrypt:/etc/letsencrypt \
-        ```
-
-        and `-v certs-data:/data/letsencrypt \` would be
-
-        ```
-        
-        -v /stmeetings/jitsi-config/web/data/letsencrypt:/data/letsencrypt \
-        
-        ```
-
-    7.  Validate that Certbot is working as expected.
 
 

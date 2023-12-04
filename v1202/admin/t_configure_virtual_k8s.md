@@ -1,5 +1,7 @@
 # Adding default virtual backgrounds on Kubernetes {#t_configure_virtual_k8s .task}
 
+By default, virtual background is enabled. You can choose which backgrounds are available to users by default. Depending on your business needs, you can customize the global library and prevent users from uploading custom background images. For more information, refer to [Disabling custom background uploads](t_disable_background_upload.md).
+
 Ensure that all images are in JPG or GIF format.
 
 1.  Copy the image files into the /usr/share/jitsi-meet/images/virtual-background/custom directory under the web pod and then restart the pod.
@@ -13,7 +15,7 @@ Ensure that all images are in JPG or GIF format.
     **Note:** Add the Namespace argument if Sametime is installed in a Namespace.
 
 
-**Parent topic:**[Adding virtual backgrounds to the global library](t_configure_default_virtual_background.md)
+**Parent Topic: **[Adding virtual backgrounds to the global library](t_configure_default_virtual_background.md)
 
 ## Removing default virtual backgrounds on Kubernetes {#task_e31_gql_z5b}
 

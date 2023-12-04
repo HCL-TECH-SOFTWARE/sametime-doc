@@ -1,39 +1,51 @@
 # Configuring the maximum number of meeting participants {#meetings_configuring_max .task}
 
-Sametime currently supports a maximum of 100 users in a meeting regardless of the selected meeting mode. To reach a wider audience, you can start a live stream and share the link to all intended participants.
+A maximum of 100 users are supported in a meeting regardless of the selected meeting mode. To reach a wider audience, you can start a live stream and share the link to all intended participants.
 
-By default, you can host a meeting with up to 100 participants. You can lower the maximum capacity to any value below 100 as needed. Users who attempt to join a meeting that has reached maximum capacity encounter a message indicating that the meeting room is full.
+You can lower the maximum capacity to any value below 100 as needed. Users who attempt to join a meeting that has reached maximum capacity receive a message indicating that the meeting room is full.
 
-**Note:** The greater the number of concurrent users accessing the server, the greater the resources consumed, particularly CPU resources. Other factors, such as meeting recordings, can influence the total capacity. Refrain from changing this setting without proper sizing information from HCL. For sizing-related questions, [contact HCL](https://voltsandbox.hcltechsw.com/volt-apps/anon/org/app/7fc42e3c-19f4-48df-87fc-09d0ac7c3296/launch/index.html?form=F_Form1).
+The number of meeting video streams that display in the Meeting window is based on the following:
 
-**Procedure for Kubernetes**
+-   The value set for the maximum number of active video streams to display
+-   Most recent active video streams
 
-1.  Place the helm/values.yaml in edit mode.
+For example, if the maximum number of participants is 50 and value for maximum video streams is 7. The number of participant tiles displayed is fifty. However, the number of displayed video streams is seven, which includes you. That is, six other video streams plus your video stream are displayed. The six participants displayed are the most active video streams and change as participation in the meeting changes.
 
-    ```
-    vi helm/values.yaml 
-    ```
+The default for the maximum number of displayed video streams is nine. To set the maximum to a different value, see [Increasing the number of video streams displayed during a meeting](increase_activecameras.md).
 
-2.  Edit the following line:
+**Parent Topic: **[Meetings](meetings_configuring.md)
 
-    ```
-    MaxOccupants= <new value representing the number of total users in a meeting> 
-    ```
+## Configuring the maximum number of meeting participants in Docker environment {#task_wwg_dfz_wxb}
 
-3.  Save the file.
-4.  Restart the Sametime Meeting Server using the instructions in the topic [Starting and stopping Meeting servers](starting_and_stopping_meeting_servers.md).
+1.  Open the docker-compose.yml file for editing.
 
-**Procedure for Docker:**
+2.  Under the `prosody` section, specify the number of maximum participant in the MAX\_OCCUPANTS parameter.
 
-1.  Place the docker-compose.yml file in edit mode.
-2.  Under the prosody section, modify the value of MAX\_OCCUPANTS:
-
-    ```
-    MAX_OCCUPANTS=<new value> 
+    ``` {#codeblock_q41_rhz_wxb}
+    MAX_OCCUPANTS=max\_number\_meeting\_participants
     ```
 
 3.  Save the docker-compose.xml file.
-4.  Restart the Sametime Meeting Server using the instructions in the topic [Starting and stopping Meeting servers](starting_and_stopping_meeting_servers.md).
 
-**Parent topic:**[Meetings](meetings_configuring.md)
+4.  Restart the Sametime Meeting server. Refer to [Starting and stopping Meeting servers](starting_and_stopping_meeting_servers.md) for details.
+
+
+## Configuring the maximum number of meeting participants in Docker environment {#task_snj_2fz_wxb}
+
+1.  Open the helm/values.yaml for editing.
+
+    ``` {#codeblock_hcx_4sz_wxb}
+    vi helm/values.yaml 
+    ```
+
+2.  Specify the number of maximum participant in the MaxOccupants parameter.
+
+    ``` {#codeblock_fps_3sz_wxb}
+    MaxOccupants=max\_number\_meeting\_participants 
+    ```
+
+3.  Save the file.
+
+4.  Restart the Sametime Meeting Server. Refer to [Starting and stopping Meeting servers](starting_and_stopping_meeting_servers.md) for details.
+
 

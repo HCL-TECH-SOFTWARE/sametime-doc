@@ -1,6 +1,6 @@
 # Enabling Community trace in Docker {#troubleshooting_debug_trace_docker .task}
 
-The Community and STProxy traces can be used to troubleshoot problems with the Sametime server and Sametime Meetings. The traces capture the flow between the Sametime server and the Meetings server.
+The Community and STProxy traces can be used to troubleshoot problems with the Sametime. The traces capture the flow between the chat and meeting services.
 
 To enable the trace modify the docker-compose.yml file. In the `community:` section, locate the `env_file:` statement.
 
@@ -9,7 +9,9 @@ To enable the trace modify the docker-compose.yml file. In the `community:` sect
 community: 
    image: hclcr.io/st/chat-server:${BUILD_LEVEL} 
    restart: ${RESTART_POLICY}   
-   env_file: custom.env 
+   env_file: 
+      -custom.env 
+      -debug.env
    environment:
 ```
 
@@ -24,5 +26,5 @@ community:
     environment:
 ```
 
-**Parent topic:**[Troubleshooting Sametime on Docker](t_troubleshooting_sametime_docker.md)
+**Parent Topic: **[Troubleshooting Sametime on Docker](t_troubleshooting_sametime_docker.md)
 

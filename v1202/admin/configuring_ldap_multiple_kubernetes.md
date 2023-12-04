@@ -34,7 +34,7 @@ The changes in this task affect the following pods:
     kubectl get pods
     ```
 
-4.  Pull a copy of the StCommunityConfig.xml from the Community pod by running the below command, where podname is the pod name found in the previous step.
+4.  Pull a copy of the StCommunityConfig.xml from the community pod by running the below command, where podname is the pod name found in the previous step.
 
     ``` {#codeblock_v2k_wnx_wtb}
     kubectl exec -it podname --container community -- cat /local/notesdata/StCommunityConfig.xml >./StCommunityConfig.xml 
@@ -154,5 +154,5 @@ The changes in this task affect the following pods:
         ```
 
 
-**Parent topic:**[Configuring LDAP](configuring_ldap.md)
+**Parent Topic: **[Configuring LDAP](configuring_ldap.md)
 

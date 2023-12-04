@@ -12,28 +12,40 @@ Complete the following steps to modify each template in the table to include the
 
 **Note:**
 
--   When modifying yaml files, do not use the tab key for indentation, when using indentation use two spaces for each indentation.
+-   When modifying YAML files, do not use the tab key for indentation. When using indentation, use two spaces for each indentation.
 -   This process should be completed for all templates involved.
 -   There should be no extra blank lines in the template.
 
-**Procedure**
-
-|Hostname to resolve|Pod|Template name|
-|-------------------|---|-------------|
-|MongoDB|community|helm/charts/community/templates/pod.yaml|
-|MongoDB|proxy|helm/charts/proxy/templates/deployment.yaml|
+|Host name to resolve|Pod|Template name|
+|--------------------|---|-------------|
+|MongoDB|activity|helm/charts/activity/templates/deployment.yaml|
+|MongoDB|admin|helm/charts/admin/templates/deployment.yaml|
+|MongoDB|app-registry|helm/charts/app-registry/templates/deployment.yaml|
+|MongoDB|auth|helm/charts/auth/templates/deployment.yaml|
+|MongoDB|backgrounds|helm/charts/backgrounds/templates/deployment.yaml|
 |MongoDB|catalog|helm/charts/catalog/templates/deployment.yaml|
-|LDAP|community|helm/charts/catalog/templates/deployment.yaml|
+|MongoDB|click2call|helm/charts/click2call/templates/deployment.yaml|
+|MongoDB|community|helm/charts/community/templates/pod.yaml|
+|MongoDB|files|helm/charts/files/templates/deployment.yaml|
+|STUN server|jibri-web|helm/charts/jibri-web/templates/deployment.yaml|
+|STUN server|jibri|helm/charts/jibri/templates/deployment.yaml|
+|MongoDB|lobby|helm/charts/lobby/templates/deployment.yaml|
+|MongoDB|location|helm/charts/location/templates/deployment.yaml|
+|MongoDB|proxy|helm/charts/proxy/templates/deployment.yaml|
+|MongoDB|recordings|helm/charts/recordings/templates/deployment.yaml|
 |STUN server|video|helm/charts/video/templates/deployment.yaml|
-|Recording repository and Sametime server|recordings|helm/charts/recordings/templates/deployment.yaml|
 
-1.  Open the template using a text editor and place into edit mode.
+1.  Open the template for editing.
 
-    Locate the line `restartPolicy=Always` and insert a new line.
-
-    Use the below example text as a template and include the host names that need to be resolved:
+    Locate the following line and insert a new line.
 
     ```
+    restartPolicy=Always
+    ```
+
+    Use this example text as a template and include the host names that need to be resolved:
+
+    ``` {#codeblock_cwn_mcf_pzb}
      
     hostAliases: 
         - hostnames: 
@@ -45,12 +57,14 @@ Complete the following steps to modify each template in the table to include the
     
     ```
 
-    **Note:** In the `hostnames` field your server might only be known as one host name, you can add multiple aliases if desired.
+    **Note:** In the `hostnames` field, your server might only be known as one host name. You can add multiple aliases.
 
-2.  Before saving the template, ensure the indentations are correct, using only spaces for indentation. The `hostAliases:` line should line up exactly under the `restartPolicy` line at the same level of indentation. You may need to correct the other lines as well after copy and pasting them.
+2.  Before saving the template, ensure the indentations are correct, using only spaces for indentation. The `hostAliases:` line should line up exactly under the `restartPolicy` line at the same level of indentation. You might need to correct the other lines as well after copying and pasting them.
+
 3.  Save and close the template when changes are complete.
 
-After this process is complete continue to the steps to install Sametime, see [Loading the Sametime image to Docker](t_meetings_sametime_image_docker.md). If Sametime is already installed, follow the procedures in the [Applying configuration changes in Kubernetes](apply_configchanges_kubernetes.md) topic to apply the changes.
 
-**Parent topic:**[Preparing the network](t_meetings_prepare_network.md)
+After this process is complete, continue to the steps to install Sametime. See [t\_meetings\_sametime\_image\_docker.md](t_meetings_sametime_image_docker.md). If Sametime is already installed, follow the procedures in the [Applying configuration changes in Kubernetes or Openshift](apply_configchanges_kubernetes.md) topic to apply the changes.
+
+**Parent Topic: **[Preparing the network](t_meetings_prepare_network.md)
 

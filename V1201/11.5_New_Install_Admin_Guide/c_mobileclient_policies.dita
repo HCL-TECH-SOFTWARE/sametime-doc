@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="c_mobileclient_policies">
-    <title>Mobile client policies</title>
-    <shortdesc>While many user policies are available in the Sametime ecosystem, only a subset of
-        these policies apply to the mobile clients. This section describes the policies and
-        configurations available to the said clients.</shortdesc>
-</concept>

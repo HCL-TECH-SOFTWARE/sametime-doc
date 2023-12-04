@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<task id="securing" xml:lang="en-us">
-<title>Securing</title>
-    <shortdesc>This section provides information on securing your  HCL Sametime
-        environments.</shortdesc>
-</task>

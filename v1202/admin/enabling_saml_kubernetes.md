@@ -1,5 +1,7 @@
 # Configuring SAML in Kubernetes {#enabling_saml_kubernetes .task}
 
+You can implement SSO into your Kubernetes environment using Security Assertion Markup Language \(SAML\).
+
 The changes in this task affect the following pods:
 
 -   community
@@ -20,7 +22,7 @@ The changes in this task affect the following pods:
 
     https://idp.example.com/example\_tenant&appid=1234?TARGET=https://sametime.example.com/chat
 
-    If you are using a different host name for meetings and webchat, use the host name for th e webchat client.
+    If you are using a different host name for meetings and web chat, use the host name for the web chat client.
 
     https://idp.example.com/exampletenant&appid=1234?TARGET=https://webchat.example.com/chat
 
@@ -86,5 +88,5 @@ The changes in this task affect the following pods:
         ```
 
 
-**Parent topic:**[Setting up SSO using SAML](enabling_sso_saml.md)
+**Parent Topic: **[Setting up SSO using SAML](enabling_sso_saml.md)
 

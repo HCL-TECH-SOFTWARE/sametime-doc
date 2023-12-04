@@ -25,10 +25,10 @@ MongoConnectionUrl
 :   The MongoDB formatted URL containing the login name and password used by Sametime. The host name and port number are also included.
 
 JigasiSipUri
-:   The name of the of the account and the host name of the SIP user fortelephony integration with iLink.
+:   The name of the of the account and the host name of the SIP user fortelephony integration with ilink.
 
 JigasiSipPassword
-:   The password for telephony integration with iLink.
+:   The password for telephony integration with ilink.
 
 ltpaKeysPassword
 :   The password for the LTPA keys.
@@ -76,5 +76,5 @@ The kubectl delete command can be used to delete a secret.
 -   **[Modifying secrets](secrets_modify.md)**  
 Some of the content within a secret can be changed using the edit secret command.
 
-**Parent topic:**[Configuring](configuring.md)
+**Parent Topic: **[Configuring](configuring.md)
 

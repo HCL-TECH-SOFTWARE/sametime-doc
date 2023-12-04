@@ -7,5 +7,5 @@ Refer to the Sametime mobile documentation for more information on mobile client
 -   [HCL Sametime iOS Documentation](https://help.hcltechsw.com/sametime/12/ios/index.html).
 -   [HCL Sametime Android Documentation](https://help.hcltechsw.com/sametime/12/android/index.html).
 
-**Parent topic:**[Installing Sametime clients](installing_sametime_clients.md)
+**Parent Topic: **[Installing Sametime clients](installing_sametime_clients.md)
 

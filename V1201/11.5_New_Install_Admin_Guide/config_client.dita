@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<task id="config_client" xml:lang="en-us">
-<title>Configuring the <tm tmtype="reg" trademark="Sametime">Sametime</tm> client</title>
-<shortdesc>This section describes how to configure <tm tmtype="reg" trademark="HCL">HCL</tm>
-  <tm tmtype="reg" trademark="Sametime">Sametime</tm>  clients.</shortdesc>
-
-</task>
-

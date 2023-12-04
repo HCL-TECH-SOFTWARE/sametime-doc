@@ -1,6 +1,8 @@
-# Enabling the legacy web client on Docker {#verse_integration_docker .task}
+# Enabling web client integration on Docker and Podman {#verse_integration_docker .task}
 
-1.  Edit the docker-compose.yaml file.
+The Docker and Podman commands are similar. The only difference is that docker precedes the command when issued in a Docker environment and podman precedes the name in a Podman environment. Example commands used in the Sametime documentation are shown using Docker. For Podman, change docker to podman.
+
+1.  Edit the docker-compose.yml file.
 
 2.  Locate the `SAMETIME_EXTERNAL_WARINTEGRATION` variable and ensure that it is set to true.
 
@@ -10,18 +12,23 @@
     SAMETIME_EXTERNAL_WARINTEGRATION=true
     ```
 
-3.  From the Sametime installation directory, run the following script.
+    To apply the changes, stop the Sametime server and start it again.
+
+3.  To stop the Sametime server, run the following script from the Sametime installation directory.
 
     ``` {#codeblock_mlj_pqk_25b}
     docker-compose down 
     ```
 
-4.  From the backup Sametime installation directory, run the following the script.
+    To apply the changes stop the Sametime server and start it again.
 
-    ``` {#codeblock_g45_pqk_25b}
-    docker-compose up -d 
+4.  Start the Sametime server to apply the changes.
+
+    ``` {#codeblock_btc_lj4_k5b}
+    docker compose up -d
+    
     ```
 
 
-**Parent topic:**[Integrating with other applications](verse_integration.md)
+**Parent Topic: **[Integrating with other applications](verse_integration.md)
 

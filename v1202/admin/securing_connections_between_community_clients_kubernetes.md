@@ -1,15 +1,21 @@
 # Configuring TLS for Sametime mux on Kubernetes {#securing_connections_between_community_clients_kubernetes .task}
 
-You can use a self-signed certificate or a third party certificate to configure TSL for Sametime mux. Obtain a third party certificate and private key with a subject that contains the host name assigned to the mux Kubernetes service. If you do not know the mux Kubernetes service IP address issue the kubectl get svc \| grep mux command.
+Ensure that the following conditions are satisfied.
 
-TLS can be used to secure the connection between the Sametime Connect client and Sametime embedded client inside of HCL Notes to the Sametime mux.
+-   Obtain a third-party certificate. You can use a self-signed certificate or a third-party certificate to configure TLS for Sametime mux.
+-   [Obtain a private key](t_keystore_mux.md) with a subject that contains the host name assigned to the mux Kubernetes service. If you do not know the mux Kubernetes service IP address, issue the kubectl get svc \| grep mux command.
 
-The changes in this task apply to the community and mux pods.
+These are the steps to secure the connection between the Sametime Connect client and Sametime embedded client inside of HCL Notes to the Sametime mux using TLS.
+
+The changes in this task apply to the following pods:
+
+-   community
+-   mux
 
 1.  Create a secret that contains your trust store.
 
     ``` {#codeblock_dns_snk_y5b}
-    kubectl create secret generic samlConfigSecret --from-literal=KeyStorePassword=samet1me --from-file=./saml.p12 
+    kubectl create secret generic mux-secret --from-literal=KeyStorePassword=samet1me --from-file=./keystore.p12
     ```
 
 2.  In the values.yaml file remove the comment tag \(\#\) surrounding the muxTlsConfigSecret: mux-secret parameter.
@@ -48,5 +54,5 @@ The changes in this task apply to the community and mux pods.
         ```
 
 
-**Parent topic:**[Securing connections between the Sametime mux and clients](securing_connections_between_community_clients.md)
+**Parent Topic: **[Securing connections between the Sametime mux and the Connect and Embedded clients](securing_connections_between_community_clients.md)
 

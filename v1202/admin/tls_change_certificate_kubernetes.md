@@ -1,6 +1,6 @@
 # Updating the TLS certificates on Kubernetes {#tls_change_certificate_kubernetes .task}
 
-In Kubernetes, TLS certificates are contained within a secret called tls\_secret.
+In Kubernetes, TLS certificates are contained within a secret called tls-secret.
 
 Ensure that you have the certificate and private key to be used.
 
@@ -12,13 +12,13 @@ To update the certificate on Kubernetes, first you must delete the existing secr
     kubectl get secrets
     ```
 
-2.  If the tls\_secret exists, delete it.
+2.  If the tls-secret exists, delete it.
 
     ``` {#codeblock_ddy_rxw_p5b}
     kubectl delete secret tls-secret
     ```
 
-3.  Create a new tls\_secret secret with the new certificate and private key.
+3.  Create a new tls-secret secret with the new certificate and private key.
 
     ``` {#codeblock_rkb_hyw_p5b}
     create secret tls tls-secret --key tls.key --cert tls.crt
@@ -33,5 +33,5 @@ To update the certificate on Kubernetes, first you must delete the existing secr
     ```
 
 
-**Parent topic:**[Updating the Sametime server TLS certificates](updating_meeting_servers.md)
+**Parent Topic: **[Replacing the TLS certificates for Web Chat and Meetings](tls_change_certificate.md)
 

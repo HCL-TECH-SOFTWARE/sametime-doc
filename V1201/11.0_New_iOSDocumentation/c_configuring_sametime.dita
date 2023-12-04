@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
- "concept.dtd">
-<?Pub Sty _display FontColor="red"?>
-<concept id="configuring_sametime_android" xml:lang="en-us">
- <title>Configuring HCL Sametime via an EMM Provider</title>
- <shortdesc>HCL Sametime for Android applications includes some Android Enterprise integration
-  features. Learn how to use them in your deployment.</shortdesc></concept>
-<?Pub *0000001020?>

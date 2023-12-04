@@ -1,4 +1,4 @@
-# Securing LDAP on Docker {#securing_ldap_docker .task}
+# Securing LDAP on Docker or Podman {#securing_ldap_docker .task}
 
 This topic covers the steps to import your LDAP trust store and password into Docker as a secret, then define the secret in the Sametime configuration.
 
@@ -23,11 +23,13 @@ The steps in the following procedure must be completed with root access or you c
     STI__Config__STLDAP_TLS_TRUST_STORE_PASSWORD=ldaptruststorepass
     ```
 
-4.  Open the docker-compose.yaml for editing.
+4.  Open the docker-compose.yml for editing.
 
-    1.  Locate the env\_file: parameter and move `custom.env` to a new line.
+    1.  Locate the `env_file:` section under the `community:` subsection within the `services:` section.
 
-    2.  Add the following line below `custom.env`.
+    2.  Move `custom.env` to a new line.
+
+    3.  Add the following line below `custom.env`.
 
         ``` {#codeblock_ybs_j24_k5b}
          tlsldap.env
@@ -37,15 +39,19 @@ The steps in the following procedure must be completed with root access or you c
 
         ``` {#codeblock_tc5_l24_k5b}
         
-        env_file:
-          - custom.env
-          - tlsldap.env
+        services:
+            community:
+              env_file: 
+                - custom.env
+                - tlsldap.env
+              environment:
+        
         ```
 
-5.  Add a path to the LDAP trust store.
+5.  Add a path to the LDAP trust store under the `community:` section in the docker-compose.yml file.
 
-    -   If you do not have a volumes section in the docker-compose.yml file, create one under the networks section and add the following line to the section.
-    -   If you already have a volumes section, add the following line to the section.
+    -   If you do not have a volumes section, create one under the `networks` section and add the following line.
+    -   If you already have a `volumes` section, add the following line to the section.
     ``` {#codeblock_gt3_x24_k5b}
     - ./ldaptruststore.p12:/local/notesdata/ldaptruststore.p12 
     ```
@@ -63,10 +69,10 @@ The steps in the following procedure must be completed with root access or you c
 6.  Start the Sametime server to apply the changes.
 
     ``` {#codeblock_btc_lj4_k5b}
-    docker-compose up -d
+    docker compose up -d
     
     ```
 
 
-**Parent topic:**[Securing connections between Sametime servers and LDAP](securing_connections_sametime_community_and_ldap.md)
+**Parent Topic: **[Securing connections between Sametime servers and LDAP](securing_connections_sametime_community_and_ldap.md)
 

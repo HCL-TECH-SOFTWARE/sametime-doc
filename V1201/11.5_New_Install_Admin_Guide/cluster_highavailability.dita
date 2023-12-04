@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="cluster_highavailability" xml:lang="en-us">
-    <title>Clustering and high availability</title>
-    <shortdesc>High availability and high capacity configuration for Sametime is achieved in
-        different ways depending on which component is being configured for HA. See the topics below
-        to learn more about chat, meetings and MongoDB.</shortdesc>
-</concept>

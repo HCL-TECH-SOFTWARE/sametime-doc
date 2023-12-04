@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
- "concept.dtd">
-<?Pub Sty _display FontColor="red"?>
-<concept id="display_about_screen" xml:lang="en-us">
- <title>Displaying the About Screen</title>
- <shortdesc>Tap the menu icon and then About HCL <tm tmtype="reg" trademark="Sametime">Sametime</tm>to display the About screen. From here you can display the HCL Privacy Statement and any third-party notices. HCL support may also ask you to display this screen to verify the version and build of the app that you are running.</shortdesc>
-</concept>
-<?Pub *0000001020?>

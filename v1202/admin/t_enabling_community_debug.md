@@ -1,12 +1,8 @@
-# Enabling Community trace in Kubernetes {#t_enabling_community_debug .task}
-
-
+# Enabling Community debug in Kubernetes {#t_enabling_community_debug .task}
 
 The Sametime Community pod supports a variety of debug parameters as documented in [Common debug parameters for Sametime Community Server](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0079079) article.
 
-**Note:**
-
-In Sametime 12, the Community debug is located in the sametime.ini file is handled by a ConfigMap in Kubernetes. The debug parameters from previous releases must be modified if they are configured into the ConfigMap.
+**Note:** In Sametime versions prior to version 12, the Community services debug was handled in the sametime.ini file.  Beginning with Sametime 12, the parameters used for Community debug are in defined in a ConfigMap in Kubernetes.
 
 The changes in this task affect the following pods:
 
@@ -28,7 +24,7 @@ The changes in this task affect the following pods:
 
 3.  Apply the changes.
 
-    Upgrade the deployment by following the instructions in [Applying configuration changes in Docker](apply_configchanges_docker.md).
+    Upgrade the deployment by following the instructions in [Applying configuration changes in Kubernetes or Openshift](apply_configchanges_kubernetes.md).
 
 4.  Run the following command to open the ConfigMap.
 
@@ -38,13 +34,13 @@ The changes in this task affect the following pods:
 
 5.  Press **i** to switch to edit mode.
 
-6.  Configure any custom debug parameters. If you know the parameter, it should be configured with the following format.
+6.  Configure any custom debug parameters. If you know the parameter, configured with the following format.
 
     -   The first characters are STI\_\_DEBUG.
 
         **Note:** Enter two underscores to separate.
 
-    -   If your debug parameters belong in the `[Debug]` section of the sametime.ini originally, add two underscores and then your parameter, followed by a colon and its value in quotes. For example, if setting `VP_LDAP_TRACE=1` at the \[Debug\] section of the sametime.ini file, then the configuration setting would be:
+    -   If your debug parameters belong in the `[Debug]` section of the sametime.ini originally, add two underscores and then your parameter, followed by a colon and its value in quotes. For example, if setting `VP_LDAP_TRACE=1` at the \[Debug\] section of the sametime.ini file, then the configuration setting is:
 
         ``` {#codeblock_x1n_zsw_mvb}
         STI__DEBUG__VP_LDAP_TRACE: “1”
@@ -52,7 +48,7 @@ The changes in this task affect the following pods:
 
         **Note:** In the example, there are two underscores between STI and DEBUG and then two more underscores before the parameter.
 
-        If your debug setting is a component level debug such as \[Debug-StUsers\], then the parameter must have the same beginning STI\_\_DEBUG, followed by a single underscore and the component name, and then two underscores and the parameter. For example, if you are setting component level debug for `VP_TRACE_ALL=1` for the component \[Debug-StUsers\], then the configuration setting would be like this:
+        If your debug setting is a component level debug such as \[Debug-StUsers\], then the parameter must have the same beginning STI\_\_DEBUG, followed by a single underscore and the component name, and then two underscores and the parameter. For example, if you are setting component level debug for `VP_TRACE_ALL=1` for the \[Debug-StUsers\] component, then the configuration setting is like the following:
 
         ``` {#codeblock_z1n_zsw_mvb}
         STI__Debug_StUsers__VP_TRACE_ALL: "1"
@@ -80,5 +76,5 @@ The changes in this task affect the following pods:
         ```
 
 
-**Parent topic:**[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
+**Parent Topic: **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
 

@@ -27,30 +27,30 @@ To update the TTL settings used by the Sametime server involves modifying the fo
 
 2.  Modify the Convomap Max Days configuration value to match the MongoDB TTL value. The minimum value is 1.
 
-    -   For Docker, update the STI\_\_convomap\_\_CONVOMAP\_MAX\_DAYS parameter. In the following example, the value is set to 7 days.
+    -   For Docker, update the STI\_\_stconvomap\_\_CONVOMAP\_MAX\_DAYS parameter. In the following example, the value is set to 7 days.
 
         ``` {#codeblock_igt_cfd_g5b}
-        STI__convomap__CONVOMAP_MAX_DAYS=7
+        STI__stconvomap__CONVOMAP_MAX_DAYS=7
         ```
 
-    -   For Kubernetes, update the STI\_\_convomap\_\_CONVOMAP\_MAX\_DAYS parameters. In the following example, the value is set to 7 days.
+    -   For Kubernetes, update the STI\_\_stconvomap\_\_CONVOMAP\_MAX\_DAYS parameters. In the following example, the value is set to 7 days.
 
         ``` {#codeblock_jgt_cfd_g5b}
-        STI__convomap__CONVOMAP_MAX_DAYS: 7
+        STI__stconvomap__CONVOMAP_MAX_DAYS: 7
         ```
 
-3.  You can update the STI\_\_convomap\_\_CONVOMAP\_MAX\_HOURS parameter to add hours to the time frame. In the following examples, the value is set to 2 hours.
+3.  You can update the STI\_\_stconvomap\_\_CONVOMAP\_MAX\_HOURS parameter to add hours to the time frame. In the following examples, the value is set to 2 hours.
 
     -   Docker:
 
         ``` {#codeblock_lt2_f2d_g5b}
-        STI__convomap__CONVOMAP_MAX_HOURS=2
+        STI__stconvomap__CONVOMAP_MAX_HOURS=2
         ```
 
     -   Kubernetes:
 
         ``` {#codeblock_mt2_f2d_g5b}
-        STI__convomap__CONVOMAP_MAX_HOURS: 2
+        STI__stconvomap__CONVOMAP_MAX_HOURS: 2
         ```
 
 4.  In the Mongo shell, run the following commands.
@@ -67,6 +67,10 @@ To update the TTL settings used by the Sametime server involves modifying the fo
     db.EVENTS.dropIndex("TimeStamp_1")
     ```
 
+    ``` {#codeblock_hyr_5h2_5yb}
+    db.USERS.dropIndex("date_1")
+    ```
+
     The `db.EVENTS.dropIndex` command defines the name of the index to drop. The value is `TimeStamp_1`.
 
 5.  Restart the Sametime server to apply the changes. The TTL index is updated with the new value.
@@ -80,5 +84,5 @@ To update the TTL settings used by the Sametime server involves modifying the fo
     ```
 
 
-**Parent topic:**[Configuring](configuring.md)
+**Parent Topic: **[Configuring](configuring.md)
 

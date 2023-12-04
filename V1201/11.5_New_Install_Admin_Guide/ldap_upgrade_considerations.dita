@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="ldap_contact_list" xml:lang="en-us">
-    <title>Upgrade considerations</title>
-    <shortdesc>If you are considering moving from a native Domino directory to an LDAP directory you will need to convert the user’s names in the vpuserinfo.nsf to LDAP format. This is done using the Sametime Name Conversion utility.</shortdesc>
-</concept>

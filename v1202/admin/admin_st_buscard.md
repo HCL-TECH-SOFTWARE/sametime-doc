@@ -38,7 +38,12 @@ Depending on the Sametime client type, the attribute to defined the photo locati
 -   `ImagePath` supports the Connect and Notes Embedded clients.
 -   Photos set to image/jpeg type supports the Connect and Notes Embedded clients.
 
-`PhotoURL` and `ImagePath` can be mapped to the same LDAP field. To support all Sametime client types using a URL, update the Sametime server UserInfoConfig.xml file to define both `PhotoURL` and `ImagePath`. For example:
+`PhotoURL` and `ImagePath` can be mapped to the same LDAP field. To support all Sametime client types using a URL:
+
+-   The URL must be HTTP not HTTPS.
+-   Update the Sametime server UserInfoConfig.xml file to define both `PhotoURL` and `ImagePath`.
+
+For example:
 
 ``` {#codeblock_pqq_svw_35b}
 
@@ -55,12 +60,16 @@ After you have identified where the user information is stored, proceed to the a
 Configuring business cards is done in the `UserInfoConfig.xml` file in the community pod.
 -   **[Customizing business cards in Kubernetes](config_buscard_custom_kubernetes.md)**  
 You can override the default business cards configuration by creating an extra-community-configs secret to hold the configuration files.
--   **[Customizing business cards in Docker](config_buscard_custom_docker.md)**  
+-   **[Customizing business cards in Docker and Podman](config_buscard_custom_docker.md)**  
 You can override the default business cards configuration by editing a UserInfoConfig.xml file and adding it as a volume in the docker-compose.yml.
 -   **[Storing photos in the Domino directory](storing_photos.md)**  
 If the Sametime server is connected to a Domino LDAP server, you can store business cards photos in the Domino Directory.
 -   **[Using HCL Connections photos for the Sametime business card](connections_photos.md)**  
 You can use the HCL Connections profiles photos for the Sametime business cards. A benefits for using this method is that updated photos in Connections are automatically updated in Sametime.
+-   **[Retrieving photos from HTTPS hosts in Kubernetes](t_adding_signer_certs_k8s.md)**  
+Signer certificates establish the relationship in SSL communication. This step is needed by the Sametime server, specifically for cases where the PhotoURL is using SSL \(HTTPS\) to access business card photos.
+-   **[Retrieving photos from HTTPS hosts in Docker and Podman](t_retrieve_photourl_docker.md)**  
+Signer certificates establish the relationship in SSL communication. This step is needed by the Sametime server, specifically for cases where the PhotoURL is using SSL \(HTTPS\) to access business card photos.
 
-**Parent topic:**[Configuring](configuring.md)
+**Parent Topic: **[Configuring](configuring.md)
 

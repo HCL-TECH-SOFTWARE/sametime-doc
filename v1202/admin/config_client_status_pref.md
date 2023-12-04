@@ -30,5 +30,5 @@ works for screen share status.
 |backWhenKeyboardMouseActive|Boolean. Default is true.|Determine whether to select the "Return to previous status when activity is resumed" in "Keyboard and mouse inactivity" check box.|7.5.1 and later|
 |blRetrievalRetryDelay|Integer. Default is 15000 ms.|Determines how long the client waits before trying again to retrieve the contact list from the storage service if the initial attempt times out. The default is 15 seconds, expressed as milliseconds.|8.5.2 IFR1 and later|
 
-**Parent topic:**[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
 

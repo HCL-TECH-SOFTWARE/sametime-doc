@@ -24,13 +24,14 @@ Jicofo \(conference focus\) – messages about features used in meetings, partic
 |Location|NA|Used when telephony is integrated to assist users with the telephone numbers.|
 |Mux|NA|Allows the Connect and Embedded clients in Notes to connect over port 1533. Has a svc with an IP address for users to connect.|
 |Proxy|NA|Runs the web chat service allowing users to connect with mobile clients or web clients for chat.|
-|Recorder|jibri, pushgateway, await-prosody|Save meeting recordings when a user records a meeting.It is also used for livestreaming.
+|Recorder|jibri, pushgateway, await-prosody|Save meeting recordings when a user records a meeting.It is also used for live streaming.
 
 |
 |Recordings|NA|Interacts with the persistent volume to store recordings.|
 |Video|jvb, prometheus-exporter|Interacts with STUN server.|
-|Web Serves|NA|Serves the web interface to the users|
-|Outlook|NA|When the Oulook add-in feature is enabled, this process interacts with the Outlook add-in.|
+|Web|NA|Serves the web interface to the users|
+|Webhook|NA|Interacts with telephony and click to call feature|
+|Outlook|NA|When the Outlook add-in feature is enabled, this process interacts with the Outlook add-in.|
 
-**Parent topic:**[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
+**Parent Topic: **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
 

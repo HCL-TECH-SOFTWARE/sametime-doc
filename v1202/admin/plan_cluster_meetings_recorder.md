@@ -2,9 +2,9 @@
 
 A recorder is used when a meeting is being recorded and when live streaming a video. The Kubernetes autoscaler adjusts the use of recorder pods based on settings in the recorder.yaml file.
 
-To deploy the autoscaler, Promethus must be installed. See [installation\_prometheus.md](installation_prometheus.md) for details.
+To deploy the autoscaler, Prometheus must be installed. See [Installing Prometheus](installation_prometheus.md) for the details.
 
-When a recorder is being used in a meeting, it is dedicated to that meeting until the user stops the recorder or the meeting is stopped. At that time, the recorder is available to be used again. For example, if two recorders are deployed, only two meetings can be recorded at the same time. A recorder is not available until one of the meetings end. The live streaming feature is also handled by the recorder.
+When a recorder is being used in a meeting, it is dedicated to that meeting until the user stops the recorder or the meeting is stopped. At that time, the recorder is available to be used again. For example, if two recorders are deployed, only two meetings can be recorded at the same time. A recorder is not available until one of the meetings ends. The live streaming feature is also handled by the recorder.
 
 Estimate how many recorders you may need and define the minimum and maximum number of recorder pods that are used by the autoscaler.
 
@@ -43,5 +43,5 @@ Estimate how many recorders you may need and define the minimum and maximum numb
     ```
 
 
-**Parent topic:**[Configure high capacity for meetings](plan_cluster_meetings.md)
+**Parent Topic: **[Configure high capacity for meetings](plan_cluster_meetings.md)
 

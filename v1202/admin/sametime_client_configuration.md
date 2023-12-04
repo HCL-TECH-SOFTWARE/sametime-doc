@@ -27,7 +27,7 @@ To configure preferences for the HCL Sametime Embedded Client for Notes, you can
 -   **[Updating connectivity settings with the managed-community-configs.xml file](admin_st_mng_remotecomm.md)**  
 You can distribute updates to HCL Sametime client communities automatically using a managed-community-configs.xml file. The managed-community-configs.xml file is policy-based, so you can control communities for different user groups.
 -   **[Creating a community provisioning URL for mobile users](community_provisioning.md)**  
-This section describes how to create a provisioning URL that automatically creates an HCL Sametime® community definition on mobile devices running Google Android or Apple iOS, so users can easily connect to Sametime.
+This section describes how to create a provisioning URL that automatically creates a Sametime community definition on mobile devices running Google Android or Apple iOS, so users can easily connect to Sametime.
 
-**Parent topic:**[Managing Sametime clients](managing_sametime_client_preferences.md)
+**Parent Topic: **[Managing Sametime clients](managing_sametime_client_preferences.md)
 

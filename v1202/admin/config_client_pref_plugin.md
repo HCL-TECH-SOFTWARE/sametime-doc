@@ -26,5 +26,5 @@ Every time the client starts, the plugin\_customization.ini preferences are read
 -   **[Changing the URL for the settings XML file in the plugin\_customization.ini file](config_client_url_xml_file.md)**  
 If you must change the URL for the managed settings file, do so by updating the plugin\_customization.ini file.
 
-**Parent topic:**[Configuring Sametime client preferences with the Expeditor managed settings framework](config_client_mng_xml_pref.md)
+**Parent Topic: **[Configuring Sametime client preferences with the Expeditor managed settings framework](config_client_mng_xml_pref.md)
 

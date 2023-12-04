@@ -13,5 +13,5 @@ The following chat features are not available to HCL Domino users. In Sametime v
 
 For a complete list of Sametime features, see [Sametime versus Sametime Premium](sametime_premium.md).
 
-**Parent topic:**[Considerations for Sametime Premium](topology_premium.md)
+**Parent Topic: **[Considerations for Sametime Premium](topology_premium.md)
 

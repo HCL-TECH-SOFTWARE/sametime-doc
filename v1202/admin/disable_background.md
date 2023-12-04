@@ -2,14 +2,12 @@
 
 By default, you can use a filter, blur your background, or use a default or custom image or video to obscure your surroundings. Depending on your organization's requirements, you can disable the virtual background feature by modifying the applicable file.
 
--   Docker
-    -   .env
--   Kubernetes
-    -   values.yaml
+-   For Docker, .env
+-   For Kubernetes, values.yaml
 
 To restrict all users from using virtual backgrounds during a meeting, follow these steps:
 
-1.  Modify the configuration file. The default value is TRUE.
+1.  Modify the configuration file. The default value is `TRUE`.
 
     -   For Docker, update the value of the ENABLE\_VIRTUAL\_BACKGROUND parameter:
 
@@ -26,5 +24,5 @@ To restrict all users from using virtual backgrounds during a meeting, follow th
 2.  Restart the Sametime server to apply the changes. For more information, refer to [Starting and stopping servers](https://help.hcltechsw.com/sametime/12/admin/starting_and_stopping_servers.html).
 
 
-**Parent topic:**[Managing Sametime Meetings](sametime_meeting_administering.md)
+**Parent Topic: **[Managing Sametime Meetings](sametime_meeting_administering.md)
 

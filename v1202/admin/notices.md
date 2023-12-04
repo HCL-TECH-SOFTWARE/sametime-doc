@@ -2,7 +2,7 @@
 
 Licensed Materials - Property of HCL Limited.
 
-© Copyright HCL Technologies Limited 1998, 2022
+© Copyright HCL Technologies Limited 1998, 2023
 
 This information was developed for products and services offered in the US.
 
@@ -59,9 +59,9 @@ This information contains sample application programs in source language, which 
 Each copy or any portion of these sample programs or any derivative work must include a copyright notice as follows:   
  © \(your company name\) \(year\).   
  Portions of this code are derived from HCL Technologies Limited. Sample Programs.   
- © HCL Technologies Limited 1998, 2022.
+ © HCL Technologies Limited 1998, 2023.
 
-**Parent topic:**[HCL Sametime Administration Guide 12.0.1](administrator_doc.md)
+**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 
 ## Trademarks {#trademarks}
 

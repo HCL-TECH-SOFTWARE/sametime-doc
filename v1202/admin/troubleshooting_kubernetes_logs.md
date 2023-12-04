@@ -12,29 +12,30 @@ Some pods have multiple containers and you can specify gathering the log for the
 
     The following example shows the output from a kubectl get pods command.
 
-    ``` {#codeblock_mny_54w_mvb}
+    ``` {#codeblock_rjf_ydp_ywb}
     
-    NAME                                                     READY   STATUS             RESTARTS  AGE 
-    activity-5675f8bc9d-49b4f                                1/1     Running            0         21h 
-    app-registry-84d89cfdd4-62z9s                            1/1     Running            0         21h 
-    auth-7459fc7cd7-cqnjt                                    1/1     Running            0         21h 
-    backgrounds-c9fb7b87c-m2gpc                              1/1     Running            0         21h 
-    catalog-6cdd48b6d6-8k669                                 1/1     Running            0         21h 
-    click2call-578d49d876-227fw                              1/1     Running            0         21h 
-    community-695c867bfb-6tl42                               2/2     Running            0         21h 
-    files-8454687cd8-xwsr8                                   2/2     Running            0         21h 
-    jibri-web-64c6d478fc-sfz9j                               1/1     Running            0         21h 
-    jitsi-7b86fc4f64-vtrrb                                   3/3     Running            0         21h 
-    lobby-5ccf4bcb-s8mbr                                     1/1     Running            0         21h 
-    location-5868588458-htxtj                                1/1     Running            0         21h 
-    mux-6b4bdc46d7-86768                                     1/1     Running            0         21h 
-    nginx-ingress-ingress-nginx-controller-5765f86f6-2dxq6   1/1     Running            0         21h 
-    outlook-5f946d99fd-nxhrc                                 1/1     Running            0         21h 
-    proxy-5697bc66f5-l88sf                                   1/1     Running            0         21h 
-    recorder-6b4d9d4598-jqpss                                2/2     Running            0         21h 
-    recordings-bd9f7b94f-5hhzq                               1/1     Running            0         21h 
-    video-778749bc5d-jhj5j                                   2/2     Running            0         21h 
-    web-5b5f4578d4-qmckq                                     1/1     Running            0         21h 
+    NAME			        READY    STATUS    RESTARTS        AGE
+    activity-5b75df6f6b-z98xs	 1/1     Running    0              25d
+    app-registry-7766fddd94-qbvsk    1/1     Running    0              25d
+    auth-c6d8457cb-9j9z7             1/1     Running    0              24d
+    backgrounds-cb8966646-wtvqs      1/1     Running    0              25d
+    catalog-ff66944d5-vvfkx          1/1     Running    0              10d
+    click2call-86f8f4cbbb-wptch      1/1     Running    0              25d
+    community-775fc897c9-mmb84       2/2     Running    0              25d
+    files-5b5865f8fc-h8hl5           2/2     Running    2 (9d ago)     25d
+    jibri-web-65b6849f67-9xxq9       1/1     Running    0              25d
+    jitsi-6c4754ffcf-n6t72           3/3     Running    0              25d
+    lobby-b569fcdd5-5fkmf            1/1     Running    0              25d
+    location-5894bcb6f7-kbkrb        1/1     Running    0              25d
+    mux-f68c5868d-8vl6j              1/1     Running    0              25d
+    outlook-7d7f54ff65-7cmzx         1/1     Running    2 (25d ago)    25d
+    proxy-6d669b9b94-xmhvt           1/1     Running    0              25d
+    recorder-7c9dcfc646-2g66f        2/2     Running    9 (22m ago)    32h
+    recordings-7cdd5c8cf4-lg2hn      1/1     Running    0              25d
+    video-7c477fbd86-2jn62           2/2     Running    0              25d
+    web-6d785f6479-tfmkb             1/1     Running    5 (14d ago)    25d
+    webhook-7cb587cd74-5t96w         1/1     Running    0              10d
+    
     
     ```
 
@@ -47,7 +48,7 @@ Some pods have multiple containers and you can specify gathering the log for the
     For example, if you want to view the jvb logs from the video pod based on the output in the previous step enter the command:
 
     ``` {#codeblock_kmv_nbj_3vb}
-     kubectl logs video-58f8589f99-f4tcd jvb 
+     kubectl logs video-7c477fbd86-2jn62 jvb 
     ```
 
     You can also use the --all-containers argument to see logs from all the containers on the pod.
@@ -59,9 +60,9 @@ Some pods have multiple containers and you can specify gathering the log for the
     To redirect the output to a file, add the greater than character \(**\>**\) as an argument on the command and specifying a location that you have access to put the file. For example:
 
     ``` {#codeblock_am1_vbj_3vb}
-    kubectl logs video-58f8589f99-f4tcd --all-containers > /tmp/video.txt 
+    kubectl logs video-7c477fbd86-2jn62 --all-containers > /tmp/video.txt 
     ```
 
 
-**Parent topic:**[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
+**Parent Topic: **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
 

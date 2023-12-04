@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<task id="upgrading_meetings" xml:lang="en-us">
-    <title>Upgrading from Meetings 11.5 and 11.6</title>
-    <shortdesc>Upgrade in place is possible for both Docker and Kubernetes. This section provides
-        information on updating from Sametime 11.6 to Sametime 12.</shortdesc>
-</task>

@@ -13,5 +13,5 @@ You can implement SSO into your environment using Lightweight Third Party Authen
 -   **[Setting up SSO using SAML](enabling_sso_saml.md)**  
 You can implement SSO into your environment using Security Assertion Markup Language \(SAML\). The process is different for Kubernetes and Docker.
 
-**Parent topic:**[Securing](securing.md)
+**Parent Topic: **[Securing](securing.md)
 

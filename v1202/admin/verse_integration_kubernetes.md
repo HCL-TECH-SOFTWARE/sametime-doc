@@ -1,4 +1,4 @@
-# Enabling the legacy web client on Kubernetes {#verse_integration_kubernetes .task}
+# Enabling web client integration on Kubernetes {#verse_integration_kubernetes .task}
 
 The changes in this task affect the following pods:
 
@@ -6,10 +6,10 @@ The changes in this task affect the following pods:
 
 1.  Edit the values.yaml file.
 
-2.  Add the `enableLegacyClient` key with the value set to true.
+2.  Add the `enableLegacyChatClient` key with the value set to true.
 
     ``` {#codeblock_j2z_zf1_h5b}
-    enableLegacyClient: true
+    enableLegacyChatClient: true
     ```
 
 3.  Apply the changes to the configuration.
@@ -44,5 +44,5 @@ The changes in this task affect the following pods:
         ```
 
 
-**Parent topic:**[Integrating with other applications](verse_integration.md)
+**Parent Topic: **[Integrating with other applications](verse_integration.md)
 

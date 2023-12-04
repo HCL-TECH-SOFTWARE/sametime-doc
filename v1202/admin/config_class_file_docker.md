@@ -1,8 +1,10 @@
-# Configuring the class file on Docker {#config_class_file_docker .task}
+# Configuring the class file on Docker and Podman {#config_class_file_docker .task}
 
 Use a custom Java class file to transform your searches for LDAP for the community pod.
 
 You must have already created and compiled the class file using Java 1.8.
+
+The Docker and Podman commands are similar. The only difference is that docker precedes the command when issued in a Docker environment and podman precedes the name in a Podman environment. Example commands used in the Sametime documentation are shown using Docker. For Podman, change docker to podman.
 
 To configure a custom Java class file to transform your searches for LDAP for the Sametime server on Docker you need to complete the following tasks.
 
@@ -35,7 +37,7 @@ To configure a custom Java class file to transform your searches for LDAP for th
 
 6.  Save and close the StCommunityConfig.xmlfile.
 
-7.  Edit the docker-compose.yaml file and add the following under the `community section:`
+7.  Edit the docker-compose.yml file and add the following under the `community section:`
 
     ``` {#codeblock_ww1_vkk_mvb}
     
@@ -45,14 +47,13 @@ To configure a custom Java class file to transform your searches for LDAP for th
 
     If the class files is placed in a sub-directory, it must be specified in the above volume path.
 
-8.  Save and Restart the server to apply the changes.
+8.  Start the Sametime server to apply the changes.
 
-    ``` {#codeblock_emt_4kk_mvb}
+    ``` {#codeblock_btc_lj4_k5b}
+    docker compose up -d
     
-    docker-compose down 
-    docker-compose up -d
     ```
 
 
-**Parent topic:**[Creating custom Java classes for searching LDAP](creating_custom_java.md)
+**Parent Topic: **[Creating custom Java classes for searching LDAP](creating_custom_java.md)
 

@@ -34,9 +34,9 @@ To troubleshoot managed settings, see [Troubleshooting Sametime Managed Settings
 -   **[Defining preferences in the managed-settings.xml file](config_client_xml_file.md)**  
 Follow these instructions to define preferences in a managed-settings.xml file.
 -   **[Changing the update interval for managed preferences](config_client_update_interval_xml.md)**  
-If you want to change the update interval for managed preferences, you can update the existing settings XML file.
+To change the update interval for managed preferences, you can update the existingmanaged-settings.xml file.
 -   **[Discontinuing managed preferences](config_client_discontinue_xml_file.md)**  
 To stop setting preferences through the Expeditor managed settings framework, remove the reference to the managed-settings.xml or managed-community-configs.xml file\(s\) and unlock any previously read-only settings.
 
-**Parent topic:**[Configuring Sametime client preferences with the Expeditor managed settings framework](config_client_mng_xml_pref.md)
+**Parent Topic: **[Configuring Sametime client preferences with the Expeditor managed settings framework](config_client_mng_xml_pref.md)
 

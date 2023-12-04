@@ -12,5 +12,5 @@ If the preference is set in both the Domino Desktop policy settings document and
 
 [How to use a Notes desktop policy to push Sametime embedded client settings](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0036468).
 
-**Parent topic:**[Sametime client configuration options](sametime_client_configuration.md)
+**Parent Topic: **[Sametime client configuration options](sametime_client_configuration.md)
 

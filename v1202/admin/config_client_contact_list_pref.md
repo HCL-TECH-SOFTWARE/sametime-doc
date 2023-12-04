@@ -64,5 +64,5 @@ The following table lists the contact list preferences for the HCL® Sametime® 
 |---------|-------------|-----------|-------|
 |HIDE\_PANEL\_com.ibm.collaboration.realtime.filteredbuddies.shelfview|Boolean. Default is true.|Specifies whether the Primary Contacts panel displays in the contacts list.|7.5.1 and later|
 
-**Parent topic:**[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
 

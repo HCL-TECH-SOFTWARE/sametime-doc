@@ -64,8 +64,12 @@ If you wish to only encrypt operations that involve passwords, the rest of the t
 
 -   **[Securing LDAP on Kubernetes](securing_ldap_kubernetes.md)**  
 This section covers the steps to import your LDAP trust store and password into Kubernetes as a secret, then define the secret in the Sametime configuration.
--   **[Securing LDAP on Docker](securing_ldap_docker.md)**  
+-   **[Securing LDAP on Docker or Podman](securing_ldap_docker.md)**  
 This topic covers the steps to import your LDAP trust store and password into Docker as a secret, then define the secret in the Sametime configuration.
+-   **[Specifying a cipher for Sametime to connect to Domino LDAP on Kubernetes](t_domino_ldap_k8s.md)**  
+This task involves defining the required cipher for Sametime to connect to Domino 12 LDAP servers.
+-   **[Specifying a cipher for Sametime to connect to Domino LDAP on Docker or Podman](t_domino_ldap_docker.md)**  
+Several options that are related to the LDAP server SSL or TLS secure communications can be controlled by environment variables that are used by System SSL. This topic discusses the steps on how to specify a cipher for Sametime to connect to Domino LDAP.
 
-**Parent topic:**[Securing connections](securing_connections.md)
+**Parent Topic: **[Securing connections](securing_connections.md)
 

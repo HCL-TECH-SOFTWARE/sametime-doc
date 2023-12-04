@@ -105,5 +105,5 @@ The following procedures uses Coturn open source implementation of a TURN server
 3.  Save the file and restart the Coturn server to apply the changes.
 
 
-**Parent topic:**[Setting up a TURN server](turnserver_intro.md)
+**Parent Topic: **[Setting up a TURN server](turnserver_intro.md)
 

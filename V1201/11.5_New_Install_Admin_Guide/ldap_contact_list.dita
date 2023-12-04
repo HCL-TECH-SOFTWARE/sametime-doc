@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="ldap_contact_list" xml:lang="en-us">
-    <title>Contact lists</title>
-    <shortdesc>Sametime might experience difficulties when users include large public groups in their contact lists. To avoid problems, limit the size of public groups used with Sametime to 1000 users.</shortdesc>
-</concept>

@@ -2,13 +2,13 @@
 
 The Kubernetes autoscaler adjusts the use of video pods based on the configured values in the video.yaml file.
 
-To deploy the autoscaler, Promethus must be installed. See [installation\_prometheus.md](installation_prometheus.md) for details.
+To deploy the autoscaler, Prometheus must be installed. See [Installing Prometheus](installation_prometheus.md) for the details.
 
 When Sametime is installed for the first time, you must deploy a HorizontalPodAutoscaler.
 
 1.  Change directories to installation\_directory/ /kubernetes/autoscaling directory. Where installation\_directory is the directory the install package is located.
 
-2.  Open the file video.yaml for editing.
+2.  Open the video.yaml file for editing.
 
 3.  Configure the minimum number and maximum number of video pods by adjusting the following settings.
 
@@ -41,5 +41,5 @@ When Sametime is installed for the first time, you must deploy a HorizontalPodAu
     ```
 
 
-**Parent topic:**[Configure high capacity for meetings](plan_cluster_meetings.md)
+**Parent Topic: **[Configure high capacity for meetings](plan_cluster_meetings.md)
 

@@ -4,7 +4,7 @@ If the Sametime server is connected to a Domino LDAP server, you can store busin
 
 The file name of the photo attached to the person document must be named ContactPhoto.jpg. Domino serves this photo as an attribute called Photo. It is possible to use a custom field with the attachment or thumbnail field type, photo types used by Domino are JPEG and GIF file types. Photo size should be smaller than 45 KB, for best results use a 10 KB sized photo. This option requires the Domino Designer Client and modifying the design, which is outside the scope of this document.
 
-This configuration only applies to the rich clients. In order to display photos in meetings or webchat, you must use the PhotoURL attribute.
+This configuration only applies to the rich clients. In order to display photos in Meetings or Web Chat, you must use the PhotoURL attribute.
 
 The Domino directory has a field in the person document that allows the user to upload their contact. It is saved as a thumbnail which automatically reduces the size of the file.
 
@@ -30,5 +30,5 @@ Important considerations:
 7.  Confirm that the photo is correct and click **Save and Close**.
 
 
-**Parent topic:**[Setting up business cards](admin_st_buscard.md)
+**Parent Topic: **[Setting up business cards](admin_st_buscard.md)
 

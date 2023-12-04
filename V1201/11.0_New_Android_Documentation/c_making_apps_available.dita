@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
- "concept.dtd">
-<?Pub Sty _display FontColor="red"?>
-<concept id="making_apps_available" xml:lang="en-us">
-  <title>Making Apps available for Android Enterprise</title>
-  <shortdesc>Once an EMM is bound to Android Enterprise for a domain, the Google administrator for the domain can navigate to Google Play for Work and approve the apps to be used by users. Once the apps are approved in Google Play, they must be added to the EMM administration console.</shortdesc></concept>
-<?Pub *0000001020?>

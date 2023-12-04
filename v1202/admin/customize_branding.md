@@ -16,8 +16,8 @@ You can include several levels of customizing for meetings to present a visual r
 
 -   **[Adding corporate branding to meeting pages using Kubernetes](customize_kubernetes.md)**  
 
--   **[Adding corporate branding to meeting pages using Docker](customize_docker.md)**  
+-   **[Adding corporate branding to meeting pages using Docker or Podman](customize_docker.md)**  
 
 
-**Parent topic:**[Configuring](configuring.md)
+**Parent Topic: **[Configuring](configuring.md)
 

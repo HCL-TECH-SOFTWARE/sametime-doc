@@ -1,6 +1,6 @@
 # Troubleshooting Sametime on Kubernetes {#t_troubleshooting_sametime_kubernetes .concept}
 
--   **[Enabling Community trace in Kubernetes](t_enabling_community_debug.md)**  
+-   **[Enabling Community debug in Kubernetes](t_enabling_community_debug.md)**  
 
 -   **[Viewing and saving log files](troubleshooting_kubernetes_logs.md)**  
 Logs track pod events. You can gather a log for a specific pod and container within a pod or for all pods.
@@ -17,5 +17,5 @@ Use this information on troubleshooting Sametime 12 Premium on Kubernetes - cont
 -   **[Troubleshooting LDAP on the community pod](t_troubleshooting_ldap_kubernetes.md)**  
 
 
-**Parent topic:**[Troubleshooting](troubleshooting.md)
+**Parent Topic: **[Troubleshooting](troubleshooting.md)
 

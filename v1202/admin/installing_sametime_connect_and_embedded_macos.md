@@ -14,7 +14,7 @@ Before getting started, it review the client installation customization options.
 
 4.  Review the license information.
 
-    To contine click **I accept the terms in the license agreement** and then **Next**.
+    To contine, click **I accept the terms in the license agreement** and then **Next**.
 
 5.  On the next screen, specify where to install the client and then click **Next**.
 
@@ -25,5 +25,5 @@ Before getting started, it review the client installation customization options.
     After the install is complete, click **Finish**.
 
 
-**Parent topic:**[Installing Sametime clients](installing_sametime_clients.md)
+**Parent Topic: **[Installing Sametime clients](installing_sametime_clients.md)
 

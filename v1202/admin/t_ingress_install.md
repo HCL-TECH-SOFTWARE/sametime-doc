@@ -2,7 +2,7 @@
 
 When running Kubernetes on-prem, managing load-balancing must be considered for Sametime Meetings and Web Chat. Both of these Sametime features require the addition of an ingress controller.
 
-Ingress is secured with a SSL certificate which must be created. Create a secret for ingress by following the steps in [Updating the TLS certificates on Kubernetes](tls_change_certificate_kubernetes.md).
+Ingress is secured with a TLS certificate which must be created. Create a secret for ingress by following the steps in [Updating the TLS certificates on Kubernetes](tls_change_certificate_kubernetes.md).
 
 If different the host names for Web Chat and Meetings are different, open the values.yaml file and add the following line to identify the Web Chat host name.
 
@@ -12,9 +12,11 @@ extraChatHostname: web\_chat\_hostname
 
 Verify that there are two spaces at the beginning of the line. Save and close the values.yaml file.
 
+Consider reserving a reserve a static IP address for Sametime to use. If one is not define during the installation, the IP address is dynamic and is subject to change.
+
 There are many different ingress controllers available, however; not all of them have been tested with Sametime. The procedure in this topic describes deploying the NGINX Ingress controller. If you are using another ingress controller, refer to the documentation for that ingress controller.
 
-An Ingress controller is also used for the Connect and Embedded clients mux traffic deployed on-premise Kubernetes. After installing the ingress controller, additional configuraiton steps are needed. See[Configuring Ingress for Mux](t_ingress_configure.md) for details.
+An Ingress controller is also used for the Connect and Embedded clients mux traffic deployed on-premise Kubernetes. After installing the ingress controller, additional configuraiton steps are needed. See [Configuring Ingress for Mux](t_ingress_configure.md) for details.
 
 Helm commands are used to install and configure the NGINX Ingress controller.
 
@@ -42,17 +44,17 @@ Helm commands are used to install and configure the NGINX Ingress controller.
 
     If you have a namespace dedicated to Sametime, include the namespace option on the command.
 
-4.  Verify that nginx-ingress has accepted the correct static IP address by running the kubectl get command. Includes the -w parameter. To break free from this, use Ctrl+C.
+4.  Verify that nginx-ingress has accepted the correct static IP address by running the kubectl get command. To break free from this, use Ctrl+C.
 
     ``` {#codeblock_ong_13d_pvb}
-    kubectl get services -o wide -w nginx-ingress-ingress-nginx-controller 
+    kubectl get ingress
     ```
 
-    Use Contl+C to return to the command prompt.
+    Use Ctrl+C to return to the command prompt.
 
 
 -   **[Configuring Ingress for Mux](t_ingress_configure.md)**  
 
 
-**Parent topic:**[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
+**Parent Topic: **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
 

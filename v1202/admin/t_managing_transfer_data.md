@@ -17,5 +17,5 @@ You can modify the limit by updating the following files.
     2.  For Kubernetes environments, update the **filesExpireInDays** parameter. For example, **filesExpireInDays: 77** to indicate 77 days.
 2.  Restart the Sametime server to apply the changes. For more information, refer to [Starting and stopping servers](https://help.hcltechsw.com/sametime/12/admin/starting_and_stopping_servers.html).
 
-**Parent topic:**[Administering](administering.md)
+**Parent Topic: **[Administering](administering.md)
 

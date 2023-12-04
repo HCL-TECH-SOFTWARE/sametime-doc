@@ -1,10 +1,10 @@
 # Accessibility features for Sametime {#over_accessibility .concept}
 
-Accessibility features help users who have a disability, such as restricted mobility or limited vision, to use information technology products successfully. HCL® strives to provide products with usable access for everyone.
+Accessibility features help users who have a disability, such as restricted mobility or limited vision, use information technology products successfully. HCL® strives to provide products with usable access for everyone.
 
 ## Accessibility features { .section}
 
-HCL Sametime® uses the latest W3C Standard, [WAI-ARIA 1.0](http://www.w3.org/TR/wai-aria/) to ensure compliance to [US Section 508](http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards) and [Web Content Accessibility Guidelines \(WCAG\) 2.0](http://www.w3.org/TR/WCAG20/).
+HCL Sametime® uses the latest W3C Standard, [WAI-ARIA 1.0](http://www.w3.org/TR/wai-aria/), to ensure compliance with [US Section 508](http://www.access-board.gov/guidelines-and-standards/communications-and-it/about-the-section-508-standards/section-508-standards) and [Web Content Accessibility Guidelines \(WCAG\) 2.0](http://www.w3.org/TR/WCAG20/).
 
 **Note:** For the best accessible experience, use the latest versions of both the screen reader and browser.
 
@@ -24,7 +24,7 @@ HCL Sametime® uses the latest W3C Standard, [WAI-ARIA 1.0](http://www.w3.org/TR
     -   Allows the users to request more time to complete timed responses
     -   Can be operated by using only the keyboard
     -   Supports the attachment of alternative input and output devices
--   The following features are for the deaf and hard of hearing users:
+-   The following features are for deaf and hard of hearing users:
     -   Supports alternatives to audio information
     -   Supports adjustable volume control
 -   The console does not flash the screen at rates that could induce epileptic seizures
@@ -44,11 +44,11 @@ To make a selection in a checkbox, use the Space key.
 
 To change the navigation view using the keyboard, follow these steps.
 
-1.  Navigate to the View selection list pressing Tab.
+1.  Navigate to the View selection list by pressing Tab.
 2.  Use the up and down arrows to change the value of the selection list.
 3.  Press Enter.
 
-The tasks displayed in the navigation are changed according to your selection.
+The tasks displayed in the navigation change according to your selection.
 
-**Parent topic:**[HCL Sametime Administration Guide 12.0.1](administrator_doc.md)
+**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 

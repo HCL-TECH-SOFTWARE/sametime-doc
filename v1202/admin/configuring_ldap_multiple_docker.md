@@ -1,4 +1,4 @@
-# Configuring additional LDAP servers on Docker {#configuring_ldap_multiple_docker .task}
+# Configuring additional LDAP servers on Docker and Podman {#configuring_ldap_multiple_docker .task}
 
 You can configure the Sametime server to connect to two or more LDAP servers.
 
@@ -7,6 +7,8 @@ When you connect to more than one LDAP server, it is important for the names to 
 -   Configure the cluster for the first LDAP server. This must be done when the cluster was installed.
 -   You must know the host name, port and optional bind credentials for each LDAP server.
 -   If you are using a secure connection to LDAP, the LDAP server’s certificate for each server must be stored in the same .p12 trust store file. You must create a secret containing the trust store that holds each LDAP server’s certificate.
+
+The Docker and Podman commands are similar. The only difference is that docker precedes the command when issued in a Docker environment and podman precedes the name in a Podman environment. Example commands used in the Sametime documentation are shown using Docker. For Podman, change docker to podman.
 
 When more than one LDAP is defined in an environment, they are searched in the order defined in the StCommunityConfig.xml and UserInfoConfig.xml files. When you define each LDAP server, the order in which they are listed in the configuration is the same order in which they are searched.
 
@@ -45,7 +47,7 @@ This procedure is to configure Sametime to connect to two or more separate LDAP 
     echo -n “CN=bind,O=Example:password” | base64 -d 
     ```
 
-5.  Use a text editor to open your local copy of UserInfoConfig.xml in edit mode.
+5.  Open your local copy of the UserInfoConfig.xml file for editing.
 
 6.  Duplicate the line that begins with `StorageDetails`.
 
@@ -69,7 +71,7 @@ This procedure is to configure Sametime to connect to two or more separate LDAP 
     SearchFilter
     :   SearchFilter Modify the search filter if needed. The defaults work well with Domino LDAP.
 
-    You can make other changes to the business cards configuration if needed at this time. When finished, save and close the file.
+    You can make other changes to the business cards configuration if needed at this time.
 
 8.  When finished, save and close the UserInfoConfig.xml file.
 
@@ -83,7 +85,7 @@ This procedure is to configure Sametime to connect to two or more separate LDAP 
 
 10. Save and close the StCommunityConfig.xml file.
 
-11. Edit the docker-compose.yaml by adding the following under the community section:
+11. Edit the docker-compose.yml by adding the following under the community section:
 
     ``` {#codeblock_jtx_tqy_mvb}
     
@@ -92,14 +94,13 @@ This procedure is to configure Sametime to connect to two or more separate LDAP 
       - ./UserInfoConfig.xml:/local/notesdata/UserInfoConfig.xml 
     ```
 
-12. Restart the server to apply the changes by running the following commands.
+12. Start the Sametime server to apply the changes.
 
-    ``` {#codeblock_vsw_wqy_mvb}
+    ``` {#codeblock_btc_lj4_k5b}
+    docker compose up -d
     
-    docker-compose down
-    docker-compose up -d
     ```
 
 
-**Parent topic:**[Configuring LDAP](configuring_ldap.md)
+**Parent Topic: **[Configuring LDAP](configuring_ldap.md)
 

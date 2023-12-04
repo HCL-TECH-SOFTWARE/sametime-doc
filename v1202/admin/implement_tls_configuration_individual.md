@@ -27,5 +27,3 @@ To use the prefix, review the setting from [Implementing the Global TLS Scope](i
 
 Once the required sametime.ini parameters are in place be sure to finish configuring your service by completing the topic for the service you are wanting to secure.
 
-**Parent topic:**[Choosing the TLS configuration scope](tls_configuration.md)
-

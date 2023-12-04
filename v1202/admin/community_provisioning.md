@@ -1,8 +1,8 @@
 # Creating a community provisioning URL for mobile users {#community_provisioning .task}
 
-This section describes how to create a provisioning URL that automatically creates an HCL Sametime® community definition on mobile devices running Google Android or Apple iOS, so users can easily connect to Sametime.
+This section describes how to create a provisioning URL that automatically creates a Sametime community definition on mobile devices running Google Android or Apple iOS, so users can easily connect to Sametime.
 
-A mobile user cannot connect to the Sametime Proxy Server without a special mobile community definition that provides details needed for the connection. Creating the mobile community is often frustrating for users because they do not have ready access to required information such as the Sametime Proxy Server's hostname and port. A provisioning URL for the mobile community makes it easy for users to connect to Sametime from their mobile devices after installing the client.
+A mobile user cannot connect to the Sametime server without a special mobile community definition that provides details needed for the connection. Creating the mobile community is often frustrating for users because they do not have ready access to required information such as the Sametime proxy server's hostname and port. A provisioning URL for the mobile community makes it easy for users to connect to Sametime from their mobile devices after installing the client.
 
 To connect to Sametime, the user simply taps the provisioning link or scans the associated QR code, and then:
 
@@ -15,9 +15,7 @@ You can format the URL as a link or as a QR code, and distribute it in email or 
 -   Google Android 6 or later.
 -   Apple iOS 13 or later.
 
-**Note:**
-
-Starting with HCL Sametime version 11, the browser client will display a QR code that can be used to configure the HCL Sametime client for Android or iOS. Once logged into the browser client, open Settings and then **Configure Mobile Client.** The QR code displayed will represent a secure community configuration for the Sametime proxy server and port that the browser is connected to. The QR code will also include the users’ ID and a default community name of Sametime. The user will only need to follow the instructions to scan the code and enter their password before connecting with a mobile device.
+**Note:** Starting with HCL Sametime version 11, the browser client displays a QR code that can be used to configure the HCL Sametime client for Android or iOS. Once logged into the browser client, open Settings and then **Configure Mobile Client.** The QR code displayed represents a secure community configuration for the Sametime proxy server and port that the browser is connected to. The QR code also includes the users’ ID and a default community name of Sametime. The user only needs to follow the instructions to scan the code and enter their password before connecting with a mobile device.
 
 If you wish to use a different community name or perhaps the mobile clients need to connect through an authenticating proxy, the administrator can create a custom provisioning URL using the information contained in this article and then configure the Sametime proxy to display the QR code for the custom provisioning URL rather than the default one mentioned above.
 
@@ -99,9 +97,9 @@ Create and distribute a custom provisioning URL by completing the following step
 2.  Distribute the URL to mobile users:
     -   Format the URL as a link or use a third-party application to generate a scannable QR code.
     -   Post the link or QR code to a website, or distribute to users it by email.
-    -   Configure the Sametime proxy to display the QR code for your custom provisioning URL using the browser clients Configure Mobile Client feature.
+    -   Configure the Sametime server to display the QR code for your custom provisioning URL using the browser clients Configure Mobile Client feature.
 
-**Configuring the Sametime Proxy server to use the custom provisioning URL**
+**Configuring the Sametime server to use the custom provisioning URL**
 
 Before updating the stproxyconfig.xml, examine the URL. URL encode any ampersands or spaces. For example, if the URL.
 
@@ -120,7 +118,7 @@ hclsametime://stproxyserver.example.com/?action=AddCommunity%26communityName=Sam
 ```
 
 1.  Use a text or XML editor to open the stproxyconfig.xml file, located in the sametimeproxy\\conf\\stproxyconfig.xml directory.
-2.  Add a <mobile\> section if it doesn't exist with <configUrl\> providing the provisioning URL as shown in the following example.
+2.  Add a <mobile\> section if it does not exist with <configUrl\> providing the provisioning URL as shown in the following example.
 
     ```
     
@@ -133,5 +131,10 @@ hclsametime://stproxyserver.example.com/?action=AddCommunity%26communityName=Sam
 3.  Save and close the file
 4.  Restart the Sametime Proxy server to enable.
 
-**Parent topic:**[Sametime client configuration options](sametime_client_configuration.md)
+-   **[Creating a community provisioning URL on Docker or Podman](t_community_provisioning_docker.md)**  
+As discussed in [Creating a community provisioning URL for mobile users](community_provisioning.md), mobile users cannot connect to the Sametime server without a special mobile community definition that provides details needed for the connection. This topic discusses the specific steps to set up the community provisioning URL on Docker or Podman.
+-   **[Creating a community provisioning on Kubernetes](t_community_provisioning_k8s.md)**  
+As discussed in [Creating a community provisioning URL for mobile users](community_provisioning.md), mobile users cannot connect to the Sametime server without a special mobile community definition that provides details needed for the connection. This topic discusses the steps to set up the community provisioning URL on Kubernetes.
+
+**Parent Topic: **[Sametime client configuration options](sametime_client_configuration.md)
 

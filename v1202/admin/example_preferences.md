@@ -1,59 +1,42 @@
-# Deploy managed-settings.xml or managed-community-configs.xml file to a web server {#example_preferences .task}
+# Hosting client files for Sametime on Docker or Podman {#example_preferences .task}
 
-Once the xml file\(s\) is ready to be deployed to users, the file must be placed on a web server to host it. This can be any web server the users can reach.
+Sametime clients can be configured by administrators using a managed-settings.xml or managed-community-configs.xml file which is hosted by a web server. Additionally, the Sametime client can be pre-configured with settings such as the hostname, port, etc. The client package can be hosted on a web server for download. This topic has the steps to host files in the Sametime web container for Docker or Podman.
 
-The web server that hosts the managed-settings.xml and/or managed-community-configs.xml must allow these two files to be accessed anonymously.
+-   Ensure that you can access the client files and the Sametime server.
+-   Prior to placing the managed-settings.xml or managed-community-configs.xml on Docker or Podman, open the file using a browser and ensure it is not producing any syntax errors. If errors are present, they should be resolved first.
 
-**Procedure**
+The Docker and Podman commands are similar. The only difference is that docker precedes the command when issued in a Docker environment and podman precedes the name in a Podman environment. Example commands used in the Sametime documentation are shown using Docker. For Podman, change docker to podman.
 
-1.  Prior to placing the managed-settings.xml and/or managed-community-configs.xml on the web server, open the file using a browser and ensure it is not producing any syntax errors. If errors are present, they should be resolved first.
+1.  Shut down the Sametime server.
 
-2.  If choosing Domino for the web server it must be running the http task. Place the managed-settings.xml file in the Domino web server directory:
-
-    For windows:
-
-    ```
-    c:\Program Files\HCL\Domino\data\domino\html
+    ``` {#codeblock_rxs_k2h_15b}
+    docker-compose down
     ```
 
-    For Linux:
+2.  Run the following command to copy the managed-settings.xml or managed-community-configs.xml file into the sametime-config/web/downloads directory.
 
-    ```
-    /local/notesdata/domino/html 
-    ```
-
-    Example resulting URL:
-
-    ```
-    http://www.example.com/managed-settings.xml 
+    ``` {#codeblock_vpc_t2h_1yb}
+    cp SametimeClient.exe sametime-config/web/downloads/.
     ```
 
-3.  The managed-settings.xml file must be named “managed-settings.xml”.
+    The managed-settings.xml file must be named *managed-settings.xml*. If you require more than one managed-settings.xml file, you must place those files in different folders on the web server.
 
-    If you require more than one managed-settings.xml file, they can be placed in different folders on the web server, for example \(on Windows\):
+3.  **Optional:** Create additional directories in the downloads folder. For example, create a folder named `default` under that tree.
 
-    ```
-    c:\Program Files\HCL\Domino\data\domino\html\default\managed-settings.xml 
-    
-    c:\Program Files\HCL\Domino\data\domino\html\nomeetings\managed-settings.xml 
+    ``` {#codeblock_bkr_hrn_jyb}
+    sametime-config/web/downloads/default/
     ```
 
-    Example resulting URLs:
+    The Sametime client looks in the folder specified in the policy for both a managed-settings.xml and a managed-community-configs.xml. If you are using both types of files, the URL defined in the policy must be scoped to the folder path where the two files reside.
 
-    ```
-    http://www.example.com/default/managed-settings.xml 
-    
-    http://www.example.com/nomeetings/managed-settings.xml 
-    ```
-
-4.  The Sametime server will look in the folder specified in the URL for both a managed-settings.xml and a managed-community-configs.xml. If you are using both types of files, your URL defined in the policy must be scoped to the folder path where the two files reside.
+    If you need to support multiple policies containing different managed-settings.xml and managed-community-configs.xml files, then place them in folders with different names.
 
     For example:
 
-    ```
+    ``` {#codeblock_ajh_m15_jyb}
     http://www.example.com/default 
     
-    http://www.example.com/nomeetings 
+    http://www.example.com/nomeetings
     ```
 
     **Note:** Do not use the following special characters in your folder names
@@ -70,5 +53,5 @@ The web server that hosts the managed-settings.xml and/or managed-community-conf
 
 [Updating the client policy to include the managed settings URL](update_client_policy.md).
 
-**Parent topic:**[Defining preferences in the managed-settings.xml file](config_client_xml_file.md)
+**Parent Topic: **[Defining preferences in the managed-settings.xml file](config_client_xml_file.md)
 

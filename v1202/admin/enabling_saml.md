@@ -1,78 +1,111 @@
 # Enabling SAML authentication in client installation packages {#enabling_saml .task}
 
-Ensure that Sametime® Connect and Embedded clients can connect to the Sametime Community Server using SAML by adding the new trusted audience URL to the client preferences before installing or updating the clients.
+Ensure that Sametime Connect and Embedded clients can connect to the Sametime using SAML by adding the new trusted audience URL to the client preferences before installing or updating the clients.
 
-Enable SAML authentication for the deployment as explained in [Enabling SAML authentication on the Sametime Community Server](enabling_sso_saml.md).
+Enable SAML authentication for the deployment as explained in [Setting up SSO using SAML](enabling_sso_saml.md).
 
-This task only applies to the Sametime Connect and Embedded clients; it does not affect web or mobile clients. During SAML login, Sametime redirects client connections from the initial IdP URL. If the redirected URL is not listed as a trusted site, Sametime stops loading the page and generates the following error message in the log:
+This task applies to the Sametime Connect and Embedded clients; it does not affect web or mobile clients. This topic includes parameters to pre-configure the clients for SAML, so that the users do not need to know any of the details.
 
-`URL redirected_url is not in the trusted sites list.`
+During SAML log in process, Sametime redirects client connections to the Identity Provider \(IdP\) URL. If the IdP passes the user through multiple sites, Sametime stops loading the page and generates the following error message in the log: URL redirected\_url is not in the trusted sites list.
 
-Ensure that Sametime Connect and Embedded clients can connect using SAML by adding the trusted site's URL to the client preferences before installing or updating the clients. This is the URL that you assigned in the `STSAML_TRUSTED_AUDIENCES` setting, as explained in [Configuration settings related to SAML authentication](configuring_sso_saml.md). For more information on configuring client installation packages, see[Configuring Sametime Connect client preferences with the Expeditor managed settings framework](config_client_mng_xml_pref.md).
+Ensure that Sametime Connect and Embedded clients can connect using SAML by adding the trusted site's URL to the client preferences before installing or updating the clients. This is the URL that you assigned in the STSAML\_TRUSTED\_AUDIENCES setting, as explained in [Configuration settings related to SAML authentication](configuring_sso_saml.md). For more information on configuring client installation packages, see [Configuring Sametime Connect client preferences with the Expeditor managed settings framework](config_client_mng_xml_pref.md).
 
-Alternatively, users can enable SAML authentication themselves by modifying settings in the client. For more information, see [Enabling SAML authentication in installed clients](enabling_saml_clients.md)
+Alternatively, users can manually enable SAML authentication by modifying settings in the client. For more information, see [Enabling SAML authentication in installed clients](enabling_saml_clients.md). This topic outlines the steps required to determine the settings used in the plugin\_customization.ini file. As you find the parameter name and value for each setting, save them in a temporary location, which is added to the plugin\_customization.ini to configure the clients.
 
-1.  Determine your company's SAML IdP URL.
+1.  Determine the SAML prefix value.
 
-    The IdP URL is based on your Sametime Community Server host name, and provides the HTML page with at least 3 <input\> tags for the User name, Password, and Submit fields. Upon a submit action, the URL might redirect to one or more URLs and receive the SAML token in response.
+    The Sametime clients support connecting to more than one Sametime environment, which could possibly have different IdPs. Therefore, the parameters defined in the plugin\_customization.ini file are prefixed with the host name of the server.
 
-2.  Decide whether you want to use `form` or `browser` as the IdP log-in type.
+    To determine the parameter prefix value:
 
-    If you want to log in to your company's authentication server by typing a user name and password in a Sametime dialog box, use `form` as the `idp.type`; otherwise use browser.
+    -   The first part of the parameter prefix is `com.ibm.collaboration.realtime.community/`.
+    -   The second part of the parameter prefix is the fully qualified host name of the Sametime server followed by a dot. For example:
 
-3.  Determine your company's SAML authentication settings by completing the following steps.
+        ``` {#codeblock_ejm_z5f_vyb}
+        sametime.example.com.
+        ```
 
-    1.  Browse to your IdP URL, view the HTML source of the log-in form, and collect the following values.
-        -   `idp.form.username.tag` is the value in the name attribute of the Intranet ID label's `input` statement; this value is `userID`
-        -   `idp.form.password.tag` is the value in the name attribute of the Password label's input statement; this value is password
-        -   `idp.form.submit.tag` is the value in the name attribute of the `Sign in` input statement; this value is submit
-    For example, if you browse to the example Community Server IdP URL, the following graphic shows where the values appear in the sample HTML source.
+    For example, if the Sametime host name is `sametime.example.com`, the resulting prefix using the example is the prefix added to each parameters.
 
-    ![](Images/saml_example.png)
+    ```
+    com.ibm.collaboration.realtime.community/sametime.example.com
+    ```
 
-4.  Add the information collected in the previous steps to the Sametime `plugin_customization.ini` file by completing the following steps.
+    .
 
-    1.  Open the `plugin_customization.ini` file.
-        -   **Windows™:** the file is located inside the client installation package, in the `deploy` directory
-        -   **Mac:** the file is located separately from the client installation package
-    2.  Set the `samlTrustedSites` preference to the list all of the redirecting URLs used by your IdP; separate multiple URLs with a comma \(,\). If you have multiple SAML communities, include all of the redirecting URLs used by all of the SAML communities. If your IdP does not use redirecting URLs, leave this setting blank. Each URL can be as simple as `https://host_name`, or you can include a path as in `https://host_name/path` as shown in the following example.
+2.  Determine the IdP URL parameter name and value.
 
-        `com.hcl.collaboration.realtime.community/samlTrustedSites=https://host1,https://host2/path`
+    To determine the parameter name, use the prefix determined in the previous step and append `idp=`. For example:
 
-    3.  Set the `samlCommunities` preference to the list of fully qualified host names of all of your SAML communities; separate multiple host names with a semicolon \(;\).
-    4.  Set the `sametime.example.com.idp` to the IdP URL that you determined in Step 1.
+    ``` {#codeblock_hvn_qjl_lyb}
+    com.ibm.collaboration.realtime.community/sametime.example.com.idp=
+    ```
 
-        For example, if the Community Server's host name is sametime.example.com, then the appropriate setting is the IdP URL determined in the example from Step 1, and shown in the following statement:
+    Set the value of the parameter to the IdP URL. To find the IdP URL, refer to the [Setting up SSO using SAML](enabling_sso_saml.md). For example:
 
-        `com.ibm.collaboration.realtime.community/sametime.example.com.idp=https://www.example.com/FIM/sps/SAML20/logininitial?TARGET=https://sametime.example.com&PROTOCOL=POST`
+    ``` {#codeblock_zvc_zjl_lyb}
+    com.ibm.collaboration.realtime.community/sametime.example.com.idp=https://idp.example.com/exampletenant&appid=1234?TARGET=https://sametime.example.com
+    ```
 
-    5.  Add the log-in type that you selected in Step 2 to the `idp.type` setting.
-    6.  Add the tag settings that you collected from the HTML for the log-in page source in Step 3 to the following settings:
+3.  Determine if you should use a form based login or a browser based login type.
 
-        -   `idp.form.username.tag`
-        -   `idp.form.password.tag`
-        -   `idp.form.submit.tag`
-        The following example shows completed settings using a log-in type of form and the tag settings from the sample HTML source shown in Step 2:
+    The parameter name is the prefix determined in step one followed by idp.type= For example:
 
-        `com.hcl.collaboration.realtime.community/sametime.example.com.idp.type=form`
+    ``` {#codeblock_hrc_ckl_lyb}
+    com.ibm.collaboration.realtime.community/sametime.example.com.idp.type=
+    ```
 
-        `com.hcl.collaboration.realtime.community/sametime.example.com.idp.form.username.tag=userID`
+    The Sametime Connect and Embedded clients have two options for displaying the user login details:
 
-        `com.hcl.collaboration.realtime.community/sametime.example.com.idp.form.password.tag=password`
+    -   With the **Browser** option, the login window changes and displays the Identity Provider \(IdP\) login page when the log in is redirected to the IdP. This option should be used by most configurations.
+    -   With the **Form** option, the user have a UI option that must include the form field values.
+4.  If **Form** is selected as the login type, you must provide the names of the fields in the form. Skip this step if **Browser** is selected.
 
-        `com.hcl.collaboration.realtime.community/sametime.example.com.idp.form.submit.tag=submit_button`
+    Browse to your IdP URL, view the HTML source of the log-in form and collect the following values.
 
-    7.  Save and close the file.
-5.  **\(Mac clients only\):** If you can install clients with the `plugin_customization.ini` file located outside of the client package, skip to step 5. If your deployment mechanism requires a single file, add the `plugin_customization.ini` file to the client installation package as explained in the following steps.
+    prefix.idp.form.username.tag
+    :   The value in the name attribute of the Intranet ID label's input statement. This value is user ID.
 
-    1.  Expand the client installation package.
-    2.  Add the plugin\_customization.ini file.
-    3.  Compress the revised package.
-    4.  Email the revised package to support@collabserv.com and request that HCL sign the package and return it to you.
-6.  Distribute the updated installation packages to your users.
+    prefix.idp.form.password.tag
+    :   The value in the name attribute of the Password label's input statement. This value is password .
 
-    The SAML configuration information is automatically populated when your users install the client.
+    prefix.idp.form.submit.tag
+    :   The value in the name attribute of the Sign in input statement. This value is the submit tag.
+
+    For example, if you browse to the example IdP URL, the following shows where the values appear in the sample HTML source. ![](Images/saml_sample_html_source.png)
+
+    Based on the example, the resulting settings and values are:
+
+    ``` {#codeblock_kdg_btl_lyb}
+     
+    com.ibm.collaboration.realtime.community/sametime.example.com.idp.form.username.tag=userID 
+    com.ibm.collaboration.realtime.community/sametime.example.com.idp.form.password.tag=password 
+    com.ibm.collaboration.realtime.community/sametime.example.com.idp.form.submit.tag=submit_button 
+    ```
+
+5.  Set the samlTrustedSites parameter to list all redirecting URLs used by your IdP.
+
+    Separate multiple URLs with a comma \(,\). If your IdP does not use redirecting URLs, leave this setting blank. Each URL can be as simple as https://host\_name, or you can include a path as in https://host\_name/path as shown in the following example.
+
+    ``` {#codeblock_cf1_jtl_lyb}
+     com.ibm.collaboration.realtime.community/samlTrustedSites=https://host1,https://host2/path
+    ```
+
+    **Note:** This parameter is scoped globally to Sametime and not to a particular community. If configuring multiple communities, enter all possible URLs.
+
+6.  Configure the parameter that lists the communities which use SAML.
+
+    Be sure to use the same fully qualified host name that was used in step 1 when the prefix was determined. For example:
+
+    ``` {#codeblock_cls_rnp_kyb}
+    
+    com.ibm.collaboration.realtime.community/samlCommunities=sametime.example.com
+    ```
+
+    If you have more than one community supporting SAML, enter the second server name as well. Use a comma to separate values.
+
+7.  Add the settings to the plugin\_customization.ini file and include it in the client package that is distributed to users.
 
 
-**Parent topic:**[Setting up SSO using SAML](enabling_sso_saml.md)
+**Parent Topic: **[Setting up SSO using SAML](enabling_sso_saml.md)
 

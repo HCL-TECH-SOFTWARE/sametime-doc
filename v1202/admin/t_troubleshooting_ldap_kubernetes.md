@@ -1,7 +1,5 @@
 # Troubleshooting LDAP on the community pod {#t_troubleshooting_ldap_kubernetes .task}
 
-
-
 If you are having difficulty connecting to a secure LDAP server, perform the following troubleshooting steps.
 
 1.  Log into the community pod.
@@ -12,7 +10,7 @@ If you are having difficulty connecting to a secure LDAP server, perform the fol
 
         ``` {#codeblock_tq1_c22_lvb}
         
-        pod\_name kubectl exec -it pod\_name --container=community -– bash 
+        kubectl exec -it pod\_name --container=community -– bash 
         ```
 
 2.  Confirm that the community pod is receiving the trust store. Look for the ldaptruststore.p12 file in /local/notesdata directory.
@@ -96,7 +94,7 @@ If you are having difficulty connecting to a secure LDAP server, perform the fol
         Support for at least one of the ciphers might need to be added to your LDAP server, such is the case for HCL Domino 12.0.2, for details see [Sametime 12.0 TLS required ciphers to connect to Domino 12.0.2 LDAP](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0099644)
 
     -   There is a known issue when using a newer version of keytool to create the trust store, Sametime is unable to read it. To work around the problem, recreate the trust store with keytool and add the argument: `-J-Dkeystore.pkcs12.legacy` to the command. For more details, see the [Sametime unable to read trust store causing LDAP connection to fail](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101354) article.
-    -   To determine if your TLS is not negotiating and finding a common cipher suite enable debug. Start with VP\_LDAP\_TRACE=1 and ST\_TLS\_DEBUG=1. See the[Enabling Community trace in Kubernetes](t_enabling_community_debug.md) topic.
+    -   To determine if your TLS is not negotiating and finding a common cipher suite enable debug. Start with VP\_LDAP\_TRACE=1 and ST\_TLS\_DEBUG=1. See the[Enabling Community debug in Kubernetes](t_enabling_community_debug.md) topic.
 6.  By default, the community pod connects to LDAP on the pod IP address range, and the firewall should be configured to permit this traffic. If you are unable to open up the entire pod IP range to LDAP, consider implementing a network address translation, or IP Masquerade solution, which will give the traffic from the pods an IP in a range of your choosing.
 
     An example of this is the Google Kubernetes Engine IP masquerade agent solution. For more information, see the [IP masquerade agent](https://cloud.google.com/kubernetes-engine/docs/concepts/ip-masquerade-agent) Google Cloud topic. Each cloud provider has an unique solution, see your vendor’s documentation for more details.
@@ -122,5 +120,5 @@ If you are having difficulty connecting to a secure LDAP server, perform the fol
     It is also possible to create a custom java class file to transform the LDAP searches for more efficient requests to LDAP. See [Configuring the class file on Kubernetes](config_class_file_kubernetes.md) for more details.
 
 
-**Parent topic:**[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
+**Parent Topic: **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
 

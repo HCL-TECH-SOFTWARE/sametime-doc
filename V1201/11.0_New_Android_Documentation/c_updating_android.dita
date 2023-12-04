@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
- "concept.dtd">
-<?Pub Sty _display FontColor="red"?>
-<concept id="updating_android" xml:lang="en-us">
-  <title>Updating the Android Enterprise enabled version of Sametime application on mobile
-    devices</title>
-  <shortdesc>As with all Android Enterprise enabled applications, updates to the secure applications are managed through the Google Play for Work app store. If there are permission changes, the administrator (Google account binding the EMM to Android Enterprise) must review and accept the permissions for the upgrade to take place through the EMM.</shortdesc></concept>
-<?Pub *0000001020?>

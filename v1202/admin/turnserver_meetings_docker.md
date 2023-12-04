@@ -1,6 +1,8 @@
-# Configuring the TURN Server for Docker {#turnserver_meetings_docker .task}
+# Configuring the TURN server for Docker and Podman {#turnserver_meetings_docker .task}
 
 You can configure the Sametime Meeting service to enable a TURN server on port 443 for Docker.
+
+The Docker and Podman commands are similar. The only difference is that docker precedes the command when issued in a Docker environment and podman precedes the name in a Podman environment. Example commands used in the Sametime documentation are shown using Docker. For Podman, change docker to podman.
 
 1.  Update the following configuration in the custom.env file.
 
@@ -35,12 +37,13 @@ You can configure the Sametime Meeting service to enable a TURN server on port 4
     GLOBAL_MODULES=turncredentials
     ```
 
-4.  Restart Docker.
+4.  Start the Sametime server to apply the changes.
 
+    ``` {#codeblock_btc_lj4_k5b}
+    docker compose up -d
+    
     ```
-    docker-compose up -d
-    ```
 
 
-**Parent topic:**[Setting up a TURN server](turnserver_intro.md)
+**Parent Topic: **[Setting up a TURN server](turnserver_intro.md)
 

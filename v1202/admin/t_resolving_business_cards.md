@@ -6,9 +6,9 @@ To check the server configuration, verify that the storage repository, such as L
 
 If the configuration is correct, next verify that the business card information on requested from the clients is working correctly. For this, trace the UserInfo servlet flows to verify that the UserInfo servlet is working correctly. The UserInfo servlet runs on the server retrieves business card information on request from clients and responds to client requests. To determine if there are errors on the exchange of information, enable the UserInfo Debug trace.
 
-If the UserInfo servlet on the server is responding correctly, enable client-side tracing to determine what is happening on the client. Follow the instructions in [Logging and tracing on the Sametime Embedded and Connect Client](t_logging_tracing.md). For Web clients, review the Proxy service logs and capture a browser HTTP Archive \(HAR\) file to review the business card information received.
+If the UserInfo servlet on the server is responding correctly, enable client-side tracing to determine what is happening on the client. Follow the instructions in [Logging and tracing on the Sametime Embedded and Connect clients](t_logging_tracing.md). For Web clients, review the Proxy service logs and capture a browser HTTP Archive \(HAR\) file to review the business card information received.
 
-**Parent topic:**[Troubleshooting](troubleshooting.md)
+**Parent Topic: **[Troubleshooting](troubleshooting.md)
 
 ## Enabling the UserInfo Debug trace on Docker {#task_cmx_2pp_r5b}
 
@@ -20,7 +20,7 @@ If the UserInfo servlet on the server is responding correctly, enable client-sid
     STI__debug__USERINFO_DEBUG_LEVEL=5 
     ```
 
-3.  Add the debug.env in the community section of the docker\_compose.yaml file.
+3.  Add the debug.env in the community section of the docker\_compose.yml file.
 
     ![](Images/troubleshoot_businesscard.png)
 

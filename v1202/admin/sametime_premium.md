@@ -1,12 +1,12 @@
 # Sametime versus Sametime Premium {#sametime_premium .concept}
 
-Depending on the Sametime product that is installed, detemines which Sametime features are available. HCL Sametime provides secure real-time communication across devices, and HCL Sametime Premium expands those features to include video and file sharing.
+Depending on the Sametime product that is installed, certain Sametime features might be available. HCL Sametime provides secure real-time communication across devices, and HCL Sametime Premium expands those features to include video and file sharing.
 
-The following tables shows the features included with Sametime and Sametime Premium.
+The following tables show the features included in Sametime and Sametime Premium.
 
 |Feature|HCL Sametime|HCL Sametime Premium|
 |-------|------------|--------------------|
-|Sametime embedded client in HCL Notes|X|X|
+|Sametime Embedded client in HCL Notes|X|X|
 |Sametime Connect client|X|X|
 |Presence awareness in HCL Notes|X|X|
 |Instant chat|X|X|
@@ -37,7 +37,7 @@ The following tables shows the features included with Sametime and Sametime Prem
 |Meeting recordings| |X|
 |Live streaming to YouTube| |X|
 
-**Note:** For HCL Domino users with a limited Sametime capabilities, see [Managing Sametime features](managing_sametime_premium.md) for the list of features that are not available.
+**Note:** For HCL Domino users with limited Sametime capabilities, see [Managing Sametime features](managing_sametime_premium.md) for the list of features that are not available.
 
-**Parent topic:**[Planning](planning.md)
+**Parent Topic: **[Planning](planning.md)
 

@@ -24,5 +24,5 @@ By default, you can upload any supported image type to use as your background du
 2.  Restart the Sametime server to apply the changes. For more information, refer to [Starting and stopping servers](https://help.hcltechsw.com/sametime/12/admin/starting_and_stopping_servers.html).
 
 
-**Parent topic:**[Managing Sametime Meetings](sametime_meeting_administering.md)
+**Parent Topic: **[Managing Sametime Meetings](sametime_meeting_administering.md)
 

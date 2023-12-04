@@ -10,14 +10,14 @@ In the **Preferences** dialog of the HCL® Sametime® Connect Client and the Not
 
     In the Sametime Connect Client - Click the **Actions and Preferences** menu \(the gear icon\).
 
-3.  Click a feature in the features list.
+3.  Select a feature in the features list.
 
-4.  Select the preferred behavior for that feature, and then click **Apply**.
+4.  Choose the preferred behavior for that feature, and then select **Apply**.
 
-5.  Click **OK**.
+5.  Select **OK**.
 
 
 Any preferences set using this method can be overwritten by Sametime policies. Preferences set using this method are stored in the end-user's profile directory either within an XML document or a .pref file.
 
-**Parent topic:**[Sametime client configuration options](sametime_client_configuration.md)
+**Parent Topic: **[Sametime client configuration options](sametime_client_configuration.md)
 

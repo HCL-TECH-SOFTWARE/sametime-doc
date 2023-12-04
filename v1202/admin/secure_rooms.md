@@ -6,10 +6,10 @@ Meeting rooms with a user-friendly name or naming conventions might be preferred
 
 Disabling secure meeting room name feature does not affect existing meeting rooms. Changing the setting affects only the meeting rooms provisioned after changing the setting.
 
--   **[Disabling secure rooms on Docker](secure_rooms_docker.md)**  
+-   **[Disabling secure rooms on Docker and Podman](secure_rooms_docker.md)**  
 
 -   **[Disabling secure rooms on Kubernetes](secure_rooms_kubernetes.md)**  
 
 
-**Parent topic:**[Meetings](meetings_configuring.md)
+**Parent Topic: **[Meetings](meetings_configuring.md)
 

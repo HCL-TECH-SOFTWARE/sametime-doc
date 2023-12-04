@@ -1,4 +1,4 @@
-# HCL Sametime Administration Guide 12.0.1 {#administrator_doc .concept}
+# HCL Sametime Administration Guide 12.0.2 {#administrator_doc .concept}
 
 The Administration Guide contains information for installing and configuring HCL Sametime Premium and Sametime.
 
@@ -24,25 +24,27 @@ The Administration Guide contains information for installing and configuring HCL
 -   [Configuring Sametime for Android Enterprise with EMMs](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0078794)
 
 -   **[Accessibility features for Sametime](over_accessibility.md)**  
-Accessibility features help users who have a disability, such as restricted mobility or limited vision, to use information technology products successfully. HCL® strives to provide products with usable access for everyone.
+Accessibility features help users who have a disability, such as restricted mobility or limited vision, use information technology products successfully. HCL® strives to provide products with usable access for everyone.
 -   **[What's new](whats_new.md)**  
-HCL Sametime and HCL Sametime Premium 12.0.1 provides many new features, enhancements and fixes to servers and clients. For information on these new features and enhancement, see the [HCL Sametime and HCL Sametime Premium 12.0.1 Release Information](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0101413) article.
--   **[Encryption usage in Sametime](overview_encryption.md)**  
-HCL® Sametime® uses several types of encryption to protect data.
+HCL Sametime and HCL Sametime Premium 12.0.2 provide many new features, enhancements and fixes to servers and clients. Additional releases to version 12.0.2 also provides updates to the product.
 -   **[Planning](planning.md)**  
 This section describes the system requirements and server configurations needed for HCL Sametime and HCL Sametime Premium.
 -   **[Installing](installing.md)**  
-This section provides information on installing and configuring the servers for HCL Sametime and HCL Sametime Premium.
+This section provides information on installing the servers for Sametime and Sametime Premium.
 -   **[Configuring](configuring.md)**  
-This section provides information on configuring the HCL Sametime server.
+This section provides information on configuring the HCL Sametime server. Configuration tasks are dependent on the deployment environment.
 -   **[Securing](securing.md)**  
 This section provides information on securing your HCL Sametime environments.
 -   **[Administering](administering.md)**  
 This section provides information on administering on Sametime environments.
 -   **[Troubleshooting](troubleshooting.md)**  
 This section provides information on troubleshooting and supporting Sametime environments.
+-   **[Uninstalling Sametime](t_uninstall.md)**  
+In the event that Sametime must be removed, follow the procedure for the platform that Sametime is installed on.
 -   **[Migrating and Upgrading](migrating.md)**  
 This section provides information on migrating data from an earlier release to Sametime 12.
 -   **[Notices](notices.md)**  
+
+-   **[Glossary](glossary.md)**  
 
 

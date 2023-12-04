@@ -1,9 +1,0 @@
-<html>
-  
-
-    <script type="module" src="${oxygen-webhelp-template-dir}/resources/js/custom-hcl.js"/>
-    <script type="module" src="${oxygen-webhelp-template-dir}/resources/js/constants.js" />
-    <!-- <link rel="stylesheet" type="text/css" href="${oxygen-webhelp-template-dir}/resources/css/custom-hcl.css" /> -->
-
-   
-</html>

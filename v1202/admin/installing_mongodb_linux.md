@@ -1,10 +1,10 @@
 # Installing MongoDB on Linux {#installing_mongodb_linux .task}
 
-MongoDB can be downloaded from the MongoDB website. This topic includes the steps for installing on a CentOS and RHEL environments. For information on installing MongoDB on other operating systems, refer to [Install MongoDB](https://docs.mongodb.com/manual/installation/) on the MongoDB website.
+MongoDB can be downloaded from the MongoDB website. This topic includes the steps for installing in CentOS and RHEL environments. For information on installing MongoDB on other operating systems, refer to [Install MongoDB](https://docs.mongodb.com/manual/installation/).
 
-If you already have MongDB installed and upgrading to MongoDB 4.4 or to the latest patch release, see the [Upgrade to the Latest Revision of MongoDB](https://www.mongodb.com/docs/v6.0/tutorial/upgrade-revision/) document.
+If you already have MongoDB installed and are upgrading to MongoDB 4.4 or to the latest patch release, see the [Upgrade to the Latest Revision of MongoDB](https://www.mongodb.com/docs/v6.0/tutorial/upgrade-revision/) document.
 
-The commands used during the install process require running as ROOT or SUDO access. If not running as root user, preface all commands with sudo.
+The commands used during the installation process require running as ROOT or SUDO access. If not running as root user, preface all commands with sudo.
 
 **Note:** In the following steps, MongoDB version 4.4 is used as an example. If you are using a different version of MongoDB, refer to the MongoDB documentation for how to issue commands for the version that you are using.
 
@@ -40,11 +40,11 @@ The commands used during the install process require running as ROOT or SUDO acc
 
     ![](Images/escape.png)
 
-    If you receive a E212: Can’t open file for writing error message, it means that a root user is not being or sudo acces is being used.
+    If you receive a E212: Can’t open file for writing error message, it means that a root user is not being used or sudo access is being used.
 
     ![](Images/cantopen_file.png)
 
-    If the repo URL is not available, manually download and install the rpm files. You can download load the files from the [Index of RPMS](https://repo.mongodb.org/yum/redhat/7/mongodb-org/4.4/x86_64/RPMS) download page. For example:
+    If the repo URL is not available, manually download and install the rpm files. You can download the files from the [Index of RPMS](https://repo.mongodb.org/yum/redhat/7/mongodb-org/4.4/x86_64/RPMS) download page. For example:
 
     ``` {#codeblock_ex3_jpm_htb}
     
@@ -72,19 +72,19 @@ The commands used during the install process require running as ROOT or SUDO acc
     >yum install mongodb-org 
     ```
 
-    1.  Type **y** to confirm the download and installed size.
+    1.  Type y to confirm the download size.
 
         ![](Images/yum_package.png)
 
-    2.  Type **y** to accept the GPG key import.
+    2.  Type y to accept the GPG key import.
 
         ![](Images/key_import.png)
 
-    3.  A Complete! message is displayed when the install process is finished.
+    3.  A Complete! message is displayed when the installation process is finished.
 
         ![](Images/complete_install.png)
 
-6.  Verify that the MongoDB components, user, default log and data directories are created by checking if the following directories exist and are owned by mongod.
+6.  Verify that the MongoDB components, user, default log, and data directories are created by checking if the following directories exist and are owned by mongod.
 
     -   /var/log/mongodb
 
@@ -94,7 +94,7 @@ The commands used during the install process require running as ROOT or SUDO acc
 
         ![](Images/screen_mongo.png)
 
-7.  To start the MongoDB server, enter the following command:
+7.  To start the MongoDB server, enter the command:
 
     ``` {#codeblock_ryl_krm_htb}
     > service mongod start
@@ -115,7 +115,7 @@ The commands used during the install process require running as ROOT or SUDO acc
     ![](Images/active_running.png)
 
 
-[Configuring MongoDB for Sametime](t_configure_mongodb.md)
+[Set up a replica set with keyfile access control](t_create_mongo_replset.md)
 
-**Parent topic:**[Installing the MongoDB](installation_mongodb.md)
+**Parent Topic: **[Installing MongoDB](installation_mongodb.md)
 

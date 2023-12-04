@@ -1,11 +1,11 @@
 # Transferring files from a pod to a Linux shell {#troubleshooting_kubernetes_transfer_pods .task}
 
-1.  Get the name of the pod.
+1.  Obtain the name of the pod.
 
-    Pod name have hashes in it that change each time a pod is started. To get the name of the current pods, issue the command:
+    Pod names have hashes in it that change each time a pod is started. To get the name of the current pods, issue the command:
 
     ``` {#codeblock_r3b_bbj_3vb}
-     kubectl get pods 
+    kubectl get pods 
     ```
 
 2.  To copy a file from the pod, use the syntax below, and make the following substitutions:
@@ -38,5 +38,5 @@
     ```
 
 
-**Parent topic:**[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
+**Parent Topic: **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
 

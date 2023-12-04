@@ -1,22 +1,35 @@
-# Increasing active cameras {#increase_activecameras .task}
+# Increasing the number of video streams displayed during a meeting {#increase_activecameras .task}
 
-The default allowed active cameras is eight, with the most recent active cameras displaying.
+The most recent active video streams are displayed in the meeting window up to the specified maximum value. The default is nine.
 
-Including your own, by default the maximum number of videos that can be shown simultaneously in a meeting is *nine*. The default is the officially supported and recommended setting based on testing. Depending on your business needs, you can increase the value. Restore to the default setting if performance isses are encountered.
+The maximum number includes the person viewing the meeting. If the value is increased and performance decreases, reduce the number. Note that specifying a value greater than nine is not supported by HCL.
 
--   Docker
-    -   custom.env
--   Kubernetes
-    -   helm/values.yaml
+1.  Open the configuration file for editing.
 
-**Note:** These values are case sensitive and must be entered as shown below.
+    -   For Docker, open the custom.env file.
+    -   For Kubernetes, open the helm/values.yaml file.
+2.  Change the parameter in the configuration file. Note that the value doesn't include your camera which is always displayed.
 
-1.  Modify the configuration file. The default value is 8.
+    -   For Docker, update the CHANNEL\_LAST\_N parameter. For example,
 
-    1.  For Docker environments, update the CHANNEL\_LAST\_N parameter to increase the number of active cameras. For example, CHANNEL\_LAST\_N = 11. When applied, you are able to view up to 12 simultaneous videos in a meeting including your own tile.
-    2.  For Kubernetes environments, update the channelLastN parameter to increase the number of active cameras. For example, channelLastN : 11. When applied, you are able to view up to 12 simultaneous videos in a meeting including your own tile.
-2.  Restart the Sametime server to apply the changes. For more information, refer to [Starting and stopping servers](https://help.hcltechsw.com/sametime/12/admin/starting_and_stopping_servers.html).
+        ``` {#codeblock_tg5_fbx_wxb}
+        CHANNEL_LAST_N = 11
+        ```
 
+        When applied, up to twelve simultaneous video streams are displayed.
 
-**Parent topic:**[Managing Sametime Meetings](sametime_meeting_administering.md)
+    -   For Kubernetes environments, update the channelLastN parameter. For example,
+
+        ```
+        channelLastN : 11
+        ```
+
+    The parameters are case sensitive and must be entered as shown.
+
+3.  Apply the changes to the environment.
+
+    -   For Docker and Podman, see [Applying configuration changes in Docker or Podman](apply_configchanges_docker.md)
+    -   For Kubernetes and Openshift, see [Applying configuration changes in Kubernetes or Openshift](apply_configchanges_kubernetes.md)
+
+**Parent Topic: **[Managing Sametime Meetings](sametime_meeting_administering.md)
 

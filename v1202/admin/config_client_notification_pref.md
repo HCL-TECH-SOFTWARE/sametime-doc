@@ -72,5 +72,5 @@ The following table lists the notification preferences for the HCL® Sametime® 
 |pref\_event\_10\_playsound|Boolean|Determines whether calendar events play a sound.|8.5 and later|
 |pref\_event\_10\_soundfile|Boolean|The sound file that will play for calendar events, if playing sounds is enabled for this event.|8.5 and later|
 
-**Parent topic:**[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
 

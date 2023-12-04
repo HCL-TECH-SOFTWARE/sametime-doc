@@ -1,20 +1,22 @@
 # Configuring MongoDB for high availability {#plan_cluster_mongodb .task}
 
-Beginning in Sametime 12.0, MongoDB clustering is handled during the install process for both Docker and Kubernetes.
+This topic covers the steps on how to configure MongoDB for high availability.
 
-**Note:** In the MongDB URL, if the user name or password includes the following characters, they must be converted by using a percent sign: / ? \# \[ \] : @.
+MongoDB clustering is handled during the installation process for both Docker and Kubernetes.
 
-**Parent topic:**[Clustering and high availability](cluster_highavailability.md)
+**Note:** In the MongoDB URL, if the user name or password includes the following characters, they must be converted by using a percent sign: / ? \# \[ \] : @.
+
+**Parent Topic: **[Clustering and high availability](cluster_highavailability.md)
 
 ## Configuring MongoDB clustering on Docker {#ncl_ddm_x5b}
 
-In the custom.env configuration file on the Sametime server, update the MONGO\_ URL field. For information about how to create the MongoDB URL, see the [Connection String URI Format](https://docs.mongodb.com/manual/reference/connection-string/) topic in the MongoDB documentation.
+In the custom.env configuration file on the Sametime server, update the MONGO\_URL field. For information about how to create the MongoDB URL, see the [Connection String URI Format](https://docs.mongodb.com/manual/reference/connection-string/) topic in the MongoDB documentation.
 
 ## Configuring MongoDB clustering on Kubernetes {#nky_cdm_x5b}
 
-1.  Provide a single node MongoDB information while running the prepareDeployement script.
+1.  Provide a single node MongoDB information while running the prepareDeployment script.
 
-2.  When the prepareDeployement process is complete, prepare your MongoDB cluster URL. For how to prepare the MongoDB URL, see the [Connection String URI Format](https://docs.mongodb.com/manual/reference/connection-string/) topic in the MongoDB documentation.
+2.  When the prepareDeployment process is complete, prepare your MongoDB cluster URL. For more details, see [Connection String URI Format](https://docs.mongodb.com/manual/reference/connection-string/).
 
 3.  Use Base64 encoding to encrypt your MongoDB URL.
 
@@ -26,7 +28,7 @@ In the custom.env configuration file on the Sametime server, update the MONGO\_ 
     kubectl edit secret sametime-meetings-global-secrets
     ```
 
-5.  Inside the `sametime-meetings-global-secrets`, locate the `MongoConnectionUrl` section. Replace the value for it with the value from Step 3.
+5.  Inside the `sametime-meetings-global-secrets`, locate the `MongoConnectionUrl` section. Replace the value for it with the value from step 3.
 
 6.  Save your changes.
 

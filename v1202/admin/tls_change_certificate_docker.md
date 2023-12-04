@@ -12,16 +12,17 @@ Ensure that you have the certificate and private key to be used.
 
 3.  Replace the cert.key and cert.crt files with the new certificate files.
 
-    The files are located in the installation\_directory./sametime-config/web/keys/ directory. Where installation\_directory is the Sametime installation directory.
+    The files are located in the sametime-config/web/keys/ folder which is in the your installation directory.
 
     **Note:** These changes are lost if you delete or remove the sametime-config directory.
 
-4.  Run the following command to start the Sametime services and apply the changes.
+4.  Start the Sametime server to apply the changes.
 
-    ``` {#codeblock_ip5_5b2_q5b}
+    ``` {#codeblock_btc_lj4_k5b}
     docker compose up -d
+    
     ```
 
 
-**Parent topic:**[Updating the Sametime server TLS certificates](updating_meeting_servers.md)
+**Parent Topic: **[Replacing the TLS certificates for Web Chat and Meetings](tls_change_certificate.md)
 

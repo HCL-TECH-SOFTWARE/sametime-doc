@@ -6,7 +6,7 @@ The following external port must be opened on a firewall. You can use any networ
 
 Two types of communication can be configured: Transmission Control Protocol \(TCP\) and User Datagram Protocol \(UDP\). You can configure the video bridge for one or both.
 
-**Parent topic:**[Meetings](meetings_configuring.md)
+**Parent Topic: **[Meetings](meetings_configuring.md)
 
 ## Docker {#task_m5l_hfj_5tb}
 
@@ -28,7 +28,7 @@ The client tries UDP first and if it fails, TCP is used.
 
     **Note:** \#JVB\_TCP\_PORT is TCP port for media used by Jitsi Videobridge when the TCP Harvester is enabled.
 
-3.  Open the docker-compose.yaml. Add JVB\_TCP\_PORT section for the JVB component:
+3.  Open the docker-compose.yml. Add JVB\_TCP\_PORT section for the JVB component:
 
     ``` {#codeblock_f2s_jfj_5tb}
     # Video bridge
@@ -47,7 +47,7 @@ tcp6 0 475 a82b7a871950:4443 192.168.75.1:49295 ESTABLISHED
 
 *****Use these settings to force TCP only.*****
 
-If there is need to completely switch to the TCP protocol and remove support for UDP, then complete the settings above, remove JVB\_PORT in docker-compose.yaml file and remove the entry from .env file.
+If there is need to completely switch to the TCP protocol and remove support for UDP, then complete the settings above, remove JVB\_PORT in the docker-compose.yml file and remove the entry from .env file.
 
 ``` {#codeblock_cnw_qfj_5tb}
 # Video bridge
@@ -58,7 +58,7 @@ ports:
 
 ```
 
-To enforce the changes made, follow the steps in [Applying configuration changes in Docker](apply_configchanges_docker.md).
+To enforce the changes made, follow the steps in [Applying configuration changes in Docker or Podman](apply_configchanges_docker.md).
 
 ## Kubernetes {#task_gvf_gfj_5tb}
 
@@ -77,7 +77,7 @@ UDP will be attempted first and if it fails, then TCP will be used. If you need 
     ```
 
 
-These steps are required for AWS EKS only. In helm/charts/video/templates/deployment.yaml, find the lifecycle section. Below it you will see a preStop: section. Insert the following as a sibling section to preStop:
+These steps are required for AWS EKS only. In helm/charts/video/templates/deployment.yaml, find the lifecycle section. Below it you will see a `preStop:` section. Insert the following as a sibling section to preStop:
 
 ``` {#codeblock_hps_5fj_5tb}
 postStart:
@@ -86,7 +86,7 @@ command: ["/bin/sh", "-c", "echo 'org.ice4j.ice.harvest.ALLOWED_INTERFACES=eth0'
 
 ```
 
-Save the settings and redeploy using the steps in [Applying configuration changes in Kubernetes](apply_configchanges_kubernetes.md).
+Save the settings and redeploy using the steps in [Applying configuration changes in Kubernetes or Openshift](apply_configchanges_kubernetes.md).
 
 To update a live deployment, use the following command:
 
@@ -106,5 +106,5 @@ kubectl patch deploy/video -p '{"spec":{"template":{"spec":{"containers":[{"name
 2.  Click Security Groups.
 3.  Find the Security Group named eksctl-<your cluster name\>-nodegroup-video/SG.
 4.  Locate port 30000 / UDP from the list and click the remove icon.
-5.  Click Save.
+5.  Click **Save**.
 

@@ -11,10 +11,9 @@ The following tables list the chat preferences for the HCL Sametime Connect Clie
 |days.storage.max|A positive number.|Delete saved transcripts after this number of days. This setting will be overwritten by the value set on the server policy.|7.5.1 and later|
 |delete.old|A positive number. The default is false.|Delete saved transcripts. This setting will be overwritten by the value set on the server policy. If the policy allows transcripts to be deleted, set this value to true initially.|7.5.1 and later|
 |logging.default|0 = Automatically save chats, 1 = Do not automatically save chats, 2 = Prompt me to save chats|Default chat logging action.|7.5.1 and later|
-|logging.enabled|Boolean. Default is false.|Specify whether or not to save a local copy of the chat history. This attribute works in conjunction with the [Sametime policy IDs](admin_policy_im_ids.md). Edit the policies as necessary. If the server policy is not configured to allow save chat, this setting is ignored.**Attention:** Local chat history is unencrypted. To disable and restrict users from saving a local copy, refer to [Updating client preferences with the managed-settings.xml file](config_client_xml_location.md).
+|logging.enabled|Boolean. Default is false.|Specify whether or not to save a local copy of the chat history. If the server policy is not configured to allow save chat, this setting is ignored.**Note:** Local chat history is unencrypted. To disable and restrict users from saving a local copy, refer to [Updating client preferences with the managed-settings.xml file](config_client_xml_location.md).
 
 |7.5.1 and later|
-|logging.service|service.notes = Notes logging, service.file = File system logging|Type of chat logging service.| |
 |display.context|True = Display, false = Do not display|Display the saved transcript between two users for the current day in the chat window.|7.5.1 and later|
 |display.context.background|True = Display, false = Do not display|Display background highlighting when displaying saved transcripts in chats.|7.5.1 and later|
 |root.location|A string of a valid path on the computer.|Location for automatically saved chats Directory path. Do not use '\\' as the file separator. Use '\\\\' or '/' instead. Example using absolute path: ```
@@ -127,5 +126,5 @@ SametimeTranscripts
 |disableRichText|Boolean. Default is false.|Specifies whether or not to disable rich text for all chats.|8.5.2 and later|
 |disableRichTextWithAnon|Boolean. Default is false.|Specifies whether or not to disable rich text for chats with anonymous users.|8.5.2 and later|
 
-**Parent topic:**[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
 

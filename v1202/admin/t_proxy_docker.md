@@ -1,6 +1,8 @@
-# Configuring Docker to use a proxy server for push messaging {#t_proxy_Safelinx .task}
+# Configuring Docker and Podman to use a proxy server for push messaging {#t_proxy_Safelinx .task}
 
-When Sametime proxy interacts with mobile devices \(phones, pads, watches, and cars\), it sends notifications through push networks such as Apple's "APNS" and Google's "FCM." To send APNS or FCM messages through a proxy server in Docker, follow these steps:
+When Sametime proxy interacts with mobile devices \(phones, pads, watches, and cars\), it sends notifications through push networks such as Apple's "APNS" and Google's "FCM." To send APNS or FCM messages through a proxy server in Docker or Podman, follow these steps:
+
+The Docker and Podman commands are similar. The only difference is that docker precedes the command when issued in a Docker environment and podman precedes the name in a Podman environment. Example commands used in the Sametime documentation are shown using Docker. For Podman, change docker to podman.
 
 1.  Update the following values in your custom.env file.
 
@@ -17,8 +19,13 @@ When Sametime proxy interacts with mobile devices \(phones, pads, watches, and c
     `STCONF_PUSH_PROXY_PASSWORD`=""
     ```
 
-2.  Run docker-compose up -d command to apply all changes.
+2.  Start the Sametime server to apply the changes.
+
+    ``` {#codeblock_btc_lj4_k5b}
+    docker compose up -d
+    
+    ```
 
 
-**Parent topic:**[Push messaging through a proxy](t_push_proxy.md)
+**Parent Topic: **[Push messaging through a proxy](t_push_proxy.md)
 

@@ -1,13 +1,13 @@
 # Enabling Microsoft Outlook Add-in {#enable_microsoft_outlook .task}
 
-To use the Sametime Meetings add-in for Microsoft Outlook it must be enabled on the Sametime server. The add-in is provided as part of Sametime installation package.
+To use the Sametime Meetings add-in for Microsoft Outlook, it must be enabled on the Sametime server. The add-in is provided as part of Sametime installation package.
 
 For additonal information about Microsoft add-ins, see the following Microsoft documentation:
 
 -   [Deploy and publish Office Add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/publish)
 -   [Publish add-ins via Centralized Deployment](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/centralized-deployment)
 
-**Parent topic:**[Meetings](meetings_configuring.md)
+**Parent Topic: **[Meetings](meetings_configuring.md)
 
 ## Enabling the add-in on Docker {#task_yck_p4k_3tb}
 

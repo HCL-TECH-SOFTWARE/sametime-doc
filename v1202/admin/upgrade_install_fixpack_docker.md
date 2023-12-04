@@ -1,4 +1,4 @@
-# Installing a fix pack on Docker {#upgrade_install_fixpack_docker .task}
+# Upgrading on Docker {#upgrade_install_fixpack_docker .task}
 
 To install a new version or fix pack, the following conditions must be satisfied:
 
@@ -7,7 +7,10 @@ To install a new version or fix pack, the following conditions must be satisfied
 
 Creating a backup of the installation directory, allows you to return to your previous version if a problem occurs related to installing the fix pack.
 
-**Note:** Make a backup of your key files, such as docker-compose.yml and any customized files on the system so that you can validate any custom settings from the previous installation. If you have placed files in the sametime-config folder like custom branding or TLS certificates, those files need to be restored after the fix pack is installed. For the docker-compose.yml file, after the upgrade reference the backup version and add the modifications to the new docker-compose.yml provided during the upgrade. Changes to the custom.env and .env files are retained when upgrading to version 12.0.1 and later.
+**Note:**
+
+-   Make a backup of your key files, such as docker-compose.yml and any customized files on the system so that you can validate any custom settings from the previous installation. If you have placed files in the sametime-config folder like custom branding or TLS certificates, those files need to be restored after the fix pack is installed. For the docker-compose.yml file, after the upgrade reference the backup version and add the modifications to the new docker-compose.yml provided during the upgrade. Changes to the custom.env and .env files are retained when upgrading to version 12.0.1 and later.
+-   The docker-compose.yml file is replaced during the upgrade with a newer version. Do not restore this file from a previous version after the upgrade. Any needed modifications need to be implemented again in the new file version.
 
 1.  In the directory where Sametime is installed, issue the following command to stop the Sametime server.
 
@@ -34,5 +37,5 @@ Creating a backup of the installation directory, allows you to return to your pr
 5.  Follow the prompts to provide the required information. The install process detects if the install is an upgrade or full install.
 
 
-**Parent topic:**[Upgrading to a new version or applying a fixpack](upgrade_install_fixpack.md)
+**Parent Topic: **[Upgrading to a new version or applying a fixpack](upgrade_install_fixpack.md)
 

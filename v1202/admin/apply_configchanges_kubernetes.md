@@ -1,4 +1,4 @@
-# Applying configuration changes in Kubernetes {#apply_confichanges_kubernetes .task}
+# Applying configuration changes in Kubernetes or Openshift {#apply_confichanges_kubernetes .task}
 
 Configuration files contain environment variables that can be changed and applied to the Sametime server.
 
@@ -42,5 +42,5 @@ You can make configuration changes to the Sametime deployment server by modifyin
         ```
 
 
-**Parent topic:**[Configuring](configuring.md)
+**Parent Topic: **[Configuring](configuring.md)
 

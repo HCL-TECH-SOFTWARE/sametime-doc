@@ -92,5 +92,5 @@ The changes in this task affect the following pods:
         ```
 
 
-**Parent topic:**[Securing connections between Sametime servers and LDAP](securing_connections_sametime_community_and_ldap.md)
+**Parent Topic: **[Securing connections between Sametime servers and LDAP](securing_connections_sametime_community_and_ldap.md)
 

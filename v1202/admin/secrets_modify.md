@@ -35,10 +35,10 @@ The following are considerations when making configuration modifications:
 
 2.  Type the letter `i` to get into insert mode and make modifications.
 
-3.  To save the changes, type the characters:`Esc+ :wq!`.
+3.  To save the changes, type the characters: `Esc+ :wq!`.
 
     To close the file without saving changes, type in the characters `Esc+ :q!`.
 
 
-**Parent topic:**[Managing secrets in Kubernetes](managing_secrets_kubernetes.md)
+**Parent Topic: **[Managing secrets in Kubernetes](managing_secrets_kubernetes.md)
 

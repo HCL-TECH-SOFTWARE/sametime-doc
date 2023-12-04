@@ -14,5 +14,10 @@ The TeamCall Meeting Gateway for HCL Sametime Premium provides audio waiting roo
 
 If the user experiences dial-in or telephony problems, they must contact ilink support at [sales@ilink.de](mailto:sales@ilink.de) to open a ticket for assistance.
 
-**Parent topic:**[Meetings](meetings_configuring.md)
+Additional information can be found at the following:
+
+-   For Sametime Meetings, see [https://hclsofy.com/catalog/ilink-teamcall?view=doc&file=documentation.md](https://hclsofy.com/catalog/ilink-teamcall?view=doc&file=documentation.md)
+-   For Sametime Chat, see [https://www.ilink.de/en/products/ioffice\_communicator\_sametime/index.html](https://www.ilink.de/en/products/ioffice_communicator_sametime/index.html)
+
+**Parent Topic: **[Meetings](meetings_configuring.md)
 

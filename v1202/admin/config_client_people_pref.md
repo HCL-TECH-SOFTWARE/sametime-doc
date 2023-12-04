@@ -21,5 +21,5 @@ The following table lists the people preferences for the HCL® Sametime® Connec
 |8.5.2 and later|
 |bizCardShowExtendedStatus|Boolean. Default is false.|Determines whether the extended status, such as phone call status, is displayed in the business card. The default setting is not to display all of the extended statuses in business card.|9.0 and later|
 
-**Parent topic:**[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
 

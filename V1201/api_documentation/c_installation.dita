@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="c_installation">
-    <title>Installation</title>
-    <shortdesc>Installation of the API Server is simple. You essentially just run the .exe to
-        install. See <xref
-            href="https://stpoc.cwp.pnp-hcl.com/sametime-api/client-platform/client-platform.zip"
-            format="zip" scope="external">Download Client Platform SDK</xref>.</shortdesc>
-</concept>

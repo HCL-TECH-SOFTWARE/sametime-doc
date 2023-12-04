@@ -34,5 +34,5 @@ Before going live, it is important to test the following services to ensure that
     4.  Log in using the new credentials.
 
 
-**Parent topic:**[Administering](administering.md)
+**Parent Topic: **[Administering](administering.md)
 

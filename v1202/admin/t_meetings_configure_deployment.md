@@ -1,6 +1,6 @@
 # Preparing the deployment {#t_meetings_configure_deployment .task}
 
-This section provides information to configure secrets for deployment.
+This section provides information on how to configure secrets for deployment.
 
 1.  Run the following script to prepare the deployment.
 
@@ -28,7 +28,7 @@ This section provides information to configure secrets for deployment.
     :   Enter the server domain name. This should be the DNS suffix of the host name of the server.
 
     Video bridge IP address
-    :   Enter the video bridge IP address. When left empty, the system automatically scans and automatically populates the field with the discovered IP address.
+    :   Enter the video bridge IP address. When left empty, the system automatically scans and populates the field with the discovered IP address.
 
     Base64 encoded secret
     :   Enter the Base64 encoded `JWT_SECRET` from the Sametime deployment. If migrating from another version of Sametime, you can re-use your existing secret. Otherwise, leave blank and press **Enter** to generate a new one.
@@ -56,19 +56,19 @@ This section provides information to configure secrets for deployment.
 
 -   Enter N to use the default value.
     TURN server address
-    :   Leave blank if you are not using TURN. Otherwise, enter the fully qualified host name of the TURN server. For more information, refer to [Configuring the TURN Server for Docker](turnserver_meetings_docker.md) and [Configuring the TURN server for Kubernetes](turnserver_meetings_kubernetes.md).
+    :   Leave blank if you are not using TURN. Otherwise, enter the fully qualified host name of the TURN server. For more information, refer to [Configuring the TURN server for Docker and Podman](turnserver_meetings_docker.md) and [Configuring the TURN server for Kubernetes](turnserver_meetings_kubernetes.md).
 
     Configure LTPA
-    :   Lightweight Third-Party Authentication \(LTPA\) is useful for achieving single sign-on with HCL Domino \(including HCL Verse and iNotes\), HCL Connections, HCL Digital Experience, and IBM WebSphere Application Server. The default value is N
+    :   Lightweight Third-Party Authentication \(LTPA\) is useful for achieving single sign-on with HCL Domino \(including HCL Verse and iNotes\), HCL Connections, HCL Digital Experience, and IBM WebSphere Application Server. The default value is N.
 
-    :   To configure LTPA, enter Y and provide the following information:
+    :   To configure LTPA, enter Y and provide the following information.
 
-        -   The full path to the LTPA keys file. This should be the full path on the machine where the `prepareDeployment.sh` script is running. For example: /tmp/ltpa.keys.
+        -   The full path to the LTPA keys file. This should be the full path on the machine where the `prepareDeployment.sh` script is running. For example: /tmp/ltpa.keys
         -   LTPA keys password
     :   For more information, refer to [Setting up SSO using LTPA](enabling_sso_ltpa.md).
 
     Enable Octo
-    :   Octo allows you to extend the audio-video traffic to another network in an efficient way. If enabled, at least one other secondary cluster must be configured in order for this to work. To enable octo, enter Y. The following prompts are displayed. For more information, refer to [Enabling multiple videobridges](t_configure_jitsi.md).
+    :   Octo allows you to extend the audio-video traffic to another network in an efficient way. If enabled, at least one other secondary cluster must be configured in order for this to work. To enable octo, enter Y. The following prompts are displayed. For more information, refer to [Deploying multiple videobridges in different locations](t_configure_jitsi.md).
 
         -   Is this a primary installation?
             -   Select **Yes** to set this instance as the primary server. For primary servers, you must provide the region name. Enter the name of the primary region.
@@ -99,5 +99,5 @@ This section provides information to configure secrets for deployment.
 6.  Save and close values.yaml.
 
 
-**Parent topic:**[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
+**Parent Topic: **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
 

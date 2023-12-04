@@ -152,5 +152,5 @@ public class StLdapCustomized
 
 After writing your Java class, complete the tasks in this section to implement it in either Docker or Kubernetes.
 
-**Parent topic:**[Creating custom Java classes for searching LDAP](creating_custom_java.md)
+**Parent Topic: **[Creating custom Java classes for searching LDAP](creating_custom_java.md)
 

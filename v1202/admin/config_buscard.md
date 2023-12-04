@@ -156,7 +156,7 @@ When modifying the XML file be sure to check the formatting using a browser. If 
     Verify that there are not formatting errors by opening the file in a browser.
 
 
-If no mistakes are found, update the Docker or Kubernetes deployment for the settings to take effect. See [Customizing business cards in Docker](config_buscard_custom_docker.md) or [Customizing business cards in Kubernetes](config_buscard_custom_kubernetes.md).
+If no mistakes are found, update the Docker or Kubernetes deployment for the settings to take effect. See [Customizing business cards in Docker and Podman](config_buscard_custom_docker.md) or [Customizing business cards in Kubernetes](config_buscard_custom_kubernetes.md).
 
-**Parent topic:**[Setting up business cards](admin_st_buscard.md)
+**Parent Topic: **[Setting up business cards](admin_st_buscard.md)
 

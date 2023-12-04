@@ -39,17 +39,37 @@ Base DN
 TLS access
 :   If LDAP is access using TLS, provide the port number.
 
+    displayName attributes
+    :   The default is cn.
+
 JWT Secret
 :   The Base64 encoded JWT\_SECRET from the Sametime deployment. If migrating from another version of Sametime, you can re-use your existing secret. If you don't have one the install program generates it.
 
 TURN server
+:   TURN server address
 :   The fully-qualified host name of a TURN server.
+
+TURN port
+:   The port used to communicate with the TURN server.
+
+Secert to TURN server
+:   Transport for stun/turn connection
+:   Select either tcp or udp.
 
 TCP configuration
 :   The port number used for TCP communications. The default is port number 4443.
 
 LTPA configuration
-:   If you plan to use LTPA, generate the LTPA keys and password before running the install program. See [Setting up SSO using LTPA](enabling_sso_ltpa.md).
+:   Path to the LTPA key file
+:   Fully path to the LTPA key file. If you enable LTPA, LTAP keys are required.
 
-**Parent topic:**[Installing Sametime](installation_sametime.md)
+:   -   If you don't specify a value for the LTPA keys file location, the LTPA keys are automatically generated as part of the install process. If you don't specify a password, the default is WebAS. Enter the password when prompted to confirm.
+-   If you have already have LTPA keys, enter the full path to an LTPA keys file and verify the password.
+
+    Upon successful connection to the LTPA keys, the following message is displayed.LTPA configuration is OK
+
+Administrator email
+:   The email address for the Sametime administrator.
+
+**Parent Topic: **[Installing Sametime](installation_sametime.md)
 

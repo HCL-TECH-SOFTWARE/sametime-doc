@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
-<task id="migrating" xml:lang="en-us">
-<title>Migrating and Upgrading</title>
-    <shortdesc>This section provides information on migrating data from an earlier release to
-        Sametime 12.</shortdesc>
-</task>

@@ -52,5 +52,5 @@ The following table lists the preferences that are available for the HCL® Samet
 |---------|-------------|-----------|
 |loginTokenRefreshInterval|String \(default value is 900000 milliseconds, or 15 minutes\)|LTPA token timeout in seconds. Best practice is to set this value to 5 minutes less than the token expiration time configured on the WebSphere server hosting Sametime Advanced, and on the Community Server. The value should be specified in milliseconds. For example, if the server-side token expiration timeout is 24 hours, configure loginTokenRefreshInterval=86100000 \(which is 23 hours and 55 minutes\) on the client.|
 
-**Parent topic:**[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
 

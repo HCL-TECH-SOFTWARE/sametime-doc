@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN"
- "concept.dtd">
-<?Pub Sty _display FontColor="red"?>
-<concept id="remote_app" xml:lang="en-us">
-  <title>Remote App and Data Wipe</title>
-  <shortdesc>In an Android Enterprise environment, there can be situations when a device must have the enterprise data associated with the HCL Sametime app wiped.</shortdesc>
-  <conbody><p>This may happen because the device has been lost, the device is no longer compliant with your security policies or perhaps the user has left the company and should no longer have access to this data. If any of these occur, the Android Enterprise administrator can choose to wipe just the Android Enterprise apps and data from the device. This will remove the Android Enterprise work profile and all data associated with the Android Enterprise apps. Any Android Enterprise apps are also removed. Apps installed in the personal profile will remain. The wipe of the work profile is performed from the EMM administration console you’re using to manage your Android Enterprise environment.</p></conbody></concept>
-<?Pub *0000001020?>

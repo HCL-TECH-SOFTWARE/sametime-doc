@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
-<concept id="c_security_policies">
-    <title>Security policies</title>
-    <shortdesc>Every internet service that you use or provide poses risks to your system and the
-        network to which it is connected. Your security policy defines what you protect. This
-        section describes the security policies and configurations available to you.</shortdesc>
-</concept>
