@@ -9,10 +9,10 @@
     Run the command:
 
     ``` {#codeblock_fvn_2fm_pzb}
-    docker login hclcr.io -u yourEmailAddress
+    docker login hclcr.io -u your\_email\_address
     ```
 
-    Use the access token you obtain in Step 2 when prompted for password. Make sure the case ofyourEmailAddress matches what is in the Harbor Registry user profile.
+    Use the access token you obtain in Step 2 when prompted for password. Make sure the case of your\_email\_address matches what is in the Harbor Registry user profile.
 
 4.  Create a secret that references your Docker config
 

@@ -2,7 +2,7 @@
 
 Sametime can be installed on a Windows OS as a single-node environment using a supplied Helm chart. The Sametime product image includes a pre-configured managed Helm Chart to deploy Sametime on Windows. The chart is run from a Helm dashboard a graphical user interface.
 
-The values in the Helm Charts can be modified before running the Install step. You must specify the value for where the Sametime images are located. Other values such as the location of LDAP and other servers also need to be reviewed for your environment. These values are the same as if you were using the install script as oppose to managed charts. See [installation\_prompt\_descriptions.md](installation_prompt_descriptions.md) for more information. Additionally, the Helm Charts contain information for each field to assist you with necessary updates.
+The values in the Helm Charts can be modified before running the Install step. For example, you must specify the value for the location of the Sametime images. Other values such as the location of LDAP and other servers also need to be reviewed for your environment. The input fields in the managed charts are the same as if you were using the install script and prompted for values. See [installation\_prompt\_descriptions.md](installation_prompt_descriptions.md) for more information. Additionally, the Helm Charts contain information for each field to assist you with necessary updates.
 
 1.  Open the Windows Feature window and turn on the **Windows Subsystem for Linux** feature.
 

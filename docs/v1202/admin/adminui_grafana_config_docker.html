@@ -7547,26 +7547,15 @@
 
 
 <h1 class="task" id="adminui_grafana_config_docker">Configuring Grafana on Docker and Podman</h1>
-<ul>
-<li>Ensure that the following ports for the different monitoring services are open.<ul>
-<li>Grafana: <code>3001</code></li>
-<li>Prometheus: <code>9091</code></li>
-<li>Pushgateway: <code>9092</code></li>
-<li>Node-exporter: <code>9100</code></li>
-<li>Cadvisor: <code>8088</code></li>
-</ul>
-</li>
-<li>
-<p>When applicable, ensure that the following services are accessible.</p>
-<ul>
-<li>Pushgateway: <code>http://host.docker.internal:9092</code></li>
-<li>Proxy metrics: <code>http://host.docker.internal:8081/actuator/prometheus</code></li>
-<li>Cadvisor: <code>http://host.docker.internal:8088/containers</code>
-<strong>Note:</strong> If using a local server, replace <code>host.docker.internal</code> with <code>localhost</code>.</li>
-</ul>
-</li>
-</ul>
-<p>You must have Grafana administrator privileges to configure the Sametime Grafana dashboard.</p>
+<p>Grafana can be configured either during the installation process or post installation.</p>
+<p>Prometheus is required</p>
+<p>To include Grafana configuration during installation, run the following exportcommand before running the installation process.</p>
+<div id="codeblock_qzc_pw3_rzb" class="highlight"><pre><span></span><code>export ENABLE_DARK_LAUNCH_MONITORING=true
+</code></pre></div>
+<p>You are then prompted during the install to enable Grafana: Do you want to enable monitoring?.</p>
+<p>Port
+:   The default port is 3001.</p>
+<p>If adding Grafana post-installation,</p>
 <ol>
 <li>
 <p>Click the <strong>Grafana icon</strong> (<img alt="" src="Images/adminui_icon_grafana.png" />) .</p>
@@ -7593,7 +7582,6 @@
 <p>Save the dashboard.</p>
 </li>
 </ol>
-<p><strong>Parent Topic:  </strong><a href="adminui_grafana_overview.html">Monitoring your meeting and chat metrics with Grafana</a></p>
 
 
 
