@@ -2,6 +2,8 @@
 
 You must complete the tasks in this topic if you are installing in an Openshift environment before you can install Sametime.
 
+Refer to [Planning for Openshift](c_planning_openshift.md) for consideratons related to namespace and video.
+
 1.  Deploy in a namespace. You can either create a namespace or use the default namespace. If you deploy Sametime into the default namespace, there are modifications that must be appled to the Helm chart.
 
     **Deploy to a new namespace**
@@ -33,8 +35,6 @@ You must complete the tasks in this topic if you are installing in an Openshift 
         ```
 
     **Deploy to default namespace**
-
-    In OpenShift, there are seLinuxOptions level/label restrictions that are automatically applied within a namespace. By default, labels are not randomize which causes a problem when using the OpenShift default namespace. When deploying in the default namespace, comment out the seLinuxOptions:false setting for each of the activity, file, and recording charts.
 
     1.  Edit the values.yaml file.
 
@@ -120,6 +120,4 @@ You must complete the tasks in this topic if you are installing in an Openshift 
 
 
 Continue with the topics for installing in a Kubernetes environment.
-
-**Parent Topic: **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
 

@@ -14,7 +14,7 @@ In the Openshift platform, there are namespace labels used to define a common se
 
 ## Deployment into the default namespace {#section_lv3_4b3_xwb .section}
 
-Labels are no longer created with a random name by default, which can cause a problem in the default namespace where all containers labels are random. When deploying in the default namespace, comment out the seLinuxOptions:false setting for each activities, files, and recordings in the default namespace.
+By default, labels are not created with a random name, which can cause a problem in the default namespace where all containers labels are random. When deploying in the default namespace, comment out the seLinuxOptions:false setting for each activities, files, and recordings in the default namespace.
 
 You can use the Sametime supplied helm charts to deploy Sametime into the default namespace without any additional configuration.
 
@@ -34,8 +34,6 @@ There are three ways to deploy video when using the Openshift platform.
 
     Using a node port is also lower performance but is restricted to a single node. It requires a no host-network SCC.
 
-
-**Parent Topic: **[Planning for Sametime in a Kubernetes environment](c_planning_kubernetes.md)
 
 **For step details, see**  
 

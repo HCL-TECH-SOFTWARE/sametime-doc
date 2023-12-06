@@ -120,7 +120,7 @@ docker-compose down
 docker-compose up -d
 ```
 
-Alternatively, the docker-compose.yml file can be updated so the host name is resolvable locally. Add the host name and IP to the "extra\_hosts" setting in the nginx section of the docker-compose.yml file \(at the bottom\). To enable the changes, restart by running the commands docker-compose down and docker-compose up -d. For detailed instructions, see step 3 [here](t_installing_sametime_docker.md).
+Alternatively, the docker-compose.yml file can be updated so the host name is resolvable locally. Add the host name and IP to the "extra\_hosts" setting in the nginx section of the docker-compose.yml file \(at the bottom\). To enable the changes, restart by running the commands docker-compose down and docker-compose up -d..
 
 **Q2. Sametime Meeting login page is successful, but 'oops' message is received when logging in?**
 
@@ -182,6 +182,4 @@ For Sametime Meeting issues, the Meeting server services/container logs will var
 -   For Meeting page failing to load or Login issues, get NGINX and AUTH logs with relevant times.
 -   For Meeting Recording issues, get JVB and JIBRI logs with relevant times.
 -   For Meeting Loading issues or STUN issues, get JVB logs with relevant times.
-
-**Parent Topic: **[Troubleshooting](troubleshooting.md)
 

@@ -7648,7 +7648,7 @@ nginx_1       | nginx: [emerg] host not found in upstream &quot;chat.mysametimet
 <div id="codeblock_lxh_1ql_ywb" class="highlight"><pre><span></span><code>docker-compose down
 docker-compose up -d
 </code></pre></div>
-<p>Alternatively, the docker-compose.yml file can be updated so the host name is resolvable locally. Add the host name and IP to the "extra_hosts" setting in the nginx section of the docker-compose.yml file (at the bottom). To enable the changes, restart by running the commands docker-compose down and docker-compose up -d. For detailed instructions, see step 3 <a href="t_installing_sametime_docker.md">here</a>.</p>
+<p>Alternatively, the docker-compose.yml file can be updated so the host name is resolvable locally. Add the host name and IP to the "extra_hosts" setting in the nginx section of the docker-compose.yml file (at the bottom). To enable the changes, restart by running the commands docker-compose down and docker-compose up -d..</p>
 <p><strong>Q2. Sametime Meeting login page is successful, but 'oops' message is received when logging in?</strong></p>
 <p><strong>A2.</strong> Check and confirm:</p>
 <ul>
@@ -7705,7 +7705,6 @@ docker-compose up -d
 <li>For Meeting Recording issues, get JVB and JIBRI logs with relevant times.</li>
 <li>For Meeting Loading issues or STUN issues, get JVB logs with relevant times.</li>
 </ul>
-<p><strong>Parent Topic: </strong><a href="troubleshooting.html">Troubleshooting</a></p>
 
 
 

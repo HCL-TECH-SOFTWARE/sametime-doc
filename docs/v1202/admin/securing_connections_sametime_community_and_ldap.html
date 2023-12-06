@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#task_ar1_cnv_dlb" class="md-skip">
+        <a href="#securing-connections-between-sametime-servers-and-ldap" class="md-skip">
           Skip to content
         </a>
       
@@ -7445,9 +7445,8 @@
   </a>
 
 
-<h1 class="task" id="task_ar1_cnv_dlb">Securing connections between Sametime servers and LDAP</h1>
+<h1 id="securing-connections-between-sametime-servers-and-ldap">Securing connections between Sametime servers and LDAP</h1>
 <p>When Sametime is configured to connect to an LDAP server, the Sametime servers makes five separate connections to the LDAP server.</p>
-<p><strong>This text is marked "not ready" for the public server. Shows only on the review server. There is a comment that this topic needs updating or removing. Issue 44523.</strong></p>
 <p>The Sametime Community Server makes a separate connection to the LDAP server to perform each of these five tasks:</p>
 <ul>
 <li>Authenticate users.</li>
@@ -7476,7 +7475,7 @@
 <p><strong>Import the LDAP server’s certificate into the trust store</strong></p>
 <p>If the LDAP server is using a public certificate, then you need to obtain the public root CA and import it into the trust store on the Sametime server. If your LDAP server is using a self-signed certificate, then you simply import the self-signed certificate. In the prerequisite topics, your trust store filename is defined in sametime.ini setting ST_TLS_TRUST_STORE_FILE or if using the individual scope in STLDAP_TLS_TRUST_STORE_FILE.  If you are securing Sametime using the global scope, the LDAP connections can use the same key and trust stores and these sametime.ini parameters are not needed.</p>
 <p><strong>Update the stconfig.nsf to use the secure LDAP settings</strong></p>
-<p>See the topic <a href="configuring_ldap_server_document.md">Configuring the LDAPServer Document</a> and</p>
+<p>See the <a href="configuring_ldap.html">configuring_ldap.md</a> topic and</p>
 <ul>
 <li>Set the Connection settings to the secure LDAP port (typically 636).</li>
 <li>Set the field <strong>SSL Enabled</strong> to true.</li>
@@ -7495,21 +7494,8 @@
 <li>
 <p>Save and close the sametime.ini file.</p>
 </li>
-<li>
-<p>Restart Sametime Server for the change to take effect.</p>
-</li>
-<li>
-<p><strong><a href="securing_ldap_kubernetes.html">Securing LDAP on Kubernetes</a></strong><br />
-This section covers the steps to import your LDAP trust store and password into Kubernetes as a secret, then define the secret in the Sametime configuration.</p>
-</li>
-<li><strong><a href="securing_ldap_docker.html">Securing LDAP on Docker or Podman</a></strong><br />
-This topic covers the steps to import your LDAP trust store and password into Docker as a secret, then define the secret in the Sametime configuration.</li>
-<li><strong><a href="t_domino_ldap_k8s.html">Specifying a cipher for Sametime to connect to Domino LDAP on Kubernetes</a></strong><br />
-This task involves defining the required cipher for Sametime to connect to Domino 12 LDAP servers.</li>
-<li><strong><a href="t_domino_ldap_docker.html">Specifying a cipher for Sametime to connect to Domino LDAP on Docker or Podman</a></strong><br />
-Several options that are related to the LDAP server SSL or TLS secure communications can be controlled by environment variables that are used by System SSL. This topic discusses the steps on how to specify a cipher for Sametime to connect to Domino LDAP.</li>
+<li>Restart Sametime Server for the change to take effect.</li>
 </ol>
-<p><strong>Parent Topic: </strong><a href="securing_connections.html">Securing connections</a></p>
 
 
 

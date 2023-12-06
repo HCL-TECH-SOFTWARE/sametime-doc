@@ -7540,7 +7540,7 @@
 <h2 class="section" id="section_ang_hbt_swb">Deployment in a name space</h2>
 <p>In the Openshift platform, there are namespace labels used to define a common set of arbitrary User IDs (UID) to be used as runAs UIDs for the pods running in that namespace. Sametime has some containers that require a constant UID of 1000. You must create a Security Context Constraints (SCC) within the namespace where Sametime is to be deployed to apply this MustRunAs policy to allow the service account which runs the deployments to assign this constant UID.</p>
 <h2 class="section" id="section_lv3_4b3_xwb">Deployment into the default namespace</h2>
-<p>Labels are no longer created with a random name by default, which can cause a problem in the default namespace where all containers labels are random. When deploying in the default namespace, comment out the seLinuxOptions:false setting for each activities, files, and recordings in the default namespace.</p>
+<p>By default, labels are not created with a random name, which can cause a problem in the default namespace where all containers labels are random. When deploying in the default namespace, comment out the seLinuxOptions:false setting for each activities, files, and recordings in the default namespace.</p>
 <p>You can use the Sametime supplied helm charts to deploy Sametime into the default namespace without any additional configuration.</p>
 <h2 class="section" id="section_ddy_p13_xwb">Deployment of video</h2>
 <p>There are three ways to deploy video when using the Openshift platform.</p>
@@ -7558,7 +7558,6 @@
 <p>Using a node port is also lower performance but is restricted to a single node. It requires a no host-network SCC.</p>
 </li>
 </ul>
-<p><strong>Parent Topic: </strong><a href="c_planning_kubernetes.html">Planning for Sametime in a Kubernetes environment</a></p>
 <p><strong>For step details, see</strong>  </p>
 <p><a href="installation_sametime_openshift.html">Preparing to install an Openshift environment</a></p>
 

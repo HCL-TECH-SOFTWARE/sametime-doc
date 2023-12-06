@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation_prompt_descriptions" class="md-skip">
+        <a href="#information-to-provide-during-installation" class="md-skip">
           Skip to content
         </a>
       
@@ -7453,58 +7453,53 @@
   </a>
 
 
-<h1 class="concept" id="installation_prompt_descriptions">Information to provide during installation</h1>
+<h1 id="information-to-provide-during-installation">Information to provide during installation</h1>
 <p>During the install process, you are prompted for information used to tailor the installation for your environment.</p>
 <p>The Sametime install prompts for several details pertaining to the environment. Before initiating the process, gather the listed details.</p>
-<p>Sametime server name
-:   The fully qualified name of the Sametime server.</p>
-<p>MongoDB
-:   Mongo host
-:   The host name of the MongoDB server.</p>
-<p>Mongo port
-:   The port number used to communicate with the MongoDB server.</p>
-<p>Administrator user name
-:   The user name of the MongoDB administrator defined when configuring the MongoDB. The default MongoDB administrator is sametimeUser.</p>
-<p>Password
-:   The password for the the MongoDB administrator defined when configuring the MongoDB. The default MongoDB password is sametime.</p>
-<p>Connection URL
-:   A secure URL to connect to the MongoDB server. The supplied URL overrides the default MongoDB URL.</p>
-<p>LDAP
-:   LDAP server
-:   The host name or IP address of the LDAP server.</p>
-<p>LDAP port
-:   The port used to communicate with the LDAP server.</p>
-<p>Bind name and password
-:   The bind account name and password for Sametime to access LDAP.</p>
-<p>Base DN
-:   The base location where Sametime begins a search for users and groups.</p>
-<p>TLS access
-:   If LDAP is access using TLS, provide the port number.</p>
-<pre><code>displayName attributes
-:   The default is cn.
-</code></pre>
-<p>JWT Secret
-:   The Base64 encoded JWT_SECRET from the Sametime deployment. If migrating from another version of Sametime, you can re-use your existing secret. If you don't have one the install program generates it.</p>
-<p>TURN server
-:   TURN server address
-:   The fully-qualified host name of a TURN server.</p>
-<p>TURN port
-:   The port used to communicate with the TURN server.</p>
-<p>Secert to TURN server
-:   Transport for stun/turn connection
-:   Select either tcp or udp.</p>
-<p>TCP configuration
-:   The port number used for TCP communications. The default is port number 4443.</p>
-<p>LTPA configuration
-:   Path to the LTPA key file
-:   Fully path to the LTPA key file. If you enable LTPA, LTAP keys are required.</p>
-<p>:   -   If you don't specify a value for the LTPA keys file location, the LTPA keys are automatically generated as part of the install process. If you don't specify a password, the default is WebAS. Enter the password when prompted to confirm.
--   If you have already have LTPA keys, enter the full path to an LTPA keys file and verify the password.</p>
-<pre><code>Upon successful connection to the LTPA keys, the following message is displayed.LTPA configuration is OK
-</code></pre>
-<p>Administrator email
-:   The email address for the Sametime administrator.</p>
-<p><strong>Parent Topic: </strong><a href="installation_sametime.html">Installing Sametime</a></p>
+<p><strong>Sametime server name</strong></p>
+<p>The fully qualified name of the Sametime server.</p>
+<p><strong>MongoDB</strong></p>
+<ul>
+<li>Mongo host: The host name of the MongoDB server.</li>
+<li>Mongo port: The port number used to communicate with the MongoDB server.</li>
+<li>Mongo port: The port number used to communicate with the MongoDB server.</li>
+<li>Administrator user name: The user name of the MongoDB administrator defined when configuring the MongoDB. The default MongoDB administrator is sametimeUser.</li>
+<li>Administrator user name: The user name of the MongoDB administrator defined when configuring the MongoDB. The default MongoDB administrator is sametimeUser.</li>
+<li>Password: The password for the the MongoDB administrator defined when configuring the MongoDB. The default MongoDB password is sametime.</li>
+<li>Connection URL: A secure URL to connect to the MongoDB server. The supplied URL overrides the default MongoDB URL.</li>
+</ul>
+<p><strong>LDAP</strong></p>
+<ul>
+<li>LDAP server: The host name or IP address of the LDAP server.</li>
+<li>LDAP port: The port used to communicate with the LDAP server.</li>
+<li>Bind name and password: The bind account name and password for Sametime to access LDAP.</li>
+<li>Base DN: The base location where Sametime begins a search for users and groups.</li>
+<li>
+<p>TLS access:  If LDAP is access using TLS, provide the port number.</p>
+<p><code>displayName attributes
+ :   The default is cn.</code></p>
+</li>
+</ul>
+<p><strong>JWT Secret</strong>: The Base64 encoded JWT_SECRET from the Sametime deployment. If migrating from another version of Sametime, you can re-use your existing secret. If you don't have one the install program generates it.</p>
+<p><strong>TURN server</strong></p>
+<ul>
+<li>TURN server address: The fully-qualified host name of a TURN server.</li>
+<li>TURN port: The port used to communicate with the TURN server.</li>
+</ul>
+<p><strong>Secert to TURN server</strong>
+- Transport for stun/turn connection
+- Select either tcp or udp.</p>
+<p><strong>TCP configuration</strong>: The port number used for TCP communications. The default is port number 4443.</p>
+<p><strong>LTPA configuration</strong>
+- Path to the LTPA key file: Fully path to the LTPA key file. If you enable LTPA, LTAP keys are required.</p>
+<p><strong>Note:</strong></p>
+<ul>
+<li>If you don't specify a value for the LTPA keys file location, the LTPA keys are automatically generated as part of the install process. If you don't specify a password, the default is WebAS. Enter the password when prompted to confirm.</li>
+<li>If you have already have LTPA keys, enter the full path to an LTPA keys file and verify the password.</li>
+</ul>
+<p>Upon successful connection to the LTPA keys, the following message is displayed.LTPA configuration is OK</p>
+<p><strong>Administrator email</strong>: The email address for the Sametime administrator.</p>
+<p><strong>Parent Topic:  </strong><a href="installation_sametime.html">Installing Sametime</a></p>
 
 
 

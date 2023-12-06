@@ -1,4 +1,4 @@
-# Configuring host aliases for Kubernetes deployments {#t_meetings_kubernetes .task}
+# Configuring host aliases for Kubernetes deployments 
 
 If your Kubernetes environment is unable to consistently resolve the host names of the supporting servers \(MongoDB, Sametime Proxy, STUN\) using DNS, configure the hosts manually.
 
@@ -64,7 +64,5 @@ Complete the following steps to modify each template in the table to include the
 3.  Save and close the template when changes are complete.
 
 
-After this process is complete, continue to the steps to install Sametime. See [t\_meetings\_sametime\_image\_docker.md](t_meetings_sametime_image_docker.md). If Sametime is already installed, follow the procedures in the [Applying configuration changes in Kubernetes or Openshift](apply_configchanges_kubernetes.md) topic to apply the changes.
-
-**Parent Topic: **[Preparing the network](t_meetings_prepare_network.md)
+After this process is complete, continue to the steps to install Sametime. See [load\_stimages\_local.md](load_stimages_local.md). If Sametime is already installed, follow the procedures in the [apply\_configchanges\_kubernetes.md](apply_configchanges_kubernetes.md) topic to apply the changes.
 

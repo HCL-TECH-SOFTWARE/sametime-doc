@@ -1,4 +1,4 @@
-# Sametime client configuration options {#sametime_client_configuration .concept}
+# Sametime client configuration options
 
 There are several methods to customize the user experience for Sametime clients. This section covers Expeditor based clients that are capable of leveraging the Expeditor Managed Settings framework. These clients include the Sametime client for Windows or Mac, and the HCL Notes embedded Sametime client for Windows or Mac. This does not apply to the PWA, web or mobile clients.
 
@@ -9,12 +9,11 @@ If your clients not not yet installed, the the plugin\_customization.ini file ca
 |File|Location|Purpose|
 |----|--------|-------|
 |managed-community-configs.xml|Web server|This file is used to update connectivity preferences in the client. Update, add and delete servers, and manage connection settings \(such as host name, port, connection method, authentication method, etc\). The file is pushed using a policy, so you can define different settings for different users. This method applies to both the Sametime® rich client and to the Sametime client embedded in Notes®. This file is retrieved upon login and will take effect the next time the user restarts the client.|
-|managed-settings.xml|Web server|This file can be used to push [client preferences](config_client_pref_tables.md) to the users. The file is hosted on a web server and retrieved upon login from the Sametime policy. This method applies to the Sametime rich client and Sametime embedded client in Notes. **Note:** Do not add community config settings \(connectivity settings\) to this file. Community config settings must be added to the managed-community-configs.xml file. See the topic [Updating Communities with the Managed-community-configs xml](admin_st_mng_remotecomm.md).
+|managed-settings.xml|Web server|This file can be used to push [client preferences](config_client_pref_tables.md) to the users. The file is hosted on a web server and retrieved upon login from the Sametime policy. This method applies to the Sametime rich client and Sametime embedded client in Notes.|
+|               |       |**Note:** Do not add community config settings \(connectivity settings\) to this file. Community config settings must be added to the managed-community-configs.xml file. See the topic [Updating Communities with the Managed-community-configs xml](admin_st_mng_remotecomm.md).|
+|plugin\_customization.ini|Client computer|Set initial eclipse preferences when client install kits are deployed to desktops or when a new user launches the product for the first time. These preferences can be overridden at runtime for the logged in user base using the managed-settings.xml file. This method only applies to installed Sametime Connect clients.|
+|        |     |Community settings \(such as loginAtStartup and host\) can be entered here to prepopulate community settings for a first time user. After the user logs in, only the managed-community-configs.xml file can be used to change community settings.
 
-|
-|plugin\_customization.ini|Client computer|Set initial eclipse preferences when client install kits are deployed to desktops or when a new user launches the product for the first time. These preferences can be overridden at runtime for the logged in user base using the managed-settings.xml file. This method only applies to installed Sametime Connect clients.Community settings \(such as loginAtStartup and host\) can be entered here to prepopulate community settings for a first time user. After the user logs in, only the managed-community-configs.xml file can be used to change community settings.
-
-|
 
 -   **[Sametime client preferences](config_client_pref_tables.md)**  
 This section lists the preferences that can be managed for the HCL Sametime Connect Client and Sametime Embedded Client for Notes.
@@ -29,5 +28,5 @@ You can distribute updates to HCL Sametime client communities automatically usin
 -   **[Creating a community provisioning URL for mobile users](community_provisioning.md)**  
 This section describes how to create a provisioning URL that automatically creates a Sametime community definition on mobile devices running Google Android or Apple iOS, so users can easily connect to Sametime.
 
-**Parent Topic: **[Managing Sametime clients](managing_sametime_client_preferences.md)
+**Parent Topic:  **[Managing Sametime clients](managing_sametime_client_preferences.md)
 

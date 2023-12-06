@@ -1,45 +1,30 @@
-# Chat preferences {#config_client_chat_history_pref .concept}
+# Chat preferences 
 
 The following tables list the chat preferences for the HCL Sametime Connect Client and Sametime Embedded Client for Notes®.
+
+Table 1. Application Preferences - com.ibm.collaboration.realtime.application release 8.5.1.1 and later
 
 |Attribute|Variable type|Description|Release|
 |---------|-------------|-----------|-------|
 |enableNwayRichText|Boolean. Default is false.|Specifies whether or not to enable the client to support rich text in a multi-user chat. Rich text is enabled in a multi-user chat session only if all clients participating in the chat session have this setting enabled.|8.5.1.1 and later|
+
+Table 2. Chat History Preferences - com.ibm.collaboration.realtime.chat.logging  release 7.5.x and later
 
 |Attribute|Variable type|Description|Release|
 |---------|-------------|-----------|-------|
 |days.storage.max|A positive number.|Delete saved transcripts after this number of days. This setting will be overwritten by the value set on the server policy.|7.5.1 and later|
 |delete.old|A positive number. The default is false.|Delete saved transcripts. This setting will be overwritten by the value set on the server policy. If the policy allows transcripts to be deleted, set this value to true initially.|7.5.1 and later|
 |logging.default|0 = Automatically save chats, 1 = Do not automatically save chats, 2 = Prompt me to save chats|Default chat logging action.|7.5.1 and later|
-|logging.enabled|Boolean. Default is false.|Specify whether or not to save a local copy of the chat history. If the server policy is not configured to allow save chat, this setting is ignored.**Note:** Local chat history is unencrypted. To disable and restrict users from saving a local copy, refer to [Updating client preferences with the managed-settings.xml file](config_client_xml_location.md).
-
-|7.5.1 and later|
+|logging.enabled|Boolean. Default is false.|Specify whether or not to save a local copy of the chat history. If the server policy is not configured to allow save chat, this setting is ignored.| 7.5.1 and later|
+| | |**Note:** Local chat history is unencrypted. To disable and restrict users from saving a local copy, refer to [Updating client preferences with the managed-settings.xml file](config_client_xml_location.md). | |
 |display.context|True = Display, false = Do not display|Display the saved transcript between two users for the current day in the chat window.|7.5.1 and later|
 |display.context.background|True = Display, false = Do not display|Display background highlighting when displaying saved transcripts in chats.|7.5.1 and later|
-|root.location|A string of a valid path on the computer.|Location for automatically saved chats Directory path. Do not use '\\' as the file separator. Use '\\\\' or '/' instead. Example using absolute path: ```
-com.ibm.collaboration.
-realtime.chat.logging/
-root.location=
-C:\\Documents\\user\\
-SametimeTranscripts 
-```
+|root.location|A string of a valid path on the computer.|Location for automatically saved chats Directory path. Do not use '\\' as the file separator. Use '\\\\' or '/' instead. Example using absolute path: `com.ibm.collaboration. realtime.chat.logging/ root.location= C:\\Documents\\user\\ SametimeTranscripts`| |
+| | |Releases 8.0.2 and later support the use of a relative path. Example using a path relative to the user profile folder for Windows™ and Mac: `com.ibm.collaboration. realtime.chat.logging root.location= \\SametimeTranscripts`| |
+| | |For Linux™, `com.ibm.collaboration. realtime.chat.logging/ root.location= SametimeTranscripts` | |
 
-Releases 8.0.2 and later support the use of a relative path. Example using a path relative to the user profile folder for Windows™ and Mac: ```
-com.ibm.collaboration.
-realtime.chat.logging
-/root.location=
-\\SametimeTranscripts
 
-```
 
- For Linux™, ```
-com.ibm.collaboration.
-realtime.chat.logging/
-root.location=
-SametimeTranscripts
-```
-
-|7.5.1 and later|
 |save.file.location|A string of a valid path on the computer.|Default location for manually saved chats. Do not use '\\' as the file separator. Use '\\\\' or '/' instead. Example using absolute path: ```
 com.ibm.collaboration.realtime.chat.logging/ave.file.location=C:\\Documents\\user\\SavedChats 
 ```
@@ -65,10 +50,14 @@ SametimeTranscripts
 |firsttime.askprefs|Boolean. Default is true.|Specify whether to prompt user to set logging preferences when Sametime® launched for the first time. When the value is set to true, loggging.enabled should also be set to define the default enablement state for saving chat transcripts.|7.5.1 and later|
 |schedule.delete.old|Boolean. Default is false.|Specify whether or not to start the scheduled file-based chat history deletion task. The task is scheduled at a 12-hour interval, starting from the login time. The local chat history is deleted automatically only if the corresponding server policy is enabled for it.|8.5.2 IFR1 and later|
 
+Table 3. Chat History UI Preferences - com.ibm.collaboration.realtime.chat.logging.ui  release 7.5.x and later
+
 |Attribute|Variable type|Description|Release|
 |---------|-------------|-----------|-------|
 |allowSaveOverride|Boolean. Default is true.|Specifies whether to show menu item "Prevent Transcript save" in chat window Tools menu|7.5.1 and later|
 |noPersonListLiveNames|Boolean. Default is false.|Specifies whether to use Live Names in the chat history viewer person list.|8.5.2 and later|
+
+Table 4. Chat Window Preferences - com.ibm.collaboration.realtime.chatwindow  release 7.5.x and later
 
 |Attribute|Variable type|Description|Release|
 |---------|-------------|-----------|-------|
@@ -121,10 +110,12 @@ SametimeTranscripts
 |autoAcceptInvitation|Boolean. Default is true.|Allows invitee to automatically join a multi-person chat without clicking Accept when invited to join the chat.|9.0 and later|
 |allowOthersToSeeTranscript|Boolean. Default is true.|Allows new chat invitees to see the previous chat transcript when they join the chat.|9.0 and later|
 
+Table 5. RTC Adapter Plugin Preferences - com.ibm.collaboration.realtime.rtcadapter  release 8.5.2 and later
+
 |Attribute|Variable type|Description|Release|
 |---------|-------------|-----------|-------|
 |disableRichText|Boolean. Default is false.|Specifies whether or not to disable rich text for all chats.|8.5.2 and later|
 |disableRichTextWithAnon|Boolean. Default is false.|Specifies whether or not to disable rich text for chats with anonymous users.|8.5.2 and later|
 
-**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic:  **[Sametime client preferences](config_client_pref_tables.md)
 

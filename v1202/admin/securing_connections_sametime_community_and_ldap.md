@@ -1,8 +1,8 @@
-# Securing connections between Sametime servers and LDAP {#task_ar1_cnv_dlb .task}
+# Securing connections between Sametime servers and LDAP 
 
 When Sametime is configured to connect to an LDAP server, the Sametime servers makes five separate connections to the LDAP server.
 
-**This text is marked "not ready" for the public server. Shows only on the review server. There is a comment that this topic needs updating or removing. Issue 44523.**
+
 
 The Sametime Community Server makes a separate connection to the LDAP server to perform each of these five tasks:
 
@@ -40,7 +40,7 @@ If the LDAP server is using a public certificate, then you need to obtain the pu
 
 **Update the stconfig.nsf to use the secure LDAP settings**
 
-See the topic [Configuring the LDAPServer Document](configuring_ldap_server_document.md) and
+See the [configuring\_ldap.md](configuring_ldap.md) topic and
 
 -   Set the Connection settings to the secure LDAP port \(typically 636\).
 -   Set the field **SSL Enabled** to true.
@@ -61,15 +61,4 @@ If you wish to only encrypt operations that involve passwords, the rest of the t
 
 4.  Save and close the sametime.ini file.
 5.  Restart Sametime Server for the change to take effect.
-
--   **[Securing LDAP on Kubernetes](securing_ldap_kubernetes.md)**  
-This section covers the steps to import your LDAP trust store and password into Kubernetes as a secret, then define the secret in the Sametime configuration.
--   **[Securing LDAP on Docker or Podman](securing_ldap_docker.md)**  
-This topic covers the steps to import your LDAP trust store and password into Docker as a secret, then define the secret in the Sametime configuration.
--   **[Specifying a cipher for Sametime to connect to Domino LDAP on Kubernetes](t_domino_ldap_k8s.md)**  
-This task involves defining the required cipher for Sametime to connect to Domino 12 LDAP servers.
--   **[Specifying a cipher for Sametime to connect to Domino LDAP on Docker or Podman](t_domino_ldap_docker.md)**  
-Several options that are related to the LDAP server SSL or TLS secure communications can be controlled by environment variables that are used by System SSL. This topic discusses the steps on how to specify a cipher for Sametime to connect to Domino LDAP.
-
-**Parent Topic: **[Securing connections](securing_connections.md)
 

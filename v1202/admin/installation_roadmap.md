@@ -12,27 +12,23 @@ The installation road map lists the high-level steps for installing your product
 8.  Manage clients with policies.
 9.  Configure servers and open ports for mobile users.
 
+
+Table 1. Where to find more information
+
 |Item|More information|
 |----|----------------|
 |System requirements|[HCL Sametime® System Requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0108387)|
-|Planning|-   [Planning the network topology and connectivity](topology.md)
--   [Sametime client preferences](config_client_pref_tables.md)
--   [Sametime client configuration options](sametime_client_configuration.md)
+|Planning|-   [Planning the network topology and connectivity](topology.md)|
+|        |-   [Sametime client preferences](config_client_pref_tables.md)|
+|        |-   [Sametime client configuration options](sametime_client_configuration.md)|
+|Installing|-   [Installing MongoDB](installation_mongodb.md)|
+|          |-   [Installing Sametime](installation_sametime.md)|
+|          |-   [Installing Sametime clients](installing_sametime_clients.md)|
+|          |-   [Configuring LDAP](configuring_ldap.md)|
+|Clustering and high availability|-   [Clustering and high availability](cluster_highavailability.md)|
+|                                |-   [Installing Prometheus](installation_prometheus.md)|
+|Migrating and upgrading|-   [Planning for migration to Sametime 12](c_migration_planning.md)|
 
-|
-|Installing|-   [Installing MongoDB](installation_mongodb.md)
--   [Installing Sametime](installation_sametime.md)
--   [Installing Sametime clients](installing_sametime_clients.md)
--   [Configuring LDAP](configuring_ldap.md)
 
-|
-|Clustering and high availability|-   [Clustering and high availability](cluster_highavailability.md)
--   [Installing Prometheus](installation_prometheus.md)
-
-|
-|Migrating and upgrading|-   [Planning for migration to Sametime 12](c_migration_planning.md)
-
-|
-
-**Parent Topic: **[Installing](installing.md)
+**Parent Topic:  **[Installing](installing.md)
 
