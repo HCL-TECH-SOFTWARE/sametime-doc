@@ -47,5 +47,5 @@ Aside from container orchestration, you can also use Kubernetes to abstract the 
 -   **[Planning for Openshift](c_planning_openshift.md)**  
 OpenShift is a cloud-based Kubernetes platform. Planning considerations and procedures used to deploy Sametime in an Openshift environment are the same as the Kubernetes platform with the additional considerations addressed in this topic.
 
-**Parent Topic: **[Platforms](c_planning_platforms.md)
+**Parent Topic:  **[Platforms](c_planning_platforms.md)
 

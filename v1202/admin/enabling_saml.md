@@ -107,5 +107,5 @@ Alternatively, users can manually enable SAML authentication by modifying settin
 7.  Add the settings to the plugin\_customization.ini file and include it in the client package that is distributed to users.
 
 
-**Parent Topic: **[Setting up SSO using SAML](enabling_sso_saml.md)
+**Parent Topic:  **[Setting up SSO using SAML](enabling_sso_saml.md)
 

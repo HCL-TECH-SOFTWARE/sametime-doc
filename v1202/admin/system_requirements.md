@@ -8,5 +8,5 @@ The graphic below shows a simple topology with the required components: MongoDB 
 
 ![Simple Sametime topology ](Images/topology_simple.png)
 
-**Parent Topic: **[Prerequistes](c_planning_prereqs.md)
+**Parent Topic:  **[Prerequistes](c_planning_prereqs.md)
 

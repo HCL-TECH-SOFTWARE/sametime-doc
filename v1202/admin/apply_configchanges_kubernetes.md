@@ -42,5 +42,5 @@ You can make configuration changes to the Sametime deployment server by modifyin
         ```
 
 
-**Parent Topic: **[Configuring](configuring.md)
+**Parent Topic:  **[Configuring](configuring.md)
 

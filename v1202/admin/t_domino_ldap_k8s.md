@@ -50,5 +50,5 @@ To support Domino 12.0.2 LDAP connections, follow these steps.
         ```
 
 
-**Parent Topic: **[Securing connections between Sametime servers and LDAP](securing_connections_sametime_community_and_ldap.md)
+**Parent Topic:  **[Securing connections between Sametime servers and LDAP](securing_connections_sametime_community_and_ldap.md)
 

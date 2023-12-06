@@ -7,5 +7,5 @@ There are several methods to customize the user experience for Sametime clients.
 -   **[Connecting the Sametime Connect client to the Sametime server](t_connect_clienttoserver.md)**  
 The Sametime Connect client uses Server Communities preferences to connect to the Sametime server for presence and chat features.
 
-**Parent Topic: **[Administering](administering.md)
+**Parent Topic:  **[Administering](administering.md)
 

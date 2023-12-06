@@ -21,5 +21,5 @@ This task involves defining the required cipher for Sametime to connect to Domin
 4.  Follow the steps in the [Applying configuration changes in Docker or Podman](apply_configchanges_docker.md) topic.
 
 
-**Parent Topic: **[Securing connections between Sametime servers and LDAP](securing_connections_sametime_community_and_ldap.md)
+**Parent Topic:  **[Securing connections between Sametime servers and LDAP](securing_connections_sametime_community_and_ldap.md)
 

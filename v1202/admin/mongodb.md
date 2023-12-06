@@ -8,5 +8,5 @@ Data related to chats and meetings is stored in MongoDB. This includes screensho
 
 Data is stored in the data/db path which is specified in the mongod.conf configuration file. When determining the size of your MongoDB, consider the activity used by users in your organization. Refer to the MongoDB documentation for information on setting the size of the database.
 
-**Parent Topic: **[Prerequistes](c_planning_prereqs.md)
+**Parent Topic:  **[Prerequistes](c_planning_prereqs.md)
 

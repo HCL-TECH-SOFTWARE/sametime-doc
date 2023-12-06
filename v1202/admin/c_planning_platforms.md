@@ -20,5 +20,5 @@ Sametime Meetings are sized according to server activity at any given time. A la
 -   **[Planning for Sametime in a Kubernetes environment](c_planning_kubernetes.md)**  
 Kubernetes provides container orchestration for managing containers. When using this platform, you must consider how to manage operations, scalability, and security.
 
-**Parent Topic: **[Planning](planning.md)
+**Parent Topic:  **[Planning](planning.md)
 

@@ -22,5 +22,5 @@ Figure 2 shows a small chat-only environment that includes internet access to Sa
 
 In this example, you can open port 443 on the firewall to support mobile clients on the internet. You can open TCP port 1533 to support desktop clients. Instead of placing Sametime in the internal zone, you can also place Sametime in a DMZ or on the external zone.
 
-**Parent Topic: **[Planning the network topology and connectivity](topology.md)
+**Parent Topic:  **[Planning the network topology and connectivity](topology.md)
 

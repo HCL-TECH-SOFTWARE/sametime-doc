@@ -56,5 +56,5 @@ This procedure copies the file from the machine that runs kubectl to the persist
 -   **[Hosting files containing the same file name](t_host_samefilename_k8s.md)**  
 This topic covers the additional steps necessary for environments that require hosting multiple managed-settings.xml or managed-community-configs.xml files.
 
-**Parent Topic: **[Defining preferences in the managed-settings.xml file](config_client_xml_file.md)
+**Parent Topic:  **[Defining preferences in the managed-settings.xml file](config_client_xml_file.md)
 

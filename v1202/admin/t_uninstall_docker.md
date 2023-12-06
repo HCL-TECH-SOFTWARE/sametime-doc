@@ -25,5 +25,5 @@ To uninstall Sametime on Docker, follow these steps.
 
 If you plan to re-install Sametime, refer to [Installing Sametime in a Docker or Podman environment](installation_sametime_docker.md). To migrate or upgrade to a higher version, refer to [Migrating and Upgrading](migrating.md).
 
-**Parent Topic: **[Uninstalling Sametime](t_uninstall.md)
+**Parent Topic:  **[Uninstalling Sametime](t_uninstall.md)
 

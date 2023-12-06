@@ -15,7 +15,7 @@ Ensure that all images are in JPG or GIF format.
     **Note:** Add the Namespace argument if Sametime is installed in a Namespace.
 
 
-**Parent Topic: **[Adding virtual backgrounds to the global library](t_configure_default_virtual_background.md)
+**Parent Topic:  **[Adding virtual backgrounds to the global library](t_configure_default_virtual_background.md)
 
 ## Removing default virtual backgrounds on Kubernetes {#task_e31_gql_z5b}
 

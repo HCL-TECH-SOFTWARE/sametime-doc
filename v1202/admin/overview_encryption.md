@@ -14,5 +14,5 @@ The following table lists the types of encryption for various types of data and 
 |OLM|In-transit data|256-bit|Provides end-to-end encryption between client-to-client media.|
 |bcrypt|Stored data|10 salt rounds|Hashes passwords stored in the database.|
 
-**Parent Topic: **[Securing](securing.md)
+**Parent Topic:  **[Securing](securing.md)
 

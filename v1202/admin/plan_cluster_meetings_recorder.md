@@ -43,5 +43,5 @@ Estimate how many recorders you may need and define the minimum and maximum numb
     ```
 
 
-**Parent Topic: **[Configure high capacity for meetings](plan_cluster_meetings.md)
+**Parent Topic:  **[Configure high capacity for meetings](plan_cluster_meetings.md)
 

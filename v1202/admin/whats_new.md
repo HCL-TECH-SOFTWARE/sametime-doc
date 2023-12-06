@@ -10,5 +10,5 @@ For a listing of fixes provided in 12.0.2, refer to the following article:
 
 -   [HCL Sametime and HCL Sametime Premium 12.0.2 Fix List](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0108446)
 
-**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
+**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 

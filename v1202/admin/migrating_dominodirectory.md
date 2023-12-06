@@ -12,5 +12,5 @@ For previous Sametime versions, see the *Changing user names* topic for the vers
 
 The LDAP task is used to convert to LDAP. Run the task on the older Sametime Community server.
 
-**Parent Topic: **[Planning for migration to Sametime 12](c_migration_planning.md)
+**Parent Topic:  **[Planning for migration to Sametime 12](c_migration_planning.md)
 

@@ -11,5 +11,5 @@ When dial-out is enabled, a new button appears in the meeting allowing a meeting
 -   **[Enabling meeting dial-out on Kubernetes](enable_dialout_kubernetes.md)**  
 
 
-**Parent Topic: **[Meetings](meetings_configuring.md)
+**Parent Topic:  **[Meetings](meetings_configuring.md)
 

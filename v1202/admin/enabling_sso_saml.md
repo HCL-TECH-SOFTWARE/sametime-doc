@@ -57,5 +57,5 @@ Ensure that Sametime Connect and Embedded clients can connect to the Sametime us
 -   **[Enabling SAML authentication in installed clients](enabling_saml_clients.md)**  
 Enable SAML authentication from within the HCL® Sametime® Connect or Embedded client that is already installed on a computer.
 
-**Parent Topic: **[Enabling Single Sign-on](enabling_sso.md)
+**Parent Topic:  **[Enabling Single Sign-on](enabling_sso.md)
 

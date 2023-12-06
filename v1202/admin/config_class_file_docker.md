@@ -55,5 +55,5 @@ To configure a custom Java class file to transform your searches for LDAP for th
     ```
 
 
-**Parent Topic: **[Creating custom Java classes for searching LDAP](creating_custom_java.md)
+**Parent Topic:  **[Creating custom Java classes for searching LDAP](creating_custom_java.md)
 

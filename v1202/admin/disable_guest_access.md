@@ -23,5 +23,5 @@ You can disable guest access and remove the option from the meeting attend page.
         ```
 
 
-**Parent Topic: **[Managing Sametime Meetings](sametime_meeting_administering.md)
+**Parent Topic:  **[Managing Sametime Meetings](sametime_meeting_administering.md)
 

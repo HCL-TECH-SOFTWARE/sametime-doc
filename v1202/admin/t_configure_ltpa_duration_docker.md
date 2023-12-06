@@ -43,5 +43,5 @@ The following conditions must be satisfied.
     ```
 
 
-**Parent Topic: **[Setting up SSO using LTPA](enabling_sso_ltpa.md)
+**Parent Topic:  **[Setting up SSO using LTPA](enabling_sso_ltpa.md)
 

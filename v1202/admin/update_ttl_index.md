@@ -84,5 +84,5 @@ To update the TTL settings used by the Sametime server involves modifying the fo
     ```
 
 
-**Parent Topic: **[Configuring](configuring.md)
+**Parent Topic:  **[Configuring](configuring.md)
 

@@ -17,5 +17,5 @@ Use this information on troubleshooting Sametime 12 Premium on Kubernetes - cont
 -   **[Troubleshooting LDAP on the community pod](t_troubleshooting_ldap_kubernetes.md)**  
 
 
-**Parent Topic: **[Troubleshooting](troubleshooting.md)
+**Parent Topic:  **[Troubleshooting](troubleshooting.md)
 

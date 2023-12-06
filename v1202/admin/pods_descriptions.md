@@ -33,5 +33,5 @@ Jicofo \(conference focus\) – messages about features used in meetings, partic
 |Webhook|NA|Interacts with telephony and click to call feature|
 |Outlook|NA|When the Outlook add-in feature is enabled, this process interacts with the Outlook add-in.|
 
-**Parent Topic: **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
+**Parent Topic:  **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
 

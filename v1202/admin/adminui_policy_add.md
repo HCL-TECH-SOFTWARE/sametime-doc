@@ -9,5 +9,5 @@ You can create new policies by copying and editing a current policy.
 -   **[Creating a policy](adminui_policy_create_new.md)**  
 You can create a custom policy that takes precedents over the Default and Anonymous policies. There can be many custom policies based on the requirements for your environment.
 
-**Parent Topic: **[Managing policies](adminui_policy_manage.md)
+**Parent Topic:  **[Managing policies](adminui_policy_manage.md)
 

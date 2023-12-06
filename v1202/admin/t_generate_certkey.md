@@ -34,5 +34,5 @@ The CSR contains three sets of information:
 
 You can replace or update the TLS certificates. For more information, refer to [Replacing the TLS certificates for Web Chat and Meetings](tls_change_certificate.md), [Updating the TLS certificates on Docker](tls_change_certificate_docker.md), and [Updating the TLS certificates on Kubernetes](tls_change_certificate_kubernetes.md).
 
-**Parent Topic: **[Securing connections](securing_connections.md)
+**Parent Topic:  **[Securing connections](securing_connections.md)
 

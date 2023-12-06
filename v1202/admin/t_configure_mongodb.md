@@ -81,5 +81,5 @@ MongoDB security is enabled by default. Securing MongoDB is not required for Sam
 
 After the MongoDB is configured, you can install Sametime. Refer to [Installing Sametime](installation_sametime.md) for the details.
 
-**Parent Topic: **[Installing MongoDB](installation_mongodb.md)
+**Parent Topic:  **[Installing MongoDB](installation_mongodb.md)
 

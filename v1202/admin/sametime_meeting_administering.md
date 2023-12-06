@@ -65,5 +65,5 @@ You can control how long your Sametime meeting credentials are maintained to red
 -   **[Disabling the meeting timer](t_disabling_timer.md)**  
 By default, Sametime is configured to display the meeting duration. You can change the setting to disable the timer.
 
-**Parent Topic: **[Administering](administering.md)
+**Parent Topic:  **[Administering](administering.md)
 

@@ -41,5 +41,5 @@ When Sametime is installed for the first time, you must deploy a HorizontalPodAu
     ```
 
 
-**Parent Topic: **[Configure high capacity for meetings](plan_cluster_meetings.md)
+**Parent Topic:  **[Configure high capacity for meetings](plan_cluster_meetings.md)
 

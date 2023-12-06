@@ -53,5 +53,5 @@ After the keystore is created, do the following:
 1.  Move the .KEY, .CRT, and .PEM files to a secure location and remove them from the machine.
 2.  Record the keystore password that is used in another step.
 
-**Parent Topic: **[Creating a keystore for Sametime mux](t_keystore_mux.md)
+**Parent Topic:  **[Creating a keystore for Sametime mux](t_keystore_mux.md)
 

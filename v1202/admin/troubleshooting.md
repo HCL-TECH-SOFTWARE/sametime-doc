@@ -24,5 +24,5 @@ Use this information on troubleshooting and logging tools to diagnose and resolv
 -   **[Resolving problems with business cards](t_resolving_business_cards.md)**  
 If business cards are not displaying user information as expected, first check the server configuration, then the client, and finally, the business cards themselves.
 
-**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
+**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 

@@ -49,5 +49,5 @@ If you already have a STUN server in your environment or wish to use an alternat
 
 If your deployment does not require the use of STUN, then you can disable this by simply commenting out the appropriate line in either the .env or values.yaml file and installing the server.
 
-**Parent Topic: **[Network planning for meetings](network_planning.md)
+**Parent Topic:  **[Network planning for meetings](network_planning.md)
 

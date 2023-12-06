@@ -13,5 +13,5 @@ You must have operating system access to the Sametime server.
     -   To define the location of the managed-settings.xml and managed-community-configs.xml files, specify the URL to the directory containing one or both file in the **Sametime update site URL** field. This field is located in the policy's Administration section.
     -   To define the default community server information, specify the **User can set the community server as the default server** field in the Chat section.
 
-**Parent Topic: **[Defining preferences in the managed-settings.xml file](config_client_xml_file.md)
+**Parent Topic:  **[Defining preferences in the managed-settings.xml file](config_client_xml_file.md)
 

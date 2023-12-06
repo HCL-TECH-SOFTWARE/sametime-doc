@@ -38,5 +38,5 @@ If you are deploying in a cloud hosted Kubernetes environment \(Google Kubernete
 
 Verify the service. For more information, see [Testing Sametime chat and meeting clients](t_testing_sametime_chat.md).
 
-**Parent Topic: **[Installing Ingress](t_ingress_install.md)
+**Parent Topic:  **[Installing Ingress](t_ingress_install.md)
 

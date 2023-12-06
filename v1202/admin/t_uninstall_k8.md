@@ -19,5 +19,5 @@ To uninstall Sametime on Kubernetes, follow these steps.
 
 If you plan to re-install Sametime, refer to [Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md). To migrate or upgrade to a higher version, refer to [Migrating and Upgrading](migrating.md).
 
-**Parent Topic: **[Uninstalling Sametime](t_uninstall.md)
+**Parent Topic:  **[Uninstalling Sametime](t_uninstall.md)
 

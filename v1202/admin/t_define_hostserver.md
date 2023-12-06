@@ -28,5 +28,5 @@ Each user must update the Sametime Connect Client with the DNS name of the Samet
 3.  In the**Server Community** field, type the fully qualified host name of the Sametime Community Mux server, such as messaging.example.com.
 
 
-**Parent Topic: **[Connecting the Sametime Connect client to the Sametime server](t_connect_clienttoserver.md)
+**Parent Topic:  **[Connecting the Sametime Connect client to the Sametime server](t_connect_clienttoserver.md)
 

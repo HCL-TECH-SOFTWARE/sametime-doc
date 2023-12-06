@@ -190,5 +190,5 @@ The changes in this task affect the following pods:
         ```
 
 
-**Parent Topic: **[Configuring LDAP](configuring_ldap.md)
+**Parent Topic:  **[Configuring LDAP](configuring_ldap.md)
 

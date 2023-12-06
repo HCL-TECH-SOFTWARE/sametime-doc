@@ -29,5 +29,5 @@ If you prefer to use a local Docker repository, move the Sametime images from th
 
 See [Preparing the deployment](t_meetings_configure_deployment.md).
 
-**Parent Topic: **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
+**Parent Topic:  **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
 

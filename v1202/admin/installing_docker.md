@@ -106,5 +106,5 @@ All commands provided require running as ROOT or SUDO access. If not running as 
     ![](Images/docker_service.png)
 
 
-**Parent Topic: **[Installing Sametime in a Docker or Podman environment](installation_sametime_docker.md)
+**Parent Topic:  **[Installing Sametime in a Docker or Podman environment](installation_sametime_docker.md)
 

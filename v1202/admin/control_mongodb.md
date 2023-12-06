@@ -22,5 +22,5 @@ There are more details here -
 
 [https://docs.mongodb.com/v3.6/tutorial/rotate-log-files/%22%20rel=%22nofollow%22%20style=%22box-sizing:%20border-box;%20text-decoration-line:%20none;%20padding:%200px;%20cursor:%20pointer;%20color:%20rgb\(31,%20132,%20118\);%20background:%20transparent;%20https://docs.mongodb.com/v3.6/tutorial/rotate-log-files/](https://docs.mongodb.com/v3.6/tutorial/rotate-log-files/%22%20rel=%22nofollow%22%20style=%22box-sizing:%20border-box;%20text-decoration-line:%20none;%20padding:%200px;%20cursor:%20pointer;%20color:%20rgb(31,%20132,%20118);%20background:%20transparent;%20https://docs.mongodb.com/v3.6/tutorial/rotate-log-files/)
 
-**Parent Topic: **[MongoDB](administering_mongodb.md)
+**Parent Topic:  **[MongoDB](administering_mongodb.md)
 

@@ -30,5 +30,5 @@ Important considerations:
 7.  Confirm that the photo is correct and click **Save and Close**.
 
 
-**Parent Topic: **[Setting up business cards](admin_st_buscard.md)
+**Parent Topic:  **[Setting up business cards](admin_st_buscard.md)
 

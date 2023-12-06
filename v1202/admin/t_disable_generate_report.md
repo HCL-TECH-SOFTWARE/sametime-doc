@@ -19,5 +19,5 @@ By default, meeting owners can generate meeting reports. You can change a settin
 2.  Restart the Sametime server to apply the changes. For more information, refer to [Starting and stopping the Sametime server](starting_and_stopping_servers.md).
 
 
-**Parent Topic: **[Managing Sametime Meetings](sametime_meeting_administering.md)
+**Parent Topic:  **[Managing Sametime Meetings](sametime_meeting_administering.md)
 

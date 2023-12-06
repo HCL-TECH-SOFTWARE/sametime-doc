@@ -28,5 +28,5 @@ When you modify the docker-compose.yml file, follow the syntax rules for YAML fi
     ```
 
 
-**Parent Topic: **[Managing user sign-on](control_validity_length.md)
+**Parent Topic:  **[Managing user sign-on](control_validity_length.md)
 

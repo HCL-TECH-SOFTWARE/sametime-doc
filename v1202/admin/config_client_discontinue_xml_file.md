@@ -24,5 +24,5 @@ To stop setting preferences through the Expeditor managed settings framework, re
 
         -   Remove the com.ibm.rcp.managedsettings.provider.file/URL setting from the plugin\_customization.ini file and provision the updated file to clients.
 
-**Parent Topic: **[Updating client preferences with the managed-settings.xml file](config_client_xml_location.md)
+**Parent Topic:  **[Updating client preferences with the managed-settings.xml file](config_client_xml_location.md)
 

@@ -43,5 +43,5 @@ The Docker and Podman commands are similar. The only difference is that docker p
     ```
 
 
-**Parent Topic: **[Securing connections between the Sametime mux and the Connect and Embedded clients](securing_connections_between_community_clients.md)
+**Parent Topic:  **[Securing connections between the Sametime mux and the Connect and Embedded clients](securing_connections_between_community_clients.md)
 

@@ -102,5 +102,5 @@ This procedure is to configure Sametime to connect to two or more separate LDAP 
     ```
 
 
-**Parent Topic: **[Configuring LDAP](configuring_ldap.md)
+**Parent Topic:  **[Configuring LDAP](configuring_ldap.md)
 

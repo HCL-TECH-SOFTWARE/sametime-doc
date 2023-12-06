@@ -28,5 +28,5 @@ To disable the meeting timer, set the parameter to true on the Meetings server.
         ```
 
 
-**Parent Topic: **[Managing Sametime Meetings](sametime_meeting_administering.md)
+**Parent Topic:  **[Managing Sametime Meetings](sametime_meeting_administering.md)
 

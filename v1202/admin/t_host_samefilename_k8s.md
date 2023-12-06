@@ -92,5 +92,5 @@ In the following example, there are two managed-settings.xml files for a group n
     -   Where `east` is the name of the custom directory that was created before
     -   Where `managed-settings.xml` is the name of the file being hosted
 
-**Parent Topic: **[Hosting client files for Sametime on Kubernetes](t_example_preferences_2.md)
+**Parent Topic:  **[Hosting client files for Sametime on Kubernetes](t_example_preferences_2.md)
 

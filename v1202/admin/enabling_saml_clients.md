@@ -61,5 +61,5 @@ These instructions only apply to a client that is already installed on a compute
 7.  Click **OK** to save your changes and close the dialog box.
 
 
-**Parent Topic: **[Setting up SSO using SAML](enabling_sso_saml.md)
+**Parent Topic:  **[Setting up SSO using SAML](enabling_sso_saml.md)
 

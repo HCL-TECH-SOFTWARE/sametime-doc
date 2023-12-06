@@ -31,5 +31,5 @@ The maximum number includes the person viewing the meeting. If the value is incr
     -   For Docker and Podman, see [Applying configuration changes in Docker or Podman](apply_configchanges_docker.md)
     -   For Kubernetes and Openshift, see [Applying configuration changes in Kubernetes or Openshift](apply_configchanges_kubernetes.md)
 
-**Parent Topic: **[Managing Sametime Meetings](sametime_meeting_administering.md)
+**Parent Topic:  **[Managing Sametime Meetings](sametime_meeting_administering.md)
 

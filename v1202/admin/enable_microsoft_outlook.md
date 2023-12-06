@@ -7,7 +7,7 @@ For additonal information about Microsoft add-ins, see the following Microsoft d
 -   [Deploy and publish Office Add-ins](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/publish)
 -   [Publish add-ins via Centralized Deployment](https://docs.microsoft.com/en-us/office/dev/add-ins/publish/centralized-deployment)
 
-**Parent Topic: **[Meetings](meetings_configuring.md)
+**Parent Topic:  **[Meetings](meetings_configuring.md)
 
 ## Enabling the add-in on Docker {#task_yck_p4k_3tb}
 

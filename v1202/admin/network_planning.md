@@ -18,5 +18,5 @@ Session Traversal Utilities for NAT \(STUN\) is a standardized set of methods, i
 -   **[Determining where to install Sametime](topology_turn.md)**  
 You can extend access to Sametime outside of your internal network to attendees on the Internet. Sametime can be installed in the demilitarized network zone \(DMZ\); however, the required ports for connectivity need to be opened on the firewalls surrounding the DMZ. You can also use a third-party Kubernetes cloud provider such as Amazon EKS, Google GKE, or another third-party Kubernetes provider to deploy Sametime. For more information, see the [Deploying Sametime 12 on Google Kubernetes Engine](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0099614) guide.
 
-**Parent Topic: **[Planning](planning.md)
+**Parent Topic:  **[Planning](planning.md)
 

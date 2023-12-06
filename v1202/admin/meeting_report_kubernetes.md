@@ -51,5 +51,5 @@ You can disallow gathering reports. When this value is turned on, the meeting ow
         ```
 
 
-**Parent Topic: **[Meetings](meetings_configuring.md)
+**Parent Topic:  **[Meetings](meetings_configuring.md)
 

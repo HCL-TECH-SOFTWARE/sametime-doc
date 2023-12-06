@@ -54,5 +54,5 @@ Follow these steps to select the **Use proxy** method for the client.
 5.  Select **OK** to close the Preferences window.
 
 
-**Parent Topic: **[Choosing a method for connecting to the Sametime server](t_choose_connect_method.md)
+**Parent Topic:  **[Choosing a method for connecting to the Sametime server](t_choose_connect_method.md)
 

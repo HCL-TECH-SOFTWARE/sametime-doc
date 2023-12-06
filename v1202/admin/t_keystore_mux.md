@@ -7,5 +7,5 @@ A keystore consists of a private key and a certificate. Sametime supports both a
 -   **[Creating a keystore for Sametime mux: self-signed certificate](t_keystore_self_signed.md)**  
 
 
-**Parent Topic: **[Securing connections between the Sametime mux and the Connect and Embedded clients](securing_connections_between_community_clients.md)
+**Parent Topic:  **[Securing connections between the Sametime mux and the Connect and Embedded clients](securing_connections_between_community_clients.md)
 

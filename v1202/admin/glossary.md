@@ -185,5 +185,5 @@ Voice over Internet Protocol \(VoIP\)
 
 waiting room
 :   Web client
-:   **Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
+:   **Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 

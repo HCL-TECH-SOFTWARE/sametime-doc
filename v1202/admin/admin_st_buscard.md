@@ -71,5 +71,5 @@ Signer certificates establish the relationship in SSL communication. This step i
 -   **[Retrieving photos from HTTPS hosts in Docker and Podman](t_retrieve_photourl_docker.md)**  
 Signer certificates establish the relationship in SSL communication. This step is needed by the Sametime server, specifically for cases where the PhotoURL is using SSL \(HTTPS\) to access business card photos.
 
-**Parent Topic: **[Configuring](configuring.md)
+**Parent Topic:  **[Configuring](configuring.md)
 

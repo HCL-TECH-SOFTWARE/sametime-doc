@@ -13,5 +13,5 @@ Policies are not used until assigned to users or groups.
     **Note:** For the policy to take immediate effect, restart the server. Otherwise, policy refresh happens every hour based on when the sever was started.
 
 
-**Parent Topic: **[Managing policies](adminui_policy_manage.md)
+**Parent Topic:  **[Managing policies](adminui_policy_manage.md)
 

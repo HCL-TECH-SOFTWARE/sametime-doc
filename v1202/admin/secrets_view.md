@@ -25,5 +25,5 @@ The get command can be used to list secrets and view their contents.
     where secret\_name is the name of the secret.
 
 
-**Parent Topic: **[Managing secrets in Kubernetes](managing_secrets_kubernetes.md)
+**Parent Topic:  **[Managing secrets in Kubernetes](managing_secrets_kubernetes.md)
 

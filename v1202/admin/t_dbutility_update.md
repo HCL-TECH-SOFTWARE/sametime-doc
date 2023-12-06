@@ -84,5 +84,5 @@ For more information, refer to [Configuring the sametime.ini file](chat_configur
 6.  To verify your changes, view the report created in the data directory.
 
 
-**Parent Topic: **[Using the Sametime Database utility](c_dbutility.md)
+**Parent Topic:  **[Using the Sametime Database utility](c_dbutility.md)
 

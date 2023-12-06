@@ -27,5 +27,5 @@ An administrator can centralize the deployment the HCL Microsoft Add-in so that 
 -   **[Setting up a TURN server](turnserver_intro.md)**  
 A TURN server can be configured to provide for efficient traffic flow within your Sametime meeting.
 
-**Parent Topic: **[Configuring](configuring.md)
+**Parent Topic:  **[Configuring](configuring.md)
 

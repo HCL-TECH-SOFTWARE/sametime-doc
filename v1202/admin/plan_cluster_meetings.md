@@ -28,5 +28,5 @@ A recorder is used when a meeting is being recorded and when live streaming a vi
 -   **[Configuring autoscaling for video](plan_cluster_meetings_video.md)**  
 The Kubernetes autoscaler adjusts the use of video pods based on the configured values in the video.yaml file.
 
-**Parent Topic: **[Clustering and high availability](cluster_highavailability.md)
+**Parent Topic:  **[Clustering and high availability](cluster_highavailability.md)
 

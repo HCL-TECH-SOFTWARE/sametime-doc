@@ -4,5 +4,5 @@
 |------|-----------|---------|
 |Allow Sametime Meetings| | |
 
-**Parent Topic: **[Policy sections](adminui_policy_sections.md)
+**Parent Topic:  **[Policy sections](adminui_policy_sections.md)
 

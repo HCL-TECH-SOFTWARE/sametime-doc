@@ -31,5 +31,5 @@ When changing
     If you are not changing the value from or to a value=1, run the helm upgrade command to apply the changes.
 
 
-**Parent Topic: **[Clustering and high availability](cluster_highavailability.md)
+**Parent Topic:  **[Clustering and high availability](cluster_highavailability.md)
 

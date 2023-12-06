@@ -21,5 +21,5 @@ Policy attributes are group into the following sections:
 -   **[Administration](adminui_policysection_administration.md)**  
 
 
-**Parent Topic: **[Managing policies](adminui_policy_manage.md)
+**Parent Topic:  **[Managing policies](adminui_policy_manage.md)
 

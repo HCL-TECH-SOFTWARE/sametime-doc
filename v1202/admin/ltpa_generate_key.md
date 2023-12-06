@@ -29,5 +29,5 @@ Using an instance of Websphere Liberty is one method that you can use to generat
 
 Configure the LTPA keys in Docker or Kubernetes where Sametime is running.
 
-**Parent Topic: **[Setting up SSO using LTPA](enabling_sso_ltpa.md)
+**Parent Topic:  **[Setting up SSO using LTPA](enabling_sso_ltpa.md)
 

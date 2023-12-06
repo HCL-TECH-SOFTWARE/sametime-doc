@@ -88,5 +88,5 @@ The changes in this task affect the following pods:
         ```
 
 
-**Parent Topic: **[Setting up SSO using SAML](enabling_sso_saml.md)
+**Parent Topic:  **[Setting up SSO using SAML](enabling_sso_saml.md)
 

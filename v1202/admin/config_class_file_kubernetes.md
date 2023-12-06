@@ -142,5 +142,5 @@ The changes in this task affect the following pods:
         ```
 
 
-**Parent Topic: **[Creating custom Java classes for searching LDAP](creating_custom_java.md)
+**Parent Topic:  **[Creating custom Java classes for searching LDAP](creating_custom_java.md)
 

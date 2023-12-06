@@ -6,7 +6,7 @@ MongoDB clustering is handled during the installation process for both Docker an
 
 **Note:** In the MongoDB URL, if the user name or password includes the following characters, they must be converted by using a percent sign: / ? \# \[ \] : @.
 
-**Parent Topic: **[Clustering and high availability](cluster_highavailability.md)
+**Parent Topic:  **[Clustering and high availability](cluster_highavailability.md)
 
 ## Configuring MongoDB clustering on Docker {#ncl_ddm_x5b}
 

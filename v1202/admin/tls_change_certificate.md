@@ -7,5 +7,5 @@ The Sametime server is pre-configured with a self-signed certificate. You can re
 -   **[Updating the TLS certificates on Kubernetes](tls_change_certificate_kubernetes.md)**  
 In Kubernetes, TLS certificates are contained within a secret called tls-secret.
 
-**Parent Topic: **[Securing](securing.md)
+**Parent Topic:  **[Securing](securing.md)
 

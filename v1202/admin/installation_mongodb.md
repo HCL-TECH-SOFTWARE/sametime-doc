@@ -13,5 +13,5 @@ Deploying a replica set with keyfile authentication is an important part of sett
 -   **[Configuring MongoDB for Sametime](t_configure_mongodb.md)**  
 This topic describes how to configure MongoDB on both Windows and Linux platforms to support Sametime and Sametime Premium deployments.
 
-**Parent Topic: **[Installing](installing.md)
+**Parent Topic:  **[Installing](installing.md)
 

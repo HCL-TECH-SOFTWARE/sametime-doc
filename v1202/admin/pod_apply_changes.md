@@ -22,5 +22,5 @@ After you have modified a secret, scale the pods for which changes were made. Sc
         ```
 
 
-**Parent Topic: **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
+**Parent Topic:  **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
 

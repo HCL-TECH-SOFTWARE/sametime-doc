@@ -35,5 +35,5 @@ Change the following line to refer to your preferred servers, following the same
 JVB_STUN_SERVERS=stun.l.google.com:19302,stun1.l.google.com:19302,stun2.l.google.com:19302
 ```
 
-**Parent Topic: **[Configuring](configuring.md)
+**Parent Topic:  **[Configuring](configuring.md)
 

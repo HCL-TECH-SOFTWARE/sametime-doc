@@ -13,5 +13,5 @@ You can collect client logs and configuration data into a zip file.
 4.  If you want to reproduce the issue, click **Collect**. When the collection completes, a link to the collection zip file is provided.
 
 
-**Parent Topic: **[Troubleshooting Sametime clients](t_troubleshooting_clients.md)
+**Parent Topic:  **[Troubleshooting Sametime clients](t_troubleshooting_clients.md)
 

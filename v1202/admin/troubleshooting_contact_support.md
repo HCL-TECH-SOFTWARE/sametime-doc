@@ -14,5 +14,5 @@ When working with the support engineer the following information is helpful in u
 
 You might be asked to share files with HCL support, see the [HTTPS and SFTP upload and download instructions](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0010064) knowledge article for details.
 
-**Parent Topic: **[Troubleshooting](troubleshooting.md)
+**Parent Topic:  **[Troubleshooting](troubleshooting.md)
 

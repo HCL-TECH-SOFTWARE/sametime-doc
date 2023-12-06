@@ -7,5 +7,3 @@ You can delete policies no longer needed.
 2.  Confirm the deletion by clicking **Delete**.
 
 
-**Parent Topic: **[Managing policies](adminui_policy_manage.md)
-

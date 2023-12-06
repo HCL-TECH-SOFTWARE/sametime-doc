@@ -23,5 +23,5 @@ file\_to\_trust.crt
 
 After creating the truststore, see [Retrieving photos from HTTPS hosts in Kubernetes](t_adding_signer_certs_k8s.md) and [Retrieving photos from HTTPS hosts in Docker and Podman](t_retrieve_photourl_docker.md).
 
-**Parent Topic: **[Creating a truststore with a third-party certificate](t_create_truststore.md)
+**Parent Topic:  **[Creating a truststore with a third-party certificate](t_create_truststore.md)
 

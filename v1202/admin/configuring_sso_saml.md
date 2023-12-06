@@ -50,5 +50,5 @@ Given this configuration and audience condition, matching passes, because `samet
 
 The SAML authentication token contains a SAML response element, which in turn contains a child assertion element. According to the SAML standard, either element can be signed. The default Sametime configuration does not require a valid response signature if the underlying assertion has a valid signature. You can change the Sametime server to require a valid response signature, regardless of the underlying assertion signature, by setting the sametime.ini parameter. `STI__Config__STSAML_REQUIRE_SIGNED_RESPONSE=1`
 
-**Parent Topic: **[Setting up SSO using SAML](enabling_sso_saml.md)
+**Parent Topic:  **[Setting up SSO using SAML](enabling_sso_saml.md)
 

@@ -21,5 +21,5 @@ LTPA tokens expire by design. In the process of enabling LTPA, you can define th
 -   **[Configuring the LTPA token expiry interval on Kubernetes](t_configure_ltpa_duration_k8s.md)**  
 LTPA tokens expire by design. In the process of enabling LTPA, you can define the amount of time after which a token expires in minutes. When necessary, you can update the token expiration interval again after the value has been defined during enablement.
 
-**Parent Topic: **[Enabling Single Sign-on](enabling_sso.md)
+**Parent Topic:  **[Enabling Single Sign-on](enabling_sso.md)
 

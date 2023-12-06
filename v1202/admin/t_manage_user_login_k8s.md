@@ -32,5 +32,5 @@ To permanently change the setting, complete the following steps:
 4.  Perform a helm upgrade to deploy the updated chart.
 
 
-**Parent Topic: **[Managing user sign-on](control_validity_length.md)
+**Parent Topic:  **[Managing user sign-on](control_validity_length.md)
 

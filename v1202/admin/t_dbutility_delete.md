@@ -66,5 +66,5 @@ CSV files are case-sensitive and sensitive to spaces.
 6.  To verify your changes, view the report created in the data directory.
 
 
-**Parent Topic: **[Using the Sametime Database utility](c_dbutility.md)
+**Parent Topic:  **[Using the Sametime Database utility](c_dbutility.md)
 

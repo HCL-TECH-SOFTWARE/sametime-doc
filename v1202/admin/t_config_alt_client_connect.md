@@ -20,5 +20,5 @@ Alternate communities are defined using preferences. Before clients install, you
 
 After you configure alternate communities and distribute them through preferences, they become available when users attempt to log in to the default community. If the default community is not available, the client then tries the alternate communities that you have defined. The client continues through the list of alternate communities until it connects successfully or all attempts fail.
 
-**Parent Topic: **[Connecting the Sametime Connect client to the Sametime server](t_connect_clienttoserver.md)
+**Parent Topic:  **[Connecting the Sametime Connect client to the Sametime server](t_connect_clienttoserver.md)
 

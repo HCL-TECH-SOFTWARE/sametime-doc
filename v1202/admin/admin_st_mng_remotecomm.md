@@ -35,5 +35,5 @@ You can now test the managed-community-configs.xml file:
 -   **[Managed community settings](managed_community.md)**  
 Define managed community settings in the managed-community-configs.xml file.
 
-**Parent Topic: **[Sametime client configuration options](sametime_client_configuration.md)
+**Parent Topic:  **[Sametime client configuration options](sametime_client_configuration.md)
 

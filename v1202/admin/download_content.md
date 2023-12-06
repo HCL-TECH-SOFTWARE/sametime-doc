@@ -19,5 +19,5 @@ When downloading content to the Sametime sever, it must be downloaded to the web
     After copying the files, restart the pod.
 
 
-**Parent Topic: **[Configuring](configuring.md)
+**Parent Topic:  **[Configuring](configuring.md)
 

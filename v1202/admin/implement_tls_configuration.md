@@ -125,5 +125,5 @@ Certificate subject validation only applies when receiving a certificate from th
 
 **Note:** When you enable TLS for the Sametime server connections, TLS version 1.2 is used by default. SSLv3 and TLSv1 have security vulnerabilities and should not be used.
 
-**Parent Topic: **[Securing connections](securing_connections.md)
+**Parent Topic:  **[Securing connections](securing_connections.md)
 

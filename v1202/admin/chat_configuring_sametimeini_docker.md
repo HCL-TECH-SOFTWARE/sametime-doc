@@ -16,5 +16,5 @@
     ```
 
 
-**Parent Topic: **[Configuring the sametime.ini file](chat_configuring_sametimeini.md)
+**Parent Topic:  **[Configuring the sametime.ini file](chat_configuring_sametimeini.md)
 

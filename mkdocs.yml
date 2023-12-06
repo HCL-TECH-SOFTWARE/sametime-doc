@@ -90,14 +90,16 @@ nav:
           - MongoDB: admin/mongodb.md
           - LDAP: admin/ldap.md
         - Platforms: 
-          - admin/c_planning_prereqs.md
+          - admin/c_planning_platforms.md
           - Running and managing containers with Docker and Podman: admin/c_planning_docker.md
           - Planning for Sametime in a Kubernetes environment:
             - admin/c_planning_kubernetes.md
             - Planning for a Kubernetes cluster configuration: admin/c_planning_kubernetes_cluster.md
             - Planning for Openshift: admin/c_planning_openshift.md
         - Meeting server FAQ: admin/planning_meetingserver.md
-        - Sametime Clients: admin/hcl_sametime_clients.md
+        - Sametime Clients: 
+          - admin/hcl_sametime_clients.md
+          - Sametime capabilities by client type: admin/client_features.md
         - Planning the network topology and connectivity:
           - admin/topology.md
           - Planning considerations for chat: admin/topology_chat.md
@@ -120,12 +122,13 @@ nav:
           - Configuring MongoDB for high availability: admin/plan_cluster_mongodb.md
 # Installing
       - Installing:
-        - admin/installation_sametime.md
+        - admin/installing.md
         - Installation road map: admin/installation_roadmap.md
         - Installing the MongoDB:
           - admin/installation_mongodb.md
           - Installing MongoDB on Windows: admin/installing_mongodb_windows.md
           - Installing MongoDB on Linux: admin/installing_mongodb_linux.md
+          - Using MongoDB on cloud: admin/mongodb_cloud.md
           - Setting up a replica set with keyfile access control: admin/t_create_mongo_replset.md
           - Configuring MongoDB for Sametime: admin/t_configure_mongodb.md
         - Installing Sametime: 
@@ -215,6 +218,8 @@ nav:
             - admin/secure_rooms.md
             - Disabling secure rooms on Docker and Podman: admin/secure_rooms_docker.md 
             - Disabling secure rooms on Kubernetes: admin/secure_rooms_kubernetes.md
+          - Disabling reports on Kubernetes: admin/meeting_report_kubernetes.md
+          - Disabling reports on Docker or Podman: admin/meeting_report_setting_docker.md
           - Enabling conference dial-in: admin/meetings_dialin.md
           - Configuring alternate host name for Web Chat: admin/t_different_hostname.md
           - Enabling meeting dial-out:
@@ -225,6 +230,7 @@ nav:
           - Enable Videobridge for TCP: admin/enable_video_bridge.md
           - Disable sharing of meeting recording: admin/disable_sharing_meetings.md
           - Enabling Microsoft Outlook Add-in: admin/enable_microsoft_outlook.md
+          - Deploying Microsoft Outlook add-ins to users: admin/microsoft_outlook_deploy.md
           - Setting up a TURN server:
             - admin/turnserver_intro.md
             - Installing a TURN Server on Ubuntu: admin/turnserver_ubuntu.md
@@ -329,7 +335,6 @@ nav:
           - admin/adminui_grafana_overview.md
           - Configuring Grafana on Docker and Podman: admin/adminui_grafana_config_docker.md
           - Configuring Kubernetes to run Grafana: admin/adminui_grafana_config_kubernetes.md
-          - Installing Prometheus: admin/installation_prometheus.md
         - Managing Sametime clients:
           - admin/managing_sametime_client_preferences.md
           - Sametime client configuration options:

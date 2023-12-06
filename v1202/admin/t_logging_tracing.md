@@ -122,5 +122,5 @@ Trace logs are stored in a workspace folder on the user's local hard drive or a 
             -   Notes Embedded: /Users/user\_name/Library/Application Support/HCL
             -   Notes: Data/Expeditor/Applications/autopd
 
-**Parent Topic: **[Troubleshooting Sametime clients](t_troubleshooting_clients.md)
+**Parent Topic:  **[Troubleshooting Sametime clients](t_troubleshooting_clients.md)
 

@@ -38,5 +38,5 @@ A keystore consists of a private key and a certificate. Sametime supports both a
 -   **[Configuring TLS for Sametime mux on Docker and Podman](securing_connections_between_community_clients_docker.md)**  
 
 
-**Parent Topic: **[Securing connections](securing_connections.md)
+**Parent Topic:  **[Securing connections](securing_connections.md)
 

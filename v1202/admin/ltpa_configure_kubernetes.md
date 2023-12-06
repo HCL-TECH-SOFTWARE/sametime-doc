@@ -82,5 +82,5 @@ The changes in this task affect the following pods:
         ```
 
 
-**Parent Topic: **[Setting up SSO using LTPA](enabling_sso_ltpa.md)
+**Parent Topic:  **[Setting up SSO using LTPA](enabling_sso_ltpa.md)
 

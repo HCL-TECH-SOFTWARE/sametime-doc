@@ -135,5 +135,5 @@
         **Attention:** Check the access rights after copying the files by running `chmod 744` inside of the server-brandingdirectory on the Sametime NFS.
 
 
-**Parent Topic: **[Adding corporate branding to meeting pages](customize_branding.md)
+**Parent Topic:  **[Adding corporate branding to meeting pages](customize_branding.md)
 

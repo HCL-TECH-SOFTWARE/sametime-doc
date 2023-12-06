@@ -82,5 +82,5 @@ To set up a replica set with keyfile access control for Sametime, do the followi
 6.  Create users. For more information, refer to [Configuring MongoDB for Sametime](t_configure_mongodb.md).
 
 
-**Parent Topic: **[Installing MongoDB](installation_mongodb.md)
+**Parent Topic:  **[Installing MongoDB](installation_mongodb.md)
 

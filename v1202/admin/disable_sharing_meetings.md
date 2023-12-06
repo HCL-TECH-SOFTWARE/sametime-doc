@@ -17,5 +17,5 @@ To disable sharing of meetings recordings, set the SHARE\_RECORDINGS\_BY\_DEFAUL
     ```
 
 
-**Parent Topic: **[Meetings](meetings_configuring.md)
+**Parent Topic:  **[Meetings](meetings_configuring.md)
 

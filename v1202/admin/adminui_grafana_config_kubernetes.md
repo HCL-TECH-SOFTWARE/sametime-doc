@@ -55,5 +55,5 @@ Before you can create your first dashboard, you need to add your data source. No
 8.  Save the dashboard.
 
 
-**Parent Topic: **[Monitoring your meeting and chat metrics with Grafana](adminui_grafana_overview.md)
+**Parent Topic:  **[Monitoring your meeting and chat metrics with Grafana](adminui_grafana_overview.md)
 

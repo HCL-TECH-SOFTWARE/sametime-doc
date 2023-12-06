@@ -37,5 +37,5 @@ You must have Grafana administrator privileges to configure the Sametime Grafana
 7.  Save the dashboard.
 
 
-**Parent Topic: **[Monitoring your meeting and chat metrics with Grafana](adminui_grafana_overview.md)
+**Parent Topic:  **[Monitoring your meeting and chat metrics with Grafana](adminui_grafana_overview.md)
 

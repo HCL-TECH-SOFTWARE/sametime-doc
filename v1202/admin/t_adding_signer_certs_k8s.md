@@ -52,5 +52,5 @@ After obtaining the certificate file for the host, follow these steps.
         ```
 
 
-**Parent Topic: **[Setting up business cards](admin_st_buscard.md)
+**Parent Topic:  **[Setting up business cards](admin_st_buscard.md)
 

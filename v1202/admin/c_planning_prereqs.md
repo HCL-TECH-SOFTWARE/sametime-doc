@@ -9,5 +9,5 @@ MongoDB is used to store data for persistent chat, mobile push notifications, me
 -   **[LDAP](ldap.md)**  
 An LDAP directory is needed for Sametime user authentication. The LDAP server must be running before deploying Sametime.
 
-**Parent Topic: **[Planning](planning.md)
+**Parent Topic:  **[Planning](planning.md)
 

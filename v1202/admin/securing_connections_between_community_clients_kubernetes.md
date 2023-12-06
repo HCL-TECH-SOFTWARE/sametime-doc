@@ -54,5 +54,5 @@ The changes in this task apply to the following pods:
         ```
 
 
-**Parent Topic: **[Securing connections between the Sametime mux and the Connect and Embedded clients](securing_connections_between_community_clients.md)
+**Parent Topic:  **[Securing connections between the Sametime mux and the Connect and Embedded clients](securing_connections_between_community_clients.md)
 

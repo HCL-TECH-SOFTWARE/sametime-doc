@@ -44,5 +44,5 @@ If you are using Red Hat® Enterprise Linux® and Podman, you must configure the
     ```
 
 
-**Parent Topic: **[Installing Sametime in a Docker or Podman environment](installation_sametime_docker.md)
+**Parent Topic:  **[Installing Sametime in a Docker or Podman environment](installation_sametime_docker.md)
 

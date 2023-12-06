@@ -141,5 +141,5 @@ kubectl edit deploy recordings
     **Note:** The dot at the end is part of the command.
 
 
-**Parent Topic: **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
+**Parent Topic:  **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
 

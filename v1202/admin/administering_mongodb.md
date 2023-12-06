@@ -9,5 +9,5 @@ A connection URL is used to configure the Sametime and MongoDB connection. The c
 -   **[Changing MongoDB log file size](control_mongodb.md)**  
 This section provides information on how to control MongoDB log file size.
 
-**Parent Topic: **[Administering](administering.md)
+**Parent Topic:  **[Administering](administering.md)
 

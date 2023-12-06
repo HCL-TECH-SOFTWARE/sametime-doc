@@ -19,32 +19,13 @@ Table 2. Chat History Preferences - com.ibm.collaboration.realtime.chat.logging 
 | | |**Note:** Local chat history is unencrypted. To disable and restrict users from saving a local copy, refer to [Updating client preferences with the managed-settings.xml file](config_client_xml_location.md). | |
 |display.context|True = Display, false = Do not display|Display the saved transcript between two users for the current day in the chat window.|7.5.1 and later|
 |display.context.background|True = Display, false = Do not display|Display background highlighting when displaying saved transcripts in chats.|7.5.1 and later|
-|root.location|A string of a valid path on the computer.|Location for automatically saved chats Directory path. Do not use '\\' as the file separator. Use '\\\\' or '/' instead. Example using absolute path: `com.ibm.collaboration. realtime.chat.logging/ root.location= C:\\Documents\\user\\ SametimeTranscripts`| |
+|root.location|A string of a valid path on the computer.|Location for automatically saved chats Directory path. Do not use '\\' as the file separator. Use '\\\\' or '/' instead. Example using absolute path: ```com.ibm.collaboration. realtime.chat.logging/ root.location= C:\\Documents\\user\\ SametimeTranscripts```| |
 | | |Releases 8.0.2 and later support the use of a relative path. Example using a path relative to the user profile folder for Windows™ and Mac: `com.ibm.collaboration. realtime.chat.logging root.location= \\SametimeTranscripts`| |
-| | |For Linux™, `com.ibm.collaboration. realtime.chat.logging/ root.location= SametimeTranscripts` | |
-
-
-
-|save.file.location|A string of a valid path on the computer.|Default location for manually saved chats. Do not use '\\' as the file separator. Use '\\\\' or '/' instead. Example using absolute path: ```
-com.ibm.collaboration.realtime.chat.logging/ave.file.location=C:\\Documents\\user\\SavedChats 
-```
-
-Releases 8.0.2 and later support the use of a relative path. Example using a path relative to the user profile folder for Windows and Mac: ```
-com.ibm.collaboration.
-realtime.chat.logging/
-root.location=
-\\SametimeTranscripts 
-
-```
-
- For Linux, ```
-com.ibm.collaboration.
-realtime.chat.logging/
-root.location=
-SametimeTranscripts
-```
-
-|7.5.1 and later|
+| | |For Linux `com.ibm.collaboration. realtime.chat.logging root.location= \\SametimeTranscripts`| |
+|save.file.location|A string of a valid path on the computer.|Default location for manually saved chats. Do not use '\\' as the file separator. Use '\\\\' or '/' instead. Example using absolute path: |7.5.1 and later| 
+| | | `com.ibm.collaboration.realtime.chat.logging/ave.file.location=C:\\Documents\\user\\SavedChats` | |
+| |  | Releases 8.0.2 and later support the use of a relative path. Example using a path relative to the user profile folder for Windows and Mac: ```com.ibm.collaboration. realtime.chat.logging/ root.location= \SametimeTranscripts``` |  |
+| | | For Linux, `com.ibm.collaboration. realtime.chat.logging/ root.location= SametimeTranscripts` | |
 |prompt.save|Boolean|If using mail service for logging, specify whether to display a confirmation after manually saving chats to the mail file.|7.5.1 and later|
 |reset.user.resets.logging.prefs|Boolean. Default is false.|Specify whether to prompt user to reset logging preferences after resetting user.|7.5.1 and later|
 |firsttime.askprefs|Boolean. Default is true.|Specify whether to prompt user to set logging preferences when Sametime® launched for the first time. When the value is set to true, loggging.enabled should also be set to define the default enablement state for saving chat transcripts.|7.5.1 and later|
@@ -81,10 +62,7 @@ Table 4. Chat Window Preferences - com.ibm.collaboration.realtime.chatwindow  re
 |useTabs|Boolean. Default is false.|Specifies whether or not to use a single tabbed window for all chats.|7.5.1 and later|
 |horizontalTabs|Boolean. Default is false \(vertical\).|Specifies whether to use horizontal or vertical tabs. Does not apply unless useTabs is true.|7.5.1 and later|
 |warnNewMessageArrived|Boolean. Default is true.|Specifies whether or not to pop a message dialog when I try to close the window at the same time I am receiving a message.|7.5.1 and later|
-|warnNewMessageArrived  
- Threshhold
-
-|Long. Default is 450.|It is used in conjunction with the warnNewMessageArrived preference. When warnNewMessageArrived is true, if set this to 10000 \(10 seconds\) and try to close chat window 5 seconds after the last message, the warning dialog will pop up. It is not recommended to change the default value.|7.5.1 and later|
+|warnNewMessageArrived Threshhold|Long. Default is 450.|It is used in conjunction with the warnNewMessageArrived preference. When warnNewMessageArrived is true, if set this to 10000 \(10 seconds\) and try to close chat window 5 seconds after the last message, the warning dialog will pop up. It is not recommended to change the default value.|7.5.1 and later|
 |useDefaultGO|Boolean. Default is true.|Specifies whether or not to use the system's default orientation for typing or to manually set one.|7.5.1 and later|
 |sendAreaGO|Integer.|Specifies which orientation to use in the typing area if useDefaultGO is false. Not set by default because useDefaultGO is true. Only accepts two values, 67108864 \(SWT.RIGHT\_TO\_LEFT\) or 33554432 \(SWT.LEFT\_TO\_RIGHT\)|7.5.1 and later|
 |timeformat|Integer. Default is 12.|Specifies the default time format to use \(12 or 24 hour clock\).|7.5.1 and later|
@@ -92,10 +70,7 @@ Table 4. Chat Window Preferences - com.ibm.collaboration.realtime.chatwindow  re
 |maxChats|Integer. Default is 50.|Specifies a predefined value for maxChatsShowWarn|7.5.1 and later|
 |saveChats|Boolean|Specifies whether or not to save opened chats across sessions.|7.5.1 and later|
 |transcript.view.limit|Integer. Default is 0.|Specifies a limit to the number of text/graphics lines that are maintained in the chat window. Setting to 0 means no limit.|8.5 and later|
-|ProvideTabbedBrowser  
- Cache
-
-|Boolean. Default is true.|Specifies whether when using tabbed chats if the browser window can be cached to improve memory when the chat is not active.|8.5.1 and later|
+|ProvideTabbedBrowser  Cache|Boolean. Default is true.|Specifies whether when using tabbed chats if the browser window can be cached to improve memory when the chat is not active.|8.5.1 and later|
 |persistPosition|Boolean|Specify whether to remember the position of chat windows. If it is set, the chat window position is remembered each time on window close action and used as the default location for next chat window open action.|8.5 and later|
 |xpos|Integer|Specify the X value of chat window position.|7.5.1 and later|
 |ypos|Integer|Specify the Y value of chat window position.|7.5.1 and later|

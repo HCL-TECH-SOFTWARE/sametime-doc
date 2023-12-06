@@ -35,5 +35,5 @@ Sametime sends notifications to mobile devices \(phones and tablets\) through th
 -   **[Disabling the mobile notification limiter on Kubernetes](t_disable_rate_limiter_kubernetes.md)**  
 Sametime sends notifications to mobile devices \(phones and tablets\) through the Apple Push Notification service \(APNs\) for Apple and through the Google Firebase Cloud Messaging service \(FCM\) for Android. Sametime includes a mobile notification limiter service that monitors various conditions to help ensure that mobile device notifications are sent at appropriate times and frequencies. By default, the service monitors whether multiple clients are active, which client was most recently active, and whether messages have been read, and might limit the notifications to avoid redundancy. You can disable the notification limiter to send notifications to all connected clients.
 
-**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
+**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 

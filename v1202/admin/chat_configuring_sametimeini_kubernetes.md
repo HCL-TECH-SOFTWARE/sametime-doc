@@ -23,5 +23,5 @@ Determine the setting format by reviewing the [Configuring the sametime.ini file
 5.  Complete the steps Applying configuration changes in Kubernetes [Applying configuration changes in Kubernetes or Openshift](apply_configchanges_kubernetes.md) for the changes to take effect.
 
 
-**Parent Topic: **[Configuring the sametime.ini file](chat_configuring_sametimeini.md)
+**Parent Topic:  **[Configuring the sametime.ini file](chat_configuring_sametimeini.md)
 

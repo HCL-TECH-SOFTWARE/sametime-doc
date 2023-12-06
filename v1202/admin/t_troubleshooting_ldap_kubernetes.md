@@ -120,5 +120,5 @@ If you are having difficulty connecting to a secure LDAP server, perform the fol
     It is also possible to create a custom java class file to transform the LDAP searches for more efficient requests to LDAP. See [Configuring the class file on Kubernetes](config_class_file_kubernetes.md) for more details.
 
 
-**Parent Topic: **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
+**Parent Topic:  **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
 

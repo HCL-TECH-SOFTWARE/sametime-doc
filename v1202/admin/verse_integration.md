@@ -11,5 +11,5 @@ Integration with an application such as Verse prior to Sametime 12.0 requires th
 -   **[Enabling content security headers on Kubernetes](verse_integration_contentsecurity_kubernetes.md)**  
 
 
-**Parent Topic: **[Configuring](configuring.md)
+**Parent Topic:  **[Configuring](configuring.md)
 

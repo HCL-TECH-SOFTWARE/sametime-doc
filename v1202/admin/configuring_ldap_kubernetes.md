@@ -106,5 +106,5 @@ If you do not need to modify the UserInfoConfig.xml file it does not need to be 
         ```
 
 
-**Parent Topic: **[Configuring LDAP](configuring_ldap.md)
+**Parent Topic:  **[Configuring LDAP](configuring_ldap.md)
 

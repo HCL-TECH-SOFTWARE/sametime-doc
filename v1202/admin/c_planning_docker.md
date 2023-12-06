@@ -26,5 +26,5 @@ Existing URLs work if the host name remains the same.
 
 The backup and restore process is handled outside of Sametime. Consult with your Docker or Podman vendor for details.
 
-**Parent Topic: **[Platforms](c_planning_platforms.md)
+**Parent Topic:  **[Platforms](c_planning_platforms.md)
 

@@ -76,5 +76,5 @@ The kubectl delete command can be used to delete a secret.
 -   **[Modifying secrets](secrets_modify.md)**  
 Some of the content within a secret can be changed using the edit secret command.
 
-**Parent Topic: **[Configuring](configuring.md)
+**Parent Topic:  **[Configuring](configuring.md)
 

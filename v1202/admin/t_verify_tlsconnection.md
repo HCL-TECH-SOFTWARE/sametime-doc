@@ -27,5 +27,5 @@ To verify if the TLS connection can be established, do the following.
 3.  Save the changes.
 
 
-**Parent Topic: **[Setting up TLS for the Mongo database](security_mongodb_tls.md)
+**Parent Topic:  **[Setting up TLS for the Mongo database](security_mongodb_tls.md)
 

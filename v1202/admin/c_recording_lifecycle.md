@@ -21,5 +21,5 @@ By default, recordings are available for download and playback for three \(3\) d
     Where *n* defines the number of days the recordings are available before getting archived. For example, to change the value to seven days, enter recordingsExpireInDays: 7. For more information, see [Applying configuration changes in Kubernetes or Openshift](apply_configchanges_kubernetes.md).
 
 
-**Parent Topic: **[Managing recording options](recording.md)
+**Parent Topic:  **[Managing recording options](recording.md)
 

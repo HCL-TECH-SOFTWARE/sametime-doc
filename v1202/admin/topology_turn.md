@@ -14,5 +14,5 @@ Sametime does not ship with a TURN server, but a third-party server can be used,
 
 For more details on TURN, see [Setting up a TURN server](turnserver_intro.md).
 
-**Parent Topic: **[Network planning for meetings](network_planning.md)
+**Parent Topic:  **[Network planning for meetings](network_planning.md)
 

@@ -14,5 +14,5 @@ The Sametime upgrade packages contain full helm charts.
 -   **[Reverting to a previous version on Kubernetes](upgrade_revert_kubernetes.md)**  
 
 
-**Parent Topic: **[Migrating and Upgrading](migrating.md)
+**Parent Topic:  **[Migrating and Upgrading](migrating.md)
 

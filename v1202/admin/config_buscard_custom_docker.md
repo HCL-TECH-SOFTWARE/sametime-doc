@@ -27,5 +27,5 @@ The Docker and Podman commands are similar. The only difference is that docker p
     ```
 
 
-**Parent Topic: **[Setting up business cards](admin_st_buscard.md)
+**Parent Topic:  **[Setting up business cards](admin_st_buscard.md)
 

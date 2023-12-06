@@ -6,7 +6,7 @@ The Sametime server is preconfigured with a self-signed certificate.
 
 **Note:** Let's Encrypt certificates expire every 90 days. To automatically renew the certificates, users can use [Certbot](https://certbot.eff.org/). Otherwise, users can renew certificates when they expire. For details on setting up automatic renewal, refer to the Certbot documentation.
 
-**Parent Topic: **[Securing](securing.md)
+**Parent Topic:  **[Securing](securing.md)
 
 ## Kubernetes {#using_meeting_server_kubernetes}
 

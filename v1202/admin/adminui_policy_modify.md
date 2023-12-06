@@ -11,5 +11,5 @@ Changes to a policy are not in effect until the server is refreshed. After creat
     You can change all attributes including the policy name.
 
 
-**Parent Topic: **[Managing policies](adminui_policy_manage.md)
+**Parent Topic:  **[Managing policies](adminui_policy_manage.md)
 

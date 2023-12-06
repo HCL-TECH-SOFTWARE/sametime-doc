@@ -25,5 +25,5 @@ In Sametime v12, configuration files are generated on demand based on informatio
 
 Configuration values can be modified. Where a modification can be done it is covered in the appropriate topic. For example, updates to LTPA keys are covered in the [Setting up SSO using LTPA](enabling_sso_ltpa.md) topics.
 
-**Parent Topic: **[Administering](administering.md)
+**Parent Topic:  **[Administering](administering.md)
 

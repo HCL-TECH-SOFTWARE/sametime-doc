@@ -53,5 +53,5 @@ To enable only Widgets but not Live Text, managed preferences are required. Conf
 </ManagedSettings>
 ```
 
-**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic:  **[Sametime client preferences](config_client_pref_tables.md)
 

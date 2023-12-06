@@ -49,5 +49,5 @@ Prometheus provides monitoring on the system. It is used in the auto-scaling fea
 -   **[Deploying multiple videobridges in different locations](t_configure_jitsi.md)**  
 Deploying multiple Kubernetes clusters each with a separate Sametime deployment allows for distribution of videobridges at different location. This type of deployment improves video streaming by reducing latency and improves bandwidth when users are geographically far from a single videobridge.The Octo Protocol is required when to route video streams between videobridge servers.
 
-**Parent Topic: **[Installing Sametime](installation_sametime.md)
+**Parent Topic:  **[Installing Sametime](installation_sametime.md)
 

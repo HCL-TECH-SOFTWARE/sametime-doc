@@ -33,5 +33,5 @@ The following graphic shows a fully containerized Sametime Premium Deployment. !
 -   **[Managing Sametime features](managing_sametime_premium.md)**  
 HCL Domino users are entitled to limited use of HCL Sametime chat capabilities.
 
-**Parent Topic: **[Planning the network topology and connectivity](topology.md)
+**Parent Topic:  **[Planning the network topology and connectivity](topology.md)
 

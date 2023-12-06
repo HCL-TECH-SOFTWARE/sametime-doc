@@ -29,5 +29,5 @@ In Sametime 9.x, 10.x and 11.x, vpuserinfo.nsf stores all the contact list for u
         ```
 
 
-**Parent Topic: **[Planning for migration to Sametime 12](c_migration_planning.md)
+**Parent Topic:  **[Planning for migration to Sametime 12](c_migration_planning.md)
 

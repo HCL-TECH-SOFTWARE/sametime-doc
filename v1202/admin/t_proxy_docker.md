@@ -27,5 +27,5 @@ The Docker and Podman commands are similar. The only difference is that docker p
     ```
 
 
-**Parent Topic: **[Push messaging through a proxy](t_push_proxy.md)
+**Parent Topic:  **[Push messaging through a proxy](t_push_proxy.md)
 

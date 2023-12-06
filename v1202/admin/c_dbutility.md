@@ -41,5 +41,5 @@ The move feature of the Sametime Database utility allows you to move users from 
 -   **[Updating user IDs](t_dbutility_update.md)**  
 The updates feature of the Sametime Database utility changes specified first names, last names, display names, or group names.
 
-**Parent Topic: **[Administering](administering.md)
+**Parent Topic:  **[Administering](administering.md)
 

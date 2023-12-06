@@ -106,5 +106,3 @@ Policy A has a weight of 2 and is assigned to the Corporate Communications Group
 
 ![](Images/policies_groups_ex3.jpg)
 
-**Parent Topic: **[Managing policies](adminui_policy_manage.md)
-

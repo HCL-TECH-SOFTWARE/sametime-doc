@@ -19,5 +19,5 @@ Additional information can be found at the following:
 -   For Sametime Meetings, see [https://hclsofy.com/catalog/ilink-teamcall?view=doc&file=documentation.md](https://hclsofy.com/catalog/ilink-teamcall?view=doc&file=documentation.md)
 -   For Sametime Chat, see [https://www.ilink.de/en/products/ioffice\_communicator\_sametime/index.html](https://www.ilink.de/en/products/ioffice_communicator_sametime/index.html)
 
-**Parent Topic: **[Meetings](meetings_configuring.md)
+**Parent Topic:  **[Meetings](meetings_configuring.md)
 

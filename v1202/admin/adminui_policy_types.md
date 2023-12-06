@@ -22,5 +22,5 @@ The anonymous user policy and the default user policy are automatically assigned
 
 |
 
-**Parent Topic: **[Managing policies](adminui_policy_manage.md)
+**Parent Topic:  **[Managing policies](adminui_policy_manage.md)
 

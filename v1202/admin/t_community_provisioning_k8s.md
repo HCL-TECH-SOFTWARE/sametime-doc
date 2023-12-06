@@ -58,5 +58,5 @@ Ensure that you have read [Creating a community provisioning URL for mobile user
         ```
 
 
-**Parent Topic: **[Creating a community provisioning URL for mobile users](community_provisioning.md)
+**Parent Topic:  **[Creating a community provisioning URL for mobile users](community_provisioning.md)
 

@@ -37,5 +37,5 @@ On Kubernetes, scaling the pods can be used to start and stop the Sametime servi
     ```
 
 
-**Parent Topic: **[Administering](administering.md)
+**Parent Topic:  **[Administering](administering.md)
 

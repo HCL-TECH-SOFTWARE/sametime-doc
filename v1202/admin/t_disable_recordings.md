@@ -21,5 +21,5 @@ By default, authenticated users can record meetings. As an administrator, you ca
 2.  Restart the Sametime server to apply the changes. For more information, refer to [Starting and stopping the Sametime server](starting_and_stopping_servers.md).
 
 
-**Parent Topic: **[Managing recording options](recording.md)
+**Parent Topic:  **[Managing recording options](recording.md)
 

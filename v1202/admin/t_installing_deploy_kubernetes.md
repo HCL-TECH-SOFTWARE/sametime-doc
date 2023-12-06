@@ -20,5 +20,5 @@ Review the [Planning for a Kubernetes cluster configuration](c_planning_kubernet
 
 If there are any errors, you must remove the installed product and fix the error before trying the installation again. See [Uninstalling Sametime on Kubernetes](t_uninstall_k8.md) for details.
 
-**Parent Topic: **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
+**Parent Topic:  **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
 

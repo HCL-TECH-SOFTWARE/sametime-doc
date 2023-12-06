@@ -2,7 +2,7 @@
 
 The default host name for Meetings and Web Chat are the same. However, you can configure Web Chat to use a different host name. In other words, you can use your *chat host name* instead of the default. There is a secondary cookie that is also used in the meeting authentication flow where if the cookie is present, then the redirect target is pulled from the cookie instead of the TARGET= parameter.
 
-**Parent Topic: **[Meetings](meetings_configuring.md)
+**Parent Topic:  **[Meetings](meetings_configuring.md)
 
 ## Configuring an alternate host name in Kubernetes {#task_jww_2k2_rvb}
 

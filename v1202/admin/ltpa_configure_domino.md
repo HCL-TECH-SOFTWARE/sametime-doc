@@ -25,5 +25,5 @@ To configure the Domino server, you must create a Web SSO configuration document
 6.  Start the Domino and Sametime servers to apply the changes. For more information, refer to [Starting and stopping the Sametime server](starting_and_stopping_servers.md).
 
 
-**Parent Topic: **[Setting up SSO using LTPA](enabling_sso_ltpa.md)
+**Parent Topic:  **[Setting up SSO using LTPA](enabling_sso_ltpa.md)
 

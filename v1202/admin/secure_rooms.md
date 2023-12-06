@@ -11,5 +11,5 @@ Disabling secure meeting room name feature does not affect existing meeting room
 -   **[Disabling secure rooms on Kubernetes](secure_rooms_kubernetes.md)**  
 
 
-**Parent Topic: **[Meetings](meetings_configuring.md)
+**Parent Topic:  **[Meetings](meetings_configuring.md)
 

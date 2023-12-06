@@ -11,5 +11,5 @@ You can install HCL Sametime Premium and HCL Sametime in a single- or multi-node
 -   **[Installing Sametime clients](installing_sametime_clients.md)**  
 Sametime clients can be installed on a Windows or Mac machines.
 
-**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
+**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 

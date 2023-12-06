@@ -26,5 +26,5 @@ community:
     environment:
 ```
 
-**Parent Topic: **[Troubleshooting Sametime on Docker](t_troubleshooting_sametime_docker.md)
+**Parent Topic:  **[Troubleshooting Sametime on Docker](t_troubleshooting_sametime_docker.md)
 

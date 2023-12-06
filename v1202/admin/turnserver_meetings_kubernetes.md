@@ -32,5 +32,5 @@ You can configure the Sametime server to enable a TURN server on port 443 for Ku
 3.  Run the helm update command to enable the configuration changes.
 
 
-**Parent Topic: **[Setting up a TURN server](turnserver_intro.md)
+**Parent Topic:  **[Setting up a TURN server](turnserver_intro.md)
 

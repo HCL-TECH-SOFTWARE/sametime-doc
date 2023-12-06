@@ -19,5 +19,5 @@ In the **Preferences** dialog of the HCL® Sametime® Connect Client and the Not
 
 Any preferences set using this method can be overwritten by Sametime policies. Preferences set using this method are stored in the end-user's profile directory either within an XML document or a .pref file.
 
-**Parent Topic: **[Sametime client configuration options](sametime_client_configuration.md)
+**Parent Topic:  **[Sametime client configuration options](sametime_client_configuration.md)
 

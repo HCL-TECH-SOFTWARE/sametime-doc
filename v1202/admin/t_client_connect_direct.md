@@ -17,5 +17,5 @@ Follow these steps to select the **Direct connection** method for the client.
     -   To select this connection method for all server communities, select **Server Communities**. In the "Global connection settings" section, select **Direct connection** and select **OK**.
     -   To select this connection method for only one server community, select **Server Communities**, select the server community name, and open the **Connection** tab. Deselect **Use global connection settings**, then select **Direct connection** and select **OK**. Select **OK** to close the **Preferences** window.
 
-**Parent Topic: **[Choosing a method for connecting to the Sametime server](t_choose_connect_method.md)
+**Parent Topic:  **[Choosing a method for connecting to the Sametime server](t_choose_connect_method.md)
 

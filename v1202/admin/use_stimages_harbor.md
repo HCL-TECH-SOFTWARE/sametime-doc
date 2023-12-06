@@ -38,5 +38,3 @@
     ```
 
 
-**Parent Topic: **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
-

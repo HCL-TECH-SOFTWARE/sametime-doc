@@ -34,5 +34,5 @@ To complete the configuration, refer to one of the following topics.
 -   [Configuring SAML on Docker and Podman](enabling_saml_docker.md)
 -   [Configuring SAML in Kubernetes](enabling_saml_kubernetes.md)
 
-**Parent Topic: **[Creating a truststore with a third-party certificate](t_create_truststore.md)
+**Parent Topic:  **[Creating a truststore with a third-party certificate](t_create_truststore.md)
 

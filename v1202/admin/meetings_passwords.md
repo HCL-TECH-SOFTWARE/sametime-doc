@@ -43,5 +43,5 @@ You can set one or more of the following rules to increase password strength.
 3.  Restart the Sametime server to apply the changes. For more information, refer to [Starting and stopping servers](https://help.hcltechsw.com/sametime/12/admin/starting_and_stopping_servers.html).
 
 
-**Parent Topic: **[Managing Sametime Meetings](sametime_meeting_administering.md)
+**Parent Topic:  **[Managing Sametime Meetings](sametime_meeting_administering.md)
 

@@ -200,5 +200,5 @@ Sametime clients can be configured by administrators using a managed-settings.xm
 -   **[Updating the client policy to include client preferences](update_client_policy.md)**  
 After creating or updating the managed-settings.xml file and managed-community-configs.xml file to define client preferences, store them on a web server. The URL to the files is defined to the Sametime server throught a Sametime policy.
 
-**Parent Topic: **[Updating client preferences with the managed-settings.xml file](config_client_xml_location.md)
+**Parent Topic:  **[Updating client preferences with the managed-settings.xml file](config_client_xml_location.md)
 

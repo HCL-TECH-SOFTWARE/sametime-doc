@@ -21,5 +21,5 @@
 |User can capture screens and images| |im.2009|
 |Maximum image size in KB for custom emoticons, screen captures, and in-line images:|The default value is 500 KB.|im.2020|
 
-**Parent Topic: **[Policy sections](adminui_policy_sections.md)
+**Parent Topic:  **[Policy sections](adminui_policy_sections.md)
 

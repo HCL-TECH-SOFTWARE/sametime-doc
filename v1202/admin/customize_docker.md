@@ -66,5 +66,5 @@ The Docker and Podman commands are similar. The only difference is that docker p
     You must specify at a minimum the app-app-512x512.png file. When it is the only file available, it also used for the app-192x192.png file.
 
 
-**Parent Topic: **[Adding corporate branding to meeting pages](customize_branding.md)
+**Parent Topic:  **[Adding corporate branding to meeting pages](customize_branding.md)
 

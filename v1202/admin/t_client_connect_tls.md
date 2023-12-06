@@ -19,5 +19,5 @@ Follow these steps to select the **Direct connection using TLS** method for the 
         4.  Uncheck **Use global connection settings**, then select **Direct connection using TLS** and select **OK**.
         5.  Select **OK** to close the **Preferences** window.
 
-**Parent Topic: **[Choosing a method for connecting to the Sametime server](t_choose_connect_method.md)
+**Parent Topic:  **[Choosing a method for connecting to the Sametime server](t_choose_connect_method.md)
 

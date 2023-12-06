@@ -13,7 +13,7 @@ For example, if the maximum number of participants is 50 and value for maximum v
 
 The default for the maximum number of displayed video streams is nine. To set the maximum to a different value, see [Increasing the number of video streams displayed during a meeting](increase_activecameras.md).
 
-**Parent Topic: **[Meetings](meetings_configuring.md)
+**Parent Topic:  **[Meetings](meetings_configuring.md)
 
 ## Configuring the maximum number of meeting participants in Docker environment {#task_wwg_dfz_wxb}
 

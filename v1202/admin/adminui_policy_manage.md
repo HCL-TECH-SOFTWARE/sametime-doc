@@ -35,5 +35,5 @@ You can view policies assigned to a user or group.
 -   **[Troubleshooting policies](adminui_policy_troubleshoot.md)**  
 
 
-**Parent Topic: **[Administering](administering.md)
+**Parent Topic:  **[Administering](administering.md)
 

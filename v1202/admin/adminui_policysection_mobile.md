@@ -21,5 +21,5 @@ This policy also applies to meeting passwords. For safety reasons, Apple restric
 
 | |
 
-**Parent Topic: **[Policy sections](adminui_policy_sections.md)
+**Parent Topic:  **[Policy sections](adminui_policy_sections.md)
 

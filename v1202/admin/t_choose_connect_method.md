@@ -11,5 +11,5 @@ When a user starts the Sametime Connect client with a **Direct connection using 
 -   **[Connecting the client through a proxy connection](t_client_connect_proxy.md)**  
 When a user starts the Sametime Connect client with a **Use proxy** preference, the client connects to the Sametime server through a SOCKS, HTTP, or HTTPS proxy server.
 
-**Parent Topic: **[Connecting the Sametime Connect client to the Sametime server](t_connect_clienttoserver.md)
+**Parent Topic:  **[Connecting the Sametime Connect client to the Sametime server](t_connect_clienttoserver.md)
 

@@ -9,5 +9,5 @@ After you are finished testing of the new Sametime version and are ready to migr
 -   Using a load balancer. If your existing environment has a load balancer in front of it, you can add the new servers behind the load balancer and shut down the old servers.
 -   Pushing a new host name using Managed-Community-Configs.xml. You can create the managed-community-configs.xml file and push it to the users using a Sametime policy. The changes take effect the next time a user restarts their client. It is configured for the new host name.
 
-**Parent Topic: **[Planning for migration to Sametime 12](c_migration_planning.md)
+**Parent Topic:  **[Planning for migration to Sametime 12](c_migration_planning.md)
 

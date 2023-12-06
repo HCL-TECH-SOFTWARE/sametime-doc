@@ -48,5 +48,5 @@ Review the mailbox config with:
 Get-MailboxCalendarConfiguration -Identity user@domain.com | Format-List
 ```
 
-**Parent Topic: **[Troubleshooting Sametime Meetings](t_troubleshooting_sametime_meetings.md)
+**Parent Topic:  **[Troubleshooting Sametime Meetings](t_troubleshooting_sametime_meetings.md)
 

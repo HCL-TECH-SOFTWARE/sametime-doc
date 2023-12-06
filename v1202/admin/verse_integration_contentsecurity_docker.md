@@ -26,5 +26,5 @@ The Docker and Podman commands are similar. The only difference is that docker p
     ```
 
 
-**Parent Topic: **[Integrating with other applications](verse_integration.md)
+**Parent Topic:  **[Integrating with other applications](verse_integration.md)
 

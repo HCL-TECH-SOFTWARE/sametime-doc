@@ -17,5 +17,5 @@ Follow these steps to update the plugin\_customization.ini file with the new fil
 
 The next update runs with the old URL, but subsequent updates run with the new URL. If the new URL is not reachable at the time of the update, the setting will not be saved and the original URL will continue to be used. The URL will not be changed until it is updated at a time that the URL can be reached.
 
-**Parent Topic: **[Configuring Sametime Connect Client preferences in the plugin\_customization.ini file](config_client_pref_plugin.md)
+**Parent Topic:  **[Configuring Sametime Connect Client preferences in the plugin\_customization.ini file](config_client_pref_plugin.md)
 

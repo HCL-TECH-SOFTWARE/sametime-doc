@@ -35,5 +35,5 @@ To implement the trust store, refer to one of the following topics.
 -   [Configuring LDAP on Docker and Podman](configuring_ldap_docker.md)
 -   [Overriding the default LDAP configuration in Kubernetes](configuring_ldap_kubernetes.md)
 
-**Parent Topic: **[Creating a truststore with a third-party certificate](t_create_truststore.md)
+**Parent Topic:  **[Creating a truststore with a third-party certificate](t_create_truststore.md)
 

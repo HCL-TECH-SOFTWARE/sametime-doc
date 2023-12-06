@@ -38,5 +38,5 @@ To change the update interval for managed preferences, you can update the existi
 -   **[Discontinuing managed preferences](config_client_discontinue_xml_file.md)**  
 To stop setting preferences through the Expeditor managed settings framework, remove the reference to the managed-settings.xml or managed-community-configs.xml file\(s\) and unlock any previously read-only settings.
 
-**Parent Topic: **[Configuring Sametime client preferences with the Expeditor managed settings framework](config_client_mng_xml_pref.md)
+**Parent Topic:  **[Configuring Sametime client preferences with the Expeditor managed settings framework](config_client_mng_xml_pref.md)
 

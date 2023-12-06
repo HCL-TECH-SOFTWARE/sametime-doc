@@ -31,5 +31,5 @@ There are several connection methods to connect to the Sametime server. This top
 -   **[Securing connections between Sametime servers and LDAP](securing_connections_sametime_community_and_ldap.md)**  
 When Sametime is configured to connect to an LDAP server, the Sametime servers makes five separate connections to the LDAP server.
 
-**Parent Topic: **[Securing](securing.md)
+**Parent Topic:  **[Securing](securing.md)
 

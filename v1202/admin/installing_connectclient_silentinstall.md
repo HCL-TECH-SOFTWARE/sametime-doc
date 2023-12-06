@@ -1,10 +1,12 @@
-# Installing the Connect client in silent mode {#installing_connectclient_silentinstall .task}
+# Installing the Connect client in silent mode 
 
 The Connect client can be installed on a user's machine either by sending the install package to the user or by pushing the installation to the user's machine. In either case, the installation is an silent install.
 
 Silent install is available only on the Windows platform.
 
 The batch file used to start the install process is setup.bat. This batch file contains the setup.exe command with default parameter values to run the installer. You can modify the parameters. The following table shows the command parameters and default values.
+
+Table 1. Parameters in the setup.bat file
 
 |Parameter|Description|
 |---------|-----------|
@@ -17,14 +19,12 @@ The setup.bat file contains several different commands that can be used to perfo
 
 The silentinstall.ini file contains configuration parameters for the Connect client. The settings are used to populate the community-config.xml file with server connection information and other parameters required by the installer. The following table describes the configuration parameters.
 
+Table 2. Parameters in the silentinstall.ini file
+
 |Parameter|Description|
 |---------|-----------|
-|LAPAGREE=NO|Specify whether to accept the license agreement. This value must be `YES`. The default value is `NO`. You must change this parameter to YES for silent install to work.
-
-|
-|CREATECOMMUNITYTEMPLATE=true|Specifies whether community properties such as STSERVERNAME and STCOMMUNITYNAME are ignored. When set to false, the community-config.xml is not created in the installation\_directory\\rcp\\deploy folder. All community-config properties should be put in the plugin\_customization.ini in the installation\_media\_root\_directory-root\_directory\\deploy directory. If using a custom plugin\_customization.ini, ensure that the value is set to `true`.
-
-|
+|LAPAGREE=NO|Specify whether to accept the license agreement. This value must be `YES`. The default value is `NO`. You must change this parameter to YES for silent install to work.|
+|CREATECOMMUNITYTEMPLATE=true|Specifies whether community properties such as STSERVERNAME and STCOMMUNITYNAME are ignored. When set to false, the community-config.xml is not created in the installation\_directory\\rcp\\deploy folder. All community-config properties should be put in the plugin\_customization.ini in the installation\_media\_root\_directory-root\_directory\\deploy directory. If using a custom plugin\_customization.ini, ensure that the value is set to `true`.|
 |STSERVERNAME=stservername.domain.com|The fully qualified host name of the Sametime server. Normally this is the same as the home server specified in the person document.|
 |STCOMMUNITYNAME= community\_name|The name of the community.|
 |STSERVERPORT=1533|The IP port number of the Sametime server.|
@@ -36,51 +36,18 @@ The silentinstall.ini file contains configuration parameters for the Connect cli
 |STRESOLVELOCALY75=|The proxy resolves local flag . Specify true or false.|
 |STPROXYUSERNAME=|The user name for the proxy server. If you are not using a proxy, leave this field blank.|
 |STPROXYPASSWORD=|The password for the proxy server. If you are not using a proxy, leave this field blank.|
-|`STCOUNTRYLANG=en`|The language to be used by the Connect client. Specify the language code for the language to be used. The default vlaue is English. If a value is not specified, the client computer's default language is used.
-
-  
- cs          Czech  
- da          Danish  
- de          German  
- el           Greek  
- en           English  
- es           Spanish  
- fi            Finnish  
- fr            French  
- hu           Hungarian  
- it            Italian  
- ja           Japanese  
- ko           Korean  
- nl            Dutch  
- no           Norwegian  
- pl            Polish  
- pt             Portuguese \(Portugal\)  
- pt\_BR      Portuguese \(Brazil\)  
- ru             Russian  
- sv             Swedish  
- tr              Turkish  
- zh             Chinese \(simplified\)  
- zh\_TW      Chinese \(traditional\)
-
-|
+|`STCOUNTRYLANG=en`|The language to be used by the Connect client. Specify the language code for the language to be used. The default vlaue is English. If a value is not specified, the client computer's default language is used. |
+|   |![Sametime Locals](Images/locals.png)|
 |STAUTHSERVERURL=|The URL of the authorization server for the SSO token log in. If you are not using an authorization server, leave this field blank.|
 |STLOGINBYTOKEN=false|Specify whether to use the Login By Token flag. The default value is false.|
 |STUSEAUTHSERVER=false|Specify whether to use the authorization server flag. The default is false.|
 |STLOGINATSTARTUP=false|Specify whether the client logins at startup. The default is false.|
-|STUNINSTALL75=1|Specify whether to uninstall an existing 7.5 client if present.1
-:   Uninstall 7.5.x client if found
-
-0
-:   Leave 7.5.x client installed
-
-|
-|STUNINSTALLPRE75=1|Specify whether to uninstall an existing pre-7.5 client if present.1
-:   Uninstall pre-7.5 client if found. This is the default value.
-
-0
-:   Leave pre-7.5 client installed
-
-|
+|STUNINSTALL75=1|Specify whether to uninstall an existing 7.5 client if present.|
+| | 1 Uninstall 7.5.x client if found|
+| | 0 Leave 7.5.x client installed|
+|STUNINSTALLPRE75=1|Specify whether to uninstall an existing pre-7.5 client if present.|
+|  | 1 Uninstall pre-7.5 client if found. This is the default value.|
+|  | 0 Leave pre-7.5 client installed|
 
 After you have edited the files to tailor the installer for your specific requirements, you can distribute the files to your end users. If the users are to run the installer, instruct them users to copy both of the files to the same directory and then execute setup.bat to install Sametime Connect.
 
@@ -101,5 +68,5 @@ After you have edited the files to tailor the installer for your specific requir
     ```
 
 
-**Parent Topic: **[Installing Sametime clients](installing_sametime_clients.md)
+**Parent Topic:  **[Installing Sametime clients](installing_sametime_clients.md)
 

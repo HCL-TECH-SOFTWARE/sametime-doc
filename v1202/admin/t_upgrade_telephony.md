@@ -52,5 +52,5 @@ The prepareDeployment.sh script does not update the values.yaml file for telepho
 3.  Apply the changes to the environment. See [Applying configuration changes in Kubernetes or Openshift](apply_configchanges_kubernetes.md) for the steps.
 
 
-**Parent Topic: **[Upgrading on Kubernetes](upgrade_install_fixpack_kubernetes.md)
+**Parent Topic:  **[Upgrading on Kubernetes](upgrade_install_fixpack_kubernetes.md)
 

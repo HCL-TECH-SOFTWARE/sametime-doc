@@ -1,8 +1,6 @@
-# Deploying multiple videobridges in different locations {#t_configure_jitsi .task}
+# Deploying multiple videobridges in different geographic locations {#t_configure_jitsi .task}
 
-Deploying multiple Kubernetes clusters each with a separate Sametime deployment allows for distribution of videobridges at different location. This type of deployment improves video streaming by reducing latency and improves bandwidth when users are geographically far from a single videobridge.The Octo Protocol is required when to route video streams between videobridge servers.
-
-multi-video bridges is lower latency and likely higher bandwidth between those users and that bridge. This section covers the steps on how to enable multiple video bridges. Below is a list of several secrets defined in the sametime-global-secrets resource. There are others not mentioned here as well. Refer to [Managing secrets in Kubernetes](managing_secrets_kubernetes.md) for the basic guidelines regarding post-installation configuration. you are deploying multiple kubernetes clusters each with a separate sametime deployment. It also describes the necessary steps to enable octo so that those two deployments can work together. The only reason you would do that is for geographic distribution of video bridges. The thought being: if you install a video bridge "closer" to the users it serves then they will have a better experience because there is lower latency and likely higher bandwidth between those users and that bridge.
+Deploying multiple Kubernetes clusters each with a separate Sametime deployment allows for the distribution of videobridges to different locations. This type of deployment improves video streaming by reducing latency and improves bandwidth when users are geographically far from a single videobridge. The Octo Protocol is required to route video streams between videobridge servers.
 
 Obtain the geolocation license key from [Geolocation DB](https://geolocation-db.com/). The location service determines the region matching and is needed for the primary installation.
 
@@ -14,9 +12,9 @@ This configuration must be done as part of installation.
     ./prepareDeployment.sh
     ```
 
-    When prompted, answer Y to the Enable Octo prompt. For more information, refer to [Preparing the deployment](t_meetings_configure_deployment.md).
+    When prompted, answer Y to the Enable Octo prompt. For more information, refer to [t\_meetings\_configure\_deployment.md](t_meetings_configure_deployment.md).
 
-2.  Deploy the helm charts. Save the deployed charts for future reference. For more information, refer to [Deploying Sametime to Kubernetes cluster](t_installing_deploy_kubernetes.md).
+2.  Deploy the helm charts. Save the deployed charts for future reference. For more information, refer to [t\_installing\_deploy\_kubernetes.md](t_installing_deploy_kubernetes.md).
 
     ``` {#codeblock_pgr_pjh_y5b}
     helm install sametime .
@@ -70,6 +68,4 @@ This configuration must be done as part of installation.
     **Note:** You can obtain the IP address of JVB using [ifconfig.me](http://ifconfig.me). An alternative method is to set harvestOctoPublic to false in the values.yaml file and then enter the JVB public address in jvbOctoPublicAddress in values.yaml for both primary and secondary installations.
 
 2.  Test the UDP connection to ensure that the users who have joined from separate bridges are able to communicate.
-
-**Parent Topic: **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
 

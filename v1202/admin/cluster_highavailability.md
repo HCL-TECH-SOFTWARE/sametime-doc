@@ -9,5 +9,5 @@ High availability is supported for the front-end web traffic to the Kubernetes c
 -   **[Configuring MongoDB for high availability](plan_cluster_mongodb.md)**  
 This topic covers the steps on how to configure MongoDB for high availability.
 
-**Parent Topic: **[Planning](planning.md)
+**Parent Topic:  **[Planning](planning.md)
 

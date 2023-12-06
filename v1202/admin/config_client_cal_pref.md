@@ -13,5 +13,5 @@ The following table lists the calendar preferences for the HCL® Sametime® Conn
 |notes\_enabled|Boolean|In Calendar Service page, specify whether to check Notes calendar for meetings to allow auto status changes. It's valid only if the Notes service is available.|8.0 and later|
 |interval|Positive integer value, unit is minutes. 10 minutes is the default.|In Calendar Service page, specify the interval that Sametime retrieves calendar information for an auto-status change. This value is not for the interval to update auto-status.|8.0 and later|
 
-**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic:  **[Sametime client preferences](config_client_pref_tables.md)
 

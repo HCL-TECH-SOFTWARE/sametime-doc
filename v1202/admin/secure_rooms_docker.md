@@ -23,5 +23,5 @@ The Docker and Podman commands are similar. The only difference is that docker p
         ```
 
 
-**Parent Topic: **[Disabling secure meeting room names](secure_rooms.md)
+**Parent Topic:  **[Disabling secure meeting room names](secure_rooms.md)
 

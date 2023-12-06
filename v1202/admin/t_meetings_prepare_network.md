@@ -35,5 +35,5 @@ See [Loading the Sametime images to a Docker repository](load_stimages_local.md)
 -   **[Configuring host aliases for Kubernetes deployments](t_meetings_kubernetes.md)**  
 If your Kubernetes environment is unable to consistently resolve the host names of the supporting servers \(MongoDB, Sametime Proxy, STUN\) using DNS, configure the hosts manually.
 
-**Parent Topic: **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
+**Parent Topic:  **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
 

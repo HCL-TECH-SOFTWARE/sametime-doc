@@ -26,5 +26,5 @@ SametimeFileTransfer
 
 |7.5.1 and later|
 
-**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic:  **[Sametime client preferences](config_client_pref_tables.md)
 

@@ -47,5 +47,5 @@ By default, the multi-tenancy feature is *disabled*. This feature uses customize
         -   To install, run helm install sametime ..
         -   To upgrade, run helm upgrade sametime ..
 
-**Parent Topic: **[Administering](administering.md)
+**Parent Topic:  **[Administering](administering.md)
 

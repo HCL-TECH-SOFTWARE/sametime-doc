@@ -27,5 +27,5 @@ Ensure that the following conditions have been satisfied.
     ```
 
 
-**Parent Topic: **[Setting up TLS for the Mongo database](security_mongodb_tls.md)
+**Parent Topic:  **[Setting up TLS for the Mongo database](security_mongodb_tls.md)
 

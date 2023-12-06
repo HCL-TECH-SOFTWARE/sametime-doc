@@ -69,5 +69,5 @@ If you are considering moving from a native Domino directory to an LDAP director
 
 The [Best Practices for using LDAP with Sametime](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0081763) white paper contains an overview of LDAP components and describes how the Sametime Community Server works with LDAP to provide authentication, name look-ups, and name resolution. The article describes best practices for creating search filters, setting sametime.ini parameters, and enhancing Sametime and LDAP performance.
 
-**Parent Topic: **[Prerequistes](c_planning_prereqs.md)
+**Parent Topic:  **[Prerequistes](c_planning_prereqs.md)
 

@@ -20,5 +20,5 @@ To save logs to a file, use the `>` character followed by the path and file name
 docker-compose logs > /tmp/all_logs.txt
 ```
 
-**Parent Topic: **[Troubleshooting Sametime on Docker](t_troubleshooting_sametime_docker.md)
+**Parent Topic:  **[Troubleshooting Sametime on Docker](t_troubleshooting_sametime_docker.md)
 

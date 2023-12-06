@@ -18,7 +18,7 @@ Disabling live stream is a server-wide setting; there is no user-based policy av
 
 **Note:** All commands provided require running as ROOT or SUDO access. If not running as root user, preface all commands with sudo.
 
-**Parent Topic: **[Managing Sametime Meetings](sametime_meeting_administering.md)
+**Parent Topic:  **[Managing Sametime Meetings](sametime_meeting_administering.md)
 
 ## Configuring live streaming in a Docker environment {#task_dct_chx_wxb}
 

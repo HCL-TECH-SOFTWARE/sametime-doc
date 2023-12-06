@@ -101,5 +101,5 @@ The Docker and Podman commands are similar. The only difference is that docker p
     ```
 
 
-**Parent Topic: **[Setting up SSO using SAML](enabling_sso_saml.md)
+**Parent Topic:  **[Setting up SSO using SAML](enabling_sso_saml.md)
 

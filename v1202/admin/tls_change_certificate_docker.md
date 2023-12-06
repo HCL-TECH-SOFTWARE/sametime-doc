@@ -24,5 +24,5 @@ Ensure that you have the certificate and private key to be used.
     ```
 
 
-**Parent Topic: **[Replacing the TLS certificates for Web Chat and Meetings](tls_change_certificate.md)
+**Parent Topic:  **[Replacing the TLS certificates for Web Chat and Meetings](tls_change_certificate.md)
 

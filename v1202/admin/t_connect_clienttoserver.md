@@ -11,5 +11,5 @@ The Sametime Connect Client uses the connection method specified in Server Commu
 -   **[Configuring alternate communities for clients](t_config_alt_client_connect.md)**  
 Configuring alternate communities gives users more options for logging in from their Sametime Connect Client and Sametime Embedded Client for Notes. For example, you can have a default community that allows users to connect using a direct connection when they are in the office and you can add an alternate community that allows them to connect to the same community through a reverse proxy server connection from home.
 
-**Parent Topic: **[Managing Sametime clients](managing_sametime_client_preferences.md)
+**Parent Topic:  **[Managing Sametime clients](managing_sametime_client_preferences.md)
 

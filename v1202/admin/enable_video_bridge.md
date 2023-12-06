@@ -6,7 +6,7 @@ The following external port must be opened on a firewall. You can use any networ
 
 Two types of communication can be configured: Transmission Control Protocol \(TCP\) and User Datagram Protocol \(UDP\). You can configure the video bridge for one or both.
 
-**Parent Topic: **[Meetings](meetings_configuring.md)
+**Parent Topic:  **[Meetings](meetings_configuring.md)
 
 ## Docker {#task_m5l_hfj_5tb}
 

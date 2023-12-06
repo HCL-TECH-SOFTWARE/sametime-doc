@@ -10,5 +10,5 @@ The following table lists the location preferences for the HCL® Sametime® Conn
 |advancedView|Boolean|Specifies whether or not to show the advanced view for Location.|7.5.1 and later|
 |showProfWindow|Boolean. Default is false.|Toggle for do not show the alert for editing location settings at location change again.|7.5.1 and later|
 
-**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic:  **[Sametime client preferences](config_client_pref_tables.md)
 

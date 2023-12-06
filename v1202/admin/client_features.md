@@ -1,11 +1,9 @@
-# Sametime capabilities by client type {#client_features .concept}
+# Sametime capabilities by client type 
 
 
 
-|Feature|Connect|Embedded|Mobile|Web|
-|| | | |Chat|Meetings|
-|-------|-------|--------|------|---|
-|--|--|--|--|----|--------|
+|Feature|Connect|Embedded|Mobile|Web Chat|Meetings |
+|-------|-------|--------|------|------|------|
 |Alert when detecting a new geographic location|x| | | | |
 |Change status automatically based on inactivity|x| | | | |
 |Change status automatically upon locking the device|x| | | | |
@@ -47,13 +45,7 @@
 |Add new server community|x| |x| | |
 |Change contact list font|x| | | | |
 | | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
 
-**Parent Topic: **[Sametime clients](hcl_sametime_clients.md)
+
+**Parent Topic:  **[Sametime clients](hcl_sametime_clients.md)
 

@@ -39,5 +39,5 @@ The following tables show the features included in Sametime and Sametime Premium
 
 **Note:** For HCL Domino users with limited Sametime capabilities, see [Managing Sametime features](managing_sametime_premium.md) for the list of features that are not available.
 
-**Parent Topic: **[Planning](planning.md)
+**Parent Topic:  **[Planning](planning.md)
 

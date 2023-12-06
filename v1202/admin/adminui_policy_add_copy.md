@@ -15,5 +15,5 @@ The new policy is not in effect until the server is refreshed. After creating th
     When finished with changes, click **Save Policy**.
 
 
-**Parent Topic: **[Adding a policy](adminui_policy_add.md)
+**Parent Topic:  **[Adding a policy](adminui_policy_add.md)
 

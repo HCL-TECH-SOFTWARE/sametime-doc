@@ -49,5 +49,5 @@
         ```
 
 
-**Parent Topic: **[Disabling secure meeting room names](secure_rooms.md)
+**Parent Topic:  **[Disabling secure meeting room names](secure_rooms.md)
 

@@ -56,5 +56,5 @@ For additional information on installing MongoDB on Windows, refer to [Install M
 
 [Set up a replica set with keyfile access control](t_create_mongo_replset.md)
 
-**Parent Topic: **[Installing MongoDB](installation_mongodb.md)
+**Parent Topic:  **[Installing MongoDB](installation_mongodb.md)
 

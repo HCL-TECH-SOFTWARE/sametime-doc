@@ -15,5 +15,5 @@ Newly created policies are assigned a weight higher than the current hightest we
     The new policy is added to the table.
 
 
-**Parent Topic: **[Adding a policy](adminui_policy_add.md)
+**Parent Topic:  **[Adding a policy](adminui_policy_add.md)
 

@@ -25,5 +25,5 @@ By default, managed settings are updated every 12 hours and when the HCL® Samet
     For additonal information on the isLocked setting, see[Defining preferences in the managed-settings.xml file](config_client_xml_file.md).
 
 
-**Parent Topic: **[Updating client preferences with the managed-settings.xml file](config_client_xml_location.md)
+**Parent Topic:  **[Updating client preferences with the managed-settings.xml file](config_client_xml_location.md)
 

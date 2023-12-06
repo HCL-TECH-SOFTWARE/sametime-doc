@@ -25,5 +25,5 @@ com.ibm.collaboration.realtime.update/restartAction=restart.now.no.prompt
 com.ibm.collaboration.realtime.update/restartRemindDelayMinutes=1 
 ```
 
-**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic:  **[Sametime client preferences](config_client_pref_tables.md)
 

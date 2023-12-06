@@ -97,5 +97,5 @@ MongoDB is deployed separately from Sametime and can be deployed as a standalone
 
 MongoDB can be also be installed into the same Kubernetes cluster as Sametime. Ensure that you allow for additional capacity if installing into the same node pool as the main node pool, or you can dedicate a node pool to MongoDB.
 
-**Parent Topic: **[Planning for Sametime in a Kubernetes environment](c_planning_kubernetes.md)
+**Parent Topic:  **[Planning for Sametime in a Kubernetes environment](c_planning_kubernetes.md)
 

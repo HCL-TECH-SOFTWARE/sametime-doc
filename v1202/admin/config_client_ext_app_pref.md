@@ -30,5 +30,5 @@ Notes", "Outlook Express™" and other available mail applications on Windows®.
 |external.custom.mail|String|Specifies the user mail application on Linux.|7.5.1 and later|
 |disableHostnameWarning|Boolean. Default is false.|Specifies whether or not to validate that the server name is a fully qualified domain name.|8.5.1 and later|
 
-**Parent Topic: **[Sametime client preferences](config_client_pref_tables.md)
+**Parent Topic:  **[Sametime client preferences](config_client_pref_tables.md)
 

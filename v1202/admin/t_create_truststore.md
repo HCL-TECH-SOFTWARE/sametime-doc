@@ -17,5 +17,5 @@ When using SAML connections, LDAP connections, and business card photos, there a
 -   **[Creating a truststore when using business card photos](t_create_truststore_businesscards.md)**  
 
 
-**Parent Topic: **[Securing connections](securing_connections.md)
+**Parent Topic:  **[Securing connections](securing_connections.md)
 

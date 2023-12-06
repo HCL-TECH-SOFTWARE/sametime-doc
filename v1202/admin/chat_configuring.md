@@ -17,5 +17,5 @@ The community container interacts directly with LDAP and MongoDB.
 -   **[Configuring the sametime.ini file](chat_configuring_sametimeini.md)**  
 There are many configuration options in Sametime to override the default behaviors. Community related configuration options are in the sametime.ini file.
 
-**Parent Topic: **[Configuring](configuring.md)
+**Parent Topic:  **[Configuring](configuring.md)
 

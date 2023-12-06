@@ -56,5 +56,5 @@ Helm commands are used to install and configure the NGINX Ingress controller.
 -   **[Configuring Ingress for Mux](t_ingress_configure.md)**  
 
 
-**Parent Topic: **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
+**Parent Topic:  **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
 

@@ -37,5 +37,5 @@ Creating a backup of the installation directory, allows you to return to your pr
 5.  Follow the prompts to provide the required information. The install process detects if the install is an upgrade or full install.
 
 
-**Parent Topic: **[Upgrading to a new version or applying a fixpack](upgrade_install_fixpack.md)
+**Parent Topic:  **[Upgrading to a new version or applying a fixpack](upgrade_install_fixpack.md)
 

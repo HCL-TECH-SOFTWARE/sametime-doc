@@ -33,5 +33,5 @@
     ```
 
 
-**Parent Topic: **[Enabling meeting dial-out](enable_dial_out.md)
+**Parent Topic:  **[Enabling meeting dial-out](enable_dial_out.md)
 

@@ -46,5 +46,5 @@ If you need to modify a sametime.ini setting, follow the guidance in the topic f
 -   **[Configuring the sametime.ini file on Kubernetes](chat_configuring_sametimeini_kubernetes.md)**  
 
 
-**Parent Topic: **[Chat](chat_configuring.md)
+**Parent Topic:  **[Chat](chat_configuring.md)
 

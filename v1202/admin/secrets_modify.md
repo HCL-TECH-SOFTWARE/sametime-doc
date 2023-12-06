@@ -40,5 +40,5 @@ The following are considerations when making configuration modifications:
     To close the file without saving changes, type in the characters `Esc+ :q!`.
 
 
-**Parent Topic: **[Managing secrets in Kubernetes](managing_secrets_kubernetes.md)
+**Parent Topic:  **[Managing secrets in Kubernetes](managing_secrets_kubernetes.md)
 

@@ -27,5 +27,5 @@ A Sametime deployment can be configured on a single-node Kubernetes clusters, li
 -   **[Installing Sametime in a Docker or Podman environment](installation_sametime_docker.md)**  
 The process to install Sametime on Docker and Podman are identical. The installation process detects if you are installing Sametime on Docker or Podman and prompts for the appropriate information.
 
-**Parent Topic: **[Installing](installing.md)
+**Parent Topic:  **[Installing](installing.md)
 

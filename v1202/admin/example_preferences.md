@@ -53,5 +53,5 @@ The Docker and Podman commands are similar. The only difference is that docker p
 
 [Updating the client policy to include the managed settings URL](update_client_policy.md).
 
-**Parent Topic: **[Defining preferences in the managed-settings.xml file](config_client_xml_file.md)
+**Parent Topic:  **[Defining preferences in the managed-settings.xml file](config_client_xml_file.md)
 

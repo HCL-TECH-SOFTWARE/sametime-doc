@@ -90,5 +90,5 @@ You can configure the Sametime Community pod to connect to two or more LDAP serv
 -   **[Creating custom Java classes for searching LDAP](creating_custom_java.md)**  
 **These topic are in progress** Create custom Java™ classes that provide greater control over how Sametime conducts name searches of an LDAP directory and how results are formatted.
 
-**Parent Topic: **[Configuring](configuring.md)
+**Parent Topic:  **[Configuring](configuring.md)
 

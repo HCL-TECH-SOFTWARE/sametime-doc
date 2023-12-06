@@ -11,5 +11,5 @@
 |im.2005|
 |Enable file transfer in group and meeting chat| | |
 
-**Parent Topic: **[Policy sections](adminui_policy_sections.md)
+**Parent Topic:  **[Policy sections](adminui_policy_sections.md)
 

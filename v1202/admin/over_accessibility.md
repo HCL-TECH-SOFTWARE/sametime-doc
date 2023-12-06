@@ -50,5 +50,5 @@ To change the navigation view using the keyboard, follow these steps.
 
 The tasks displayed in the navigation change according to your selection.
 
-**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
+**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 

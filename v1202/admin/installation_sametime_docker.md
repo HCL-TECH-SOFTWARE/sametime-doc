@@ -15,5 +15,5 @@ Extra hosts for Docker deployments can be defined when there are network or DNS 
 -   **[Configuring container networking with Podman](t_installing_podman_extrahosts.md)**  
 The network layer does not have DNS resolve available between containers. This topic provides information on the network configurations needed to resolve network or DNS issues in Podman environments.
 
-**Parent Topic: **[Installing Sametime](installation_sametime.md)
+**Parent Topic:  **[Installing Sametime](installation_sametime.md)
 

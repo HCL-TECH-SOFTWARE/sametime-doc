@@ -64,5 +64,5 @@ Because the upgrade package includes full helm charts to implemented, you must p
 -   **[Upgrade considerations for telephony](t_upgrade_telephony.md)**  
 The prepareDeployment.sh script does not update the values.yaml file for telephony-related settings and does not update the settings from the existing secrets. For more information, refer to [Preparing the deployment](t_meetings_configure_deployment.md).
 
-**Parent Topic: **[Upgrading to a new version or applying a fixpack](upgrade_install_fixpack.md)
+**Parent Topic:  **[Upgrading to a new version or applying a fixpack](upgrade_install_fixpack.md)
 

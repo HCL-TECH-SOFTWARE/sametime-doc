@@ -19,5 +19,5 @@ This topic explains how Sametime components are connected and the default ports 
 -   **[Clustering and high availability](cluster_highavailability.md)**  
 High availability and high capacity configuration for Sametime is achieved in different ways depending on which component is being configured for HA. See the topics below to learn more about chat, meetings, and MongoDB.
 
-**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
+**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 

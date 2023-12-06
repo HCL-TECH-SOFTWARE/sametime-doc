@@ -15,5 +15,5 @@ Use a custom Java class file to transform your searches for LDAP for the communi
 -   **[Configuring the class file on Kubernetes](config_class_file_kubernetes.md)**  
 You can use a custom Java class file to transform your searches for LDAP for the community pod.
 
-**Parent Topic: **[Configuring LDAP](configuring_ldap.md)
+**Parent Topic:  **[Configuring LDAP](configuring_ldap.md)
 

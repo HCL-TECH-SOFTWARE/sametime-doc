@@ -19,5 +19,5 @@ For more details on the ilink product, see the [ilink](https://www.ilink.de/en/i
 
 The following graphic shows a network environment with ilink integration.![Graphic showing iLink integration](Images/plan_sametime_ilink.png)
 
-**Parent Topic: **[Planning the network topology and connectivity](topology.md)
+**Parent Topic:  **[Planning the network topology and connectivity](topology.md)
 

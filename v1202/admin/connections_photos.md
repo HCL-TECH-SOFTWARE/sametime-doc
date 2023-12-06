@@ -36,5 +36,5 @@ If the photoURL is a protected resource, Single Sign On \(SSO\) must be configur
 
 If you have not already configured the UserInfoConfig.xml file, review the applicable topic for your environment and complete the configuration before setting the photoURL.
 
-**Parent Topic: **[Setting up business cards](admin_st_buscard.md)
+**Parent Topic:  **[Setting up business cards](admin_st_buscard.md)
 

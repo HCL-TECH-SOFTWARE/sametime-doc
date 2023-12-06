@@ -34,5 +34,5 @@ Integration with the Teamcall Meeting Gateway \(TMG\) application from ilink ena
 -   **[Ports used by Sametime services](ports_sametime.md)**  
 Sametime services use several ports for communication. If firewalls are in use in your environment, all traffic on these ports should be permitted bidirectionally.
 
-**Parent Topic: **[Planning](planning.md)
+**Parent Topic:  **[Planning](planning.md)
 

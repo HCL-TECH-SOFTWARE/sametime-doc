@@ -40,5 +40,5 @@ This topic includes the steps to configure LTPA keys on Docker.
     ```
 
 
-**Parent Topic: **[Setting up SSO using LTPA](enabling_sso_ltpa.md)
+**Parent Topic:  **[Setting up SSO using LTPA](enabling_sso_ltpa.md)
 

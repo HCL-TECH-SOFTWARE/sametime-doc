@@ -7,5 +7,5 @@ Depending on your network settings, your firewalls could prevent Sametime proxy 
 -   **[Configuring Kubernetes to use a proxy server for push messaging](t_proxy_k8s.md)**  
 
 
-**Parent Topic: **[Configuring](configuring.md)
+**Parent Topic:  **[Configuring](configuring.md)
 

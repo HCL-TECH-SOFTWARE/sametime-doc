@@ -61,7 +61,7 @@ Each copy or any portion of these sample programs or any derivative work must in
  Portions of this code are derived from HCL Technologies Limited. Sample Programs.   
  © HCL Technologies Limited 1998, 2023.
 
-**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
+**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 
 ## Trademarks {#trademarks}
 

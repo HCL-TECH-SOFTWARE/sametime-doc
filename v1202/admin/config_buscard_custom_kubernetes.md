@@ -94,5 +94,5 @@ The following procedures describes the steps to create a new secret. The example
         ```
 
 
-**Parent Topic: **[Setting up business cards](admin_st_buscard.md)
+**Parent Topic:  **[Setting up business cards](admin_st_buscard.md)
 

@@ -44,5 +44,5 @@ Sametime sends notifications to mobile devices \(phones and tablets\) through th
         ```
 
 
-**Parent Topic: **[Administering](administering.md)
+**Parent Topic:  **[Administering](administering.md)
 

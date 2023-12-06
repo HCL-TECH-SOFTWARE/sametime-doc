@@ -71,5 +71,5 @@ It contains information, such as the user name and password to access the databa
 
 For more information on Secrets see the topic: [https://help.hcltechsw.com/sametime/1201/admin/managing\_secrets\_kubernetes.html](https://help.hcltechsw.com/sametime/1201/admin/managing_secrets_kubernetes.html)
 
-**Parent Topic: **[MongoDB](administering_mongodb.md)
+**Parent Topic:  **[MongoDB](administering_mongodb.md)
 

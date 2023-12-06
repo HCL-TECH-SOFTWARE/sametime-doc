@@ -34,5 +34,5 @@ Other Configurations
 
 :   Configurations that fall into this category typically substitute HCL or third-party software for similar software. An example is a newer fix level of the HCL or third-party software. Another configuration can consist of a third-party software product that adheres to supported specifications, such as a new MongoDB fix pack or LDAP server that adheres to standard or external security manager that integrates public APIs.
 
-**Parent Topic: **[Troubleshooting](troubleshooting.md)
+**Parent Topic:  **[Troubleshooting](troubleshooting.md)
 

@@ -7,5 +7,5 @@ To save storage space, you can automatically remove old recordings after the spe
 -   **[Disabling the recording feature](t_disable_recordings.md)**  
 By default, authenticated users can record meetings. As an administrator, you can disable this functionality.
 
-**Parent Topic: **[Managing Sametime Meetings](sametime_meeting_administering.md)
+**Parent Topic:  **[Managing Sametime Meetings](sametime_meeting_administering.md)
 

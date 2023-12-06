@@ -44,5 +44,5 @@ The changes in this task affect the following pods:
         ```
 
 
-**Parent Topic: **[Integrating with other applications](verse_integration.md)
+**Parent Topic:  **[Integrating with other applications](verse_integration.md)
 

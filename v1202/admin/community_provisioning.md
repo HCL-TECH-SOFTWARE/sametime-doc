@@ -136,5 +136,5 @@ As discussed in [Creating a community provisioning URL for mobile users](communi
 -   **[Creating a community provisioning on Kubernetes](t_community_provisioning_k8s.md)**  
 As discussed in [Creating a community provisioning URL for mobile users](community_provisioning.md), mobile users cannot connect to the Sametime server without a special mobile community definition that provides details needed for the connection. This topic discusses the steps to set up the community provisioning URL on Kubernetes.
 
-**Parent Topic: **[Sametime client configuration options](sametime_client_configuration.md)
+**Parent Topic:  **[Sametime client configuration options](sametime_client_configuration.md)
 

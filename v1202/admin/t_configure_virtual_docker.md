@@ -11,7 +11,7 @@ The Docker and Podman commands are similar. The only difference is that docker p
 2.  Run docker compose up -d command to apply all changes.
 
 
-**Parent Topic: **[Adding virtual backgrounds to the global library](t_configure_default_virtual_background.md)
+**Parent Topic:  **[Adding virtual backgrounds to the global library](t_configure_default_virtual_background.md)
 
 ## Removing default virtual backgrounds on Docker {#task_e31_gql_z5b}
 

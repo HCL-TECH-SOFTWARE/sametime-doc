@@ -117,5 +117,5 @@ The commands used during the installation process require running as ROOT or SUD
 
 [Set up a replica set with keyfile access control](t_create_mongo_replset.md)
 
-**Parent Topic: **[Installing MongoDB](installation_mongodb.md)
+**Parent Topic:  **[Installing MongoDB](installation_mongodb.md)
 

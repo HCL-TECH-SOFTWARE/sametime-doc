@@ -21,5 +21,5 @@ You can configure the Sametime Meeting service to enable a TURN server on port 4
 -   **[Configuring the TURN server for Kubernetes](turnserver_meetings_kubernetes.md)**  
 
 
-**Parent Topic: **[Meetings](meetings_configuring.md)
+**Parent Topic:  **[Meetings](meetings_configuring.md)
 

@@ -39,5 +39,5 @@ After the installation is completed, the HCL Sametime services that support chat
 
 Test the Sametime chat and meeting services. For details, see [Testing Sametime chat and meeting clients](t_testing_sametime_chat.md).
 
-**Parent Topic: **[Installing Sametime in a Docker or Podman environment](installation_sametime_docker.md)
+**Parent Topic:  **[Installing Sametime in a Docker or Podman environment](installation_sametime_docker.md)
 

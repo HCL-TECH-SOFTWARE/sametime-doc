@@ -25,5 +25,5 @@ Defining a settings file in the plugin\_customization.ini file is an alternate m
 -   **[Updating client preferences with the managed-settings.xml file](config_client_xml_location.md)**  
 Sametime rich clients such as the embedded Sametime client in HCL Notes and the full Sametime standalone client are based upon the Eclipse framework. These clients can process a managed-settings.xml file to receive new or updated preferences automatically. The managed-settings.xml file is policy based, and each policy can define a different xml file to apply preferences to different groups of users.
 
-**Parent Topic: **[Sametime client configuration options](sametime_client_configuration.md)
+**Parent Topic:  **[Sametime client configuration options](sametime_client_configuration.md)
 

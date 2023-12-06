@@ -25,5 +25,5 @@ Before getting started, it review the client installation customization options.
     After the install is complete, click **Finish**.
 
 
-**Parent Topic: **[Installing Sametime clients](installing_sametime_clients.md)
+**Parent Topic:  **[Installing Sametime clients](installing_sametime_clients.md)
 

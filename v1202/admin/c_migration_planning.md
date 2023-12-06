@@ -42,5 +42,5 @@ For details, see [Moving the users](migrating_moveusers.md).
 -   **[Moving the users](migrating_moveusers.md)**  
 
 
-**Parent Topic: **[Migrating and Upgrading](migrating.md)
+**Parent Topic:  **[Migrating and Upgrading](migrating.md)
 

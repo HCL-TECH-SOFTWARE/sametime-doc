@@ -25,7 +25,7 @@ The procedures in this topic install the Kube-Prometheus stack using Helm and th
     ```
 
 
-**Parent Topic: **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
+**Parent Topic:  **[Installing Sametime in a Kubernetes environment](installation_sametime_kubernetes.md)
 
-**Parent Topic: **[Monitoring your meeting and chat metrics with Grafana](adminui_grafana_overview.md)
+**Parent Topic:  **[Monitoring your meeting and chat metrics with Grafana](adminui_grafana_overview.md)
 

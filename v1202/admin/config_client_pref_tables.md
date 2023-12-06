@@ -39,5 +39,5 @@ The following table lists the spell checker preferences for the HCL Sametime Con
 -   **[Update preferences](config_client_update_pref.md)**  
 The following table lists the update preferences for the HCL Sametime Connect Client and Sametime Embedded Client for Notes.
 
-**Parent Topic: **[Sametime client configuration options](sametime_client_configuration.md)
+**Parent Topic:  **[Sametime client configuration options](sametime_client_configuration.md)
 

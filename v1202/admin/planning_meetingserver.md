@@ -114,5 +114,5 @@ Are there meeting statistics or reports for Sametime?
 
 :   A Grafana® dashboard is available with the Sametime install package. See [Monitoring your meeting and chat metrics with Grafana](adminui_grafana_overview.md).
 
-**Parent Topic: **[Planning](planning.md)
+**Parent Topic:  **[Planning](planning.md)
 

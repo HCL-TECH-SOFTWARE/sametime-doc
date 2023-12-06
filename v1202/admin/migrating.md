@@ -7,5 +7,5 @@ Sametime 12 requires a new product install and migration of data from your previ
 -   **[Upgrading to a new version or applying a fixpack](upgrade_install_fixpack.md)**  
 Newer versions and fix packs contain new features and fixes. You do not need to remove your current Sametime 12 installation when upgrading to a new version.
 
-**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
+**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 

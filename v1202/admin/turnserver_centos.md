@@ -121,5 +121,5 @@ The following procedures uses Coturn and CentOS 7 to implement a TURN server.
     ```
 
 
-**Parent Topic: **[Setting up a TURN server](turnserver_intro.md)
+**Parent Topic:  **[Setting up a TURN server](turnserver_intro.md)
 

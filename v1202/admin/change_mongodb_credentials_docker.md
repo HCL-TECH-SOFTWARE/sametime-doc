@@ -27,5 +27,5 @@
     ```
 
 
-**Parent Topic: **[MongoDB](administering_mongodb.md)
+**Parent Topic:  **[MongoDB](administering_mongodb.md)
 

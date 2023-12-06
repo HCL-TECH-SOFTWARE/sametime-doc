@@ -20,5 +20,5 @@ When Sametime proxy interacts with mobile devices \(phones, pads, watches, and c
 2.  Restart the pod.
 
 
-**Parent Topic: **[Push messaging through a proxy](t_push_proxy.md)
+**Parent Topic:  **[Push messaging through a proxy](t_push_proxy.md)
 

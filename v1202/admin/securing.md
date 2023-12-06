@@ -15,5 +15,5 @@ The Sametime server is pre-configured with a self-signed certificate. You can re
 -   **[Applying Let's Encrypt certificates](using_meeting_servers.md)**  
 This topic describes how to replace the self-signed certificate with a third-party certificate.
 
-**Parent Topic: **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
+**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
 
