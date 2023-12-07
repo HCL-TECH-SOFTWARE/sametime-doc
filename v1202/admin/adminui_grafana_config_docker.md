@@ -1,40 +1,36 @@
 # Configuring Grafana on Docker and Podman {#adminui_grafana_config_docker .task}
 
-Grafana can be configured either during the installation process or post installation.
+Grafana can be configured as a post-installation task or during an upgrade.
 
-Prometheus is required
+After Grafana is configured, port 3001 is the default port used for Grafana.
 
-To include Grafana configuration during installation, run the following exportcommand before running the installation process.
+1.  Edit the .env file and add the following statement.
 
-``` {#codeblock_qzc_pw3_rzb}
-export ENABLE_DARK_LAUNCH_MONITORING=true
-```
-
-You are then prompted during the install to enable Grafana: Do you want to enable monitoring?.
-
-Port
-:   The default port is 3001.
-
-If adding Grafana post-installation,
-
-1.  Click the **Grafana icon** \(![](Images/adminui_icon_grafana.png)\) .
-
-2.  Add Prometheus as the data source.
-
-    In the Grafana dashboard, click **Home** \> **Connections** \> **Data sources** \> **Add new data source**. Locate and select**Prometheus**.
-
-3.  Open the Prometheus data source and edit the settings. Under the **HTTP** section, enter the following URL.
-
-    ``` {#codeblock_sjt_gy1_mvb}
-    http://host.docker.internal:9091
+    ``` {#codeblock_nv4_lvk_rzb}
+    COMPOSE_PROFILES=monitoring
     ```
 
-4.  Select **Save and test**. A message is displayed to confirm if the data source is working.
+    **Note:** If you are have enabled the Outlook addin, the `COMPOSE_PROFILES` statement looks like the following:
 
-5.  Upload the Docker\_Sametime\_Dashboard.json file. For more information, contact [HCL Customer Support](https://hclpnpsupport.hcltech.com/csm).
+    ``` {#codeblock_bnr_m5p_rzb}
+    COMPOSE_PROFILES=monitoring, outlookAddin
+    ```
 
-6.  Select **Prometheus \(default\)** as data source and then select **Import**.
+2.  Edit the custom.env file and add ensure that the following settings are set to true.
 
-7.  Save the dashboard.
+    ``` {#codeblock_h1v_rvk_rzb}
+    ENABLE_GRAFANA_PROXY=true
+    MONITORING_ENABLED=TRUE
+    ```
 
+3.  Edit the monitoring.env file and add the Grafana administrator ID and password.
+
+    ``` {#codeblock_rsp_rvk_rzb}
+    GF_SECURITY_ADMIN_USER
+    GF_SECURITY_ADMIN_PASSWORD
+    ```
+
+4. Start the Sametime server to apply the changes.
+
+    ``` docker compose up -d ```
 

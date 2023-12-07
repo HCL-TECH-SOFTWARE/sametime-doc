@@ -1,4 +1,6 @@
-# Configuring Kubernetes to run Grafana 
+# Configuring Kubernetes to run Grafana {#adminui_grafana_config_kubernetes .task}
+
+Grafana can be configured as a post-installation task or during an upgrade.
 
 To use Granfana, the Prometheus application must be installed. If you installed Prometheus following the instructions in the [installation\_prometheus.md](installation_prometheus.md) topic, Grafana is installed as part of installing Prometheus.
 
@@ -8,26 +10,26 @@ To verify that the service was created correctly, run the following command to d
 kubectl get svc -n monitoring
 ```
 
-Ensure that the type for the Grafana service is ClusterIP and the port is 3000. Below is an example.
+Ensure that the type for the Grafana is listed in the output as a service. Below is an example of the command output. ![](Images/grafana_verify.png)
 
-|Name|Type|Cluster-IP|External-IP|Port|Age|
-|----|----|----------|-----------|----|---|
-|grafana|ClusterIP|10.97.236.243|<none\>|3000/TCP|7m2s|
+1.  Edit the .env file and add the following statement.
 
-1.  2.  Enter admin for both the user name and prom-operator, and then select **Sign In**.
+    ``` {#codeblock_nv4_lvk_rzb}
+    COMPOSE_PROFILES=monitoring
+    ```
 
-    You are prompted to change the password.
+2.  Edit the custom.env file and add ensure that the following settings are set to true.
 
-3.  Select **OK** and enter the new password.
+    ``` {#codeblock_h1v_rvk_rzb}
+    ENABLE_GRAFANA_PROXY=true
+    MONITORING_ENABLED=TRUE
+    ```
 
-4.  From the left panel, hover over **+ Create** and select **Import**.
+3.  Edit the monitoring.env file and add the Grafana administrator ID and password.
 
-5.  Upload the K8\_Sametime\_Dashboard.json file.
-
-    The K8\_Sametime\_Dashboard.json file is included in the Sametime Premium install product image. After decompressing the product image, the file is in the root directory.
-
-6.  Select **Prometheus \(default\)** as the data source and then select **Import**.
-
-7.  Save the dashboard.
+    ``` {#codeblock_rsp_rvk_rzb}
+    GF_SECURITY_ADMIN_USER
+    GF_SECURITY_ADMIN_PASSWORD
+    ```
 
 

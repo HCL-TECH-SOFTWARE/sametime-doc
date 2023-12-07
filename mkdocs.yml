@@ -137,6 +137,7 @@ nav:
         - Installing Sametime: 
           - admin/installation_sametime.md
           - Information to provide during installation: admin/installation_prompt_descriptions.md
+          - Enabling Grafana: admin/installation_sametime_grafana.md
           - Installing Sametime on Windows using Docker Desktop: admin/installation_sametime_windows.md
           - Installing Sametime in a Kubernetes environment:
             - admin/installation_sametime_kubernetes.md
@@ -338,6 +339,7 @@ nav:
           - admin/adminui_grafana_overview.md
           - Configuring Grafana on Docker and Podman: admin/adminui_grafana_config_docker.md
           - Configuring Kubernetes to run Grafana: admin/adminui_grafana_config_kubernetes.md
+          - Configuring Grafana dashboard: admin/adminui_grafana_config_console.md
         - Managing Sametime clients:
           - admin/managing_sametime_client_preferences.md
           - Sametime client configuration options:
