@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuring_ldap_multiple_kubernetes" class="md-skip">
+        <a href="#configuring-additional-ldap-servers-on-kubernetes" class="md-skip">
           Skip to content
         </a>
       
@@ -2476,9 +2476,77 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Configuring additional LDAP servers on Kubernetes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="configuring_ldap_multiple_kubernetes.html" class="md-nav__link md-nav__link--active">
         Configuring additional LDAP servers on Kubernetes
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hostname" class="md-nav__link">
+    HostName
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#port" class="md-nav__link">
+    Port
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#username" class="md-nav__link">
+    UserName
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password" class="md-nav__link">
+    Password
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basedn" class="md-nav__link">
+    BaseDN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searchfilter" class="md-nav__link">
+    SearchFilter
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -7560,6 +7628,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hostname" class="md-nav__link">
+    HostName
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#port" class="md-nav__link">
+    Port
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#username" class="md-nav__link">
+    UserName
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password" class="md-nav__link">
+    Password
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basedn" class="md-nav__link">
+    BaseDN
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searchfilter" class="md-nav__link">
+    SearchFilter
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -7578,7 +7696,7 @@
   </a>
 
 
-<h1 class="task" id="configuring_ldap_multiple_kubernetes">Configuring additional LDAP servers on Kubernetes</h1>
+<h1 id="configuring-additional-ldap-servers-on-kubernetes">Configuring additional LDAP servers on Kubernetes</h1>
 <p>You can configure the Sametime Community pod to connect to two or more LDAP servers.</p>
 <p>When you connect to more than one LDAP server, it is important for the names to be unique. If you are trying to achieve high availability to the same directory, use a load balancer to front-end the connection between the multiple LDAP servers.</p>
 <ul>
@@ -7587,15 +7705,12 @@
 <li>If you are using a secure connection to LDAP, the LDAP server’s certificate for each server must be stored in the same .p12 trust store file. You must create a secret containing the trust store that holds each LDAP server’s certificate. Follow the step for creating a secret that contains your certificate in the <a href="securing_ldap_kubernetes.html">Securing LDAP on Kubernetes</a> topic.</li>
 </ul>
 <p>When more than one LDAP is defined in an environment, they are searched in the order defined in the StCommunityConfig.xml file. When you define each LDAP server, the order in which they are listed in the configuration is the same order in which they are searched.</p>
-<p>The process described in this procedures involves creating a new secret called extra-community-configs. This secret overrides the LDAP configuration settings in the values.yaml file. The extra-community-configs secret contains a copy of the configuration files used by the Community pod. The LDAP servers are defined within each configuration file. For more information on secrets, see <a href="managing_secrets_kubernetes.html">Managing secrets in Kubernetes</a>.</p>
+<p>The process described in this procedures involves creating a new secret called <code>extra-community-configs</code>. This secret overrides the LDAP configuration settings in the values.yaml file. The <code>extra-community-configs</code> secret contains a copy of the configuration files used by the Community pod. The LDAP servers are defined within each configuration file. For more information on secrets, see <a href="managing_secrets_kubernetes.html">Managing secrets in Kubernetes</a>.</p>
 <p>kubectl commands are used to pull the existing file from the Community pod to your local machine. Modify these files locally with the required settings, then create the secret containing the files.</p>
 <p>This procedure is to configure Sametime to connect to two or more separate LDAP servers that have unique names.</p>
-<p><strong>Note:</strong> If you have already created a secret for extra-community-config, you can copy the UserInfoConfig.xml file from the pod to the extra-community-config directory and recreate the secret with the other required files.</p>
-<p>The changes in this task affect the following pods:</p>
-<ul>
-<li>
-<p>community</p>
-</li>
+<p><strong>Note:</strong> If you have already created a secret for <code>extra-community-config</code>, you can copy the UserInfoConfig.xml file from the pod to the <code>extra-community-config</code> directory and recreate the secret with the other required files.</p>
+<p>The changes in this task affect the Community pods:</p>
+<ol>
 <li>
 <p>Create a directory on your machine called extra-community-config at the root of where the Sametime installation package was decompressed.</p>
 </li>
@@ -7639,18 +7754,18 @@
 <li>
 <p>The order in which you list your <code>StorageDetails</code> statement is the search order to be used.</p>
 <p>Configure your second LDAP server by completing the fields:</p>
-<p>HostName
-:   The fully qualified host name or IP address of the second LDAP server.</p>
-<p>Port
-:   If using unsecured LDAP, specify the port number used by LDAP. If you are using secure LDAP, you don't need to modify this field.</p>
-<p>UserName
-:   Set this field to empty double-quotes ( “” ).</p>
-<p>Password
-:   Set this field to empty double-quotes (“”). If using an authenticated bind, add a new parameter after UserName and Password called <strong>UserEncodedAuth=</strong> and set it to the value that was determined in a previous step.</p>
-<p>BaseDN
-:   Define a base DN for searching the directory. If left blank, the entire directory is searched.</p>
-<p>SearchFilter
-:   Modify the search filter if needed. The defaults work well with Domino LDAP.</p>
+<h4 id="hostname">HostName</h4>
+<p>The fully qualified host name or IP address of the second LDAP server.</p>
+<h4 id="port">Port</h4>
+<p>If using unsecured LDAP, specify the port number used by LDAP. If you are using secure LDAP, you don't need to modify this field.</p>
+<h4 id="username">UserName</h4>
+<p>Set this field to empty double-quotes ( “” ).</p>
+<h4 id="password">Password</h4>
+<p>Set this field to empty double-quotes (“”). If using an authenticated bind, add a new parameter after UserName and Password called <strong>UserEncodedAuth=</strong> and set it to the value that was determined in a previous step.</p>
+<h4 id="basedn">BaseDN</h4>
+<p>Define a base DN for searching the directory. If left blank, the entire directory is searched.</p>
+<h4 id="searchfilter">SearchFilter</h4>
+<p>Modify the search filter if needed. The defaults work well with Domino LDAP.</p>
 <p>You can make other changes to the business cards configuration if needed at this time. When finished, save and close the file.</p>
 </li>
 <li>
@@ -7709,7 +7824,7 @@
 </li>
 </ol>
 </li>
-</ul>
+</ol>
 <p><strong>Parent Topic:  </strong><a href="configuring_ldap.html">Configuring LDAP</a></p>
 
 

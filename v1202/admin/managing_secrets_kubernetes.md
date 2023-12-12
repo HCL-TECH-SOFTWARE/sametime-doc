@@ -1,4 +1,4 @@
-# Managing secrets in Kubernetes {#managing_secrets_kubernetes .concept}
+# Managing secrets in Kubernetes 
 
 Sensitive information such as passwords, service account names, certificates, and other confidential data needed by Sametime pods are stored in secrets. In addition to helm charts and configuration map, the Sametime configuration is also derived from secrets.
 
@@ -10,40 +10,27 @@ Some secrets are required by Sametime. They are created during the installation 
 
 Some secrets are required by Sametime and others are based on features being used, such as SAML. The following are global secrets that are required.
 
+### Table 1. Required secrets
+
 |Secret|Description|Template|
 |------|-----------|--------|
-|sametime-global-secrets|The helm/templates/sametime-secrets.yaml is used to define this secret. Note that all values within this secret are based64 encoded. The following parameters are contained in the global secret.JwtSecret
-:   The secret key used by the Sametime service to verify and decide the hash of JWT tokens.
-
-LdapBindEntryDn
-:   The LDAP Bind account.
-
-LdapBindEntryPassword
-:   The password for the LDAP bind account.
-
-MongoConnectionUrl
-:   The MongoDB formatted URL containing the login name and password used by Sametime. The host name and port number are also included.
-
-JigasiSipUri
-:   The name of the of the account and the host name of the SIP user fortelephony integration with ilink.
-
-JigasiSipPassword
-:   The password for telephony integration with ilink.
-
-ltpaKeysPassword
-:   The password for the LTPA keys.
-
-MeetingLocationSecret
-:   The secret key used to communicate to the primary location service.
-
-JvbAuthPassword
-:   The password for the JVB authentication account.
-
-|helm/templates/sametime-secrets.yaml|
-|sametime-internal-keys-secret|Contains information about the certificate key store.|None|
+|sametime-global-secrets|The `helm/templates/sametime-secrets.yaml` is used to define this secret. | `helm/templates/sametime-secrets.yaml` |
+| | **Note:** that all values within this secret are based64 encoded. The following parameters are contained in the global secret.JwtSecret | |
+| | The secret key used by the Sametime service to verify and decide the hash of JWT tokens.| | 
+| | **LdapBindEntryDn**  The LDAP Bind account. | |
+| | **LdapBindEntryPassword** The password for the LDAP bind account. 
+|| **MongoConnectionUrl** The MongoDB formatted URL containing the login name and password used by Sametime. The host name and port number are also included. | |
+| | **JigasiSipUri** The name of the of the account and the host name of the SIP user fortelephony integration with ilink. | |
+| | **JigasiSipPassword** The password for telephony integration with ilink. | |
+| | **ltpaKeysPassword** The password for the LTPA keys. | |
+| | **MeetingLocationSecret** The secret key used to communicate to the primary location service. | |
+| | **JvbAuthPassword** The password for the JVB authentication account. | |
+| sametime-internal-keys-secret|Contains information about the certificate key store.|None|
 |tls-secret|The name of this secret can vary because it is configurable. The name can also vary depending on the ingress controller. The ingress controller might be secured with a certificate within a secret as well.|None|
 
 The following are default internal secrets and based off the listed template. Do not change the content within these secrets unless instructed by the software support team.
+
+### Table 2. Internal secrets
 
 |Secret Name|Template|
 |-----------|--------|
@@ -52,6 +39,8 @@ The following are default internal secrets and based off the listed template. Do
 |catalog-config-secret|helm/templates/catalog-config-secrets.yaml|
 
 The following is a list of optional secrets that are dependent on a feature being enabled, such as SAML.
+
+### Table 3. Option secrets
 
 |Secret name|Description|
 |-----------|-----------|

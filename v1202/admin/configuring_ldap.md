@@ -1,4 +1,4 @@
-# Configuring LDAP {#configuring_ldap .concept}
+# Configuring LDAP
 
 Sametime supports LDAP directory servers as the user repository.
 
@@ -27,44 +27,27 @@ The following table describes the configuration settings.
 |-------|-----------|---------------|
 |DirRefreshInterval|The amount of time users and groups are refreshed. The refreshed data is maintained in a cache. This cache can be a resource intensive operation for large directories and can be adjusted to happen at a less frequent interval. For example, if you have more than 200,000 entries in the directory, consider changing this to 240 minutes.|60 minutes|
 |ConfigRefreshInterval|The amount of time that lapses before policy, sametime.ini, UserInfoConfig.xml and StCommunityConfig.xml files are re-read. There is typically no need to change this setting.|60 minutes|
-|Connection HostName|The fully qualified host name of the LDAP server. If you are using a cluster, it is recommended to place a load balancer in front of the cluster and use the load balancer host name or IP address.|The value for this setting is obtained from the values.yaml file. It is placed there when prompted during the prepareDeployment script.|
-|OrganizationName|Do not specify. This setting is deprecated. **Note:** Specifying a value might prevent users from logging in successfully.
-
-|Do not change.|
-|Port|The unsecured LDAP port, if you are using an unsecure connection to LDAP.|If an unsecured LDAP is specified when running prepareDeployment.sh, the port specified at the script prompt is used. If secure LDAP was specified, the default value is 1389.|
-|BindEntryDn|The LDAP Bind account name, which can be in DN or email format.|This is blank unless a value is provided during the prepareDeployment.sh, and then it is retrieved from the sametime-global-secrets.|
-|BindEntryPassword|The password for the BindEntryDn.|Blank or retrieved from sametime-global-secrets.|
-|SSLEnabled|0
-:   Turn off SSL.
-
-1
-:   Turn on SSL.
-
-|The value for this is provided during prepareDeployment.shand is pulled from values.yaml file.|
-|SSLPort|The LDAP secure port. The well-known port is 636, but some LDAP services use a proprietary port.|This selection is made during the prepareDeployment.sh and is pulled from the values.yaml file.|
+|Connection HostName|The fully qualified host name of the LDAP server. If you are using a cluster, it is recommended to place a load balancer in front of the cluster and use the load balancer host name or IP address.|The value for this setting is obtained from the values.yaml file. It is placed there when prompted during the **prepareDeployment** script.|
+|OrganizationName|Do not specify. This setting is deprecated. |Do not change.|
+| | **Note:** Specifying a value might prevent users from logging in successfully. | |
+|Port|The unsecured LDAP port, if you are using an unsecure connection to LDAP.|If an unsecured LDAP is specified when running **prepareDeployment.sh**, the port specified at the script prompt is used. If secure LDAP was specified, the default value is 1389.|
+|BindEntryDn|The LDAP Bind account name, which can be in DN or email format.|This is blank unless a value is provided during the **prepareDeployment.sh**, and then it is retrieved from the sametime-global-secrets.|
+|BindEntryPassword|The password for the **BindEntryDn**.|Blank or retrieved from **sametime-global-secrets**.|
+|SSLEnabled|0 Turn off SSL. | The value for this is provided during **prepareDeployment.sh** and is pulled from values.yaml file.|
+| | 1   Turn on SSL.| |
+|SSLPort|The LDAP secure port. The well-known port is 636, but some LDAP services use a proprietary port.|This selection is made during the **prepareDeployment.sh** and is pulled from the values.yaml file.|
 |SearchOrder|The order in which LDAP directories are searched. Do not change this value unless you have more than one LDAP server to configure. Each search order must be unique.| |
 |PersonResolveBase|The base DN used for searching users. If users are in a specific OU, you can list that OU and Sametime begins searching there. For example, if users are in OU=users,O=example, you can set this as your PersonResolveBase.|None. The entire directory is searched.|
-|PersonResolveFilter|The filter used to search LDAP when a user searches with Quickfind.|\(&amp;\(objectclass=organizationalPerson\)\(\|\(cn=%s\*\)\(givenname=%s\*\)\(sn=%s\*\)\(mail=%s\*\)\)\)|
-|PersonResolveScope|The scope of the search. recursive
-:   Search the entire directory recursively starting at the base DN.
-
-onelevel
-:   Search the base DN and not search OUs.
-
-|recursive \(searches nested OUs\)|
-|GroupResolveBase|The base DN for searching groups. For example if your groups are in a specific OU, you can list that OU and Sametime will begin searching there. For example if your groups all exist in OU=groups,O=example, you can use that as a base DN. **Note:** Domino LDAP groups are flat and you should not use a GroupResolveBase if using Domino LDAP.
-
-|None|
-|GroupResolveFilter|The filter used to resolve a group name to a group. The name of the objectClass used by Domino uses for groups is groupOfNames. Other LDAP providers might use a different name, such as groupOfUniqueNames.This filter is used when clients add groups to contact lists, or when Sametime clients calculate their policy.
-
-|\(&amp;\(objectclass=groupOfNames\)\(cn=%s\*\)\)|
-|GroupResolveScope|The scope of a search. recursive
-:   Search all nested OUs.
-
-onelevel
-:   Searchonly the base DN.
-
-|recursive|
+|PersonResolveFilter|The filter used to search LDAP when a user searches with Quickfind.| \(&amp;\(objectclass=organizationalPerson\)\(\|\(cn=%s\*\)\(givenname=%s\*\)\(sn=%s\*\)\(mail=%s\*\)\)\) |
+|PersonResolveScope|The scope of the search. | 'recursive \(searches nested OUs\)'| 
+| | **recursive** Search the entire directory recursively starting at the base DN. | |
+| | **onelevel** Search the base DN and not search OUs. | |
+|GroupResolveBase|The base DN for searching groups. For example if your groups are in a specific OU, you can list that OU and Sametime will begin searching there. For example if your groups all exist in OU=groups,O=example, you can use that as a base DN. | None|
+| | **Note:** Domino LDAP groups are flat and you should not use a GroupResolveBase if using Domino LDAP.| |
+|GroupResolveFilter|The filter used to resolve a group name to a group. The name of the **objectClass** used by Domino uses for groups is **groupOfNames**. Other LDAP providers might use a different name, such as **groupOfUniqueNames**. This filter is used when clients add groups to contact lists, or when Sametime clients calculate their policy. | \(&amp;\(objectclass=groupOfNames\)\(cn=%s\*\)\) |
+|GroupResolveScope|The scope of a search. |recursive|
+| | **recursive** Search all nested OUs. | |
+| | **onelevel** Searchonly the base DN. | |
 |UserIdAttribute|Defines the Sametime ID.|The DN is used as the default|
 |NameAttribute|The attribute used to display the user’s name in meetings, chat and business cards.|cn|
 |DescAttribute|This setting is not used and should be left blank.|None, do not change.|

@@ -1,4 +1,4 @@
-# Configuring additional LDAP servers on Kubernetes {#configuring_ldap_multiple_kubernetes .task}
+# Configuring additional LDAP servers on Kubernetes 
 
 You can configure the Sametime Community pod to connect to two or more LDAP servers.
 
@@ -10,17 +10,15 @@ When you connect to more than one LDAP server, it is important for the names to 
 
 When more than one LDAP is defined in an environment, they are searched in the order defined in the StCommunityConfig.xml file. When you define each LDAP server, the order in which they are listed in the configuration is the same order in which they are searched.
 
-The process described in this procedures involves creating a new secret called extra-community-configs. This secret overrides the LDAP configuration settings in the values.yaml file. The extra-community-configs secret contains a copy of the configuration files used by the Community pod. The LDAP servers are defined within each configuration file. For more information on secrets, see [Managing secrets in Kubernetes](managing_secrets_kubernetes.md).
+The process described in this procedures involves creating a new secret called `extra-community-configs`. This secret overrides the LDAP configuration settings in the values.yaml file. The `extra-community-configs` secret contains a copy of the configuration files used by the Community pod. The LDAP servers are defined within each configuration file. For more information on secrets, see [Managing secrets in Kubernetes](managing_secrets_kubernetes.md).
 
 kubectl commands are used to pull the existing file from the Community pod to your local machine. Modify these files locally with the required settings, then create the secret containing the files.
 
 This procedure is to configure Sametime to connect to two or more separate LDAP servers that have unique names.
 
-**Note:** If you have already created a secret for extra-community-config, you can copy the UserInfoConfig.xml file from the pod to the extra-community-config directory and recreate the secret with the other required files.
+**Note:** If you have already created a secret for `extra-community-config`, you can copy the UserInfoConfig.xml file from the pod to the `extra-community-config` directory and recreate the secret with the other required files.
 
-The changes in this task affect the following pods:
-
--   community
+The changes in this task affect the Community pods:
 
 1.  Create a directory on your machine called extra-community-config at the root of where the Sametime installation package was decompressed.
 
@@ -74,23 +72,23 @@ The changes in this task affect the following pods:
 
     Configure your second LDAP server by completing the fields:
 
-    HostName
-    :   The fully qualified host name or IP address of the second LDAP server.
+    #### HostName
+    The fully qualified host name or IP address of the second LDAP server.
 
-    Port
-    :   If using unsecured LDAP, specify the port number used by LDAP. If you are using secure LDAP, you don't need to modify this field.
+    #### Port
+    If using unsecured LDAP, specify the port number used by LDAP. If you are using secure LDAP, you don't need to modify this field.
 
-    UserName
-    :   Set this field to empty double-quotes \( “” \).
+    #### UserName
+    Set this field to empty double-quotes \( “” \).
 
-    Password
-    :   Set this field to empty double-quotes \(“”\). If using an authenticated bind, add a new parameter after UserName and Password called **UserEncodedAuth=** and set it to the value that was determined in a previous step.
+    #### Password
+    Set this field to empty double-quotes \(“”\). If using an authenticated bind, add a new parameter after UserName and Password called **UserEncodedAuth=** and set it to the value that was determined in a previous step.
 
-    BaseDN
-    :   Define a base DN for searching the directory. If left blank, the entire directory is searched.
+    #### BaseDN
+    Define a base DN for searching the directory. If left blank, the entire directory is searched.
 
-    SearchFilter
-    :   Modify the search filter if needed. The defaults work well with Domino LDAP.
+    #### SearchFilter
+    Modify the search filter if needed. The defaults work well with Domino LDAP.
 
     You can make other changes to the business cards configuration if needed at this time. When finished, save and close the file.
 
