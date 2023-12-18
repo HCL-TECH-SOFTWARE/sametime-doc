@@ -18,9 +18,9 @@ MongoDB security is enabled by default. Securing MongoDB is not required for Sam
         pwd: "sametime", // or cleartext password
         roles: [ { role: "userAdminAnyDatabase", db: "admin"}, 
                                {role:"readWrite", db:"chatlogging"}, 
-                               {role:”dbAdmin”,db:”chatlogging”},
+                               {role:"dbAdmin",db:"chatlogging"},
                                {role:"readWrite", db:"mobileOffline"}, 
-                               {role:”dbAdmin”, db:”mobileOffline”}, 
+                               {role:"dbAdmin", db:"mobileOffline"}, 
                                { role:"readWrite", db:"meeting"}, 
                                {role:"dbAdmin", db:"meeting"}, 
                                { role:"readWrite", db:"privacy"}, 
@@ -51,7 +51,7 @@ MongoDB security is enabled by default. Securing MongoDB is not required for Sam
     
         "user" : "sametimeClusterAdmin", 
     
-        "pwd" : “sametime”,      
+        "pwd" : "sametime",      
     
         roles: [ { "role" : "clusterAdmin", "db" : "admin" } ] 
     
