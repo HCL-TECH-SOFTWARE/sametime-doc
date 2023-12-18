@@ -1,12 +1,7 @@
-# Configuring SAML in Kubernetes {#enabling_saml_kubernetes .task}
+# Configuring SAML in Kubernetes 
 
-You can implement SSO into your Kubernetes environment using Security Assertion Markup Language \(SAML\).
+You can implement SSO into your Kubernetes environment using Security Assertion Markup Language \(SAML\).  The changes in this task affect the following pods: community, mux, and proxy.
 
-The changes in this task affect the following pods:
-
--   community
--   mux
--   proxy
 
 1.  Find the **idpUrl** value.
 
@@ -16,15 +11,15 @@ The changes in this task affect the following pods:
 
     For example, if the following exists:
 
-    -   IdP user access URL is https://idp.example.com/example\_tenant&appid=1234
+    -   IdP user access URL is `https://idp.example.com/example\_tenant&appid=1234`
     -   Sametime fully qualified host name is sametime.example.com.
     The resulting URL is
 
-    https://idp.example.com/example\_tenant&appid=1234?TARGET=https://sametime.example.com/chat
+    `https://idp.example.com/example\_tenant&appid=1234?TARGET=https://sametime.example.com/chat`
 
     If you are using a different host name for meetings and web chat, use the host name for the web chat client.
 
-    https://idp.example.com/exampletenant&appid=1234?TARGET=https://webchat.example.com/chat
+    `https://idp.example.com/exampletenant&appid=1234?TARGET=https://webchat.example.com/chat`
 
 2.  Configure the Sametime server to use SAML.
 

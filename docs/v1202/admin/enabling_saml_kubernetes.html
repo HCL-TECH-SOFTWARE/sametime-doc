@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enabling_saml_kubernetes" class="md-skip">
+        <a href="#configuring-saml-in-kubernetes" class="md-skip">
           Skip to content
         </a>
       
@@ -7580,15 +7580,9 @@
   </a>
 
 
-<h1 class="task" id="enabling_saml_kubernetes">Configuring SAML in Kubernetes</h1>
-<p>You can implement SSO into your Kubernetes environment using Security Assertion Markup Language (SAML).</p>
-<p>The changes in this task affect the following pods:</p>
-<ul>
-<li>community</li>
-<li>mux</li>
-<li>
-<p>proxy</p>
-</li>
+<h1 id="configuring-saml-in-kubernetes">Configuring SAML in Kubernetes</h1>
+<p>You can implement SSO into your Kubernetes environment using Security Assertion Markup Language (SAML).  The changes in this task affect the following pods: community, mux, and proxy.</p>
+<ol>
 <li>
 <p>Find the <strong>idpUrl</strong> value.</p>
 <ol>
@@ -7601,13 +7595,13 @@
 </ol>
 <p>For example, if the following exists:</p>
 <ul>
-<li>IdP user access URL is https://idp.example.com/example_tenant&amp;appid=1234</li>
+<li>IdP user access URL is <code>https://idp.example.com/example\_tenant&amp;appid=1234</code></li>
 <li>Sametime fully qualified host name is sametime.example.com.
 The resulting URL is</li>
 </ul>
-<p>https://idp.example.com/example_tenant&amp;appid=1234?TARGET=https://sametime.example.com/chat</p>
+<p><code>https://idp.example.com/example\_tenant&amp;appid=1234?TARGET=https://sametime.example.com/chat</code></p>
 <p>If you are using a different host name for meetings and web chat, use the host name for the web chat client.</p>
-<p>https://idp.example.com/exampletenant&amp;appid=1234?TARGET=https://webchat.example.com/chat</p>
+<p><code>https://idp.example.com/exampletenant&amp;appid=1234?TARGET=https://webchat.example.com/chat</code></p>
 </li>
 <li>
 <p>Configure the Sametime server to use SAML.</p>
@@ -7668,7 +7662,7 @@ The resulting URL is</li>
 </li>
 </ol>
 </li>
-</ul>
+</ol>
 <p><strong>Parent Topic:  </strong><a href="enabling_sso_saml.html">Setting up SSO using SAML</a></p>
 
 

@@ -1,9 +1,15 @@
-# Enabling TLS for the Mongo database on Docker or Podman {#t_security_mongodb_tls_docker .task}
+# Enabling TLS for the Mongo database on Docker or Podman
 
-Ensure that the following conditions have been satisfied.
+Ensure that the you have read the [introductory topic](security_mongodb_tls.md) and verified that the TLS connection itself can be established. For more information, refer to [Verifying if TLS connection can be established](t_verify_tlsconnection.md).
 
--   You have read the [introductory topic](security_mongodb_tls.md).
--   You have verified that the TLS connection itself can be established. For more information, refer to [Verifying if TLS connection can be established](t_verify_tlsconnection.md).
+
+
+
+
+
+
+ 
+
 
 1.  Locate the local .pem file to use with your Mongo deployment. For more information, refer to the [official MongoDB documentation.](https://www.mongodb.com/docs/manual/reference/connection-string/#mongodb-urioption-urioption.tlsCAFile)
 

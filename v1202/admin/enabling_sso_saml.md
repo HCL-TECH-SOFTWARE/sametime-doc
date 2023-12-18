@@ -1,4 +1,4 @@
-# Setting up SSO using SAML {#enabling_sso_saml .task}
+# Setting up SSO using SAML 
 
 You can implement SSO into your environment using Security Assertion Markup Language \(SAML\). The process is different for Kubernetes and Docker.
 
@@ -8,43 +8,52 @@ To use SAML, the IdP administrator must create a federated partnership or relyin
 
 If you are upgrading from a previous Sametime version, you might want to keep using the same host names. Use the following scenarios for IdP requirement guidance.
 
-Scenario 1
-:   If one host name is used for accessing rich clients, web chat clients, and meeting clients, then only one SAML partnership or relying party trust is needed.
+### Scenario 1
+If one host name is used for accessing rich clients, web chat clients, and meeting clients, then only one SAML partnership or relying party trust is needed.
 
-Scenario 2
-:   If using a different host name for rich clients and web chat clients, then include the following SAML partnerships or relying party trusts:
+### Scenario 2
+If using a different host name for rich clients and web chat clients, then include the following SAML partnerships or relying party trusts:
 
-    -   One for the chat host name that is exposed to the Sametime Mux service
-    -   One for the web chat host name defined for ingress
+   - One for the chat host name that is exposed to the Sametime Mux service
+   - One for the web chat host name defined for ingress
 
-Scenario 3
-:   If using a different host name for rich client, web chat clients, and meeting clients, then include the following SAML partnerships or relying party trusts:
+### Scenario 3 
+If using a different host name for rich client, web chat clients, and meeting clients, then include the following SAML partnerships or relying party trusts:
 
-    -   One for the chat host name that is exposed to the Sametime Mux service
-    -   One for the web chat host name defined for ingress
+   - One for the chat host name that is exposed to the Sametime Mux service
+   - One for the web chat host name defined for ingress
 
-    **Note:** Meeting authentication is processed through the web chat proxy and no specific SAML partnership is required for the meeting host name.
+
+
+
+
+**Note:** Meeting authentication is processed through the web chat proxy and no specific SAML partnership is required for the meeting host name.
 
 Each IdP varies in implementation and terminology. The following are some guidelines for configuring your IdP. Only IdP initiated sign-on is supported.
 
-SAML assertion consumer service URL
-:   The fully-qualified URL of the Sametime server, add /stwebapi/user/connect. For example, https://sametime.example.com/stwebapi/user/connect at the end of the URL.
+### SAML assertion consumer service URL
 
-:   If you are using a separate name for the web chat client, you can use the webchat host name in the URL. For example: https://webchat.example.con/stwebapi/user/connect.
+The fully-qualified URL of the Sametime server, add `/stwebapi/user/connect`. For example, `https://sametime.example.com/stwebapi/user/connect` at the end of the URL.
 
-:   If the Community chat server has a separate host name from webchat or rich clients, use the community host name in the URL, for example: https://chat.example.com .
+If you are using a separate name for the web chat client, you can use the webchat host name in the URL. For example: `https://webchat.example.con/stwebapi/user/connect`.
 
-Relay State
-:   Specify the same value as the what is specified for the SAML assertion consumer service URL.
+If the Community chat server has a separate host name from webchat or rich clients, use the community host name in the URL, for example: https://chat.example.com .
 
-Log out URL
-:   Do not specify a value for this property. The SAML logout specification is not supported in Sametime.
+### Relay State
 
-Name ID
-:   Specify the attribute from the IdP that contains the user's email address.
+Specify the same value as the what is specified for the SAML assertion consumer service URL.
 
-Certificate for TLS
-:   A secure connection to the IdP is required and the IdP administrator must provide the certificate for Sametime to trust. If you have multiple relying party trusts, the IdP might have separate certificates for each host name trusted or a single certificate. Such as in the case of separated host names. If there are more than one certificate, each certificate and its full chain must be added to the trust store.
+### Log out URL
+
+Do not specify a value for this property. The SAML logout specification is not supported in Sametime.
+
+### Name ID
+
+Specify the attribute from the IdP that contains the user's email address.
+
+### Certificate for TLS
+
+A secure connection to the IdP is required and the IdP administrator must provide the certificate for Sametime to trust. If you have multiple relying party trusts, the IdP might have separate certificates for each host name trusted or a single certificate. Such as in the case of separated host names. If there are more than one certificate, each certificate and its full chain must be added to the trust store.
 
 -   **[Configuring SAML on Docker and Podman](enabling_saml_docker.md)**  
 

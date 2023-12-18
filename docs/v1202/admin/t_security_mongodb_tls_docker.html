@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#t_security_mongodb_tls_docker" class="md-skip">
+        <a href="#enabling-tls-for-the-mongo-database-on-docker-or-podman" class="md-skip">
           Skip to content
         </a>
       
@@ -7578,13 +7578,9 @@
   </a>
 
 
-<h1 class="task" id="t_security_mongodb_tls_docker">Enabling TLS for the Mongo database on Docker or Podman</h1>
-<p>Ensure that the following conditions have been satisfied.</p>
-<ul>
-<li>You have read the <a href="security_mongodb_tls.html">introductory topic</a>.</li>
-<li>
-<p>You have verified that the TLS connection itself can be established. For more information, refer to <a href="t_verify_tlsconnection.html">Verifying if TLS connection can be established</a>.</p>
-</li>
+<h1 id="enabling-tls-for-the-mongo-database-on-docker-or-podman">Enabling TLS for the Mongo database on Docker or Podman</h1>
+<p>Ensure that the you have read the <a href="security_mongodb_tls.html">introductory topic</a> and verified that the TLS connection itself can be established. For more information, refer to <a href="t_verify_tlsconnection.html">Verifying if TLS connection can be established</a>.</p>
+<ol>
 <li>
 <p>Locate the local .pem file to use with your Mongo deployment. For more information, refer to the <a href="https://www.mongodb.com/docs/manual/reference/connection-string/#mongodb-urioption-urioption.tlsCAFile">official MongoDB documentation.</a></p>
 </li>
@@ -7607,7 +7603,7 @@
 <div id="codeblock_btc_lj4_k5b" class="highlight"><pre><span></span><code>docker compose up -d
 </code></pre></div>
 </li>
-</ul>
+</ol>
 <p><strong>Parent Topic:  </strong><a href="security_mongodb_tls.html">Setting up TLS for the Mongo database</a></p>
 
 

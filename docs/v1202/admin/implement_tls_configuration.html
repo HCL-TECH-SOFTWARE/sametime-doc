@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#implement_tls_configuration" class="md-skip">
+        <a href="#implementing-the-global-tls-scope-for-docker" class="md-skip">
           Skip to content
         </a>
       
@@ -7578,7 +7578,7 @@
   </a>
 
 
-<h1 class="task" id="implement_tls_configuration">Implementing the Global TLS Scope for Docker</h1>
+<h1 id="implementing-the-global-tls-scope-for-docker">Implementing the Global TLS Scope for Docker</h1>
 <p>You must have a key store and trust store as a .p12 file. Both third party and self-signed certificates are supported.</p>
 <p><strong>Note:</strong> If you are supporting mobile clients, use a third-party certificate.</p>
 <ul>
@@ -7595,6 +7595,7 @@
 <li>All Sametime encryption is done at TLS 1.2, which can be overridden if a lower version is required.</li>
 </ul>
 <p>The following tables describe the required and optional configuration settings in the sametime.ini. To configure the sametime.ini file, see <a href="chat_configuring_sametimeini_docker.html">Configuring the sametime.ini file on Docker or Podman</a>.</p>
+<p>Table 1. Required parameters</p>
 <table>
 <thead>
 <tr>
@@ -7619,11 +7620,17 @@
 <td>STI_Config_ST_TLS_TRUST_STORE_PASSWORD</td>
 <td>The password to the trust store.For example: <code>SecureSametimePassw0rd</code></td>
 </tr>
+<tr>
+<td>STI_Config_ST_TLS_KEY_STORE_FILE</td>
+<td>The full path and name of the key store. For example: /local/notesdata/keystore.p12</td>
+</tr>
+<tr>
+<td>STI_Config_ST_TLS_KEY_STORE_PASSWORD</td>
+<td>The password to the keystorel For example: <code>SecureSametimePassw0rd</code></td>
+</tr>
 </tbody>
 </table>
-<p>|
-|STI_Config_ST_TLS_KEY_STORE_FILE|The full path and name of the key store. For example: /local/notesdata/keystore.p12|
-|STI_Config_ST_TLS_KEY_STORE_PASSWORD|The password to the keystorel For example: <code>SecureSametimePassw0rd</code>|</p>
+<p>Table 2. Optional Parameters</p>
 <table>
 <thead>
 <tr>
@@ -7640,72 +7647,148 @@
 <td>STI_Config_ST_TLS_SECURITY_LEVEL</td>
 <td>The required security level. The minimum security level controls compliance with the security standards NIST SP800-131a and NSA Suite B.</td>
 </tr>
+<tr>
+<td></td>
+<td>0:   No requirement</td>
+</tr>
+<tr>
+<td></td>
+<td>1:   NIST SP800 -131a “Transition mode”</td>
+</tr>
+<tr>
+<td></td>
+<td>2:   NIST SP800-131a “Strict mode”</td>
+</tr>
+<tr>
+<td></td>
+<td>3:   NSA Suite B 128-bit level</td>
+</tr>
+<tr>
+<td></td>
+<td>4:   NSA Suite B 192-bit level</td>
+</tr>
+<tr>
+<td>STI_Config_ST_TLS_MAX_SESSION_AGE</td>
+<td>The amount of time before re-negotiating a session. The time to keep a session, in seconds, before deleting it from cache.</td>
+</tr>
+<tr>
+<td></td>
+<td>-1:   No cache, which is generally sufficient for most Sametime deployments. This is the default value.</td>
+</tr>
+<tr>
+<td></td>
+<td>0:   No limit on the age of cached sessions.</td>
+</tr>
+<tr>
+<td>STI_Config_ST_TLS_SESSION_CACHE_SIZE</td>
+<td>Applies only to inbound connections. The number of TLS sessions that a server keeps in memory, for session reuse. This option tells the server to keep a cache of the TLS session state after the connection is closed.</td>
+</tr>
+<tr>
+<td></td>
+<td>-1:   No session cache, which is generally sufficient for most Sametime deployments. This is the default value.</td>
+</tr>
+<tr>
+<td></td>
+<td>0:   No limit on the number of cached sessions. It is useful after temporary network outage, when the client attempts to reconnect to the server, by reusing the session that was established earlier.</td>
+</tr>
+<tr>
+<td></td>
+<td>-   If the server finds the session in cache, the handshake is abbreviated, consuming less resources.</td>
+</tr>
+<tr>
+<td></td>
+<td>-   If the session is not in cache, a new session is established, including the full handshake.</td>
+</tr>
+<tr>
+<td>STI_Config_ST_TLS_SESSION_CACHE_TIME</td>
+<td>Applies only to inbound connections. The maximum age of a TLS session, in seconds before renegotiating a session, If the same session is used longer than this setting, a new session is renegotiated over the same connection. The default value 0 means that there is no session renegotiation.</td>
+</tr>
+<tr>
+<td>STI_Config_ST_TLS_MIN_PROTOCOL_VERSION=</td>
+<td>The oldest version of the SSL/TLS protocol to negotiate during handshake. The default value is TLS 1.2.</td>
+</tr>
+<tr>
+<td></td>
+<td>0x300:   SSL v3</td>
+</tr>
+<tr>
+<td></td>
+<td>0x301:   TLS v1.0</td>
+</tr>
+<tr>
+<td></td>
+<td>0x302:   TLS v1.1</td>
+</tr>
+<tr>
+<td></td>
+<td>0x303:   TLS v1.2. This is the default value used if the value for the parameter is blank.</td>
+</tr>
+<tr>
+<td>STI_Config_ST_TLS_MAX_PROTOCOL_VERSION</td>
+<td>The maximum TLS protocol.</td>
+</tr>
+<tr>
+<td></td>
+<td>0x300:   SSL v3</td>
+</tr>
+<tr>
+<td></td>
+<td>0x301:   TLS v1.0</td>
+</tr>
+<tr>
+<td></td>
+<td>0x302:   TLS v1.1</td>
+</tr>
+<tr>
+<td></td>
+<td>0x303:   TLS v1.2. This is the default value used if the value for the parameter is blank.</td>
+</tr>
+<tr>
+<td>STI_Config_ST_TLS_CIPHER_SUITES</td>
+<td>A comma-separated list of cipher suites. Leave blank to enable the default cipher suites. </td>
+</tr>
+<tr>
+<td>STI_Config_ST_TLS_CLIENT_AUTH</td>
+<td>Request a certificate from the client, does not apply to outbound connections.</td>
+</tr>
+<tr>
+<td></td>
+<td>0=None:   The server does not request a certificate from the client. This is the default value.</td>
+</tr>
+<tr>
+<td></td>
+<td>1=Want:   The server requests a certificate from the client, but will proceed with the handshake even if the client does not present one.</td>
+</tr>
+<tr>
+<td></td>
+<td>2=Need:   The server requests a certificate from the client, and will fail the connection if the client does not present one.</td>
+</tr>
+<tr>
+<td>STI_Config_ST_TLS_TRUSTED_HOSTS</td>
+<td>A comma-separated list of one or more trusted hosts, to compare against the peer certificate. The comparison takes place during the TLS handshake, when receiving a certificate from the peer, when the client receives the server certificate, or when the server receives a client certificate. The name in the peer certificate is typically specified in either the subject CN (common name) or the <code>subjectAltName</code> field. Validation passes if there is at least one match between the name in the peer certificate and a name in the trusted hosts list.</td>
+</tr>
+<tr>
+<td></td>
+<td>A trusted host name may contain the wild card character (*) which can be used to compare domain components rather than the entire string as a whole. The comparison process follows the rules described in section 3.1 of <a href="https://www.ietf.org/rfc/rfc2818.txt">RFC 2818</a>.</td>
+</tr>
+<tr>
+<td></td>
+<td>Certificate subject validation only applies when receiving a certificate from the peer. In order to ensure that a server performs this comparison, the server must require a client certificate, by setting <code>ST_TLS_CLIENT_AUTH=2</code>.</td>
+</tr>
+<tr>
+<td>STI_Config_ST_TLS_MIRROR_TRUSTED_HOSTS</td>
+<td>This parameter is needed when you have a key store with multiple key certificates. In which case, each certificate has a different alias in the key store. On the server side, specify the alias of the certificate that identifies the server. If the key store is used on the client side of TLS connections, specify the alias of the certificate that identifies the client.</td>
+</tr>
+<tr>
+<td>STI_Config_ST_TLS_KEY_LABEL</td>
+<td>This parameter is ignored if the STI_Config_ST_TLS_KEY_STORE_FILE parameter is missing or if there is only one key in the keystore.</td>
+</tr>
+<tr>
+<td></td>
+<td>This parameter is needed when you have a key store with multiple key certificates. In which case, each certificate has a different alias in the key store. On the server side, specify the alias of the certificate that identifies the server. If the key store is used on the client side of TLS connections, specify the alias of the certificate that identifies the client.</td>
+</tr>
 </tbody>
 </table>
-<p>0
-:   No requirement</p>
-<p>1
-:   NIST SP800 -131a “Transition mode”</p>
-<p>2
-:   NIST SP800-131a “Strict mode”</p>
-<p>3
-:   NSA Suite B 128-bit level</p>
-<p>4
-:   NSA Suite B 192-bit level</p>
-<p>|
-|STI_Config_ST_TLS_MAX_SESSION_AGE|The amount of time before re-negotiating a session. The time to keep a session, in seconds, before deleting it from cache. -1
-:   No cache, which is generally sufficient for most Sametime deployments. This is the default value.</p>
-<p>0
-:   No limit on the age of cached sessions.</p>
-<p>|
-|STI_Config_ST_TLS_SESSION_CACHE_SIZE|Applies only to inbound connections. The number of TLS sessions that a server keeps in memory, for session reuse. This option tells the server to keep a cache of the TLS session state after the connection is closed. -1
-:   No session cache, which is generally sufficient for most Sametime deployments. This is the default value.</p>
-<p>0
-:   No limit on the number of cached sessions.</p>
-<p>It is useful after temporary network outage, when the client attempts to reconnect to the server, by reusing the session that was established earlier.</p>
-<ul>
-<li>If the server finds the session in cache, the handshake is abbreviated, consuming less resources.</li>
-<li>If the session is not in cache, a new session is established, including the full handshake.</li>
-</ul>
-<p>|
-|STI_Config_ST_TLS_SESSION_CACHE_TIME|Applies only to inbound connections. The maximum age of a TLS session, in seconds before renegotiating a session, If the same session is used longer than this setting, a new session is renegotiated over the same connection. The default value 0 means that there is no session renegotiation.|
-|STI_Config_ST_TLS_MIN_PROTOCOL_VERSION=|The oldest version of the SSL/TLS protocol to negotiate during handshake. The default value is TLS 1.2.</p>
-<p>0x300
-:   SSL v3</p>
-<p>0x301
-:   TLS v1.0</p>
-<p>0x302
-:   TLS v1.1</p>
-<p>0x303
-:   TLS v1.2. This is the default value used if the value for the parameter is blank.</p>
-<p>|
-|STI_Config_ST_TLS_MAX_PROTOCOL_VERSION|The maximum TLS protocol.</p>
-<p>0x300
-:   SSL v3</p>
-<p>0x301
-:   TLS v1.0</p>
-<p>0x302
-:   TLS v1.1</p>
-<p>0x303
-:   TLS v1.2. This is the default value used if the value for the parameter is blank.</p>
-<p>|
-|STI_Config_ST_TLS_CIPHER_SUITES|A comma-separated list of cipher suites. Leave blank to enable the default cipher suites. |
-|STI_Config_ST_TLS_CLIENT_AUTH|Request a certificate from the client, does not apply to outbound connections.</p>
-<p>0=None
-:   The server does not request a certificate from the client. This is the default value.</p>
-<p>1=Want
-:   The server requests a certificate from the client, but will proceed with the handshake even if the client does not present one.</p>
-<p>2=Need
-:   The server requests a certificate from the client, and will fail the connection if the client does not present one.</p>
-<p>|
-|STI_Config_ST_TLS_TRUSTED_HOSTS|A comma-separated list of one or more trusted hosts, to compare against the peer certificate. The comparison takes place during the TLS handshake, when receiving a certificate from the peer, when the client receives the server certificate, or when the server receives a client certificate. The name in the peer certificate is typically specified in either the subject CN (common name) or the <code>subjectAltName</code> field. Validation passes if there is at least one match between the name in the peer certificate and a name in the trusted hosts list.</p>
-<p>A trusted host name may contain the wild card character (*) which can be used to compare domain components rather than the entire string as a whole. The comparison process follows the rules described in section 3.1 of <a href="https://www.ietf.org/rfc/rfc2818.txt">RFC 2818</a>.</p>
-<p>Certificate subject validation only applies when receiving a certificate from the peer. In order to ensure that a server performs this comparison, the server must require a client certificate, by setting <code>ST_TLS_CLIENT_AUTH=2</code>.</p>
-<p>|
-|STI_Config_ST_TLS_MIRROR_TRUSTED_HOSTS|This parameter is needed when you have a key store with multiple key certificates. In which case, each certificate has a different alias in the key store. On the server side, specify the alias of the certificate that identifies the server. If the key store is used on the client side of TLS connections, specify the alias of the certificate that identifies the client.|
-|STI_Config_ST_TLS_KEY_LABEL|This parameter is ignored if the STI_Config_ST_TLS_KEY_STORE_FILE parameter is missing or if there is only one key in the keystore.</p>
-<p>This parameter is needed when you have a key store with multiple key certificates. In which case, each certificate has a different alias in the key store. On the server side, specify the alias of the certificate that identifies the server. If the key store is used on the client side of TLS connections, specify the alias of the certificate that identifies the client.</p>
-<p>|</p>
 <p><strong>Note:</strong> When you enable TLS for the Sametime server connections, TLS version 1.2 is used by default. SSLv3 and TLSv1 have security vulnerabilities and should not be used.</p>
 <p><strong>Parent Topic:  </strong><a href="securing_connections.html">Securing connections</a></p>
 
