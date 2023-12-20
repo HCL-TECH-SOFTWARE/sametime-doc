@@ -7643,7 +7643,7 @@
 <p>To check the server configuration, verify that the storage repository, such as LDAP used with the Sametime server is configured correctly. A configuration problem is the most likely cause of problems with business cards. For more information, see <a href="admin_st_buscard.html">Setting up business cards</a>.</p>
 <p>If the configuration is correct, next verify that the business card information on requested from the clients is working correctly. For this, trace the UserInfo servlet flows to verify that the UserInfo servlet is working correctly. The UserInfo servlet runs on the server retrieves business card information on request from clients and responds to client requests. To determine if there are errors on the exchange of information, enable the UserInfo Debug trace.</p>
 <p>If the UserInfo servlet on the server is responding correctly, enable client-side tracing to determine what is happening on the client. Follow the instructions in <a href="t_logging_tracing.html">Logging and tracing on the Sametime Embedded and Connect clients</a>. For Web clients, review the Proxy service logs and capture a browser HTTP Archive (HAR) file to review the business card information received.</p>
-<p><strong>Parent Topic:  </strong><a href="troubleshooting.html">Troubleshooting</a></p>
+<p><strong>Parent topic:   </strong><a href="troubleshooting.html">Troubleshooting</a></p>
 <h2 id="task_cmx_2pp_r5b">Enabling the UserInfo Debug trace on Docker</h2>
 <ol>
 <li>
@@ -7663,7 +7663,7 @@
 </li>
 <li>
 <p>Start the Sametime server to apply the changes and enable the trace.</p>
-<div id="codeblock_jck_klq_r5b" class="highlight"><pre><span></span><code>docker-compose up -d
+<div id="codeblock_jck_klq_r5b" class="highlight"><pre><span></span><code>docker compose up -d
 </code></pre></div>
 </li>
 </ol>

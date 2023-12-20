@@ -15,7 +15,7 @@ Creating a backup of the installation directory, allows you to return to your pr
 1.  In the directory where Sametime is installed, issue the following command to stop the Sametime server.
 
     ``` {#codeblock_zxy_ypk_25b}
-     docker-compose down 
+     docker compose down 
     ```
 
 2.  Make a copy of the Sametime installation directory as a backup before installing the fix pack.
@@ -37,5 +37,5 @@ Creating a backup of the installation directory, allows you to return to your pr
 5.  Follow the prompts to provide the required information. The install process detects if the install is an upgrade or full install.
 
 
-**Parent Topic:  **[Upgrading to a new version or applying a fixpack](upgrade_install_fixpack.md)
+**Parent topic:   **[Upgrading to a new version or applying a fixpack](upgrade_install_fixpack.md)
 

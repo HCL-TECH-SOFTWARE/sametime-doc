@@ -5,7 +5,7 @@ Ensure that you have the certificate and private key to be used.
 1.  Run the following command to stop the Sametime services.
 
     ``` {#codeblock_fhw_grb_b5b}
-    docker-compose down
+    docker compose down
     ```
 
 2.  Copy the two files to the /keys folder where the Sametime is deployed.
@@ -24,5 +24,5 @@ Ensure that you have the certificate and private key to be used.
     ```
 
 
-**Parent Topic:  **[Replacing the TLS certificates for Web Chat and Meetings](tls_change_certificate.md)
+**Parent topic:   **[Replacing the TLS certificates for Web Chat and Meetings](tls_change_certificate.md)
 

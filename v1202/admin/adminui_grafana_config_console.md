@@ -1,5 +1,7 @@
 # Configuring Grafana dashboard {#adminui_grafana_config_console .task}
 
+When using the managed charts to install Sametime, the Grafana dashboard is created. However, if using a manual install process, you can manually create the Grafana dashboard.
+
 Before you can create your first dashboard, you need to add your data source. You must have Grafana administrator access to add data sources.
 
 1.  Log into the Sametime Admin interface and click the **Grafana icon** \(![Grafana icon](Images/adminui_icon_grafana.png)\) to access the Grafana dashboard.
@@ -18,4 +20,6 @@ Before you can create your first dashboard, you need to add your data source. Yo
 
 5.  Save the dashboard.
 
+
+**Parent topic: **[adminui\_grafana\_overview.md](adminui_grafana_overview.md)
 

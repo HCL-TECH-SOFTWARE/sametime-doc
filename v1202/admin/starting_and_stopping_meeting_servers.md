@@ -11,7 +11,7 @@ This page will provide steps to stop and start the Sametime Meeting server on Do
     **Docker:**
 
     ```
-    docker-compose down
+    docker compose down
     
     ```
 
@@ -28,7 +28,7 @@ This page will provide steps to stop and start the Sametime Meeting server on Do
     **Docker:**
 
     ```
-    docker-compose up -d
+    docker compose up -d
     
     ```
 

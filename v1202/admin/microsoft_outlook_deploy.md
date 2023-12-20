@@ -27,5 +27,5 @@ For additional information, see the Micorsoft [Deploy add-ins in the Microsoft 3
     Deployment can take up to 24 hours. Outlook clients must launched their Outlook client again for the add-in to appear in the user interface.
 
 
-**Parent Topic:  **[Meetings](meetings_configuring.md)
+**Parent topic: **[meetings\_configuring.md](meetings_configuring.md)
 

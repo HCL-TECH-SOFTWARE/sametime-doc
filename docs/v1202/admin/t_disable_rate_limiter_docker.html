@@ -7577,7 +7577,6 @@
 
 
 <h1 class="task" id="t_disable_rate_limiter_docker">Disabling the mobile notification limiter on Docker or Podman</h1>
-<p>Sametime sends notifications to mobile devices (phones and tablets) through the Apple Push Notification service (APNs) for Apple and through the Google Firebase Cloud Messaging service (FCM) for Android. Sametime includes a mobile notification limiter service that monitors various conditions to help ensure that mobile device notifications are sent at appropriate times and frequencies. By default, the service monitors whether multiple clients are active, which client was most recently active, and whether messages have been read, and might limit the notifications to avoid redundancy. You can disable the notification limiter to send notifications to all connected clients.</p>
 <ol>
 <li>
 <p>Open the custom.env file for editing.</p>
@@ -7590,13 +7589,8 @@
 <li>
 <p>Save the changes.</p>
 </li>
-<li>
-<p>Start the Sametime server to apply the changes.</p>
-<div id="codeblock_btc_lj4_k5b" class="highlight"><pre><span></span><code>docker compose up -d
-</code></pre></div>
-</li>
 </ol>
-<p><strong>Parent Topic:  </strong><a href="administering.html">Administering</a></p>
+<p><strong>Parent topic: </strong><a href="administering.html">administering.md</a></p>
 
 
 

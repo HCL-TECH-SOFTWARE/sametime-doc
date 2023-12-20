@@ -7572,7 +7572,7 @@
 
 <h1 class="task" id="upgrade_install_fixpack_kubernetes">Upgrading on Kubernetes</h1>
 <p>The Sametime upgrade packages contain full helm charts.</p>
-<p>When upgrading to 12.0.1, the recorder workloads are assigned to the main worker nodes. Ensure that the existing main worker nodes have enough capacity to handle the workloads.</p>
+<p>When upgrading, the recorder workloads are assigned to the main worker nodes. Ensure that the existing main worker nodes have enough capacity to handle the workloads.</p>
 <p>Because the upgrade package includes full helm charts to implemented, you must port your settings from the current values.yaml into the new values.yaml file. Do not restore the values.yaml file from a backup file which might contain deprecated settings.</p>
 <ol>
 <li>
@@ -7635,7 +7635,7 @@
 The prepareDeployment.sh script does not update the values.yaml file for telephony-related settings and does not update the settings from the existing secrets. For more information, refer to <a href="t_meetings_configure_deployment.html">Preparing the deployment</a>.</p>
 </li>
 </ol>
-<p><strong>Parent Topic:  </strong><a href="upgrade_install_fixpack.html">Upgrading to a new version or applying a fixpack</a></p>
+<p><strong>Parent topic:   </strong><a href="upgrade_install_fixpack.html">Upgrading to a new version or applying a fixpack</a></p>
 
 
 

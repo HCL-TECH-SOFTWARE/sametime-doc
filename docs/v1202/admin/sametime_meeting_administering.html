@@ -7569,7 +7569,8 @@
 
 
 <h1 class="task" id="sametime_meeting_administering">Managing Sametime Meetings</h1>
-<p>This topic explains the features you can enable or disable for meetings. Currently, the settings that you can change are global settings that apply to the entire server. User policies cannot control the settings.</p>
+<p>You can enable or disable meeting features. Note that these settings apply to the server and are not controlled by user policies.</p>
+<p>The following table lists meeting features and whether they can be turn on or off by the administrator or meeting owner.</p>
 <table>
 <thead>
 <tr>
@@ -7592,11 +7593,11 @@
 </tr>
 <tr>
 <td>Disable recordings</td>
-<td>Recordings are enabled by default. To disable recordings, see <a href="recording.html">Managing recording options</a>.</td>
+<td>Recordings are enabled by default. To disable recordings, see <a href="recording.html">recording.md</a>.</td>
 </tr>
 <tr>
 <td>Change recording availability</td>
-<td>Recordings are available for 3 days by default, to change the setting, see <a href="recording.html">Managing recording options</a>.</td>
+<td>Recordings are available for 3 days by default, to change the setting, see <a href="recording.html">recording.md</a>.</td>
 </tr>
 <tr>
 <td>Secure the meeting with password</td>
@@ -7607,11 +7608,11 @@
 <p>A user can choose for any meeting owned whether or not to configure a password on that meeting.</p>
 <p>There are no configurable password strength options.</p>
 <p>|
-|Guest users|Guest access is enabled by default. To disable, see<a href="disable_guest_access.html">Disabling guest access</a>|
+|Guest users|Guest access is enabled by default. To disable, see <a href="disable_guest_access.html">Preventing guest access</a>|
 |Unmoderated meetings|Enabled by default, cannot disable.|
-|Moderated meeting: invite others|<a href="enable_dial_out.html">Enabling meeting dial-out</a>.|
+|Moderated meeting: invite others|<a href="enable_dial_out.html">enable_dial_out.md</a>.|
 |Raise hand|Enabled by default, cannot disable.|
-|User Photos (authenticated users only)|You can retrieve Photos from the Sametime Proxy server. They will display if they are available to the meeting server.You can use Gravatar to configure an avatar based on your Sametime email ID. Use it if your photo is not available via the Sametime Proxy.</p>
+|User Photos (authenticated users only)|You can retrieve photos from the Sametime Proxy server. They will display if they are available to the meeting server.You can use Gravatar to configure an avatar based on your Sametime email ID. Use it if your photo is not available via the Sametime Proxy.</p>
 <p>|
 |Group Chat|Enabled by default, cannot disable.|
 |Group Chat also in the rich client|Enabled by default, cannot disable.|
@@ -7623,7 +7624,7 @@
 |Moderated Meeting: Mute everyone else|Enabled by default, cannot disable.|
 |Moderated Meeting: All cameras off|Enabled by default, cannot disable.|
 |Moderated Meeting: Invite others|See: Enabling a SIP Trunk for Meeting Dial Out|</p>
-<p>These settings affect the functionality of the server.</p>
+<p>The following table displays settings that affect the functionality of the server.</p>
 <table>
 <thead>
 <tr>
@@ -7638,34 +7639,41 @@
 </tr>
 </tbody>
 </table>
-<p>|The default setting is 25 users. To change the setting, see: <a href="meetings_configuring_max.html">Configuring the maximum number of meeting participants</a>.|</p>
+<p>|The default setting is 25 users. To change the setting, see: <a href="meetings_configuring_max.html">meetings_configuring_max.md</a>.|</p>
 <ul>
-<li><strong><a href="meetings_passwords.html">Defining Meetings password requirements</a></strong><br />
-The default requirement for a meeting is that the password must be at least eight characters. To increase the password requirements, additional rules can be specified.</li>
-<li><strong><a href="disable_guest_access.html">Disabling guest access</a></strong><br />
-You can disable guest access and remove the option from the meeting attend page.</li>
-<li><strong><a href="enable_disable.html">Configuring live streaming</a></strong><br />
-If you have a high number of users that need to attend a meeting that does not require two-way interaction, you can live stream the conference to YouTube, and users can access the meeting using a YouTube URL.</li>
-<li><strong><a href="increase_activecameras.html">Increasing the number of video streams displayed during a meeting</a></strong><br />
-The most recent active video streams are displayed in the meeting window up to the specified maximum value. The default is nine.</li>
-<li><strong><a href="recording.html">Managing recording options</a></strong><br />
-As the administrator, you have control over your recording settings. This section describes the features available to help you manage meeting recordings and where they are configured.</li>
-<li><strong><a href="t_disable_generate_report.html">Disabling Sametime reports</a></strong><br />
- By default, meeting owners can generate meeting reports. You can change a setting to disable the ability for owners to generate meeting reports.</li>
-<li><strong><a href="control_validity_length.html">Managing user sign-on</a></strong><br />
-You can control how long your Sametime meeting credentials are maintained to reduce the number of times you have to sign in.</li>
 <li>
-<p><strong><a href="disable_background.html">Disabling virtual background</a></strong>  </p>
+<p><strong><a href="meetings_passwords.html">meetings_passwords.md</a></strong>  </p>
 </li>
 <li>
-<p><strong><a href="t_disable_background_upload.html">Disabling custom background uploads</a></strong>  </p>
+<p><strong><a href="disable_guest_access.html">Preventing guest access</a></strong><br />
+You can disallow guest access to meeting.</p>
 </li>
 <li>
-<p><strong><a href="t_disabling_timer.html">Disabling the meeting timer</a></strong><br />
-By default, Sametime is configured to display the meeting duration. You can change the setting to disable the timer.</p>
+<p><strong><a href="enable_disable.html">enable_disable.md</a></strong>  </p>
+</li>
+<li>
+<p><strong><a href="increase_activecameras.html">increase_activecameras.md</a></strong>  </p>
+</li>
+<li>
+<p><strong><a href="recording.html">recording.md</a></strong>  </p>
+</li>
+<li>
+<p><strong><a href="t_disable_generate_report.html">t_disable_generate_report.md</a></strong>  </p>
+</li>
+<li>
+<p><strong><a href="control_validity_length.html">control_validity_length.md</a></strong>  </p>
+</li>
+<li>
+<p><strong><a href="disable_background.html">disable_background.md</a></strong>  </p>
+</li>
+<li>
+<p><strong><a href="t_disable_background_upload.html">t_disable_background_upload.md</a></strong>  </p>
+</li>
+<li>
+<p><strong><a href="t_disabling_timer.html">t_disabling_timer.md</a></strong>  </p>
 </li>
 </ul>
-<p><strong>Parent Topic:  </strong><a href="administering.html">Administering</a></p>
+<p><strong>Parent topic: </strong><a href="administering.html">administering.md</a></p>
 
 
 

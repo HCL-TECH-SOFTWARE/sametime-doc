@@ -11,14 +11,14 @@
       
       
       
-        <link rel="canonical" href="https://opensource.hcltechsw.com/sametime-doc/admin/meeting_report_kubernetes.html">
+        <link rel="canonical" href="https://opensource.hcltechsw.com/sametime-doc/admin/t_disable_rate_limiter.html">
       
       <link rel="icon" href="../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
     
       
-        <title>Disabling reports on Kubernetes - HCL Sametime Help Center</title>
+        <title>Disabling the mobile notification limiter {#t_disable_rate_limiter .task} - HCL Sametime Help Center</title>
       
     
     
@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#meeting_report_kubernetes" class="md-skip">
+        <a href="#t_disable_rate_limiter" class="md-skip">
           Skip to content
         </a>
       
@@ -186,7 +186,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Disabling reports on Kubernetes
+              Disabling the mobile notification limiter {#t_disable_rate_limiter .task}
             
           </span>
         </div>
@@ -312,12 +312,10 @@
         
   
   
-    
-  
 
 
   <li class="md-tabs__item">
-    <a href="configuring.html" class="md-tabs__link md-tabs__link--active">
+    <a href="configuring.html" class="md-tabs__link">
       Configuring
     </a>
   </li>
@@ -1986,14 +1984,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
       
       
       
@@ -2836,14 +2832,12 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_12" type="checkbox" id="__nav_5_12" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_12" type="checkbox" id="__nav_5_12" >
       
       
       
@@ -2969,21 +2963,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="meeting_report_kubernetes.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="meeting_report_kubernetes.html" class="md-nav__link">
         Disabling reports on Kubernetes
       </a>
-      
     </li>
   
 
@@ -7572,32 +7556,29 @@
                 
                   
 
-  <a href="https://github.com/HCL-TECH-SOFTWARE/sametime-doc/edit/main/docs/admin/meeting_report_kubernetes.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/HCL-TECH-SOFTWARE/sametime-doc/edit/main/docs/admin/t_disable_rate_limiter.md" title="Edit this page" class="md-content__button md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
-<h1 class="task" id="meeting_report_kubernetes">Disabling reports on Kubernetes</h1>
-<ol>
+<h1 class="task" id="t_disable_rate_limiter">Disabling the mobile notification limiter</h1>
+<p>A notification limiter service monitors various conditions and ensures that mobile device notifications are sent at appropriate times and frequencies. Additionally, the service limits notifications to avoid redundancy among multiple devices. You can turn off the notification limiter to send notifications to all connected clients.</p>
+<p>The following technologies handle notifications to mobile devices that use Sametime:</p>
+<ul>
+<li>Apple Push Notification service (APNs) for Apple devices</li>
+<li>Google Firebase Cloud Messaging service (FCM) for Android devices</li>
+</ul>
+<p>The mobile notification limiter service monitors various conditions to help ensure that mobile device notifications are sent at appropriate times and frequencies. For example, suppose you have multipe active devices, the notification limiter service determines the most recently active device, and whether messages have been read. Depending on its findigns, the service might limit the notifications to avoid redundancy.</p>
+<ul>
 <li>
-<p>Change to the helm directory where the Sametime installation package was decompressed.</p>
-<div id="codeblock_rbc_4km_s5b" class="highlight"><pre><span></span><code>cd helm
-</code></pre></div>
+<p><strong><a href="meeting_report_kubernetes.html">Disabling reports on Kubernetes</a></strong>  </p>
 </li>
 <li>
-<p>Open the values.yaml file and put in edit mode.</p>
+<p><strong><a href="meeting_report_setting_docker.html">Disabling reports on Docker or Podman</a></strong>  </p>
 </li>
-<li>
-<p>Locate the <code>meetingReportsDisabled</code> value and change the value to false.</p>
-<div id="codeblock_ucj_5km_s5b" class="highlight"><pre><span></span><code>MeetingReportsDisabled: false
-</code></pre></div>
-</li>
-<li>
-<p>Save and close the values.yaml file.</p>
-</li>
-</ol>
-<p><strong>Parent topic: </strong><a href="t_disable_rate_limiter.html">Disabling the mobile notification limiter</a></p>
+</ul>
+<p><strong>Parent topic: </strong><a href="meetings_configuring.html">meetings_configuring.md</a></p>
 
 
 

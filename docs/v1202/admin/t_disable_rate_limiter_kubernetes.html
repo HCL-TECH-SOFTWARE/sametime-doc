@@ -7577,7 +7577,6 @@
 
 
 <h1 class="task" id="t_disable_rate_limiter_kubernetes">Disabling the mobile notification limiter on Kubernetes</h1>
-<p>Sametime sends notifications to mobile devices (phones and tablets) through the Apple Push Notification service (APNs) for Apple and through the Google Firebase Cloud Messaging service (FCM) for Android. Sametime includes a mobile notification limiter service that monitors various conditions to help ensure that mobile device notifications are sent at appropriate times and frequencies. By default, the service monitors whether multiple clients are active, which client was most recently active, and whether messages have been read, and might limit the notifications to avoid redundancy. You can disable the notification limiter to send notifications to all connected clients.</p>
 <ol>
 <li>
 <p>Open the values.yaml file for editing.</p>
@@ -7590,32 +7589,8 @@
 <li>
 <p>Save and close the file.</p>
 </li>
-<li>
-<p>Apply your changes to the environment.</p>
-<p>Verify that you are in the helm directory and run the following command to apply changes. Specify the Sametime deployment name for your environment. The default for Sametime Premium version 12 is sametime.</p>
-<div id="codeblock_iyn_51d_d5b" class="highlight"><pre><span></span><code>helm upgrade sametime\_deployment\_name .
-</code></pre></div>
-<p><strong>Note:</strong> Be sure to include the dot at the end. It is part of the command.</p>
-<p>If you are unsure of your deployment name, issue the helm list command to find the name. If you upgraded from an earlier Sametime release, the default name is sametime-meetings.</p>
-</li>
-<li>
-<p>Restart the pods with the changes. Use the kubectl scale command to scale the pods to zero and then to one that have been changed. You must run the commands for each pod that the change affects.</p>
-<ol>
-<li>
-<p>Run the following command to scale the pod to zero.</p>
-<p>Scale the pod to zero, where pod_deployment_name is the pod name.</p>
-<div id="codeblock_cwz_mwc_d5b" class="highlight"><pre><span></span><code>kubectl scale deploy pod\_deployment\_name --replicas=0
-</code></pre></div>
-</li>
-<li>
-<p>Run the following command to scale the pod to one.</p>
-<div id="codeblock_i2c_4wc_d5b" class="highlight"><pre><span></span><code>kubectl scale deploy pod\_deployment\_name --replicas=1
-</code></pre></div>
-</li>
 </ol>
-</li>
-</ol>
-<p><strong>Parent Topic:  </strong><a href="administering.html">Administering</a></p>
+<p><strong>Parent topic: </strong><a href="administering.html">administering.md</a></p>
 
 
 

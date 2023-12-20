@@ -1,27 +1,29 @@
-# Disabling guest access {#disable_guest_access .task}
+# Preventing guest access {#disable_guest_access .task}
 
-You can disable guest access and remove the option from the meeting attend page.
+You can disallow guest access to meeting.
 
-1.  Set the following policy to 0.
+There are two tasks to complete: turn off the meeting policy and meeting login prompt. The user receives a Guest not allowed for this meeting message.
 
-    ``` {#codeblock_q2z_hbf_lzb}
-    policy - anonymous - im.meetingsEnabled = 0
-    ```
+1.  Log into the Sametime Admin and open the Anonymous policy.
 
-2.  Enter the following commands to remove guest access from the meeting attend page.
+    Guests are assigned the Anonymous policy.
 
-    -   For Docker, in the .env file, specify the following setting:
+2.  Locate the Meeting section of the policy and turn off the Allow Sametime Meetings attribute.
+
+3.  Update the configuration file to not allow a login prompt to display.
+
+    -   For Docker, in the .env file, specify the following:
 
         ``` {#codeblock_ytq_4bf_lzb}
-        ENABLE_GUESTS=0
+        REACT_APP_ALLOW_GUEST_LOGIN=false 
         ```
 
-    -   For Kubernets, Specify the following setting in meetings-configmap.yaml
+    -   For Kubernetes, Specify the following setting in values.yaml file, specify the following:
 
         ``` {#codeblock_tkp_rbf_lzb}
-        ReactAppShowGuestLoginByDefault in meetings-configmap.yaml (helm/templates)
+        REACT_APP_ALLOW_GUEST_LOGIN:false 
         ```
 
 
-**Parent Topic:  **[Managing Sametime Meetings](sametime_meeting_administering.md)
+**Parent topic: **[Managing Sametime Meetings](sametime_meeting_administering.md)
 

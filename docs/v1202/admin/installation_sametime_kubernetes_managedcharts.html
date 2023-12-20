@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installation_sametime_kubernetes_managedcharts" class="md-skip">
+        <a href="#installing-sametime-in-a-kubernetes-using-managed-charts" class="md-skip">
           Skip to content
         </a>
       
@@ -7642,11 +7642,11 @@
   </a>
 
 
-<h1 class="task" id="installation_sametime_kubernetes_managedcharts">Installing Sametime in a Kubernetes using managed charts</h1>
+<h1 id="installing-sametime-in-a-kubernetes-using-managed-charts">Installing Sametime in a Kubernetes using managed charts</h1>
 <p>The Sametime product image includes pre-configured managed Helm charts to deploy HCL Sametime and HCL Sametime Premium. The managed Helm charts allow you to get a Kubernetes-based deployment up and running.</p>
 <p>The managed charts include everything needed for a running deployment, such as: MongoDB, OpenLDAP, and NGINX Ingress Controller; and are ready to go with a single install operation. There is a variant of each chart that includes Prometheus and Grafana so that metrics can be monitored without any additional configuration. Each managed chart is provided as a TGZ bundle and can be installed using Helm or Helm Dashboard.</p>
 <p>Within the managed chart TGZ bundle is a values.yaml file. You can create a custom values.yaml file with configuration settings to override the settings of the supplied file. For example, the managed chart uses <code>lvh.me</code> as the host name, so that it can only be accessed through the local host from where it is being installed. You can provide a different value in the custom values.yaml file.</p>
-<p>The customized values.yaml file can be created manually or by using the supplied prepareDeployment.sh script. For more information about the script, see <a href="t_meetings_configure_deployment.html">t_meetings_configure_deployment.md</a>. After the file is created, the customized values.yaml file can be archived and version controlled as necessary so that it can be applied to future updates, duplicated deployments with slight variations between each, and backed up for safe keeping so that the deployment can be recovered if necessary.</p>
+<p>The customized values.yaml file can be created manually or by using the supplied prepareDeployment.sh script. For more information about the script, see <a href="t_meetings_configure_deployment.html">Preparing the deployment</a>.  After the file is created, the customized values.yaml file can be archived and version controlled as necessary so that it can be applied to future updates, duplicated deployments with slight variations between each, and backed up for safe keeping so that the deployment can be recovered if necessary.</p>
 <p>The managed charts are hosted on the <a href="https://hclcr.io/">HCL Harbor Registry</a> so that deploying the charts can be cloud-native, without having to separate manage docker images on a per-node basis within an on-premise private registry.</p>
 <table>
 <thead>
@@ -7692,11 +7692,11 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Note:</strong> A single-node installation cannot be installed in a multi-node cluster. It is designed without aspects that are typical for large deployments where there is concern about balancing resources across available nodes for performance and fault tolerance. You are can install the single-node deployment in a multi-node cluster as a "minimal footprint" deployment. If doing so, follow the steps in the <a href="t_meetings_recordings.html">t_meetings_recordings.md</a> topic as you would if you were installing the multi-node deployment.</p>
+<p><strong>Note:</strong> A single-node installation cannot be installed in a multi-node cluster. It is designed without aspects that are typical for large deployments where there is concern about balancing resources across available nodes for performance and fault tolerance. You are can install the single-node deployment in a multi-node cluster as a "minimal footprint" deployment. If doing so, follow the steps in the <a href="t_meetings_recordings.html">Creating the persistent volume</a> topic as you would if you were installing the multi-node deployment.</p>
 <h2 id="task_iy1_lnf_pzb">Using command line</h2>
 <ol>
 <li>
-<p>Verify that the container images have been loaded into a registry that is accessible to the Kubernetes cluster. For additoinal information, see <a href="load_stimages_local.html">load_stimages_local.md</a>.</p>
+<p>Verify that the container images have been loaded into a registry that is accessible to the Kubernetes cluster. For additoinal information, see <a href="load_stimages_local.html">Loading the Sametime images to a Docker repository</a>.</p>
 </li>
 <li>
 <p>When you install using Helm, make sure to override the registry configuration.</p>
@@ -7721,41 +7721,37 @@
 </li>
 <li>
 <p>Use the helm install command to run the managed chart.</p>
-<div id="codeblock_jph_cpf_pzb" class="highlight"><pre><span></span><code>helm install install\_name oci://hclcr.io/st/sametime-premium-single-node
-</code></pre></div>
+<p><code>helm install install\_name oci://hclcr.io/st/sametime-premium-single-node</code></p>
 <p>Any customizations that should be applied to the deployment can be supplied in a custom values.yaml file rather than using --set options. To see the default values, examples, and documentation about settings you might want to customize, use one of the command:</p>
 <ul>
-<li>``` {#codeblock_xmq_xpf_pzb}
-helm show values chart-name.tgz
-<div class="highlight"><pre><span></span><code>    -   ``` {#codeblock_vlc_ypf_pzb}
-helm show values oci://hclcr.io/st/sametime-premium-single-node 
-</code></pre></div></li>
+<li>
+<p><code>helm show values chart-name.tgz</code></p>
+</li>
+<li>
+<p><code>helm show values oci://hclcr.io/st/sametime-premium-single-node</code></p>
+</li>
 </ul>
 <p>You can copy-paste and modify any of the default values and then apply those settings like this:</p>
-<div id="codeblock_a4x_zpf_pzb" class="highlight"><pre><span></span><code>helm install sametime sametime-premium-single-node-12.0.2.tgz -f values.yaml
-</code></pre></div>
+<p><code>helm install sametime sametime-premium-single-node-12.0.2.tgz -f values.yaml</code></p>
 <p>where values.yaml is the file you have customized.</p>
 <p>Alternatively, you can run:</p>
-<div id="codeblock_b1j_2qf_pzb" class="highlight"><pre><span></span><code>./prepareDeployment.yaml values.yaml
-</code></pre></div>
-<p>and follow the prompts to produce a new values.yaml file with your customized configuration. You can use that as a starting point to make further edits as needed, for example. See <a href="t_meetings_configure_deployment.html">t_meetings_configure_deployment.md</a> for more information about how to respond to the prompts in the prepareDeployment tool.</p>
-<p><strong>Note:</strong> when using the prepareDeployment tool with a managed chart, there are additional prompts about whether the embedded mongo/openldap/coturn/nginx-ingress should be deployed. You can choose these to meet your needs.</p>
+<p><code>./prepareDeployment.yaml values.yaml</code></p>
+<p>and follow the prompts to produce a new values.yaml file with your customized configuration. You can use that as a starting point to make further edits as needed, for example. See <a href="t_meetings_configure_deployment.html">Preparing the deployment</a> for more information about how to respond to the prompts in the prepareDeployment tool.</p>
+<p><strong>Note:</strong> when using the prepareDeployment tool with a managed chart, there are additional prompts about whether the embedded <code>mongo/openldap/coturn/nginx-ingress</code> should be deployed. You can choose these to meet your needs.</p>
 </li>
 </ol>
 <h2 id="task_l1q_jnf_pzb">Using Helm dashboard</h2>
-<p>Tools like<a href="https://github.com/komodorio/helm-dashboard/releases">helm-dashboard</a> provide a user interface to manage deployments in a Kubernetes environment.</p>
+<p>Tools like <a href="https://github.com/komodorio/helm-dashboard/releases">helm-dashboard</a> provide a user interface to manage deployments in a Kubernetes environment.</p>
 <ol>
 <li>
 <p>Start the Helm dashboard and point it to the chart to install as a local-repository.</p>
 <ul>
 <li>
-<p><code>{#codeblock_ypk_frf_pzb}
-helm-dashboard --local-chart=sametime-premium-single-node-12.0.2.tgz</code></p>
+<p><code>helm-dashboard --local-chart=sametime-premium-single-node-12.0.2.tgz</code></p>
 </li>
 <li>
 <p>Windows:</p>
-<p><code>{#codeblock_w4z_grf_pzb}
-helm-dashboard.exe /local-chart=sametime-premium-single-node-12.0.2.tgz</code></p>
+<p><code>helm-dashboard.exe /local-chart=sametime-premium-single-node-12.0.2.tgz</code></p>
 </li>
 </ul>
 </li>

@@ -1,9 +1,5 @@
 # Disabling reports on Docker or Podman {#meeting_report_setting_docker .task}
 
-You can disallow gathering reports. When this value is turned on, the meeting owner doesn't have the ability to allow reports to be generated. When this value is turned off, the meeting owner can determine if reports about the meeting are generated and how the report is accessed.
-
-The Docker and Podman commands are similar. The only difference is that docker precedes the command when issued in a Docker environment and podman precedes the name in a Podman environment. Example commands used in the Sametime documentation are shown using Docker. For Podman, change docker to podman.
-
 1.  Edit the docker-compose.yml file.
 
 2.  Locate the `MEETING_REPORTS_DISABLED` variable.
@@ -27,5 +23,5 @@ The Docker and Podman commands are similar. The only difference is that docker p
         ```
 
 
-**Parent Topic:  **[Meetings](meetings_configuring.md)
+**Parent topic: **[Disabling the mobile notification limiter](t_disable_rate_limiter.md)
 

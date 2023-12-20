@@ -7,14 +7,14 @@ To manage the Sametime server on Docker, you use the docker-compose command.
 -   To start the Sametime server on Docker, run the following command.
 
     ``` {#codeblock_m4f_g1t_s5b}
-    docker-compose up -d
+    docker compose up -d
     
     ```
 
 -   To stop the Sametime server, run the following command.
 
     ``` {#codeblock_ixn_31t_s5b}
-    docker-compose down
+    docker compose down
     
     ```
 
@@ -37,5 +37,5 @@ On Kubernetes, scaling the pods can be used to start and stop the Sametime servi
     ```
 
 
-**Parent Topic:  **[Administering](administering.md)
+**Parent topic:   **[Administering](administering.md)
 

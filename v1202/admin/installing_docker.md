@@ -4,9 +4,9 @@ This section provides information on how to install Docker.
 
 All commands provided require running as ROOT or SUDO access. If not running as root user, preface all commands with sudo.
 
-1.  Before installing Docker Compose, make sure Docker Engine is installed either locally or remote, depending on the environment. On Linux systems, install the Docker Engine for your OS provided in [Install Docker Engine](https://docs.docker.com/engine/install/centos/) documentation. If you are following the Docker documentation to install the Docker Engine, docker-compose must also be installed.
+1.  Before installing Docker Compose, make sure Docker Engine is installed either locally or remote, depending on the environment. On Linux systems, install the Docker Engine for your OS provided in [Install Docker Engine](https://docs.docker.com/engine/install/centos/) documentation. If you are following the Docker documentation to install the Docker Engine, docker compose must also be installed.
 
-    The following is an example of the install Docker Engine on CentrOS based on Docker documentation to support docker-compose commands used when installing Sametime. The example is for demonstration only.
+    The following is an example of the install Docker Engine on CentrOS based on Docker documentation to support docker compose commands used when installing Sametime. The example is for demonstration only.
 
     **Note:** CentOS ships with Docker installed, but not the most recent which is required. Install supported Docker version. See the [HCL Sametime® System Requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0100619) for details.
 
@@ -106,5 +106,5 @@ All commands provided require running as ROOT or SUDO access. If not running as 
     ![](Images/docker_service.png)
 
 
-**Parent Topic:  **[Installing Sametime in a Docker or Podman environment](installation_sametime_docker.md)
+**Parent topic:   **[Installing Sametime in a Docker or Podman environment](installation_sametime_docker.md)
 

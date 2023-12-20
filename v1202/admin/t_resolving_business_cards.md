@@ -8,7 +8,7 @@ If the configuration is correct, next verify that the business card information 
 
 If the UserInfo servlet on the server is responding correctly, enable client-side tracing to determine what is happening on the client. Follow the instructions in [Logging and tracing on the Sametime Embedded and Connect clients](t_logging_tracing.md). For Web clients, review the Proxy service logs and capture a browser HTTP Archive \(HAR\) file to review the business card information received.
 
-**Parent Topic:  **[Troubleshooting](troubleshooting.md)
+**Parent topic:   **[Troubleshooting](troubleshooting.md)
 
 ## Enabling the UserInfo Debug trace on Docker {#task_cmx_2pp_r5b}
 
@@ -29,7 +29,7 @@ If the UserInfo servlet on the server is responding correctly, enable client-sid
 5.  Start the Sametime server to apply the changes and enable the trace.
 
     ``` {#codeblock_jck_klq_r5b}
-    docker-compose up -d
+    docker compose up -d
     ```
 
 

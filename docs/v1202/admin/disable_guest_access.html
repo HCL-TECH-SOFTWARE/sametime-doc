@@ -7578,31 +7578,34 @@
   </a>
 
 
-<h1 class="task" id="disable_guest_access">Disabling guest access</h1>
-<p>You can disable guest access and remove the option from the meeting attend page.</p>
+<h1 class="task" id="disable_guest_access">Preventing guest access</h1>
+<p>You can disallow guest access to meeting.</p>
+<p>There are two tasks to complete: turn off the meeting policy and meeting login prompt. The user receives a Guest not allowed for this meeting message.</p>
 <ol>
 <li>
-<p>Set the following policy to 0.</p>
-<div id="codeblock_q2z_hbf_lzb" class="highlight"><pre><span></span><code>policy - anonymous - im.meetingsEnabled = 0
-</code></pre></div>
+<p>Log into the Sametime Admin and open the Anonymous policy.</p>
+<p>Guests are assigned the Anonymous policy.</p>
 </li>
 <li>
-<p>Enter the following commands to remove guest access from the meeting attend page.</p>
+<p>Locate the Meeting section of the policy and turn off the Allow Sametime Meetings attribute.</p>
+</li>
+<li>
+<p>Update the configuration file to not allow a login prompt to display.</p>
 <ul>
 <li>
-<p>For Docker, in the .env file, specify the following setting:</p>
-<div id="codeblock_ytq_4bf_lzb" class="highlight"><pre><span></span><code>ENABLE_GUESTS=0
+<p>For Docker, in the .env file, specify the following:</p>
+<div id="codeblock_ytq_4bf_lzb" class="highlight"><pre><span></span><code>REACT_APP_ALLOW_GUEST_LOGIN=false 
 </code></pre></div>
 </li>
 <li>
-<p>For Kubernets, Specify the following setting in meetings-configmap.yaml</p>
-<div id="codeblock_tkp_rbf_lzb" class="highlight"><pre><span></span><code>ReactAppShowGuestLoginByDefault in meetings-configmap.yaml (helm/templates)
+<p>For Kubernetes, Specify the following setting in values.yaml file, specify the following:</p>
+<div id="codeblock_tkp_rbf_lzb" class="highlight"><pre><span></span><code>REACT_APP_ALLOW_GUEST_LOGIN:false 
 </code></pre></div>
 </li>
 </ul>
 </li>
 </ol>
-<p><strong>Parent Topic:  </strong><a href="sametime_meeting_administering.html">Managing Sametime Meetings</a></p>
+<p><strong>Parent topic: </strong><a href="sametime_meeting_administering.html">Managing Sametime Meetings</a></p>
 
 
 

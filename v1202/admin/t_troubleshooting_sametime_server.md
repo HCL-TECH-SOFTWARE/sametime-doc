@@ -47,7 +47,7 @@ The following image highlights the Meeting server connections and port. Ensure t
 -   Confirm that the user has the appropriate permissions.
 
     ```
-    docker-compose logs -f nginx
+    docker compose logs -f nginx
     ```
 
     If a Permission denied message is returned, the user doesn't have the appropriate permissions as shown in the following example.
