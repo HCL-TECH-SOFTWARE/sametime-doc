@@ -6,14 +6,14 @@ If you already have MongoDB installed and are upgrading to MongoDB 4.4 or to the
 
 The commands used during the installation process require running as ROOT or SUDO access. If not running as root user, preface all commands with sudo.
 
-**Note:** In the following steps, MongoDB version 4.4 is used as an example. If you are using a different version of MongoDB, refer to the MongoDB documentation for how to issue commands for the version that you are using.
+**Note:** In the following steps, MongoDB version 6.0 is used as an example. If you are using a different version of MongoDB, refer to the MongoDB documentation for how to issue commands for the version that you are using.
 
 1.  Create a repository file for YUM to install MongoDB. Use the VI command to create and edit the mongodb-org-4.4.repo file.
 
     ```
     
-    > cd /etc/yum.repos.d 
-    > vi mongodb-org-4.4.repo
+    cd /etc/yum.repos.d 
+    vi mongodb-org-4.4.repo
     ```
 
     **Note:** The vi command is a screen-oriented text editor originally created for the Unix operating system.
@@ -22,12 +22,12 @@ The commands used during the installation process require running as ROOT or SUD
 
     ``` {#codeblock_gsf_wq4_htb}
     
-    [mongodb-org-4.4] 
+    [mongodb-org-6.0] 
     name=MongoDB Repository 
-    baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.4/x86_64/ 
+    baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/6.0/x86_64/ 
     gpgcheck=1 
     enabled=1 
-    gpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc 
+    gpgkey=https://www.mongodb.org/static/pgp/server-6.0.asc 
     
      
     ```
@@ -69,7 +69,7 @@ The commands used during the installation process require running as ROOT or SUD
 5.  Execute YUM to install the MongoDB package.
 
     ``` {#codeblock_ebb_1qm_htb}
-    >yum install mongodb-org 
+    yum install mongodb-org 
     ```
 
     1.  Type y to confirm the download size.
@@ -97,19 +97,19 @@ The commands used during the installation process require running as ROOT or SUD
 7.  To start the MongoDB server, enter the command:
 
     ``` {#codeblock_ryl_krm_htb}
-    > service mongod start
+    service mongod start
     ```
 
     To stop the MongoDB server, enter the command:
 
     ``` {#codeblock_syl_krm_htb}
-    > service mongod stop
+    service mongod stop
     ```
 
     To verify the status of the MongoDB service, enter the command:
 
     ``` {#codeblock_tyl_krm_htb}
-    > systemctl status mongod
+    systemctl status mongod
     ```
 
     ![](Images/active_running.png)
