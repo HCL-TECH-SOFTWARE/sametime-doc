@@ -13,7 +13,7 @@ The commands used during the installation process require running as ROOT or SUD
     ```
     
     cd /etc/yum.repos.d 
-    vi mongodb-org-4.4.repo
+    vi mongodb-org-6.0.repo
     ```
 
     **Note:** The vi command is a screen-oriented text editor originally created for the Unix operating system.
