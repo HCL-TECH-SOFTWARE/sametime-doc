@@ -16,20 +16,7 @@ MongoDB security is enabled by default. Securing MongoDB is not required for Sam
       {
         user: "sametimeAdmin",
         pwd: "sametime", // or cleartext password
-        roles: [ { role: "userAdminAnyDatabase", db: "admin"}, 
-                               {role:"readWrite", db:"chatlogging"}, 
-                               {role:"dbAdmin",db:"chatlogging"},
-                               {role:"readWrite", db:"mobileOffline"}, 
-                               {role:"dbAdmin", db:"mobileOffline"}, 
-                               { role:"readWrite", db:"meeting"}, 
-                               {role:"dbAdmin", db:"meeting"}, 
-                               { role:"readWrite", db:"privacy"}, 
-                               {role:"dbAdmin", db:"privacy"},  
-                               { role:"readWrite", db:"userinfo"}, 
-                               {role:"dbAdmin", db:"userinfo"} 
-                       ] 
-                   }
-               )
+        roles: [ { role: "userAdminAnyDatabase", db: "admin"}, {role:"readWrite", db:"chatlogging"}, {role:"dbAdmin",db:"chatlogging"}, {role:"readWrite", db:"mobileOffline"}, {role:"dbAdmin", db:"mobileOffline"}, { role:"readWrite", db:"meeting"}, {role:"dbAdmin", db:"meeting"}, { role:"readWrite", db:"privacy"}, {role:"dbAdmin", db:"privacy"}, { role:"readWrite", db:"userinfo"}, {role:"dbAdmin", db:"userinfo"} ]})
     ```
 
     Ensure that passwords are random, long, and complex to prevent security breaches.
