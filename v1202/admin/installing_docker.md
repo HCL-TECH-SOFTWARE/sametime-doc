@@ -23,9 +23,7 @@ All commands provided require running as ROOT or SUDO access. If not running as 
         Then set up the stable repository.
 
         ``` {#codeblock_mv4_psr_2tb}
-        sudo yum-config-manager \ 
-            --add-repo \ 
-        https://download.docker.com/linux/centos/docker-ce.repo
+        sudo yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
         ```
 
         ![](Images/docker_package.png)
