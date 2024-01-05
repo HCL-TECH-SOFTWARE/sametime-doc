@@ -4,12 +4,6 @@ Each policy contains several sections.
 
 Policy attributes are group into the following sections:
 
--   Chat
--   Meetings
--   File transfer
--   Mobile
--   Administration
-
 -   **[Chat](adminui_policysection_chat.md)**  
 
 -   **[Meeting](adminui_policysection_meeting.md)**  
@@ -21,5 +15,5 @@ Policy attributes are group into the following sections:
 -   **[Administration](adminui_policysection_administration.md)**  
 
 
-**Parent Topic:  **[Managing policies](adminui_policy_manage.md)
+**Parent topic:   **[Managing policies](adminui_policy_manage.md)
 
