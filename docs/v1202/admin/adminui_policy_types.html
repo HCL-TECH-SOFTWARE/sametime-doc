@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adminui_policy_types" class="md-skip">
+        <a href="#policy-types" class="md-skip">
           Skip to content
         </a>
       
@@ -4556,10 +4556,6 @@
         
           
         
-          
-        
-          
-        
       
       
         
@@ -4862,34 +4858,6 @@
     <li class="md-nav__item">
       <a href="adminui_policy_view_active.html" class="md-nav__link">
         Finding active policies associated with user or group
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adminui_policy_view_assign.html" class="md-nav__link">
-        Viewing active policy assignments
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adminui_policy_troubleshoot.html" class="md-nav__link">
-        Troubleshooting policies
       </a>
     </li>
   
@@ -7578,7 +7546,7 @@
   </a>
 
 
-<h1 class="concept" id="adminui_policy_types">Policy types</h1>
+<h1 id="policy-types">Policy types</h1>
 <p>There are three types of policies. The Anonymous and Default policies are predefined and cannot be deleted. There is only one of these policy types. All other policies are considered custom policies. There can be many of this type of policy.</p>
 <p>The anonymous user policy and the default user policy are automatically assigned.</p>
 <table>
@@ -7591,28 +7559,43 @@
 <tbody>
 <tr>
 <td>Anonymous</td>
-<td>-   Users who have not authenticated are assigned the anonymous policy by default.</td>
+<td>Users who have not authenticated are assigned the anonymous policy by default.</td>
 </tr>
 <tr>
-<td>-   The anonymous policy cannot be deleted but can be edited if you want to allow or restrict access to certain Sametime features for unauthenticated users.</td>
 <td></td>
+<td>The anonymous policy cannot be deleted but can be edited if you want to allow or restrict access to certain Sametime features for unauthenticated users.</td>
 </tr>
 <tr>
-<td>-   The anonymous policy always has the lowest policy weight (0) and this weight cannot be changed.</td>
 <td></td>
+<td>The anonymous policy always has the lowest policy weight (0) and this weight cannot be changed.</td>
+</tr>
+<tr>
+<td>Default</td>
+<td>Users who have authenticated are assigned the default policy if no other policy can be found for that user.</td>
+</tr>
+<tr>
+<td></td>
+<td>The default policy can be inherited or assigned.</td>
+</tr>
+<tr>
+<td></td>
+<td>The default policy cannot be deleted but can be edited if you want to allow or restrict access to certain Sametime features.</td>
+</tr>
+<tr>
+<td></td>
+<td>The default policy has the next lowest policy weight (1) after the anonymous policy and this weight cannot be changed.</td>
+</tr>
+<tr>
+<td>custom policies</td>
+<td>Custom policies can be designed for specific users or groups to allow or restrict access to certain Sametime features.</td>
+</tr>
+<tr>
+<td></td>
+<td>When you create a new policy, the default policy settings are applied as the base settings of the new policy. You can update these settings.</td>
 </tr>
 </tbody>
 </table>
-<p>|
-|Default|-   Users who have authenticated are assigned the default policy if no other policy can be found for that user.
--   The default policy can be inherited or assigned.
--   The default policy cannot be deleted but can be edited if you want to allow or restrict access to certain Sametime features.
--   The default policy has the next lowest policy weight (1) after the anonymous policy and this weight cannot be changed.</p>
-<p>|
-|custom policies|-   Custom policies can be designed for specific users or groups to allow or restrict access to certain Sametime features.
--   When you create a new policy, the default policy settings are applied as the base settings of the new policy. You can update these settings.</p>
-<p>|</p>
-<p><strong>Parent Topic:  </strong><a href="adminui_policy_manage.html">Managing policies</a></p>
+<p><strong>Parent topic:   </strong><a href="adminui_policy_manage.html">Managing policies</a></p>
 
 
 

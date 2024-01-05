@@ -333,8 +333,8 @@ nav:
           - Modifying a policy: admin/adminui_policy_modify.md
           - Assigning users and groups to policies: admin/adminui_policy_assign.md
           - Finding active policies associated with user or group: admin/adminui_policy_view_active.md
-          - Viewing active policy assignments: admin/adminui_policy_view_assign.md
-          - Troubleshooting policies: admin/adminui_policy_troubleshoot.md
+#          - Viewing active policy assignments: admin/adminui_policy_view_assign.md
+#         - Troubleshooting policies: admin/adminui_policy_troubleshoot.md
         - Monitoring your meeting and chat metrics with Grafana:
           - admin/adminui_grafana_overview.md
           - Configuring Grafana on Docker and Podman: admin/adminui_grafana_config_docker.md

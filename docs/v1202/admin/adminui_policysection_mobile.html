@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adminui_policysection_mobile" class="md-skip">
+        <a href="#mobile" class="md-skip">
           Skip to content
         </a>
       
@@ -4556,10 +4556,6 @@
         
           
         
-          
-        
-          
-        
       
       
         
@@ -4864,34 +4860,6 @@
     <li class="md-nav__item">
       <a href="adminui_policy_view_active.html" class="md-nav__link">
         Finding active policies associated with user or group
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adminui_policy_view_assign.html" class="md-nav__link">
-        Viewing active policy assignments
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adminui_policy_troubleshoot.html" class="md-nav__link">
-        Troubleshooting policies
       </a>
     </li>
   
@@ -7580,7 +7548,7 @@
   </a>
 
 
-<h1 class="concept" id="adminui_policysection_mobile">Mobile</h1>
+<h1 id="mobile">Mobile</h1>
 <table>
 <thead>
 <tr>
@@ -7602,23 +7570,52 @@
 </tr>
 <tr>
 <td>Disable password save</td>
-<td>User cannot save password on their mobile device. Default value is on.To save your password for the next login, retain the default setting of this policy and enable Remember Password from the community settings. Turn this setting on to require users to enter their password at every login. When turned on, the client removes the password regardless if Remember Password is enabled.</td>
+<td>User cannot save password on their mobile device. Default value is on.  To save your password for the next login, retain the default setting of this policy and enable Remember Password from the community settings. Turn this setting on to require users to enter their password at every login. When turned on, the client removes the password regardless if Remember Password is enabled.</td>
+<td>im.mobile.disablePasswordSave</td>
+</tr>
+<tr>
 <td></td>
+<td>This policy also applies to meeting passwords. For safety reasons, Apple restricts users from texting while driving. The ability to save meeting passwords allows CarPlay users to safely enter meeting rooms while driving. When turned off, the Save Password switch is displayed on the password entry dialog when joining password-protected meetings. When turned on, the Save Password switch is disabled. In the event that a password has been saved prior to changing the default settings, then the password is stored in a secure storage.</td>
+<td></td>
+</tr>
+<tr>
+<td>Allow mobile user to send files</td>
+<td>By default, you can upload files in a one-to-one chat. This policy only applies to the Choose from Files menu item in the chat window. Leave this setting on with Policy id = 1 to allow users to upload files in a one-to-one chat. Uploading files in a group chat will also require Policy id = <code>im.allowTransferringFilesToNwayParticipants</code> to be turned on.  Sending photos from either the camera or the photos app is controlled with Policy id = <code>im.mobile.allowSendImages</code> which is discussed below.</td>
+<td><code>im.mobile.allowSendFiles</code></td>
+</tr>
+<tr>
+<td>User can share files with other apps</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>Allow mobile user to send images</td>
+<td>This policy must be turned on to allow images from the device camera or photos app to be sent as inline images in a chat. It does not prevent image files such as PNG or JPG images from being sent through the Choose from Files menu. Default is on.</td>
+<td>m.mobile.allowSendImages</td>
+</tr>
+<tr>
+<td>Allow mobile user to share chat images with other apps</td>
+<td>By default, you can share images from the chat. Turn this setting off to restrict users from sharing images from the chat.</td>
+<td>m.mobile.allowShareChatImages</td>
+</tr>
+<tr>
+<td>Restrict copy/paste from chat</td>
+<td>Prevent users from copying clipboard data in to other apps.</td>
+<td> </td>
+</tr>
+<tr>
+<td>Enable URL preview</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td>User can export their Sametime contact information to a device contact application on their device</td>
+<td>Applied only to Android devices.</td>
+<td> </td>
 </tr>
 </tbody>
 </table>
-<p>This policy also applies to meeting passwords. For safety reasons, Apple restricts users from texting while driving. The ability to save meeting passwords allows CarPlay users to safely enter meeting rooms while driving. When turned off, the Save Password switch is displayed on the password entry dialog when joining password-protected meetings. When turned on, the Save Password switch is disabled. In the event that a password has been saved prior to changing the default settings, then the password is stored in a secure storage.</p>
-<p>|im.mobile.disablePasswordSave|
-|Allow mobile user to send files|By default, you can upload files in a one-to-one chat. This policy only applies to the Choose from Files menu item in the chat window. Leave this setting on with Policy id = 1 to allow users to upload files in a one-to-one chat. Uploading files in a group chat will also require Policy id = im.allowTransferringFilesToNwayParticipants to be turned on.Sending photos from either the camera or the photos app is controlled with Policy id = im.mobile.allowSendImages which is discussed below.</p>
-<p>|im.mobile.allowSendFiles|
-|User can share files with other apps| | |
-|Allow mobile user to send images|This policy must be turned on to allow images from the device camera or photos app to be sent as inline images in a chat. It does not prevent image files such as PNG or JPG images from being sent through the Choose from Files menu. Default is on.|m.mobile.allowSendImages|
-|Allow mobile user to share chat images with other apps|By default, you can share images from the chat. Turn this setting off to restrict users from sharing images from the chat.|m.mobile.allowShareChatImages|
-|Restrict copy/paste from chat|Prevent users from copying clipboard data in to other apps.| |
-|Enable URL preview| | |
-|User can export their Sametime contact information to a device contact application on their device|Applied only to Android devices.</p>
-<p>| |</p>
-<p><strong>Parent Topic:  </strong><a href="adminui_policy_sections.html">Policy sections</a></p>
+<p><strong>Parent topic:   </strong><a href="adminui_policy_sections.html">Policy sections</a></p>
 
 
 

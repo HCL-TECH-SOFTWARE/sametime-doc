@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#adminui_policy_weight" class="md-skip">
+        <a href="#policy-weight" class="md-skip">
           Skip to content
         </a>
       
@@ -4556,10 +4556,6 @@
         
           
         
-          
-        
-          
-        
       
       
         
@@ -4629,28 +4625,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#section_n5p_mcw_tyb" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     Examples
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example_gdv_wdw_tyb" class="md-nav__link">
+  <a href="#nested-groups-inherit-policies" class="md-nav__link">
     Nested groups inherit policies
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example_odv_wdw_tyb" class="md-nav__link">
+  <a href="#highest-policy-weight-breaks-ties" class="md-nav__link">
     Highest policy weight breaks ties
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example_wdv_wdw_tyb" class="md-nav__link">
+  <a href="#directly-assigned-policies-have-priority-over-inherited-policies-regardless-of-weight" class="md-nav__link">
     Directly assigned policies have priority over inherited policies, regardless of weight
   </a>
   
@@ -4923,34 +4919,6 @@
     <li class="md-nav__item">
       <a href="adminui_policy_view_active.html" class="md-nav__link">
         Finding active policies associated with user or group
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adminui_policy_view_assign.html" class="md-nav__link">
-        Viewing active policy assignments
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="adminui_policy_troubleshoot.html" class="md-nav__link">
-        Troubleshooting policies
       </a>
     </li>
   
@@ -7635,28 +7603,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#section_n5p_mcw_tyb" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     Examples
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example_gdv_wdw_tyb" class="md-nav__link">
+  <a href="#nested-groups-inherit-policies" class="md-nav__link">
     Nested groups inherit policies
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example_odv_wdw_tyb" class="md-nav__link">
+  <a href="#highest-policy-weight-breaks-ties" class="md-nav__link">
     Highest policy weight breaks ties
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#example_wdv_wdw_tyb" class="md-nav__link">
+  <a href="#directly-assigned-policies-have-priority-over-inherited-policies-regardless-of-weight" class="md-nav__link">
     Directly assigned policies have priority over inherited policies, regardless of weight
   </a>
   
@@ -7682,7 +7650,7 @@
   </a>
 
 
-<h1 class="concept" id="adminui_policy_weight">Policy weight</h1>
+<h1 id="policy-weight">Policy weight</h1>
 <p>Policy weights and group nesting levels are used to determine which policies take precedence over the attributes of other policies.</p>
 <p>Policies with a higher weight take precedence over those with a lower weight. You can change the weight of policies to control their order of precedence by moving them up and down within the policy list. The policy weights of the anonymous and default policies, which are the lowest (0) and next-lowest (1) weights, cannot be changed.</p>
 <p>For a user or group that is assigned two or more policies, the policy with the highest weight is used. For authenticated users, Sametime searches for an exact ID match, and then applies the highest weighted policy.</p>
@@ -7698,7 +7666,7 @@
 <li>If a group inherits a higher-level policy and is also assigned a policy directly, the directly assigned policy takes precedence over the inherited policy, regardless of either policy's weight.</li>
 </ul>
 <p><strong>Note:</strong> Entering a large number as the maximum nested group depth can have an impact on performance.</p>
-<h2 class="section" id="section_n5p_mcw_tyb">Examples</h2>
+<h2 id="examples">Examples</h2>
 <p>In the following examples, the Renovations company has assigned employees to the following user groups. Notice that many of the groups have other groups nested within them.</p>
 <table>
 <thead>
@@ -7710,31 +7678,53 @@
 <tbody>
 <tr>
 <td>Renovations Group</td>
-<td>-   George</td>
+<td>George</td>
 </tr>
 <tr>
-<td>-   Corporate Communications Group</td>
 <td></td>
+<td>Corporate Communications Group</td>
+</tr>
+<tr>
+<td>Corporate Communications Group</td>
+<td>Fernando</td>
+</tr>
+<tr>
+<td></td>
+<td>Marketing &amp; Merchandising Group</td>
+</tr>
+<tr>
+<td>Marketing &amp; Merchandising Group</td>
+<td>Betty</td>
+</tr>
+<tr>
+<td></td>
+<td>Marketing Group</td>
+</tr>
+<tr>
+<td>Marketing Group</td>
+<td>Samantha</td>
+</tr>
+<tr>
+<td></td>
+<td>Sales Group</td>
+</tr>
+<tr>
+<td>Sales Group</td>
+<td>Anne</td>
+</tr>
+<tr>
+<td></td>
+<td>Brand Specialist Group</td>
+</tr>
+<tr>
+<td>Brand Specialist Group</td>
+<td>Ted</td>
 </tr>
 </tbody>
 </table>
-<p>|
-|Corporate Communications Group|-   Fernando
--   Marketing &amp; Merchandising Group</p>
-<p>|
-|Marketing &amp; Merchandising Group|-   Betty
--   Marketing Group</p>
-<p>|
-|Marketing Group|-   Samantha
--   Sales Group</p>
-<p>|
-|Sales Group|-   Anne
--   Brand Specialist Group</p>
-<p>|
-|Brand Specialist Group|Ted|</p>
 <p><img alt="" src="Images/policies_groups.jpg" /></p>
 <p>The Renovations company has created policies to control which user groups have access to different features in Sametime. The actual set of features available to each user depends on how these policies are weighted and nested.</p>
-<h2 class="example" id="example_gdv_wdw_tyb">Nested groups inherit policies</h2>
+<h2 id="nested-groups-inherit-policies">Nested groups inherit policies</h2>
 <p>Policy A is assigned to Renovations Group. The nesting level is set to the default 4.</p>
 <p><img alt="" src="Images/George.jpg" /> George is assigned to Policy A because he belongs directly to the Renovations Group.</p>
 <p><img alt="" src="Images/Fernando.jpg" /> Fernando is assigned to Policy A because his group falls within the group search nesting limit of 4 levels from the Renovations Group.</p>
@@ -7743,7 +7733,7 @@
 <p><img alt="" src="Images/Anne.jpg" /> Anne is assigned to the default policy because her user group is nested more than the defined limit of 4 levels from the Renovations Group.</p>
 <p><img alt="" src="Images/Ted.jpg" /> Ted is assigned to the default policy because his user group is also nested more than the defined limit of 4 levels from the Renovations Group.</p>
 <p><img alt="" src="Images/policies_groups_ex1.jpg" /></p>
-<h2 class="example" id="example_odv_wdw_tyb">Highest policy weight breaks ties</h2>
+<h2 id="highest-policy-weight-breaks-ties">Highest policy weight breaks ties</h2>
 <p>Policy A has a weight of 3 and is assigned to Renovations Group. Policy B has a weight of 2 and is also assigned to Renovations group. The nesting level is set to the default of 4.</p>
 <p><img alt="" src="Images/George.jpg" /> George is assigned to Policy A because he belongs directly to the Renovations Group and Policy A has a higher weight.</p>
 <p><img alt="" src="Images/Fernando.jpg" /> Fernando is assigned to Policy A because his group falls within the group search nesting limit of 4 levels from the Renovations Group.</p>
@@ -7752,7 +7742,7 @@
 <p><img alt="" src="Images/Anne.jpg" /> Anne is assigned to the default policy because her user group is nested more than the defined limit of 4 levels from the Renovations Group.</p>
 <p><img alt="" src="Images/Ted.jpg" /> Ted is assigned to the default policy because his user group is also nested more than the defined limit of 4 levels from the Renovations Group.</p>
 <p><img alt="Diagram showing that higher weighted policies take precedence over lower weighted policies" src="Images/policies_groups_ex2.jpg" /></p>
-<h2 class="example" id="example_wdv_wdw_tyb">Directly assigned policies have priority over inherited policies, regardless of weight</h2>
+<h2 id="directly-assigned-policies-have-priority-over-inherited-policies-regardless-of-weight">Directly assigned policies have priority over inherited policies, regardless of weight</h2>
 <p>Policy A has a weight of 2 and is assigned to the Corporate Communications Group. Policy B has a weight of 3 and is assigned to the Renovations Group. The nesting level is set to the default of 4.</p>
 <p><img alt="" src="Images/George.jpg" /> George is assigned to Policy A because he belongs directly to the Renovations Group.</p>
 <p><img alt="" src="Images/Fernando.jpg" /> Fernando is assigned to Policy A because he belongs directly to the Corporate Communications Group and Policy A has been directly assigned to the Corporate Communications Group.</p>

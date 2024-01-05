@@ -1,4 +1,4 @@
-# Managing policies {#adminui_policiy_manage .concept}
+# Managing policies
 
 Sametime policies allow administrators to control user access to features.
 
@@ -6,11 +6,14 @@ Two predefined policies are automatically assigned to users. You can also create
 
 Policies are only applied from the primary Sametime community defined in the client. Additional server communities' policies are not pushed down to the users' desktops. A user's primary Sametime community is the first community listed in their Sametime client Server Communities Properties settings.
 
-To manage Sametime policies, you need access to the Sametime Admin. After accessing Sametime Admin, click the **Manage Policy icon** on the left side of the window. ![Manage Policy window](Images/adminui_managepolicy.png)
+To manage Sametime policies, you need access to the Sametime Admin. After accessing Sametime Admin, click the **Manage Policy icon** on the left side of the window.
+
+![Manage Policy window](Images/adminui_managepolicy.png)
 
 From the Manage Policies window, you can create, assign, and view policy assignments, and more using the icons under **Actions**. To the right of each policy is the policy weight followed by actions. To know more about a policy, click the policy name.
 
 ![Graphic showing the task icons under Actions for policy management. Actions include edit, delete, copy, and assign.](Images/icons_policy_actions.png)
+
 
 To know more about a policy, click the policy name. The View/Edit Policy window opens where you can view and change features related to the policy.
 
@@ -35,5 +38,5 @@ You can view policies assigned to a user or group.
 -   **[Troubleshooting policies](adminui_policy_troubleshoot.md)**  
 
 
-**Parent Topic:  **[Administering](administering.md)
+**Parent topic:   **[Administering](administering.md)
 

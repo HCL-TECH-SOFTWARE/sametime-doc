@@ -1,4 +1,4 @@
-# Policy weight {#adminui_policy_weight .concept}
+# Policy weight 
 
 Policy weights and group nesting levels are used to determine which policies take precedence over the attributes of other policies.
 
@@ -20,39 +20,29 @@ You can configure how Sametime considers nested groups when it applies policies 
 
 **Note:** Entering a large number as the maximum nested group depth can have an impact on performance.
 
-## Examples {#section_n5p_mcw_tyb .section}
+## Examples 
 
 In the following examples, the Renovations company has assigned employees to the following user groups. Notice that many of the groups have other groups nested within them.
 
 |Group name|Members|
 |----------|-------|
-|Renovations Group|-   George
--   Corporate Communications Group
-
-|
-|Corporate Communications Group|-   Fernando
--   Marketing & Merchandising Group
-
-|
-|Marketing & Merchandising Group|-   Betty
--   Marketing Group
-
-|
-|Marketing Group|-   Samantha
--   Sales Group
-
-|
-|Sales Group|-   Anne
--   Brand Specialist Group
-
-|
+|Renovations Group|    George|
+| | Corporate Communications Group|
+|Corporate Communications Group| Fernando|
+| | Marketing & Merchandising Group|
+|Marketing & Merchandising Group| Betty|
+| | Marketing Group|
+| Marketing Group| Samantha|
+| | Sales Group|
+|Sales Group| Anne|
+| | Brand Specialist Group|
 |Brand Specialist Group|Ted|
 
 ![](Images/policies_groups.jpg)
 
 The Renovations company has created policies to control which user groups have access to different features in Sametime. The actual set of features available to each user depends on how these policies are weighted and nested.
 
-## Nested groups inherit policies {#example_gdv_wdw_tyb .example}
+## Nested groups inherit policies 
 
 Policy A is assigned to Renovations Group. The nesting level is set to the default 4.
 
@@ -70,7 +60,7 @@ Policy A is assigned to Renovations Group. The nesting level is set to the defau
 
 ![](Images/policies_groups_ex1.jpg)
 
-## Highest policy weight breaks ties {#example_odv_wdw_tyb .example}
+## Highest policy weight breaks ties
 
 Policy A has a weight of 3 and is assigned to Renovations Group. Policy B has a weight of 2 and is also assigned to Renovations group. The nesting level is set to the default of 4.
 
@@ -88,7 +78,7 @@ Policy A has a weight of 3 and is assigned to Renovations Group. Policy B has a 
 
 ![Diagram showing that higher weighted policies take precedence over lower weighted policies](Images/policies_groups_ex2.jpg)
 
-## Directly assigned policies have priority over inherited policies, regardless of weight {#example_wdv_wdw_tyb .example}
+## Directly assigned policies have priority over inherited policies, regardless of weight 
 
 Policy A has a weight of 2 and is assigned to the Corporate Communications Group. Policy B has a weight of 3 and is assigned to the Renovations Group. The nesting level is set to the default of 4.
 
