@@ -1,17 +1,24 @@
-# Sametime Advanced preferences \(Sametime 9.0.1 only\) {#config_client_stadv_pref .concept}
+# Sametime Advanced preferences \(Sametime 9.0.1 only\) 
 
 These settings only apply to environments that include the Sametime 9.0.1 Advanced Server.
 
 The following table lists the preferences that are available for the HCL® Sametime® Advanced client. These preferences are set in the `plugin_customization.ini` file.
+
+
+Table 1. Global Preferences - com.ibm.collaboration.realtime
 
 |Attribute|Variable type|Description|
 |---------|-------------|-----------|
 |enableAdvanced|Boolean \(default value is false\)|When the value is set to true, the Sametime Advanced plug-ins installed with the client become active.|
 |enableInstantShare|Boolean \(default value is false\)|If enableAdvanced is set to false, but the value of enableInstantShare is set to true, the instant share feature is available. Otherwise, the value of enableInstantShare is ignored.|
 
+Table 2. Sametime Advanced Preferences - com.ibm.collaboration.realtime.persistentChat
+
 |Attribute|Variable type|Description|
 |---------|-------------|-----------|
 |showAdvancedVersioningAlert|Boolean|Suppress client version warnings when accessing a Sametime 9.0 \(or higher\) server from an older Connect or Embedded client.|
+
+Table 3. Broadcast and Persistent Chat Preferences - com.ibm.collaboration.realtime.bcs
 
 |Attribute|Variable type|Description|
 |---------|-------------|-----------|
@@ -27,9 +34,7 @@ The following table lists the preferences that are available for the HCL® Samet
 |proxyHost|String|Type the proxy IP address or host name if you are using a HTTP proxy, otherwise leave it blank.|
 |proxyPort|String|Type the HTTP proxy port to which you are connecting.|
 |proxyUserName|String|Type the user name if the HTTP proxy requires one for authentication; otherwise leave it blank.|
-|reverseProxyBaseURL|String|Type the reverse proxy base URL to use if connecting through a reverse proxy. For example: http://mycompany.example.com/mycontextLeave blank otherwise.
-
-|
+|reverseProxyBaseURL|String|Type the reverse proxy base URL to use if connecting through a reverse proxy. For example: http://mycompany.example.com/mycontext Leave blank otherwise.|
 |reverseProxyUserName|String|Enter the reverse proxy user name if the proxy is authenticating. Leave blank if you are not using reverse proxies.|
 |jmsProtocol|String|Indicate whether the client connects with a secure connection using the Security Secure Sockets Layer \(SSL\) or not. The default is disthub \(to connect without SSL\). Enter disthubs to connect with SSL.|
 |liveNameResolveTimeout|String \(the default is 10000 milliseconds\)|Time allowed in milliseconds for awareness names to resolve. The default is 10000.|
@@ -48,9 +53,11 @@ The following table lists the preferences that are available for the HCL® Samet
 |showToolTip|Boolean \(default value is true\)|Displays the description associated with a chat room when the user mouses over the chat room name.|
 |updateInterval|String \(default value is 600000 milliseconds, or 10 minutes\)|Specifies the wait \(in milliseconds\) before chat room data is refreshed. You can improve server performance by refreshing less frequently.|
 
+Table 4. Community Preferences - com.ibm.collaboration.community
+
 |Attribute|Variable type|Description|
 |---------|-------------|-----------|
 |loginTokenRefreshInterval|String \(default value is 900000 milliseconds, or 15 minutes\)|LTPA token timeout in seconds. Best practice is to set this value to 5 minutes less than the token expiration time configured on the WebSphere server hosting Sametime Advanced, and on the Community Server. The value should be specified in milliseconds. For example, if the server-side token expiration timeout is 24 hours, configure loginTokenRefreshInterval=86100000 \(which is 23 hours and 55 minutes\) on the client.|
 
-**Parent Topic:  **[Sametime client preferences](config_client_pref_tables.md)
+**Parent topic:   **[Sametime client preferences](config_client_pref_tables.md)
 

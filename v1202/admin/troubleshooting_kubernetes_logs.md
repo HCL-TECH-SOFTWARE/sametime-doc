@@ -15,7 +15,7 @@ Some pods have multiple containers and you can specify gathering the log for the
     ``` {#codeblock_rjf_ydp_ywb}
     
     NAME			        READY    STATUS    RESTARTS        AGE
-    activity-5b75df6f6b-z98xs	 1/1     Running    0              25d
+    activity-5b75df6f6b-z98xs	     1/1     Running    0              25d
     app-registry-7766fddd94-qbvsk    1/1     Running    0              25d
     auth-c6d8457cb-9j9z7             1/1     Running    0              24d
     backgrounds-cb8966646-wtvqs      1/1     Running    0              25d

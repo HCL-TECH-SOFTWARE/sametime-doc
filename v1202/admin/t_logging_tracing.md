@@ -17,6 +17,7 @@ Trace logs are stored in a workspace folder on the user's local hard drive or a 
         -   Sametime Connect Client `/Users/user_name/Library/Application Support/HCL Sametime Data/.config/rcpinstall.properties`
         -   Sametime Embedded Client `/Users/user_name/Library/Application Support/HCL Notes Data/Expeditor/Applications/.config/rcpinstall.properties`
         -   Sametime Embedded Client \(multi user install path\) `C:\users\user_name\AppData\Local\HCL\Notes\Data\workspace\.config\rcpinstall.properties`
+		
 3.  Add the following lines to the end of the file, depending on what kind of issue you're diagnosing.
 
     -   General client issues `com.ibm.collaboration.realtime.level=FINE`
@@ -103,7 +104,7 @@ Trace logs are stored in a workspace folder on the user's local hard drive or a 
 
 7.  You can include logs and other data into a compressed ifle to send to support for diagnostics.
 
-    1.  In the Notes embedded client, click **Help** \> **Support** \> **Collect Support Data**. In the stand-alone Connect Client, click**Gear icon** \> **Help** \> **Support** \> **Collect Support Data**.
+    1.  In the Notes embedded client, click **Help** \> **Support** \> **Collect Support Data**. In the stand-alone Connect Client, click **Gear icon** \> **Help** \> **Support** \> **Collect Support Data**.
 
     2.  Select **Enable Customized Tracing**, and then click **Next**.
 
@@ -114,9 +115,9 @@ Trace logs are stored in a workspace folder on the user's local hard drive or a 
         The resulting file is located
 
         -   Windows
-        -   -   Standalone Client: C:\\Users\\user\_name\\AppData\\Roaming\\HCL\\Sametime\\autopd
--   Notes Embedded single user path: C:\\Program Files\\HCL\\Notes\\Data\\workspace\\autopd
--   Notes Embedded multi user path: C:\\users\\user\_name\\AppData\\Local\\HCL\\Notes\\Data\\workspace\\.autopd
+            -   Standalone Client: C:\\Users\\user\_name\\AppData\\Roaming\\HCL\\Sametime\\autopd
+            -   Notes Embedded single user path: C:\\Program Files\\HCL\\Notes\\Data\\workspace\\autopd
+            -   Notes Embedded multi user path: C:\\users\\user\_name\\AppData\\Local\\HCL\\Notes\\Data\\workspace\\.autopd
         -   Mac OS
             -   Standalone Client: /Users/user\_name/Library/Application Support/HCL Sametime Data/autopd
             -   Notes Embedded: /Users/user\_name/Library/Application Support/HCL

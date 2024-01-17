@@ -8,7 +8,7 @@ In Sametime 9.x, 10.x and 11.x, vpuserinfo.nsf stores all the contact list for u
 
     You must run this command from the Sametime server's program directory where the sametime.ini and notes.ini files exist.
 
-2.  For Linux, run the following commands to setup the environment. Otherwise, skip to the nex step. and perform the migration task.
+2.  For Linux, run the following commands to setup the environment. Otherwise, skip to the nex step and perform the migration task.
 
     ``` {#codeblock_lq5_bdr_3xb}
     source ./setenv.sh

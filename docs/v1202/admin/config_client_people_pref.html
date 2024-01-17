@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config_client_people_pref" class="md-skip">
+        <a href="#people-preferences" class="md-skip">
           Skip to content
         </a>
       
@@ -7550,7 +7550,7 @@
   </a>
 
 
-<h1 class="concept" id="config_client_people_pref">People preferences</h1>
+<h1 id="people-preferences">People preferences</h1>
 <p>The following table lists the people preferences for the HCL® Sametime® Connect Client and Sametime Embedded Client for Notes®.</p>
 <table>
 <thead>
@@ -7589,20 +7589,41 @@
 <tr>
 <td>userInfoReplacesDefaultDisplayName</td>
 <td>Boolean. Default is false.</td>
-<td>When set to true, contact names refresh automatically with the contact's business card name. When this preference is enabled, users can also update contact names manually. They can update one name by right-clicking a contact name and choosing <strong>Refresh Person Info</strong>. They can also update all names by selecting <strong>Tools</strong> > <strong>Refresh Contact Nicknames</strong>.For the preference to work, the person attributes in the LDAP directory used with the Sametime Community Server must meet the following requirements. Verify or change these settings by using the Sametime System Console to administer the Sametime Community Server.</td>
+<td>When set to true, contact names refresh automatically with the contact's business card name. When this preference is enabled, users can also update contact names manually. They can update one name by right-clicking a contact name and choosing <strong>Refresh Person Info</strong>. They can also update all names by selecting <strong>Tools</strong> > <strong>Refresh Contact Nicknames</strong>.  For the preference to work, the person attributes in the LDAP directory used with the Sametime Community Server must meet the following requirements. Verify or change these settings by using the Sametime System Console to administer the Sametime Community Server.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
 <td></td>
+<td></td>
+<td>Community Services tab - The attribute used for the internal user ID must be different from the attribute used for the person's display name.</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>Business card tab - The attribute used for the business card name must be the same as the attribute used for the person's display name.</td>
+<td></td>
+</tr>
+<tr>
+<td>refreshNicknamesOnFirstStartup</td>
+<td>Boolean. Default is false.</td>
+<td>Determines whether clients automatically replace all existing display names and nicknames in the contact list with business card names after clients start up and log in. You can set this preference when the <code>userInfoReplaces DefaultDisplayName</code> preference is enabled.</td>
+<td>8.5.2 and later</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><strong>Tip:</strong> To prevent the task from running each time you install on a new computer or reset the workspace, use managed preferences to set this preference temporarily for all new and upgrading clients. Disable the preference after all clients have run once.</td>
+<td></td>
+</tr>
+<tr>
+<td>bizCardShowExtendedStatus</td>
+<td>Boolean. Default is false.</td>
+<td>Determines whether the extended status, such as phone call status, is displayed in the business card. The default setting is not to display all of the extended statuses in business card.</td>
+<td>9.0 and later</td>
 </tr>
 </tbody>
 </table>
-<ul>
-<li>Community Services tab - The attribute used for the internal user ID must be different from the attribute used for the person's display name.</li>
-<li>Business card tab - The attribute used for the business card name must be the same as the attribute used for the person's display name.</li>
-</ul>
-<p>|7.5.1 and later|
-|refreshNicknamesOnFirstStartup|Boolean. Default is false.|Determines whether clients automatically replace all existing display names and nicknames in the contact list with business card names after clients start up and log in. You can set this preference when the userInfoReplaces DefaultDisplayName preference is enabled.</p>
-<p><strong>Tip:</strong> To prevent the task from running each time you install on a new computer or reset the workspace, use managed preferences to set this preference temporarily for all new and upgrading clients. Disable the preference after all clients have run once.</p>
-<p>|8.5.2 and later|
-|bizCardShowExtendedStatus|Boolean. Default is false.|Determines whether the extended status, such as phone call status, is displayed in the business card. The default setting is not to display all of the extended statuses in business card.|9.0 and later|</p>
 <p><strong>Parent Topic:  </strong><a href="config_client_pref_tables.html">Sametime client preferences</a></p>
 
 
@@ -7695,7 +7716,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>

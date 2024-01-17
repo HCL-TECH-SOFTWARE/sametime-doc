@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config_client_login_pref" class="md-skip">
+        <a href="#login-preferences" class="md-skip">
           Skip to content
         </a>
       
@@ -7550,8 +7550,9 @@
   </a>
 
 
-<h1 class="concept" id="config_client_login_pref">Login preferences</h1>
+<h1 id="login-preferences">Login preferences</h1>
 <p>The following table lists the login preferences for the HCL® Sametime® Connect Client and Sametime Embedded Client for Notes®.</p>
+<p>Table 1. Login Preferences - com.ibm.collaboration.realtime.login  release 7.5.x and later</p>
 <table>
 <thead>
 <tr>
@@ -7575,35 +7576,98 @@
 <td>7.5.1 and later</td>
 </tr>
 <tr>
-<td>autoReconnectAttempt</td>
+<td>autoReconnectAttemptInterval</td>
+<td>long. Default is 20000.</td>
+<td>Specifies the interval in milliseconds at which the client will attempt to reconnect.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>autoReconnectAttempts</td>
+<td>long. Default is -1.</td>
+<td>Specifies the number of attempts to reconnect. The value -1 means to never stop trying.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>verifyConnectionPriorToLogin</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to verify that a network connection is available before logging in.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>notifyWhenNetConnLost</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to alert the user when the network connection is lost.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>alwaysLoggedIn</td>
+<td>Boolean</td>
+<td>Keeps "Automatically log in" and "Remember password" disabled and checked and disables all "Log out" menu items.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>disableExit</td>
+<td>Boolean</td>
+<td>Keeps the "Exit" menu items disabled.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>disableHostName</td>
+<td>Boolean</td>
+<td>Sets edit state of host name text field on login dialog.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>displayResetUserBtn</td>
+<td>Boolean</td>
+<td>Makes the reset button show or not on the login dialog. If the preference is set to true and</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
 <td></td>
 <td></td>
+<td>`com.ibm.collaboration.</td>
 <td></td>
 </tr>
 <tr>
-<td>Interval</td>
 <td></td>
 <td></td>
+<td>realtime.communit/host`</td>
 <td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>is set to true, the reset button will automatically be disabled.</td>
+<td></td>
+</tr>
+<tr>
+<td>allowSave</td>
+<td>Boolean</td>
+<td>Specifies whether or not to allow saving password.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>earlyStartupLogin</td>
+<td>Boolean</td>
+<td>Specifies whether or not to show login dialog when the client starts.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>resetUser</td>
+<td>Boolean. Default is false.</td>
+<td>Specifies whether or not to reset user information when the client starts.</td>
+<td>7.5.1 and later</td>
+</tr>
+<tr>
+<td>displayAuthServerSSO</td>
+<td>Boolean. Default is true.</td>
+<td>Specifies whether or not to display Authentication server information in the community Log In tab.</td>
+<td>7.5.1 and later</td>
 </tr>
 </tbody>
 </table>
-<p>|long. Default is 20000.|Specifies the interval in milliseconds at which the client will attempt to reconnect.|7.5.1 and later|
-|autoReconnectAttempts|long. Default is -1.|Specifies the number of attempts to reconnect. The value -1 means to never stop trying.|7.5.1 and later|
-|verifyConnectionPriorToLogin</p>
-<p>|Boolean. Default is true.|Specifies whether or not to verify that a network connection is available before logging in.|7.5.1 and later|
-|notifyWhenNetConnLost|Boolean. Default is true.|Specifies whether or not to alert the user when the network connection is lost.|7.5.1 and later|
-|alwaysLoggedIn|Boolean|Keeps "Automatically log in" and "Remember password" disabled and checked and disables all "Log out" menu items.|7.5.1 and later|
-|disableExit|Boolean|Keeps the "Exit" menu items disabled.|7.5.1 and later|
-|disableHostName|Boolean|Sets edit state of host name text field on login dialog.|7.5.1 and later|
-|displayResetUserBtn|Boolean|Makes the reset button show or not on the login dialog. If the preference is set to true and <code>com.ibm.collaboration.  
- realtime.communit/host</code></p>
-<p>is set to true, the reset button will automatically be disabled.|7.5.1 and later|
-|allowSave|Boolean|Specifies whether or not to allow saving password.|7.5.1 and later|
-|earlyStartupLogin|Boolean|Specifies whether or not to show login dialog when the client starts.|7.5.1 and later|
-|resetUser|Boolean. Default is false.|Specifies whether or not to reset user information when the client starts.|7.5.1 and later|
-|displayAuthServerSSO|Boolean. Default is true.|Specifies whether or not to display Authentication server information in the community Log In tab.|7.5.1 and later|</p>
-<p><strong>Parent Topic:  </strong><a href="config_client_pref_tables.html">Sametime client preferences</a></p>
+<p><strong>Parent topic:   </strong><a href="config_client_pref_tables.html">Sametime client preferences</a></p>
 
 
 
@@ -7695,7 +7759,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>

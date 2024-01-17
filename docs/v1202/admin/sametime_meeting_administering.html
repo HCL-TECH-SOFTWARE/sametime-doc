@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sametime_meeting_administering" class="md-skip">
+        <a href="#managing-sametime-meetings" class="md-skip">
           Skip to content
         </a>
       
@@ -7536,9 +7536,10 @@
   </a>
 
 
-<h1 class="task" id="sametime_meeting_administering">Managing Sametime Meetings</h1>
+<h1 id="managing-sametime-meetings">Managing Sametime Meetings</h1>
 <p>You can enable or disable meeting features. Note that these settings apply to the server and are not controlled by user policies.</p>
 <p>The following table lists meeting features and whether they can be turn on or off by the administrator or meeting owner.</p>
+<p>Table 1. Meeting Features</p>
 <table>
 <thead>
 <tr>
@@ -7571,28 +7572,78 @@
 <td>Secure the meeting with password</td>
 <td>The option to secure meetings with a password is by default enabled, cannot disable.</td>
 </tr>
+<tr>
+<td></td>
+<td>A user can choose for any meeting owned whether or not to configure a password on that meeting.</td>
+</tr>
+<tr>
+<td></td>
+<td>See [Defining Meetings password requirements] (meetings_passwords.md) for additional information.</td>
+</tr>
+<tr>
+<td>Guest users</td>
+<td>Guest access is enabled by default. To disable, see <a href="disable_guest_access.html">Preventing guest access</a></td>
+</tr>
+<tr>
+<td>Unmoderated meetings</td>
+<td>Enabled by default, cannot disable.</td>
+</tr>
+<tr>
+<td>Moderated meeting: invite others</td>
+<td><a href="enable_dial_out.html">enable_dial_out.md</a>.</td>
+</tr>
+<tr>
+<td>Raise hand</td>
+<td>Enabled by default, cannot disable.</td>
+</tr>
+<tr>
+<td>User Photos (authenticated users only)</td>
+<td>You can retrieve photos from the Sametime Proxy server. They will display if they are available to the meeting server.</td>
+</tr>
+<tr>
+<td></td>
+<td>You can use Gravatar to configure an avatar based on your Sametime email ID. Use it if your photo is not available via the Sametime Proxy.</td>
+</tr>
+<tr>
+<td>Group Chat</td>
+<td>Enabled by default, cannot disable.</td>
+</tr>
+<tr>
+<td>Group Chat also in the rich client</td>
+<td>Enabled by default, cannot disable.</td>
+</tr>
+<tr>
+<td>Screenshare (Start Presenting)</td>
+<td>Screenshare is enabled by default on all meetings. In a moderated meeting, the moderator must grant access to screenshare.</td>
+</tr>
+<tr>
+<td>Multi-user screenshare</td>
+<td>By default, any user in an unmoderated meeting can share their screen, even if another user is already sharing. It is not possible to disable this feature.</td>
+</tr>
+<tr>
+<td></td>
+<td>In a moderated meeting, you can share only a single screen at a time.</td>
+</tr>
+<tr>
+<td>Lock meeting</td>
+<td>Enabled by default, cannot disable.</td>
+</tr>
+<tr>
+<td>Moderated Meeting: Mute everyone else</td>
+<td>Enabled by default, cannot disable.</td>
+</tr>
+<tr>
+<td>Moderated Meeting: All cameras off</td>
+<td>Enabled by default, cannot disable.</td>
+</tr>
+<tr>
+<td>Moderated Meeting: Invite others</td>
+<td>See: Enabling a SIP Trunk for Meeting Dial Out</td>
+</tr>
 </tbody>
 </table>
-<p>A user can choose for any meeting owned whether or not to configure a password on that meeting.</p>
-<p>There are no configurable password strength options.</p>
-<p>|
-|Guest users|Guest access is enabled by default. To disable, see <a href="disable_guest_access.html">Preventing guest access</a>|
-|Unmoderated meetings|Enabled by default, cannot disable.|
-|Moderated meeting: invite others|<a href="enable_dial_out.html">enable_dial_out.md</a>.|
-|Raise hand|Enabled by default, cannot disable.|
-|User Photos (authenticated users only)|You can retrieve photos from the Sametime Proxy server. They will display if they are available to the meeting server.You can use Gravatar to configure an avatar based on your Sametime email ID. Use it if your photo is not available via the Sametime Proxy.</p>
-<p>|
-|Group Chat|Enabled by default, cannot disable.|
-|Group Chat also in the rich client|Enabled by default, cannot disable.|
-|Screenshare (Start Presenting)|Screenshare is enabled by default on all meetings. In a moderated meeting, the moderator must grant access to screenshare.|
-|Multi-user screenshare|By default, any user in an unmoderated meeting can share their screen, even if another user is already sharing. It is not possible to disable this feature.</p>
-<p>In a moderated meeting, you can share only a single screen at a time.</p>
-<p>|
-|Lock meeting|Enabled by default, cannot disable.|
-|Moderated Meeting: Mute everyone else|Enabled by default, cannot disable.|
-|Moderated Meeting: All cameras off|Enabled by default, cannot disable.|
-|Moderated Meeting: Invite others|See: Enabling a SIP Trunk for Meeting Dial Out|</p>
 <p>The following table displays settings that affect the functionality of the server.</p>
+<p>Table 2. Server-side configuration settings </p>
 <table>
 <thead>
 <tr>
@@ -7603,11 +7654,10 @@
 <tbody>
 <tr>
 <td>Maximum number of attendees per meeting. Currently, the maximum supported number of users per meeting is 50.</td>
-<td></td>
+<td>The default setting is 25 users. To change the setting, see: <a href="meetings_configuring_max.html">meetings_configuring_max.md</a>.</td>
 </tr>
 </tbody>
 </table>
-<p>|The default setting is 25 users. To change the setting, see: <a href="meetings_configuring_max.html">meetings_configuring_max.md</a>.|</p>
 <ul>
 <li>
 <p><strong><a href="meetings_passwords.html">meetings_passwords.md</a></strong>  </p>
@@ -7733,7 +7783,7 @@ You can disallow guest access to meeting.</p>
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>

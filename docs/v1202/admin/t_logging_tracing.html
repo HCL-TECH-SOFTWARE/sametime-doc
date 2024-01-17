@@ -7568,12 +7568,14 @@
 <li>Sametime Connect Client <code>/Users/user_name/Library/Application Support/HCL Sametime Data/.config/rcpinstall.properties</code></li>
 <li>Sametime Embedded Client <code>/Users/user_name/Library/Application Support/HCL Notes Data/Expeditor/Applications/.config/rcpinstall.properties</code></li>
 <li>Sametime Embedded Client (multi user install path) <code>C:\users\user_name\AppData\Local\HCL\Notes\Data\workspace\.config\rcpinstall.properties</code></li>
-<li>Add the following lines to the end of the file, depending on what kind of issue you're diagnosing.</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>
-<p>General client issues <code>com.ibm.collaboration.realtime.level=FINE</code></p>
-</li>
+<p>Add the following lines to the end of the file, depending on what kind of issue you're diagnosing.</p>
+<ul>
+<li>General client issues <code>com.ibm.collaboration.realtime.level=FINE</code></li>
 <li>
 <p>Instant messaging issues</p>
 <div class="highlight"><pre><span></span><code>com.lotus.sametime.community.kernel.level=FINER 
@@ -7656,7 +7658,7 @@ com.ibm.rcp.core.internal.logger.boot.RCPLogHandler.count=12
 <p>You can include logs and other data into a compressed ifle to send to support for diagnostics.</p>
 <ol>
 <li>
-<p>In the Notes embedded client, click <strong>Help</strong> > <strong>Support</strong> > <strong>Collect Support Data</strong>. In the stand-alone Connect Client, click<strong>Gear icon</strong> > <strong>Help</strong> > <strong>Support</strong> > <strong>Collect Support Data</strong>.</p>
+<p>In the Notes embedded client, click <strong>Help</strong> > <strong>Support</strong> > <strong>Collect Support Data</strong>. In the stand-alone Connect Client, click <strong>Gear icon</strong> > <strong>Help</strong> > <strong>Support</strong> > <strong>Collect Support Data</strong>.</p>
 </li>
 <li>
 <p>Select <strong>Enable Customized Tracing</strong>, and then click <strong>Next</strong>.</p>
@@ -7668,14 +7670,12 @@ com.ibm.rcp.core.internal.logger.boot.RCPLogHandler.count=12
 <p>Specify if you want to reproduce the issue, and then click <strong>Collect</strong>. When the collection completes, a link to the zip file is provided.</p>
 <p>The resulting file is located</p>
 <ul>
-<li>Windows</li>
-<li>
-<ul>
+<li>Windows<ul>
 <li>Standalone Client: C:\Users\user_name\AppData\Roaming\HCL\Sametime\autopd</li>
-</ul>
-</li>
 <li>Notes Embedded single user path: C:\Program Files\HCL\Notes\Data\workspace\autopd</li>
 <li>Notes Embedded multi user path: C:\users\user_name\AppData\Local\HCL\Notes\Data\workspace\.autopd</li>
+</ul>
+</li>
 <li>Mac OS<ul>
 <li>Standalone Client: /Users/user_name/Library/Application Support/HCL Sametime Data/autopd</li>
 <li>Notes Embedded: /Users/user_name/Library/Application Support/HCL</li>
@@ -7779,7 +7779,7 @@ com.ibm.rcp.core.internal.logger.boot.RCPLogHandler.count=12
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>

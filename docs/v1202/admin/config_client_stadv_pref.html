@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config_client_stadv_pref" class="md-skip">
+        <a href="#sametime-advanced-preferences-sametime-901-only" class="md-skip">
           Skip to content
         </a>
       
@@ -7550,9 +7550,10 @@
   </a>
 
 
-<h1 class="concept" id="config_client_stadv_pref">Sametime Advanced preferences (Sametime 9.0.1 only)</h1>
+<h1 id="sametime-advanced-preferences-sametime-901-only">Sametime Advanced preferences (Sametime 9.0.1 only)</h1>
 <p>These settings only apply to environments that include the Sametime 9.0.1 Advanced Server.</p>
 <p>The following table lists the preferences that are available for the HCL® Sametime® Advanced client. These preferences are set in the <code>plugin_customization.ini</code> file.</p>
+<p>Table 1. Global Preferences - com.ibm.collaboration.realtime</p>
 <table>
 <thead>
 <tr>
@@ -7574,6 +7575,7 @@
 </tr>
 </tbody>
 </table>
+<p>Table 2. Sametime Advanced Preferences - com.ibm.collaboration.realtime.persistentChat</p>
 <table>
 <thead>
 <tr>
@@ -7590,6 +7592,7 @@
 </tr>
 </tbody>
 </table>
+<p>Table 3. Broadcast and Persistent Chat Preferences - com.ibm.collaboration.realtime.bcs</p>
 <table>
 <thead>
 <tr>
@@ -7662,28 +7665,96 @@
 <tr>
 <td>reverseProxyBaseURL</td>
 <td>String</td>
-<td>Type the reverse proxy base URL to use if connecting through a reverse proxy. For example: http://mycompany.example.com/mycontextLeave blank otherwise.</td>
+<td>Type the reverse proxy base URL to use if connecting through a reverse proxy. For example: http://mycompany.example.com/mycontext Leave blank otherwise.</td>
+</tr>
+<tr>
+<td>reverseProxyUserName</td>
+<td>String</td>
+<td>Enter the reverse proxy user name if the proxy is authenticating. Leave blank if you are not using reverse proxies.</td>
+</tr>
+<tr>
+<td>jmsProtocol</td>
+<td>String</td>
+<td>Indicate whether the client connects with a secure connection using the Security Secure Sockets Layer (SSL) or not. The default is disthub (to connect without SSL). Enter disthubs to connect with SSL.</td>
+</tr>
+<tr>
+<td>liveNameResolveTimeout</td>
+<td>String (the default is 10000 milliseconds)</td>
+<td>Time allowed in milliseconds for awareness names to resolve. The default is 10000.</td>
+</tr>
+<tr>
+<td>notifyNewOpenCommunities</td>
+<td>Boolean (the default istrue )</td>
+<td>Alert users when a new open community is created.</td>
+</tr>
+<tr>
+<td>notifyNewModeratedCommunities</td>
+<td>Boolean (the default istrue )</td>
+<td>Alert users when a new moderated community is created.</td>
+</tr>
+<tr>
+<td>notifyNewPrivateCommunities</td>
+<td>Boolean (the default istrue )</td>
+<td>Alert users when a new private community is created</td>
+</tr>
+<tr>
+<td>blockBroadcastOnDoNotDisturb</td>
+<td>Boolean (the default istrue )</td>
+<td>Blocks broadcasts when client is set to "Do not disturb".</td>
+</tr>
+<tr>
+<td>blockBroadcastOnInMeeting</td>
+<td>Boolean (the default isfalse )</td>
+<td>Blocks broadcasts when client is set to "In a meeting".</td>
+</tr>
+<tr>
+<td>notifyChatRoomAddMember</td>
+<td>Boolean (the default istrue )</td>
+<td>Alerts users when a chat room has a new member.</td>
+</tr>
+<tr>
+<td>blockChatRoomNotifyOnDoNotDisturb</td>
+<td>Boolean (the default istrue )</td>
+<td>Blocks chat room notifications the client to "Do not disturb".</td>
+</tr>
+<tr>
+<td>blockChatRoomNotifyOnInMeeting</td>
+<td>Boolean (the default isfalse )</td>
+<td>Blocks chat room notifications when user is in a meeting.</td>
+</tr>
+<tr>
+<td>broadcastServerUserIdType</td>
+<td>String (the default isemail )</td>
+<td>Specifies the LDAP attribute used as the user ID.</td>
+</tr>
+<tr>
+<td>useTokens</td>
+<td>Boolean (the default istrue )</td>
+<td>Determines whether the client uses an LTPA token at login. Set this to false only if there is no way to set up Single Sign-On between the Sametime Community Server and the Sametime Advanced Server.</td>
+</tr>
+<tr>
+<td>chatRoomLaunchURLRichClient</td>
+<td>Boolean</td>
+<td>Specifies what type of chat room window the users sees. The value true represents the Sametime client chat room and the value false represents the web browser chat room.</td>
+</tr>
+<tr>
+<td>onlyActiveChatRooms</td>
+<td>Boolean (default value is false)</td>
+<td>Limits the chat room list to active chat rooms, suppressing disabled and archived chat rooms from the list.</td>
+</tr>
+<tr>
+<td>showToolTip</td>
+<td>Boolean (default value is true)</td>
+<td>Displays the description associated with a chat room when the user mouses over the chat room name.</td>
+</tr>
+<tr>
+<td>updateInterval</td>
+<td>String (default value is 600000 milliseconds, or 10 minutes)</td>
+<td>Specifies the wait (in milliseconds) before chat room data is refreshed. You can improve server performance by refreshing less frequently.</td>
 </tr>
 </tbody>
 </table>
-<p>|
-|reverseProxyUserName|String|Enter the reverse proxy user name if the proxy is authenticating. Leave blank if you are not using reverse proxies.|
-|jmsProtocol|String|Indicate whether the client connects with a secure connection using the Security Secure Sockets Layer (SSL) or not. The default is disthub (to connect without SSL). Enter disthubs to connect with SSL.|
-|liveNameResolveTimeout|String (the default is 10000 milliseconds)|Time allowed in milliseconds for awareness names to resolve. The default is 10000.|
-|notifyNewOpenCommunities|Boolean (the default istrue )|Alert users when a new open community is created.|
-|notifyNewModeratedCommunities|Boolean (the default istrue )|Alert users when a new moderated community is created.|
-|notifyNewPrivateCommunities|Boolean (the default istrue )|Alert users when a new private community is created|
-|blockBroadcastOnDoNotDisturb|Boolean (the default istrue )|Blocks broadcasts when client is set to "Do not disturb".|
-|blockBroadcastOnInMeeting|Boolean (the default isfalse )|Blocks broadcasts when client is set to "In a meeting".|
-|notifyChatRoomAddMember|Boolean (the default istrue )|Alerts users when a chat room has a new member.|
-|blockChatRoomNotifyOnDoNotDisturb|Boolean (the default istrue )|Blocks chat room notifications the client to "Do not disturb".|
-|blockChatRoomNotifyOnInMeeting|Boolean (the default isfalse )|Blocks chat room notifications when user is in a meeting.|
-|broadcastServerUserIdType|String (the default isemail )|Specifies the LDAP attribute used as the user ID.|
-|useTokens|Boolean (the default istrue )|Determines whether the client uses an LTPA token at login. Set this to false only if there is no way to set up Single Sign-On between the Sametime Community Server and the Sametime Advanced Server.|
-|chatRoomLaunchURLRichClient|Boolean|Specifies what type of chat room window the users sees. The value true represents the Sametime client chat room and the value false represents the web browser chat room.|
-|onlyActiveChatRooms|Boolean (default value is false)|Limits the chat room list to active chat rooms, suppressing disabled and archived chat rooms from the list.|
-|showToolTip|Boolean (default value is true)|Displays the description associated with a chat room when the user mouses over the chat room name.|
-|updateInterval|String (default value is 600000 milliseconds, or 10 minutes)|Specifies the wait (in milliseconds) before chat room data is refreshed. You can improve server performance by refreshing less frequently.|</p>
+<p>Table 4. Community Preferences - com.ibm.collaboration.community</p>
 <table>
 <thead>
 <tr>
@@ -7700,7 +7771,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Parent Topic:  </strong><a href="config_client_pref_tables.html">Sametime client preferences</a></p>
+<p><strong>Parent topic:   </strong><a href="config_client_pref_tables.html">Sametime client preferences</a></p>
 
 
 
@@ -7792,7 +7863,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>

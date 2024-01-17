@@ -7606,23 +7606,60 @@
 <tr>
 <td>Jitsi</td>
 <td>prosody, jigasi, jicofo</td>
-<td>The video bridge that streams the media to users. Jigasi container for SIP messages (integration with telephony).</td>
+<td>The video bridge that streams the media to users.<br>Jigasi container for SIP messages(integration with telephony).<br>Jicofo conference focus) – messages about features used in meetings, participants joining and dropping.</td>
+</tr>
+<tr>
+<td>Lobby</td>
+<td>NA</td>
+<td>Runs the lobby service for meetings.</td>
+</tr>
+<tr>
+<td>Location</td>
+<td>NA</td>
+<td>Used when telephony is integrated to assist users with the telephone numbers.</td>
+</tr>
+<tr>
+<td>Mux</td>
+<td>NA</td>
+<td>Allows the Connect and Embedded clients in Notes to connect over port 1533. Has a svc with an IP address for users to connect.</td>
+</tr>
+<tr>
+<td>Proxy</td>
+<td>NA</td>
+<td>Runs the web chat service allowing users to connect with mobile clients or web clients for chat.</td>
+</tr>
+<tr>
+<td>Recorder</td>
+<td>jibri, pushgateway, await-prosody</td>
+<td>Save meeting recordings when a user records a meeting. It is also used for live streaming.</td>
+</tr>
+<tr>
+<td>Recordings</td>
+<td>NA</td>
+<td>Interacts with the persistent volume to store recordings.</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>jvb, prometheus-exporter</td>
+<td>Interacts with STUN server.</td>
+</tr>
+<tr>
+<td>Web</td>
+<td>NA</td>
+<td>Serves the web interface to the users</td>
+</tr>
+<tr>
+<td>Webhook</td>
+<td>NA</td>
+<td>Interacts with telephony and click to call feature</td>
+</tr>
+<tr>
+<td>Outlook</td>
+<td>NA</td>
+<td>When the Outlook add-in feature is enabled, this process interacts with the Outlook add-in.</td>
 </tr>
 </tbody>
 </table>
-<p>Jicofo (conference focus) – messages about features used in meetings, participants joining and dropping.</p>
-<p>|
-|Lobby|NA|Runs the lobby service for meetings.|
-|Location|NA|Used when telephony is integrated to assist users with the telephone numbers.|
-|Mux|NA|Allows the Connect and Embedded clients in Notes to connect over port 1533. Has a svc with an IP address for users to connect.|
-|Proxy|NA|Runs the web chat service allowing users to connect with mobile clients or web clients for chat.|
-|Recorder|jibri, pushgateway, await-prosody|Save meeting recordings when a user records a meeting.It is also used for live streaming.</p>
-<p>|
-|Recordings|NA|Interacts with the persistent volume to store recordings.|
-|Video|jvb, prometheus-exporter|Interacts with STUN server.|
-|Web|NA|Serves the web interface to the users|
-|Webhook|NA|Interacts with telephony and click to call feature|
-|Outlook|NA|When the Outlook add-in feature is enabled, this process interacts with the Outlook add-in.|</p>
 <p><strong>Parent Topic:  </strong><a href="t_troubleshooting_sametime_kubernetes.html">Troubleshooting Sametime on Kubernetes</a></p>
 
 
@@ -7715,7 +7752,7 @@
       </div>
       <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout(function(){document.querySelector("[data-md-component=consent]").hidden=!1},250);var action,form=document.forms.consent;for(action of["submit","reset"])form.addEventListener(action,function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map(function(e){return[e,!0]}))),location.hash="",location.reload()})</script>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "navigation.instant", "search.highlight", "search.share", "search.suggest", "content.code.copy"], "search": "../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.5a2dcb6a.min.js"></script>

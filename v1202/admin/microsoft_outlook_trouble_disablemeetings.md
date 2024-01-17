@@ -1,4 +1,4 @@
-# Deploying Microsoft Outlook add-ins to users {#microsoft_outlook_trouble_disablemeetings .task}
+# Deploying Microsoft Outlook add-ins to users 
 
 Duplicate meeting details are added to calendar events when using Microsoft Teams.
 
@@ -9,7 +9,7 @@ This issue can be resolved by doing one of the following:
 -   Remove the MicroSoft Teams integration in Outlook
 -   Configure user mailboxes in Microsoft Exchange to not enable online meetings by default
 
-The Microsoft Outlook add-in policy controls whether Teams meetings can be scheduled within Outlook. For additional information, see[Meeting policy settings - General](https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams-general#outlook-add-in). To turn off Teams meeting scheduling, open the Teams admin center to the Meetings policy window. Locate the **Outlook add-in** policy and turn it off. When finished, scroll to the bottom of the window and click **Save**.
+The Microsoft Outlook add-in policy controls whether Teams meetings can be scheduled within Outlook. For additional information, see [Meeting policy settings - General](https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams-general#outlook-add-in). To turn off Teams meeting scheduling, open the Teams admin center to the Meetings policy window. Locate the **Outlook add-in** policy and turn it off. When finished, scroll to the bottom of the window and click **Save**.
 
 **Note:** The change can take up to twenty-four hours to take effect and the Outlook click must be started again to include the change.
 

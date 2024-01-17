@@ -1,6 +1,6 @@
-# Live Text and Widgets preferences {#config_client_widg_pref .concept}
+# Live Text and Widgets preferences 
 
-The following scenarios show the Live Text and Widgets preferences for the HCL® Sametime® Connect Client . These scenarios apply to setting preferences for the stand-alone client.
+The following scenarios show the Live Text and Widgets preferences for the HCL® Sametime® Connect Client. These scenarios apply to setting preferences for the stand-alone client.
 
 Case 1 \(default\): Disable both Live Text and Widgets
 
@@ -53,5 +53,5 @@ To enable only Widgets but not Live Text, managed preferences are required. Conf
 </ManagedSettings>
 ```
 
-**Parent Topic:  **[Sametime client preferences](config_client_pref_tables.md)
+**Parent topic:   **[Sametime client preferences](config_client_pref_tables.md)
 
