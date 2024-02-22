@@ -2,7 +2,7 @@
 
 This section provides information on troubleshooting and supporting Sametime environments.
 
--   [HCL Customer Support](https://hclpnpsupport.hcltech.com/csm)
+-   [HCL Customer Support](https://support.hcltech.com/csm)
 -   [Sametime community forum](https://support.hcltechsw.com/csm?id=community_forum&sys_id=e3c946d01b80841077761fc58d4bcb04)
 
 -   **[Statement of support](c_troubleshooting_supportstatement.md)**  
