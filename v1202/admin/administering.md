@@ -7,7 +7,7 @@ The Sametime Admin is a web access interface used to work with policies and anal
 -   **[Managing policies](adminui_policy_manage.md)**  
 Sametime policies allow administrators to control user access to features.
 -   **[Monitoring your meeting and chat metrics with Grafana](adminui_grafana_overview.md)**  
-Sametime uses the third-party software, Grafana, to generate insightful graphs and visualizations derived from time-series database \(TSDB\) data. Integrating Grafana into your Sametime environment allows you to see analytic metrics about Sametime meetings and chats on a Grafana dashboard. The metrics can be used to monitor Sametime usage and resources.
+Sametime uses the third-party software, Grafana, to generate insightful graphs and visualizations derived from time-series database \(TSDB) data. Integrating Grafana into your Sametime environment allows you to see analytic metrics about Sametime meetings and chats on a Grafana dashboard. The metrics can be used to monitor Sametime usage and resources.
 -   **[Managing Sametime clients](managing_sametime_client_preferences.md)**  
 This section provides information on managing Sametime clients.
 -   **[Managing file transfer data](t_managing_transfer_data.md)**  
