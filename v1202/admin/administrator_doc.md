@@ -30,7 +30,7 @@ HCL Sametime and HCL Sametime Premium 12.0.2 provide many new features, enhancem
 -   **[Planning](planning.md)**  
 This section describes the system requirements and server configurations needed for HCL Sametime and HCL Sametime Premium.
 -   **[Installing](installing.md)**  
-This section provides information on installing the servers for Sametime and Sametime Premium.
+This section describes the installing information for the servers for Sametime and Sametime Premium.
 -   **[Configuring](configuring.md)**  
 This section provides information on configuring the HCL Sametime server. Configuration tasks are dependent on the deployment environment.
 -   **[Securing](securing.md)**  
