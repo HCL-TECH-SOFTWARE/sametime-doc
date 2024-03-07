@@ -20,7 +20,7 @@ After Grafana is configured, port 3001 is the default port used for Grafana.
 
     ``` {#codeblock_h1v_rvk_rzb}
     ENABLE_GRAFANA_PROXY=true
-    MONITORING_ENABLED=TRUE
+    MONITORING_ENABLED=true
     ```
 
 3.  Edit the monitoring.env file and add the Grafana administrator ID and password.
