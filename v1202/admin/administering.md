@@ -3,7 +3,7 @@
 This section provides information on administering on Sametime environments.
 
 -   **[Sametime Admin overview](adminui_overview.md)**  
-The Sametime Administrator is a web access interface used to work with policies and analytic data related to Sametime Meetings and chat features.
+The Sametime Admin is a web access interface used to work with policies and analytic data related to Sametime Meetings and chat features.
 -   **[Managing policies](adminui_policy_manage.md)**  
 Sametime policies allow administrators to control user access to features.
 -   **[Monitoring your meeting and chat metrics with Grafana](adminui_grafana_overview.md)**  
