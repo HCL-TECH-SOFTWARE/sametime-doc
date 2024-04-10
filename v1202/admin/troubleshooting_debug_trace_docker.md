@@ -9,9 +9,8 @@ To enable the trace modify the docker-compose.yml file. In the `community:` sect
 community: 
    image: hclcr.io/st/chat-server:${BUILD_LEVEL} 
    restart: ${RESTART_POLICY}   
-   env_file: 
-      -custom.env 
-      -debug.env
+   env_file: custom.env 
+      
    environment:
 ```
 
@@ -22,7 +21,9 @@ Add, the `debug.env` parameter to the statement as shown in the following exampl
 community: 
     image: hclcr.io/st/chat-server:${BUILD_LEVEL} 
     restart: ${RESTART_POLICY} 
-    env_file: - custom.env - debug.env
+    env_file:
+       - custom.env
+       - debug.env
     environment:
 ```
 
