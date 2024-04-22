@@ -1,6 +1,6 @@
 # Discontinuing managed preferences {#config_client_discontinue_xml_file .task}
 
-To stop setting preferences through the Expeditor managed settings framework, remove the reference to the managed-settings.xml or managed-community-configs.xml file\(s\) and unlock any previously read-only settings.
+To stop setting preferences through the Expeditor managed settings framework, remove the reference to the managed-settings.xml or managed-community-configs.xml files and unlock any previously read-only settings.
 
 1.  Managed settings that were previously pushed to the clients as read-only will continue to be used until they are specifically removed from the client. Unlock all managed settings by editing the XML file:
 
@@ -17,7 +17,7 @@ To stop setting preferences through the Expeditor managed settings framework, re
         The managed-settings.xml or managed-community-configs.xml file hosted on a web server
 
         -   Remove the managed-settings.xml or managed-community-configs.xml file from the web server.
-        -   [Modify the policies.user.xml](update_client_policy.md) and remove the URL that was previously hosting the managed-settings.xml or managed-community-configs.xml.
+       
     -   **Method 2:**
 
         The managed-settings.xml file defined in a plugin\_customization.ini file.

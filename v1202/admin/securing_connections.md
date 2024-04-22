@@ -28,8 +28,6 @@ When creating a connection between the Sametime server and a service using TLS, 
 
 -   **[Securing connections between the Sametime mux and the Connect and Embedded clients](securing_connections_between_community_clients.md)**  
 There are several connection methods to connect to the Sametime server. This topic includes the steps to encrypt connections between the clients and the Sametime mux using TLS.
--   **[Securing connections between Sametime servers and LDAP](securing_connections_sametime_community_and_ldap.md)**  
-When Sametime is configured to connect to an LDAP server, the Sametime servers makes five separate connections to the LDAP server.
 
 **Parent Topic:  **[Securing](securing.md)
 

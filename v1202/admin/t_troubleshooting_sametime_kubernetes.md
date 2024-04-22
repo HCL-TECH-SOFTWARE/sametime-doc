@@ -12,8 +12,6 @@ A pod is a group of one or more containers that share storage and network resour
 
 -   **[Applying changes](pod_apply_changes.md)**  
 
--   **[Kubernetes: Containers not starting due to "Host not found"](t_troubleshooting_kubernetes_host_not_found.md)**  
-Use this information on troubleshooting Sametime 12 Premium on Kubernetes - containers not starting due to "Host not found."
 -   **[Troubleshooting LDAP on the community pod](t_troubleshooting_ldap_kubernetes.md)**  
 
 

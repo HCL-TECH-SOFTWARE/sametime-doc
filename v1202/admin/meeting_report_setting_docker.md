@@ -21,7 +21,3 @@
         ``` {#codeblock_v4h_fgm_s5b}
         docker-compose up -d
         ```
-
-
-**Parent topic: **[Disabling the mobile notification limiter](t_disable_rate_limiter.md)
-

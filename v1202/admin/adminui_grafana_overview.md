@@ -25,12 +25,11 @@ Meetings
 
 If you have Grafana administrator access, you can customize the dashboard to generate additional or different metrics. Refer to the Grafana documentation on [Dashboards](https://grafana.com/docs/grafana/latest/dashboards/) for the details.
 
+----
+
 -   **[Configuring Grafana on Docker and Podman](adminui_grafana_config_docker.md)**  
 
 -   **[Configuring Kubernetes to run Grafana](adminui_grafana_config_kubernetes.md)**  
 
--   **[Installing Prometheus](installation_prometheus.md)**  
-Prometheus provides monitoring on the system. It is used in the auto-scaling feature, but can also be used to monitor your system usage and performance.
-
-**Parent Topic:  **[Administering](administering.md)
+ **Parent Topic:  **[Administering](administering.md)
 

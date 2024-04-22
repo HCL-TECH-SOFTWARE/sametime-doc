@@ -103,7 +103,7 @@ nav:
         - Meeting server FAQ: admin/planning_meetingserver.md
         - Sametime Clients: 
           - admin/hcl_sametime_clients.md
-          - Sametime capabilities by client type: admin/client_features.md
+         # - Sametime capabilities by client type: admin/client_features.md 
         - Planning the network topology and connectivity:
           - admin/topology.md
           - Planning considerations for chat: admin/topology_chat.md
@@ -334,13 +334,12 @@ nav:
           - Modifying a policy: admin/adminui_policy_modify.md
           - Assigning users and groups to policies: admin/adminui_policy_assign.md
           - Finding active policies associated with user or group: admin/adminui_policy_view_active.md
-#          - Viewing active policy assignments: admin/adminui_policy_view_assign.md
-#         - Troubleshooting policies: admin/adminui_policy_troubleshoot.md
+#         # - Viewing active policy assignments: admin/adminui_policy_view_assign.md
+#         # - Troubleshooting policies: admin/adminui_policy_troubleshoot.md
         - Monitoring your meeting and chat metrics with Grafana:
           - admin/adminui_grafana_overview.md
           - Configuring Grafana on Docker and Podman: admin/adminui_grafana_config_docker.md
-          - Configuring Kubernetes to run Grafana: admin/adminui_grafana_config_kubernetes.md
-          - Configuring Grafana dashboard: admin/adminui_grafana_config_console.md
+          - Configuring Kubernetes to run Grafana: admin/adminui_grafana_config_kubernetes.md          
         - Managing Sametime clients:
           - admin/managing_sametime_client_preferences.md
           - Sametime client configuration options:
@@ -379,7 +378,7 @@ nav:
                   - Hosting client files for Sametime on Kubernetes:
                     - admin/t_example_preferences_2.md
                     - Hosting files containing the same file name: admin/t_host_samefilename_k8s.md
-                  - Updating the client policy to include client preferences: admin/update_client_policy.md
+           #       - Updating the client policy to include client preferences: admin/update_client_policy.md
                 - Changing the update interval for managed preferences: admin/config_client_update_interval_xml.md
                 - Discontinuing managed preferences: admin/config_client_discontinue_xml_file.md
             - Configuring Sametime preferences using HCL Notes policies: admin/alternate_client_configuration.md
@@ -415,7 +414,7 @@ nav:
           - admin/administering_mongodb.md
           - Changing MongoDB credentials in Sametime for Docker and Podman: admin/change_mongodb_credentials_docker.md
           - Changing MongoDB credentials in Sametime for Kubernetes and Openshift: admin/change_mongodb_credentials_kubernetes.md
-          - Changing MongoDB log file size: admin/control_mongodb.md
+         # - Changing MongoDB log file size: admin/control_mongodb.md
         - Defining chat message deletion limits: admin/chat_msg_delete_options.md
         - Managing Sametime Meetings:
           - admin/sametime_meeting_administering.md
@@ -435,12 +434,12 @@ nav:
           - Disabling virtual background: admin/disable_background.md
           - Disabling custom background uploads: admin/t_disable_background_upload.md
           - Disabling the meeting timer: admin/t_disabling_timer.md
-        - Disabling the mobile notification limiter on Docker or Podman: admin/t_disable_rate_limiter_docker.md
-        - Disabling the mobile notification limiter on Kubernetes: admin/t_disable_rate_limiter_kubernetes.md
+     #   - Disabling the mobile notification limiter on Docker or Podman: admin/t_disable_rate_limiter_docker.md
+     #   - Disabling the mobile notification limiter on Kubernetes: admin/t_disable_rate_limiter_kubernetes.md
 # Troubleshooting
       - Troubleshooting: 
         - admin/troubleshooting.md
-        - Statement of support: admin/c_troubleshooting_supportstatement.md
+     #   - Statement of support: admin/c_troubleshooting_supportstatement.md
         - Working with HCL support: admin/troubleshooting_contact_support.md
         - Troubleshooting Sametime on Docker:
           - admin/t_troubleshooting_sametime_docker.md
@@ -454,13 +453,13 @@ nav:
           - Transferring files from a pod to a Linux shell: admin/troubleshooting_kubernetes_transfer_pods.md
           - Capturing a network trace in a pod: admin/troubleshooting_kubernetes_pod_networktrace.md
           - Applying changes: admin/pod_apply_changes.md
-          - Kubernetes Containers not starting due to "Host not found": admin/t_troubleshooting_kubernetes_host_not_found.md
+ #         - Kubernetes Containers not starting due to "Host not found": admin/t_troubleshooting_kubernetes_host_not_found.md
           - Troubleshooting LDAP on the community pod: admin/t_troubleshooting_ldap_kubernetes.md
-        - Troubleshooting the Sametime server: admin/t_troubleshooting_sametime_server.md
-        - Troubleshooting Sametime Meetings:
-          - admin/t_troubleshooting_sametime_meetings.md
-          - Deploying Microsoft Outlook add-ins to users: admin/microsoft_outlook_trouble_disablemeetings.md
-        - Troubleshooting Sametime Chat: admin/t_troubleshooting_sametime_chat.md
+#       - Troubleshooting the Sametime server: admin/t_troubleshooting_sametime_server.md
+#        - Troubleshooting Sametime Meetings:
+ #         - admin/t_troubleshooting_sametime_meetings.md
+ #         - Deploying Microsoft Outlook add-ins to users: admin/microsoft_outlook_trouble_disablemeetings.md
+#        - Troubleshooting Sametime Chat: admin/t_troubleshooting_sametime_chat.md
         - Troubleshooting Sametime clients:
           - admin/t_troubleshooting_clients.md
           - Collecting Sametime client configuration and log data: admin/t_collecting_configuration_logging_data.md

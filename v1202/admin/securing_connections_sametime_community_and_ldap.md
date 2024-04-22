@@ -27,9 +27,7 @@ You must already have created the TLS Trust Store in .p12 or .jks format. 
 
 You can configure Sametime LDAP to use the same TLS settings as the rest of the server by setting the configuration at the global scope, or the LDAP settings can be secured using its own key store and settings by following the instructions in the Individual TLS scope and using the pre-fix STLDAP\_.   You must configure the sametime.ini settings by completing one of these topics: 
 
--   [Implementing the Global TLS Scope](implement_tls_configuration.md)
--   [Implementing the Individual TLS Scope](implement_tls_configuration_individual.md)
-
+-   [Implementing the Global TLS Scope](implement_tls_configuration.md
 **Procedure**
 
 Follow these steps to encrypt all data as explained above.

@@ -17,6 +17,8 @@ From the Manage Policies window, you can create, assign, and view policy assignm
 
 To know more about a policy, click the policy name. The View/Edit Policy window opens where you can view and change features related to the policy.
 
+---
+
 -   **[Policy weight](adminui_policy_weight.md)**  
 Policy weights and group nesting levels are used to determine which policies take precedence over the attributes of other policies.
 -   **[Policy types](adminui_policy_types.md)**  
@@ -33,10 +35,6 @@ Policy attribute can be modified for all policy types.
 Policies are not used until assigned to users or groups.
 -   **[Finding active policies associated with user or group](adminui_policy_view_active.md)**  
 You can view policies assigned to a user or group.
--   **[Viewing active policy assignments](adminui_policy_view_assign.md)**  
-
--   **[Troubleshooting policies](adminui_policy_troubleshoot.md)**  
-
 
 **Parent topic:   **[Administering](administering.md)
 

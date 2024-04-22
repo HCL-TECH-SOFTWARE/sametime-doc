@@ -10,6 +10,3 @@ The MongoDB Community Server can be downloaded from the MongoDB website. You can
 You can install HCL Sametime Premium and HCL Sametime in a single- or multi-node container environment. The following platforms are supported: Docker, Podman, Kubernetes, OpenShift, and Windows.
 -   **[Installing Sametime clients](installing_sametime_clients.md)**  
 Sametime clients can be installed on a Windows or Mac machines.
-
-**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
-

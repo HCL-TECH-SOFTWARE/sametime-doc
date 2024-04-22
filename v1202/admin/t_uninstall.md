@@ -6,6 +6,3 @@ In the event that Sametime must be removed, follow the procedure for the platfor
  To uninstall Sametime on Docker, follow these steps.
 -   **[Uninstalling Sametime on Kubernetes](t_uninstall_k8.md)**  
 To uninstall Sametime on Kubernetes, follow these steps.
-
-**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
-

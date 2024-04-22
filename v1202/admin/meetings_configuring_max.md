@@ -27,8 +27,7 @@ The default for the maximum number of displayed video streams is nine. To set th
 
 3.  Save the docker-compose.xml file.
 
-4.  Restart the Sametime Meeting server. Refer to [Starting and stopping Meeting servers](starting_and_stopping_meeting_servers.md) for details.
-
+4.  Restart the Sametime Meeting server. 
 
 ## Configuring the maximum number of meeting participants in Docker environment {#task_snj_2fz_wxb}
 
@@ -46,6 +45,4 @@ The default for the maximum number of displayed video streams is nine. To set th
 
 3.  Save the file.
 
-4.  Restart the Sametime Meeting Server. Refer to [Starting and stopping Meeting servers](starting_and_stopping_meeting_servers.md) for details.
-
-
+4.  Restart the Sametime Meetings server. 

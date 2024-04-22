@@ -9,7 +9,7 @@ The following is the format for the update task in the CVS file. Each ID to be u
 ``` {#codeblock_hnz_1bs_ryb}
 
 ID
-"existing\_ID", "new\_ID"[,"new\_display\_name"]​
+"existing\_ID", "new\_ID"[,"new_display_name"]​
 ```
 
 CSV files are case-sensitive and sensitive to spaces.
@@ -29,7 +29,7 @@ For more information, refer to [Configuring the sametime.ini file](chat_configur
     ``` {#codeblock_h5c_d2s_ryb}
     
     ID
-    "existing\_ID", "new\_ID"[,"new\_display\_name"]​
+    "existing\_ID", "new\_ID"[,"new_display_name"]​
     
     ```
 
@@ -64,7 +64,7 @@ For more information, refer to [Configuring the sametime.ini file](chat_configur
         DEEP_DELETE=1
         ```
 
-    The following is an example env\_file\_name file.
+    The following is an example env_file_name file.
 
     ``` {#codeblock_k4g_qgx_ryb}
     
@@ -76,7 +76,7 @@ For more information, refer to [Configuring the sametime.ini file](chat_configur
 4.  Run the Database utility using the following command. The CSV file is mounted in the container in the/temp directory in the following example for the application to access and process. The tag attribute is the image tag to use.
 
     ``` {#codeblock_ub4_5nk_nvb}
-    docker run -v /temp:/temp:rw --env-file env\_file\_name.env hclcr.io/st/sametime-db-utility:tag
+    docker run -v /temp:/temp:rw --env-file env_file_name.env hclcr.io/st/sametime-db-utility:tag
     ```
 
 5.  Copy the CSV file into an accessible read or writable location.

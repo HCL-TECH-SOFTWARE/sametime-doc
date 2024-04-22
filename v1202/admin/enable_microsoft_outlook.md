@@ -18,9 +18,7 @@ For additonal information about Microsoft add-ins, see the following Microsoft d
 3.  Find the parameter `COMPOSE_PROFILES=outlookAddin` parmater and remove the comment character \(\#\).
 
 4.  Save your changes and restart the server to apply the changes.
-
-    See [Starting and stopping Meeting servers](starting_and_stopping_meeting_servers.md) for additional information.
-
+    
 
 ## Enabling the add-in on Kubernetes {#task_yqx_q4k_3tb}
 
@@ -29,7 +27,4 @@ For additonal information about Microsoft add-ins, see the following Microsoft d
 2.  Change the `enableOutlookAddin` parameter from false to true.
 
 3.  Save your changes and restart the server to apply the changes.
-
-    See [Starting and stopping Meeting servers](starting_and_stopping_meeting_servers.md) for additional information.
-
 

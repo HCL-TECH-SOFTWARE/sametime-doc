@@ -30,9 +30,8 @@ The LDAP trust store file name must be ldaptruststore.p12. It is defined using t
     ```
 
 
-To implement the trust store, refer to one of the following topics.
+To implement the trust store, refer to the following topics.
 
--   [Configuring LDAP on Docker and Podman](configuring_ldap_docker.md)
 -   [Overriding the default LDAP configuration in Kubernetes](configuring_ldap_kubernetes.md)
 
 **Parent Topic:  **[Creating a truststore with a third-party certificate](t_create_truststore.md)

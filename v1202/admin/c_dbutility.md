@@ -29,7 +29,7 @@ The utility is loaded to your Docker repository during the Sametime install proc
 At the end of the Sametime Database utility run, a report file is generated containing a summary of changes applied to the database. You can view the report to verify your changes. The report contains a summary of changes applied to the database, including records touched, modified or deleted. It also has the count of records modified or deleted and which attribute is modified. The report file is created in the data folder. The report file name is in following format:
 
 ``` {#codeblock_b3d_rw2_nvb}
-name_change_summary_report_[date\_time].log
+name_change_summary_report_[date_time].log
 ```
 
 -   **[Converting chat history owner data from Domino directory to LDAP format](t_dbutility_convertldap.md)**  

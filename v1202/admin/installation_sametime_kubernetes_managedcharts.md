@@ -4,6 +4,8 @@ The Sametime product image includes pre-configured managed Helm charts to deploy
 
 The managed charts include everything needed for a running deployment, such as: MongoDB, OpenLDAP, and NGINX Ingress Controller; and are ready to go with a single install operation. There is a variant of each chart that includes Prometheus and Grafana so that metrics can be monitored without any additional configuration. Each managed chart is provided as a TGZ bundle and can be installed using Helm or Helm Dashboard.
 
+**Note:**  Using the provided manage charts can be used to deploy LDAP, MongoDB as proof of concept. For production use, you must modify the charts to match the needs of your network.
+
 Within the managed chart TGZ bundle is a values.yaml file. You can create a custom values.yaml file with configuration settings to override the settings of the supplied file. For example, the managed chart uses `lvh.me` as the host name, so that it can only be accessed through the local host from where it is being installed. You can provide a different value in the custom values.yaml file.
 
 The customized values.yaml file can be created manually or by using the supplied prepareDeployment.sh script. For more information about the script, see [Preparing the deployment](t_meetings_configure_deployment.md).  After the file is created, the customized values.yaml file can be archived and version controlled as necessary so that it can be applied to future updates, duplicated deployments with slight variations between each, and backed up for safe keeping so that the deployment can be recovered if necessary.

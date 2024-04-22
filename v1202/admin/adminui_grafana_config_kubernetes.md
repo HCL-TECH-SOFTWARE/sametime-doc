@@ -4,7 +4,7 @@ Grafana can be configured as a post-installation task or during an upgrade.
 
 To use Granfana, the Prometheus application must be installed.
 
--   If you installed Prometheus following the instructions in the [installation\_prometheus.md](installation_prometheus.md) topic, Grafana is installed as part of installing Prometheus.
+-   If you installed Prometheus following the instructions in the [Installing Prometheus](installation_prometheus.md) topic, Grafana is installed as part of installing Prometheus.
 -   If the Grafana application is not installed in your Kubernetes cluster, see the installation details, in the [Deploying Grafana on Kubernetes](https://grafana.com/docs/grafana/latest/setup-grafana/installation/kubernetes/) topic in the Grafana documentation.
 
 To verify that the service was created correctly, run the following command to display a list of all services:
@@ -15,7 +15,7 @@ kubectl get svc -n monitoring
 
 Ensure that Grafana is listed as a service. Below is an example.![Command output](Images/grafana_verify.png)
 
-By default, Grafana is not available through an ingress controller. You can do one of the following to ?
+By default, Grafana is not available through an ingress controller. 
 
 -   Configure Grafana manually, using the instruction in the [GitHub - prometheus-operator/kub-prometheus](https://github.com/prometheus-operator/kube-prometheus) readme file to make Grafana available outside the Kubernetes cluster.
 -   Use port-forwarding to forward the Grafana port to the machine where kubectl is running. If the machine where kubectl is running does not have a browser, then SSH must be used to port forward from the machine where kubectl is running to a machine that has a browser. For SSH, used the LocalForward feature. For more information, see the [Use Port Forwarding to Access Applications in a Cluster](https://kubernetes.io/docs/tasks/access-application-cluster/port-forward-access-application-cluster.html) topic in the Kubernetes documentation.
@@ -53,5 +53,5 @@ Before you can create your first dashboard, you need to add your data source. No
 8.  Save the dashboard.
 
 
-**Parent topic: **[adminui\_grafana\_overview.md](adminui_grafana_overview.md)
+**Parent topic: **[Monitoring your meeting and chat metrics with Grafana](adminui_grafana_overview.md)
 

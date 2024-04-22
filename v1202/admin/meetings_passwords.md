@@ -14,7 +14,7 @@ You can set one or more of the following rules to increase password strength.
 -   Include at least one lowercase letter. The default is false.
 -   Include at least one number. The default is false.
 
-1.  Edit one of the followiong files.
+1.  Edit one of the following files.
 
     -   For Docker, .env
     -   For Kubernetes, values.yaml

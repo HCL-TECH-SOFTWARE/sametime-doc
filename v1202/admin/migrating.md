@@ -6,6 +6,3 @@ This section provides information on migrating data from an earlier release to S
 Sametime 12 requires a new product install and migration of data from your previous version. Do not uninstall the previous version until the V12 installation is finalized and working as expected.
 -   **[Upgrading to a new version or applying a fixpack](upgrade_install_fixpack.md)**  
 Newer versions and fix packs contain new features and fixes. You do not need to remove your current Sametime 12 installation when upgrading to a new version.
-
-**Parent Topic:  **[HCL Sametime Administration Guide 12.0.2](administrator_doc.md)
-

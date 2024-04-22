@@ -32,22 +32,23 @@ The prepareDeployment.sh script does not update the values.yaml file for telepho
         jigasiProxyBypass: true 
         ```
 
-2.  Configure the secrets for telephony. The secrets used by telephony are not carried over from the old version of Sametime to the new version. This is done manually.
+2.  Configure the secrets for telephony. The secrets used by telephony are not carried over from the previous version of Sametime to the new version. This must be done manually.
 
-    Secret name: auth-config-secret
-    :   Template file name: helm/templates/auth-config-secrets.yaml
+    **Secret name: auth-config-secret**
 
-    :   Copy the `application-registry.json` setting from the old file to the new file.
+      Template file name: helm/templates/auth-config-secrets.yaml
 
-    Secret name: sametime-global-secrets \(Sametime 12\) or meeting-secrets \(Sametime 11.6\)
-    :   Template file name: helm/templates/sametime-global-secrets.yaml
+     Copy the `application-registry.json` setting from the previous file to the new file.
 
-    :   Copy the JigasiSipUri and JigasiSipPassword values from the old file to the new file.
+    **Secret name: sametime-global-secrets \(Sametime 12\) or meeting-secrets \(Sametime 11.6\)**    
+       Template file name: helm/templates/sametime-global-secrets.yaml
 
-    Secret name: catalog-config-secret
-    :   Template file name: helm/templates/catalog-config-secrets.yaml
+       Copy the JigasiSipUri and JigasiSipPassword values from the previous file to the new file.
 
-        **Note:** If the TMG server is configured for a self-signed certificate for HTTPS, you might have the optional extra-certs configured. In this case, copy the extra-certs value from the old helm/templates/catalog-config-secrets.yaml file and paste into the new Sametime 12 `helm/catalog-config-secrets.yaml`.
+    **Secret name: catalog-config-secret**  
+      Template file name: helm/templates/catalog-config-secrets.yaml
+
+        **Note:** If the TMG server is configured for a self-signed certificate for HTTPS, you might have the optional extra-certs configured. In this case, copy the extra-certs value from the old helm/templates/catalog-config-secrets.yaml file and paste into the new Sametime 12 helm/catalog-config-secrets.yaml file.
 
 3.  Apply the changes to the environment. See [Applying configuration changes in Kubernetes or Openshift](apply_configchanges_kubernetes.md) for the steps.
 

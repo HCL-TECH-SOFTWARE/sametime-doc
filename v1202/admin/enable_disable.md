@@ -36,8 +36,7 @@ Disabling live stream is a server-wide setting; there is no user-based policy av
 
 3.  Save the custom.env file.
 
-4.  Restart the Sametime Meeting server. Refer to [Starting and stopping Meeting servers](starting_and_stopping_meeting_servers.md) for details.
-
+4.  Restart the Sametime Meeting server. 
 
 ## Configuring live streaming in a Kubernetes environment {#task_gh2_ghx_wxb}
 
@@ -61,6 +60,5 @@ Disabling live stream is a server-wide setting; there is no user-based policy av
     helm upgrade deployment helm/
     ```
 
-4.  Restart the Sametime Meeting server. Refer to [Starting and stopping Meeting servers](starting_and_stopping_meeting_servers.md) for details.
-
+4.  Restart the Sametime Meeting server.
 

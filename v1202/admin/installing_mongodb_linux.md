@@ -12,8 +12,8 @@ The commands used during the installation process require running as ROOT or SUD
 
     ```
     
-    > cd /etc/yum.repos.d 
-    > vi mongodb-org-4.4.repo
+     cd /etc/yum.repos.d 
+     vi mongodb-org-4.4.repo
     ```
 
     **Note:** The vi command is a screen-oriented text editor originally created for the Unix operating system.
@@ -69,7 +69,7 @@ The commands used during the installation process require running as ROOT or SUD
 5.  Execute YUM to install the MongoDB package.
 
     ``` {#codeblock_ebb_1qm_htb}
-    >yum install mongodb-org 
+    yum install mongodb-org 
     ```
 
     1.  Type y to confirm the download size.
@@ -97,19 +97,19 @@ The commands used during the installation process require running as ROOT or SUD
 7.  To start the MongoDB server, enter the command:
 
     ``` {#codeblock_ryl_krm_htb}
-    > service mongod start
+     service mongod start
     ```
 
     To stop the MongoDB server, enter the command:
 
     ``` {#codeblock_syl_krm_htb}
-    > service mongod stop
+     service mongod stop
     ```
 
     To verify the status of the MongoDB service, enter the command:
 
     ``` {#codeblock_tyl_krm_htb}
-    > systemctl status mongod
+     systemctl status mongod
     ```
 
     ![](Images/active_running.png)

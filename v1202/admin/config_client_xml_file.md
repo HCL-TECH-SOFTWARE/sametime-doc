@@ -8,7 +8,7 @@ All rules related to XML files apply. Additionally, the following items should b
 -   To use comments, precede the line with a hashtag \(\#\).
 -   Do not use the tab key to indent lines, use two spaces instead.
 -   Do not copy text from the help center and use it in your file because it may copy some of the encoding from the page and cause the file to fail.
--   It is helpful to use an XML editor, but a plain text editor can be used as well. If using a plain text editor, it is important to check the file extension when saving \(must be .xml not .txt\).
+-   It is helpful to use an XML editor, but a plain text editor can be used as well. If using a plain text editor, it is important to check the file extension when saving must be .xml not .txt.
 
 There is an example managed-settings.xml file attached to the [troubleshooting article](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0038860) which can be used to test managed settings in place of creating a new one.
 
@@ -197,8 +197,6 @@ This procedure demonstrates how to create the managed-settings.xml and define ch
 Sametime clients can be configured by administrators using a managed-settings.xml or managed-community-configs.xml file which is hosted by a web server. Additionally, the Sametime client can be pre-configured with settings such as the hostname, port, etc. The client package can be hosted on a web server for download. This topic has the steps to host files in the Sametime web container for Docker or Podman.
 -   **[Hosting client files for Sametime on Kubernetes](t_example_preferences_2.md)**  
 Sametime clients can be configured by administrators using a managed-settings.xml or managed-community-configs.xml file which is hosted by a web server. Additionally, the Sametime client can be pre-configured with settings such as the host name and port. The client package can be hosted on a web server for download.
--   **[Updating the client policy to include client preferences](update_client_policy.md)**  
-After creating or updating the managed-settings.xml file and managed-community-configs.xml file to define client preferences, store them on a web server. The URL to the files is defined to the Sametime server throught a Sametime policy.
 
 **Parent Topic:  **[Updating client preferences with the managed-settings.xml file](config_client_xml_location.md)
 

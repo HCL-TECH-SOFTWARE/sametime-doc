@@ -18,7 +18,8 @@ It contains information, such as the user name and password to access the databa
     -   mongodb\_password is the password used by the MongoDB user.
     -   mongodb\_host is the fully qualified host name of the MongoDB server.
     -   port is the port number used by MongoDB
-    -   replica\_set is the replica set configured by MongoDB. If you followed the steps in the [Configuring MongoDB for Sametime](t_configure_mongodb.md) topic, rs0 is the replica set value used in the topic.
+    -   replica\_set is the replica set configured by MongoDB. If you followed the steps in [Configuring MongoDB for Sametime](t_configure_mongodb.md), rs0 is the replica set value used in the topic.
+
 2.  After you have the MongoDB connection URL, run the following command to convert the connection URL to base64 encode value.
 
     ``` {#codeblock_q5b_3bf_qxb}
@@ -69,7 +70,7 @@ It contains information, such as the user name and password to access the databa
         ```
 
 
-For more information on Secrets see the topic: [https://help.hcltechsw.com/sametime/1201/admin/managing\_secrets\_kubernetes.html](https://help.hcltechsw.com/sametime/1201/admin/managing_secrets_kubernetes.html)
+For more information, see [Managing secrets in Kubernetes](managing_secrets_kubernetes.md).
 
 **Parent Topic:  **[MongoDB](administering_mongodb.md)
 

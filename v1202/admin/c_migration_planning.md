@@ -35,6 +35,8 @@ After you complete testing of the new environment and ready to migrate the users
 
 For details, see [Moving the users](migrating_moveusers.md).
 
+***
+
 -   **[Converting from native Domino directory to LDAP](migrating_dominodirectory.md)**  
 
 -   **[Migrating contact lists](migrating_contactlists.md)**  

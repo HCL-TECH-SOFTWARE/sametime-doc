@@ -25,14 +25,14 @@ On Kubernetes, scaling the pods can be used to start and stop the Sametime servi
 
     ``` {#codeblock_v3p_41t_s5b}
     
-    kubectl scale deploy deployment\_name --replicas=1
+    kubectl scale deploy deployment_name --replicas=1
     ```
 
--   Scale the pod to zero, where pod\_deployment\_name is the pod name.
+-   Scale the pod to zero, where deployment_name is the pod name.
 
     ``` {#codeblock_d2d_t1t_s5b}
     
-    kubectl scale deploy deployment\_name --replicas=0
+    kubectl scale deploy deployment_name --replicas=0
     
     ```
 

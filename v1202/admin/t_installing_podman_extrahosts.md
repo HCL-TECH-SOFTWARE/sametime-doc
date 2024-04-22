@@ -22,22 +22,22 @@ If you are using Red Hat® Enterprise Linux® and Podman, you must configure the
 2.  Place the `containers.conf` file in edit mode.
 
     ``` {#codeblock_pxg_pfr_3xb}
-    vi /etc/containers/containers.conf
+    sudo vi /etc/containers/containers.conf
     ```
-
-3.  After installation, migrate all your containers to use Netavark by running this command:
+Insert the following lines:
 
     ``` {#codeblock_d3f_rfr_3xb}
-    network_backend = "netavark"
+    [network]
+	network_backend = "netavark"
     ```
 
-4.  Do a force reset.
+3.  Do a force reset.
 
     ``` {#codeblock_jn2_znq_15b}
     podman system reset --force
     ```
 
-5.  Bind Sametime to port 443.
+4.  Bind Sametime to port 443.
 
     ``` {#codeblock_ajb_tgr_3xb}
     sysctl net.ipv4.ip_unprivileged_port_start=443

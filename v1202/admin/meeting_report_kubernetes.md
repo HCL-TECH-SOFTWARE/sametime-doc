@@ -17,6 +17,3 @@
 
 4.  Save and close the values.yaml file.
 
-
-**Parent topic: **[Disabling the mobile notification limiter](t_disable_rate_limiter.md)
-

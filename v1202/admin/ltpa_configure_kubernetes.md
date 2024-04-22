@@ -1,6 +1,6 @@
 # Configuring LTPA in Kubernetes {#ltpa_configure_kubernetes .task}
 
-This topic includes the steps to configure LTPA keys on Kubernetes.
+If you did not enable LTPA authentication during the installation of Sametime, you can enable it manually.
 
 You must have already obtain the LTPA keys before you can compete this task. For more information on using WebSphere Liberty to generate LTPA keys, see [Generating LTPA keys](ltpa_generate_key.md).
 
@@ -8,79 +8,97 @@ The changes in this task affect the following pods:
 
 -   community
 
-1.  Create a secret that contains your LTPA keys.
+## Determine values to use for the configuration
 
-    ``` {#codeblock_tnx_tw3_5tb}
-    kubectl create secret generic ltpa-keys --from-file=./ltpa.keys 
-    ```
+1.	Obtain the base64 encoded value for your LTPA key file. The LTPA key file can be named anything and might have a file extension. For example if your LTPA key file name is <code>ltpa.keys</code>. Enter the following command to base64 encode the file:
+```
+cat ltpa.keys | base64 -w 0
+```
+Copy the base64 encoded output on the screen to be used in the configuration. Note: It is a continuous line with no line breaks.
 
-2.  Change to the helm/templates directory and open the sametime-secrets.yaml file.
+- For managed charts: ltpaKeysBase64: value
+- For traditional charts: ltpa.keys: value
 
-3.  Find the base64 encoded value for your pass code.
+2.	Obtain the base64  encoded password to the LTPA Key file. For example, if the password is `ltpapassword`, enter the following command:
+```
+echo -n ‘ltpapassword’ | base64
+```
+Create a new parameter, and set the value of the parameter to the encoded output.
+```
+ltpaKeysPasswordBase64: value
+```
 
-    To base64 encode the password, you can enter the following command in a Linux shell:
+3.	Determine the SSO token expiration time, which must be the same for all participating servers. To find the value in Connections see Integrating with [HCL Connections](ltpa_configure_connections.md). 
+To find the value in Domino, see [Creating a Web SSO configuration](https://help.hcltechsw.com/domino/12.0.2/admin/conf_creatingawebssoconfigurationdocument_t.html). 
 
-    ``` {#codeblock_gns_r4h_k5b}
-    echo -n 'ltpa\_key\_password' | base64
-    ```
+Now that you know the number of minutes until the token expires, create a new parameter and set it to the number of minutes. For example if the number of minutes is 120, then the parameter is:
+```
+ltpaDurationMinutes: "120"
+```
 
-4.  Locate the `LtpaKeysPassword` line and replace the existing text with the base64 encoded LTPA key password.
+4.	If integrating with HCL Connections, determine the realm name. Use the cat command to view the content of the <code>ltpa.key</code> file and find the name of the WebSphere realm.  
+```
+cat ltpa.key
+```
 
-5.  Save and close the sametime-secrets.yaml file.
+Look for the <code>com.ibm.websphere.ltpa.Realm=defaultWIMFileBasedRealm</code> parameter.
 
-6.  In the helm/values.yaml file set `enableLtpa` to true.
+Create a new parameter with the value, for example:
+```
+ltpa.realm: defaultWIMFileBasedRealm
+```
 
-    `enableLtpa : true`
+## Procedure for managed charts
+If you are using the managed charts, use the following steps. If you are using traditional charts, scroll down to the next section for traditional charts.
 
-7.  Add a new line that defines the number of minutes that the LTPA token is valid.
+1.	Open your custom <code>values.yaml</code> file for editing. 
+2.	In the <code>global</code> section, add the parameters determined from above. Each line is indented with two spaces.
+```
+  ltpaKeysBase64: value
+     ltpaKeysPasswordBase64: value
+  ltpaDurationMinutes: "value"
+     ltpa.realm: value (for Connections only)
+```
 
-    The number of minutes must match the Domino web SSO token expiration field. For example, if the Domino Web SSO token expiration is 30 minutes, for example:
+3.	Add the following parameter to enable LTPA.
+```
+  enableLtpa: true
+```
+  
+4.	Save and close your custom <code>values.yaml</code> file.
 
-    ``` {#codeblock_bjg_x3h_gyb}
-    ltpaDurationMinutes: "30"
-    ```
+5.	For these changes to take effect, you must uninstall Sametime, then re-install referencing your custom <code>values.yaml</code> file.
 
-    **Note:** The new line must be indented with two spaces.
+## Procedure for traditional helm charts 
+If you are enabling LTPA using traditional helm charts instead of using the managed charts, complete the following steps.
 
-8.  When using a realm, add a new line that defines the realm name.
+1.	Open the <code>values.yaml</code> file in the helm directory for editing.
 
-    ``` {#codeblock_ejr_gt4_jyb}
-    ltpa.realm: <defaultrealm>
-    ```
+2.	Locate the following line and change the value from false to true.
+```
+enableLtpa
+```
 
-    **Note:** For integrations with HCL Connections, you must define the realm name in the values.yaml/config if/. For more information, see [Integrating with HCL Connections](ltpa_configure_connections.md).
+3.	Add the parameters:
+```
+ltpaDurationMinutes: “value”
+ltpa.ream: value (for Connections only)
+ltpaKeysPasswordBase64: value 
+```
 
-9.  Apply your changes to the environment.
+4.	Save and close the <code>values.yaml</code> file.
 
-    Verify that you are in the helm directory and run the following command to apply changes. Specify the Sametime deployment name for your environment. The default for Sametime Premium version 12 is sametime.
+5.	Change directories to <code>helm/templates</code>.
 
-    ``` {#codeblock_iyn_51d_d5b}
-    helm upgrade sametime\_deployment\_name .
-    ```
+6.	Open the <code>auth-config-secrets.yaml</code> file for editing.
 
-    **Note:** Be sure to include the dot at the end. It is part of the command.
+7.	In the <code>ltpa.keys</code> field, remove the text that is there, and add the base64 encoded value from step 1.
+8.	Save and close the auth-config-secrets.yaml file.
 
-    If you are unsure of your deployment name, issue the helm list command to find the name. If you upgraded from an earlier Sametime release, the default name is sametime-meetings.
-
-10. Restart the pods with the changes. Use the kubectl scale command to scale the pods to zero and then to one that have been changed. You must run the commands for each pod that the change affects.
-
-    1.  Run the following command to scale the pod to zero.
-
-        Scale the pod to zero, where pod\_deployment\_name is the pod name.
-
-        ``` {#codeblock_cwz_mwc_d5b}
-        
-        kubectl scale deploy pod\_deployment\_name --replicas=0
-        
-        ```
-
-    2.  Run the following command to scale the pod to one.
-
-        ``` {#codeblock_i2c_4wc_d5b}
-        
-        kubectl scale deploy pod\_deployment\_name --replicas=1
-        ```
+9.	For these changes to take effect, complete the steps in [Applying Changes](pod_apply_changes.md). 
 
 
-**Parent Topic:  **[Setting up SSO using LTPA](enabling_sso_ltpa.md)
+## What to do next
+
+If you are integrating with HCL Connections or HCL Verse, it might be beneficial to add a content security policy that includes the DNS suffix of the servers participating in the LTPA Single Sign On. For information, see [Enabling content security headers on Kubernetes](verse_integration_contentsecurity_kubernetes.md). 
 

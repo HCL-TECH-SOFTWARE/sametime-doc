@@ -95,9 +95,6 @@ Is a moderated meeting room not available until its owner enters the room?
 
 ## Migration and existing Sametime environments {#section_ttf_lqc_w5b .section}
 
-Can I upgrade from an earlier version of Sametime Meetings?
-:   Yes, see [Upgrading from Meetings 11.5 and 11.6](upgrading_meetings.md).
-
 Can I migrate my Sametime 9.0.1 meeting data to the Sametime meeting server?
 :   No. There is no slide share or file share tool in the new meeting server. There is no data that needs to be migrated.
 

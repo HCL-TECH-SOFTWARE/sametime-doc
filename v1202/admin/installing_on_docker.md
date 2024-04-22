@@ -14,8 +14,8 @@ Docker commands are used throughout the install process. All commands require ru
 
     ```
     
-    # cd sametime\_install
-    # ls -la
+    cd sametime\_install
+    ls -la
     ```
 
     Where sametime\_install is the installation directory.
@@ -23,7 +23,7 @@ Docker commands are used throughout the install process. All commands require ru
 2.  From the installation directory, run the Sametime install command.
 
     ```
-    # ./install.sh
+    ./install.sh
     ```
 
     The install command begins the installation of the Sametime product.

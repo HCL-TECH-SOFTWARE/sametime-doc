@@ -60,8 +60,6 @@ The following table describes the configuration settings.
 |EmailAttribute|The name of the attribute that holds the email address.|Mail|
 |GroupMembership|The resolve filter used by policies to determine if a user is a member of a group. It might be more performant to change this to the memberOf attribute in lieu of a search.|"\(&amp;\(objectclass=groupOfNames\)\(member=%s\)\)"|
 
--   **[Configuring LDAP on Docker and Podman](configuring_ldap_docker.md)**  
-
 -   **[Changing the LDAP service account password in Kubernetes](configuring_ldap_password.md)**  
 If you are using an authenticated bind for LDAP, with a password that expires periodically, you'll need to update the LDAP bind credentials for Sametime clusters in Kubernetes with a new password.
 -   **[Overriding the default LDAP configuration in Kubernetes](configuring_ldap_kubernetes.md)**  

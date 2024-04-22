@@ -27,8 +27,6 @@ The Web client provides access to the Sametime server using a web browser. This 
 
 ![](Images/sametime_clients.png)
 
--   **[Sametime capabilities by client type](client_features.md)**  
-
 
 **Parent Topic:  **[Planning](planning.md)
 

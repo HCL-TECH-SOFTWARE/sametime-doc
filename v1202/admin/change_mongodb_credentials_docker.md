@@ -6,7 +6,7 @@
 
     ``` {#codeblock_hcx_xb5_cyb}
     
-    mongodb://sametime\_user:mongodb\_password.mongodb\_host:port
+    mongodb://sametime_user:mongodb_password.mongodb_host:port
     ```
 
     where:
@@ -15,6 +15,7 @@
     -   mongodb\_password is the password used by the MongoDB user.
     -   mongodb\_host is the fully qualified host name of the MongoDB server.
     -   port is the port number used by MongoDB.
+	
 2.  Update the MONGO\_URL values to the new user and password.
 
 3.  Save the changes.

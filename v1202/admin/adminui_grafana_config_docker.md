@@ -1,6 +1,6 @@
 # Configuring Grafana on Docker and Podman {#adminui_grafana_config_docker .task}
 
-Grafana can be configured as a post-installation task or during an upgrade.
+When using the managed charts to install Sametime, the Grafana dashboard is created. If using a manual install or update process, Grafana can be configured as a post-installation task.
 
 After Grafana is configured, port 3001 is the default port used for Grafana.
 
@@ -20,7 +20,7 @@ After Grafana is configured, port 3001 is the default port used for Grafana.
 
     ``` {#codeblock_h1v_rvk_rzb}
     ENABLE_GRAFANA_PROXY=true
-    MONITORING_ENABLED=TRUE
+    MONITORING_ENABLED=true
     ```
 
 3.  Edit the monitoring.env file and add the Grafana administrator ID and password.

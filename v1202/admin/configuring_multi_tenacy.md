@@ -19,7 +19,7 @@ The following conditions must be satisfied:
     ```
 
 
-**Note:** For multi-tenant deployments, orgID in versions 12.0 and 12.0.1 does not support the dash character \(" - "\) for Sametime Meetings.
+**Note:** For multi-tenant deployments, orgID in versions 12.0 and 12.0.1 does not support the dash \( -\) character for Sametime Meetings.
 
 By default, the multi-tenancy feature is *disabled*. This feature uses customized Java™ code to dynamically generate a filter and base distinguished names for LDAP searches. The multi-tenancy feature is configured by running the `setupMultitenancy.sh` script.
 
@@ -29,11 +29,11 @@ By default, the multi-tenancy feature is *disabled*. This feature uses customize
 
     |Setting Name|Description|Example|Your Value|
     |------------|-----------|-------|----------|
-    |Base DN|This is the top of your LDAP tree—where to start searching the directory.|CN=ORGANIZATIONS,OU=COLLAB, DC=HCL,DC=COM| |
-    |Organization BaseDN|This is the location of the individual organizations.|O=Organization A,CN=ORGANIZATIONS, OU=COLLAB,DC=HCL,DC=COM| |
+    |Base DN|The top of your LDAP tree—where to start searching the directory.|CN=ORGANIZATIONS,OU=COLLAB, DC=HCL,DC=COM| |
+    |Organization BaseDN|Thhe location of the individual organizations.|O=Organization A,CN=ORGANIZATIONS, OU=COLLAB,DC=HCL,DC=COM| |
     |﻿ORG\_PART\_OF\_DN|The attribute in the LDAP DN that contains the organization name.|O| |
-    |﻿PEOPLE\_ROOT\_BASE\_DN|This is the DN of the entry where to start searching for people. It should contain the lowest LDAP entry under which the entries of all the people in the organization are available.|O=%S,CN=ORGANIZATIONS, OU=COLLAB,DC=HCL,DC=COM| |
-    |﻿GROUPS\_ROOT\_BASE\_DN|This is the DN of the entry where to start searching for groups. It should contain the lowest LDAP entry under which the entries of all the people in the organization are available.|O=%S,CN=ORGANIZATIONS, OU=COLLAB,DC=HCL,DC=COM| |
+    |﻿PEOPLE\_ROOT\_BASE\_DN|The DN of the entry where to start searching for people. It should contain the lowest LDAP entry under which the entries of all the people in the organization are available.|O=%S,CN=ORGANIZATIONS, OU=COLLAB,DC=HCL,DC=COM| |
+    |﻿GROUPS\_ROOT\_BASE\_DN|The DN of the entry where to start searching for groups. It should contain the lowest LDAP entry under which the entries of all the people in the organization are available.|O=%S,CN=ORGANIZATIONS, OU=COLLAB,DC=HCL,DC=COM| |
     |﻿PEOPLE\_BASE\_DN\_TEMPLATE|﻿The DN of the entry at which to start the people or the groups LDAP search when the search is done in a sub tree of a particular organization. %S should always be present in the value. It is dynamically replaced by the organization name during the resolve operation.|O=%S| |
     |﻿GROUPS\_BASE\_DN\_TEMPLATE|The DN of the entry at which to start the people or the groups LDAP search when the search is done in a sub tree of a particular organization. %S should always be present in the value. It is dynamically replaced by the organization name during the resolve operation.|O=%S| |
     |﻿LDAP\_ORG\_ATTR|﻿The attribute in the LDAP directory that is present in every person and group entry and contains the organization name that this person or group belongs to.|ORGANIZATIONNAME| |
@@ -44,8 +44,8 @@ By default, the multi-tenancy feature is *disabled*. This feature uses customize
 
     -   For Docker, restart the server to apply the changes.
     -   For Kubernetes, install or upgrade the helm charts \(as applicable to your environment\):
-        -   To install, run helm install sametime ..
-        -   To upgrade, run helm upgrade sametime ..
+        -   To install, run helm install sametime.
+        -   To upgrade, run helm upgrade sametime.
 
 **Parent Topic:  **[Administering](administering.md)
 
