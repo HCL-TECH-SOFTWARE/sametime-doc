@@ -439,7 +439,7 @@ nav:
 # Troubleshooting
       - Troubleshooting: 
         - admin/troubleshooting.md
-     #   - Statement of support: admin/c_troubleshooting_supportstatement.md
+        - Getting help: admin/c_troubleshooting_supportstatement.md
         - Working with HCL support: admin/troubleshooting_contact_support.md
         - Troubleshooting Sametime on Docker:
           - admin/t_troubleshooting_sametime_docker.md

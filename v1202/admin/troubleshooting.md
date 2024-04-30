@@ -1,9 +1,12 @@
 # Troubleshooting {#troubleshooting .concept}
 
-This section provides information on troubleshooting and supporting Sametime environments.
+This section provides information on troubleshooting and supporting Sametime environments. Use this section to assist you with problems that you might experience and contacting support if needed.
 
--   [HCL Customer Support](https://support.hcltechsw.com/csm)
--   [Sametime community forum](https://support.hcltechsw.com/csm?id=community_forum&sys_id=e3c946d01b80841077761fc58d4bcb04)
+#   [HCL Customer Support](https://support.hcltechsw.com/csm)
+#  [Sametime community forum](https://support.hcltechsw.com/csm?id=community_forum&sys_id=e3c946d01b80841077761fc58d4bcb04)
+
+-   **[Getting help](c_troubleshooting_supportstatement.md)**  
+There are several resources available to troubleshoot and resolve a problem that you can use before contacting support. If you need to contact support, a support guide describes expectations.  
 
 -   **[Working with HCL support](troubleshooting_contact_support.md)**  
 HCL support is available to provide technical assistance with obtaining a solution to problems with Sametime.
