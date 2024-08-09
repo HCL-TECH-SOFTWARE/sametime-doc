@@ -6,7 +6,7 @@ The Docker and Podman commands are similar. The only difference is that docker p
 
 2.  Locate the `SAMETIME_EXTERNAL_WARINTEGRATION` variable and ensure that it is set to true.
 
-    If the statement doesn't exist, add it in the `proxy` section of the file.
+    If the statement doesn't exist, add it in the `stwebclient` section of the file.
 
     ``` {#codeblock_hfl_1g1_h5b}
     SAMETIME_EXTERNAL_WARINTEGRATION=true
