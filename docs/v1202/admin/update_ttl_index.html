@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#update_ttl_index" class="md-skip">
+        <a href="#updating-the-time-to-live-index-and-chat-history-for-persistent-chat" class="md-skip">
           Skip to content
         </a>
       
@@ -3445,6 +3445,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Updating the time-to-live index for persistent chat
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="update_ttl_index.html" class="md-nav__link md-nav__link--active">
         
   
@@ -3454,6 +3465,36 @@
   
 
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#to-modify-the-amount-of-chathistory-a-user-will-see-in-the-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      To Modify the amount of ChatHistory a user will see in the client
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -10052,6 +10093,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#to-modify-the-amount-of-chathistory-a-user-will-see-in-the-client" class="md-nav__link">
+    <span class="md-ellipsis">
+      To Modify the amount of ChatHistory a user will see in the client
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -10068,10 +10126,10 @@
   
 
 
-<h1 class="task" id="update_ttl_index">Updating the time-to-live index for persistent chat</h1>
-<p>The time-to-live (TTL) setting defines how long the chat history is stored in the database. The default value is 90 days. However, administrators can update the value based on the organization's preferred setting.</p>
-<p>The TTL index in MongoDB must be rebuilt. For more information, refer to <a href="https://www.mongodb.com/docs/v4.4/tutorial/manage-indexes/#manage-indexes">Manage Indexes</a> in the MongoDB documentation.</p>
-<p>To update the TTL settings used by the Sametime server involves modifying the following files.</p>
+<h1 id="updating-the-time-to-live-index-and-chat-history-for-persistent-chat">Updating the time-to-live index and chat history for persistent chat</h1>
+<p>The time-to-live (TTL) setting defines how long the chat history is stored in the database. The default value is 90 days. However, administrators can update the value based on the organization's preferred setting and control chat history available to users.</p>
+<p>Changes to the TTL value in MongoDB require the indexes to be rebuilt in MongoDB.  For more information, refer to <a href="https://www.mongodb.com/docs/v4.4/tutorial/manage-indexes/#manage-indexes">Manage Indexes</a> in the MongoDB documentation.</p>
+<p>To update the TTL and chat history settings used by the Sametime server involves modifying the following files.</p>
 <ul>
 <li>custom.env for Docker</li>
 <li>helm/values.yaml for Kubernetes</li>
@@ -10079,70 +10137,72 @@
 <p><strong>Note:</strong> These values are case sensitive and must be entered as shown below.</p>
 <ol>
 <li>
-<p>Modify the configuration file. The minimum value is 1.</p>
-<ul>
-<li>
 <p>For Docker, update the CLI__ChatLogging__CL_MONGO_HISTORY_TTL parameter. In the following example, the value is set to 7 days.</p>
-<div id="codeblock_k3y_zdq_5tb" class="highlight"><pre><span></span><code>CLI__ChatLogging__CL_MONGO_HISTORY_TTL=7
-</code></pre></div>
-</li>
-<li>
-<p>For Kubernetes, update the CLI__ChatLogging__CL_MONGO_HISTORY_TTL parameter. In the following example, the value is set to 7 days.</p>
-<div id="codeblock_oft_k2q_5tb" class="highlight"><pre><span></span><code>CLI__ChatLogging__CL_MONGO_HISTORY_TTL: 7
-</code></pre></div>
-</li>
+<ul>
+<li>CLI__ChatLogging__CL_MONGO_HISTORY_TTL=7</li>
+<li>For Kubernetes, update the CLI__ChatLogging__CL_MONGO_HISTORY_TTL parameter. In the following example, the value is set to 7 days.</li>
+<li>CLI__ChatLogging__CL_MONGO_HISTORY_TTL: 7</li>
 </ul>
 </li>
 <li>
-<p>Modify the Convomap Max Days configuration value to match the MongoDB TTL value. The minimum value is 1.</p>
+<p>To modify the chat conversations available to users, set the MAX_DAYS configuration value to match the MONGO_HISTORY_TTL value. The minimum value is 1.</p>
 <ul>
-<li>
-<p>For Docker, update the STI__stconvomap__CONVOMAP_MAX_DAYS parameter. In the following example, the value is set to 7 days.</p>
-<div id="codeblock_igt_cfd_g5b" class="highlight"><pre><span></span><code>STI__stconvomap__CONVOMAP_MAX_DAYS=7
-</code></pre></div>
-</li>
-<li>
-<p>For Kubernetes, update the STI__stconvomap__CONVOMAP_MAX_DAYS parameters. In the following example, the value is set to 7 days.</p>
-<div id="codeblock_jgt_cfd_g5b" class="highlight"><pre><span></span><code>STI__stconvomap__CONVOMAP_MAX_DAYS: 7
-</code></pre></div>
-</li>
+<li>For Docker, update the STI__stconvomap__CONVOMAP_MAX_DAYS parameter. In the following example, the value is set to 7 days.</li>
+<li>STI__stconvomap__CONVOMAP_MAX_DAYS=7</li>
+<li>For Kubernetes, update the STI__stconvomap__CONVOMAP_MAX_DAYS parameters. In the following example, the value is set to 7 days.</li>
+<li>STI__stconvomap__CONVOMAP_MAX_DAYS: 7</li>
 </ul>
 </li>
 <li>
 <p>You can update the STI__stconvomap__CONVOMAP_MAX_HOURS parameter to add hours to the time frame. In the following examples, the value is set to 2 hours.</p>
 <ul>
-<li>
-<p>Docker:</p>
-<div id="codeblock_lt2_f2d_g5b" class="highlight"><pre><span></span><code>STI__stconvomap__CONVOMAP_MAX_HOURS=2
-</code></pre></div>
-</li>
-<li>
-<p>Kubernetes:</p>
-<div id="codeblock_mt2_f2d_g5b" class="highlight"><pre><span></span><code>STI__stconvomap__CONVOMAP_MAX_HOURS: 2
-</code></pre></div>
-</li>
+<li>Docker:</li>
+<li>STI__stconvomap__CONVOMAP_MAX_HOURS=2</li>
+<li>Kubernetes:</li>
+<li>STI__stconvomap__CONVOMAP_MAX_HOURS: 2</li>
 </ul>
 </li>
 <li>
 <p>In the Mongo shell, run the following commands.</p>
-<div class="highlight"><pre><span></span><code>use chatlogging
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>db.EVENTS.getIndexes()
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>db.EVENTS.dropIndex(&quot;TimeStamp_1&quot;)
-</code></pre></div>
-<div id="codeblock_hyr_5h2_5yb" class="highlight"><pre><span></span><code>db.USERS.dropIndex(&quot;date_1&quot;)
-</code></pre></div>
-<p>The <code>db.EVENTS.dropIndex</code> command defines the name of the index to drop. The value is <code>TimeStamp_1</code>.</p>
+</li>
+<li>use chatlogging</li>
+<li>db.EVENTS.getIndexes()</li>
+<li>db.EVENTS.dropIndex("TimeStamp_1")</li>
+<li>db.USERS.dropIndex("date_1")</li>
+</ol>
+<p>The db.EVENTS.dropIndex command defines the name of the index to drop. The value is TimeStamp_1.</p>
+<ol>
+<li>Restart the Sametime server to apply the changes. The TTL index is updated with the new value.
+For more information, refer to Starting and stopping servers.</li>
+<li>Run the following command to confirm that the value for TimeStamp_1 is updated.
+db.EVENTS.getIndexes()</li>
+</ol>
+<h2 id="to-modify-the-amount-of-chathistory-a-user-will-see-in-the-client">To Modify the amount of ChatHistory a user will see in the client</h2>
+<p>This setting has no affect on the chatlogging TTLs or data that is stored in MongoDB. Instead, it controls how much history the client will request.</p>
+<ol>
+<li>
+<p>There are 2 settings that control this</p>
+<ul>
+<li>CL__MONGO_USER_HISTORY_TIMELIMIT</li>
+<li>Default is 90 , minimum is 1</li>
+<li>CL_MONGO_USER_HISTORY_TIMEUNIT</li>
+<li>Default is DAYS, values can be DAYS, HOURS, MINUTES, SECONDS</li>
+</ul>
 </li>
 <li>
-<p>Restart the Sametime server to apply the changes. The TTL index is updated with the new value.</p>
-<p>For more information, refer to <a href="https://help.hcltechsw.com/sametime/12/admin/starting_and_stopping_servers.html">Starting and stopping servers</a>.</p>
+<p>Example</p>
+<ul>
+<li>CL__MONGO_USER_HISTORY_TIMELIMIT =7</li>
+<li>CL__MONGO_USER_HISTORY_TIMEUNIT=DAYS</li>
+</ul>
+<p>The user would see 7 days of history in the client, while the server would have a full 90 days available.</p>
+<ul>
+<li>For Docker, update this value in custom.env</li>
+<li>For Kubernetes, this value goes in values.yaml</li>
+</ul>
 </li>
 <li>
-<p>Run the following command to confirm that the value for <code>TimeStamp_1</code> is updated.</p>
-<div class="highlight"><pre><span></span><code>db.EVENTS.getIndexes()
-</code></pre></div>
+<p>Restart the server and client for the changes to take affect.</p>
 </li>
 </ol>
 <p><strong>Parent Topic:  </strong><a href="configuring.html">Configuring</a></p>
