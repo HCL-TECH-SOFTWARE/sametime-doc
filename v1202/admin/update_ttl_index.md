@@ -37,10 +37,11 @@ To update the TTL and chat history settings used by the Sametime server involves
 7.	db.EVENTS.dropIndex("TimeStamp_1")
 8.	db.USERS.dropIndex("date_1")
 
-The db.EVENTS.dropIndex command defines the name of the index to drop. The value is TimeStamp_1.
+    The db.EVENTS.dropIndex command defines the name of the index to drop. The value is TimeStamp_1.
 
 9.	Restart the Sametime server to apply the changes. The TTL index is updated with the new value.
-For more information, refer to Starting and stopping servers.
+For more information, refer to [Starting and stopping servers](starting_and_stopping_servers.md).
+
 10.	Run the following command to confirm that the value for TimeStamp_1 is updated.
 db.EVENTS.getIndexes()
 

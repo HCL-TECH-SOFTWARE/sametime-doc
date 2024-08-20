@@ -10168,14 +10168,18 @@
 <li>use chatlogging</li>
 <li>db.EVENTS.getIndexes()</li>
 <li>db.EVENTS.dropIndex("TimeStamp_1")</li>
-<li>db.USERS.dropIndex("date_1")</li>
-</ol>
+<li>
+<p>db.USERS.dropIndex("date_1")</p>
 <p>The db.EVENTS.dropIndex command defines the name of the index to drop. The value is TimeStamp_1.</p>
-<ol>
-<li>Restart the Sametime server to apply the changes. The TTL index is updated with the new value.
-For more information, refer to Starting and stopping servers.</li>
-<li>Run the following command to confirm that the value for TimeStamp_1 is updated.
-db.EVENTS.getIndexes()</li>
+</li>
+<li>
+<p>Restart the Sametime server to apply the changes. The TTL index is updated with the new value.
+For more information, refer to <a href="starting_and_stopping_servers.html">Starting and stopping servers</a>.</p>
+</li>
+<li>
+<p>Run the following command to confirm that the value for TimeStamp_1 is updated.
+db.EVENTS.getIndexes()</p>
+</li>
 </ol>
 <h2 id="to-modify-the-amount-of-chathistory-a-user-will-see-in-the-client">To Modify the amount of ChatHistory a user will see in the client</h2>
 <p>This setting has no affect on the chatlogging TTLs or data that is stored in MongoDB. Instead, it controls how much history the client will request.</p>
