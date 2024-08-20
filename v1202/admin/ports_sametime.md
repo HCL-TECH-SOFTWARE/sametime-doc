@@ -5,7 +5,7 @@ Sametime services use several ports for communication. If firewalls are in use i
 |Port Number|Description|
 |-----------|-----------|
 |389|Used for non-secure communications from the Sametime server to the LDAP server.|
-|443|Used for HTTP communications over a secure connection.|
+|443|Used for HTTP communications over a secure connection.<br><br>**Note:**<br>There is an environment variable named `HTTPS_PORT` in `.env` for Docker deployments that holds this value.<br>It is currently not supported to change this to something other than `443`.|
 |636|Used for secure communications with LDAP for directory services.|
 |1516|Used as an internal port between the community and proxy pods.|
 |1533|Used to listen for direct TCP/IP connections from Sametime Connect clients.A direct TCP/IP connection is when a Sametime client uses a unique Sametime protocol over TCP/IP to establish a connection with community services.|
