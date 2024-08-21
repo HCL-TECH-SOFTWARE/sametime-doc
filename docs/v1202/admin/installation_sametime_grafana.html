@@ -10072,10 +10072,13 @@
 
 <h1 class="task" id="installation_sametime_grafana">Enabling monitoring and statistics</h1>
 <p>You can configure Grafana during the installation process provided it has been enabled. Alternately, Grafana can be configured post-installation.</p>
-<p>To include Grafana configuration during installation, run the following exportcommand before running the installation process.</p>
+<p>You are then prompted during the install to enable Grafana: Do you want to enable monitoring?.</p>
+<p><strong>NOTE:</strong> podman-compose does not support the <code>COMPOSE_PROFILES</code> environment variable that is configured via the installation script. In order to enable monitoring when starting up via podman-compose, you need to explicitly list the monitoring profile when starting the server:
+<div class="highlight"><pre><span></span><code>  podman-compose --profile monitoring up -d
+</code></pre></div></p>
+<p><strong>NOTE:</strong> In v12.0.2, In order to see this option during installation, run the following exportcommand before running the installation process.</p>
 <div id="codeblock_khq_qpk_rzb" class="highlight"><pre><span></span><code>export ENABLE_DARK_LAUNCH_MONITORING=true
 </code></pre></div>
-<p>You are then prompted during the install to enable Grafana: Do you want to enable monitoring?.</p>
 <p>If configuring Grafana after installation, see the following topics:</p>
 <ul>
 <li><a href="adminui_grafana_config_docker.html">Configuring Grafana on Docker and Podman</a></li>

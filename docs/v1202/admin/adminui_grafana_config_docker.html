@@ -10071,17 +10071,9 @@
 
 
 <h1 class="task" id="adminui_grafana_config_docker">Configuring Grafana on Docker and Podman</h1>
-<p>When using the managed charts to install Sametime, the Grafana dashboard is created. If using a manual install or update process, Grafana can be configured as a post-installation task.</p>
+<p>When installing Sametime, you have the option of enabling extra docker containers used for monitoring. When this is selected a specialized Grafana dashboard is created. If using a manual install or update process, Grafana can be configured as a post-installation task.</p>
 <p>After Grafana is configured, port 3001 is the default port used for Grafana.</p>
 <ol>
-<li>
-<p>Edit the .env file and add the following statement.</p>
-<div id="codeblock_nv4_lvk_rzb" class="highlight"><pre><span></span><code>COMPOSE_PROFILES=monitoring
-</code></pre></div>
-<p><strong>Note:</strong> If you are have enabled the Outlook addin, the <code>COMPOSE_PROFILES</code> statement looks like the following:</p>
-<div id="codeblock_bnr_m5p_rzb" class="highlight"><pre><span></span><code>COMPOSE_PROFILES=monitoring, outlookAddin
-</code></pre></div>
-</li>
 <li>
 <p>Edit the custom.env file and add ensure that the following settings are set to true.</p>
 <div id="codeblock_h1v_rvk_rzb" class="highlight"><pre><span></span><code>ENABLE_GRAFANA_PROXY=true
@@ -10095,8 +10087,19 @@ GF_SECURITY_ADMIN_PASSWORD
 </code></pre></div>
 </li>
 <li>
-<p>Start the Sametime server to apply the changes.</p>
+<p>For Docker, edit the .env file and add the following statement.</p>
+<div id="codeblock_nv4_lvk_rzb" class="highlight"><pre><span></span><code>COMPOSE_PROFILES=monitoring
+</code></pre></div>
+<p><strong>Note:</strong> If you are have enabled the Outlook addin, the <code>COMPOSE_PROFILES</code> statement looks like the following:</p>
+<div id="codeblock_bnr_m5p_rzb" class="highlight"><pre><span></span><code>COMPOSE_PROFILES=monitoring, outlookAddin
+</code></pre></div>
+</li>
+<li>
+<p>Restart the Sametime server to apply the changes.</p>
+<p>Docker:</p>
 <p><code>docker compose up -d</code></p>
+<p>Podman:</p>
+<p><code>podman-compose --profile monitoring up -d</code></p>
 </li>
 </ol>
 
