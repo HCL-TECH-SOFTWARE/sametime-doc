@@ -10,7 +10,7 @@ While Openshift is similar to other Kubernetes platforms, the following are conc
 
 ## Deployment in a name space {#section_ang_hbt_swb .section}
 
-In the Openshift platform, there are namespace labels used to define a common set of arbitrary User IDs \(UID\) to be used as runAs UIDs for the pods running in that namespace. Sametime has some containers that require a constant UID of 1000. You must create a Security Context Constraints \(SCC\) within the namespace where Sametime is to be deployed to apply this MustRunAs policy to allow the service account which runs the deployments to assign this constant UID.
+In the Openshift platform, there are namespace labels used to define a common set of arbitrary User IDs \(UID\) to be used as runAs UIDs for the pods running in that namespace. Sametime now supports running whatever arbitrary user ids that are assigned to the namespace within which Sametime is deployed. In previous releases of Sametime, it was necessary to create specialized Security Context Constraints (SCC) in order to restrict the UID used to run containers via the MustRunAs policy. Now, Openshift can run the containers as whatever arbitrary user it chooses. 
 
 ## Deployment into the default namespace {#section_lv3_4b3_xwb .section}
 

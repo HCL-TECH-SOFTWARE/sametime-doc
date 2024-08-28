@@ -8,31 +8,11 @@ Refer to [Planning for Openshift](c_planning_openshift.md) for consideratons rel
 
     **Deploy to a new namespace**
 
-    1.  Create a namespace
-
-        ``` {#codeblock_x2p_h4b_twb}
-        
-        export NAMESPACE=sametime
-        oc create namespace $NAMESPACE
-        ```
-
-    2.  Create the sametimeUser service account.
-
-        ```
-         kubectl -n $NAMESPACE create serviceaccount sametimeUser
-        ```
-
-    3.  Create the SCC for sametimeUser account
-
-        ```
-        oc create -f kubernetes/stack/openshift/sametime-restricted-v2.yaml
-        ```
-
-    4.  Apply the SCC to the service account.
-
-        ```
-        oc adm policy add-scc-to-user sametime-restricted-v2 -z sametimeUser -n $NAMESPACE
-        ```
+      ``` {#codeblock_x2p_h4b_twb}
+      
+      export NAMESPACE=sametime
+      oc create namespace $NAMESPACE
+      ```
 
     **Deploy to default namespace**
 
@@ -87,7 +67,7 @@ Refer to [Planning for Openshift](c_planning_openshift.md) for consideratons rel
         ...
         video:
           serviceAccount:
-            name: sametimeUser
+            name: videoUser
         
         ```
 
@@ -102,22 +82,9 @@ Refer to [Planning for Openshift](c_planning_openshift.md) for consideratons rel
         ...
         video:
           serviceAccount:
-            name: sametimeUser
+            name: videoUser
         
         ```
-
-3.  Edit the values.yaml file to disable the fsGroup and runAsUser settings, and reference the Sametime service account that you created.
-
-    ```
-    
-    global:
-       ...
-       disableFsGroup: true
-       disableRunAsUser: true
-       sametimeServiceAccount: sametimeUser
-    
-    ```
-
 
 Continue with the topics for installing in a Kubernetes environment.
 

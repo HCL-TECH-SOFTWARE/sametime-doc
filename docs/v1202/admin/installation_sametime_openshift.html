@@ -10079,29 +10079,9 @@
 <li>
 <p>Deploy in a namespace. You can either create a namespace or use the default namespace. If you deploy Sametime into the default namespace, there are modifications that must be appled to the Helm chart.</p>
 <p><strong>Deploy to a new namespace</strong></p>
-<ol>
-<li>
-<p>Create a namespace</p>
 <div id="codeblock_x2p_h4b_twb" class="highlight"><pre><span></span><code>export NAMESPACE=sametime
 oc create namespace $NAMESPACE
 </code></pre></div>
-</li>
-<li>
-<p>Create the sametimeUser service account.</p>
-<div class="highlight"><pre><span></span><code> kubectl -n $NAMESPACE create serviceaccount sametimeUser
-</code></pre></div>
-</li>
-<li>
-<p>Create the SCC for sametimeUser account</p>
-<div class="highlight"><pre><span></span><code>oc create -f kubernetes/stack/openshift/sametime-restricted-v2.yaml
-</code></pre></div>
-</li>
-<li>
-<p>Apply the SCC to the service account.</p>
-<div class="highlight"><pre><span></span><code>oc adm policy add-scc-to-user sametime-restricted-v2 -z sametimeUser -n $NAMESPACE
-</code></pre></div>
-</li>
-</ol>
 <p><strong>Deploy to default namespace</strong></p>
 <ol>
 <li>
@@ -10145,7 +10125,7 @@ oc adm policy add-scc-to-user sametime-hostnetwork-v2 -z videoUser -n $NAMESPACE
 ...
 video:
   serviceAccount:
-    name: sametimeUser
+    name: videoUser
 </code></pre></div>
 </li>
 <li>
@@ -10156,19 +10136,10 @@ video:
 ...
 video:
   serviceAccount:
-    name: sametimeUser
+    name: videoUser
 </code></pre></div>
 </li>
 </ul>
-</li>
-<li>
-<p>Edit the values.yaml file to disable the fsGroup and runAsUser settings, and reference the Sametime service account that you created.</p>
-<div class="highlight"><pre><span></span><code>global:
-   ...
-   disableFsGroup: true
-   disableRunAsUser: true
-   sametimeServiceAccount: sametimeUser
-</code></pre></div>
 </li>
 </ol>
 <p>Continue with the topics for installing in a Kubernetes environment.</p>
