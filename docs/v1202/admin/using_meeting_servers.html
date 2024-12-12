@@ -6166,6 +6166,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using_meeting_servers_windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10333,6 +10342,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using_meeting_servers_windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -10403,6 +10421,48 @@
 <div class="highlight"><pre><span></span><code>docker-compose down
 docker-compose up -d
 </code></pre></div>
+</li>
+</ol>
+<h2 id="using_meeting_servers_windows">Windows</h2>
+<p>Windows deployments use Traefik for the front end that handles all incoming web traffic. Traefik has a robust implementation of the ACME protocol for automatic certificate generation and renewals. Documentation can be found here: <a href="https://doc.traefik.io/traefik/https/acme/" target="_blank">Traefik: Let's Encrypt</a> for details about how this works and the various options and providers that can be used.</p>
+<p>The basic configuration using Let's Encrypt is shown below.</p>
+<ol>
+<li>
+<p>In the file <code>&lt;InstallationFolder&gt;\traefik-windows-amd64\conf\traefik.yml</code>, add a <code>web:</code> entryPoint alongside the <code>websecure:</code> one that is already there and add the <code>certificatesResolvers:</code> section like:</p>
+<div class="highlight"><pre><span></span><code>entryPoints:
+  web:
+    address: &quot;:80&quot;
+  websecure:
+    address: &quot;:443&quot;
+
+...
+
+certificatesResolvers:
+  myresolver:
+    acme:
+      email: your-email@example.com
+      storage: &quot;./conf/acme.json&quot;
+      httpChallenge:
+        entryPoint: web
+</code></pre></div>
+</li>
+<li>
+<p>In the file <code>&lt;InstallationFolder&gt;\traefik-windows-amd64\conf\dynamic.yml</code>, modify the <code>tls:</code> section to remove the existing self-signed certificates and instead use a <code>stores:</code> section configured with the defined certificate resolver for the default certificate. Make sure to configure the fully-qualified domain name of the server so that the configuration now looks like this:</p>
+<div class="highlight"><pre><span></span><code>tls:
+  stores:
+    default:
+      defaultGeneratedCert:
+        resolver: myresolver
+        domain:
+          main: sametime-server.example.com
+  ...
+  # certificates:
+  #    - certFile: &quot;./conf/keys/cert.crt&quot;
+  #      keyFile: &quot;./conf/keys/cert.key&quot;
+</code></pre></div>
+</li>
+<li>
+<p>Restart the <code>ST Ingress</code> service. You will notice the file <code>&lt;InstallationFolder&gt;\traefik-windows-amd64\conf\acme.json</code> appear. Initially, it will contain only a private key, but a certificate will be generated for the configured FQDN and stored in this file after a brief moment.</p>
 </li>
 </ol>
 

@@ -66,3 +66,46 @@ Generate a Let's Encrypt certificate. Afterward, apply the encryption certificat
     ```
 
 
+## Windows {#using_meeting_servers_windows}
+
+Windows deployments use Traefik for the front end that handles all incoming web traffic. Traefik has a robust implementation of the ACME protocol for automatic certificate generation and renewals. Documentation can be found here: [Traefik: Let's Encrypt](https://doc.traefik.io/traefik/https/acme/){:target="_blank"} for details about how this works and the various options and providers that can be used.
+
+The basic configuration using Let's Encrypt is shown below.
+
+1.  In the file `<InstallationFolder>\traefik-windows-amd64\conf\traefik.yml`, add a `web:` entryPoint alongside the `websecure:` one that is already there and add the `certificatesResolvers:` section like:
+
+    ```
+    entryPoints:
+      web:
+        address: ":80"
+      websecure:
+        address: ":443"
+
+    ...
+
+    certificatesResolvers:
+      myresolver:
+        acme:
+          email: your-email@example.com
+          storage: "./conf/acme.json"
+          httpChallenge:
+            entryPoint: web
+    ```
+
+2.  In the file `<InstallationFolder>\traefik-windows-amd64\conf\dynamic.yml`, modify the `tls:` section to remove the existing self-signed certificates and instead use a `stores:` section configured with the defined certificate resolver for the default certificate. Make sure to configure the fully-qualified domain name of the server so that the configuration now looks like this:
+
+    ```
+    tls:
+      stores:
+        default:
+          defaultGeneratedCert:
+            resolver: myresolver
+            domain:
+              main: sametime-server.example.com
+      ...
+      # certificates:
+      #    - certFile: "./conf/keys/cert.crt"
+      #      keyFile: "./conf/keys/cert.key"
+    ```
+
+3.  Restart the `ST Ingress` service. You will notice the file `<InstallationFolder>\traefik-windows-amd64\conf\acme.json` appear. Initially, it will contain only a private key, but a certificate will be generated for the configured FQDN and stored in this file after a brief moment.
