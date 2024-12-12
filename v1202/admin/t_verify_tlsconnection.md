@@ -7,7 +7,7 @@ To verify if the TLS connection can be established, do the following.
     Sametime configures the MongoDB details in a Mongo URL, for example:
 
     ``` {#codeblock_bdw_fwb_5yb}
-    mongodb://sametime\_user:mongodb\_password.mongodb\_host:port
+    mongodb://sametime_user:mongodb_password.mongodb_host:port
     ```
 
     where:

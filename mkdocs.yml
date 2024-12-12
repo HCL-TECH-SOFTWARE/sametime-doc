@@ -139,6 +139,7 @@ nav:
           - admin/installation_sametime.md
           - Information to provide during installation: admin/installation_prompt_descriptions.md
           - Enabling Grafana: admin/installation_sametime_grafana.md
+          - Installing Sametime Chat on Windows: admin/installation_sametime_chat_windows.md
           - Installing Sametime on Windows using Docker Desktop: admin/installation_sametime_windows.md
           - Installing Sametime in a Kubernetes environment:
             - admin/installation_sametime_kubernetes.md
@@ -248,6 +249,8 @@ nav:
           - Enabling web client integration on Kubernetes: admin/verse_integration_kubernetes.md
           - Enabling content security headers on Docker and Podman: admin/verse_integration_contentsecurity_docker.md
           - Enabling content security headers on Kubernetes: admin/verse_integration_contentsecurity_kubernetes.md
+          - Configuring content security headers on Windows: admin/verse_integration_contentsecurity_windows.md
+          - Configuring CORS: admin/nomad_integration_cors.md
 #        - Monitoring your meeting and chat metrics with Grafana:
 #          - admin/Managing_dashboard.md
 #          - Configuring Docker and Podman to run Grafana: admin/t_grafana_docker.md
@@ -256,6 +259,7 @@ nav:
           - admin/t_push_proxy.md
           - Configuring Docker and Podman to use a proxy server for push messaging: admin/t_proxy_docker.md
           - Configuring Kubernetes to use a proxy server for push messaging: admin/t_proxy_k8s.md
+        - Deployment customization best practices in Kubernetes: admin/t_deployment_customization.md
 # Securing
       - Securing: 
         - admin/securing.md
@@ -311,6 +315,8 @@ nav:
           - Updating the TLS certificates on Docker: admin/tls_change_certificate_docker.md
           - Updating the TLS certificates on Kubernetes: admin/tls_change_certificate_kubernetes.md
         - Applying Let's Encrypt certificates: admin/using_meeting_servers.md
+        - Customizing HTTP Headers: admin/customizing_http_headers.md
+        - Content Security Policy: admin/content_security_policy.md
 # Administering
       - Administering: 
         - admin/administering.md
@@ -340,6 +346,7 @@ nav:
           - admin/adminui_grafana_overview.md
           - Configuring Grafana on Docker and Podman: admin/adminui_grafana_config_docker.md
           - Configuring Kubernetes to run Grafana: admin/adminui_grafana_config_kubernetes.md          
+          - Configuring Windows deployment to run Grafana: admin/adminui_grafana_config_windows.md
         - Managing Sametime clients:
           - admin/managing_sametime_client_preferences.md
           - Sametime client configuration options:
@@ -441,6 +448,9 @@ nav:
         - admin/troubleshooting.md
         - Getting help: admin/c_troubleshooting_supportstatement.md
         - Working with HCL support: admin/troubleshooting_contact_support.md
+#        - Troubleshooting Sametime on Windows:
+#          - admin/t_troubleshooting_sametime_windows.md
+ #         - Troubleshooting Sametime Chat on Windows: admin/t_troubleshooting_sametime_chat_windows.md
         - Troubleshooting Sametime on Docker:
           - admin/t_troubleshooting_sametime_docker.md
           - Enabling Community trace in Docker: admin/troubleshooting_debug_trace_docker.md
@@ -451,6 +461,7 @@ nav:
           - Viewing and saving log files: admin/troubleshooting_kubernetes_logs.md
           - Pods in Sametime: admin/pods_descriptions.md
           - Transferring files from a pod to a Linux shell: admin/troubleshooting_kubernetes_transfer_pods.md
+          - Running a pod as the root user: admin/troubleshooting_kubernetes_pod_root.md
           - Capturing a network trace in a pod: admin/troubleshooting_kubernetes_pod_networktrace.md
           - Applying changes: admin/pod_apply_changes.md
  #         - Kubernetes Containers not starting due to "Host not found": admin/t_troubleshooting_kubernetes_host_not_found.md
@@ -468,6 +479,7 @@ nav:
 # Uninstalling
       - Uninstalling: 
         - admin/t_uninstall.md
+        - admin/uninstall_sametime_chat_windows.md
         - Uninstalling Sametime on Docker or Podman: admin/t_uninstall_docker.md
         - Uninstalling Sametime on Kubernetes: admin/t_uninstall_k8.md
 # Migrating & Updating
@@ -485,4 +497,4 @@ nav:
             - admin/upgrade_install_fixpack_kubernetes.md
             - Upgrade considerations for telephony: admin/t_upgrade_telephony.md
           - Reverting to a previous version on Kubernetes: admin/upgrade_revert_kubernetes.md
-        
+

@@ -2,1517 +2,1258 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/index.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/admin_st_buscard.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/admin_st_mng_remotecomm.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/administering.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/administering_mongodb.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_grafana_config_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_grafana_config_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_grafana_config_windows.html</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_grafana_overview.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_overview.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policy_add.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policy_add_copy.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policy_assign.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policy_create_new.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policy_delete.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policy_manage.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policy_modify.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policy_sections.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policy_types.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policy_view_active.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policy_weight.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policysection_administration.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policysection_chat.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policysection_filetransfer.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policysection_meeting.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/adminui_policysection_mobile.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/alternate_client_configuration.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/apply_configchanges_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/apply_configchanges_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/c_dbutility.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/c_migration_planning.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/c_planning_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/c_planning_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/c_planning_kubernetes_cluster.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/c_planning_openshift.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/c_planning_platforms.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/c_planning_prereqs.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/c_recording_lifecycle.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/c_troubleshooting_supportstatement.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/change_mongodb_credentials_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/change_mongodb_credentials_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/chat_configuring.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/chat_configuring_sametimeini.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/chat_configuring_sametimeini_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/chat_configuring_sametimeini_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/chat_msg_delete_options.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/cluster_highavailability.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/community_provisioning.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_buscard.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_buscard_custom_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_buscard_custom_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_chat_ldap_java_format.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_chat_ldap_java_people.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_class_file_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_class_file_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_access_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_cal_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_chat_history_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_comm_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_connect_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_contact_list_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_discontinue_xml_file.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_ext_app_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_file_tran_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_location_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_login_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_mng_xml_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_notes_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_notification_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_people_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_pref_plugin.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_pref_tables.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_rules_mng_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_spellchecker_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_stadv_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_status_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_update_interval_xml.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_update_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_url_xml_file.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_widg_pref.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_xml_file.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/config_client_xml_location.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/configuration_files.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/configuring.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/configuring_ldap.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/configuring_ldap_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/configuring_ldap_multiple_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/configuring_ldap_multiple_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/configuring_ldap_password.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/configuring_multi_tenacy.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/configuring_sso_saml.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/configuring_stun.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/connections_photos.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://opensource.hcltechsw.com/sametime-doc/admin/content_security_policy.html</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/control_validity_length.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/creating_custom_java.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/customize_branding.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/customize_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/customize_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://opensource.hcltechsw.com/sametime-doc/admin/customizing_http_headers.html</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/disable_background.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/disable_guest_access.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/disable_sharing_meetings.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/download_content.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enable_dial_out.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enable_dialout_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enable_dialout_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enable_disable.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enable_microsoft_outlook.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enable_video_bridge.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enabling_saml.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enabling_saml_clients.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enabling_saml_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enabling_saml_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enabling_sso.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enabling_sso_ltpa.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/enabling_sso_saml.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/example_preferences.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/hcl_sametime_clients.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/implement_tls_configuration.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/increase_activecameras.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_mongodb.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_prometheus.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_prompt_descriptions.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_roadmap.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_sametime.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_sametime_chat_windows.html</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_sametime_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_sametime_grafana.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_sametime_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_sametime_kubernetes_managedcharts.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_sametime_openshift.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installation_sametime_windows.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installing.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installing_connectclient_silentinstall.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installing_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installing_mongodb_linux.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installing_mongodb_windows.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installing_on_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installing_sametime_clients.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installing_sametime_connect_and_embedded.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installing_sametime_connect_and_embedded_macos.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/installing_sametime_ios_and_android.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/keystore_third_party.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/ldap.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/load_stimages_local.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/ltpa_configure_connections.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/ltpa_configure_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/ltpa_configure_domino.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/ltpa_configure_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/ltpa_generate_key.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/managed_community.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/managing_sametime_client_preferences.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/managing_sametime_premium.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/managing_secrets_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/meeting_report_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/meeting_report_setting_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/meetings_configuring.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/meetings_configuring_max.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/meetings_dialin.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/meetings_passwords.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/microsoft_outlook_deploy.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/migrating.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/migrating_contactlists.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/migrating_dominodirectory.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/migrating_moveusers.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/mongodb.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/mongodb_cloud.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/network_planning.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://opensource.hcltechsw.com/sametime-doc/admin/nomad_integration_cors.html</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/overview_encryption.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/plan_cluster_chat.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/plan_cluster_meetings.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/plan_cluster_meetings_recorder.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/plan_cluster_meetings_video.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/plan_cluster_mongodb.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/planning.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/planning_meetingserver.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/pod_apply_changes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/pods_descriptions.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/ports_sametime.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/recording.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/sametime_client_configuration.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/sametime_meeting_administering.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/sametime_premium.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/secrets_delete.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/secrets_modify.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/secrets_view.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/secure_rooms.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/secure_rooms_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/secure_rooms_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/securing.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/securing_connections.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/securing_connections_between_community_clients.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/securing_connections_between_community_clients_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/securing_connections_between_community_clients_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/securing_connections_sametime_community_and_ldap.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/securing_ldap_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/securing_ldap_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/security_mongodb_tls.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/session_traversal_utilities.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/starting_and_stopping_mongodb.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/starting_and_stopping_servers.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/storing_photos.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/system_requirements.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_adding_signer_certs_k8s.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_choose_connect_method.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_client_connect_direct.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_client_connect_proxy.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_client_connect_tls.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_collecting_configuration_logging_data.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_community_provisioning_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_community_provisioning_k8s.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_config_alt_client_connect.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_configure_default_virtual_background.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_configure_jitsi.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_configure_ltpa_duration_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_configure_ltpa_duration_k8s.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_configure_mongodb.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_configure_virtual_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_configure_virtual_k8s.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_connect_clienttoserver.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_create_mongo_replset.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_create_truststore.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_create_truststore_LDAP.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_create_truststore_SAML.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_create_truststore_businesscards.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_dbutility_convertldap.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_dbutility_delete.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_dbutility_move.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_dbutility_update.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_define_hostserver.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_deployment_customization.html</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_different_hostname.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_disable_background_upload.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_disable_generate_report.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_disable_recordings.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_disabling_timer.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_domino_ldap_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_domino_ldap_k8s.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_enabling_community_debug.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_example_preferences_2.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_generate_certkey.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_host_samefilename_k8s.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_ingress_configure.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_ingress_install.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_installing_deploy_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_installing_docker_extrahosts.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_installing_podman_extrahosts.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_keystore_mux.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_keystore_self_signed.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_logging_tracing.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_manage_user_login_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_manage_user_login_k8s.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_managing_transfer_data.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_meetings_configure_deployment.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_meetings_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_meetings_prepare_network.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_meetings_recordings.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_proxy_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_proxy_k8s.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_push_proxy.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_resolving_business_cards.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_retrieve_photourl_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_security_mongodb_tls_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_security_tls_mongodb_k8s.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_testing_sametime_chat.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_troubleshooting_clients.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_troubleshooting_ldap_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_troubleshooting_sametime_chat_windows.html</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_troubleshooting_sametime_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_troubleshooting_sametime_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_troubleshooting_sametime_windows.html</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_uninstall.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_uninstall_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_uninstall_k8.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_upgrade_telephony.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/t_verify_tlsconnection.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/tls_change_certificate.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/tls_change_certificate_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/tls_change_certificate_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/topology.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/topology_chat.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/topology_premium.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/topology_telephony.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/topology_turn.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/troubleshooting.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/troubleshooting_contact_support.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/troubleshooting_debug_trace_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/troubleshooting_docker_logs.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/troubleshooting_kubernetes_logs.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/troubleshooting_kubernetes_pod_networktrace.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://opensource.hcltechsw.com/sametime-doc/admin/troubleshooting_kubernetes_pod_root.html</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/troubleshooting_kubernetes_transfer_pods.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/turnserver_centos.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/turnserver_intro.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/turnserver_meetings_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/turnserver_meetings_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/turnserver_ubuntu.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://opensource.hcltechsw.com/sametime-doc/admin/uninstall_sametime_chat_windows.html</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/update_ttl_index.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/upgrade_install_fixpack.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/upgrade_install_fixpack_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/upgrade_install_fixpack_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/upgrade_revert_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/use_stimages_harbor.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/using_meeting_servers.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/verse_integration.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/verse_integration_contentsecurity_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/verse_integration_contentsecurity_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
+    </url>
+    <url>
+         <loc>https://opensource.hcltechsw.com/sametime-doc/admin/verse_integration_contentsecurity_windows.html</loc>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/verse_integration_docker.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/verse_integration_kubernetes.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
     <url>
          <loc>https://opensource.hcltechsw.com/sametime-doc/admin/whats_new.html</loc>
-         <lastmod>2024-08-28</lastmod>
-         <changefreq>daily</changefreq>
+         <lastmod>2024-12-12</lastmod>
     </url>
 </urlset>

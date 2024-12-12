@@ -30,3 +30,5 @@ This contains configuration steps specific to the HCL Sametime Meetings server.
 Integration with an application such as Verse prior to Sametime 12.0 requires the legacy web-client interface. Beginning in Sametime 12.0 the legacy web-client is not enabled by default, but can enabled when needed for integration with other products.
 -   **[Push messaging through a proxy](t_push_proxy.md)**  
 Depending on your network settings, your firewalls could prevent Sametime proxy from connecting to push networks like Apple Push Notification Service \(APNS\) and Firebase Cloud Messaging \(FCM\) through the Internet. Sametime supports the sending of APNS and FCM messages through a proxy server. If you need to send APNS or FCM message through a proxy server in your environment, you need to configure the settings for the messages you want routed through the proxy.
+-   **[Deployment customization best practices in Kubernetes](t_deployment_customization.md)**
+This topic describes some best practices with respect to how to customize the configuration of the deployment.

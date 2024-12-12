@@ -121,7 +121,7 @@ This section provides information on how to configure secrets for deployment.
 
 5.  Locate the setting `sametimeClaim`. This is the name of the persistent storage volume claim that is used by recordings, proxy, files, and backgrounds for storage.
 
-    You can also modify other values at this time to enable, disable, or configure features.
+    You can also modify other values at this time to enable, disable, or configure features. Follow [Deployment customization best practices in Kubernetes](t_deployment_customization.md) for an easy way to preserve and apply your own configuration to new deployments and upgrades.
 
 6.  Save and close values.yaml.
 

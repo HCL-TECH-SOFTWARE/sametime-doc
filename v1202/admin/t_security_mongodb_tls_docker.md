@@ -20,8 +20,10 @@ Ensure that the you have read the [introductory topic](security_mongodb_tls.md) 
 4.  Add the volume mount to the Community section of the YAML file.
 
     ``` {#codeblock_h5d_g32_5yb}
-    /opt/sametime/cacert.pem:/local/notesdata/cacert.pem
+    /opt/sametime/cacerts.pem:/local/notesdata/cacerts.pem
     ```
+
+    The example above assumes that you have the `cacerts.pem` file on the host system at the `/opt/sametime` location. It will mount into the container at the location `/local/notesdata/cacerts.pem` which should be the same path/filename as specified in the `tlsCAFile` parameter on the Mongo connection string.
 
 5.  Save the changes.
 

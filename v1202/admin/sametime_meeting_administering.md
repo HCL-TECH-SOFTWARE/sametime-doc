@@ -14,7 +14,7 @@ Table 1. Meeting Features
 |Change recording availability|Recordings are available for 3 days by default, to change the setting, see [Managing recording options](recording.md).|
 |Secure the meeting with password|The option to secure meetings with a password is by default enabled, cannot disable.|
 |  |  A user can choose for any meeting owned whether or not to configure a password on that meeting.|
-|  | See [Defining Meetings password requirements] (meetings_passwords.md) for additional information.|
+|  | See [Defining Meetings password requirements](meetings_passwords.md) for additional information.|
 |Guest users|Guest access is enabled by default. To disable, see [Preventing guest access](disable_guest_access.md)|
 |Unmoderated meetings|Enabled by default, cannot disable.|
 |Moderated meeting: invite others|[Enabling meeting dial-out](enable_dial_out.md).|

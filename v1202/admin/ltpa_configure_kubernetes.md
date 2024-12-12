@@ -11,59 +11,69 @@ The changes in this task affect the following pods:
 ## Determine values to use for the configuration
 
 1.	Obtain the base64 encoded value for your LTPA key file. The LTPA key file can be named anything and might have a file extension. For example if your LTPA key file name is <code>ltpa.keys</code>. Enter the following command to base64 encode the file:
-```
-cat ltpa.keys | base64 -w 0
-```
-Copy the base64 encoded output on the screen to be used in the configuration. Note: It is a continuous line with no line breaks.
 
-- For managed charts: ltpaKeysBase64: value
-- For traditional charts: ltpa.keys: value
+    ```
+    cat ltpa.keys | base64 -w 0
+    ```
+
+    Copy the base64 encoded output on the screen to be used in the configuration. Note: It is a continuous line with no line breaks.
+
+    - For managed charts: ltpaKeysBase64: value
+    - For traditional charts: ltpa.keys: value
 
 2.	Obtain the base64  encoded password to the LTPA Key file. For example, if the password is `ltpapassword`, enter the following command:
-```
-echo -n ‘ltpapassword’ | base64
-```
-Create a new parameter, and set the value of the parameter to the encoded output.
-```
-ltpaKeysPasswordBase64: value
-```
+
+    ```
+    echo -n ‘ltpapassword’ | base64
+    ```
+    Create a new parameter, and set the value of the parameter to the encoded output.
+    ```
+    ltpaKeysPasswordBase64: value
+    ```
 
 3.	Determine the SSO token expiration time, which must be the same for all participating servers. To find the value in Connections see Integrating with [HCL Connections](ltpa_configure_connections.md). 
 To find the value in Domino, see [Creating a Web SSO configuration](https://help.hcltechsw.com/domino/12.0.2/admin/conf_creatingawebssoconfigurationdocument_t.html). 
 
-Now that you know the number of minutes until the token expires, create a new parameter and set it to the number of minutes. For example if the number of minutes is 120, then the parameter is:
-```
-ltpaDurationMinutes: "120"
-```
+    Now that you know the number of minutes until the token expires, create a new parameter and set it to the number of minutes. For example if the number of minutes is 120, then the parameter is:
+
+    ```
+    ltpaDurationMinutes: "120"
+    ```
 
 4.	If integrating with HCL Connections, determine the realm name. Use the cat command to view the content of the <code>ltpa.key</code> file and find the name of the WebSphere realm.  
-```
-cat ltpa.key
-```
 
-Look for the <code>com.ibm.websphere.ltpa.Realm=defaultWIMFileBasedRealm</code> parameter.
+    ```
+    cat ltpa.key
+    ```
 
-Create a new parameter with the value, for example:
-```
-ltpa.realm: defaultWIMFileBasedRealm
-```
+    Look for the <code>com.ibm.websphere.ltpa.Realm=defaultWIMFileBasedRealm</code> parameter.
+
+    Create a new parameter with the value, for example:
+
+    ```
+    ltpa.realm: defaultWIMFileBasedRealm
+    ```
 
 ## Procedure for managed charts
+
 If you are using the managed charts, use the following steps. If you are using traditional charts, scroll down to the next section for traditional charts.
 
 1.	Open your custom <code>values.yaml</code> file for editing. 
+
 2.	In the <code>global</code> section, add the parameters determined from above. Each line is indented with two spaces.
-```
-  ltpaKeysBase64: value
-     ltpaKeysPasswordBase64: value
-  ltpaDurationMinutes: "value"
-     ltpa.realm: value (for Connections only)
-```
+
+    ```
+    ltpaKeysBase64: value
+        ltpaKeysPasswordBase64: value
+    ltpaDurationMinutes: "value"
+        ltpa.realm: value (for Connections only)
+    ```
 
 3.	Add the following parameter to enable LTPA.
-```
-  enableLtpa: true
-```
+
+    ```
+    enableLtpa: true
+    ```
   
 4.	Save and close your custom <code>values.yaml</code> file.
 
@@ -75,16 +85,18 @@ If you are enabling LTPA using traditional helm charts instead of using the mana
 1.	Open the <code>values.yaml</code> file in the helm directory for editing.
 
 2.	Locate the following line and change the value from false to true.
-```
-enableLtpa
-```
+
+    ```
+    enableLtpa
+    ```
 
 3.	Add the parameters:
-```
-ltpaDurationMinutes: “value”
-ltpa.ream: value (for Connections only)
-ltpaKeysPasswordBase64: value 
-```
+
+    ```
+    ltpaDurationMinutes: “value”
+    ltpa.ream: value (for Connections only)
+    ltpaKeysPasswordBase64: value 
+    ```
 
 4.	Save and close the <code>values.yaml</code> file.
 

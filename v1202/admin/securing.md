@@ -14,4 +14,7 @@ You can update the MongoDB connection with the Sametime server to encrypt data f
 The Sametime server is pre-configured with a self-signed certificate. You can replace the self-signed certificate with a third party certificate.
 -   **[Applying Let's Encrypt certificates](using_meeting_servers.md)**  
 This topic describes how to replace the self-signed certificate with a third-party certificate.
-
+-   **[Customizing HTTP Headers](customizing_http_headers.md)**  
+This topic describes how to add or override HTTP headers.
+-   **[Content Security Policy](content_security_policy.md)**  
+This topic describes the default content security policy and how it might be configured differently as needed.

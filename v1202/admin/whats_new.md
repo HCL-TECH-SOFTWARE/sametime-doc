@@ -3,6 +3,19 @@ HCL Sametime and HCL Sametime Premium 12.0.2 provide many new features, enhancem
 
 For information on these new features and enhancements, refer to the following articles:
 
+## Sametime 12.0.2 FP2
+
+-   [HCL Sametime and HCL Sametime Premium 12.0.2 FP2 What's New](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0117286)
+
+For a listing of fixes provided in 12.0.2 FP2, refer to the following article:
+
+-   [HCL Sametime and HCL Sametime Premium 12.0.2 FP2 Fix List](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0117288)
+
+To review the 12.0.2 FP2 System Requirements, refer to the following article:
+
+-   [HCL Sametime and HCL Sametime Premium 12.0.2 FP2 System Requirements](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0117290)
+
+
 ## Sametime 12.0.2 FP1
 
 -   [HCL Sametime and HCL Sametime Premium 12.0.2 FP1 What's New](https://support.hcltechsw.com/csm?id=kb_article&sysparm_article=KB0115089)

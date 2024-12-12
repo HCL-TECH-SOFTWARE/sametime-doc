@@ -1,5 +1,7 @@
 # Capturing a network trace in a pod {#troubleshooting_kubernetes_pod_networktrace .task}
 
+You will need the pod running as the root user in order to perform these steps. See [Running a pod as the root user](troubleshooting_kubernetes_pod_root.md) for more details.
+
 1.  Get the name of the pod.
 
     ``` {#codeblock_r3b_bbj_3vb}
@@ -48,8 +50,3 @@
 
 
 **Parent Topic:  **[Troubleshooting Sametime on Kubernetes](t_troubleshooting_sametime_kubernetes.md)
-
-[Transferring files from a pod to a Linux shell](troubleshooting_kubernetes_transfer_pods.md)
-
-[Pods in Sametime](pods_descriptions.md)
-

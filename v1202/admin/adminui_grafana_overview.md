@@ -2,10 +2,14 @@
 
 Sametime uses the third-party software, Grafana, to generate insightful graphs and visualizations derived from time-series database \(TSDB\) data. Integrating Grafana into your Sametime environment allows you to see analytic metrics about Sametime meetings and chats on a Grafana dashboard. The metrics can be used to monitor Sametime usage and resources.
 
-Using Grafana involves that you have a running Grafana installation and then setting up the dashboard to view Sametime metrics. The Sametime Premium product image contains two JSON files that define Sametime metrics to display on the Grafana dashboard. One file is for a Docker environment and the other for Kubernetes. After you decompress the product image, the JSON files are located in the root folder. The files are:
+Using Grafana involves that you have a running Grafana installation and then setting up the dashboard to view Sametime metrics. The Sametime Premium product image contains two JSON files that define Sametime metrics to display on the Grafana dashboard. One file is for a Docker environment and the other for Kubernetes. After you decompress the product image on a linux platform, the JSON files are located in the root folder. The files are:
 
 -   Docker\_Sametime\_Dashboard.json
 -   K8\_Sametime\_Dashboard.json
+
+Alternatively, after installing the Sametime server on Windows, the dashboard can be found in the `monitoring` subfolder:
+
+-   Windows_Sametime_Dashboard.json
 
 The Sametime Grafana dashboard consists of four rows, you can expand and contract each row.
 

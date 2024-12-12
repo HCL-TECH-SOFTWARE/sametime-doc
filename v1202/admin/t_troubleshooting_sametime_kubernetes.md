@@ -8,6 +8,8 @@ Logs track pod events. You can gather a log for a specific pod and container wit
 A pod is a group of one or more containers that share storage and network resources.
 -   **[Transferring files from a pod to a Linux shell](troubleshooting_kubernetes_transfer_pods.md)**  
 
+-   **[Running a pod as the root user](troubleshooting_kubernetes_pod_root.md)**  
+
 -   **[Capturing a network trace in a pod](troubleshooting_kubernetes_pod_networktrace.md)**  
 
 -   **[Applying changes](pod_apply_changes.md)**  

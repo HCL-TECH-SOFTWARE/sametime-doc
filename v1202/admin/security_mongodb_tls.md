@@ -8,12 +8,9 @@ Ensure that the following conditions are met.
 2.  You have a valid TLS certificate. See [Creating a truststore with a third-party certificate](t_create_truststore.md) for the details.
 3.  You have a TLS-enabled MongoDB server. For details, refer to the topic [Configure mongod and mongos for TLS/SSL](https://docs.mongodb.com/manual/tutorial/configure-ssl/) in the MongoDB documentation.
 
-You can enable TLS on a connection to your MongoDB instance in two ways:
+You enable the TLS connection to your MongoDB instance by adding TLS options to the mongo connection URL
 
--   Adding a parameter in the connection string
--   Using a method in the MongoClientSettings.Builder class
-
-This topic covers the first method. During Sametime Meeting installation, the chatlogging.ini file is created to contain MongoDB server connection information. The connection configuration information within the chatlogging.ini file must be modified to include parameters necessary to establish a secure connection.
+During Sametime Meeting installation, the chatlogging.ini file is created to contain MongoDB server connection information. The connection configuration information within the chatlogging.ini file must be modified to include parameters necessary to establish a secure connection.
 
 The Sametime administrator can specify a custom connection URL to the MongoDB server. The CL\_MONGO\_URL configuration parameter can be set with a MongoDB server URL which includes the required settings for the Sametime server to establish a secure connection to the MongoDB server. After adding the CL\_MONGO\_URL configuration parameter to the chatlogging.ini file, the default setting is overridden by the settings contained within the URL string.
 
@@ -26,7 +23,7 @@ If a self-signed certificate is being used, the certificate must be added to the
     This parameter is used to override existing configuration settings specified during installation. If changes were made post installation, this parameter exists in the file. If no changes have been made, add the parameter.
 
     ```
-    CL_MONGO_URL=mongodb://user:password@hostname\_tcpip:port/tls\_information
+    CL_MONGO_URL=mongodb://user:password@hostname_tcpip:port/tls_information
     ```
 
     where:
@@ -41,14 +38,16 @@ If a self-signed certificate is being used, the certificate must be added to the
     :   The attributes that identify use of a TLS MongoDB. Copy and past the following into the CL\_MONGO\_URL parameter.
 
         ```
-         /admin?retryWrites=true&w=majority&ssl=true&tlsCAFile=/local/notesdata/cacert.pem
+         /admin?retryWrites=true&w=majority&tls=true&tlsCAFile=/local/notesdata/cacerts.pem
         ```
 
     For example:
 
     ```
-    CL_MONGO_URL=mongodb://user:password@192.168.150.1:27017/admin?retryWrites=true&w=majority&ssl=true&tlsCAFile=/local/notesdata/cacert.pem
+    CL_MONGO_URL=mongodb://user:password@192.168.150.1:27017/admin?retryWrites=true&w=majority&ssl=true&tlsCAFile=/local/notesdata/cacerts.pem
     ```
+
+    NOTE: the path and name of the cacerts.pem file specified in that connection string. That is the name/location of the file that the Mongo driver will use for the TLS connection. The certificates in that file must include certificates for the entire certificate chain. When a tlsCAFile is specified in this manner, the OS default trust store _will not be used_ so it is important that the whole chain be present in this file.
 
 3.  Save the file and restart the Sametime server to apply the changes.
 
