@@ -43,10 +43,29 @@ Download Sametime Chat to your local drive.
 ![install sametime chat on windows](Images/install-st-chat-windows-11.png)  
 ![install sametime chat on windows](Images/install-st-chat-windows-12.png)         
 
-9.  The LDAP Configuration panel displays.  
-10.
-11. 
-12   . 
+9.  The LDAP Configuration panel displays. Sametime supports any version 3.0, LDAP compliant server.
+![install sametime chat on windows](Images/install-st-chat-windows-13.png)
+
+10.  Sametime has defaults for Domino and Active Directory defaults.  Because you want to be able to see the advanced information, select **others** to use open LDAP to view your host name.  Select **Next**.   
+![install sametime chat on windows](Images/install-st-chat-windows-14.png)
+
+11. Select **Advanced LDAP Configuration** to specify settings for the Sametime server to access the your LDAP directory. Select **Next**  
+![install sametime chat on windows](Images/install-st-chat-windows-15.png)
+
+12.  By choosing the Advaced LDAP Configuration setting you can now set the bind DN and password for the overall service.             
+![install sametime chat on windows](Images/install-st-chat-windows-16.png)   
+
+13.  --- ![install sametime chat on windows](Images/install-st-chat-windows-17.png)
+14.  --- ![install sametime chat on windows](Images/install-st-chat-windows-18.png)
+15.  --- ![install sametime chat on windows](Images/install-st-chat-windows-19.png)
+16.  --- ![install sametime chat on windows](Images/install-st-chat-windows-20.png)
+17.  --- ![install sametime chat on windows](Images/install-st-chat-windows-21.png)
+18.  --- ![install sametime chat on windows](Images/install-st-chat-windows-22.png)
+19.  --- ![install sametime chat on windows](Images/install-st-chat-windows-23.png)
+20.  --- ![install sametime chat on windows](Images/install-st-chat-windows-24.png)
+
+
+
 
 
     

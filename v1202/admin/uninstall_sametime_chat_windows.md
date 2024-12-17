@@ -13,8 +13,5 @@ You can uninstall Sametime Chat for Windows using your Windows Control Panel.
 
 3.  Unstall is complate, click Done.    
 ![Unintall Sametime Chat on windows ](Images/uninstall-st-chat-windows-2.png)
-4. 
-5. 
-6. 
-7. 
+ 
 
