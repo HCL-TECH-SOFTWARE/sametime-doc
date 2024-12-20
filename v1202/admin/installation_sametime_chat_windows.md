@@ -55,14 +55,19 @@ Download Sametime Chat to your local drive.
 12.  By choosing the Advaced LDAP Configuration setting you can now set the bind DN and password for the overall service.             
 ![install sametime chat on windows](Images/install-st-chat-windows-16.png)   
 
-13.  --- ![install sametime chat on windows](Images/install-st-chat-windows-17.png)
-14.  --- ![install sametime chat on windows](Images/install-st-chat-windows-18.png)
-15.  --- ![install sametime chat on windows](Images/install-st-chat-windows-19.png)
-16.  --- ![install sametime chat on windows](Images/install-st-chat-windows-20.png)
-17.  --- ![install sametime chat on windows](Images/install-st-chat-windows-21.png)
-18.  --- ![install sametime chat on windows](Images/install-st-chat-windows-22.png)
-19.  --- ![install sametime chat on windows](Images/install-st-chat-windows-23.png)
-20.  --- ![install sametime chat on windows](Images/install-st-chat-windows-24.png)
+13.  Sample LDAP People and Group settings:  
+![install sametime chat on windows](Images/install-st-chat-windows-17.png)
+![install sametime chat on windows](Images/install-st-chat-windows-18.png)
+![install sametime chat on windows](Images/install-st-chat-windows-19.png)
+![install sametime chat on windows](Images/install-st-chat-windows-20.png)
+14.  Enter the email address of the user that will be able to access the administration section in the Configure admin panel. This individual will be able to review policy work and look at monitoring and statistics. Select **Next**  
+![install sametime chat on windows](Images/install-st-chat-windows-21.png)
+15. From the Pre-installation Summary panel you can review your submissions. Select **Next**   
+![install sametime chat on windows](Images/install-st-chat-windows-22.png)
+16. The install will begin and you can track the install progress from the Installing HCL Sametime Server panel.  When the install completes Select **Next**  
+![install sametime chat on windows](Images/install-st-chat-windows-23.png)
+17.  Launch and test your clients.   Select **Next**  
+![install sametime chat on windows](Images/install-st-chat-windows-24.png)
 
 
 
