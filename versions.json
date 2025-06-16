@@ -1,1 +1,13 @@
-[{"version": "v8-cr1", "title": "v8-cr1", "aliases": ["latest"]}, {"version": "v8", "title": "v8", "aliases": []}]
+[
+  {
+    "version": "v1203",
+    "title": "v1203", 
+    "aliases": ["latest"]
+  },
+  {
+	"version": "v1202",
+	"title": "v1202", 
+	"aliases": []
+  }
+]
+

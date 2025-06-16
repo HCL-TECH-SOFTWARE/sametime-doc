@@ -1,0 +1,500 @@
+#Project Information
+site_name: HCL Sametime Help Center
+site_description: >-
+  A next-gen documentation site for HCL Sametime
+site_url: https://opensource.hcltechsw.com/sametime-doc
+use_directory_urls: false
+docs_dir: v1203
+site_dir: docs/v1203
+
+# Theme Configuration
+theme:
+  name: material
+  logo: assets/st_logo.png
+  favicon: assets/favicon.svg
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - navigation.instant
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+  custom_dir: theme_overrides/
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # Static files
+  static_templates:
+    - 404.html
+
+
+# Markdown Extensions
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      title: On this page
+
+extra:
+#  analytics: 
+#    provider: custom
+#    property: UA-169645537-2
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HCL-TECH-SOFTWARE
+  version:
+    provider: mike
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - manage
+
+# Repository
+repo_url: https://github.com/HCL-TECH-SOFTWARE/sametime-doc
+repo_name: hcl-software/sametime-doc
+edit_uri: edit/main/docs
+
+
+# Customization
+extra_css:
+  - stylesheets/style.css
+
+plugins:
+  - section-index
+  - search
+  
+ #Table of contents 
+nav:
+# HCL Sametime Documentation
+      - Introducing Sametime: index.md
+# What's New
+      - What&apos;s new in Sametime&quest;: 
+        - admin/whats_new.md
+        - What's New in Sametime 12.0.3: admin/whatsnew1203.md
+        - What's New in Sametime 12.0.2: admin/whatsnew1202.md
+# Planning
+      - Planning: 
+        - admin/planning.md
+        - Sametime versus Sametime Premium: admin/sametime_premium.md
+        - Prerequistes: 
+          - admin/c_planning_prereqs.md
+          - System requirements: admin/system_requirements.md
+          - Supported languages: admin/over_supported_languages.md
+          - MongoDB: admin/mongodb.md
+          - LDAP: admin/ldap.md
+        - Platforms: 
+          - admin/c_planning_platforms.md
+          - Running and managing containers with Docker and Podman: admin/c_planning_docker.md
+          - Planning for Sametime in a Kubernetes environment:
+            - admin/c_planning_kubernetes.md
+            - Planning for a Kubernetes cluster configuration: admin/c_planning_kubernetes_cluster.md
+            - Planning for Openshift: admin/c_planning_openshift.md
+        - Meeting server FAQ: admin/planning_meetingserver.md
+        - Sametime Clients: 
+          - admin/hcl_sametime_clients.md
+         # - Sametime capabilities by client type: admin/client_features.md 
+        - Planning the network topology and connectivity:
+          - admin/topology.md
+          - Planning considerations for chat: admin/topology_chat.md
+          - Considerations for Sametime Premium:
+            - admin/topology_premium.md
+            - Managing Sametime features: admin/managing_sametime_premium.md
+          - Considerations for telephony: admin/topology_telephony.md
+          - Ports used by Sametime services: admin/ports_sametime.md
+        - Network planning for meetings: 
+          - admin/network_planning.md
+          - Session Traversal Utilities for NAT (STUN): admin/session_traversal_utilities.md
+          - Determining where to install Sametime: admin/topology_turn.md
+        - Clustering and high availability:
+          - admin/cluster_highavailability.md
+          - Configure high capacity for chat: admin/plan_cluster_chat.md
+          - Configure high capacity for meetings:
+            - admin/plan_cluster_meetings.md
+            - Configuring autoscaling for recorder: admin/plan_cluster_meetings_recorder.md
+            - Configuring autoscaling for video: admin/plan_cluster_meetings_video.md
+          - Configuring MongoDB for high availability: admin/plan_cluster_mongodb.md
+# Installing
+      - Installing:
+        - admin/installing.md
+        - Installation road map: admin/installation_roadmap.md
+        - Installing the MongoDB:
+          - admin/installation_mongodb.md
+          - Installing MongoDB on Windows: admin/installing_mongodb_windows.md
+          - Installing MongoDB on Linux: admin/installing_mongodb_linux.md
+          - Using MongoDB on cloud: admin/mongodb_cloud.md
+          - Setting up a replica set with keyfile access control: admin/t_create_mongo_replset.md
+          - Configuring MongoDB for Sametime: admin/t_configure_mongodb.md
+        - Installing Sametime: 
+          - admin/installation_sametime.md
+          - Information to provide during installation: admin/installation_prompt_descriptions.md
+          - Enabling Grafana: admin/installation_sametime_grafana.md
+          - Installing Sametime on Windows using Docker Desktop: admin/installation_sametime_windows.md
+          - Installing Sametime in a Kubernetes environment:
+            - admin/installation_sametime_kubernetes.md
+            - Preparing to install an Openshift environment: admin/installation_sametime_openshift.md
+            - Preparing the network:
+              - admin/t_meetings_prepare_network.md
+              - Configuring host aliases for Kubernetes deployments: admin/t_meetings_kubernetes.md
+            - Using Sametime images from the HCL Harbor registry: admin/use_stimages_harbor.md
+            - Loading the Sametime images to a Docker repository: admin/load_stimages_local.md
+            - Installing Sametime in a Kubernetes using managed charts: admin/installation_sametime_kubernetes_managedcharts.md
+            - Preparing the deployment: admin/t_meetings_configure_deployment.md
+            - Creating the persistent volume: admin/t_meetings_recordings.md
+            - Deploying Sametime to Kubernetes cluster: admin/t_installing_deploy_kubernetes.md
+            - Installing Ingress:
+              - admin/t_ingress_install.md
+              - Configuring Ingress for Mux: admin/t_ingress_configure.md
+            - Installing Prometheus: admin/installation_prometheus.md
+            - Installing Sametime with multiple video bridges: admin/t_configure_jitsi.md
+          - Installing Sametime in a Docker or Podman environment:
+            - admin/installation_sametime_docker.md
+            - Installing Docker: admin/installing_docker.md
+            - Installing Sametime on Docker or Podman: admin/installing_on_docker.md
+            - Defining extra hosts for Docker deployments: admin/t_installing_docker_extrahosts.md
+            - Configuring container networking with Podman: admin/t_installing_podman_extrahosts.md
+        - Installing Sametime clients:
+          - admin/installing_sametime_clients.md
+          - Installing Sametime Connect and Embedded clients on Windows: admin/installing_sametime_connect_and_embedded.md
+          - Installing Sametime Connect and Embedded clients on MacOS: admin/installing_sametime_connect_and_embedded_macos.md
+          - Installing the Connect client in silent mode: admin/installing_connectclient_silentinstall.md
+          - Installing Sametime iOS and Android clients: admin/installing_sametime_ios_and_android.md
+# Configuring
+      - Configuring: 
+        - admin/configuring.md
+        - Adding corporate branding to meeting pages:
+          - admin/customize_branding.md
+          - Adding corporate branding to meeting pages using Kubernetes: admin/customize_kubernetes.md
+          - Adding corporate branding to meeting pages using Docker or Podman: admin/customize_docker.md
+        - Downloading content to the server: admin/download_content.md
+        - Adding virtual backgrounds to the global library: 
+          - admin/t_configure_default_virtual_background.md
+          - Adding default virtual backgrounds on Docker and Podman: admin/t_configure_virtual_docker.md
+          - Adding default virtual backgrounds on Kubernetes: admin/t_configure_virtual_k8s.md
+        - Configuring alternate STUN servers: admin/configuring_stun.md
+        - Setting up business cards:
+          - admin/admin_st_buscard.md
+          - Configuring business cards using an LDAP directory: admin/config_buscard.md
+          - Customizing business cards in Kubernetes: admin/config_buscard_custom_kubernetes.md
+          - Customizing business cards in Docker and Podman: admin/config_buscard_custom_docker.md
+          - Storing photos in the Domino directory: admin/storing_photos.md
+          - Using HCL Connections photos for the Sametime business card: admin/connections_photos.md
+          - Retrieving photos from HTTPS hosts in Kubernetes: admin/t_adding_signer_certs_k8s.md
+          - Retrieving photos from HTTPS hosts in Docker and Podman: admin/t_retrieve_photourl_docker.md
+        - Configuring LDAP:
+          - admin/configuring_ldap.md
+          - Changing the LDAP service account password in Kubernetes: admin/configuring_ldap_password.md
+          - Overriding the default LDAP configuration in Kubernetes: admin/configuring_ldap_kubernetes.md
+          - Configuring additional LDAP servers on Docker and Podman: admin/configuring_ldap_multiple_docker.md
+          - Configuring additional LDAP servers on Kubernetes: admin/configuring_ldap_multiple_kubernetes.md
+          - Creating custom Java classes for searching LDAP:
+            - admin/creating_custom_java.md
+            - Example Writing a Java class to format names returned in a search: admin/config_chat_ldap_java_format.md
+            - Example Writing a Java class to filter searches for people and groups: admin/config_chat_ldap_java_people.md
+            - Configuring the class file on Docker and Podman: admin/config_class_file_docker.md
+            - Configuring the class file on Kubernetes: admin/config_class_file_kubernetes.md
+        - Updating the time-to-live index for persistent chat: admin/update_ttl_index.md
+        - Managing secrets in Kubernetes:
+          - admin/managing_secrets_kubernetes.md
+          - Viewing secrets: admin/secrets_view.md
+          - Deleting a secret: admin/secrets_delete.md
+          - Modifying secrets: admin/secrets_modify.md
+        - Applying configuration changes in Docker or Podman: admin/apply_configchanges_docker.md
+        - Applying configuration changes in Kubernetes or Openshift: admin/apply_configchanges_kubernetes.md
+        - Chat:
+          - admin/chat_configuring.md
+          - Configuring the sametime.ini file:
+            - admin/chat_configuring_sametimeini.md
+            - Configuring the sametime.ini file on Docker or Podman: admin/chat_configuring_sametimeini_docker.md
+            - Configuring the sametime.ini file on Kubernetes: admin/chat_configuring_sametimeini_kubernetes.md
+          - Configuring Chat Read receipts: admin/chat_read_receipts.md
+        - Meetings:
+          - admin/meetings_configuring.md
+          - Enabling Meeting Recording Transcription: admin/meeting_transcripts.md
+          - Disabling secure meeting room names:
+            - admin/secure_rooms.md
+            - Disabling secure rooms on Docker and Podman: admin/secure_rooms_docker.md 
+            - Disabling secure rooms on Kubernetes: admin/secure_rooms_kubernetes.md
+          - Disabling reports on Kubernetes: admin/meeting_report_kubernetes.md
+          - Disabling reports on Docker or Podman: admin/meeting_report_setting_docker.md
+          - Enabling conference dial-in: admin/meetings_dialin.md
+          - Configuring alternate host name for Web Chat: admin/t_different_hostname.md
+          - Enabling meeting dial-out:
+            - admin/enable_dial_out.md
+            - Enabling meeting dial-out on Docker or Podman: admin/enable_dialout_docker.md
+            - Enabling meeting dial-out on Kubernetes: admin/enable_dialout_kubernetes.md
+          - Configuring the maximum number of meeting participants: admin/meetings_configuring_max.md
+          - Enable Videobridge for TCP: admin/enable_video_bridge.md
+          - Disable sharing of meeting recording: admin/disable_sharing_meetings.md
+          - Enabling Microsoft Outlook Add-in: admin/enable_microsoft_outlook.md
+          - Deploying Microsoft Outlook add-ins to users: admin/microsoft_outlook_deploy.md
+          - Setting up a TURN server:
+            - admin/turnserver_intro.md
+            - Installing a TURN Server on Ubuntu: admin/turnserver_ubuntu.md
+            - Installing a TURN Server: admin/turnserver_centos.md
+            - Configuring the TURN server for Docker and Podman: admin/turnserver_meetings_docker.md
+            - Configuring the TURN server for Kubernetes: admin/turnserver_meetings_kubernetes.md
+        - Integrating with other applications:
+          - admin/verse_integration.md
+          - Enabling web client integration on Docker and Podman: admin/verse_integration_docker.md
+          - Enabling web client integration on Kubernetes: admin/verse_integration_kubernetes.md
+          - Enabling content security headers on Docker and Podman: admin/verse_integration_contentsecurity_docker.md
+          - Enabling content security headers on Kubernetes: admin/verse_integration_contentsecurity_kubernetes.md
+#        - Monitoring your meeting and chat metrics with Grafana:
+#          - admin/Managing_dashboard.md
+#          - Configuring Docker and Podman to run Grafana: admin/t_grafana_docker.md
+#          - Configuring Kubernetes to run Grafana: admin/t_grafana_k8s.md
+        - Push messaging through a proxy:
+          - admin/t_push_proxy.md
+          - Configuring Docker and Podman to use a proxy server for push messaging: admin/t_proxy_docker.md
+          - Configuring Kubernetes to use a proxy server for push messaging: admin/t_proxy_k8s.md
+# Securing
+      - Securing: 
+        - admin/securing.md
+        - Encryption usage in Sametime: admin/overview_encryption.md
+        - Securing connections:
+          - admin/securing_connections.md
+          - Obtaining the cert.key and cert.crt files for Sametime: admin/t_generate_certkey.md
+          - Creating a truststore with a third-party certificate:
+            - admin/t_create_truststore.md
+            - Creating a truststore when using SAML: admin/t_create_truststore_SAML.md
+            - Creating a truststore when using LDAP: admin/t_create_truststore_LDAP.md
+            - Creating a truststore when using business card photos: admin/t_create_truststore_businesscards.md
+          - Implementing the Global TLS Scope for Docker: admin/implement_tls_configuration.md
+          - Securing connections between the Sametime mux and the Connect and Embedded clients: 
+            - admin/securing_connections_between_community_clients.md
+            - Creating a keystore for Sametime mux:
+              - admin/t_keystore_mux.md
+              - Creating a keystore for Sametime mux: admin/keystore_third_party.md
+              - Creating a keystore for Sametime mux: admin/t_keystore_self_signed.md
+            - Configuring TLS for Sametime mux on Kubernetes: admin/securing_connections_between_community_clients_kubernetes.md
+            - Configuring TLS for Sametime mux on Docker and Podman: admin/securing_connections_between_community_clients_docker.md
+          - Securing connections between Sametime servers and LDAP:
+            - admin/securing_connections_sametime_community_and_ldap.md
+            - Securing LDAP on Kubernetes: admin/securing_ldap_kubernetes.md
+            - Securing LDAP on Docker or Podman: admin/securing_ldap_docker.md
+            - Specifying a cipher for Sametime to connect to Domino LDAP on Kubernetes: admin/t_domino_ldap_k8s.md
+            - Specifying a cipher for Sametime to connect to Domino LDAP on Docker or Podman: admin/t_domino_ldap_docker.md
+        - Enabling Single Sign-on: 
+          - admin/enabling_sso.md
+          - Setting up SSO using LTPA: 
+            - admin/enabling_sso_ltpa.md
+            - Generating LTPA keys: admin/ltpa_generate_key.md
+            - Configuring LTPA in Docker or Podman: admin/ltpa_configure_docker.md
+            - Configuring LTPA in Kubernetes: admin/ltpa_configure_kubernetes.md
+            - Integrating with HCL Connections: admin/ltpa_configure_connections.md
+            - Integrating Sametime with HCL Domino: admin/ltpa_configure_domino.md
+            - Integrating with HCL Verse: admin/integrating-with-HCL-Verse.md
+            - Configuring the LTPA token expiry interval on Docker or Podman: admin/t_configure_ltpa_duration_docker.md
+            - Configuring the LTPA token expiry interval on Kubernetes: admin/t_configure_ltpa_duration_k8s.md
+          - Setting up SSO using SAML:
+            - admin/enabling_sso_saml.md
+            - Configuring SAML on Docker and Podman: admin/enabling_saml_docker.md
+            - Configuring SAML in Kubernetes: admin/enabling_saml_kubernetes.md
+            - Configuration settings related to SAML authentication: admin/configuring_sso_saml.md
+            - Enabling SAML authentication in client installation packages: admin/enabling_saml.md
+            - Enabling SAML authentication in installed clients: admin/enabling_saml_clients.md
+        - Setting up TLS for the Mongo database:
+          - admin/security_mongodb_tls.md
+          - Verifying if TLS connection can be established: admin/t_verify_tlsconnection.md
+          - Enabling TLS for the Mongo database on Kubernetes: admin/t_security_tls_mongodb_k8s.md
+          - Enabling TLS for the Mongo database on Docker or Podman: admin/t_security_mongodb_tls_docker.md
+        - Replacing the TLS certificates for Web Chat and Meetings:
+          - admin/tls_change_certificate.md
+          - Updating the TLS certificates on Docker: admin/tls_change_certificate_docker.md
+          - Updating the TLS certificates on Kubernetes: admin/tls_change_certificate_kubernetes.md
+        - Applying Let's Encrypt certificates: admin/using_meeting_servers.md
+# Administering
+      - Administering: 
+        - admin/administering.md
+        - Sametime Admin overview: admin/adminui_overview.md
+        - Managing policies:
+          - admin/adminui_policy_manage.md
+          - Policy weight: admin/adminui_policy_weight.md
+          - Policy types: admin/adminui_policy_types.md
+          - Policy sections:
+            - admin/adminui_policy_sections.md
+            - Chat: admin/adminui_policysection_chat.md
+            - Meeting: admin/adminui_policysection_meeting.md
+            - File transfer: admin/adminui_policysection_filetransfer.md
+            - Mobile: admin/adminui_policysection_mobile.md
+            - Administration: admin/adminui_policysection_administration.md
+          - Adding a policy:
+            - admin/adminui_policy_add.md
+            - Copying a policy: admin/adminui_policy_add_copy.md
+            - Creating a policy: admin/adminui_policy_create_new.md
+          - Deleting a policy: admin/adminui_policy_delete.md
+          - Modifying a policy: admin/adminui_policy_modify.md
+          - Assigning users and groups to policies: admin/adminui_policy_assign.md
+          - Finding active policies associated with user or group: admin/adminui_policy_view_active.md
+#         # - Viewing active policy assignments: admin/adminui_policy_view_assign.md
+#         # - Troubleshooting policies: admin/adminui_policy_troubleshoot.md
+        - Monitoring your meeting and chat metrics with Grafana:
+          - admin/adminui_grafana_overview.md
+          - Configuring Grafana on Docker and Podman: admin/adminui_grafana_config_docker.md
+          - Configuring Kubernetes to run Grafana: admin/adminui_grafana_config_kubernetes.md          
+        - Managing Sametime clients:
+          - admin/managing_sametime_client_preferences.md
+          - Sametime client configuration options:
+            - admin/sametime_client_configuration.md
+            - Sametime client preferences:
+              - admin/config_client_pref_tables.md
+              - Accessibility preferences: admin/config_client_access_pref.md
+              - Auto-status change preferences: admin/config_client_status_pref.md
+              - Calendar preferences: admin/config_client_cal_pref.md
+              - Chat preferences: admin/config_client_chat_history_pref.md
+              - Community preferences: admin/config_client_comm_pref.md
+              - Contact list preferences: admin/config_client_contact_list_pref.md
+              - External application preferences: admin/config_client_ext_app_pref.md
+              - File transfer preferences: admin/config_client_file_tran_pref.md
+              - Live Text and Widgets preferences: admin/config_client_widg_pref.md
+              - Location preferences: admin/config_client_location_pref.md
+              - Login preferences: admin/config_client_login_pref.md
+              - Notes® preferences: admin/config_client_notes_pref.md
+              - Sametime® Advanced preferences (Sametime 9.0.1 only): admin/config_client_stadv_pref.md
+              - Notification preferences: admin/config_client_notification_pref.md
+              - People preferences: admin/config_client_people_pref.md
+              - Rules manager preferences: admin/config_client_rules_mng_pref.md
+              - Spell checker preferences: admin/config_client_spellchecker_pref.md
+              - Update preferences: admin/config_client_update_pref.md
+            - Selecting preferences in the client: admin/config_client_connect_pref.md
+            - Configuring Sametime client preferences with the Expeditor managed settings framework:
+              - admin/config_client_mng_xml_pref.md
+              - Configuring Sametime® Connect Client preferences in the plugin_customization.ini file:
+                - admin/config_client_pref_plugin.md
+                - Changing the URL for the settings XML file in the plugin_customization.ini file: admin/config_client_url_xml_file.md
+              - Updating client preferences with the managed-settings.xml file:
+                - admin/config_client_xml_location.md
+                - Defining preferences in the managed-settings.xml file:
+                  - admin/config_client_xml_file.md
+                  - Hosting client files for Sametime on Docker or Podman: admin/example_preferences.md
+                  - Hosting client files for Sametime on Kubernetes:
+                    - admin/t_example_preferences_2.md
+                    - Hosting files containing the same file name: admin/t_host_samefilename_k8s.md
+           #       - Updating the client policy to include client preferences: admin/update_client_policy.md
+                - Changing the update interval for managed preferences: admin/config_client_update_interval_xml.md
+                - Discontinuing managed preferences: admin/config_client_discontinue_xml_file.md
+            - Configuring Sametime preferences using HCL Notes policies: admin/alternate_client_configuration.md
+            - Updating connectivity settings with the managed-community-configs.xml file:
+              - admin/admin_st_mng_remotecomm.md
+              - Managed community settings: admin/managed_community.md
+            - Creating a community provisioning URL for mobile users:
+              - admin/community_provisioning.md
+              - Creating a community provisioning URL on Docker or Podman: admin/t_community_provisioning_docker.md
+              - Creating a community provisioning on Kubernetes: admin/t_community_provisioning_k8s.md
+          - Connecting the Sametime Connect client to the Sametime server:
+            - admin/t_connect_clienttoserver.md
+            - Defining the host server and port for connecting to a Sametime server: admin/t_define_hostserver.md
+            - Choosing a method for connecting to the Sametime server:
+              - admin/t_choose_connect_method.md
+              - Connecting the client through a direct connection over TCP/IP: admin/t_client_connect_direct.md
+              - Connecting the client through a TLS connection: admin/t_client_connect_tls.md
+              - Connecting the client through a proxy connection: admin/t_client_connect_proxy.md
+            - Configuring alternate communities for clients: admin/t_config_alt_client_connect.md
+        - Managing file transfer data: admin\t_managing_transfer_data.md
+        - Testing Sametime chat and meeting clients: admin\t_testing_sametime_chat.md
+        - Starting and stopping the Sametime server: admin\starting_and_stopping_servers.md
+        - Starting and stopping MongoDB: admin\starting_and_stopping_mongodb.md
+        - Configuration files: admin\configuration_files.md
+        - Enabling multi-tenancy: admin\configuring_multi_tenacy.md
+        - Using the Sametime Database utility:
+          - admin\c_dbutility.md
+          - Converting chat history owner data from Domino directory to LDAP format: admin\t_dbutility_convertldap.md
+          - Deleting user IDs: admin\t_dbutility_delete.md
+          - Moving users: admin\t_dbutility_move.md
+          - Updating user IDs: admin\t_dbutility_update.md
+        - MongoDB:
+          - admin/administering_mongodb.md
+          - Changing MongoDB credentials in Sametime for Docker and Podman: admin/change_mongodb_credentials_docker.md
+          - Changing MongoDB credentials in Sametime for Kubernetes and Openshift: admin/change_mongodb_credentials_kubernetes.md
+         # - Changing MongoDB log file size: admin/control_mongodb.md
+        - Defining chat message deletion limits: admin/chat_msg_delete_options.md
+        - Managing Sametime Meetings:
+          - admin/sametime_meeting_administering.md
+          - Defining Meetings password requirements: admin/meetings_passwords.md
+          - Disabling guest access: admin/disable_guest_access.md
+          - Configuring live streaming: admin/enable_disable.md
+          - Increasing the number of displayed video streams: admin/increase_activecameras.md
+          - Managing recording options:
+            - admin/recording.md
+            - Recording lifecycle: admin/c_recording_lifecycle.md
+            - Disabling the recording feature: admin/t_disable_recordings.md
+          - Disabling Sametime reports: admin/t_disable_generate_report.md
+          - Managing user sign-on:
+            - admin/control_validity_length.md
+            - Managing user sign-on on Docker or Podman: admin/t_manage_user_login_docker.md
+            - Managing user sign-on on Kubernetes: admin/t_manage_user_login_k8s.md
+          - Disabling virtual background: admin/disable_background.md
+          - Disabling custom background uploads: admin/t_disable_background_upload.md
+          - Disabling the meeting timer: admin/t_disabling_timer.md
+     #   - Disabling the mobile notification limiter on Docker or Podman: admin/t_disable_rate_limiter_docker.md
+     #   - Disabling the mobile notification limiter on Kubernetes: admin/t_disable_rate_limiter_kubernetes.md
+# Troubleshooting
+      - Troubleshooting: 
+        - admin/troubleshooting.md
+        - Getting help: admin/c_troubleshooting_supportstatement.md
+        - Working with HCL support: admin/troubleshooting_contact_support.md
+        - Troubleshooting Sametime on Docker:
+          - admin/t_troubleshooting_sametime_docker.md
+          - Enabling Community trace in Docker: admin/troubleshooting_debug_trace_docker.md
+          - Viewing and saving log files: admin/troubleshooting_docker_logs.md
+        - Troubleshooting Sametime on Kubernetes:
+          - admin/t_troubleshooting_sametime_kubernetes.md
+          - Enabling Community debug in Kubernetes: admin/t_enabling_community_debug.md
+          - Viewing and saving log files: admin/troubleshooting_kubernetes_logs.md
+          - Pods in Sametime: admin/pods_descriptions.md
+          - Transferring files from a pod to a Linux shell: admin/troubleshooting_kubernetes_transfer_pods.md
+          - Capturing a network trace in a pod: admin/troubleshooting_kubernetes_pod_networktrace.md
+          - Applying changes: admin/pod_apply_changes.md
+ #         - Kubernetes Containers not starting due to "Host not found": admin/t_troubleshooting_kubernetes_host_not_found.md
+          - Troubleshooting LDAP on the community pod: admin/t_troubleshooting_ldap_kubernetes.md
+#       - Troubleshooting the Sametime server: admin/t_troubleshooting_sametime_server.md
+#        - Troubleshooting Sametime Meetings:
+ #         - admin/t_troubleshooting_sametime_meetings.md
+ #         - Deploying Microsoft Outlook add-ins to users: admin/microsoft_outlook_trouble_disablemeetings.md
+#        - Troubleshooting Sametime Chat: admin/t_troubleshooting_sametime_chat.md
+        - Troubleshooting Sametime clients:
+          - admin/t_troubleshooting_clients.md
+          - Collecting Sametime client configuration and log data: admin/t_collecting_configuration_logging_data.md
+          - Logging and tracing on the Sametime Embedded and Connect clients: admin/t_logging_tracing.md
+        - Resolving problems with business cards: admin/t_resolving_business_cards.md
+# Uninstalling
+      - Uninstalling: 
+        - admin/t_uninstall.md
+        - Uninstalling Sametime on Docker or Podman: admin/t_uninstall_docker.md
+        - Uninstalling Sametime on Kubernetes: admin/t_uninstall_k8.md
+# Migrating & Updating
+      - Migrating & Updating: 
+        - admin/migrating.md
+        - Planning for migration to Sametime 12:
+          - admin/c_migration_planning.md
+          - Converting from native Domino directory to LDAP: admin/migrating_dominodirectory.md
+          - Migrating contact lists: admin/migrating_contactlists.md
+          - Moving the users: admin/migrating_moveusers.md
+        - Upgrading to a new version or applying a fixpack:
+          - admin/upgrade_install_fixpack.md
+          - Upgrading on Docker: admin/upgrade_install_fixpack_docker.md
+          - Upgrading on Kubernetes:
+            - admin/upgrade_install_fixpack_kubernetes.md
+            - Upgrade considerations for telephony: admin/t_upgrade_telephony.md
+          - Reverting to a previous version on Kubernetes: admin/upgrade_revert_kubernetes.md
+        
